@@ -1,18 +1,18 @@
 .signin-div {
-    display: none;
+  display: none;
 }
 
 .logo {
-    height: 64;
+  height: 64;
 }
 
 @media (max-width: 767px) {
-    .signin-div {
-        display: flex;
-        font-size: 1.7em;
-        color: #CAF0F8;
-    }    
-    .logo {
-        height: 45px;
-    }
+  .signin-div {
+    display: flex;
+    font-size: 1.7em;
+    color: #caf0f8;
+  }
+  .logo {
+    height: 45px;
+  }
 }
