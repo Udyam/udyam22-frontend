@@ -1,6 +1,5 @@
 import './App.css'
 import Header from './components/Header.js'
-import ToggleMenu from './components/ToggleMenu'
 
 function App() {
     return (
