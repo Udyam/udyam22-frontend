@@ -1,0 +1,13 @@
+#container
+{
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+}
+
+.icons
+{
+    color: #90E0EF;
+    height: 33px;
+    width: 33px;
+}
