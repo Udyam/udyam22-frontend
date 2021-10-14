@@ -1,29 +1,29 @@
 .close-btn {
-  position: fixed;
-  right: 0;
-  cursor: pointer;
+    position: fixed;
+    right: 0;
+    cursor: pointer;
 }
 
 .close-btn:hover {
-  opacity: 0.3;
+    opacity: 0.3;
 }
 
 .link-div {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 2em;
-  font-weight: 300;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2em;
+    font-weight: 300;
 }
 
 .toggle-menu-link {
-  color: #caf0f8;
-  text-decoration: none;
+    color: #caf0f8;
+    text-decoration: none;
 }
 
 .toggle-menu-link:hover {
-  color: #caf0f8;
-  opacity: 0.6;
+    color: #caf0f8;
+    opacity: 0.6;
 }

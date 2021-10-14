@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Toast, ToastBody } from 'reactstrap'
 import { BrowserRouter as Router, Link } from 'react-router-dom'
 import './ToggleMenu.css'

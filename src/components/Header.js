@@ -12,7 +12,7 @@ import {
 } from 'reactstrap'
 import ToggleMenu from './ToggleMenu'
 
-const Header = (props) => {
+const Header = () => {
     const [isVisible, setIsVisible] = useState(false)
     const toggle = () => setIsVisible(!isVisible)
 
