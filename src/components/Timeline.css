@@ -1,0 +1,59 @@
+.mainContainer{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+}
+
+.visible{
+    background: rgba(196, 196, 196, 0.6);
+    width: 47%;
+    margin: 20px;
+    border: 3px solid #90E0EF;
+    border-radius: 50px;
+    padding: 15px;
+}
+
+.visible p{
+    color: #FFFFFF;
+}
+
+.visible h2{
+    font-family: Quantico;
+    font-style: normal;
+    font-weight: bold;
+    color: #90E0EF;
+}
+
+.hidden{
+    width: 50%;
+    margin: 20px;
+}
+
+@media (max-width: 767px) {
+    .visible{
+        width: 98%;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    .middleLine{
+        position: absolute;
+        width: 48px;
+        height: 1128px;
+        left: -16px;
+        top: 175px;
+    }
+}
+
+@media (min-width: 768px){
+    .middleLine{
+        position: absolute;
+        width: 106.97px;
+        height: 973.93px;
+        left: 589px;
+        top: 162px;
+
+    }
+}
