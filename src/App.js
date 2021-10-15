@@ -12,12 +12,12 @@ function App() {
                     backgroundImage: 'url(./images/background.png)',
                     height: 'auto',
                     backgroundSize: 'cover',
-                    backgroundAttachment:'fixed'
+                    backgroundAttachment: 'fixed',
                 }}
             >
                 <div>
                     <Header />
-                    <Timeline/>
+                    <Timeline />
                 </div>
             </div>
         </div>
