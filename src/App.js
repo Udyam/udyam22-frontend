@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
 import Header from './components/Header.js'
+import Timeline from './components/Timeline/Timeline'
 import { Footer } from './components/Footer/Footer'
 
 function App() {
@@ -9,8 +10,9 @@ function App() {
             <div
                 style={{
                     backgroundImage: 'url(./images/background.png)',
-                    height: '100vh',
+                    height: 'auto',
                     backgroundSize: 'cover',
+                    backgroundAttachment: 'fixed',
                 }}
             >
                 <div
@@ -22,6 +24,7 @@ function App() {
                     }}
                 >
                     <Header />
+                    <Timeline />
                     <Footer />
                 </div>
             </div>
