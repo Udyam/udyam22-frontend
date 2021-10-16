@@ -1,5 +1,4 @@
 .mainContainer {
-    /* background-color: blue; */
     display: flex;
     flex-direction: row;
 }
