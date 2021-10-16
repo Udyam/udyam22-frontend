@@ -14,31 +14,59 @@ const LandingPage = () => {
                     />
                 </div>
                 <div className="page-links">
-                    <Link to="/" className="page-link px-4 py-2 my-4" style={{width: "320px"}}>
+                    <Link
+                        to="/"
+                        className="page-link px-4 py-2 my-4"
+                        style={{ width: '320px' }}
+                    >
                         <div>HOME</div>
                     </Link>
 
-                    <Link to="/" className="page-link px-4 py-2 my-4" style={{width: "340px"}}>
+                    <Link
+                        to="/"
+                        className="page-link px-4 py-2 my-4"
+                        style={{ width: '340px' }}
+                    >
                         <div>ABOUT US</div>
                     </Link>
 
-                    <Link to="/" className="page-link px-4 py-2 my-4" style={{width: "360px"}}>
+                    <Link
+                        to="/"
+                        className="page-link px-4 py-2 my-4"
+                        style={{ width: '360px' }}
+                    >
                         <div>EVENTS</div>
                     </Link>
 
-                    <Link to="/" className="page-link px-4 py-2 my-4" style={{width: "380px"}}>
+                    <Link
+                        to="/"
+                        className="page-link px-4 py-2 my-4"
+                        style={{ width: '380px' }}
+                    >
                         <div>SPEAKERS</div>
                     </Link>
 
-                    <Link to="/" className="page-link px-4 py-2 my-4" style={{width: "400px"}}>
+                    <Link
+                        to="/"
+                        className="page-link px-4 py-2 my-4"
+                        style={{ width: '400px' }}
+                    >
                         <div>LEADERBOARD</div>
                     </Link>
 
-                    <Link to="/" className="page-link px-4 py-2 my-4" style={{width: "420px"}}>
+                    <Link
+                        to="/"
+                        className="page-link px-4 py-2 my-4"
+                        style={{ width: '420px' }}
+                    >
                         <div>SPONSORS</div>
                     </Link>
 
-                    <Link to="/" className="page-link px-4 py-2 my-4" style={{width: "440px"}}>
+                    <Link
+                        to="/"
+                        className="page-link px-4 py-2 my-4"
+                        style={{ width: '440px' }}
+                    >
                         <div>TEAM</div>
                     </Link>
                 </div>
