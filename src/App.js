@@ -1,8 +1,9 @@
 import React from 'react'
 import './App.css'
 import Header from './components/Header.js'
-import Timeline from './components/Timeline'
+import Timeline from './components/Timeline/Timeline'
 // import 'bootstrap/dist/css/bootstrap.min.css';
+import { Footer } from './components/Footer/Footer'
 
 function App() {
     return (
@@ -15,9 +16,17 @@ function App() {
                     backgroundAttachment: 'fixed',
                 }}
             >
-                <div>
+                <div
+                    style={{
+                        minHeight: '100vh',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        justifyContent: 'space-between',
+                    }}
+                >
                     <Header />
                     <Timeline />
+                    <Footer />
                 </div>
             </div>
         </div>
