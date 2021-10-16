@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
 import Header from './components/Header.js'
+import LandingPage from './components/LandingPage/LandingPage.js'
 import Timeline from './components/Timeline/Timeline'
 import { Footer } from './components/Footer/Footer'
 
@@ -24,6 +25,7 @@ function App() {
                     }}
                 >
                     <Header />
+                    <LandingPage />
                     <Timeline />
                     <Footer />
                 </div>
