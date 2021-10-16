@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 const Timeline = () => {
     return (
         <div>
-            <img src="./images/Line.png" className="middleLine" alt="" />
+            {/* <img src="./images/Line.png" className="middleLine" alt="" /> */}
 
             <div className="d-flex flex-row-reverse">
                 <img
