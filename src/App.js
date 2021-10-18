@@ -1,7 +1,9 @@
 import React from 'react'
 import './App.css'
 import Header from './components/Header.js'
-import RegisterForm from './components/loginregform.js'
+import LandingPage from './components/LandingPage/LandingPage.js'
+import Timeline from './components/Timeline/Timeline'
+import { Footer } from './components/Footer/Footer'
 
 function App() {
     return (
@@ -9,12 +11,23 @@ function App() {
             <div
                 style={{
                     backgroundImage: 'url(./images/background.png)',
-                    height: '100vm',
+                    height: 'auto',
                     backgroundSize: 'cover',
+                    backgroundAttachment: 'fixed',
                 }}
             >
-                <div>
+                <div
+                    style={{
+                        minHeight: '100vh',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        justifyContent: 'space-between',
+                    }}
+                >
                     <Header />
+                    <LandingPage />
+                    <Timeline />
+                    <Footer />
                 </div>
                 <div>
                     <RegisterForm />

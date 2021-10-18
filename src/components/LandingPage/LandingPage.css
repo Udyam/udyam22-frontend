@@ -1,0 +1,53 @@
+.landing-page-container {
+    height: 90vh;
+}
+
+.udyam-title {
+    position: relative;
+    top: 30vh;
+    height: auto;
+    width: 65vw;
+    margin-left: 5vw;
+}
+
+.page-links {
+    position: absolute;
+    top: 3vh;
+    right: 0;
+    margin-top: 15vh;
+    text-align: right;
+    overflow: hidden;
+}
+
+.page-link {
+    position: relative;
+    right: 0;
+    color: #90e0ef !important;
+    text-align: left;
+    border-color: #90e0ef !important;
+    border-radius: 32px;
+    border-right: none;
+    height: 2em;
+    font-size: 2em;
+    font-weight: bold;
+    margin-left: auto;
+    right: -2.4em;
+    background-color: rgba(29, 67, 85, 0.55) !important;
+}
+
+@media (max-width: 1120px) {
+    .landing-page-container {
+        height: 55vh;
+    }
+    .page-links {
+        display: none;
+    }
+    .udyam-title {
+        display: block;
+        height: auto;
+        top: 22vh;
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

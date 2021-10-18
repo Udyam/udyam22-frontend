@@ -6,7 +6,7 @@ import './ToggleMenu.css'
 const ToggleMenu = ({ toggle }) => {
     return (
         <Router>
-            <div style={{ position: 'absolute', top: '0' }}>
+            <div style={{ position: 'fixed', top: '0', zIndex: 1 }}>
                 <Toast
                     isOpen={true}
                     style={{
