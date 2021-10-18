@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
 import Header from './components/Header.js'
+import RegisterForm from './components/loginregform.js'
 
 function App() {
     return (
@@ -8,12 +9,15 @@ function App() {
             <div
                 style={{
                     backgroundImage: 'url(./images/background.png)',
-                    height: '100vh',
+                    height: '100vm',
                     backgroundSize: 'cover',
                 }}
             >
                 <div>
                     <Header />
+                </div>
+                <div>
+                    <RegisterForm />
                 </div>
             </div>
         </div>
