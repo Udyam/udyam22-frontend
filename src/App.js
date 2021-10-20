@@ -4,6 +4,7 @@ import Header from './components/Header.js'
 import LandingPage from './components/LandingPage/LandingPage.js'
 import Timeline from './components/Timeline/Timeline'
 import { Footer } from './components/Footer/Footer'
+import { ContactPage } from './components/ContactPage/ContactPage'
 
 function App() {
     return (
@@ -27,6 +28,7 @@ function App() {
                     <Header />
                     <LandingPage />
                     <Timeline />
+                    <ContactPage />
                     <Footer />
                 </div>
             </div>

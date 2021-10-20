@@ -10,7 +10,7 @@ import './SocialTray.css'
 export const SocialTray = () => {
     return (
         <>
-            <div id="container">
+            <div id="social-tray">
                 <a href="#">
                     <FaLinkedin className="icons" />
                 </a>
