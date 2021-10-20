@@ -22,14 +22,16 @@ const Tabs = () => {
     }
 
     return (
-
-
         // tab with "active" class will be visible
-        
-        <div className="vertical-tabs">
-        {/* <div className="container vertical-tabs"> */}
 
-            <ul className="tabs vertical" data-tab="" style={{padding:'0px',margin:'0px' , listStyle:'none'}}>
+        <div className="vertical-tabs">
+            {/* <div className="container vertical-tabs"> */}
+
+            <ul
+                className="tabs vertical"
+                data-tab=""
+                style={{ padding: '0px', margin: '0px', listStyle: 'none' }}
+            >
                 <li className="tab-title">
                     <img
                         src={home}
@@ -109,7 +111,6 @@ const Tabs = () => {
                         fugiat atque vel nobis, sapiente architecto? Saepe
                         accusamus velit corrupti beatae magni.
                     </p>
-                    
                 </div>
                 <div
                     className="content active"
