@@ -40,7 +40,7 @@ button {
 
 .feedback {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.2em;
 }
 
 .fields {
@@ -64,6 +64,7 @@ button {
     box-shadow: none !important;
     background: none;
     border-bottom: 2px solid white;
+    text-decoration: none;
 }
 
 button {
@@ -85,6 +86,9 @@ button {
 @media only screen and (min-width: 767px) and (max-width: 1000px) {
     #contact-form-wrapper {
         width: 80%;
+    }
+    .feedback {
+        font-size: 0.9em;
     }
 }
 
@@ -122,6 +126,6 @@ button {
         border: 3px solid #90e0ef;
     }
     .feedback {
-        font-size: 15px;
+        font-size: 0.8em;
     }
 }
