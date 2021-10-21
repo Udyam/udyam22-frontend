@@ -1,9 +1,9 @@
 import React from 'react'
 import './App.css'
 import Header from './components/Header.js'
-import LandingPage from './components/LandingPage/LandingPage.js'
-import Timeline from './components/Timeline/Timeline'
 import { Footer } from './components/Footer/Footer'
+import { BrowserRouter as Router } from 'react-router-dom'
+import { Routes } from './routes'
 
 function App() {
     return (
@@ -25,8 +25,11 @@ function App() {
                     }}
                 >
                     <Header />
-                    <LandingPage />
-                    <Timeline />
+
+                    <Router>
+                        <Routes />
+                    </Router>
+
                     <Footer />
                 </div>
             </div>
