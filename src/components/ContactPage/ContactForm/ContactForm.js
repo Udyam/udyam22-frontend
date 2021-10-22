@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { Form, FormFeedback, FormGroup, Input } from 'reactstrap'
+import isEmail from 'validator/lib/isEmail'
+import isPhone from 'validator/lib/isMobilePhone'
 import './ContactForm.css'
 
 export const ContactForm = () => {
@@ -7,11 +9,22 @@ export const ContactForm = () => {
     const [isValidEmail, setIsValidEmail] = useState(false)
     const [emailChanged, setEmailChanged] = useState(false)
 
+    const [phone, setPhone] = useState('')
+    const [isValidPhone, setIsValidPhone] = useState(false)
+    const [phoneChanged, setPhoneChanged] = useState(false)
+
     const emailChangeHandler = (newEmail) => {
         setEmail(newEmail)
         if (newEmail === '') setEmailChanged(false)
         else setEmailChanged(true)
-        setIsValidEmail(false) /*process API req here to check email*/
+        setIsValidEmail(isEmail(newEmail))
+    }
+
+    const phoneChangeHandler = (newPhone) => {
+        setPhone(newPhone)
+        if (newPhone === '') setPhoneChanged(false)
+        else setPhoneChanged(true)
+        setIsValidPhone(isPhone(newPhone, 'en-IN'))
     }
 
     return (
@@ -44,7 +57,7 @@ export const ContactForm = () => {
                         />
                         <FormFeedback className="feedback">
                             {' '}
-                            Email either invalid or not registered{' '}
+                            Please enter a valid email{' '}
                         </FormFeedback>
                         <FormFeedback
                             valid
@@ -59,7 +72,22 @@ export const ContactForm = () => {
                             id="contact-no"
                             placeholder="Contact-no"
                             className="fields"
+                            value={phone}
+                            valid={phoneChanged && isValidPhone}
+                            invalid={phoneChanged && !isValidPhone}
+                            onChange={(e) => {
+                                phoneChangeHandler(e.target.value)
+                            }}
                         />
+                        <FormFeedback className="feedback">
+                            {' '}
+                            Please enter a valid Phone Number{' '}
+                        </FormFeedback>
+                        <FormFeedback
+                            valid
+                            style={{ display: 'none' }}
+                            className="feedback"
+                        ></FormFeedback>
                     </FormGroup>
                     <FormGroup>
                         <Input
