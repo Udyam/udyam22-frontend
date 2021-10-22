@@ -5,26 +5,15 @@ import isPhone from 'validator/lib/isMobilePhone'
 import './ContactForm.css'
 
 export const ContactForm = () => {
-    const [email, setEmail] = useState('')
-    const [isValidEmail, setIsValidEmail] = useState(false)
-    const [emailChanged, setEmailChanged] = useState(false)
+    const [input, setInput] = useState({
+        email: '',
+        phone: '',
+    })
 
-    const [phone, setPhone] = useState('')
-    const [isValidPhone, setIsValidPhone] = useState(false)
-    const [phoneChanged, setPhoneChanged] = useState(false)
-
-    const emailChangeHandler = (newEmail) => {
-        setEmail(newEmail)
-        if (newEmail === '') setEmailChanged(false)
-        else setEmailChanged(true)
-        setIsValidEmail(isEmail(newEmail))
-    }
-
-    const phoneChangeHandler = (newPhone) => {
-        setPhone(newPhone)
-        if (newPhone === '') setPhoneChanged(false)
-        else setPhoneChanged(true)
-        setIsValidPhone(isPhone(newPhone, 'en-IN'))
+    const inputChangeHandler = (e) => {
+        const newInput = { ...input }
+        newInput[e.target.name] = e.target.value
+        setInput(newInput)
     }
 
     return (
@@ -39,6 +28,7 @@ export const ContactForm = () => {
                             id="name"
                             placeholder="Name"
                             className="fields"
+                            required
                         />
                     </FormGroup>
                     <FormGroup>
@@ -47,13 +37,16 @@ export const ContactForm = () => {
                             name="email"
                             id="email"
                             placeholder="Email Address"
-                            value={email}
-                            valid={emailChanged && isValidEmail}
-                            invalid={!isValidEmail && emailChanged}
+                            value={input.email}
+                            valid={input.email !== '' && isEmail(input.email)}
+                            invalid={
+                                input.email !== '' && !isEmail(input.email)
+                            }
                             onChange={(e) => {
-                                emailChangeHandler(e.target.value)
+                                inputChangeHandler(e)
                             }}
                             className="fields"
+                            required
                         />
                         <FormFeedback className="feedback">
                             {' '}
@@ -68,16 +61,23 @@ export const ContactForm = () => {
                     <FormGroup>
                         <Input
                             type="tel"
-                            name="contact-no"
-                            id="contact-no"
+                            name="phone"
+                            id="phone"
                             placeholder="Contact-no"
                             className="fields"
-                            value={phone}
-                            valid={phoneChanged && isValidPhone}
-                            invalid={phoneChanged && !isValidPhone}
+                            value={input.phone}
+                            valid={
+                                input.phone !== '' &&
+                                isPhone(input.phone, 'en-IN')
+                            }
+                            invalid={
+                                input.phone !== '' &&
+                                !isPhone(input.phone, 'en-IN')
+                            }
                             onChange={(e) => {
-                                phoneChangeHandler(e.target.value)
+                                inputChangeHandler(e)
                             }}
+                            required
                         />
                         <FormFeedback className="feedback">
                             {' '}
@@ -96,13 +96,13 @@ export const ContactForm = () => {
                             id="query"
                             placeholder="Query"
                             className="fields"
-                            overfl
+                            required
                         />
                     </FormGroup>
+                    <div id="button-wrapper">
+                        <button type="submit"> Submit </button>
+                    </div>
                 </Form>
-                <div id="button-wrapper">
-                    <button type="submit"> Submit </button>
-                </div>
             </div>
         </div>
     )

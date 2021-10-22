@@ -14,7 +14,7 @@
     backdrop-filter: blur(6px);
     border: 0.2em solid #90e0ef;
     border-radius: 7px;
-    padding: 9% 7%;
+    padding: 9% 7% 0% 7%;
 }
 
 #form {
@@ -79,8 +79,7 @@ button {
 #button-wrapper {
     display: flex;
     justify-content: center;
-    margin-top: 16%;
-    margin-bottom: 3%;
+    margin: 16% auto;
 }
 
 @media only screen and (min-width: 767px) and (max-width: 992px) {
