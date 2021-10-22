@@ -10,6 +10,7 @@
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
     "reactstrap": "^8.10.0",
+    "validator": "^13.6.0",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
@@ -40,7 +41,7 @@
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-plugin-react": "^7.26.1",
-    "react-scripts": "4.0.3",
-    "prettier": "^2.4.1"
+    "prettier": "^2.4.1",
+    "react-scripts": "4.0.3"
   }
 }
