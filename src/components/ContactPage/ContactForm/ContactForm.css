@@ -50,6 +50,7 @@ button {
     font-family: 'Raleway', sans-serif;
     height: 2em;
     margin: 9% auto;
+    border-bottom: 2px solid white;
 }
 
 .fields,
@@ -63,7 +64,6 @@ button {
     -webkit-appearance: none;
     box-shadow: none !important;
     background: none;
-    border-bottom: 2px solid white;
     text-decoration: none;
 }
 
@@ -83,7 +83,7 @@ button {
     margin-bottom: 3%;
 }
 
-@media only screen and (min-width: 767px) and (max-width: 1000px) {
+@media only screen and (min-width: 767px) and (max-width: 992px) {
     #contact-form-wrapper {
         width: 80%;
     }
@@ -102,6 +102,10 @@ button {
         border: 0.15em solid rgba(255, 255, 255, 0.521);
     }
 
+    .fields {
+        border-bottom: 1px solid white;
+    }
+
     .fields,
     .fields:hover,
     .fields:focus,
@@ -109,7 +113,6 @@ button {
     .fields::placeholder {
         margin: 7% auto;
         font-size: 1rem;
-        border-bottom: 1px solid white;
         text-align: left;
     }
     h1 {

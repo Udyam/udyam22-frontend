@@ -36,7 +36,7 @@ span {
     margin-right: 15px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 992px) {
     li {
         font-size: 1.1em;
     }
