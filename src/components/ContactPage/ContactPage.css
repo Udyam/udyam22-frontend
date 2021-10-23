@@ -17,6 +17,8 @@
     grid-area: info-box;
     margin-top: 10%;
     margin-bottom: 15%;
+    display: flex;
+    align-items: center;
 }
 
 @media (min-width: 767px) {
