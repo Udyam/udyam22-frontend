@@ -3,47 +3,47 @@ import './InfoBox.css'
 
 export const InfoBox = () => {
     return (
-        <div>
-            <ul>
+        <div id="info-box-container">
+            <ul className="info-box-list">
                 <li>
-                    <div className="labels">
-                        <span className="circles">•</span>
-                        <span>For Queries :</span>
+                    <div className="info-box-labels">
+                        <span className="info-box-circles">•</span>
+                        <span className = "info-box-span">For Queries :</span>
                     </div>
-                    <ul>
-                        <li>Mayank</li>
-                        <li>mchakravorty.ece18@iitbhu.ac.in</li>
+                    <ul className="info-box-list">
+                        <li className="info-box-list-item">Mayank</li>
+                        <li className="info-box-list-item">mchakravorty.ece18@iitbhu.ac.in</li>
                     </ul>
                 </li>
                 <li>
-                    <div className="labels">
-                        <span className="circles">•</span>
-                        <span>Marketing :</span>
+                    <div className="info-box-labels">
+                        <span className="info-box-circles">•</span>
+                        <span className = "info-box-span">Marketing :</span>
                     </div>
-                    <ul>
-                        <li>Amritesh</li>
-                        <li>amritesh.ece18@iitbhu.ac.in</li>
+                    <ul className="info-box-list">
+                        <li className="info-box-list-item">Amritesh</li>
+                        <li className="info-box-list-item">amritesh.ece18@iitbhu.ac.in</li>
                     </ul>
                 </li>
                 <li>
-                    <div className="labels">
-                        <span className="circles">•</span>
-                        <span>PR Team :</span>
+                    <div className="info-box-labels">
+                        <span className="info-box-circles">•</span>
+                        <span className = "info-box-span">PR Team :</span>
                     </div>
-                    <ul>
-                        <li>Harshit Gupta</li>
-                        <li>harshitgupta.ece18@iitbhu.ac.in</li>
+                    <ul className="info-box-list">
+                        <li className="info-box-list-item">Harshit Gupta</li>
+                        <li className="info-box-list-item">harshitgupta.ece18@iitbhu.ac.in</li>
                     </ul>
                 </li>
                 <li>
-                    <div className="labels">
-                        <span className="circles">•</span>
-                        <span>Co-Convenor :</span>
+                    <div className="info-box-labels">
+                        <span className="info-box-circles">•</span>
+                        <span className = "info-box-span">Co-Convenor :</span>
                     </div>
 
-                    <ul>
-                        <li>Ritweek Singh</li>
-                        <li>ritweeksingh.ece18@iitbhu.a</li>
+                    <ul className="info-box-list">
+                        <li className="info-box-list-item">Ritweek Singh</li>
+                        <li className="info-box-list-item">ritweeksingh.ece18@iitbhu.a</li>
                     </ul>
                 </li>
             </ul>
