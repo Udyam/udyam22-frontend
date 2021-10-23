@@ -96,7 +96,10 @@ export const ContactForm = () => {
                         />
                     </FormGroup>
                     <div id="contact-form-button-wrapper">
-                        <button type="submit" id="contact-form-button"> Submit </button>
+                        <button type="submit" id="contact-form-button">
+                            {' '}
+                            Submit{' '}
+                        </button>
                     </div>
                 </Form>
             </div>

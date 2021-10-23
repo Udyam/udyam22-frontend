@@ -32,7 +32,8 @@
     .info-box-list-item {
         font-size: 1.2em;
     }
-    .info-box-span, .info-box-circles {
+    .info-box-span,
+    .info-box-circles {
         font-size: 1.3em;
     }
 }
