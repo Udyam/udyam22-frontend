@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+ul {
+    list-style-type: none;
+}
+
+#infobox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span,
+li {
+    color: #90e0ef;
+}
+
+li {
+    font-size: 1.35em;
+    margin: 0.1em auto;
+    font-weight: 300;
+}
+
+span {
+    font-size: 1.55em;
+    font-weight: normal;
+}
+
+.labels {
+    display: flex;
+    align-items: center;
+}
+
+.circles {
+    font-size: 40px;
+    margin-right: 15px;
+}
+
+@media only screen and (max-width: 992px) {
+    li {
+        font-size: 1.1em;
+    }
+    span {
+        font-size: 1.25em;
+    }
+}

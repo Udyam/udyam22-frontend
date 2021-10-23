@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quantico:wght@700&display=swap');
+
+#contact-form-wrapper {
+    width: 60%;
+}
+
+#contact-form-container {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.15),
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.15)
+    );
+    backdrop-filter: blur(6px);
+    border: 0.2em solid #90e0ef;
+    border-radius: 7px;
+    padding: 9% 7% 0% 7%;
+}
+
+#form {
+    margin: 12% auto;
+}
+
+h1 {
+    font-family: 'Quantico', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+h1,
+.fields,
+.fields:hover,
+.fields:focus,
+.fields:active,
+.fields::placeholder,
+button {
+    color: #90e0ef;
+}
+
+.feedback {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.fields {
+    background: none;
+    border: none;
+    border-radius: 0;
+    font-family: 'Raleway', sans-serif;
+    height: 2em;
+    margin: 9% auto;
+    border-bottom: 2px solid white;
+}
+
+.fields,
+.fields:hover,
+.fields:focus,
+.fields:active,
+.fields::placeholder {
+    -webkit-text-stroke: 1px rgba(0, 255, 255, 0.75);
+    font-size: 1.5rem;
+    outline: 0px !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+    background: none;
+    text-decoration: none;
+}
+
+button {
+    background: none;
+    border: 4px solid #90e0ef;
+    border-radius: 40px;
+    padding: 2px 25px;
+    font-size: 1.6rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+#button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 16% auto;
+}
+
+@media only screen and (min-width: 767px) and (max-width: 992px) {
+    #contact-form-wrapper {
+        width: 80%;
+    }
+    .feedback {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 767px) {
+    #contact-form-wrapper {
+        width: 88%;
+    }
+    #contact-form-container {
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        border: 0.15em solid rgba(255, 255, 255, 0.521);
+    }
+
+    .fields {
+        border-bottom: 1px solid white;
+    }
+
+    .fields,
+    .fields:hover,
+    .fields:focus,
+    .fields:active,
+    .fields::placeholder {
+        margin: 7% auto;
+        font-size: 1rem;
+        text-align: left;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    #form {
+        width: 90%;
+    }
+    #button-wrapper {
+        margin-top: 9%;
+        margin-bottom: 1%;
+    }
+    button {
+        border: 3px solid #90e0ef;
+    }
+    .feedback {
+        font-size: 0.8em;
+    }
+}
