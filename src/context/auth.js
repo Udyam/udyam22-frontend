@@ -10,7 +10,7 @@ export const AuthProvider = ({ children }) => {
   const [cookies, setCookies, removeCookies] = useCookies(['auth'])
   const [pagetype,setpagetype] = useState("HOME"); 
   const token = cookies.token;
-  const API_BASE_URL = 'http://127.0.0.1:8000/';
+  const API_BASE_URL = 'to be filled';
   const config={
     headers: {
         Authorization: "Token " + cookies.token

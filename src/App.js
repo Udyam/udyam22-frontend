@@ -1,10 +1,7 @@
 import React from 'react'
 import './App.css'
 import Header from './components/Header.js'
-import LandingPage from './components/LandingPage/LandingPage.js'
-import Timeline from './components/Timeline/Timeline'
-import { Footer } from './components/Footer/Footer'
-
+import RegisterForm from './components/loginregform'
 function App() {
     return (
         <div>
@@ -15,24 +12,10 @@ function App() {
                     backgroundSize: 'cover',
                     backgroundAttachment: 'fixed',
                 }}
-            >
-                <div
-                    style={{
-                        minHeight: '100vh',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        justifyContent: 'space-between',
-                    }}
-                >
-                    <Header />
-                    <LandingPage />
-                    <Timeline />
-                    <Footer />
-                </div>
-                <div>
+            > <Header />
                     <RegisterForm />
                 </div>
-            </div>
+            
         </div>
     )
 }

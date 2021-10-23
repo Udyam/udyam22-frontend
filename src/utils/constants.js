@@ -1,1 +1,3 @@
-export const API_URL = "http://127.0.0.1:8000/";
+/* eslint-disable */
+const API_URL = "to be filled";
+/* eslint-enable */

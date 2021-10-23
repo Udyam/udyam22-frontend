@@ -4,6 +4,8 @@ import "./loginregform.css";
 import {toast} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import { useAuth } from '../context/auth'
+import validator from 'validator';
+
 
 /* eslint-disable */
 toast.configure()
@@ -73,14 +75,14 @@ export default function RegisterForm() {
     ) {
         return false
     }
-    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
-        return false
-    }
+    if (!validator.isEmail(email)) {
+      return false
+  }
+  if (!validator.isMobilePhone(phone)) {
+    return false
+   }
     if (password !== confirmpassword) {
         return false
-    }
-    if (!/^\d{10}$/.test(phone)) {
-      return false
     }
     return true
   }
@@ -161,6 +163,7 @@ return (
          >
            SIGN IN
          </button>
+         <h2 className="mobile-part">Already have an account ?<h3 className="mobile-part-signIn"  onClick={() => setaddclass("")}>Sign-In here</h3></h2>
       </div> 
      </div>
     
@@ -172,6 +175,7 @@ return (
        <form>
      <h1 className="h12">SIGN UP</h1>
           <input
+          className='up'
             type='text' 
             name='inputUsername'
             id='inputUsername'
@@ -180,6 +184,7 @@ return (
             placeholder='Username'
           />
           <input
+          className='up'
             type='email'
             name='inputEmail'
             id='inputEmail'
@@ -188,6 +193,7 @@ return (
             placeholder='Email Address'
           />
           <input
+          className='up'
             type='text'
             name='inputCollegeName'
             id='inputCollegeName'
@@ -196,8 +202,9 @@ return (
             placeholder='College Name'
           />
           <select
+          className='up'
             name="inputYear" 
-            id="inputYear">
+            id="inputYear"
             value={year}
             onChange={(e) => setYear(e.target.value)} >
           <option value=''>Select Year</option>
@@ -207,6 +214,7 @@ return (
           <option value='4'>Fourth Year</option></select>
           
           <input
+          className='up'
             type='text'
             name='inputMobileno'
             id='inputMobileno'
@@ -215,6 +223,7 @@ return (
             onChange={(e) =>setPhone(e.target.value)}
              />
           <select 
+          className='up'
             name="inputGender" 
             id="inputGender"
             value={gender}
@@ -225,6 +234,7 @@ return (
           <option value='7'>better not say</option></select>
           
           <input
+            className='up'
             type='password'
             name='inputPassword'
             id='inputPassword'
@@ -233,6 +243,7 @@ return (
             placeholder='Password'
           />
           <input
+            className='up'
             type='password'
             name='confirmPassword'
             id='confirmPassword'
