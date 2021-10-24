@@ -19,15 +19,14 @@ export const ContactForm = () => {
     return (
         <div id="contact-form-wrapper">
             <div id="contact-form-container">
-                <h1> Contact us </h1>
-                <Form id="form">
+                <h1 id="contact-form-head"> Contact us </h1>
+                <Form id="main-contact-form">
                     <FormGroup>
                         <Input
                             type="text"
                             name="name"
-                            id="name"
                             placeholder="Name"
-                            className="fields"
+                            className="contact-form-fields"
                             required
                         />
                     </FormGroup>
@@ -35,7 +34,6 @@ export const ContactForm = () => {
                         <Input
                             type="email"
                             name="email"
-                            id="email"
                             placeholder="Email Address"
                             value={input.email}
                             valid={input.email !== '' && isEmail(input.email)}
@@ -45,26 +43,25 @@ export const ContactForm = () => {
                             onChange={(e) => {
                                 inputChangeHandler(e)
                             }}
-                            className="fields"
+                            className="contact-form-fields"
                             required
                         />
-                        <FormFeedback className="feedback">
+                        <FormFeedback className="contact-form-feedback">
                             {' '}
                             Please enter a valid email{' '}
                         </FormFeedback>
                         <FormFeedback
                             valid
                             style={{ display: 'none' }}
-                            className="feedback"
+                            className="contact-form-feedback"
                         ></FormFeedback>
                     </FormGroup>
                     <FormGroup>
                         <Input
                             type="tel"
                             name="phone"
-                            id="phone"
                             placeholder="Contact-no"
-                            className="fields"
+                            className="contact-form-fields"
                             value={input.phone}
                             valid={
                                 input.phone !== '' &&
@@ -79,28 +76,30 @@ export const ContactForm = () => {
                             }}
                             required
                         />
-                        <FormFeedback className="feedback">
+                        <FormFeedback className="contact-form-feedback">
                             {' '}
                             Please enter a valid Phone Number{' '}
                         </FormFeedback>
                         <FormFeedback
                             valid
                             style={{ display: 'none' }}
-                            className="feedback"
+                            className="contact-form-feedback"
                         ></FormFeedback>
                     </FormGroup>
                     <FormGroup>
                         <Input
                             type="textarea"
                             name="query"
-                            id="query"
                             placeholder="Query"
-                            className="fields"
+                            className="contact-form-fields"
                             required
                         />
                     </FormGroup>
-                    <div id="button-wrapper">
-                        <button type="submit"> Submit </button>
+                    <div id="contact-form-button-wrapper">
+                        <button type="submit" id="contact-form-button">
+                            {' '}
+                            Submit{' '}
+                        </button>
                     </div>
                 </Form>
             </div>

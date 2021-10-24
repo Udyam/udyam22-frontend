@@ -17,33 +17,24 @@
     padding: 9% 7% 0% 7%;
 }
 
-#form {
+#main-contact-form {
     margin: 12% auto;
 }
 
-h1 {
+#contact-form-head {
     font-family: 'Quantico', sans-serif;
     text-transform: uppercase;
     text-align: center;
     font-size: 2.5em;
-}
-
-h1,
-.fields,
-.fields:hover,
-.fields:focus,
-.fields:active,
-.fields::placeholder,
-button {
     color: #90e0ef;
 }
 
-.feedback {
+.contact-form-feedback {
     font-weight: bold;
     font-size: 1.2em;
 }
 
-.fields {
+.contact-form-fields {
     background: none;
     border: none;
     border-radius: 0;
@@ -53,11 +44,11 @@ button {
     border-bottom: 2px solid white;
 }
 
-.fields,
-.fields:hover,
-.fields:focus,
-.fields:active,
-.fields::placeholder {
+.contact-form-fields,
+.contact-form-fields:hover,
+.contact-form-fields:focus,
+.contact-form-fields:active,
+.contact-form-fields::placeholder {
     -webkit-text-stroke: 1px rgba(0, 255, 255, 0.75);
     font-size: 1.5rem;
     outline: 0px !important;
@@ -65,18 +56,20 @@ button {
     box-shadow: none !important;
     background: none;
     text-decoration: none;
+    color: #90e0ef;
 }
 
-button {
+#contact-form-button {
     background: none;
     border: 4px solid #90e0ef;
     border-radius: 40px;
     padding: 2px 25px;
     font-size: 1.6rem;
     font-family: 'Raleway', sans-serif;
+    color: #90e0ef;
 }
 
-#button-wrapper {
+#contact-form-button-wrapper {
     display: flex;
     justify-content: center;
     margin: 16% auto;
@@ -86,7 +79,7 @@ button {
     #contact-form-wrapper {
         width: 80%;
     }
-    .feedback {
+    .contact-form-feedback {
         font-size: 0.9em;
     }
 }
@@ -101,33 +94,33 @@ button {
         border: 0.15em solid rgba(255, 255, 255, 0.521);
     }
 
-    .fields {
+    .contact-form-fields {
         border-bottom: 1px solid white;
     }
 
-    .fields,
-    .fields:hover,
-    .fields:focus,
-    .fields:active,
-    .fields::placeholder {
+    .contact-form-fields,
+    .contact-form-fields:hover,
+    .contact-form-fields:focus,
+    .contact-form-fields:active,
+    .contact-form-fields::placeholder {
         margin: 7% auto;
         font-size: 1rem;
         text-align: left;
     }
-    h1 {
+    #contact-form-head {
         font-size: 2em;
     }
-    #form {
+    #main-contact-form {
         width: 90%;
     }
-    #button-wrapper {
+    #contact-form-button-wrapper {
         margin-top: 9%;
         margin-bottom: 1%;
     }
-    button {
+    #contact-form-button {
         border: 3px solid #90e0ef;
     }
-    .feedback {
+    .contact-form-feedback {
         font-size: 0.8em;
     }
 }
