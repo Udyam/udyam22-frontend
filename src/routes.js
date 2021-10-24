@@ -6,7 +6,6 @@ import { ContactPage } from './components/ContactPage/ContactPage'
 import { Route } from 'react-router-dom'
 
 const Routes = () => {
-
     return (
         <div>
             <Route exact path="/">
@@ -15,22 +14,22 @@ const Routes = () => {
                 <ContactPage />
             </Route>
             <Route exact path="/about-us">
-                <Tabs id = "panelb"/>
+                <Tabs id="panelb"></Tabs>
             </Route>
             <Route exact path="/events">
-                <Tabs id = "panelc"/>
+                <Tabs id="panelc"></Tabs>
             </Route>
             <Route exact path="/speakers">
-                <Tabs id = "paneld"/>
+                <Tabs id="paneld"></Tabs>
             </Route>
             <Route exact path="/leaderboard">
-                <Tabs id = "panele"/>
+                <Tabs id="panele"></Tabs>
             </Route>
             <Route exact path="/sponsors">
-                <Tabs id = "panelf"/>
+                <Tabs id="panelf"></Tabs>
             </Route>
             <Route exact path="/team">
-                <Tabs id = "panelg"/>
+                <Tabs id="panelg"></Tabs>
             </Route>
         </div>
     )

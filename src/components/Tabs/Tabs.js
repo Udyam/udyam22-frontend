@@ -68,26 +68,24 @@ const Tabs = (props) => {
             </ul>
 
             <div className="tabs-content">
-                <div className="content " id="panela_content">
-                    <h1>HOME</h1>
-                </div>
+                <div className="content " id="panela_content"></div>
                 <div className="content" id="panelb_content" tabIndex="-1">
-                    <h1>INFORMATION</h1>
+                    {props.children}
                 </div>
                 <div className="content" id="panelc_content" tabIndex="-1">
-                    <h1>EVENT</h1>
+                    {props.children}
                 </div>
                 <div className="content" id="paneld_content" tabIndex="-1">
-                    <h1>SPEAKER</h1>
+                    {props.children}
                 </div>
                 <div className="content" id="panele_content" tabIndex="-1">
-                    <h1>LEADERBOARD</h1>
+                    {props.children}
                 </div>
                 <div className="content" id="panelf_content" tabIndex="-1">
-                    <h1>SPONSOR</h1>
+                    {props.children}
                 </div>
                 <div className="content" id="panelg_content" tabIndex="-1">
-                    <h1>TEAM</h1>
+                    {props.children}
                 </div>
             </div>
         </div>
