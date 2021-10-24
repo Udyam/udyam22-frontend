@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { useEffect } from 'react'
 import './tabs_style.css'
 import home from './UDYAM/home.png'
 import event from './UDYAM/event.png'
@@ -8,115 +8,70 @@ import leaderboard from './UDYAM/leaderboard.png'
 import speaker from './UDYAM/speaker.png'
 import sponsor from './UDYAM/sponsor.png'
 import team from './UDYAM/team.png'
+import { Link } from 'react-router-dom'
 
-const Tabs = () => {
-    function show_tab_item(e) {
-        e.preventDefault()
-        const id = e.target.id
-
-        document.getElementsByClassName('active')[0].classList.remove('active')
-        document.getElementsByClassName('active')[0].classList.remove('active')
-
-        e.target.parentElement.classList.add('active')
+const Tabs = (props) => {
+    function show(id) {
+        document.getElementById(id).parentElement.classList.add('active')
         document.getElementById(id + '_content').classList.add('active')
     }
 
+    const id = props.id
+
+    useEffect(() => {
+        show(id)
+    }, [id])
+
     return (
         // tab with "active" class will be visible
-
         <div className="vertical-tabs">
-            {/* <div className="container vertical-tabs"> */}
-
             <ul
                 className="tabs vertical"
                 data-tab=""
                 style={{ padding: '0px', margin: '0px', listStyle: 'none' }}
             >
                 <li className="tab-title">
-                    <img
-                        src={home}
-                        id="panela"
-                        tabIndex="-1"
-                        onClick={show_tab_item}
-                    />
-                </li>
-                <li className="tab-title active">
-                    <img
-                        src={info}
-                        id="panelb"
-                        tabIndex="-1"
-                        onClick={show_tab_item}
-                    />
+                    <Link to="/" id="panela">
+                        <img src={home} />
+                    </Link>
                 </li>
                 <li className="tab-title">
-                    <img
-                        src={event}
-                        id="panelc"
-                        tabIndex="-1"
-                        onClick={show_tab_item}
-                    />
+                    <Link to="/about-us" id="panelb">
+                        <img src={info} />
+                    </Link>
                 </li>
                 <li className="tab-title">
-                    <img
-                        src={speaker}
-                        id="paneld"
-                        tabIndex="-1"
-                        onClick={show_tab_item}
-                    />
+                    <Link to="/events" id="panelc">
+                        <img src={event} />
+                    </Link>
                 </li>
                 <li className="tab-title">
-                    <img
-                        src={leaderboard}
-                        id="panele"
-                        tabIndex="-1"
-                        onClick={show_tab_item}
-                    />
+                    <Link to="/speakers" id="paneld">
+                        <img src={speaker} />
+                    </Link>
                 </li>
                 <li className="tab-title">
-                    <img
-                        src={sponsor}
-                        id="panelf"
-                        tabIndex="-1"
-                        onClick={show_tab_item}
-                    />
+                    <Link to="/leaderboard" id="panele">
+                        <img src={leaderboard} />
+                    </Link>
                 </li>
                 <li className="tab-title">
-                    <img
-                        src={team}
-                        id="panelg"
-                        tabIndex="-1"
-                        onClick={show_tab_item}
-                    />
+                    <Link to="/sponsors" id="panelf">
+                        <img src={sponsor} />
+                    </Link>
+                </li>
+                <li className="tab-title">
+                    <Link to="/team" id="panelg">
+                        <img src={team} />
+                    </Link>
                 </li>
             </ul>
 
             <div className="tabs-content">
                 <div className="content " id="panela_content">
                     <h1>HOME</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Obcaecati illo ullam vitae ut, rem voluptas vero nulla
-                        dolorem architecto asperiores sapiente voluptatum
-                        tempore consectetur ipsam quis error maiores in dolorum
-                        officiis porro. Expedita aliquid culpa tempore ea nulla
-                        fugiat atque vel nobis, sapiente architecto? Saepe
-                        accusamus velit corrupti beatae magni.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Obcaecati illo ullam vitae ut, rem voluptas vero nulla
-                        dolorem architecto asperiores sapiente voluptatum
-                        tempore consectetur ipsam quis error maiores in dolorum
-                        officiis porro. Expedita aliquid culpa tempore ea nulla
-                        fugiat atque vel nobis, sapiente architecto? Saepe
-                        accusamus velit corrupti beatae magni.
-                    </p>
                 </div>
-                <div
-                    className="content active"
-                    id="panelb_content"
-                    tabIndex="-1"
-                >
+                <div className="content" id="panelb_content" tabIndex="-1">
                     <h1>INFORMATION</h1>
                 </div>
                 <div className="content" id="panelc_content" tabIndex="-1">
