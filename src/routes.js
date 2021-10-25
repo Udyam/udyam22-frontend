@@ -4,6 +4,7 @@ import Tabs from './components/Tabs/Tabs.js'
 import Timeline from './components/Timeline/Timeline'
 import { ContactPage } from './components/ContactPage/ContactPage'
 import { Route } from 'react-router-dom'
+import Speakers from './components/Tab_content/speakers.js'
 
 const Routes = () => {
     return (
@@ -20,7 +21,7 @@ const Routes = () => {
                 <Tabs id="panelc"></Tabs>
             </Route>
             <Route exact path="/speakers">
-                <Tabs id="paneld"></Tabs>
+                <Tabs id="paneld" >{Speakers()}</Tabs>
             </Route>
             <Route exact path="/leaderboard">
                 <Tabs id="panele"></Tabs>
