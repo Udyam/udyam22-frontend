@@ -17,12 +17,12 @@ const Header = () => {
     const toggle = () => setIsVisible(!isVisible)
 
     return (
-        <>
+        <div style={{ position: 'sticky', top: 0, zIndex: 1 }}>
             <div>
                 <div>
                     <Navbar
                         dark
-                        style={{ backgroundColor: 'rgba(202, 240, 248, 0.17)' }}
+                        style={{ backgroundColor: 'rgba(0,0,0,1)' }}
                         expand="md"
                     >
                         <NavbarBrand href="/">
@@ -99,7 +99,7 @@ const Header = () => {
                     <ToggleMenu toggle={toggle} />
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
