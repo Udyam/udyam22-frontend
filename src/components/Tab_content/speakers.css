@@ -1,28 +1,28 @@
-.ayush{
+.ayush {
     border-style: solid;
-    border-color: #90E0EF;
+    border-color: #90e0ef;
     text-align: center;
-    width:275px;
-    height:380px;
-    float:left;
-    margin:100px 50px;
+    width: 275px;
+    height: 380px;
+    float: left;
+    margin: 100px 50px;
 }
 .ayush:hover {
-    transform: scale(1.25); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  }
-.pp{
-    margin: 20px;
-    width:200px;
-    height:220px;
-    border-style: solid;
-    border-color: #90E0EF; 
- }
-.images{
-    float: right;
-    
-
+    transform: scale(
+        1.25
+    ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-.INF{
+.pp {
+    margin: 20px;
+    width: 200px;
+    height: 220px;
+    border-style: solid;
+    border-color: #90e0ef;
+}
+.images {
+    float: right;
+}
+.INF {
     height: 500px;
-        overflow-y: scroll;
+    overflow-y: scroll;
 }

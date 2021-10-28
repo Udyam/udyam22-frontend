@@ -21,7 +21,7 @@ const Routes = () => {
                 <Tabs id="panelc"></Tabs>
             </Route>
             <Route exact path="/speakers">
-                <Tabs id="paneld" >{Speakers()}</Tabs>
+                <Tabs id="paneld">{Speakers()}</Tabs>
             </Route>
             <Route exact path="/leaderboard">
                 <Tabs id="panele"></Tabs>
