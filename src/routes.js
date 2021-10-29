@@ -4,6 +4,7 @@ import Tabs from './components/Tabs/Tabs.js'
 import Timeline from './components/Timeline/Timeline'
 import { ContactPage } from './components/ContactPage/ContactPage'
 import { Route } from 'react-router-dom'
+import Team from './components/Tabs/Teams/Team.js'
 
 const Routes = () => {
     return (
@@ -28,8 +29,8 @@ const Routes = () => {
             <Route exact path="/sponsors">
                 <Tabs id="panelf"></Tabs>
             </Route>
-            <Route exact path="/team">
-                <Tabs id="panelg"></Tabs>
+            <Route path="/team">
+                <Tabs id="panelg"><Team /></Tabs>
             </Route>
         </div>
     )
