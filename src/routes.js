@@ -8,6 +8,8 @@ import RegisterForm from './components/authentication/loginregform'
 import RecoverForm from './components/authentication/recoverpage'
 import ResetForm from './components/authentication/resetpage'
 import NotifyReset from './components/authentication/notifyreset'
+import Team from './components/Tabs/Teams/Team.js'
+
 const Routes = () => {
     return (
         <div>
@@ -32,8 +34,10 @@ const Routes = () => {
             <Route exact path="/sponsors">
                 <Tabs id="panelf"></Tabs>
             </Route>
-            <Route exact path="/team">
-                <Tabs id="panelg"></Tabs>
+            <Route path="/team">
+                <Tabs id="panelg">
+                    <Team />
+                </Tabs>
             </Route>
             <Route exact path="/loginregister" component={RegisterForm}/>
             <Route exact path="/recoverpage" component={RecoverForm}/>
