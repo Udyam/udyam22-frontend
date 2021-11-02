@@ -66,7 +66,7 @@ button:focus {
 }
 
 button.ghost {
-  margin-top: 16px;
+  margin-top: 2px;
   border: 5px solid #90E0EF;
   color:rgba(202, 240, 248, 1);
   box-sizing: border-box;
@@ -111,8 +111,15 @@ input.in {
   border-radius: 30px;
   margin: 8px 0px;
   width: 270px;
+  outline: none;
+  height: 40px;
+  color:#90E0EF ;
+  width: 270px;
+  border-radius: 30px;
+  padding: 12px 15px;
+  text-align: center;
 }
-input{
+input.up{
   outline: none;
   background-color: rgba(2, 32, 73, 1);
   opacity: 0.3;
@@ -121,11 +128,10 @@ input{
   width: 270px;
   border-radius: 30px;
   padding: 12px 15px;
+  margin: 5px;
+  width: 250px;
+  text-align: center;
   /* margin: 4px 0 ; */
-}
-input.up{
- margin: 5px;
- width: 250px;
 }
 select{
   outline: none;
@@ -172,7 +178,16 @@ h2.mobile-part{
   justify-content: center;
   text-align: center;
 }
-
+.fp{
+  margin-top: -1%;
+margin-left: 50%;
+  color: #caf0f8;
+  text-decoration: none;
+}
+.fp:hover{
+  color: #719ba3;
+  text-decoration: none;
+}
 .final{
   border: 5px solid #90E0EF;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.2) 48.44%, rgba(255, 255, 255, 0.15) 100%);
@@ -196,7 +211,12 @@ h2.mobile-part{
   width: 70%;
   min-height: 550px;
 }
-
+.forgot{
+  color: #caf0f8;
+ text-decoration: none;
+ text-align: right;
+  
+}
 .form-container {
   justify-content: center;
   text-align: center;
@@ -369,13 +389,17 @@ height: 30%;
 width: 100%;
 top: 47%;
 overflow: visible;
+position: absolute;
 left: 5%;
+z-index: 1;
 }
 .sign-in-container{
 height: 60%;
 width: 90%;
 overflow: hidden;
+position: absolute;
 left: 5%;
+z-index: 2;
 
 }
 .overlay-right{
@@ -465,6 +489,7 @@ overflow: visible;
 align-items: center;
 text-align: center;
 justify-content: center;
+z-index: 100;
 }
 .form-container{
 transition: all 0.6s ease-in-out;
@@ -480,6 +505,7 @@ animation: show 0.6s;
 transform: translateX(0);
   transform: translateY(-100%);
   opacity: 0;
+  z-index: 100;
 }
 .container.right-panel-active .overlay-left{
   transform: translateY(0);

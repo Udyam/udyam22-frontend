@@ -4,7 +4,10 @@ import Tabs from './components/Tabs/Tabs.js'
 import Timeline from './components/Timeline/Timeline'
 import { ContactPage } from './components/ContactPage/ContactPage'
 import { Route } from 'react-router-dom'
-
+import RegisterForm from './components/authentication/loginregform'
+import RecoverForm from './components/authentication/recoverpage'
+import ResetForm from './components/authentication/resetpage'
+import NotifyReset from './components/authentication/notifyreset'
 const Routes = () => {
     return (
         <div>
@@ -12,6 +15,7 @@ const Routes = () => {
                 <LandingPage />
                 <Timeline />
                 <ContactPage />
+
             </Route>
             <Route exact path="/about-us">
                 <Tabs id="panelb"></Tabs>
@@ -31,6 +35,10 @@ const Routes = () => {
             <Route exact path="/team">
                 <Tabs id="panelg"></Tabs>
             </Route>
+            <Route exact path="/loginregister" component={RegisterForm}/>
+            <Route exact path="/recoverpage" component={RecoverForm}/>
+            <Route exact path="/resetpage" component={ResetForm}/>
+            <Route exact path="/notifyreset" component={NotifyReset}/>
         </div>
     )
 }

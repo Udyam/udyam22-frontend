@@ -12,6 +12,7 @@ import {
 } from 'reactstrap'
 import ToggleMenu from './ToggleMenu'
 
+
 const Header = () => {
     const [isVisible, setIsVisible] = useState(false)
     const toggle = () => setIsVisible(!isVisible)
@@ -98,6 +99,7 @@ const Header = () => {
                 <div style={{ position: 'absolute', top: '0' }}>
                     <ToggleMenu toggle={toggle} />
                 </div>
+               
             </div>
         </>
     )

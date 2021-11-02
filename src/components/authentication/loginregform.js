@@ -1,26 +1,64 @@
-import React, {useState,  useRef} from 'react'
-import axios from '../utils/axios'
+import React, {useState} from 'react'
+import axios from '../../utils/axios'
 import "./loginregform.css";
 import {toast} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
-import { useAuth } from '../context/auth'
+
 import validator from 'validator';
+import { BrowserRouter as Router, Link } from 'react-router-dom'
+import { useCookies } from 'react-cookie'
 
 
 /* eslint-disable */
 toast.configure()
 
 export default function RegisterForm() {
+  const [cookies, setCookies, removeCookies] = useCookies(['auth'])
+  const [token, setTokenState ] = useState(cookies.token);  
+  const setToken = (newToken) => {
+    console.log(newToken);
+    setCookies('token', newToken, { path: '/' })
+    setTokenState(newToken);
+  }
 
-  const { login,API_BASE_URL} = useAuth()
-  const usernameRef = useRef(null);
+
+  
+  const [user_name, setuser_name] = useState("");
+  const [user_pass, setuser_pass] = useState("");
+  const userlogin = (e) => {
+    e.preventDefault()
+    if (user_name == "" || user_pass == "") {
+        toast.warn("Please fill the empty fields.",{position: toast.POSITION.BOTTOM_RIGHT})
+        return;
+    }
+    setuser_name(user_name.trim());
+    toast.info("Checking credentials...",{position: toast.POSITION.BOTTOM_RIGHT})
+    axios
+        .post('http://127.0.0.1:8000/'+ "auth/login/",{
+            email_or_username: user_name,
+            password: user_pass
+        })
+        .then(({ data, status }) => {
+            toast.success("Successfully logged in!!",{position: toast.POSITION.BOTTOM_RIGHT})
+            localStorage.setItem("token", data.token);
+            console.log(data.token);
+            setToken(data.token);
+        })
+        .catch((err) => {
+            console.log(err);
+            toast.error("Cannot Login!! :( Check credentials.",{position: toast.POSITION.BOTTOM_RIGHT})
+        });
+      }
+
+  /*const usernameRef = useRef(null);
   const passwordRef = useRef(null);
 
-  const login_now = () => {
+  const login = () => {
   const user_name = usernameRef.current.value;
   const pass_word = passwordRef.current.value;
 
   if (user_name && pass_word) {
+    toast.warning('Please wait...',{position: toast.POSITION.BOTTOM_RIGHT})
     const data  = {
       username:user_name,
       password:pass_word
@@ -33,7 +71,7 @@ export default function RegisterForm() {
     .then(({data, status}) => {
       toast.success("Successfully logged in!",{position: toast.POSITION.BOTTOM_RIGHT})
       localStorage.setItem("token", data.token);
-      login(data.token);
+      login_now(data.token);
     })
     .catch(err => {
       toast.error("Cannot Login! Check credentials.",{position: toast.POSITION.BOTTOM_RIGHT})
@@ -41,7 +79,7 @@ export default function RegisterForm() {
   } else {
     toast.error("Username And Password Cannot be Empty.",{position: toast.POSITION.BOTTOM_RIGHT})
   }
-}
+}*/
 
   const [collegeName, setCollegeName] = useState('')
   const [email, setEmail] = useState('')
@@ -73,17 +111,26 @@ export default function RegisterForm() {
       phone=== ''  ||
       gender===  '' 
     ) {
+      toast.warn('Please fill the empty fields.',{position: toast.POSITION.BOTTOM_RIGHT})
         return false
     }
     if (!validator.isEmail(email)) {
+    toast.warn('Please enter your email correctly',{position: toast.POSITION.BOTTOM_RIGHT})
       return false
   }
   if (!validator.isMobilePhone(phone)) {
+    toast.warn('Please enter your 10 digit MobileNo. correctly!!',{position: toast.POSITION.BOTTOM_RIGHT})
     return false
    }
     if (password !== confirmpassword) {
+    toast.warn('Passwords do not match!!',{position: toast.POSITION.BOTTOM_RIGHT})
         return false
     }
+    if(!validator.isStrongPassword(recover_password)){
+      toast.warn("Please keep your Password strong.",{position: toast.POSITION.BOTTOM_RIGHT})
+      toast.info("Strong Passwords have minlength=8,and min(lower case letter,upper case letter,symbol,number)=1 each.",{position: toast.POSITION.BOTTOM_RIGHT})
+      return false;
+  }
     return true
   }
 
@@ -95,30 +142,35 @@ export default function RegisterForm() {
       registerFieldsAreValid(username,collegeName,email,phone,password,confirmpassword,gender,year)
     ) {
       toast.warning('Please wait...',{position: toast.POSITION.BOTTOM_RIGHT})
-
+      
       const dataForApiRequest = {
-        name: username,
+        first_name: username,
+        last_name: username,
+        username: username,
         email: email,
-        collegeName: collegeName,
+        college_name: collegeName,
         password: password,
-        phone: phone,
+        mobile: phone,
         gender: gender,
-        year: year
+        year: year,
+        referral_code: " "
       }
-      axios.post(
-        'auth/register/',
+      console.log(dataForApiRequest)
+      axios.post('http://127.0.0.1:8000/'+ 'auth/register/',
         dataForApiRequest,
       )
         .then(function ({ data, status }) {
-          login(data.token)
-          toast.success('Registered Successfully',{position: toast.POSITION.BOTTOM_RIGHT})
+          toast.success('Registered Successfully!!' ,{position: toast.POSITION.BOTTOM_RIGHT})
+          toast.info('Please check your email for the verification link!!' ,{position: toast.POSITION.BOTTOM_RIGHT})
+          localStorage.setItem("token", data.token);
+          setToken(data.token)
+          
         })
         .catch(function (err) {
-          toast.warning('An account using same email or username is already created',{position: toast.POSITION.BOTTOM_RIGHT})
+          console.log(err)
+          toast.error('An account using same email or username is already created',{position: toast.POSITION.BOTTOM_RIGHT})
         })
-    } else {
-      toast.warning('Please fill all the fields correctly',{position: toast.POSITION.BOTTOM_RIGHT})
-    }
+    } 
   }
   const [addclass, setaddclass] = useState("");
 return (
@@ -130,28 +182,34 @@ return (
         <form>
         <h1>SIGN IN</h1>
         <input
-        type="text" className="in"
-        name="inputUsername"
-        id="inputUsername"
+        type="text" className="in nputin"
+        name="iUsername"
+        id="iUsername"
         placeholder="Username"
-        ref={usernameRef}
-        placeholder="Username"
+        value={user_name}
+        onChange={(e)=>{setuser_name(e.target.value)}}
       />
       <input
-       type="password" className="in"
-       name="inputPassword"
-       id="inputPassword"
+       type="password" className="in nputin"
+       name="iPassword"
+       id="iPassword"
        placeholder="Password"
-       ref={passwordRef}
-       placeholder="Password"
+       value={user_pass}
+       onChange={(e)=>{setuser_pass(e.target.value)}}
      />
+     <Router>
+      <Link to="/recoverpage" className="fp">
+         Forgot Password
+      </Link>
+      </Router>
       <button
       type="submit"
       className="ghost"
-      onClick={login_now}>
+      onClick={userlogin}>
       LOGIN
       </button>
-       </form>
+      </form>
+  
    </div>
    <div className="form-container sign-up-container">
      <h1 className="part">Already part?</h1>
@@ -182,6 +240,7 @@ return (
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             placeholder='Username'
+            
           />
           <input
           className='up'
@@ -208,10 +267,10 @@ return (
             value={year}
             onChange={(e) => setYear(e.target.value)} >
           <option value=''>Select Year</option>
-          <option value='1'>First Year</option>
-          <option value='2'>Second Year</option>
-          <option value='3'>Third Year</option>
-          <option value='4'>Fourth Year</option></select>
+          <option value='ONE'>First Year</option>
+          <option value='TWO'>Second Year</option>
+          <option value='THREE'>Third Year</option>
+          <option value='FOUR'>Fourth Year</option></select>
           
           <input
           className='up'
@@ -229,9 +288,9 @@ return (
             value={gender}
             onChange={(e) => setGender(e.target.value)} >
           <option value=''>Select Gender</option>
-          <option value='5'>Female</option>
-          <option value='6'>Male</option>
-          <option value='7'>better not say</option></select>
+          <option value='F'>Female</option>
+          <option value='M'>Male</option>
+          <option value='O'>better not say</option></select>
           
           <input
             className='up'
@@ -254,7 +313,7 @@ return (
           <button
             type='submit'
             className="second"
-            onClick={register}
+            onClick={(e)=>{e.preventDefault();register(e);}}
           >
             SIGN UP
           </button>

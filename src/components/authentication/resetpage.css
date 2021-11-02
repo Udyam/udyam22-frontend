@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quantico:wght@700&display=swap');
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:rgba(202, 240, 248, 1);
+    ;text-align: center;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:rgba(202, 240, 248, 1);
+    ;opacity: 1;
+    text-align: center;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(202, 240, 248, 1);
+    ;opacity: 1;
+    text-align: center;
+  }
+  .Udyamlogo{
+    position: relative;
+    margin-top: 45px;
+    margin-left: 15px;
+    height: 64px;
+  }
+  .logocircle{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-top: -4.5%;
+    left: 45%;
+    border-radius: 50%;
+    background: #293B53;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 2px solid #90E0EF;
+    z-index: 2;
+  }
+
+.reset-form-container {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.2) 48.44%, rgba(255, 255, 255, 0.15) 100%);
+    backdrop-filter: blur(6px);
+    border: 0.2em solid #90e0ef;
+    border-radius: 7px;
+    padding: 9% 7% 0% 7%;
+    margin-left: 15%;
+    width: 70%;
+    height: 550px;
+    justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top:7%;
+  margin-bottom:7%;
+  z-index: 1;
+
+}
+input.reset{
+    outline: none;
+    border-radius: 50px;
+    height: 50px;
+    width: 50%;
+    margin-bottom: 25px;
+    background: rgba(235, 230, 230, 0.5);
+    opacity: 1;
+    color:#90E0EF ;
+    text-align: center;
+    font-size: 1.4em;
+
+}
+
+.reset-form-head {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.0em;
+    color: #90e0ef;
+}
+.reset-form-title {
+    font-family: Raleway;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    color: #90e0ef;
+    font-size: 1.4em;
+}
+
+
+
+.reset-form-button {
+    background: none;
+    border: 4px solid #90e0ef;
+    border-radius: 40px;
+    padding: 2px 25px;
+    font-size: 1.6rem;
+    font-family: 'Raleway', sans-serif;
+    color: #90e0ef;
+    margin-bottom: 120px;
+}
+
+@media only screen and (min-width: 767px) and (max-width: 992px) {
+    #recover-form-wrapper {
+        width: 80%;
+    }
+    .recover-form-feedback {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 767px) {
+    #reset-form-wrapper {
+        width: 88%;
+    }
+    #reset-form-container {
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        border: 0.15em solid rgba(255, 255, 255, 0.521);
+    }
+
+    .reset-form-fields {
+        border-bottom: 1px solid white;
+    }
+
+    .reset-form-fields,
+    .reset-form-fields:hover,
+    .reset-form-fields:focus,
+    .reset-form-fields:active,
+    .reset-form-fields::placeholder {
+       
+        font-size: 1rem;
+        text-align: left;
+    }
+    #reset-form-head {
+        font-size: 2em;
+    }
+    #main-reset-form {
+        width: 90%;
+    }
+    #reset-form-button-wrapper {
+        margin-top: 9%;
+        margin-bottom: 1%;
+    }
+    #reset-form-button {
+        border: 3px solid #90e0ef;
+    }
+    .reset-form-feedback {
+        font-size: 0.8em;
+    }
+}

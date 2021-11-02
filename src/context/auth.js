@@ -1,30 +1,29 @@
-import React from 'react'
 import { useEffect, useState, useContext, createContext } from 'react'
 import { useCookies } from 'react-cookie'
 import axios from '../utils/axios'
 /* eslint-disable */
 const AuthContext = createContext({})
 export const AuthProvider = ({ children }) => {
-
-  const [profileName, setProfileName] = useState('')
   const [cookies, setCookies, removeCookies] = useCookies(['auth'])
-  const [pagetype,setpagetype] = useState("HOME"); 
-  const token = cookies.token;
-  const API_BASE_URL = 'to be filled';
-  const config={
-    headers: {
-        Authorization: "Token " + cookies.token
-    },
-  };
-
-  const setToken = (newToken) => setCookies('token', newToken, { path: '/' })
-  const deleteToken = () => removeCookies('token')
-
-  const login = (newtoken) => {
-    setToken(newtoken);
-    const text= window.location.href;
-    if(text.indexOf("/login")>-1 || text.indexOf("/register")>-1) window.location.href='/';
+  const [token, setTokenState ] = useState(cookies.token);  
+  const setToken = (newToken) => {
+    console.log(newToken);
+ 
+    setCookies('token', newToken, { path: '/' })
+    setTokenState(newToken);
   }
+
+  const deleteToken = () => {
+    removeCookies('token')
+    setTokenState(undefined);
+  }
+  const logout = () => {
+    console.log(token);
+    deleteToken()
+    console.log(token);
+    router.push('/login')
+  }
+
   useEffect(() => {
     if (token) {
       axios
@@ -34,13 +33,13 @@ export const AuthProvider = ({ children }) => {
           },
         })
         .then((response) => {
-          setProfileName(response.data.name)
+          setProfileName(response.data.username)
         })
         .catch((error) => {
-          console.log('Some error occurred')
+          console.log(error)
         })
     }
-  }, [ setProfileName, token])
+  }, [setAvatarImage, setProfileName, token])
   return (
     <AuthContext.Provider
       value={{
@@ -49,19 +48,14 @@ export const AuthProvider = ({ children }) => {
         deleteToken,
         profileName,
         setProfileName,
+        avatarImage,
+        setAvatarImage,
         logout,
-        login,
-        loginpage,
-        homepage,
-        pagetype,
-        setpagetype,
-        API_BASE_URL,
-        config,
       }}
     >
       {children}
     </AuthContext.Provider>
   )
 }
-export const useAuth = () => useContext(AuthContext);
-/* eslint-enable */
+export const useAuth = () => useContext(AuthContext)
+/* eslint-able */
