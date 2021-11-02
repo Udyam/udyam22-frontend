@@ -30,7 +30,9 @@ const Routes = () => {
                 <Tabs id="panelf"></Tabs>
             </Route>
             <Route path="/team">
-                <Tabs id="panelg"><Team /></Tabs>
+                <Tabs id="panelg">
+                    <Team />
+                </Tabs>
             </Route>
         </div>
     )
