@@ -24,7 +24,6 @@ function App() {
                         justifyContent: 'space-between',
                     }}
                 >
-
                     <Router>
                         <Header />
                         <Routes />
