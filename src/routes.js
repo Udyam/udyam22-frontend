@@ -5,6 +5,7 @@ import Timeline from './components/Timeline/Timeline'
 import { ContactPage } from './components/ContactPage/ContactPage'
 import { Route } from 'react-router-dom'
 import Team from './components/Tabs/Teams/Team.js'
+import NoticeBoard from './components/NoticeBoard/NoticeBoard'
 
 const Routes = () => {
     return (
@@ -33,6 +34,9 @@ const Routes = () => {
                 <Tabs id="panelg">
                     <Team />
                 </Tabs>
+            </Route>
+            <Route path = "/noticeboard">
+                <NoticeBoard />
             </Route>
         </div>
     )
