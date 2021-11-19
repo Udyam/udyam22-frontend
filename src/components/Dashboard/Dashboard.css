@@ -1,0 +1,84 @@
+.dashboardContainer {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.15),
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.15)
+    );
+    margin-top: 12vh;
+    height: 82vh;
+    width: 92vw;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 3px #eee1e18c;
+    border-radius: 10px;
+}
+
+.imageContainer {
+    position: absolute;
+    width: 22vh;
+    height: 22vh;
+    background-color: #223349;
+    border: solid 2px #7cdbecd7;
+    border-radius: 50%;
+    margin-top: -6.5vh;
+    margin-left: 5vw;
+}
+
+.displayImage {
+    margin-top: 7vh;
+    margin-left: 3vh;
+    height: 8.5vh;
+    z-index: 1;
+}
+
+.tabs {
+    /* position: absolute; */
+    font-size: 1.5em;
+    border-radius: 10px;
+    /* height: 6vh; */
+    /* width: fit-content; */
+    text-align: center;
+    background-color: #c4c4c430;
+    position: fixed;
+    margin-top: 5vh;
+    right: 7vw;
+}
+
+.tabLinks {
+    color: #caf0f8 !important;
+}
+
+.tabLinks:hover {
+    color: #199ab4 !important;
+}
+
+.scrollContainer {
+    position: absolute;
+    color: #90e0ef;
+    width: 86vw;
+    height: 61vh;
+    margin: auto;
+    left: 6vw;
+    bottom: 8.5vh;
+    overflow: auto;
+}
+
+.scrollContainer li {
+    margin-bottom: 36px;
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+    background: #c4c4c41e;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c4c4c446;
+    border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #999999;
+}
