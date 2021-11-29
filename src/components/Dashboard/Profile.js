@@ -1,19 +1,29 @@
 import React from 'react'
+import './Profile.css'
+import { Link } from 'react-router-dom'
 
 const Profile = () => {
     return (
-        <div
-            style={{
-                display: 'flex',
-                backgroundColor: '#C4C4C430',
-                height: '25vh',
-                marginTop: '12px',
-                marginLeft: 'auto',
-                marginRight: 'auto',
-                borderRadius: '12px',
-            }}
-        >
-            <h3>Profile</h3>
+        <div className="profileContainer">
+            <ul style={{ listStyleType: 'none' }}>
+                <li>
+                    <h4 style={{ fontWeight: '600', marginTop: '20px' }}>
+                        Name
+                    </h4>
+                </li>
+                <li>
+                    <h4>Username : Tanuja</h4>
+                </li>
+                <li>
+                    <h4>Email id: tanu@gmail.com</h4>
+                </li>
+                <li>
+                    <h4>Contact : 9000000000</h4>
+                </li>
+            </ul>
+            <Link to="#" className="editLink">
+                <h4>Edit</h4>
+            </Link>
         </div>
     )
 }

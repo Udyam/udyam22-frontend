@@ -20,27 +20,27 @@ const Dashboard = () => {
                 <div className="tabs">
                     <Nav className="justify-content-center">
                         <NavItem>
-                            <NavLink className="tabLinks" href="#">
+                            <NavLink className="tabLinks" href="#profile">
                                 Profile
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink className="tabLinks" href="#">
+                            <NavLink className="tabLinks" href="#register">
                                 Register
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink className="tabLinks" href="#">
+                            <NavLink className="tabLinks" href="#teams">
                                 Teams
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink className="tabLinks" href="#">
+                            <NavLink className="tabLinks" href="#workshops">
                                 Workshops
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink className="tabLinks" href="#">
+                            <NavLink className="tabLinks" href="#submission">
                                 Submission
                             </NavLink>
                         </NavItem>
@@ -54,23 +54,23 @@ const Dashboard = () => {
                 <div className="scrollContainer px-4">
                     <ul style={{ listStyleType: 'none' }}>
                         <li>
-                            <h2>PROFILE</h2>
+                            <h2 id="profile">PROFILE</h2>
                             <Profile />
                         </li>
                         <li>
-                            <h2>REGISTER NOW</h2>
+                            <h2 id="register">REGISTER NOW</h2>
                             <Register />
                         </li>
-                        <li style={{ listStyleType: 'none' }}>
-                            <h2>TEAMS</h2>
+                        <li>
+                            <h2 id="teams">TEAMS</h2>
                             <Teams />
                         </li>
-                        <li style={{ listStyleType: 'none' }}>
-                            <h2>WORKSHOPS</h2>
+                        <li>
+                            <h2 id="workshops">WORKSHOPS</h2>
                             <Workshops />
                         </li>
-                        <li style={{ listStyleType: 'none' }}>
-                            <h2>SUBMISSION</h2>
+                        <li>
+                            <h2 id="submission">SUBMISSION</h2>
                             <Submission />
                         </li>
                     </ul>
