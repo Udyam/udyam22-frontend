@@ -17,12 +17,12 @@ const Submission = () => {
     //     setInput(newInput)
     // }
     return (
-            <div className="registerContainer">
+            <div className="submissionContainer">
 
-                {/* <div className="registerForm"> */}
+                {/* <div className="submissionForm"> */}
                     {/* <h1>Form</h1> */}
                 
-                    <div className="registerForm">
+                    <div className="submissionForm">
                         {/* <h1 id="contact-form-head"> Contact us </h1> */}
 
                         <Form className="form">
