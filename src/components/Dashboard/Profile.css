@@ -1,0 +1,30 @@
+.profileContainer {
+    display: flex;
+    background-color: #c4c4c430;
+    height: auto;
+    margin-top: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+}
+
+.profileContainer li {
+    margin-bottom: 20px !important;
+}
+h4 {
+    font-weight: normal;
+}
+
+.editLink {
+    margin-left: auto;
+    margin-right: 3vw;
+    margin-top: 20px;
+    display: inline;
+    color: #90E0EF;
+    text-decoration: none;
+}
+
+.editLink:hover {
+    color: #90E0EF;
+    opacity: 0.6;
+}
