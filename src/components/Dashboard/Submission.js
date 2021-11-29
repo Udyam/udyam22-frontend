@@ -4,7 +4,7 @@ import { Form, FormGroup, Input} from 'reactstrap'
 // import isPhone from 'validator/lib/isMobilePhone'
 import './Submission.css'
 
-const Register = () => {
+const Submission = () => {
 
     // const [input, setInput] = useState({
     //     email: '',
@@ -17,9 +17,6 @@ const Register = () => {
     //     setInput(newInput)
     // }
     return (
-        <div className="container">
-            {/* <h1 className="registerHeader">REGISTER NOW</h1> */}
-
             <div className="registerContainer">
 
                 {/* <div className="registerForm"> */}
@@ -115,8 +112,7 @@ const Register = () => {
                 {/* </div> */}
                 
             </div>
-        </div>
     )
 }
 
-export default Register
+export default Submission
