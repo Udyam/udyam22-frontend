@@ -16,9 +16,6 @@ const Register = () => {
     //     setInput(newInput)
     // }
     return (
-        <div className="container">
-            {/* <h1 className="registerHeader">REGISTER NOW</h1> */}
-
             <div className="registerContainer">
                 {/* <div className="registerForm"> */}
                 {/* <h1>Form</h1> */}
@@ -126,7 +123,6 @@ const Register = () => {
 
                 {/* </div> */}
             </div>
-        </div>
     )
 }
 

@@ -27,6 +27,7 @@
     margin-top: auto;
     background: rgba(196, 196, 196, 0.3);
     padding: 10px;
+    border-radius: 12px;
 }
 
 .registerForm {

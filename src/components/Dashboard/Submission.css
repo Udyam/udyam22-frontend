@@ -3,10 +3,12 @@
     height: 100%;
     display: flex;
     justify-content: center;
+    background-color: rgba(196, 196, 196, 0.3);
+    border-radius: 12px;
     /* flex-direction: column; */
 }
 
-.registerHeader {
+.submissionHeader {
     font-family: Quantico;
     font-style: normal;
     font-weight: bold;
@@ -17,7 +19,7 @@
     color: rgba(144, 224, 239, 0.75);
 }
 
-.registerContainer {
+.submissionContainer {
     width: 100%;
     height: 90%;
     display: flex;
@@ -27,9 +29,10 @@
     margin-top: auto;
     background: rgba(196, 196, 196, 0.3);
     padding: 10px;
+    border-radius: 12px;
 }
 
-.registerForm {
+.submissionForm {
     width: 70%;
     height: 90%;
     display: flex;
