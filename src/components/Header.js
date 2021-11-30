@@ -77,20 +77,6 @@ const Header = () => {
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink href="/noticeboard">
-                                        <div
-                                            className="px-4"
-                                            style={{
-                                                fontWeight: 'lighter',
-                                                fontSize: '2em',
-                                                color: '#CAF0F8',
-                                            }}
-                                        >
-                                            Noticeboard
-                                        </div>
-                                    </NavLink>
-                                </NavItem>
-                                <NavItem>
                                     <NavLink href="#">
                                         <div
                                             className="px-4"

@@ -6,16 +6,30 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import { Routes } from './routes'
 
 function App() {
+    let bgImage = ['/dashboard', '/noticeboard'].includes(
+        window.location.pathname
+    )
+        ? {
+              backgroundImage: 'url(./images/backgroundAlt.png)',
+          }
+        : {
+              backgroundImage: 'url(./images/background.png)',
+          }
+
+    let bgProperties = {
+        height: 'auto',
+        backgroundSize: 'cover',
+        backgroundAttachment: 'fixed',
+    }
+
+    let style = {
+        ...bgImage,
+        ...bgProperties,
+    }
+
     return (
         <div>
-            <div
-                style={{
-                    backgroundImage: 'url(./images/background.png)',
-                    height: 'auto',
-                    backgroundSize: 'cover',
-                    backgroundAttachment: 'fixed',
-                }}
-            >
+            <div style={style}>
                 <div
                     style={{
                         minHeight: '100vh',
@@ -25,11 +39,21 @@ function App() {
                     }}
                 >
                     <Router>
-                        <Header />
+                        {window.location.pathname === '/dashboard' ? (
+                            ''
+                        ) : (
+                            <Header />
+                        )}
                         <Routes />
                     </Router>
 
-                    <Footer />
+                    {['/dashboard', '/noticeboard'].includes(
+                        window.location.pathname
+                    ) ? (
+                        ''
+                    ) : (
+                        <Footer />
+                    )}
                 </div>
             </div>
         </div>

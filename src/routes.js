@@ -35,7 +35,7 @@ const Routes = () => {
                     <Team />
                 </Tabs>
             </Route>
-            <Route path = "/noticeboard">
+            <Route path="/noticeboard">
                 <NoticeBoard />
             </Route>
         </div>
