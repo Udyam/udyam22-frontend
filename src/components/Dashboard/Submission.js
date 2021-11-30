@@ -16,28 +16,26 @@ const Submission = () => {
     //     setInput(newInput)
     // }
     return (
-            <div className="submissionContainer">
+        <div className="submissionContainer">
+            {/* <div className="submissionForm"> */}
+            {/* <h1>Form</h1> */}
 
-                {/* <div className="submissionForm"> */}
-                    {/* <h1>Form</h1> */}
-                
-                    <div className="submissionForm">
-                        {/* <h1 id="contact-form-head"> Contact us </h1> */}
+            <div className="submissionForm">
+                {/* <h1 id="contact-form-head"> Contact us </h1> */}
 
-
-                    <Form className="form">
-                        {/* <FormSelect aria-label="Default select example">
+                <Form className="form">
+                    {/* <FormSelect aria-label="Default select example">
                                 <option>Open this select menu</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
                             </FormSelect> */}
 
-                        {/* <FormGroup>
+                    {/* <FormGroup>
                                 <i className="fas fa-graduation-cap"></i>
                             </FormGroup> */}
 
-                        {/* <FormGroup style={{width: '100%'}}>
+                    {/* <FormGroup style={{width: '100%'}}>
 
                                 <Dropdown className="dropdown" isOpen="true">
                                     <DropdownToggle className="toggle" caret>
@@ -57,63 +55,59 @@ const Submission = () => {
                                 </Dropdown>
                             </FormGroup> */}
 
-                        <FormGroup>
-                            {/* <Input type="select" name="select" id="exampleSelect" placeholder="EVENT"> */}
-                            <select
-                                name="EVENT"
-                                id="id_event"
-                                className="dropdown"
-                            >
-                                <option>EVENT</option>
-                                <option>MOSAIC</option>
-                                <option>SPYBITS</option>
-                                <option>I-CHIP</option>
-                                <option>COMMNET</option>
-                                <option>CONTINNUM</option>
-                                <option>DIGISM</option>
-                                <option>XIOTA</option>
-                                <option>CASSANDRA</option>
-                                <option>FUNCKIT</option>
-                            </select>
-                            {/* </Input> */}
-                        </FormGroup>
+                    <FormGroup>
+                        {/* <Input type="select" name="select" id="exampleSelect" placeholder="EVENT"> */}
+                        <select name="EVENT" id="id_event" className="dropdown">
+                            <option>EVENT</option>
+                            <option>MOSAIC</option>
+                            <option>SPYBITS</option>
+                            <option>I-CHIP</option>
+                            <option>COMMNET</option>
+                            <option>CONTINNUM</option>
+                            <option>DIGISM</option>
+                            <option>XIOTA</option>
+                            <option>CASSANDRA</option>
+                            <option>FUNCKIT</option>
+                        </select>
+                        {/* </Input> */}
+                    </FormGroup>
 
-                        <FormGroup>
-                            <Input
-                                type="text"
-                                name="teamname"
-                                placeholder="TEAM NAME"
-                                className="team"
-                                required
-                            />
-                        </FormGroup>
+                    <FormGroup>
+                        <Input
+                            type="text"
+                            name="teamname"
+                            placeholder="TEAM NAME"
+                            className="team"
+                            required
+                        />
+                    </FormGroup>
 
-                        <FormGroup>
-                            <Input
-                                type="text"
-                                name="github"
-                                placeholder="GITHUB LINK"
-                                className="git"
-                                required
-                            />
-                        </FormGroup>
+                    <FormGroup>
+                        <Input
+                            type="text"
+                            name="github"
+                            placeholder="GITHUB LINK"
+                            className="git"
+                            required
+                        />
+                    </FormGroup>
 
-                        {/* <FormGroup>
+                    {/* <FormGroup>
                                 <Input type="select" name="select" id="exampleSelect">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
                                 </Input>
                             </FormGroup> */}
-                    </Form>
-                </div>
-
-                <div className="buttonContainer">
-                    <button className="button">Submit</button>
-                </div>
-
-                {/* </div> */}
+                </Form>
             </div>
+
+            <div className="buttonContainer">
+                <button className="button">Submit</button>
+            </div>
+
+            {/* </div> */}
+        </div>
     )
 }
 
