@@ -24,6 +24,12 @@ const Profile = () => {
             <Link to="#" className="editLink">
                 <h4>Edit</h4>
             </Link>
+            <div className="displayPictureContainer">
+                <img className="displayPicture" src="./icon/dummy.png" />
+                <Link to="#">
+                    <img className="editIcon" src="./icon/edit.png" />
+                </Link>
+            </div>
         </div>
     )
 }
