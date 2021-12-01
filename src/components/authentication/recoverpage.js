@@ -15,15 +15,15 @@ export default function RecoverForm () {
         }
         toast.warn("Kindly wait!!",{position: toast.POSITION.BOTTOM_RIGHT})
         axios
-            .post('http://127.0.0.1:8000/'+ "auth/login/",{
+            .post('https://udyam22-backend.herokuapp.com/'+ "auth/password_reset/email/",{
+                email: Email
                 
             })
-            .then(({ data, status }) => {
+            .then((response) => {
                 toast.info("Great!! Please check your email for the link through which you can reset your password.",{position: toast.POSITION.BOTTOM_RIGHT})
                
-            
             })
-            .catch((err) => {
+            .catch(function(err)  {
                 console.log(err);
                 toast.error("Some error occurred!! Make sure you registered with the same email-id.",{position: toast.POSITION.BOTTOM_RIGHT})
             });
@@ -34,7 +34,7 @@ export default function RecoverForm () {
         <div className='wholepage' >
         <div className='logocircle1' >
             <img
-                            src="../images/udyamLogo.png"
+                            src="../images/photo_2021-11-27_18-13-10.png"
                             className="Udyamlogo1"
                             alt="Udyam"
                         />

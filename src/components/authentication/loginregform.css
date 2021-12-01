@@ -1,6 +1,24 @@
 * {
   box-sizing: border-box;
 }
+#photo{
+  height:80%;
+  width: 80%;
+  border-radius: 50%;
+
+}
+
+.profile-pic-div{
+    height: 110px;
+    width: 110px;
+    position: relative;
+    margin-left: 43%;
+    top: 9%;
+    margin-bottom: -10%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    margin-bottom: 2%;
+}
 
 h1 {
 
@@ -138,11 +156,8 @@ select{
   background-color:rgba(2, 32, 73, 1);
   opacity: 0.3;
   color: rgba(202, 240, 248, 1);
-  width: 270px;
   border: none;
   border-radius: 30px;
-  width: 100%;
-  text-align: center;
   height: 40px;
 
 }
@@ -152,6 +167,8 @@ select option{
 }
 select.up{
   margin: 5px;
+  width: 250px;
+  text-align: center;
 }
 h2.mobile-part{
   display: none;
@@ -180,7 +197,7 @@ h2.mobile-part{
 }
 .fp{
   margin-top: -1%;
-margin-left: 50%;
+  margin-left: 50%;
   color: #caf0f8;
   text-decoration: none;
 }
@@ -193,7 +210,8 @@ margin-left: 50%;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.2) 48.44%, rgba(255, 255, 255, 0.15) 100%);
   border-radius: 10px;
   margin-left: 15%;
-  margin-top: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   position: relative;
   width:70%;
   height: 98%;
@@ -208,7 +226,7 @@ margin-left: 50%;
   align-items: center;
   position: relative;
   overflow: hidden;
-  width: 70%;
+  width: 100.3%;
   min-height: 550px;
 }
 .forgot{
@@ -301,7 +319,7 @@ margin-left: 50%;
 }
 
 .container.right-panel-active .overlay-container {
-  transform: translateX(-104%);
+  transform: translateX(-105%);
 
 }
 .new{
@@ -376,7 +394,7 @@ min-height: 600px;
 top: 15%;
 }
 .container{
-width: 80%;
+width: 99%;
 /* display: flex; */
 height: 100%;
 overflow:hidden;
@@ -406,7 +424,7 @@ z-index: 2;
 width: 100%;
 height: 50%;
 bottom: 0;
-top: 55%;
+top: 57%;
 overflow: visible;
 left: -1%;
 margin-right: 15px;
@@ -526,6 +544,6 @@ transform: translateX(0);
 .container.right-panel-active .overlay-container {
   
 transform: translateX(0);
-transform: translateY(-104%);
+transform: translateY(-97%);
 }
 }

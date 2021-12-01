@@ -6,9 +6,17 @@ import './resetpage.css'
 toast.configure()
 /* eslint-disable */
 export default function ResetForm () {
-    const [recover_password, setrecover_password] = useState('')
-    const [confirmrecover_password, setconfirmrecover_password] = useState('')
+    const [recover_password, setrecover_password] = useState('');
+    const [confirmrecover_password, setconfirmrecover_password] = useState('');
+    
     const reset_through_email = (e) => {
+        console.log(window.location.search);
+        const params = new URLSearchParams(window.location.search);
+        console.log(params.get('token'));
+        console.log(params.get('uidb64'));
+        const tokenget = params.get('token');
+        const uidbget = params.get('uidb64');
+        
         e.preventDefault()
         if (recover_password!==confirmrecover_password) {
             toast.warn("Passwords do not match",{position: toast.POSITION.BOTTOM_RIGHT})
@@ -21,15 +29,18 @@ export default function ResetForm () {
         }
         toast.warn("Kindly wait!!",{position: toast.POSITION.BOTTOM_RIGHT})
         axios
-            .post('http://127.0.0.1:8000/'+ "auth/login/",{
-                
+            .patch('https://udyam22-backend.herokuapp.com/'+ "auth/password_reset/update_password/",{
+                password: recover_password,
+                token: tokenget,
+                uidb64: uidbget
+                 
             })
-            .then(({ data, status }) => {
-                toast.success("Great!! Your Password has been changed .",{position: toast.POSITION.BOTTOM_RIGHT})
+            .then((response) =>  {
+                console.log(response.data);
+                toast.success("Great!! Your Password has been changed .",{position: toast.POSITION.BOTTOM_RIGHT})       
                
-            
             })
-            .catch((err) => {
+            .catch(function(err)  {
                 console.log(err);
                 toast.error("Some error occurred!! Don't worry we will change your password",{position: toast.POSITION.BOTTOM_RIGHT})
             });
@@ -40,10 +51,10 @@ export default function ResetForm () {
         <div className='wholepage' >
             <div className='logocircle' >
                 <img
-                                src="../images/udyamLogo.png"
-                                className="Udyamlogo"
-                                alt="Udyam"
-                            />
+                               src="../images/photo_2021-11-27_18-13-10.png"
+                               className="Udyamlogo"
+                               alt="Udyam"
+                               />
                 </div>
                 
             <div  className="reset-form-container">

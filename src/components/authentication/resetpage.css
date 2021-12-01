@@ -5,13 +5,13 @@
     ;text-align: center;
     opacity: 1; /* Firefox */
   }
-  
+
   :-ms-input-placeholder { /* Internet Explorer 10-11 */
     color:rgba(202, 240, 248, 1);
     ;opacity: 1;
     text-align: center;
   }
-  
+
   ::-ms-input-placeholder { /* Microsoft Edge */
     color: rgba(202, 240, 248, 1);
     ;opacity: 1;
@@ -19,20 +19,15 @@
   }
   .Udyamlogo{
     position: relative;
-    margin-top: 45px;
+    margin-top: 1%;
     margin-left: 15px;
-    height: 64px;
+    height: 60%;
+    width: 60%;
   }
   .logocircle{
     position: absolute;
-    width: 150px;
-    height: 150px;
     margin-top: -4.5%;
     left: 45%;
-    border-radius: 50%;
-    background: #293B53;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border: 2px solid #90E0EF;
     z-index: 2;
   }
 
@@ -44,14 +39,10 @@
     padding: 9% 7% 0% 7%;
     margin-left: 15%;
     width: 70%;
-    height: 550px;
-    justify-content: center;
-  text-align: center;
-  align-items: center;
   margin-top:7%;
   margin-bottom:7%;
   z-index: 1;
-
+  
 }
 input.reset{
     outline: none;
@@ -61,10 +52,10 @@ input.reset{
     margin-bottom: 25px;
     background: rgba(235, 230, 230, 0.5);
     opacity: 1;
+    border-color: transparent;
     color:#90E0EF ;
     text-align: center;
     font-size: 1.4em;
-
 }
 
 .reset-form-head {
@@ -72,8 +63,10 @@ input.reset{
     font-style: normal;
     font-weight: bold;
     text-align: center;
-    font-size: 2.0em;
+    font-size: 2.5em;
     color: #90e0ef;
+      margin-top: 5%;
+
 }
 .reset-form-title {
     font-family: Raleway;
@@ -82,6 +75,7 @@ input.reset{
     text-align: center;
     color: #90e0ef;
     font-size: 1.4em;
+    margin-bottom: 20px;
 }
 
 
@@ -96,53 +90,135 @@ input.reset{
     color: #90e0ef;
     margin-bottom: 120px;
 }
+@media (max-width:1250px) {
+  .reset-form-head {
+    margin-top: 10%;
+  }
+  .logocircle{
+    left: 42.5%;
+  }
+}
+@media (max-width:1100px) {
 
-@media only screen and (min-width: 767px) and (max-width: 992px) {
-    #recover-form-wrapper {
-        width: 80%;
-    }
-    .recover-form-feedback {
-        font-size: 0.9em;
-    }
+.reset-form-head {
+  margin-top: 90px;
+}
+.reset-form-container {
+
+  margin-top: 100px;
+  margin-bottom: 20%;
+  margin-left: 15%;
 }
 
-@media (max-width: 767px) {
-    #reset-form-wrapper {
-        width: 88%;
+    .logocircle{
+
+      margin-top: -7%;
+      left: 42%;
     }
-    #reset-form-container {
-        backdrop-filter: blur(10px);
-        border-radius: 10px;
-        border: 0.15em solid rgba(255, 255, 255, 0.521);
+    input.reset{
+      width: 100%;
+      min-width: 300px;
     }
 
-    .reset-form-fields {
-        border-bottom: 1px solid white;
-    }
 
-    .reset-form-fields,
-    .reset-form-fields:hover,
-    .reset-form-fields:focus,
-    .reset-form-fields:active,
-    .reset-form-fields::placeholder {
-       
-        font-size: 1rem;
-        text-align: left;
+}
+@media (max-width:850px) {
+    .logocircle{
+      left: 40%;
     }
-    #reset-form-head {
-        font-size: 2em;
-    }
-    #main-reset-form {
-        width: 90%;
-    }
-    #reset-form-button-wrapper {
-        margin-top: 9%;
-        margin-bottom: 1%;
-    }
-    #reset-form-button {
-        border: 3px solid #90e0ef;
-    }
-    .reset-form-feedback {
-        font-size: 0.8em;
-    }
+  }
+@media (max-width:767px) {
+  .logocircle{
+    margin-top: -9%;
+}
+.Udyamlogo{
+  height: 57%;
+  width: 57%;
+}
+input.reset{
+  width: 100%;
+  min-width: 300px;
+  height: 40px;
+}
+.reset-form-head {
+  margin-top: 100px;
+  word-spacing: 100em;
+}
+  .reset-form-container {
+    min-height: 500px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .reset-form-title{
+
+      font-size: 1.3em;
+      margin-top: -8%;
+  }
+}
+@media (max-width:700px) {
+.logocircle{
+  left: 39%;
+}
+}
+@media (max-width:557px) {
+input.reset{
+  width: 80%;
+  min-width: 270px;
+}
+  .reset-form-container {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+  .logocircle{
+    left: 36%;
+  margin-top: -12%;
+}
+}
+@media (max-width:450px){
+  .logocircle{
+    left: 32%;
+    margin-top: -15%;
+  }
+  .reset-form-title{
+    font-size: 1em;
+  }
+  input.reset{
+    min-width: 250px;
+  }
+}
+@media (max-width:380px){
+  input.reset{
+    min-width: 200px;
+  }
+  .logocircle{
+    left: 30%;
+}
+
+}
+@media (max-width:330px){
+  .logocircle{
+    left: 26%;
+  }
+  .reset-form-title{
+    font-size: 1em;
+  }
+}
+@media (max-width:321px){
+  .reset-form-title{
+    font-size: 0.8em;
+  }
+  .reset-form-head {
+    font-size: 1.8em;
+  }
+  .logocircle{
+    left: 26%;
+  }
+}
+@media (max-width:281px){
+  .logocircle{
+    left: 22%;
+    margin-top: -22%;
+  }
 }

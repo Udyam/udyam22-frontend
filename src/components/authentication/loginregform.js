@@ -3,46 +3,41 @@ import axios from '../../utils/axios'
 import "./loginregform.css";
 import {toast} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
-
+import { useAuthContext } from './Context/AuthContext';
 import validator from 'validator';
-import { BrowserRouter as Router, Link } from 'react-router-dom'
-import { useCookies } from 'react-cookie'
-
-
+import {  Link } from 'react-router-dom'
 /* eslint-disable */
 toast.configure()
 
 export default function RegisterForm() {
-  const [cookies, setCookies, removeCookies] = useCookies(['auth'])
-  const [token, setTokenState ] = useState(cookies.token);  
-  const setToken = (newToken) => {
-    console.log(newToken);
-    setCookies('token', newToken, { path: '/' })
-    setTokenState(newToken);
-  }
-
-
-  
-  const [user_name, setuser_name] = useState("");
+ 
+  const [user_email, setuser_email] = useState("");
   const [user_pass, setuser_pass] = useState("");
+  const {setToken , setData} = useAuthContext();
+
   const userlogin = (e) => {
     e.preventDefault()
-    if (user_name == "" || user_pass == "") {
+    if (user_email == "" || user_pass == "") {
         toast.warn("Please fill the empty fields.",{position: toast.POSITION.BOTTOM_RIGHT})
         return;
     }
-    setuser_name(user_name.trim());
+    setuser_email(user_email.trim());
     toast.info("Checking credentials...",{position: toast.POSITION.BOTTOM_RIGHT})
     axios
-        .post('http://127.0.0.1:8000/'+ "auth/login/",{
-            email_or_username: user_name,
+        .post('http://localhost:8080/https://udyam22-backend.herokuapp.com/'+ "auth/login/",{
+            email: user_email,
             password: user_pass
         })
-        .then(({ data, status }) => {
+        .then(( response) => {
             toast.success("Successfully logged in!!",{position: toast.POSITION.BOTTOM_RIGHT})
-            localStorage.setItem("token", data.token);
-            console.log(data.token);
-            setToken(data.token);
+           {
+             console.log(response)
+              console.log(response.data)
+              console.log(response.data.data)
+              console.log(response.data.token)
+              setData(response.data.data);
+              setToken(response.data.token);
+          }
         })
         .catch((err) => {
             console.log(err);
@@ -50,55 +45,25 @@ export default function RegisterForm() {
         });
       }
 
-  /*const usernameRef = useRef(null);
-  const passwordRef = useRef(null);
-
-  const login = () => {
-  const user_name = usernameRef.current.value;
-  const pass_word = passwordRef.current.value;
-
-  if (user_name && pass_word) {
-    toast.warning('Please wait...',{position: toast.POSITION.BOTTOM_RIGHT})
-    const data  = {
-      username:user_name,
-      password:pass_word
-    }
-    axios
-    .post(API_BASE_URL + "auth/login/",{
-      username: user_name,
-      password: pass_word
-    })
-    .then(({data, status}) => {
-      toast.success("Successfully logged in!",{position: toast.POSITION.BOTTOM_RIGHT})
-      localStorage.setItem("token", data.token);
-      login_now(data.token);
-    })
-    .catch(err => {
-      toast.error("Cannot Login! Check credentials.",{position: toast.POSITION.BOTTOM_RIGHT})
-    })
-  } else {
-    toast.error("Username And Password Cannot be Empty.",{position: toast.POSITION.BOTTOM_RIGHT})
-  }
-}*/
-
+  
   const [collegeName, setCollegeName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const [username, setUsername] = useState('')
-  const [phone, setPhone] = useState('')
+  const [Name, setName] = useState('')
+  const [referalcode, setReferalcode] = useState('')
   const [confirmpassword, setConfirmpassword] = useState('')
   const [year, setYear] = useState('')
-  const [gender, setGender] = useState('')
+  const [image, setImage] = useState('../images/Group2471.png')
+  
+ 
   
   const registerFieldsAreValid = (
     
     username,
     collegeName,
     email,
-    phone,
     password,
     confirmpassword,
-    gender,
     year
   ) => {
     if (
@@ -107,9 +72,8 @@ export default function RegisterForm() {
       username === '' ||
       password === ''  ||
       confirmpassword === '' ||
-      year=== ''  ||
-      phone=== ''  ||
-      gender===  '' 
+      year=== '' 
+     
     ) {
       toast.warn('Please fill the empty fields.',{position: toast.POSITION.BOTTOM_RIGHT})
         return false
@@ -118,52 +82,55 @@ export default function RegisterForm() {
     toast.warn('Please enter your email correctly',{position: toast.POSITION.BOTTOM_RIGHT})
       return false
   }
-  if (!validator.isMobilePhone(phone)) {
-    toast.warn('Please enter your 10 digit MobileNo. correctly!!',{position: toast.POSITION.BOTTOM_RIGHT})
-    return false
-   }
+  
     if (password !== confirmpassword) {
     toast.warn('Passwords do not match!!',{position: toast.POSITION.BOTTOM_RIGHT})
         return false
     }
-    if(!validator.isStrongPassword(recover_password)){
+    if(!validator.isStrongPassword(password)){
       toast.warn("Please keep your Password strong.",{position: toast.POSITION.BOTTOM_RIGHT})
       toast.info("Strong Passwords have minlength=8,and min(lower case letter,upper case letter,symbol,number)=1 each.",{position: toast.POSITION.BOTTOM_RIGHT})
       return false;
   }
     return true
   }
+  const onImageChange = (event) => {
+    if (event.target.files && event.target.files[0]) {
+      setImage(URL.createObjectURL(event.target.files[0]));
+    }
+   }
 
   const register = (e) => {
     e.preventDefault()
     
 
     if (
-      registerFieldsAreValid(username,collegeName,email,phone,password,confirmpassword,gender,year)
+      registerFieldsAreValid(username,collegeName,email,password,confirmpassword,year)
     ) {
       toast.warning('Please wait...',{position: toast.POSITION.BOTTOM_RIGHT})
       
       const dataForApiRequest = {
-        first_name: username,
-        last_name: username,
-        username: username,
+        name: username,
         email: email,
         college_name: collegeName,
         password: password,
-        mobile: phone,
-        gender: gender,
         year: year,
-        referral_code: " "
+        referral_code: referalcode
       }
       console.log(dataForApiRequest)
-      axios.post('http://127.0.0.1:8000/'+ 'auth/register/',
+      axios.post('http://localhost:8080/https://udyam22-backend.herokuapp.com/'+ 'auth/register/',
         dataForApiRequest,
       )
-        .then(function ({ data, status }) {
+        .then((response) => {
           toast.success('Registered Successfully!!' ,{position: toast.POSITION.BOTTOM_RIGHT})
           toast.info('Please check your email for the verification link!!' ,{position: toast.POSITION.BOTTOM_RIGHT})
-          localStorage.setItem("token", data.token);
-          setToken(data.token)
+          {
+            console.log(response.data)
+            console.log(response.data.data)
+            console.log(response.data.token)
+            setData(response.data.data);
+            setToken(response.data.token);
+        }
           
         })
         .catch(function (err) {
@@ -174,6 +141,7 @@ export default function RegisterForm() {
   }
   const [addclass, setaddclass] = useState("");
 return (
+  
   <div className="final">
   <div className={`container ${addclass}`} id="container">
   <div className="pscrt">
@@ -183,11 +151,11 @@ return (
         <h1>SIGN IN</h1>
         <input
         type="text" className="in nputin"
-        name="iUsername"
-        id="iUsername"
-        placeholder="Username"
-        value={user_name}
-        onChange={(e)=>{setuser_name(e.target.value)}}
+        name="iUseremail"
+        id="iUseremail"
+        placeholder="Email"
+        value={user_email}
+        onChange={(e)=>{setuser_email(e.target.value)}}
       />
       <input
        type="password" className="in nputin"
@@ -197,11 +165,11 @@ return (
        value={user_pass}
        onChange={(e)=>{setuser_pass(e.target.value)}}
      />
-     <Router>
+    
       <Link to="/recoverpage" className="fp">
          Forgot Password
       </Link>
-      </Router>
+    
       <button
       type="submit"
       className="ghost"
@@ -221,7 +189,7 @@ return (
          >
            SIGN IN
          </button>
-         <h2 className="mobile-part">Already have an account ?<h3 className="mobile-part-signIn"  onClick={() => setaddclass("")}>Sign-In here</h3></h2>
+         <h2 className="mobile-part">Already have an account ?<br/><h3 className="mobile-part-signIn"  onClick={() => setaddclass("")}>Sign-In here</h3></h2>
       </div> 
      </div>
     
@@ -231,15 +199,18 @@ return (
        <div className="overlay-panel overlay-left">
         
        <form>
-     <h1 className="h12">SIGN UP</h1>
+       <div class="profile-pic-div">
+      <img src={image}  id="photo" />
+       <input type="file" id="dp-file" onChange={onImageChange} />
+      </div>
           <input
           className='up'
             type='text' 
             name='inputUsername'
             id='inputUsername'
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            placeholder='Username'
+            value={Name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder='Name'
             
           />
           <input
@@ -273,26 +244,6 @@ return (
           <option value='FOUR'>Fourth Year</option></select>
           
           <input
-          className='up'
-            type='text'
-            name='inputMobileno'
-            id='inputMobileno'
-            placeholder='Mobile No.'
-            value={phone}
-            onChange={(e) =>setPhone(e.target.value)}
-             />
-          <select 
-          className='up'
-            name="inputGender" 
-            id="inputGender"
-            value={gender}
-            onChange={(e) => setGender(e.target.value)} >
-          <option value=''>Select Gender</option>
-          <option value='F'>Female</option>
-          <option value='M'>Male</option>
-          <option value='O'>better not say</option></select>
-          
-          <input
             className='up'
             type='password'
             name='inputPassword'
@@ -309,6 +260,15 @@ return (
             value={confirmpassword}
             onChange={(e) => setConfirmpassword(e.target.value)}
             placeholder='Password'
+          />  
+          <input
+            className='up'
+            type='text'
+            name='referalcode'
+            id='referalcode'
+            value={referalcode}
+            onChange={(e) => setReferalcode(e.target.value)}
+            placeholder='Referal code (Optional)'
           />  
           <button
             type='submit'
@@ -336,6 +296,7 @@ return (
     </div>
    </div> 
 </div>
+
 );
 }
 /* eslint-enable */ 
