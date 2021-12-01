@@ -1,19 +1,25 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import './Workshops.css'
 
 const Workshops = () => {
     return (
-        <div
-            style={{
-                display: 'flex',
-                backgroundColor: '#C4C4C430',
-                height: '25vh',
-                marginTop: '15px',
-                marginLeft: 'auto',
-                marginRight: 'auto',
-                borderRadius: '12px',
-            }}
-        >
-            <h3>Workshops</h3>
+        <div className="workshopsContainer">
+            <h3 style={{ fontWeight: 'normal', marginTop: '20px' }}>
+                UPCOMING WORKSHOPS
+            </h3>
+            <h4 style={{ marginTop: '20px', color: '#CAF0F8' }}>
+                To watch the previous workshops{' '}
+                <Link to="#" className="wsLink">
+                    click here
+                </Link>
+            </h4>
+            <div className="py-2 details">
+                <h4>Workshop</h4>
+                <h4>Schedule</h4>
+                <h4>Time</h4>
+                <h4>Join here</h4>
+            </div>
         </div>
     )
 }
