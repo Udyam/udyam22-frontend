@@ -1,11 +1,21 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
 import { Card } from 'reactstrap'
 import styles from './NoticeBoard.module.css'
-import NOTIFS from './dummyNotifs.json'
 import Notif from './Notif/Notif'
 import SearchBox from './SearchBox/SearchBox'
 
 const Noticeboard = () => {
+    const [NOTIFS, setNOTIFS] = useState([])
+
+    useEffect(() => {
+        axios
+            .get('https://udyam22-backend.herokuapp.com/API/get_all_notice/')
+            .then((response) => {
+                setNOTIFS(response)
+            })
+    }, [])
+
     const [filteredNotifs, setFilteredNotifs] = useState(NOTIFS)
     const filterNotifs = (query) => {
         setFilteredNotifs(
