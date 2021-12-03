@@ -14,6 +14,7 @@ const Noticeboard = () => {
             .then((response) => {
                 setNOTIFS(response)
             })
+            .catch((err) => console.log(err))
     }, [])
 
     const [filteredNotifs, setFilteredNotifs] = useState(NOTIFS)
@@ -22,7 +23,9 @@ const Noticeboard = () => {
             NOTIFS.filter((notif) => {
                 if (
                     query === '' ||
-                    notif.notif.toLowerCase().includes(query.toLowerCase())
+                    notif.description
+                        .toLowerCase()
+                        .includes(query.toLowerCase())
                 )
                     return notif
             })
@@ -33,12 +36,12 @@ const Noticeboard = () => {
         <Card body className={styles.outer_container}>
             <SearchBox filterNotifs={filterNotifs}> </SearchBox>
             <Card body className={styles.scroll_container}>
-                {filteredNotifs.map((notif, ind) => {
+                {filteredNotifs.map((notif) => {
                     return (
                         <Notif
-                            text={notif.notif}
+                            text={notif.description}
                             date={notif.date}
-                            key={ind}
+                            key={notif.id}
                         ></Notif>
                     )
                 })}
