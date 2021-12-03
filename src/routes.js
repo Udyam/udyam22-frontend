@@ -38,6 +38,7 @@ const Routes = () => {
             </Route>
             <Route path="/noticeboard">
                 <NoticeBoard />
+            </Route>
             <Route exact path="/dashboard">
                 <Dashboard id="panela" />
             </Route>
