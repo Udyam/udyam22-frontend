@@ -5,5 +5,5 @@ const history = useHistory();
 console.log(token);
 if(token)
 {
-    history.push("/");
+    history.push("/dashboard");
 } 

@@ -25,7 +25,7 @@ export default function RegisterForm() {
     setuser_email(user_email.trim());
     toast.info("Checking credentials...",{position: toast.POSITION.BOTTOM_RIGHT})
     axios
-        .post('http://127.0.0.1:8000/'+ "auth/login/",{
+        .post('https://udyam22-backend.herokuapp.com/'+ "auth/login/",{
             email_or_username: user_email,
             password: user_pass
         })
@@ -120,7 +120,7 @@ export default function RegisterForm() {
         referral_code: referalcode
       }
       console.log(dataForApiRequest)
-      axios.post('http://localhost:8080/https://udyam22-backend.herokuapp.com/'+ 'auth/register/',
+      axios.post('https://udyam22-backend.herokuapp.com/'+ 'auth/register/',
         dataForApiRequest,
       )
         .then((response) => {

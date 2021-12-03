@@ -14,8 +14,8 @@ export default function ResetForm () {
 
     const reset_through_email = (e) => {
         console.log(window.location.search);
-        console.log(useLocation.search);
-        const params = new URLSearchParams(useLocation.search);
+        console.log(useLocation().search);
+        const params = new URLSearchParams(useLocation().search);
         console.log(params.get('token'));
         console.log(params.get('id'));
         const tokenget = params.get('token');
@@ -33,7 +33,7 @@ export default function ResetForm () {
         }
         toast.warn("Kindly wait!!",{position: toast.POSITION.BOTTOM_RIGHT})
         axios
-            .patch(''+ "auth/password_reset/update_password/",{
+            .patch('https://udyam22-backend.herokuapp.com/'+ "auth/password_reset/update_password/",{
                 password: recover_password,
                 token: tokenget,
                 uidb64: uidbget

@@ -16,7 +16,7 @@ export default function RecoverForm () {
         }
         toast.warn("Kindly wait!!",{position: toast.POSITION.BOTTOM_RIGHT})
         axios
-            .post(''+ "auth/password_reset/email/",{
+            .post('https://udyam22-backend.herokuapp.com/'+ "auth/password_reset/email/",{
                 email: Email
                 
             })

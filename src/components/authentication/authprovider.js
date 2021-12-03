@@ -9,6 +9,7 @@ export const AuthProvider = ({ children }) => {
     const setToken = (newToken) => {
       setCookies('token', newToken, { path: '/' })
       setTokenState(newToken);
+      history.push("/dashboard");
       
     }
     const deleteToken = () => {
