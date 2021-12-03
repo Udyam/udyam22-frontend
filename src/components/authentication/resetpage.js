@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import {toast} from 'react-toastify'
 import validator from 'validator';
+import { useLocation } from 'react-router-dom'
 import './resetpage.css'
 
 toast.configure()
@@ -11,7 +12,8 @@ export default function ResetForm () {
     
     const reset_through_email = (e) => {
         console.log(window.location.search);
-        const params = new URLSearchParams(window.location.search);
+        console.log(useLocation.search);
+        const params = new URLSearchParams(useLocation.search);
         console.log(params.get('token'));
         console.log(params.get('uidb64'));
         const tokenget = params.get('token');

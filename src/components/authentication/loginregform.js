@@ -13,7 +13,8 @@ export default function RegisterForm() {
  
   const [user_email, setuser_email] = useState("");
   const [user_pass, setuser_pass] = useState("");
-  const {setToken , setData} = useAuthContext();
+ /* const {setToken , setData} = useAuthContext();*/
+  const { setToken} = useAuthContext();
 
   const userlogin = (e) => {
     e.preventDefault()
@@ -24,8 +25,8 @@ export default function RegisterForm() {
     setuser_email(user_email.trim());
     toast.info("Checking credentials...",{position: toast.POSITION.BOTTOM_RIGHT})
     axios
-        .post('http://localhost:8080/https://udyam22-backend.herokuapp.com/'+ "auth/login/",{
-            email: user_email,
+        .post('http://127.0.0.1:8000/'+ "auth/login/",{
+            email_or_username: user_email,
             password: user_pass
         })
         .then(( response) => {
@@ -35,7 +36,8 @@ export default function RegisterForm() {
               console.log(response.data)
               console.log(response.data.data)
               console.log(response.data.token)
-              setData(response.data.data);
+             /* setData(response.data.data);
+              setToken(response.data.token);*/
               setToken(response.data.token);
           }
         })
@@ -46,14 +48,14 @@ export default function RegisterForm() {
       }
 
   
-  const [collegeName, setCollegeName] = useState('')
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-  const [Name, setName] = useState('')
-  const [referalcode, setReferalcode] = useState('')
-  const [confirmpassword, setConfirmpassword] = useState('')
-  const [year, setYear] = useState('')
-  const [image, setImage] = useState('../images/Group2471.png')
+  const [collegeName, setCollegeName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [Name, setName] = useState('');
+  const [referalcode, setReferalcode] = useState('');
+  const [confirmpassword, setConfirmpassword] = useState('');
+  const [year, setYear] = useState('');
+  const [image, setImage] = useState('../images/Group2471.png');
   
  
   
@@ -128,7 +130,8 @@ export default function RegisterForm() {
             console.log(response.data)
             console.log(response.data.data)
             console.log(response.data.token)
-            setData(response.data.data);
+            /*setData(response.data.data);
+            setToken(response.data.token);*/
             setToken(response.data.token);
         }
           
@@ -202,6 +205,7 @@ return (
        <div class="profile-pic-div">
       <img src={image}  id="photo" />
        <input type="file" id="dp-file" onChange={onImageChange} />
+       <h6>ProfilePic(Optional)</h6>
       </div>
           <input
           className='up'

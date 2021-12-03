@@ -5,7 +5,7 @@ import './recoverpage.css'
 toast.configure()
 /* eslint-disable */
 export default function RecoverForm () {
-    const [recover_email, setrecover_email] = useState('')
+    const [recover_email, setrecover_email] = useState('');
   
     const recover_through_email = (e) => {
         e.preventDefault()
