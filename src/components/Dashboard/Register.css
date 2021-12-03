@@ -90,3 +90,71 @@
 }
 
 /* .dropdown select {} */
+
+@media only screen and (max-width: 600px) {
+    .registerContainer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: auto;
+        background-color: #c4c4c430;
+        padding: 10px;
+        border-radius: 12px;
+    }
+
+    .registerForm {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+
+    .form {
+        width: 100%;
+        height: 100%;
+    }
+
+    .buttonContainer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .button {
+        background: none;
+        border: 4px solid #90e0ef;
+        border-radius: 40px;
+        padding: 2px 25px;
+        font-size: 1.6rem;
+        font-family: 'Raleway', sans-serif;
+        color: #90e0ef;
+    }
+
+    .team {
+        margin: 9% auto;
+        width: 100%;
+        background: rgba(196, 196, 196, 0.5);
+        border: 1.25px solid #022049;
+        box-sizing: border-box;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        /* color: #1dadca */
+    }
+
+    .team::placeholder {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        color: black;
+    }
+}

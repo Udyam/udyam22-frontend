@@ -3,6 +3,10 @@ import { Form, FormGroup, Input } from 'reactstrap'
 // import isEmail from 'validator/lib/isEmail'
 // import isPhone from 'validator/lib/isMobilePhone'
 import './Register.css'
+// import axios from 'axios'
+
+//api
+//https://udyam22-backend.herokuapp.com/auth/update/
 
 const Register = () => {
     // const [input, setInput] = useState({
@@ -15,6 +19,9 @@ const Register = () => {
     //     newInput[e.target.name] = e.target.value
     //     setInput(newInput)
     // }
+
+
+
     return (
         <div className="registerContainer">
             {/* <div className="registerForm"> */}
