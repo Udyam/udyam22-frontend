@@ -6,11 +6,18 @@ import Register from './Register.js'
 import Teams from './Teams.js'
 import Workshops from './Workshops.js'
 import Submission from './Submission.js'
+import { Link } from 'react-router-dom'
 
 const Dashboard = () => {
     return (
         <div>
             <div className="dashboardContainer">
+                <div className="displayPictureDash">
+                    <img className="displayPicture" src="./icon/dummy.png" />
+                    <Link to="#">
+                        <img className="editIconDash" src="./icon/edit.png" />
+                    </Link>
+                </div>
                 <div className="imageContainer">
                     <img
                         src="./images/udyamLogo.png"
@@ -19,36 +26,56 @@ const Dashboard = () => {
                 </div>
                 <div className="tabs">
                     <Nav className="justify-content-center">
-                        <NavItem>
-                            <NavLink className="tabLinks" href="#profile">
-                                Profile
-                            </NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink className="tabLinks" href="#register">
-                                Register
-                            </NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink className="tabLinks" href="#teams">
-                                Teams
-                            </NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink className="tabLinks" href="#workshops">
-                                Workshops
-                            </NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink className="tabLinks" href="#submission">
-                                Submission
-                            </NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink className="tabLinks" href="#">
-                                Logout
-                            </NavLink>
-                        </NavItem>
+                        <div className="navigation">
+                            <NavItem>
+                                <NavLink className="tabLinks" href="#profile">
+                                    Profile
+                                </NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="tabLinks" href="#register">
+                                    Register
+                                </NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="tabLinks" href="#teams">
+                                    Teams
+                                </NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="tabLinks" href="#workshops">
+                                    Workshops
+                                </NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink
+                                    className="tabLinks"
+                                    href="#submission"
+                                >
+                                    Submission
+                                </NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="tabLinks" href="#">
+                                    Logout
+                                </NavLink>
+                            </NavItem>
+                        </div>
+                        <div className="navigationMobile">
+                            <img
+                                className="navLogo"
+                                src="./images/udyamLogo.png"
+                            />
+                            <NavItem>
+                                <NavLink className="tabLinks" href="#">
+                                    <img
+                                        src="./icon/log-out.png"
+                                        className="logoutIcon"
+                                    />
+                                    logout
+                                </NavLink>
+                            </NavItem>
+                        </div>
                     </Nav>
                 </div>
                 <div className="scrollContainer px-4">

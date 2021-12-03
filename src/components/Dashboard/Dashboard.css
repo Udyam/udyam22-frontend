@@ -57,13 +57,15 @@
     color: #90e0ef;
     width: 86vw;
     height: 61vh;
-    margin: auto;
+    top: 30vh;
+    /* padding-top: 5vh; */
     left: 6vw;
     bottom: 8.5vh;
     overflow: auto;
 }
 
 .scrollContainer li {
+    width: 100%;
     margin-bottom: 36px;
 }
 
@@ -78,7 +80,83 @@
     border-radius: 50px;
 }
 
+.logoutBtn {
+    display: none;
+}
+
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #999999;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigationMobile {
+    display: none;
+}
+
+.navLogo {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 1em;
+}
+
+.displayPictureDash {
+    display: none;
+    position: relative;
+    background-color: #293b53;
+    border: solid 2px #7cdbecd7;
+    border-radius: 100px;
+    position: absolute;
+    height: 10vh;
+    width: 10vh;
+    top: 15.8vh;
+    margin-left: 3vw;
+    text-align: center;
+}
+
+.editIconDash {
+    z-index: 2;
+    height: 2.5vh;
+    position: absolute;
+    top: 6vh;
+    right: 1.3vh;
+}
+
+@media (max-width: 1160px) {
+    .scrollContainer {
+        left: 3%;
+    }
+    .tabs {
+        margin-right: 10px;
+    }
+    .navigation {
+        display: none;
+    }
+    .navigationMobile {
+        display: flex;
+    }
+    .logoutIcon {
+        display: inline;
+        margin-top: auto !important;
+        margin-bottom: auto !important;
+        margin-right: 15px;
+        border: none !important;
+        padding: 0 0 3px 0 !important;
+        height: 1em !important;
+        width: fit-content;
+    }
+    .imageContainer {
+        display: none;
+    }
+    .displayPictureDash {
+        display: block;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
 }

@@ -1,7 +1,6 @@
 .workshopsContainer {
     display: block;
     padding: 0.3em 2em 2em 2em;
-
     background-color: #c4c4c430;
     height: auto;
     margin-top: 15px;
@@ -10,7 +9,7 @@
     border-radius: 12px;
 }
 
-.details {
+.workshopDetails {
     display: flex;
     width: 90%;
     margin-top: 20px;
@@ -20,7 +19,7 @@
     background-color: #c4c4c441;
 }
 
-.details h4 {
+.workshopDetails h4 {
     margin-left: auto;
     margin-right: auto;
     margin-top: 5px;
@@ -33,4 +32,29 @@
 
 .wsLink:hover {
     color: #90e1ef85;
+}
+
+@media (max-width: 660px) {
+    .workshopsContainer h3 {
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .workshopsContainer h4 {
+        text-align: center;
+        font-size: 0.9em;
+    }
+    .workshopDetails {
+        width: 100%;
+    }
+}
+
+@media (max-width: 460px) {
+    .workshopsContainer h3 {
+        text-align: center;
+        font-size: 1.2em;
+    }
+    .workshopsContainer h4 {
+        text-align: center;
+        font-size: 0.6em;
+    }
 }

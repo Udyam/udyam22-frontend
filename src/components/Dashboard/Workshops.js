@@ -14,7 +14,7 @@ const Workshops = () => {
                     click here
                 </Link>
             </h4>
-            <div className="py-2 details">
+            <div className="py-2 workshopDetails">
                 <h4>Workshop</h4>
                 <h4>Schedule</h4>
                 <h4>Time</h4>

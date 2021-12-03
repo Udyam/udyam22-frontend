@@ -8,6 +8,10 @@ const Team = ({ eventName, teamName, members }) => {
     }
     return (
         <div className="teamContainer">
+            <img
+                className="eventImageTop"
+                src={'./images/' + eventName + '.png'}
+            />
             <div className="teamDetails">
                 <ul style={{ listStyleType: 'none' }}>
                     <li>
@@ -28,7 +32,7 @@ const Team = ({ eventName, teamName, members }) => {
                 </ul>
             </div>
             <img
-                className="eventImage"
+                className="eventImageRight"
                 src={'./images/' + eventName + '.png'}
             />
         </div>

@@ -15,16 +15,16 @@
     font-weight: normal;
 }
 
-.editLink {
+.editLink a {
     position: absolute;
-    right: 5vw;
+    right: 55px;
     margin-top: 20px;
     display: inline;
     color: #90e0ef;
     text-decoration: none;
 }
 
-.editLink:hover {
+.editLink a:hover {
     color: #90e0ef;
     opacity: 0.6;
 }
@@ -36,8 +36,8 @@
     position: absolute;
     height: 8vh;
     width: 8vh;
-    top: 16vh;
-    right: 5vw;
+    top: 14.5vh;
+    right: 55px;
     text-align: center;
 }
 
@@ -52,4 +52,25 @@
     position: absolute;
     top: 4.4vh;
     right: 0.9vh;
+}
+
+@media (max-width: 1160px) {
+    .displayPictureContainer {
+        display: none;
+    }
+    .profileContainer li {
+        margin-left: -15px;
+    }
+    .editLink a {
+        right: 42px;
+    }
+}
+
+@media (max-width: 690px) {
+    .editLink a h4 {
+        font-size: 1.1em;
+    }
+    .profileContainer li h4 {
+        font-size: 1.1em !important;
+    }
 }
