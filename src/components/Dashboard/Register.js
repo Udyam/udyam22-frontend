@@ -20,8 +20,6 @@ const Register = () => {
     //     setInput(newInput)
     // }
 
-
-
     return (
         <div className="registerContainer">
             {/* <div className="registerForm"> */}

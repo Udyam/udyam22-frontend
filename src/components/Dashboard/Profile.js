@@ -21,7 +21,7 @@ const Profile = () => {
                     <h4>Contact : 9000000000</h4>
                 </li>
             </ul>
-            <div  className="editLink">
+            <div className="editLink">
                 <Link to="#">
                     <h4>Edit</h4>
                 </Link>
