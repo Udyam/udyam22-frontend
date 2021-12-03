@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
+import axios from '../../utils/axios'
 import {toast} from 'react-toastify'
 import validator from 'validator';
-import { useLocation } from 'react-router-dom'
+import { useLocation , useHistory} from 'react-router-dom'
 import './resetpage.css'
 
 toast.configure()
@@ -9,15 +10,16 @@ toast.configure()
 export default function ResetForm () {
     const [recover_password, setrecover_password] = useState('');
     const [confirmrecover_password, setconfirmrecover_password] = useState('');
-    
+    const history = useHistory();
+
     const reset_through_email = (e) => {
         console.log(window.location.search);
         console.log(useLocation.search);
         const params = new URLSearchParams(useLocation.search);
         console.log(params.get('token'));
-        console.log(params.get('uidb64'));
+        console.log(params.get('id'));
         const tokenget = params.get('token');
-        const uidbget = params.get('uidb64');
+        const uidbget = params.get('id');
         
         e.preventDefault()
         if (recover_password!==confirmrecover_password) {
@@ -31,7 +33,7 @@ export default function ResetForm () {
         }
         toast.warn("Kindly wait!!",{position: toast.POSITION.BOTTOM_RIGHT})
         axios
-            .patch('https://udyam22-backend.herokuapp.com/'+ "auth/password_reset/update_password/",{
+            .patch(''+ "auth/password_reset/update_password/",{
                 password: recover_password,
                 token: tokenget,
                 uidb64: uidbget
@@ -40,12 +42,13 @@ export default function ResetForm () {
             .then((response) =>  {
                 console.log(response.data);
                 toast.success("Great!! Your Password has been changed .",{position: toast.POSITION.BOTTOM_RIGHT})       
-               
+                history.push("/notifyreset");
             })
             .catch(function(err)  {
                 console.log(err);
                 toast.error("Some error occurred!! Don't worry we will change your password",{position: toast.POSITION.BOTTOM_RIGHT})
             });
+            
           }
   
 

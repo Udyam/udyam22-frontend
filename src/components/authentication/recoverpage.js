@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import axios from '../../utils/axios'
 import {toast} from 'react-toastify'
 import validator from 'validator';
 import './recoverpage.css'
@@ -15,7 +16,7 @@ export default function RecoverForm () {
         }
         toast.warn("Kindly wait!!",{position: toast.POSITION.BOTTOM_RIGHT})
         axios
-            .post('https://udyam22-backend.herokuapp.com/'+ "auth/password_reset/email/",{
+            .post(''+ "auth/password_reset/email/",{
                 email: Email
                 
             })

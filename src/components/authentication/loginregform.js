@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import {React, useState} from 'react'
 import axios from '../../utils/axios'
 import "./loginregform.css";
 import {toast} from 'react-toastify'
@@ -61,7 +61,7 @@ export default function RegisterForm() {
   
   const registerFieldsAreValid = (
     
-    username,
+    Name,
     collegeName,
     email,
     password,
@@ -71,7 +71,7 @@ export default function RegisterForm() {
     if (
       collegeName === '' ||
       email === '' ||
-      username === '' ||
+      Name === '' ||
       password === ''  ||
       confirmpassword === '' ||
       year=== '' 
@@ -107,12 +107,12 @@ export default function RegisterForm() {
     
 
     if (
-      registerFieldsAreValid(username,collegeName,email,password,confirmpassword,year)
+      registerFieldsAreValid(Name,collegeName,email,password,confirmpassword,year)
     ) {
       toast.warning('Please wait...',{position: toast.POSITION.BOTTOM_RIGHT})
       
       const dataForApiRequest = {
-        name: username,
+        name: Name,
         email: email,
         college_name: collegeName,
         password: password,
@@ -205,7 +205,6 @@ return (
        <div class="profile-pic-div">
       <img src={image}  id="photo" />
        <input type="file" id="dp-file" onChange={onImageChange} />
-       <h6>ProfilePic(Optional)</h6>
       </div>
           <input
           className='up'
