@@ -6,7 +6,7 @@ import { useLocation , useHistory} from 'react-router-dom'
 import './resetpage.css'
 
 toast.configure()
-/* eslint-disable */
+
 export default function ResetForm () {
     const [recover_password, setrecover_password] = useState('');
     const [confirmrecover_password, setconfirmrecover_password] = useState('');
@@ -96,4 +96,3 @@ export default function ResetForm () {
      
     )
 }
-/* eslint-able */

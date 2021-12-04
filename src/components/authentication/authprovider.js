@@ -2,6 +2,7 @@ import { AuthContext } from './Context/AuthContext';
 import { React , useState  } from 'react'
 import { useCookies } from 'react-cookie'
 import { useHistory } from 'react-router-dom';
+
 export const AuthProvider = ({ children }) => {
     const [cookies, setCookies, removeCookies] = useCookies(['auth'])
     const [token, setTokenState ] = useState(cookies.token);

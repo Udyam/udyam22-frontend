@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import { useAuthContext } from './Context/AuthContext';
 import validator from 'validator';
 import {  Link } from 'react-router-dom'
-/* eslint-disable */
+
 toast.configure()
 
 export default function RegisterForm() {
@@ -202,7 +202,7 @@ return (
        <div className="overlay-panel overlay-left">
         
        <form>
-       <div class="profile-pic-div">
+       <div className="profile-pic-div">
       <img src={image}  id="photo" />
        <input type="file" id="dp-file" onChange={onImageChange} />
       </div>
@@ -302,4 +302,3 @@ return (
 
 );
 }
-/* eslint-enable */ 

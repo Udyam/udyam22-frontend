@@ -3,8 +3,9 @@ import axios from '../../utils/axios'
 import {toast} from 'react-toastify'
 import validator from 'validator';
 import './recoverpage.css'
+
 toast.configure()
-/* eslint-disable */
+
 export default function RecoverForm () {
     const [recover_email, setrecover_email] = useState('');
   
@@ -17,10 +18,11 @@ export default function RecoverForm () {
         toast.warn("Kindly wait!!",{position: toast.POSITION.BOTTOM_RIGHT})
         axios
             .post('https://udyam22-backend.herokuapp.com/'+ "auth/password_reset/email/",{
-                email: Email
+                email: recover_email
                 
             })
             .then((response) => {
+                console.log(response);
                 toast.info("Great!! Please check your email for the link through which you can reset your password.",{position: toast.POSITION.BOTTOM_RIGHT})
                
             })
@@ -67,4 +69,3 @@ export default function RecoverForm () {
      
     )
 }
-/* eslint-able */
