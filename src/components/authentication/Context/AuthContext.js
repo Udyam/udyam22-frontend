@@ -1,11 +1,9 @@
-import {  useContext, createContext } from 'react'
+import { useContext, createContext } from 'react'
 export const AuthContext = createContext({})
 
 export function useAuthContext() {
-  return useContext(AuthContext);
- 
+    return useContext(AuthContext)
 }
-
 
 /*import React, { useContext } from 'react';
 /* eslint-disable */

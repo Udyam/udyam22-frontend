@@ -4,7 +4,7 @@ import Header from './components/Header.js'
 import { Footer } from './components/Footer/Footer'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { Routes } from './routes'
-import  {AuthProvider}  from './components/authentication/authprovider';
+import { AuthProvider } from './components/authentication/authprovider'
 function App() {
     let bgImage =
         window.location.pathname == '/dashboard'
@@ -28,34 +28,33 @@ function App() {
 
     return (
         <AuthProvider>
-        <div>
-            <div style={style}>
-                <div
-                    style={{
-                        minHeight: '100vh',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        justifyContent: 'space-between',
-                    }}
-                >
-                    <Router>
-                        {window.location.pathname == '/dashboard' ? (
+            <div>
+                <div style={style}>
+                    <div
+                        style={{
+                            minHeight: '100vh',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'space-between',
+                        }}
+                    >
+                        <Router>
+                            {window.location.pathname == '/dashboard' ? (
+                                ''
+                            ) : (
+                                <Header />
+                            )}
+                            <Routes />
+                        </Router>
+
+                        {window.location.pathname === '/dashboard' ? (
                             ''
                         ) : (
-                            <Header />
+                            <Footer />
                         )}
-                        <Routes />
-                   
-                    </Router>
-
-                    {window.location.pathname === '/dashboard' ? (
-                        ''
-                    ) : (
-                        <Footer />
-                    )}
+                    </div>
                 </div>
             </div>
-        </div>
         </AuthProvider>
     )
 }

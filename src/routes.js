@@ -18,7 +18,6 @@ const Routes = () => {
                 <LandingPage />
                 <Timeline />
                 <ContactPage />
-
             </Route>
             <Route exact path="/about-us">
                 <Tabs id="panelb"></Tabs>
@@ -40,10 +39,10 @@ const Routes = () => {
                     <Team />
                 </Tabs>
             </Route>
-            <Route exact path="/loginregister" component={RegisterForm}/>
-            <Route exact path="/recoverpage" component={RecoverForm}/>
-            <Route exact path="/resetpage" component={ResetForm}/>
-            <Route exact path="/notifyreset" component={NotifyReset}/>
+            <Route exact path="/loginregister" component={RegisterForm} />
+            <Route exact path="/recoverpage" component={RecoverForm} />
+            <Route exact path="/resetpage" component={ResetForm} />
+            <Route exact path="/notifyreset" component={NotifyReset} />
             <Route exact path="/dashboard">
                 <Dashboard id="panela" />
             </Route>
