@@ -10,7 +10,6 @@ import {  Link } from 'react-router-dom'
 toast.configure()
 
 export default function RegisterForm() {
- 
   const [user_email, setuser_email] = useState("");
   const [user_pass, setuser_pass] = useState("");
  /* const {setToken , setData} = useAuthContext();*/

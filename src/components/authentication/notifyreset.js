@@ -1,6 +1,7 @@
 import React from 'react'
 import './notifyreset.css'
 import {  Link } from 'react-router-dom'
+
 export default function NotifyReset() {
     return (
         <div className='wholepage' >
