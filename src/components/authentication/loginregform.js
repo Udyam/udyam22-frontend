@@ -79,7 +79,7 @@ export default function RegisterForm() {
             confirmpassword === '' ||
             year === ''
         ) {
-            toast.warn('Please fill the empty fields.', {
+            toast.warn('Please fill the required fields.', {
                 position: toast.POSITION.BOTTOM_RIGHT,
             })
             return false
@@ -175,7 +175,7 @@ export default function RegisterForm() {
     const [addclass, setaddclass] = useState('')
     return (
         <div className="final">
-            <div className={`container ${addclass}`} id="container">
+            <div className={`logincontainer ${addclass}`} id="logincontainer">
                 <div className="pscrt">
                     <div className="form-container  sign-in-container">
                         <form>
@@ -229,12 +229,12 @@ export default function RegisterForm() {
                             SIGN IN
                         </button>
                         <h2 className="mobile-part">
-                            Already have an account ?<br />
+                            Already have an account ?
                             <h3
                                 className="mobile-part-signIn"
                                 onClick={() => setaddclass('')}
                             >
-                                Sign-In here
+                                 Sign-In here
                             </h3>
                         </h2>
                     </div>

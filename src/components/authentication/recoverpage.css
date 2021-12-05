@@ -52,9 +52,10 @@
     justify-content: center;
     text-align: center;
     align-items: center;
-    margin-top: 7%;
-    margin-bottom: 7%;
+    margin-top: 6%;
+    margin-bottom: 1.4%;
     z-index: 1;
+    min-height: 626px;
 }
 input.recover {
     outline: none;

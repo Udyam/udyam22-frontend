@@ -6,7 +6,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import { Routes } from './routes'
 import { AuthProvider } from './components/authentication/authprovider'
 function App() {
-    let bgImage = ['/dashboard', '/noticeboard'].includes(
+    let bgImage = ['/dashboard', '/noticeboard','/resetpage','/recoverpage','/notifyreset','/loginregister'].includes(
         window.location.pathname
     )
         ? {
@@ -40,7 +40,9 @@ function App() {
                         }}
                     >
                         <Router>
-                            {window.location.pathname == '/dashboard' ? (
+                        {['/dashboard', '/resetpage','/recoverpage','/notifyreset'].includes(
+                            window.location.pathname
+                        )? (
                                 ''
                             ) : (
                                 <Header />
@@ -48,7 +50,7 @@ function App() {
                             <Routes />
                         </Router>
 
-                        {['/dashboard', '/noticeboard'].includes(
+                        {['/dashboard', '/noticeboard','/resetpage','/recoverpage','/notifyreset'].includes(
                             window.location.pathname
                         ) ? (
                             ''
