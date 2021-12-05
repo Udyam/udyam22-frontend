@@ -6,14 +6,15 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import { Routes } from './routes'
 
 function App() {
-    let bgImage =
-        window.location.pathname == '/dashboard'
-            ? {
-                  backgroundImage: 'url(./images/backgroundAlt.png)',
-              }
-            : {
-                  backgroundImage: 'url(./images/background.png)',
-              }
+    let bgImage = ['/dashboard', '/noticeboard'].includes(
+        window.location.pathname
+    )
+        ? {
+              backgroundImage: 'url(./images/backgroundAlt.png)',
+          }
+        : {
+              backgroundImage: 'url(./images/background.png)',
+          }
 
     let bgProperties = {
         height: 'auto',
@@ -38,7 +39,7 @@ function App() {
                     }}
                 >
                     <Router>
-                        {window.location.pathname == '/dashboard' ? (
+                        {window.location.pathname === '/dashboard' ? (
                             ''
                         ) : (
                             <Header />
@@ -46,7 +47,9 @@ function App() {
                         <Routes />
                     </Router>
 
-                    {window.location.pathname === '/dashboard' ? (
+                    {['/dashboard', '/noticeboard'].includes(
+                        window.location.pathname
+                    ) ? (
                         ''
                     ) : (
                         <Footer />
