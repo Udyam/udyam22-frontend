@@ -6,9 +6,14 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import { Routes } from './routes'
 import { AuthProvider } from './components/authentication/authprovider'
 function App() {
-    let bgImage = ['/dashboard', '/noticeboard','/resetpage','/recoverpage','/notifyreset','/loginregister'].includes(
-        window.location.pathname
-    )
+    let bgImage = [
+        '/dashboard',
+        '/noticeboard',
+        '/resetpage',
+        '/recoverpage',
+        '/notifyreset',
+        '/loginregister',
+    ].includes(window.location.pathname)
         ? {
               backgroundImage: 'url(./images/backgroundAlt.png)',
           }
@@ -40,9 +45,12 @@ function App() {
                         }}
                     >
                         <Router>
-                        {['/dashboard', '/resetpage','/recoverpage','/notifyreset'].includes(
-                            window.location.pathname
-                        )? (
+                            {[
+                                '/dashboard',
+                                '/resetpage',
+                                '/recoverpage',
+                                '/notifyreset',
+                            ].includes(window.location.pathname) ? (
                                 ''
                             ) : (
                                 <Header />
@@ -50,9 +58,13 @@ function App() {
                             <Routes />
                         </Router>
 
-                        {['/dashboard', '/noticeboard','/resetpage','/recoverpage','/notifyreset'].includes(
-                            window.location.pathname
-                        ) ? (
+                        {[
+                            '/dashboard',
+                            '/noticeboard',
+                            '/resetpage',
+                            '/recoverpage',
+                            '/notifyreset',
+                        ].includes(window.location.pathname) ? (
                             ''
                         ) : (
                             <Footer />
