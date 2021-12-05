@@ -9,6 +9,7 @@ import RecoverForm from './components/authentication/recoverpage'
 import ResetForm from './components/authentication/resetpage'
 import NotifyReset from './components/authentication/notifyreset'
 import Team from './components/Tabs/Teams/Team.js'
+import NoticeBoard from './components/NoticeBoard/NoticeBoard'
 import Dashboard from './components/Dashboard/Dashboard.js'
 
 const Routes = () => {
@@ -43,6 +44,9 @@ const Routes = () => {
             <Route exact path="/recoverpage" component={RecoverForm} />
             <Route exact path="/resetpage" component={ResetForm} />
             <Route exact path="/notifyreset" component={NotifyReset} />
+            <Route path="/noticeboard">
+                <NoticeBoard />
+            </Route>
             <Route exact path="/dashboard">
                 <Dashboard id="panela" />
             </Route>

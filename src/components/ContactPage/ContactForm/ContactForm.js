@@ -11,9 +11,11 @@ export const ContactForm = () => {
     })
 
     const inputChangeHandler = (e) => {
-        const newInput = { ...input }
-        newInput[e.target.name] = e.target.value
-        setInput(newInput)
+        setInput((prevInput) => {
+            const newInput = { ...prevInput }
+            newInput[e.target.name] = e.target.value
+            return newInput
+        })
     }
 
     return (
