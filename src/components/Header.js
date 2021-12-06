@@ -8,7 +8,6 @@ import {
     Nav,
     NavItem,
     NavLink,
-    UncontrolledDropdown,
 } from 'reactstrap'
 import ToggleMenu from './ToggleMenu'
 
@@ -40,18 +39,14 @@ const Header = () => {
                                     </div>
                                 </NavLink>
                             </NavItem>
-                            <UncontrolledDropdown
-                                nav
-                                inNavbar
-                            ></UncontrolledDropdown>
                         </Nav>
                         <NavbarToggler className="mx-3" onClick={toggle} />
                         <Collapse isOpen={false} navbar>
-                            <Nav className="ms-auto" navbar>
+                            <Nav className="ms-auto set_size" navbar>
                                 <NavItem>
                                     <NavLink href="#">
                                         <div
-                                            className="px-4"
+                                            className="px-3"
                                             style={{
                                                 fontWeight: 'lighter',
                                                 fontSize: '2em',
@@ -65,7 +60,7 @@ const Header = () => {
                                 <NavItem>
                                     <NavLink href="#">
                                         <div
-                                            className="px-4"
+                                            className="px-3"
                                             style={{
                                                 fontWeight: 'lighter',
                                                 fontSize: '2em',
@@ -79,7 +74,21 @@ const Header = () => {
                                 <NavItem>
                                     <NavLink href="#">
                                         <div
-                                            className="px-4"
+                                            className="px-3"
+                                            style={{
+                                                fontWeight: 'lighter',
+                                                fontSize: '2em',
+                                                color: '#CAF0F8',
+                                            }}
+                                        >
+                                            Noticeboard
+                                        </div>
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink href="#">
+                                        <div
+                                            className="px-3"
                                             style={{
                                                 fontSize: '2em',
                                                 color: '#CAF0F8',

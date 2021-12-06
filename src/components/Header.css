@@ -16,3 +16,8 @@
         height: 45px;
     }
 }
+@media (min-width: 766px) and (max-width: 1024px) {
+    .set_size {
+        font-size: 1.52vw;
+    }
+}
