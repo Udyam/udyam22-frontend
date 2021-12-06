@@ -12,7 +12,7 @@ export default function RecoverForm() {
     const recover_through_email = (e) => {
         e.preventDefault()
         if (recover_email == '' || !validator.isEmail(recover_email)) {
-            toast.warn('Please fill the empty fields.', {
+            toast.warn('Please fill the field correctly.', {
                 position: toast.POSITION.BOTTOM_RIGHT,
             })
             return

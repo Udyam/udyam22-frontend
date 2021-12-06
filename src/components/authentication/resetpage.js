@@ -11,9 +11,7 @@ export default function ResetForm() {
     const [recover_password, setrecover_password] = useState('')
     const [confirmrecover_password, setconfirmrecover_password] = useState('')
     const history = useHistory()
-
-    const reset_through_email = (e) => {
-        console.log(window.location.search)
+    console.log(window.location.search)
         console.log(useLocation().search)
         const params = new URLSearchParams(useLocation().search)
         console.log(params.get('token'))
@@ -21,7 +19,16 @@ export default function ResetForm() {
         const tokenget = params.get('token')
         const uidbget = params.get('id')
 
+    const reset_through_email = (e) => {
+        
+
         e.preventDefault()
+        if (recover_password == '') {
+            toast.warn('Please fill both the fields!', {
+                position: toast.POSITION.BOTTOM_RIGHT,
+            })
+            return
+        }
         if (recover_password !== confirmrecover_password) {
             toast.warn('Passwords do not match', {
                 position: toast.POSITION.BOTTOM_RIGHT,
