@@ -4,11 +4,16 @@ import Header from './components/Header.js'
 import { Footer } from './components/Footer/Footer'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { Routes } from './routes'
-
+import { AuthProvider } from './components/authentication/authprovider'
 function App() {
-    let bgImage = ['/dashboard', '/noticeboard'].includes(
-        window.location.pathname
-    )
+    let bgImage = [
+        '/dashboard',
+        '/noticeboard',
+        '/resetpage',
+        '/recoverpage',
+        '/notifyreset',
+        '/loginregister',
+    ].includes(window.location.pathname)
         ? {
               backgroundImage: 'url(./images/backgroundAlt.png)',
           }
@@ -28,35 +33,46 @@ function App() {
     }
 
     return (
-        <div>
-            <div style={style}>
-                <div
-                    style={{
-                        minHeight: '100vh',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        justifyContent: 'space-between',
-                    }}
-                >
-                    <Router>
-                        {window.location.pathname === '/dashboard' ? (
+        <AuthProvider>
+            <div>
+                <div style={style}>
+                    <div
+                        style={{
+                            minHeight: '100vh',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'space-between',
+                        }}
+                    >
+                        <Router>
+                            {[
+                                '/dashboard',
+                                '/resetpage',
+                                '/recoverpage',
+                                '/notifyreset',
+                            ].includes(window.location.pathname) ? (
+                                ''
+                            ) : (
+                                <Header />
+                            )}
+                            <Routes />
+                        </Router>
+
+                        {[
+                            '/dashboard',
+                            '/noticeboard',
+                            '/resetpage',
+                            '/recoverpage',
+                            '/notifyreset',
+                        ].includes(window.location.pathname) ? (
                             ''
                         ) : (
-                            <Header />
+                            <Footer />
                         )}
-                        <Routes />
-                    </Router>
-
-                    {['/dashboard', '/noticeboard'].includes(
-                        window.location.pathname
-                    ) ? (
-                        ''
-                    ) : (
-                        <Footer />
-                    )}
+                    </div>
                 </div>
             </div>
-        </div>
+        </AuthProvider>
     )
 }
 
