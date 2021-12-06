@@ -61,7 +61,7 @@ export default function RegisterForm() {
     const [referalcode, setReferalcode] = useState('')
     const [confirmpassword, setConfirmpassword] = useState('')
     const [year, setYear] = useState('')
-    const [image, setImage] = useState('../images/Group2471.png')
+    /*const [image, setImage] = useState('../images/Group2471.png')*/
 
     const registerFieldsAreValid = (
         Name,
@@ -109,11 +109,11 @@ export default function RegisterForm() {
         }
         return true
     }
-    const onImageChange = (event) => {
+   /* const onImageChange = (event) => {
         if (event.target.files && event.target.files[0]) {
             setImage(URL.createObjectURL(event.target.files[0]))
         }
-    }
+    }*/
 
     const register = (e) => {
         e.preventDefault()
@@ -245,14 +245,14 @@ export default function RegisterForm() {
                         <div className="overlay">
                             <div className="overlay-panel overlay-left">
                                 <form>
-                                    <div className="profile-pic-div">
+                                   {/* <div className="profile-pic-div">
                                         <img src={image} id="photo" />
                                         <input
                                             type="file"
                                             id="dp-file"
                                             onChange={onImageChange}
                                         />
-                                    </div>
+                            </div>*/} <h1 className="h12">SIGN UP</h1>
                                     <input
                                         className="up"
                                         type="text"

@@ -12,7 +12,7 @@
     text-decoration: none;
 }
 
-#photo {
+/*#photo {
     height: 80%;
     width: 80%;
     border-radius: 50%;
@@ -28,7 +28,7 @@
     transform: translate(-50%, -50%);
     border-radius: 50%;
     margin-bottom: 2%;
-}
+}*/
 
 h1 {
     color: rgba(202, 240, 248, 1);
@@ -446,11 +446,11 @@ h2.mobile-part {
         overflow: visible;
     }
 
-    .profile-pic-div {
+    /*.profile-pic-div {
         margin-bottom: 10%;
         top: 12%;
         margin-left: 40%;
-    }
+    }*/
 
     h1 {
         padding-bottom: 6%;
