@@ -109,7 +109,7 @@ export default function RegisterForm() {
         }
         return true
     }
-   /* const onImageChange = (event) => {
+    /* const onImageChange = (event) => {
         if (event.target.files && event.target.files[0]) {
             setImage(URL.createObjectURL(event.target.files[0]))
         }
@@ -245,14 +245,15 @@ export default function RegisterForm() {
                         <div className="overlay">
                             <div className="overlay-panel overlay-left">
                                 <form>
-                                   {/* <div className="profile-pic-div">
+                                    {/* <div className="profile-pic-div">
                                         <img src={image} id="photo" />
                                         <input
                                             type="file"
                                             id="dp-file"
                                             onChange={onImageChange}
                                         />
-                            </div>*/} <h1 className="h12">SIGN UP</h1>
+                            </div>*/}{' '}
+                                    <h1 className="h12">SIGN UP</h1>
                                     <input
                                         className="up"
                                         type="text"
@@ -305,7 +306,6 @@ export default function RegisterForm() {
                                             Fourth Year
                                         </option>
                                     </select>
-
                                     <input
                                         className="up"
                                         type="password"

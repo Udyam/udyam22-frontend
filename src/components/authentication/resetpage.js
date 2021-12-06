@@ -12,16 +12,14 @@ export default function ResetForm() {
     const [confirmrecover_password, setconfirmrecover_password] = useState('')
     const history = useHistory()
     console.log(window.location.search)
-        console.log(useLocation().search)
-        const params = new URLSearchParams(useLocation().search)
-        console.log(params.get('token'))
-        console.log(params.get('id'))
-        const tokenget = params.get('token')
-        const uidbget = params.get('id')
+    console.log(useLocation().search)
+    const params = new URLSearchParams(useLocation().search)
+    console.log(params.get('token'))
+    console.log(params.get('id'))
+    const tokenget = params.get('token')
+    const uidbget = params.get('id')
 
     const reset_through_email = (e) => {
-        
-
         e.preventDefault()
         if (recover_password == '') {
             toast.warn('Please fill both the fields!', {
