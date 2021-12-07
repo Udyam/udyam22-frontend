@@ -1,0 +1,27 @@
+.header {
+    text-align: center;
+}
+
+.Event_Panel {
+    display: flex;
+    float: right;
+    margin-top: 10vh;
+    margin-right: 3vw;
+}
+
+.Inner_Link {
+    text-decoration: none;
+    font: "Quantico";
+    font-size: 1.8rem;
+    color: rgba(144, 224, 239, 0.7) ;
+}
+
+.Main_box {
+    Height: 50vh;
+    width: 50vw;
+    align-self: center;
+    border-color: blue;
+    font-size: 2rem;
+    align-items: center;
+    background-color: aliceblue;
+}

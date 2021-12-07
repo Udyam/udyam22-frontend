@@ -1,0 +1,61 @@
+.aboutUs_heading{
+    height: auto;
+    width: 50%;
+}
+
+.aboutUs_head{
+    display: inline-block;
+    min-width: 100%;
+}
+
+.Aboutus-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.aboutUs_photo{
+    margin-left:5%; 
+    margin-top:5%; 
+    width: 50%;
+    float: left;
+    height: 50vh;
+}
+
+.aboutUs-img{
+    width: 100%;
+    height: auto;
+}
+
+.aboutUs_text{
+    margin-right:5%;
+    margin-top:10%;
+    width: 40vw;
+    height: 40vh;
+    float: right;
+}
+
+@media (max-width: 767px){
+    .Aboutus-container{
+        display: block;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .aboutUs_photo{
+        margin-left:5%; 
+        margin-top:5%; 
+        width: 95%;
+        float: left;
+        height: 50vh;
+    }
+
+    .aboutUs_heading{
+        text-align: center;
+        width: 100%;
+    }
+
+    .aboutUs_head{
+        padding-left: 15%;
+    }
+}

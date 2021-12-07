@@ -9,8 +9,8 @@
     /* height: 10vh; */
 }
 .tabs li a img {
-    height: 10vh;
-    padding: calc(30px - 1.5vw);
+    height: 14vh;
+    padding: calc(30px - 1vw);
     padding-right: 30px;
     border-right: 2px solid white;
 }
@@ -18,7 +18,7 @@
 .tabs-content {
     width: 100vw;
 
-    height: 70vh;
+    height: 98vh;
     border-top: 2px solid white;
     border-bottom: 2px solid white;
     border-right: 2px solid white;
@@ -51,6 +51,7 @@
         display: none;
     }
     .tabs-content {
+        margin-top: 10%;
         border-left: 2px solid white;
     }
 

@@ -1,0 +1,70 @@
+.Sponsors_head{
+    height: auto;
+    width: auto;
+    float: right;
+    margin-right: 4%;
+}
+
+.container-sponsors{
+    margin-left: 4vw;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    height:80vh;
+    width: 75vw;
+    color: #4abbcf;
+}
+
+.row-1{
+    margin-left: 2vw;
+    width: 72vw;
+}
+
+.row-2{
+    width: 72vw;
+    align-items: left;
+    margin-top: 20px;
+}
+
+.title1{
+    width: 50%;
+    float: left;
+    padding: 5px;
+}
+
+.title2{
+    width: 33%;
+    float: left;
+    padding: 5px;
+}
+
+.box{
+    height: 24vh;
+    width: 20vw;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-top: 15px;
+    background-color: #C4C4C4;
+}
+
+.platform{
+    margin-left: 5vw;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(113, 192, 245); 
+  border-radius: 6px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background:#C4C4C4; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: white; 
+}
