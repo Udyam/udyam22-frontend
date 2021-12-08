@@ -28,7 +28,7 @@ export default function RegisterForm() {
         })
         axios
             .post('https://udyam22-backend.herokuapp.com/' + 'auth/login/', {
-                email_or_username: user_email,
+                email: user_email,
                 password: user_pass,
             })
             .then((response) => {
