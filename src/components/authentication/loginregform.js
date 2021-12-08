@@ -23,13 +23,12 @@ export default function RegisterForm() {
             })
             return
         }
-        setuser_email(user_email.trim())
         toast.info('Checking credentials...', {
             position: toast.POSITION.BOTTOM_RIGHT,
         })
         axios
             .post('https://udyam22-backend.herokuapp.com/' + 'auth/login/', {
-                email_or_username: user_email,
+                email: user_email,
                 password: user_pass,
             })
             .then((response) => {
