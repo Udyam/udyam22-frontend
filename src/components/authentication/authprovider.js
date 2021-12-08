@@ -1,33 +1,23 @@
 import { AuthContext } from './Context/AuthContext'
-import { React, useState } from 'react'
-import { useCookies } from 'react-cookie'
-import { useHistory } from 'react-router-dom'
+import { React} from 'react'
+
+
 
 export const AuthProvider = ({ children }) => {
-    const [cookies, setCookies, removeCookies] = useCookies(['auth'])
-    const [token, setTokenState] = useState(cookies.token)
-    const history = useHistory()
+   
     const setToken = (newToken) => {
-        setCookies('token', newToken, { path: '/' })
-        setTokenState(newToken)
-        history.push('/dashboard')
-    }
-    const deleteToken = () => {
-        removeCookies('token')
-        setTokenState(undefined)
+        localStorage.setItem('userToken', JSON.stringify(newToken))
+        
+        
     }
     const logout = () => {
-        console.log(token)
-        deleteToken()
-        console.log(token)
-        history.push('/')
+     localStorage.removeItem('userToken')
+        
     }
     return (
         <AuthContext.Provider
             value={{
-                token,
                 setToken,
-                deleteToken,
                 logout,
             }}
         >

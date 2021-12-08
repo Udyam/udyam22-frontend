@@ -14,6 +14,7 @@ export default function RegisterForm() {
     const [user_pass, setuser_pass] = useState('')
     /* const {setToken , setData} = useAuthContext();*/
     const { setToken } = useAuthContext()
+   
 
     const userlogin = (e) => {
         e.preventDefault()
@@ -28,7 +29,7 @@ export default function RegisterForm() {
         })
         axios
             .post('https://udyam22-backend.herokuapp.com/' + 'auth/login/', {
-                email: user_email,
+                email_or_username: user_email,
                 password: user_pass,
             })
             .then((response) => {
@@ -36,13 +37,13 @@ export default function RegisterForm() {
                     position: toast.POSITION.BOTTOM_RIGHT,
                 })
                 {
-                    console.log(response)
-                    console.log(response.data)
-                    console.log(response.data.data)
+                 
                     console.log(response.data.token)
                     /* setData(response.data.data);
               setToken(response.data.token);*/
                     setToken(response.data.token)
+                   
+             
                 }
             })
             .catch((err) => {
@@ -115,6 +116,7 @@ export default function RegisterForm() {
     }*/
 
     const register = (e) => {
+        
         e.preventDefault()
 
         if (
@@ -154,12 +156,12 @@ export default function RegisterForm() {
                         { position: toast.POSITION.BOTTOM_RIGHT }
                     )
                     {
-                        console.log(response.data)
-                        console.log(response.data.data)
+                        
                         console.log(response.data.token)
                         /*setData(response.data.data);
             setToken(response.data.token);*/
                         setToken(response.data.token)
+                       
                     }
                 })
                 .catch(function (err) {
