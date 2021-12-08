@@ -14,7 +14,6 @@ export default function RegisterForm() {
     const [user_pass, setuser_pass] = useState('')
     /* const {setToken , setData} = useAuthContext();*/
     const { setToken } = useAuthContext()
-   
 
     const userlogin = (e) => {
         e.preventDefault()
@@ -37,13 +36,10 @@ export default function RegisterForm() {
                     position: toast.POSITION.BOTTOM_RIGHT,
                 })
                 {
-                 
                     console.log(response.data.token)
                     /* setData(response.data.data);
               setToken(response.data.token);*/
                     setToken(response.data.token)
-                   
-             
                 }
             })
             .catch((err) => {
@@ -116,7 +112,6 @@ export default function RegisterForm() {
     }*/
 
     const register = (e) => {
-        
         e.preventDefault()
 
         if (
@@ -156,12 +151,10 @@ export default function RegisterForm() {
                         { position: toast.POSITION.BOTTOM_RIGHT }
                     )
                     {
-                        
                         console.log(response.data.token)
                         /*setData(response.data.data);
             setToken(response.data.token);*/
                         setToken(response.data.token)
-                       
                     }
                 })
                 .catch(function (err) {

@@ -1,18 +1,12 @@
 import { AuthContext } from './Context/AuthContext'
-import { React} from 'react'
-
-
+import { React } from 'react'
 
 export const AuthProvider = ({ children }) => {
-   
     const setToken = (newToken) => {
         localStorage.setItem('userToken', JSON.stringify(newToken))
-        
-        
     }
     const logout = () => {
-     localStorage.removeItem('userToken')
-        
+        localStorage.removeItem('userToken')
     }
     return (
         <AuthContext.Provider
