@@ -27,7 +27,7 @@ const Header = () => {
                     >
                         <NavbarBrand href="/">
                             <img
-                                src="./images/udyamLogo.png"
+                                src="/images/udyamLogo.png"
                                 className="logo mx-4"
                                 alt="logo"
                             />

@@ -10,7 +10,7 @@ function App() {
         <div>
             <div
                 style={{
-                    backgroundImage: 'url(./images/background.png)',
+                    backgroundImage: 'url(/images/background.png)',
                     height: 'auto',
                     backgroundSize: 'cover',
                     backgroundAttachment: 'fixed',
