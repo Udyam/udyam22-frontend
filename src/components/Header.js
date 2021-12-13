@@ -23,7 +23,7 @@ const Header = () => {
                     <Navbar
                         dark
                         style={{ backgroundColor: 'rgba(0,0,0,1)' }}
-                        expand="md"
+                        expand="xl"
                     >
                         <NavbarBrand href="/">
                             <img

@@ -35,7 +35,7 @@
     background-color: rgba(29, 67, 85, 0.55) !important;
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 1200px) {
     .landing-page-container {
         height: 55vh;
     }
