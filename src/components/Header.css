@@ -6,7 +6,7 @@
     height: 64px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
     .signin-div {
         display: flex;
         font-size: 1.7em;
