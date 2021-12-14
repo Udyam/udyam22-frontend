@@ -1,3 +1,28 @@
+.loginregform-in::placeholder,
+.loginregform-up::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(202, 240, 248, 1);
+    text-align: center;
+    opacity: 1;
+    /* Firefox */
+}
+
+.loginregform-in:-ms-input-placeholder,
+.loginregform-up:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgba(202, 240, 248, 1);
+    opacity: 1;
+    text-align: center;
+}
+
+.loginregform-in::-ms-input-placeholder,
+.loginregform-in::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgba(202, 240, 248, 1);
+    opacity: 1;
+    text-align: center;
+}
+
 .loginregform-fp {
     margin-top: -1%;
     margin-left: 50%;
@@ -9,22 +34,22 @@
 }
 
 /*#photo {
-      height: 80%;
-      width: 80%;
-      border-radius: 50%;
-  }
-  
-  .profile-pic-div {
-      height: 110px;
-      width: 110px;
-      position: relative;
-      margin-left: 43%;
-      top: 9%;
-      margin-bottom: -10%;
-      transform: translate(-50%, -50%);
-      border-radius: 50%;
-      margin-bottom: 2%;
-  }*/
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+}
+
+.profile-pic-div {
+    height: 110px;
+    width: 110px;
+    position: relative;
+    margin-left: 43%;
+    top: 9%;
+    margin-bottom: -10%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    margin-bottom: 2%;
+}*/
 .loginregform-head {
     color: rgba(202, 240, 248, 1);
     font-weight: bold;
@@ -206,12 +231,6 @@ h2.loginregform-mobile-part {
     /* padding: 9% 7% 0% 7%; */
     width: 100%;
     min-height: 550px;
-}
-
-.forgot {
-    color: #caf0f8;
-    text-decoration: none;
-    text-align: right;
 }
 
 .loginregform-form-container {
@@ -409,10 +428,10 @@ h2.loginregform-new {
     }
 
     /*.profile-pic-div {
-          margin-bottom: 10%;
-          top: 12%;
-          margin-left: 40%;
-      }*/
+        margin-bottom: 10%;
+        top: 12%;
+        margin-left: 40%;
+    }*/
     h1.loginregform-head {
         padding-bottom: 6%;
     }
