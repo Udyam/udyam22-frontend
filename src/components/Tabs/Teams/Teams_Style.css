@@ -1,4 +1,4 @@
-@media (min-width: 767px) {
+@media (min-width: 769px) {
     .Team_Heading {
         height: auto;
         width: auto;
@@ -6,13 +6,15 @@
         margin-right: 4%;
     }
 
-    .container {
-        height: 345px;
+    .Teams_container {
+        height: 75vh;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         flex-wrap: wrap;
         column-gap: 20%;
+        margin-top: 12%;
+        margin-left: 5%;
     }
 
     .inner_box {
@@ -39,7 +41,7 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 769px) {
     .Team_Heading {
         display: block;
         height: auto;
@@ -48,19 +50,19 @@
         margin-right: auto;
     }
 
-    .container {
-        margin-top: -5%;
-        height: 350px;
+    .Teams_container {
+        margin-top: 7%;
+        height: 70vh;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        row-gap: 1%;
+        row-gap: 5%;
         align-items: center;
         justify-content: center;
     }
 
     .inner_box {
-        width: 35vw;
+        width: 50vw;
         height: 4.5vh;
 
         background: rgba(2, 32, 73, 0.75);
@@ -72,7 +74,7 @@
         font-style: normal;
         font-weight: bold;
         text-decoration: none;
-        font-size: 1.7vw;
+        font-size: 2.5vw;
         line-height: 2.6rem;
         display: flex;
         align-items: center;
