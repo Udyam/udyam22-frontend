@@ -1,7 +1,6 @@
 import React from 'react'
 import './registration.css'
 
-
 export default function ComingSoon() {
     return (
         <div className="comingsoonwholepage">
@@ -15,9 +14,8 @@ export default function ComingSoon() {
             <div className="comingsoon-form-container">
                 <div className="comingsoon-noti">
                     <h1 className="comingsoon-form-head">
-                    Event Registration will open soon!!
+                        Event Registration will open soon!!
                     </h1>
-                    
                 </div>
             </div>
         </div>
