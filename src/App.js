@@ -13,6 +13,7 @@ function App() {
         '/recoverpage',
         '/notifyreset',
         '/loginregister',
+        '/comingsoon'
     ].includes(window.location.pathname)
         ? {
               backgroundImage: 'url(./images/backgroundAlt.png)',
@@ -50,6 +51,7 @@ function App() {
                                 '/resetpage',
                                 '/recoverpage',
                                 '/notifyreset',
+                                '/comingsoon'
                             ].includes(window.location.pathname) ? (
                                 ''
                             ) : (
@@ -64,6 +66,7 @@ function App() {
                             '/resetpage',
                             '/recoverpage',
                             '/notifyreset',
+                            '/comingsoon'
                         ].includes(window.location.pathname) ? (
                             ''
                         ) : (
