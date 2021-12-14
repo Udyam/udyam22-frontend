@@ -5,7 +5,7 @@ import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import { useAuthContext } from './Context/AuthContext'
 import validator from 'validator'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 
 toast.configure()
 
@@ -14,6 +14,7 @@ export default function RegisterForm() {
     const [user_pass, setuser_pass] = useState('')
     /* const {setToken , setData} = useAuthContext();*/
     const { setToken } = useAuthContext()
+    const history = useHistory()
 
     const userlogin = (e) => {
         e.preventDefault()
@@ -40,6 +41,7 @@ export default function RegisterForm() {
                     /* setData(response.data.data);
               setToken(response.data.token);*/
                     setToken(response.data.token)
+                    history.push('/comingsoon')
                 }
             })
             .catch((err) => {
@@ -155,6 +157,7 @@ export default function RegisterForm() {
                         /*setData(response.data.data);
             setToken(response.data.token);*/
                         setToken(response.data.token)
+                        history.push('/comingsoon')
                     }
                 })
                 .catch(function (err) {
