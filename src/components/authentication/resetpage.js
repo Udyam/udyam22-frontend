@@ -72,22 +72,22 @@ export default function ResetForm() {
 
     return (
         <div className="wholepage">
-            <div className="logocircle">
+            <div className="resetpage-logocircle">
                 <img
                     src="../images/photo_2021-11-27_18-13-10.png"
-                    className="Udyamlogo"
+                    className="resetpage-Udyamlogo"
                     alt="Udyam"
                 />
             </div>
 
-            <div className="reset-form-container">
-                <h1 className="reset-form-head"> Reset Password </h1>
+            <div className="resetpage-form-container">
+                <h1 className="resetpage-form-head"> Reset Password </h1>
                 <br />
-                <h3 className="reset-form-title">
+                <h3 className="resetpage-form-title">
                     {' '}
                     Enter your new password below{' '}
                 </h3>
-                <form>
+                <form className="resetpage-resetform">
                     <input
                         type="password"
                         name="resetpassword"
@@ -96,7 +96,7 @@ export default function ResetForm() {
                         onChange={(e) => {
                             setrecover_password(e.target.value)
                         }}
-                        className="reset"
+                        className="resetpage-reset"
                     />
                     <input
                         type="password"
@@ -106,12 +106,12 @@ export default function ResetForm() {
                         onChange={(e) => {
                             setconfirmrecover_password(e.target.value)
                         }}
-                        className="reset"
+                        className="resetpage-reset"
                     />
 
                     <button
                         type="submit"
-                        className="reset-form-button"
+                        className="resetpage-form-button"
                         onClick={reset_through_email}
                     >
                         UPDATE

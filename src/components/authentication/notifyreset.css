@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
-.Udyamlogo12 {
+.notifyreset-Udyamlogo12 {
     position: relative;
     margin-top: 5%;
     margin-left: 15px;
     height: 60%;
     width: 60%;
 }
-.logocircle12 {
+.notifyreset-logocircle12 {
     position: absolute;
     margin-top: -4.5%;
     left: 45%;
@@ -43,7 +43,7 @@
     z-index: 2;
     margin-bottom: 15px;
 }
-.redirectnotify {
+.notifyreset-redirectnotify {
     font-family: Raleway;
     font-style: normal;
     font-weight: bold;
@@ -52,7 +52,7 @@
     color: #f6f9fa;
 }
 
-.redirectnotify:hover {
+.notifyreset-redirectnotify:hover {
     font-family: Raleway;
     font-style: normal;
     font-weight: bold;
@@ -60,15 +60,15 @@
     font-size: 1em;
     color: #5b8a99;
 }
-.noti {
+.notifyreset-noti {
     margin-top: 1%;
 }
 
 @media (max-width: 1250px) {
-    .logocircle12 {
+    .notifyreset-logocircle12 {
         left: 43%;
     }
-    .noti {
+    .notifyreset-noti {
         margin-top: 7%;
     }
 }
@@ -81,36 +81,36 @@
         padding-left: 0;
         padding-right: 0;
     }
-    .noti {
+    .notifyreset-noti {
         margin-top: 12%;
     }
     .notifyreset-form-head {
         font-size: 1.8em;
     }
-    .logocircle12 {
+    .notifyreset-logocircle12 {
         margin-top: -6%;
         left: 42%;
     }
 }
 @media (max-width: 900px) {
-    .noti {
+    .notifyreset-noti {
         margin-top: 22%;
     }
     .notifyreset-form-head {
         font-size: 1.6em;
     }
-    .logocircle12 {
+    .notifyreset-logocircle12 {
         margin-top: -8%;
         left: 41%;
     }
 }
 @media (max-width: 767px) {
-    .Udyamlogo12 {
+    .notifyreset-Udyamlogo12 {
         height: 57%;
         width: 57%;
         margin-top: -1%;
     }
-    .noti {
+    .notifyreset-noti {
         margin-top: 18%;
     }
     .notifyreset-form-head {
@@ -125,70 +125,70 @@
     }
 }
 @media (max-width: 700px) {
-    .logocircle12 {
+    .notifyreset-logocircle12 {
         left: 40%;
     }
 }
 @media (max-width: 650px) {
-    .noti {
+    .notifyreset-noti {
         margin-top: 25%;
     }
-    .logocircle12 {
+    .notifyreset-logocircle12 {
         margin-top: -8%;
         left: 38%;
     }
 }
 
 @media (max-width: 550px) {
-    .noti {
+    .notifyreset-noti {
         margin-top: 30%;
     }
-    .logocircle12 {
+    .notifyreset-logocircle12 {
         left: 36%;
         margin-top: -10%;
     }
 }
 @media (max-width: 450px) {
-    .logocircle12 {
+    .notifyreset-logocircle12 {
         left: 32.5%;
         margin-top: -12%;
     }
     .notifyreset-form-head {
         font-size: 1.5em;
     }
-    .noti {
+    .notifyreset-noti {
         margin-top: 43%;
     }
 }
 
 @media (max-width: 370px) {
-    .noti {
+    .notifyreset-noti {
         margin-top: 50%;
     }
     .notifyreset-form-head {
         font-size: 1.4em;
     }
-    .logocircle12 {
+    .notifyreset-logocircle12 {
         left: 27%;
     }
 }
 @media (max-width: 321px) {
-    .logocircle12 {
+    .notifyreset-logocircle12 {
         left: 25%;
         margin-top: -14%;
     }
-    .noti {
+    .notifyreset-noti {
         margin-top: 60%;
     }
 }
 @media (max-width: 281px) {
-    .logocircle12 {
+    .notifyreset-logocircle12 {
         left: 22%;
     }
     .notifyreset-form-head {
         font-size: 1em;
     }
-    .noti {
+    .notifyreset-noti {
         margin-top: 85%;
     }
 }

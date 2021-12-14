@@ -44,22 +44,22 @@ export default function RecoverForm() {
 
     return (
         <div className="wholepage">
-            <div className="logocircle1">
+            <div className="recoverpage-logocircle1">
                 <img
                     src="../images/photo_2021-11-27_18-13-10.png"
-                    className="Udyamlogo1"
+                    className="recoverpage-Udyamlogo1"
                     alt="Udyam"
                 />
             </div>
-            <div className="recover-form-container">
-                <h1 className="recover-form-head"> Recover now </h1>
+            <div className="recoverpage-form-container">
+                <h1 className="recoverpage-form-head"> Recover now </h1>
                 <br />
-                <h3 className="recover-form-title">
+                <h3 className="recoverpage-form-title">
                     {' '}
                     Please provide the registered email address below{' '}
                 </h3>
 
-                <form>
+                <form className="recoverpage-recoverform">
                     <input
                         type="email"
                         name="email"
@@ -68,12 +68,12 @@ export default function RecoverForm() {
                         onChange={(e) => {
                             setrecover_email(e.target.value)
                         }}
-                        className="recover"
+                        className="recoverpage-recover"
                     />
 
                     <button
                         type="submit"
-                        className="recover-form-button"
+                        className="recoverpage-form-button"
                         onClick={recover_through_email}
                     >
                         SEND

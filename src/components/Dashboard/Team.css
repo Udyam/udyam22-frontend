@@ -24,13 +24,12 @@
 }
 
 .deleteBtn {
-    background: none;
-    border: 4px solid #90e0ef;
-    border-radius: 40px;
-    padding: 2px 25px;
-    font-size: 1.6rem;
-    font-family: 'Raleway', sans-serif;
-    color: #90e0ef;}
+    display: flex;
+    width: fit-content;
+    margin-right: auto;
+    padding-top: 2vh;
+    cursor: pointer;
+    font-weight: bolder;}
 
 .deleteBtn:hover {
     color: #90e1ef85;

@@ -9,6 +9,17 @@ const Team = ({key, eventName, teamName, members }) => {
             Authorization: "Token "
         },
       };
+   /* var Member1
+    var Member2
+    const Leader=members[0]
+    if (members.length == 3) {
+        Member1 = members[1]
+        Member2 = members[2]
+    }
+    else if (members.length == 2) {
+        Member1 = members[1]
+        Member2 = ' '
+    }*/
     let additionalMembers = []
     if (members.length > 1) {
         additionalMembers = members.slice(1, members.length)
@@ -46,8 +57,8 @@ const Team = ({key, eventName, teamName, members }) => {
                             })}
                         </h4>
                     </li>
-                    <button className="deleteBtn"
-                     onClick={() => deleteTeam(id)}>DELETE TEAM</button>
+                    <h4 className="deleteBtn"
+                     onClick={() => deleteTeam(id)}>DELETE TEAM</h4>
                 </ul>
             </div>
             <img

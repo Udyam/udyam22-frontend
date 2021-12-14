@@ -20,21 +20,29 @@
     opacity: 1;
     text-align: center;
 }
-.Udyamlogo {
+.resetpage-Udyamlogo {
     position: relative;
     margin-top: 1%;
     margin-left: 15px;
     height: 60%;
     width: 60%;
 }
-.logocircle {
+.resetpage-logocircle {
     position: absolute;
     margin-top: -4.5%;
     left: 45%;
     z-index: 2;
 }
-
-.reset-form-container {
+.resetpage-resetform{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  text-align: center;
+}
+.resetpage-form-container {
     background: linear-gradient(
         180deg,
         rgba(255, 255, 255, 0.15) 0%,
@@ -52,7 +60,7 @@
     z-index: 1;
     min-height: 626px;
 }
-input.reset {
+input.resetpage-reset {
     outline: none;
     border-radius: 50px;
     height: 50px;
@@ -66,7 +74,7 @@ input.reset {
     font-size: 1.4em;
 }
 
-.reset-form-head {
+.resetpage-form-head  {
     font-family: Raleway;
     font-style: normal;
     font-weight: bold;
@@ -75,7 +83,7 @@ input.reset {
     color: #90e0ef;
     margin-top: 5%;
 }
-.reset-form-title {
+.resetpage-form-title {
     font-family: Raleway;
     font-style: italic;
     font-weight: normal;
@@ -85,7 +93,7 @@ input.reset {
     margin-bottom: 20px;
 }
 
-.reset-form-button {
+.resetpage-form-button {
     background: none;
     border: 4px solid #90e0ef;
     border-radius: 40px;
@@ -96,126 +104,126 @@ input.reset {
     margin-bottom: 120px;
 }
 @media (max-width: 1250px) {
-    .reset-form-head {
+    .resetpage-form-head  {
         margin-top: 10%;
     }
-    .logocircle {
+    .resetpage-logocircle {
         left: 42.5%;
     }
 }
 @media (max-width: 1100px) {
-    .reset-form-head {
+    .resetpage-form-head  {
         margin-top: 90px;
     }
-    .reset-form-container {
+    .resetpage-form-container {
         margin-top: 100px;
         margin-bottom: 20%;
         margin-left: 15%;
     }
 
-    .logocircle {
+    .resetpage-logocircle {
         margin-top: -7%;
         left: 42%;
     }
-    input.reset {
+    input.resetpage-reset {
         width: 100%;
         min-width: 300px;
     }
 }
 @media (max-width: 850px) {
-    .logocircle {
+    .resetpage-logocircle {
         left: 40%;
     }
 }
 @media (max-width: 767px) {
-    .logocircle {
+    .resetpage-logocircle {
         margin-top: -9%;
     }
-    .Udyamlogo {
+    .resetpage-Udyamlogo {
         height: 57%;
         width: 57%;
     }
-    input.reset {
+    input.resetpage-reset {
         width: 100%;
         min-width: 300px;
         height: 40px;
     }
-    .reset-form-head {
+    .resetpage-form-head  {
         margin-top: 100px;
         word-spacing: 100em;
     }
-    .reset-form-container {
+    .resetpage-form-container {
         min-height: 500px;
         width: 90%;
         margin-left: 5%;
         margin-right: 5%;
     }
-    .reset-form-title {
+    .resetpage-form-title {
         font-size: 1.3em;
         margin-top: -8%;
     }
 }
 @media (max-width: 700px) {
-    .logocircle {
+    .resetpage-logocircle {
         left: 39%;
     }
 }
 @media (max-width: 557px) {
-    input.reset {
+    input.resetpage-reset {
         width: 80%;
         min-width: 270px;
     }
-    .reset-form-container {
+    .resetpage-form-container {
         width: 90%;
         margin-left: 5%;
         margin-right: 5%;
     }
-    .logocircle {
+    .resetpage-logocircle {
         left: 36%;
         margin-top: -12%;
     }
 }
 @media (max-width: 450px) {
-    .logocircle {
+    .resetpage-logocircle {
         left: 32%;
         margin-top: -15%;
     }
-    .reset-form-title {
+    .resetpage-form-title {
         font-size: 1em;
     }
-    input.reset {
+    input.resetpage-reset {
         min-width: 250px;
     }
 }
 @media (max-width: 380px) {
-    input.reset {
+    input.resetpage-reset {
         min-width: 200px;
     }
-    .logocircle {
+    .resetpage-logocircle {
         left: 30%;
     }
 }
 @media (max-width: 330px) {
-    .logocircle {
+    .resetpage-logocircle {
         left: 26%;
     }
-    .reset-form-title {
+    .resetpage-form-title {
         font-size: 1em;
     }
 }
 @media (max-width: 321px) {
-    .reset-form-title {
+    .resetpage-form-title {
         font-size: 0.8em;
     }
-    .reset-form-head {
+    .resetpage-form-head  {
         font-size: 1.8em;
     }
-    .logocircle {
+    .resetpage-logocircle {
         left: 26%;
     }
 }
 @media (max-width: 281px) {
-    .logocircle {
+    .resetpage-logocircle {
         left: 22%;
         margin-top: -22%;
     }
