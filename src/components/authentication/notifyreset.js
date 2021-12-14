@@ -21,7 +21,10 @@ export default function NotifyReset() {
                     <br />
                     <h1 className="notifyreset-form-head">
                         you can{' '}
-                        <Link to="/loginregister" className="notifyreset-redirectnotify">
+                        <Link
+                            to="/loginregister"
+                            className="notifyreset-redirectnotify"
+                        >
                             login
                         </Link>{' '}
                         here

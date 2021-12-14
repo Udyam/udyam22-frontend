@@ -33,14 +33,14 @@
     left: 45%;
     z-index: 2;
 }
-.resetpage-resetform{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0 50px;
-  height: 100%;
-  text-align: center;
+.resetpage-resetform {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
 }
 .resetpage-form-container {
     background: linear-gradient(
@@ -74,7 +74,7 @@ input.resetpage-reset {
     font-size: 1.4em;
 }
 
-.resetpage-form-head  {
+.resetpage-form-head {
     font-family: Raleway;
     font-style: normal;
     font-weight: bold;
@@ -104,7 +104,7 @@ input.resetpage-reset {
     margin-bottom: 120px;
 }
 @media (max-width: 1250px) {
-    .resetpage-form-head  {
+    .resetpage-form-head {
         margin-top: 10%;
     }
     .resetpage-logocircle {
@@ -112,7 +112,7 @@ input.resetpage-reset {
     }
 }
 @media (max-width: 1100px) {
-    .resetpage-form-head  {
+    .resetpage-form-head {
         margin-top: 90px;
     }
     .resetpage-form-container {
@@ -148,7 +148,7 @@ input.resetpage-reset {
         min-width: 300px;
         height: 40px;
     }
-    .resetpage-form-head  {
+    .resetpage-form-head {
         margin-top: 100px;
         word-spacing: 100em;
     }
@@ -215,7 +215,7 @@ input.resetpage-reset {
     .resetpage-form-title {
         font-size: 0.8em;
     }
-    .resetpage-form-head  {
+    .resetpage-form-head {
         font-size: 1.8em;
     }
     .resetpage-logocircle {

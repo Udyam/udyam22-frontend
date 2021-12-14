@@ -34,14 +34,14 @@
     left: 45%;
     z-index: 2;
 }
-.recoverpage-recoverform{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0 50px;
-  height: 100%;
-  text-align: center;
+.recoverpage-recoverform {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
 }
 .recoverpage-form-container {
     background: linear-gradient(
@@ -65,7 +65,7 @@
     z-index: 1;
     min-height: 626px;
 }
-input.recoverpage-recover{
+input.recoverpage-recover {
     outline: none;
     border-radius: 50px;
     height: 50px;

@@ -169,7 +169,10 @@ export default function RegisterForm() {
     const [addclass, setaddclass] = useState('')
     return (
         <div className="loginregform-final">
-            <div className={`loginregform-logincontainer ${addclass}`} id="logincontainer">
+            <div
+                className={`loginregform-logincontainer ${addclass}`}
+                id="logincontainer"
+            >
                 <div>
                     <div className="loginregform-form-container  loginregform-sign-in-container">
                         <form className="loginregform-form">
@@ -247,7 +250,9 @@ export default function RegisterForm() {
                                             onChange={onImageChange}
                                         />
                             </div>*/}{' '}
-                                    <h1 className="loginregform-h12">SIGN UP</h1>
+                                    <h1 className="loginregform-h12">
+                                        SIGN UP
+                                    </h1>
                                     <input
                                         className="loginregform-up"
                                         type="text"
@@ -356,7 +361,9 @@ export default function RegisterForm() {
                                     className="loginregform-second"
                                     id="loginregform-signUp"
                                     onClick={() =>
-                                        setaddclass('loginregform-right-panel-active')
+                                        setaddclass(
+                                            'loginregform-right-panel-active'
+                                        )
                                     }
                                 >
                                     SIGN UP

@@ -29,7 +29,8 @@
     margin-right: auto;
     padding-top: 2vh;
     cursor: pointer;
-    font-weight: bolder;}
+    font-weight: bolder;
+}
 
 .deleteBtn:hover {
     color: #90e1ef85;
