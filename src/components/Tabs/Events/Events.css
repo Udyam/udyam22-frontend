@@ -1,9 +1,8 @@
 .header {
-   text-align: center;
+    text-align: center;
 }
 
-.Event_Panel { 
-
+.Event_Panel {
     width: 25vw;
     height: 70vh;
     margin-right: 2vw;
@@ -16,9 +15,9 @@
 
 .Events_Outer_Link {
     text-decoration: none;
-    font: "Quantico";
+    font: 'Quantico';
     font-size: 1.8rem;
-    color: rgba(144, 224, 239, 0.7) ;
+    color: rgba(144, 224, 239, 0.7);
     margin-right: 5vw;
     padding-right: 3vw;
     margin-left: auto;
@@ -27,26 +26,23 @@
 }
 
 .Main_box_Events {
-
     width: 30vw;
     margin-left: 23vw;
     margin-right: auto;
     height: 70vh;
     padding-right: 0vw;
-    background-color:rgba(2, 32, 73, 0.75);
+    background-color: rgba(2, 32, 73, 0.75);
     border-radius: 10px;
 }
 
-
 .Events_Holder_Component {
-    display: flex ;
+    display: flex;
     flex-direction: column;
     height: 70vh;
     width: 80vw;
 }
 
-
-.Events_CSS_Container{
+.Events_CSS_Container {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -67,7 +63,7 @@
     text-align: center;
 }
 
-.Events_Inner_Header{
+.Events_Inner_Header {
     font-family: Quantico;
     font-weight: normal;
     font-style: bold;
@@ -75,7 +71,7 @@
     /* margin-left: 11vw;
     margin-right: 11vw; */
     /* text-align: center; */
-    color: #00B4D8;
+    color: #00b4d8;
     /* align-content: center; */
     display: flex;
     justify-content: center;
@@ -92,26 +88,24 @@
 }
 
 .Events_Inner_Link {
-
     text-decoration: none;
     width: 5.3vw;
     height: 4vh;
-    border: 1px solid #00B4D8;
+    border: 1px solid #00b4d8;
     margin-left: 1%;
     margin-right: 1%;
 }
 
-@media(max-width: 769px) {
-
+@media (max-width: 769px) {
     .Event_Panel {
         display: none;
     }
 
-    .Events_Outer_Link{
+    .Events_Outer_Link {
         display: none;
     }
 
-    .Events_Holder_Component{
+    .Events_Holder_Component {
         display: none;
     }
 
@@ -140,12 +134,12 @@
         margin-top: 5%;
     }
 
-    .Events_Photo{
+    .Events_Photo {
         width: 45vw;
     }
 
     .Events_Link_Holder {
-        display: flex ;
+        display: flex;
         flex-direction: row;
         width: 35vw;
     }
@@ -156,9 +150,9 @@
     }
 }
 
-@media(min-width: 769px) {
-    .events_media_query{
+@media (min-width: 769px) {
+    .events_media_query {
         display: none;
-        background-color: #00B4D8;
+        background-color: #00b4d8;
     }
 }

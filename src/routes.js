@@ -30,9 +30,7 @@ const Routes = () => {
                 </Tabs>
             </Route>
             <Route exact path="/speakers">
-                <Tabs id="paneld">
-                {Speakers()}
-                </Tabs>
+                <Tabs id="paneld">{Speakers()}</Tabs>
             </Route>
             <Route path="/leaderboard">
                 <Tabs id="panele">

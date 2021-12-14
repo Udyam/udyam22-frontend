@@ -19,11 +19,7 @@ function CreateCard(parts) {
 function Speakers() {
     return (
         <div className="INF">
-            <img
-                className="speakers_images"
-                alt="Logo"
-                src= {Speakers_logo}
-            />
+            <img className="speakers_images" alt="Logo" src={Speakers_logo} />
             <dl>{Data.map(CreateCard)}</dl>
         </div>
     )

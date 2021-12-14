@@ -6,7 +6,11 @@ const Sponsors = () => {
     return (
         <div className="sponsors">
             <div className="heading">
-                <img className="Sponsors_head" src={sponsors_head} alt="Sponsors_heading" />
+                <img
+                    className="Sponsors_head"
+                    src={sponsors_head}
+                    alt="Sponsors_heading"
+                />
             </div>
 
             <div className="container-sponsors">
@@ -16,7 +20,7 @@ const Sponsors = () => {
                         <div className="box"></div>
                     </div>
                     <div className="title1">
-                        <h4 >PLATFORM SPONSOR :</h4>
+                        <h4>PLATFORM SPONSOR :</h4>
                         <div className="box"></div>
                     </div>
                 </div>

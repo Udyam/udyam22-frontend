@@ -4,11 +4,14 @@ import Leader_board from './Leader_board.png'
 
 const Leaderboard = () => {
     return (
-        <div >
+        <div>
             <div align="right">
-                <img className="leaderboard_head" src={Leader_board} alt="leaderboard_heading" />
+                <img
+                    className="leaderboard_head"
+                    src={Leader_board}
+                    alt="leaderboard_heading"
+                />
             </div>
-
 
             {/* <div className = "Leaderboard_container">
 
@@ -36,11 +39,9 @@ const Leaderboard = () => {
 
             </div> */}
 
-
-            <div className = "Leaderboard_Temporary_Message">
-                    Leaderboard shall be visible after completion of all the events.
+            <div className="Leaderboard_Temporary_Message">
+                Leaderboard shall be visible after completion of all the events.
             </div>
-
         </div>
     )
 }

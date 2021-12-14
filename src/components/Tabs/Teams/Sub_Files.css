@@ -1,5 +1,4 @@
 @media (min-width: 767px) {
-    
     .container_box {
         height: 75vh;
         text-align: center;
@@ -28,13 +27,12 @@
         font-size: 1.4vw;
     }
 
-    .tile{
+    .tile {
         width: 40%;
     }
 }
 
 @media (max-width: 767px) {
-       
     .container_box {
         height: 75vh;
         align-items: center;
@@ -44,7 +42,6 @@
         border-radius: 10px;
         overflow-y: scroll;
         overflow-x: hidden;
-        
     }
 
     .back_button {
@@ -56,8 +53,8 @@
     }
 
     .back_button {
-        width: 12% ;
-        height: 10% ;
+        width: 12%;
+        height: 10%;
         font-size: 1.4vh;
     }
 
@@ -66,29 +63,26 @@
     }
 }
 
-
 .title {
     text-align: justify;
-    font-family: "Quantico";
-    font-style: "normal";
-    font-weight: "normal";
+    font-family: 'Quantico';
+    font-style: 'normal';
+    font-weight: 'normal';
     color: rgb(2, 1, 1);
     text-align: center;
     align-self: center;
-
 }
 
 .back_button {
-
     margin-left: 1vw;
     align-items: center;
-    font-family: "Raleway";
+    font-family: 'Raleway';
     font-style: normal;
     font-weight: normal;
     vertical-align: center;
-     
+
     display: flex;
-    color: #E5E5E5;
+    color: #e5e5e5;
     text-decoration: none;
     justify-content: center;
     text-align: center;
@@ -96,15 +90,14 @@
     border-radius: 10px;
 }
 
-
-.tile1{
+.tile1 {
     height: 55vh;
     border: 2px solid white;
     border-radius: 10px;
     margin-top: 15px;
     background: #022049;
-    border: 4px solid rgba(0,0,0,0.75) ;
-    font-family: "Raleway" ;
+    border: 4px solid rgba(0, 0, 0, 0.75);
+    font-family: 'Raleway';
     font-style: normal;
     font-weight: normal;
     text-align: center;
@@ -117,8 +110,8 @@
     border-radius: 10px;
     margin-top: 15px;
     background: #022049;
-    border: 4px solid rgba(0,0,0,0.75) ;
-    font-family: "Raleway" ;
+    border: 4px solid rgba(0, 0, 0, 0.75);
+    font-family: 'Raleway';
     font-style: normal;
     font-weight: normal;
     text-align: center;
@@ -148,16 +141,14 @@
 
 @media (min-width: 480px) {
     .tile1 {
-
         margin-left: 2vw;
         margin-right: auto;
         width: 40%;
-        
     }
     .tile2 {
         margin-right: 2vw;
         margin-left: auto;
-        width: 40%; 
+        width: 40%;
     }
 }
 .social_icons {
