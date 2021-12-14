@@ -1,0 +1,50 @@
+.outer_container {
+    margin: 1em;
+    height: 84vh;
+    padding: 0;
+    border-radius: 8px;
+    border: 0.2em solid rgba(255, 255, 255, 0.37);
+    backdrop-filter: blur(5px);
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.15) 0%,
+        rgba(255, 255, 255, 0.2) 48.44%,
+        rgba(255, 255, 255, 0.15) 100%
+    );
+}
+
+.scroll_container {
+    margin: 1em;
+    border-radius: 10px;
+    background: rgba(196, 196, 196, 0.3);
+    overflow-y: scroll;
+    padding: 10px 5px;
+}
+
+@media only screen and (min-width: 767px) {
+    ::-webkit-scrollbar {
+        width: 0.5em;
+        background: rgba(196, 196, 196, 0.3);
+        border: 1px solid black;
+        border-radius: 50px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgba(196, 196, 196, 0.7);
+        border-radius: 50px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #999999;
+    }
+    .scroll_container {
+        scrollbar-color: rgba(196, 196, 196, 0.7) rgba(196, 196, 196, 0.3);
+        height: calc(84vh - 9em);
+        padding: 20px 25px;
+        margin: 1.3em;
+        width: calc(100vw - 5em);
+    }
+    .outer_container {
+        margin: 1.2em;
+    }
+}

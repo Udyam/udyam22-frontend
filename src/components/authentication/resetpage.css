@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quantico:wght@700&display=swap');
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(202, 240, 248, 1);
+    text-align: center;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgba(202, 240, 248, 1);
+    opacity: 1;
+    text-align: center;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgba(202, 240, 248, 1);
+    opacity: 1;
+    text-align: center;
+}
+.Udyamlogo {
+    position: relative;
+    margin-top: 1%;
+    margin-left: 15px;
+    height: 60%;
+    width: 60%;
+}
+.logocircle {
+    position: absolute;
+    margin-top: -4.5%;
+    left: 45%;
+    z-index: 2;
+}
+
+.reset-form-container {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.15) 0%,
+        rgba(255, 255, 255, 0.2) 48.44%,
+        rgba(255, 255, 255, 0.15) 100%
+    );
+    backdrop-filter: blur(6px);
+    border: 0.2em solid #90e0ef;
+    border-radius: 7px;
+    padding: 9% 7% 0% 7%;
+    margin-left: 15%;
+    width: 70%;
+    margin-top: 6%;
+    margin-bottom: 1.4%;
+    z-index: 1;
+    min-height: 626px;
+}
+input.reset {
+    outline: none;
+    border-radius: 50px;
+    height: 50px;
+    width: 50%;
+    margin-bottom: 25px;
+    background: rgba(235, 230, 230, 0.5);
+    opacity: 1;
+    border-color: transparent;
+    color: #90e0ef;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.reset-form-head {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.5em;
+    color: #90e0ef;
+    margin-top: 5%;
+}
+.reset-form-title {
+    font-family: Raleway;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    color: #90e0ef;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+.reset-form-button {
+    background: none;
+    border: 4px solid #90e0ef;
+    border-radius: 40px;
+    padding: 2px 25px;
+    font-size: 1.6rem;
+    font-family: 'Raleway', sans-serif;
+    color: #90e0ef;
+    margin-bottom: 120px;
+}
+@media (max-width: 1250px) {
+    .reset-form-head {
+        margin-top: 10%;
+    }
+    .logocircle {
+        left: 42.5%;
+    }
+}
+@media (max-width: 1100px) {
+    .reset-form-head {
+        margin-top: 90px;
+    }
+    .reset-form-container {
+        margin-top: 100px;
+        margin-bottom: 20%;
+        margin-left: 15%;
+    }
+
+    .logocircle {
+        margin-top: -7%;
+        left: 42%;
+    }
+    input.reset {
+        width: 100%;
+        min-width: 300px;
+    }
+}
+@media (max-width: 850px) {
+    .logocircle {
+        left: 40%;
+    }
+}
+@media (max-width: 767px) {
+    .logocircle {
+        margin-top: -9%;
+    }
+    .Udyamlogo {
+        height: 57%;
+        width: 57%;
+    }
+    input.reset {
+        width: 100%;
+        min-width: 300px;
+        height: 40px;
+    }
+    .reset-form-head {
+        margin-top: 100px;
+        word-spacing: 100em;
+    }
+    .reset-form-container {
+        min-height: 500px;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .reset-form-title {
+        font-size: 1.3em;
+        margin-top: -8%;
+    }
+}
+@media (max-width: 700px) {
+    .logocircle {
+        left: 39%;
+    }
+}
+@media (max-width: 557px) {
+    input.reset {
+        width: 80%;
+        min-width: 270px;
+    }
+    .reset-form-container {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .logocircle {
+        left: 36%;
+        margin-top: -12%;
+    }
+}
+@media (max-width: 450px) {
+    .logocircle {
+        left: 32%;
+        margin-top: -15%;
+    }
+    .reset-form-title {
+        font-size: 1em;
+    }
+    input.reset {
+        min-width: 250px;
+    }
+}
+@media (max-width: 380px) {
+    input.reset {
+        min-width: 200px;
+    }
+    .logocircle {
+        left: 30%;
+    }
+}
+@media (max-width: 330px) {
+    .logocircle {
+        left: 26%;
+    }
+    .reset-form-title {
+        font-size: 1em;
+    }
+}
+@media (max-width: 321px) {
+    .reset-form-title {
+        font-size: 0.8em;
+    }
+    .reset-form-head {
+        font-size: 1.8em;
+    }
+    .logocircle {
+        left: 26%;
+    }
+}
+@media (max-width: 281px) {
+    .logocircle {
+        left: 22%;
+        margin-top: -22%;
+    }
+}

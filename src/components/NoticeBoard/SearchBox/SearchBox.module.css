@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico:wght@100&display=swap');
+
+.container {
+    margin: 2.5em 1em 0.75em 1.3em;
+    border-radius: 0.5em;
+    background: rgba(196, 196, 196, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.5em 0px;
+}
+
+.search_icon {
+    height: 1.8em;
+    width: 1.8em;
+    color: #022049;
+}
+
+.input,
+.input:focus,
+.input:active,
+.input:hover,
+.input::placeholder {
+    background: transparent;
+    border: none;
+    outline: 0px !important;
+    font-family: 'Quantico', 'Sans-serif';
+    color: #022049;
+    font-size: 1.3em;
+    width: calc(100vw - 7em);
+    font-weight: 10;
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+        margin: 1em 1em -0.2em 1em;
+        border-radius: 0.4em;
+        height: 2.5em;
+        padding: 0.3em 0px;
+        flex-direction: row-reverse;
+    }
+
+    .search_icon {
+        height: 1.3em;
+        width: 1.3em;
+    }
+
+    .input,
+    .input:focus,
+    .input:active,
+    .input:hover,
+    .input::placeholder {
+        font-size: 1.15em;
+    }
+}
