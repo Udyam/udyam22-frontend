@@ -122,39 +122,66 @@ const Event = () => {
             
                 <div className = "Event_panel">
 
-                    <div className = "Events_Outer_Link" onClick = {changeHandler1}>
+                    <div className = "Events_Outer_Link" onClick = {changeHandler1} 
+                    style = {{textDecorationLine: caller_number === '1' ? 'underline' : 'none', 
+                    fontSize: caller_number === '1' ? '1.9rem' : '1.8rem', color: caller_number === '1' ? 
+                    '#90E0EF' : 'rgba(144,244,239,0.7)'}}>
                         Mosaic
                     </div>
 
-                    <div className = "Events_Outer_Link" onClick = {changeHandler2}>
+                    <div className = "Events_Outer_Link" onClick = {changeHandler2}
+                    style = {{textDecorationLine: caller_number === '2' ? 'underline' : 'none', 
+                    fontSize: caller_number === '2' ? '1.9rem' : '1.8rem', color: caller_number === '2' ? 
+                    '#90E0EF' : 'rgba(144,244,239,0.7)'}}>
                         I-chip
                     </div>
 
-                    <div className = "Events_Outer_Link" onClick = {changeHandler3}>
+                    <div className = "Events_Outer_Link" onClick = {changeHandler3}
+                    style = {{textDecorationLine: caller_number === '3' ? 'underline' : 'none', 
+                    fontSize: caller_number === '3' ? '1.9rem' : '1.8rem', color: caller_number === '3' ? 
+                    '#90E0EF' : 'rgba(144,244,239,0.7)'}}>
                         Spybits
                     </div>
 
-                    <div className = "Events_Outer_Link" onClick = {changeHandler4}>
+                    <div className = "Events_Outer_Link" onClick = {changeHandler4}
+                    style = {{textDecorationLine: caller_number === '4' ? 'underline' : 'none', 
+                    fontSize: caller_number === '4' ? '1.9rem' : '1.8rem', color: caller_number === '4' ? 
+                    '#90E0EF' : 'rgba(144,244,239,0.7)'}}>
                         Commnet
                     </div>
 
-                    <div className = "Events_Outer_Link" onClick = {changeHandler5}>
+                    <div className = "Events_Outer_Link" onClick = {changeHandler5}
+                    style = {{textDecorationLine: caller_number === '5' ? 'underline' : 'none', 
+                    fontSize: caller_number === '5' ? '1.9rem' : '1.8rem', color: caller_number === '5' ? 
+                    '#90E0EF' : 'rgba(144,244,239,0.7)'}}>
                         Xiota
                     </div>
 
-                    <div className = "Events_Outer_Link" onClick = {changeHandler6}>
+                    <div className = "Events_Outer_Link" onClick = {changeHandler6}
+                    style = {{textDecorationLine: caller_number === '6' ? 'underline' : 'none', 
+                    fontSize: caller_number === '6' ? '1.9rem' : '1.8rem', color: caller_number === '6' ? 
+                    '#90E0EF' : 'rgba(144,244,239,0.7)'}}>
                         Cassandra
                     </div>
 
-                    <div className = "Events_Outer_Link" onClick = {changeHandler7}>
+                    <div className = "Events_Outer_Link" onClick = {changeHandler7}
+                    style = {{textDecorationLine: caller_number === '7' ? 'underline' : 'none', 
+                    fontSize: caller_number === '7' ? '1.9rem' : '1.8rem', color: caller_number === '7' ? 
+                    '#90E0EF' : 'rgba(144,244,239,0.7)'}}>
                         Digisim
                     </div>
 
-                    <div className = "Events_Outer_Link" onClick = {changeHandler8}>
+                    <div className = "Events_Outer_Link" onClick = {changeHandler8}
+                    style = {{textDecorationLine: caller_number === '8' ? 'underline' : 'none', 
+                    fontSize: caller_number === '8' ? '1.9rem' : '1.8rem', color: caller_number === '8' ? 
+                    '#90E0EF' : 'rgba(144,244,239,0.7)'}}>
                         Funckit
                     </div>
 
-                    <div className = "Events_Outer_Link" onClick = {changeHandler9}>
+                    <div className = "Events_Outer_Link" onClick = {changeHandler9}
+                    style = {{textDecorationLine: caller_number === '9' ? 'underline' : 'none', 
+                    fontSize: caller_number === '9' ? '1.9rem' : '1.8rem', color: caller_number === '9' ? 
+                    '#90E0EF' : 'rgba(144,244,239,0.7)'}}>
                         Continuum
                     </div>
                     

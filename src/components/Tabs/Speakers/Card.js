@@ -5,12 +5,12 @@ import twitter_logo from './Speakers_images/twitter_logo.png'
 import linkedin_logo from './Speakers_images/linkedin_logo.png'
 
 function Card(props) {
-    const [isHovering, setIsHovering] = useState('visible')
+    const [isHovering, setIsHovering] = useState('none')
     function handleMouseOver() {
         setIsHovering('block')
     }
     function handleMouseout() {
-        setIsHovering('hidden')
+        setIsHovering('none')
     }
     return (
         <dt

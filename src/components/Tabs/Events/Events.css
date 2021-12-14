@@ -1,5 +1,5 @@
 .header {
-    text-align: center;
+   text-align: center;
 }
 
 .Event_Panel { 
@@ -29,7 +29,7 @@
 .Main_box_Events {
 
     width: 30vw;
-    margin-left: 20vw;
+    margin-left: 23vw;
     margin-right: auto;
     height: 70vh;
     padding-right: 0vw;
@@ -63,7 +63,8 @@
 .Events_Text_Box {
     margin: 1%;
     padding: 2vw;
-    font-size: 0.9rem;
+    font-size: 1.25rem;
+    text-align: center;
 }
 
 .Events_Inner_Header{
@@ -132,6 +133,10 @@
         text-align: center;
         background-color: transparent !important;
         position: fixed;
+        margin-top: 5%;
+    }
+
+    .awssld_content {
         margin-top: 5%;
     }
 

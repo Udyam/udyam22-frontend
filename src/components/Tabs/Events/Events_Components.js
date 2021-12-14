@@ -22,11 +22,7 @@ const Mosaic = () => {
         </h3>
 
         <div className = "Events_Text_Box">
-        An image processing and machine learning based 
-        event that challenges the participants to solve 
-        the canonical problems in computer vision and 
-        perception, through techniques derived from Deep
-        learning and achieve the goal of vision intelligence.
+            A Deep Learning and Computer Vision-based event.
         </div>
 
         <div className = "Events_Link_Holder">
@@ -66,11 +62,7 @@ const Ichip = () => {
         </h3>
 
         <div className = "Events_Text_Box">
-        An image processing and machine learning based 
-        event that challenges the participants to solve 
-        the canonical problems in computer vision and 
-        perception, through techniques derived from Deep
-        learning and achieve the goal of vision intelligence.
+            An event using Verilog programming to design, simulate, validate, and debug digital systems. 
         </div>
 
         <div className = "Events_Link_Holder">
@@ -109,11 +101,7 @@ const Spybits = () => {
         </h3>
 
         <div className = "Events_Text_Box">
-        An image processing and machine learning based 
-        event that challenges the participants to solve 
-        the canonical problems in computer vision and 
-        perception, through techniques derived from Deep
-        learning and achieve the goal of vision intelligence.
+            A cybersecurity, cryptography, and cryptanalysis-centred event.
         </div>
 
         <div className = "Events_Link_Holder">
@@ -152,11 +140,7 @@ const Commnet = () => {
         </h3>
 
         <div className = "Events_Text_Box">
-        An image processing and machine learning based 
-        event that challenges the participants to solve 
-        the canonical problems in computer vision and 
-        perception, through techniques derived from Deep
-        learning and achieve the goal of vision intelligence.
+            A Digital Communication Systems event focused upon coding theory, compression algorithms and signal processing.
         </div>
 
         <div className = "Events_Link_Holder">
@@ -195,11 +179,7 @@ const Xiota = () => {
         </h3>
 
         <div className = "Events_Text_Box">
-        An image processing and machine learning based 
-        event that challenges the participants to solve 
-        the canonical problems in computer vision and 
-        perception, through techniques derived from Deep
-        learning and achieve the goal of vision intelligence.
+            An event based on applying practical recent technology knowledge in the Internet of Things.
         </div>
 
         <div className = "Events_Link_Holder">
@@ -239,11 +219,7 @@ const Cassandra = () => {
         </h3>
 
         <div className = "Events_Text_Box">
-        An image processing and machine learning based 
-        event that challenges the participants to solve 
-        the canonical problems in computer vision and 
-        perception, through techniques derived from Deep
-        learning and achieve the goal of vision intelligence.
+            A data science event that involves designing and optimizing models based on the dataset provided.
         </div>
 
         <div className = "Events_Link_Holder">
@@ -282,11 +258,8 @@ const Digisim = () => {
         </h3>
 
         <div className = "Events_Text_Box">
-        An image processing and machine learning based 
-        event that challenges the participants to solve 
-        the canonical problems in computer vision and 
-        perception, through techniques derived from Deep
-        learning and achieve the goal of vision intelligence.
+            A Digital electronics simulation-based event carrying designing digital system, 
+            combinational and sequential circuits, finite state machines.
         </div>
 
         <div className = "Events_Link_Holder">
@@ -325,11 +298,7 @@ const Funckit = () => {
         </h3>
 
         <div className = "Events_Text_Box">
-        An image processing and machine learning based 
-        event that challenges the participants to solve 
-        the canonical problems in computer vision and 
-        perception, through techniques derived from Deep
-        learning and achieve the goal of vision intelligence.
+            A hardware-based problem-solving event through IC&apos;s and logic gates.
         </div>
 
         <div className = "Events_Link_Holder">
@@ -368,11 +337,7 @@ const Continuum = () => {
         </h3>
 
         <div className = "Events_Text_Box">
-        An image processing and machine learning based 
-        event that challenges the participants to solve 
-        the canonical problems in computer vision and 
-        perception, through techniques derived from Deep
-        learning and achieve the goal of vision intelligence.
+            An analog electronics-based event to design and simulate analog circuits.
         </div>
 
         <div className = "Events_Link_Holder">
