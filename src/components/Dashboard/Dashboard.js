@@ -6,16 +6,15 @@ import Register from './Register.js'
 import Teams from './Teams.js'
 import Workshops from './Workshops.js'
 import Submission from './Submission.js'
-import { Link , useHistory} from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { useAuthContext } from '../authentication/Context/AuthContext'
 
 const Dashboard = () => {
     const history = useHistory()
-    const {logout} =useAuthContext()
-    const logoutfn=()=>{
+    const { logout } = useAuthContext()
+    const logoutfn = () => {
         logout()
         history.push('/')
-
     }
     return (
         <div>
@@ -75,8 +74,11 @@ const Dashboard = () => {
                                 src="./images/udyamLogo.png"
                             />
                             <NavItem>
-                                <NavLink className="tabLinks" href="#"
-                                onClick={logoutfn}>
+                                <NavLink
+                                    className="tabLinks"
+                                    href="#"
+                                    onClick={logoutfn}
+                                >
                                     <img
                                         src="./icon/log-out.png"
                                         className="logoutIcon"
