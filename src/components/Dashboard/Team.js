@@ -1,11 +1,29 @@
 import React from 'react'
 import './Team.css'
+import axios from '../../utils/axios'
 
-const Team = ({ eventName, teamName, members }) => {
+const Team = ({key, eventName, teamName, members }) => {
+    const id=key
+    const auth ={
+        headers: {
+            Authorization: "Token "
+        },
+      };
     let additionalMembers = []
     if (members.length > 1) {
         additionalMembers = members.slice(1, members.length)
     }
+    const deleteTeam = (id) => {
+        axios
+        .delete('https://udyam22-backend.herokuapp.com/API/team/'+id+'/', auth)
+        .then(function ({ response }) {
+            console.log(response)
+           
+        })
+        .catch(function (err) {
+           console.log(err)
+        });
+      }
     return (
         <div className="teamContainer">
             <img
@@ -28,7 +46,8 @@ const Team = ({ eventName, teamName, members }) => {
                             })}
                         </h4>
                     </li>
-                    <h4 className="deleteBtn">DELETE TEAM</h4>
+                    <button className="deleteBtn"
+                     onClick={() => deleteTeam(id)}>DELETE TEAM</button>
                 </ul>
             </div>
             <img
