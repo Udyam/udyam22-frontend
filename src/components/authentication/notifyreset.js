@@ -5,15 +5,15 @@ import { Link } from 'react-router-dom'
 export default function NotifyReset() {
     return (
         <div className="wholepage">
-            <div className="logocircle12">
+            <div className="notifyreset-logocircle12">
                 <img
                     src="../images/photo_2021-11-27_18-13-10.png"
-                    className="Udyamlogo12"
+                    className="notifyreset-Udyamlogo12"
                     alt="Udyam"
                 />
             </div>
             <div className="notifyreset-form-container">
-                <div className="noti">
+                <div className="notifyreset-noti">
                     <h1 className="notifyreset-form-head">
                         {' '}
                         Your password is changed successfully!!!{' '}
@@ -21,7 +21,10 @@ export default function NotifyReset() {
                     <br />
                     <h1 className="notifyreset-form-head">
                         you can{' '}
-                        <Link to="/loginregister" className="redirectnotify">
+                        <Link
+                            to="/loginregister"
+                            className="notifyreset-redirectnotify"
+                        >
                             login
                         </Link>{' '}
                         here

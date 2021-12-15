@@ -5,7 +5,7 @@ import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import { useAuthContext } from './Context/AuthContext'
 import validator from 'validator'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 
 toast.configure()
 
@@ -14,6 +14,7 @@ export default function RegisterForm() {
     const [user_pass, setuser_pass] = useState('')
     /* const {setToken , setData} = useAuthContext();*/
     const { setToken } = useAuthContext()
+    const history = useHistory()
 
     const userlogin = (e) => {
         e.preventDefault()
@@ -23,13 +24,12 @@ export default function RegisterForm() {
             })
             return
         }
-        setuser_email(user_email.trim())
         toast.info('Checking credentials...', {
             position: toast.POSITION.BOTTOM_RIGHT,
         })
         axios
             .post('https://udyam22-backend.herokuapp.com/' + 'auth/login/', {
-                email_or_username: user_email,
+                email: user_email,
                 password: user_pass,
             })
             .then((response) => {
@@ -37,13 +37,11 @@ export default function RegisterForm() {
                     position: toast.POSITION.BOTTOM_RIGHT,
                 })
                 {
-                    console.log(response)
-                    console.log(response.data)
-                    console.log(response.data.data)
                     console.log(response.data.token)
                     /* setData(response.data.data);
               setToken(response.data.token);*/
                     setToken(response.data.token)
+                    history.push('/comingsoon')
                 }
             })
             .catch((err) => {
@@ -61,7 +59,7 @@ export default function RegisterForm() {
     const [referalcode, setReferalcode] = useState('')
     const [confirmpassword, setConfirmpassword] = useState('')
     const [year, setYear] = useState('')
-    const [image, setImage] = useState('../images/Group2471.png')
+    /*const [image, setImage] = useState('../images/Group2471.png')*/
 
     const registerFieldsAreValid = (
         Name,
@@ -109,11 +107,11 @@ export default function RegisterForm() {
         }
         return true
     }
-    const onImageChange = (event) => {
+    /* const onImageChange = (event) => {
         if (event.target.files && event.target.files[0]) {
             setImage(URL.createObjectURL(event.target.files[0]))
         }
-    }
+    }*/
 
     const register = (e) => {
         e.preventDefault()
@@ -155,12 +153,11 @@ export default function RegisterForm() {
                         { position: toast.POSITION.BOTTOM_RIGHT }
                     )
                     {
-                        console.log(response.data)
-                        console.log(response.data.data)
                         console.log(response.data.token)
                         /*setData(response.data.data);
             setToken(response.data.token);*/
                         setToken(response.data.token)
+                        history.push('/comingsoon')
                     }
                 })
                 .catch(function (err) {
@@ -174,15 +171,18 @@ export default function RegisterForm() {
     }
     const [addclass, setaddclass] = useState('')
     return (
-        <div className="final">
-            <div className={`logincontainer ${addclass}`} id="logincontainer">
-                <div className="pscrt">
-                    <div className="form-container  sign-in-container">
-                        <form>
-                            <h1>SIGN IN</h1>
+        <div className="loginregform-final">
+            <div
+                className={`loginregform-logincontainer ${addclass}`}
+                id="logincontainer"
+            >
+                <div>
+                    <div className="loginregform-form-container  loginregform-sign-in-container">
+                        <form className="loginregform-form">
+                            <h1 className="loginregform-head">SIGN IN</h1>
                             <input
                                 type="text"
-                                className="in nputin"
+                                className="loginregform-in nputin"
                                 name="iUseremail"
                                 id="iUseremail"
                                 placeholder="Email"
@@ -193,7 +193,7 @@ export default function RegisterForm() {
                             />
                             <input
                                 type="password"
-                                className="in nputin"
+                                className="loginregform-in nputin"
                                 name="iPassword"
                                 id="iPassword"
                                 placeholder="Password"
@@ -203,35 +203,35 @@ export default function RegisterForm() {
                                 }}
                             />
 
-                            <Link to="/recoverpage" className="fp">
+                            <Link to="/recoverpage" className="loginregform-fp">
                                 Forgot Password
                             </Link>
 
                             <button
                                 type="submit"
-                                className="ghost"
+                                className="loginregform-ghost"
                                 onClick={userlogin}
                             >
                                 LOGIN
                             </button>
                         </form>
                     </div>
-                    <div className="form-container sign-up-container">
-                        <h1 className="part">Already part?</h1>
-                        <h2 className="part">
+                    <div className="loginregform-form-container loginregform-sign-up-container">
+                        <h1 className="loginregform-part">Already part?</h1>
+                        <h2 className="loginregform-part">
                             Already have an account sign-in here
                         </h2>
                         <button
-                            className="other"
-                            id="signIn"
+                            className="loginregform-other"
+                            id="loginregform-signIn"
                             onClick={() => setaddclass('')}
                         >
                             SIGN IN
                         </button>
-                        <h2 className="mobile-part">
+                        <h2 className="loginregform-mobile-part">
                             Already have an account ?
                             <h3
-                                className="mobile-part-signIn"
+                                className="loginregform-mobile-part-signIn"
                                 onClick={() => setaddclass('')}
                             >
                                 Sign-In here
@@ -240,21 +240,24 @@ export default function RegisterForm() {
                     </div>
                 </div>
 
-                <div className="roundbox">
-                    <div className="overlay-container">
-                        <div className="overlay">
-                            <div className="overlay-panel overlay-left">
-                                <form>
-                                    <div className="profile-pic-div">
+                <div>
+                    <div className="loginregform-overlay-container">
+                        <div className="loginregform-overlay">
+                            <div className="loginregform-overlay-panel loginregform-overlay-left">
+                                <form className="loginregform-form">
+                                    {/* <div className="profile-pic-div">
                                         <img src={image} id="photo" />
                                         <input
                                             type="file"
                                             id="dp-file"
                                             onChange={onImageChange}
                                         />
-                                    </div>
+                            </div>*/}{' '}
+                                    <h1 className="loginregform-h12">
+                                        SIGN UP
+                                    </h1>
                                     <input
-                                        className="up"
+                                        className="loginregform-up"
                                         type="text"
                                         name="inputUsername"
                                         id="inputUsername"
@@ -265,7 +268,7 @@ export default function RegisterForm() {
                                         placeholder="Name"
                                     />
                                     <input
-                                        className="up"
+                                        className="loginregform-up"
                                         type="email"
                                         name="inputEmail"
                                         id="inputEmail"
@@ -276,7 +279,7 @@ export default function RegisterForm() {
                                         placeholder="Email Address"
                                     />
                                     <input
-                                        className="up"
+                                        className="loginregform-up"
                                         type="text"
                                         name="inputCollegeName"
                                         id="inputCollegeName"
@@ -287,7 +290,7 @@ export default function RegisterForm() {
                                         placeholder="College Name"
                                     />
                                     <select
-                                        className="up"
+                                        className="loginregform-up"
                                         name="inputYear"
                                         id="inputYear"
                                         value={year}
@@ -305,9 +308,8 @@ export default function RegisterForm() {
                                             Fourth Year
                                         </option>
                                     </select>
-
                                     <input
-                                        className="up"
+                                        className="loginregform-up"
                                         type="password"
                                         name="inputPassword"
                                         id="inputPassword"
@@ -318,7 +320,7 @@ export default function RegisterForm() {
                                         placeholder="Password"
                                     />
                                     <input
-                                        className="up"
+                                        className="loginregform-up"
                                         type="password"
                                         name="confirmPassword"
                                         id="confirmPassword"
@@ -329,7 +331,7 @@ export default function RegisterForm() {
                                         placeholder="Password"
                                     />
                                     <input
-                                        className="up"
+                                        className="loginregform-up"
                                         type="text"
                                         name="referalcode"
                                         id="referalcode"
@@ -341,7 +343,7 @@ export default function RegisterForm() {
                                     />
                                     <button
                                         type="submit"
-                                        className="second"
+                                        className="loginregform-second"
                                         onClick={(e) => {
                                             e.preventDefault()
                                             register(e)
@@ -352,17 +354,19 @@ export default function RegisterForm() {
                                 </form>
                             </div>
 
-                            <div className="overlay-panel overlay-right">
-                                <h1 className="new">New here? </h1>
-                                <h2 className="new">
+                            <div className="loginregform-overlay-panel loginregform-overlay-right">
+                                <h1 className="loginregform-new">New here? </h1>
+                                <h2 className="loginregform-new">
                                     Register to take part in the technical
                                     extravaganza
                                 </h2>
                                 <button
-                                    className="second"
-                                    id="signUp"
+                                    className="loginregform-second"
+                                    id="loginregform-signUp"
                                     onClick={() =>
-                                        setaddclass('right-panel-active')
+                                        setaddclass(
+                                            'loginregform-right-panel-active'
+                                        )
                                     }
                                 >
                                     SIGN UP

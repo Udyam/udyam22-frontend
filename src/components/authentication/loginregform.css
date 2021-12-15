@@ -1,18 +1,40 @@
-* {
-    box-sizing: border-box;
+.loginregform-in::placeholder,
+.loginregform-up::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(202, 240, 248, 1);
+    text-align: center;
+    opacity: 1;
+    /* Firefox */
 }
 
-.fp {
+.loginregform-in:-ms-input-placeholder,
+.loginregform-up:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgba(202, 240, 248, 1);
+    opacity: 1;
+    text-align: center;
+}
+
+.loginregform-in::-ms-input-placeholder,
+.loginregform-in::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgba(202, 240, 248, 1);
+    opacity: 1;
+    text-align: center;
+}
+
+.loginregform-fp {
     margin-top: -1%;
     margin-left: 50%;
+    margin-bottom: 15px;
 }
 
-.fp:hover {
+.loginregform-fp:hover {
     color: #719ba3;
     text-decoration: none;
 }
 
-#photo {
+/*#photo {
     height: 80%;
     width: 80%;
     border-radius: 50%;
@@ -28,53 +50,28 @@
     transform: translate(-50%, -50%);
     border-radius: 50%;
     margin-bottom: 2%;
-}
-
-h1 {
+}*/
+.loginregform-head {
     color: rgba(202, 240, 248, 1);
     font-weight: bold;
     margin: 0;
 }
 
-h1.h12 {
+.loginregform-h12 {
     color: rgba(2, 32, 73, 0.9);
     font-weight: bold;
     margin: 0;
 }
 
-h2 {
-    text-align: center;
+h2.loginregform-part {
+    font-size: 25px;
     font-style: italic;
 }
-
-h2.part {
-    font-size: 25px;
-}
-
-p {
-    font-size: 14px;
-    font-weight: 100;
-    line-height: 20px;
-    letter-spacing: 0.5px;
-    margin: 20px 0 30px;
-}
-
-span {
-    font-size: 12px;
-}
-
-a {
-    color: rgba(144, 224, 239, 0.4);
-    font-size: 14px;
-    text-decoration: none;
-    margin: 15px 0;
-}
-
-a.mobile-part-signIn {
+.loginregform-mobile-part-signIn {
     display: none;
 }
 
-button.second {
+.loginregform-second {
     margin-top: 4px;
     border-radius: 30px;
     border: 5px solid #022049;
@@ -96,7 +93,7 @@ button:focus {
     outline: none;
 }
 
-button.ghost {
+button.loginregform-ghost {
     margin-top: 2px;
     border: 5px solid #90e0ef;
     color: rgba(202, 240, 248, 1);
@@ -111,7 +108,7 @@ button.ghost {
     transition: transform 80ms ease-in;
 }
 
-button.other {
+button.loginregform-other {
     border: 5px solid #90e0ef;
     color: rgba(144, 225, 239, 0.685);
     box-sizing: border-box;
@@ -125,7 +122,7 @@ button.other {
     transition: transform 80ms ease-in;
 }
 
-form {
+.loginregform-form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,15 +132,13 @@ form {
     text-align: center;
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
+input.loginregform-in,
+input.loginregform-up:-webkit-autofill {
     transition: background-color 50000s ease-in-out 0s,
         color 5000s ease-in-out 0s;
 }
 
-input.in {
+input.loginregform-in {
     background-color: rgba(144, 224, 239, 0.4);
     border: none;
     opacity: 1;
@@ -158,7 +153,7 @@ input.in {
     text-align: center;
 }
 
-input.up {
+input.loginregform-up {
     outline: none;
     background-color: rgba(2, 32, 73, 1);
     opacity: 0.3;
@@ -172,7 +167,7 @@ input.up {
     /* margin: 4px 0 ; */
 }
 
-select {
+select.loginregform-up {
     outline: none;
     background-color: rgba(2, 32, 73, 1);
     opacity: 0.3;
@@ -182,55 +177,25 @@ select {
     border-radius: 30px;
     text-align: center;
     height: 37px;
+    margin: 5px;
 }
 
-select option {
+select.loginregform-up option {
     color: rgba(202, 240, 248, 1);
     background-color: rgba(144, 224, 239, 0.4);
 }
 
-select.up {
-    margin: 5px;
-}
-
-h2.mobile-part {
+h2.loginregform-mobile-part {
     display: none;
+    font-style: italic;
 }
 
-::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: rgba(202, 240, 248, 1);
-    text-align: center;
-    opacity: 1;
-    /* Firefox */
-}
-
-:-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: rgba(202, 240, 248, 1);
-    opacity: 1;
-    text-align: center;
-}
-
-::-ms-input-placeholder {
-    /* Microsoft Edge */
-    color: rgba(202, 240, 248, 1);
-    opacity: 1;
-    text-align: center;
-}
-
-.pscrt {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.fp {
+.loginregform-fp {
     color: #caf0f8;
     text-decoration: none;
 }
 
-.final {
+.loginregform-final {
     border: 5px solid #90e0ef;
     background: linear-gradient(
         180deg,
@@ -249,7 +214,7 @@ h2.mobile-part {
     /* min-height: 100px; */
 }
 
-.logincontainer {
+.loginregform-logincontainer {
     background-color: transparent;
     justify-content: center;
     text-align: center;
@@ -261,13 +226,7 @@ h2.mobile-part {
     min-height: 550px;
 }
 
-.forgot {
-    color: #caf0f8;
-    text-decoration: none;
-    text-align: right;
-}
-
-.form-container {
+.loginregform-form-container {
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -278,7 +237,7 @@ h2.mobile-part {
     transition: all 0.6s ease-in-out;
 }
 
-.sign-in-container {
+.loginregform-sign-in-container {
     background-color: transparent;
     left: 0;
     width: 50%;
@@ -287,12 +246,13 @@ h2.mobile-part {
     display: flex;
 }
 
-.logincontainer.right-panel-active .sign-in-container {
+.loginregform-logincontainer.loginregform-right-panel-active
+    .loginregform-sign-in-container {
     transform: translateX(100%);
     opacity: 0;
 }
 
-.sign-up-container {
+.loginregform-sign-up-container {
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -306,14 +266,15 @@ h2.mobile-part {
     z-index: 1;
 }
 
-.logincontainer.right-panel-active .sign-up-container {
+.loginregform-logincontainer.loginregform-right-panel-active
+    .loginregform-sign-up-container {
     transform: translateX(100%);
     opacity: 1;
     z-index: 5;
     animation: show 0.6s;
 }
 
-#signIn {
+#loginregform-signIn {
     margin-top: 10px;
 }
 
@@ -331,7 +292,7 @@ h2.mobile-part {
     }
 }
 
-.overlay-container {
+.loginregform-overlay-container {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -346,19 +307,28 @@ h2.mobile-part {
     z-index: 100;
 }
 
-.logincontainer.right-panel-active .overlay-container {
+.loginregform-logincontainer.loginregform-right-panel-active
+    .loginregform-overlay-container {
     transform: translateX(-104%);
 }
 
-.new {
+h1.loginregform-new {
+    font-weight: bold;
+}
+
+h2.loginregform-new {
+    font-style: italic;
+}
+
+.loginregform-new {
     color: rgba(2, 32, 73, 0.9);
 }
 
-.part {
+.loginregform-part {
     color: rgba(144, 225, 239, 0.685);
 }
 
-.overlay {
+.loginregform-overlay {
     position: relative;
     left: -100%;
     height: 100%;
@@ -367,11 +337,12 @@ h2.mobile-part {
     transition: transform 0.6s ease-in-out;
 }
 
-.logincontainer.right-panel-active .overlay {
+.loginregform-logincontainer.loginregform-right-panel-active
+    .loginregform-overlay {
     transform: translateX(50%);
 }
 
-.overlay-panel {
+.loginregform-overlay-panel {
     position: absolute;
     display: flex;
     align-items: center;
@@ -385,16 +356,17 @@ h2.mobile-part {
     transition: transform 0.6s ease-in-out;
 }
 
-.overlay-left {
+.loginregform-overlay-left {
     transform: translateX(-20%);
     background-color: rgba(144, 224, 239, 0.4);
 }
 
-.logincontainer.right-panel-active .overlay-left {
+.loginregform-logincontainer.loginregform-right-panel-active
+    .loginregform-overlay-left {
     transform: translateX(0);
 }
 
-.overlay-right {
+.loginregform-overlay-right {
     right: 0;
     align-items: center;
     justify-content: center;
@@ -403,30 +375,32 @@ h2.mobile-part {
     margin-right: 0;
 }
 
-.logincontainer.right-panel-active .overlay-right {
+.loginregform-logincontainer.loginregform-right-panel-active
+    .loginregform-overlay-right {
     transform: translateX(20%);
 }
 
 @media (max-width: 970px) {
-    input.in,
-    input.up,
-    select {
+    input.loginregform-in,
+    input.loginregform-up,
+    select.loginregform-up {
         width: 240px;
     }
 
-    button.second,
-    button.ghost,
-    button.other {
+    button.loginregform-second,
+    button.loginregform-ghost,
+    button.loginregform-other {
         font-size: 20px;
         width: 140px;
     }
-    .sign-up-container {
+
+    .loginregform-sign-up-container {
         padding-top: 30%;
     }
 }
 
 @media (max-width: 767px) {
-    .final {
+    .loginregform-final {
         display: flex;
         height: 100%;
         width: 90%;
@@ -437,7 +411,7 @@ h2.mobile-part {
         margin-bottom: 2%;
     }
 
-    .logincontainer {
+    .loginregform-logincontainer {
         width: 100%;
         height: 100%;
         min-height: 600px;
@@ -446,17 +420,16 @@ h2.mobile-part {
         overflow: visible;
     }
 
-    .profile-pic-div {
+    /*.profile-pic-div {
         margin-bottom: 10%;
         top: 12%;
         margin-left: 40%;
-    }
-
-    h1 {
+    }*/
+    h1.loginregform-head {
         padding-bottom: 6%;
     }
 
-    .sign-up-container {
+    .loginregform-sign-up-container {
         height: 10%;
         width: 100%;
         overflow: visible;
@@ -467,7 +440,7 @@ h2.mobile-part {
         padding-top: 0;
     }
 
-    .sign-in-container {
+    .loginregform-sign-in-container {
         height: 80%;
         width: 90%;
         overflow: hidden;
@@ -476,7 +449,7 @@ h2.mobile-part {
         z-index: 101;
     }
 
-    .overlay-right {
+    .loginregform-overlay-right {
         width: 100%;
         height: 40%;
         bottom: 0;
@@ -488,7 +461,7 @@ h2.mobile-part {
         border-radius: 10px;
     }
 
-    .overlay-left {
+    .loginregform-overlay-left {
         width: 90%;
         height: 94%;
         top: 47%;
@@ -507,60 +480,60 @@ h2.mobile-part {
         padding-bottom: 1%;
     }
 
-    h1.new {
+    h1.loginregform-new {
         color: #022049;
         font-size: 35px;
         margin-top: 4%;
     }
 
-    h2.new {
+    h2.loginregform-new {
         color: #022049;
         font-size: 22px;
     }
 
-    h3.mobile-part-signIn,
-    h2.mobile-part {
+    h3.loginregform-mobile-part-signIn,
+    h2.loginregform-mobile-part {
         display: inline-block;
         font-size: 20px;
     }
 
-    h2.mobile-part {
+    h2.loginregform-mobile-part {
         color: #90e0ef;
         align-items: center;
     }
 
-    h3.mobile-part-signIn {
+    h3.loginregform-mobile-part-signIn {
         color: rgba(202, 240, 248, 1);
         padding-right: 30px;
         padding-left: 10px;
         cursor: pointer;
     }
 
-    .part {
+    .loginregform-part {
         display: none;
     }
 
-    button.second,
-    button.ghost {
+    button.loginregform-second,
+    button.loginregform-ghost {
         font-size: 20px;
         width: 150px;
     }
 
-    button.second {
+    button.loginregform-second {
         margin-bottom: 4%;
     }
 
-    input.in,
-    input.up,
-    select {
+    input.loginregform-in,
+    input.loginregform-up,
+    select.loginregform-up {
         width: 300px;
     }
 
-    #signIn {
+    #loginregform-signIn {
         display: none;
     }
 
-    .overlay {
+    .loginregform-overlay {
         height: 200%;
         overflow: visible;
         top: -100%;
@@ -571,7 +544,7 @@ h2.mobile-part {
         justify-content: center;
     }
 
-    .overlay-container {
+    .loginregform-overlay-container {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         border-bottom-left-radius: 10px;
@@ -588,11 +561,12 @@ h2.mobile-part {
         z-index: 100;
     }
 
-    .form-container {
+    .loginregform-form-container {
         transition: all 0.6s ease-in-out;
     }
 
-    .logincontainer.right-panel-active .sign-up-container {
+    .loginregform-logincontainer.loginregform-right-panel-active
+        .loginregform-sign-up-container {
         transform: translateX(0);
         transform: translateY(100%);
         opacity: 1;
@@ -600,89 +574,95 @@ h2.mobile-part {
         z-index: 101;
     }
 
-    .logincontainer.right-panel-active .overlay-right {
+    .loginregform-logincontainer.loginregform-right-panel-active
+        .loginregform-overlay-right {
         transform: translateX(0);
         transform: translateY(-100%);
         opacity: 0;
     }
 
-    .logincontainer.right-panel-active .overlay-left {
+    .loginregform-logincontainer.loginregform-right-panel-active
+        .loginregform-overlay-left {
         transform: translateY(0);
         opacity: 1;
         z-index: 101;
     }
 
-    .logincontainer.right-panel-active .overlay {
+    .loginregform-logincontainer.loginregform-right-panel-active
+        .loginregform-overlay {
         transform: translateX(0);
     }
 
-    .overlay-panel {
+    .loginregform-overlay-panel {
         width: 100%;
         transition: transform 0.6s ease-in-out;
     }
 
-    .logincontainer.right-panel-active .sign-in-container {
+    .loginregform-logincontainer.loginregform-right-panel-active
+        .loginregform-sign-in-container {
         transform: translateX(0);
         transform: translateY(100%);
         opacity: 0;
     }
 
-    .logincontainer.right-panel-active .overlay-container {
+    .loginregform-logincontainer.loginregform-right-panel-active
+        .loginregform-overlay-container {
         transform: translateX(0);
         transform: translateY(-104%);
     }
 }
 
 @media (max-width: 633px) {
-    .sign-up-container {
+    .loginregform-sign-up-container {
         top: 81%;
     }
 }
 
 @media (max-width: 491px) {
-    h3.mobile-part-signIn,
-    h2.mobile-part {
+    h3.loginregform-mobile-part-signIn,
+    h2.loginregform-mobile-part {
         font-size: 18px;
     }
-    input.in,
-    input.up,
-    select {
+
+    input.loginregform-in,
+    input.loginregform-up,
+    select.loginregform-up {
         width: 240px;
     }
 
-    .sign-up-container {
+    .loginregform-sign-up-container {
         top: 80%;
     }
 
-    button.second,
-    button.ghost {
+    button.loginregform-second,
+    button.loginregform-ghost {
         font-size: 16px;
         width: 110px;
     }
 }
 
 @media (max-width: 767px) and (min-width: 660px) {
-    h2.new {
+    h2.loginregform-new {
         font-size: 26px;
     }
 }
 
 @media (max-width: 385px) {
-    input.in,
-    input.up,
-    select {
+    input.loginregform-in,
+    input.loginregform-up,
+    select.loginregform-up {
         width: 210px;
     }
 }
 
 @media (max-width: 360px) {
-    input.in,
-    input.up,
-    select {
+    input.loginregform-in,
+    input.loginregform-up,
+    select.loginregform-up {
         width: 198px;
     }
 
-    h2.new {
+    h2.loginregform-new {
         font-size: 16px;
     }
 }
