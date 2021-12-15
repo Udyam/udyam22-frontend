@@ -1,21 +1,23 @@
-.vertical-tabs {
+.Vertical-Tabs {
     margin: 5vh 8vw 5vh 4.5vw;
     display: flex;
 }
-.tab-title {
+
+.Tab-Title {
     display: flex;
     flex-direction: row;
     justify-content: left;
     /* height: 10vh; */
 }
-.tabs li a img {
+
+.Tabs-tabs li a img {
     height: 14vh;
     padding: calc(30px - 1vw);
     padding-right: 30px;
     border-right: 2px solid white;
 }
 
-.tabs-content {
+.Tabs-Content {
     width: 85vw;
 
     height: 98vh;
@@ -24,19 +26,21 @@
     border-right: 2px solid white;
     background-color: rgba(148, 148, 148, 0.486);
 }
+
 .content {
     height: 35vw;
     color: rgb(255, 255, 255);
 }
 
-.tabs-content .content {
+.Tabs-Content .content {
     display: none;
     padding: 10px;
 }
-.tabs-content .content.active {
+.Tabs-Content .content.active {
     display: block;
 }
-.tabs li.active a img {
+
+.Tabs-tabs li.active a img {
     position: relative;
     right: -4px;
     background-color: rgba(148, 148, 148, 0.486);
@@ -50,12 +54,12 @@
     .vertical {
         display: none;
     }
-    .tabs-content {
+    .Tabs-Content {
         margin-top: 10%;
         border-left: 2px solid white;
     }
 
-    .vertical-tabs {
+    .Vertical-Tabs {
         position: relative;
         margin: 5vh 8vw 5vh 8vw;
     }
