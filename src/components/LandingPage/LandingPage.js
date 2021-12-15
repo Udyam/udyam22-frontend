@@ -4,7 +4,10 @@ import { /*BrowserRouter as Router,*/ Link } from 'react-router-dom'
 
 const LandingPage = () => {
     return (
-        <div id = "landing-page-main-container" className="landing-page-container">
+        <div
+            id="landing-page-main-container"
+            className="landing-page-container"
+        >
             <div>
                 <img
                     src="./images/udyamFont.png"

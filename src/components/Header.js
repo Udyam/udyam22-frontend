@@ -16,7 +16,14 @@ const Header = () => {
     const toggle = () => setIsVisible(!isVisible)
 
     return (
-        <div style={{ position: 'sticky', top: 0, zIndex: 1, filter: 'drop-shadow(0px 2px 5px #bebdbd)' }}>
+        <div
+            style={{
+                position: 'sticky',
+                top: 0,
+                zIndex: 1,
+                filter: 'drop-shadow(0px 2px 5px #bebdbd)',
+            }}
+        >
             <div>
                 <div>
                     <Navbar
@@ -48,7 +55,8 @@ const Header = () => {
                                         <div
                                             className="px-3"
                                             style={{
-                                                fontFamily: 'Raleway, sans-serif',
+                                                fontFamily:
+                                                    'Raleway, sans-serif',
                                                 fontSize: '2em',
                                                 color: '#CAF0F8',
                                             }}
@@ -62,7 +70,8 @@ const Header = () => {
                                         <div
                                             className="px-3"
                                             style={{
-                                                fontFamily: 'Raleway, sans-serif',
+                                                fontFamily:
+                                                    'Raleway, sans-serif',
                                                 fontSize: '2em',
                                                 color: '#CAF0F8',
                                             }}
@@ -76,7 +85,8 @@ const Header = () => {
                                         <div
                                             className="px-3"
                                             style={{
-                                                fontFamily: 'Raleway, sans-serif',
+                                                fontFamily:
+                                                    'Raleway, sans-serif',
                                                 fontSize: '2em',
                                                 color: '#CAF0F8',
                                             }}
@@ -90,7 +100,8 @@ const Header = () => {
                                         <div
                                             className="px-3"
                                             style={{
-                                                fontFamily: 'Raleway, sans-serif',
+                                                fontFamily:
+                                                    'Raleway, sans-serif',
                                                 fontWeight: 'bolder',
                                                 fontSize: '2em',
                                                 color: '#CAF0F8',

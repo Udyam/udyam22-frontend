@@ -3,7 +3,7 @@ import {
     FaFacebookSquare,
     FaLinkedin,
     FaYoutubeSquare,
-    FaInstagramSquare
+    FaInstagramSquare,
 } from 'react-icons/fa'
 import './SocialTray.css'
 
