@@ -16,15 +16,15 @@ const Header = () => {
     const toggle = () => setIsVisible(!isVisible)
 
     return (
-        <div style={{ position: 'sticky', top: 0, zIndex: 1 }}>
+        <div style={{ position: 'sticky', top: 0, zIndex: 1, filter: 'drop-shadow(0px 2px 5px #bebdbd)' }}>
             <div>
                 <div>
                     <Navbar
                         dark
-                        style={{ backgroundColor: 'rgba(0,0,0,1)' }}
+                        style={{ backgroundColor: '#022049' }}
                         expand="xl"
                     >
-                        <NavbarBrand href="/">
+                        <NavbarBrand href="/#landing-page-main-container">
                             <img
                                 src="./images/udyamLogo.png"
                                 className="logo mx-4"
@@ -44,11 +44,11 @@ const Header = () => {
                         <Collapse isOpen={false} navbar>
                             <Nav className="ms-auto set_size" navbar>
                                 <NavItem>
-                                    <NavLink href="#">
+                                    <NavLink href="/#timeline-main-container">
                                         <div
                                             className="px-3"
                                             style={{
-                                                fontWeight: 'lighter',
+                                                fontFamily: 'Raleway, sans-serif',
                                                 fontSize: '2em',
                                                 color: '#CAF0F8',
                                             }}
@@ -58,11 +58,11 @@ const Header = () => {
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink href="#">
+                                    <NavLink href="/#contact-page-container">
                                         <div
                                             className="px-3"
                                             style={{
-                                                fontWeight: 'lighter',
+                                                fontFamily: 'Raleway, sans-serif',
                                                 fontSize: '2em',
                                                 color: '#CAF0F8',
                                             }}
@@ -72,11 +72,11 @@ const Header = () => {
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink href="#">
+                                    <NavLink href="/noticeboard">
                                         <div
                                             className="px-3"
                                             style={{
-                                                fontWeight: 'lighter',
+                                                fontFamily: 'Raleway, sans-serif',
                                                 fontSize: '2em',
                                                 color: '#CAF0F8',
                                             }}
@@ -86,10 +86,12 @@ const Header = () => {
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink href="#">
+                                    <NavLink href="/loginregister">
                                         <div
                                             className="px-3"
                                             style={{
+                                                fontFamily: 'Raleway, sans-serif',
+                                                fontWeight: 'bolder',
                                                 fontSize: '2em',
                                                 color: '#CAF0F8',
                                             }}

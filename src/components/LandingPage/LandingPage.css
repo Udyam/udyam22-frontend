@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico:wght@300&display=swap');
+
 .landing-page-container {
     height: 90vh;
 }
@@ -29,10 +31,16 @@
     border-right: none;
     height: 2em;
     font-size: 2em;
-    font-weight: bold;
     margin-left: auto;
+    font-family: Quantico, sans-serif;
     right: -2.4em;
-    background-color: rgba(29, 67, 85, 0.55) !important;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.15),
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.15)
+    ) !important;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
 }
 
 @media (max-width: 1200px) {
