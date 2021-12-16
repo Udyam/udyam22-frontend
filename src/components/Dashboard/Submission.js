@@ -3,18 +3,46 @@ import { Form, FormGroup, Input } from 'reactstrap'
 // import isEmail from 'validator/lib/isEmail'
 // import isPhone from 'validator/lib/isMobilePhone'
 import './Submission.css'
+import axios from 'axios'
+import { useState, useEffect } from 'react'
+
+const API_BASE_URL='https://udyam22-backend.herokuapp.com'
 
 const Submission = () => {
-    // const [input, setInput] = useState({
-    //     email: '',
-    //     phone: '',
-    // })
+    const [input, setInput] = useState({
+        teamname: '',
+        event: '',
+        submission: ''
+    })
+    const [check, setCheck] = useState(0)
 
-    // const inputChangeHandler = (e) => {
-    //     const newInput = { ...input }
-    //     newInput[e.target.name] = e.target.value
-    //     setInput(newInput)
-    // }
+    const inputChangeHandler = (e) => {
+        const newInput = { ...input }
+        newInput[e.target.name] = e.target.value
+        setInput(newInput)
+        // console.log(input);
+    }
+    
+    // function submitHandler(e) {
+    //     console.log("e",e);
+        useEffect(() => {
+            if(check){
+                console.log("check=", check);
+                console.log("input=",input);
+                axios.post(API_BASE_URL+'/API/team/submission/',input,{
+                        headers: {
+                            'Authorization': "Token d102f9b8531448411f3658ecfdeeee5b0fbf2a17"
+                        }
+                })
+                    .then(res => {
+                        console.log(res);
+                    })
+                    .catch(err => {
+                        console.log(err);
+                    })
+                }
+        },[check])
+
     return (
         <div className="submissionContainer">
             {/* <div className="submissionForm"> */}
@@ -57,17 +85,19 @@ const Submission = () => {
 
                     <FormGroup>
                         {/* <Input type="select" name="select" id="exampleSelect" placeholder="EVENT"> */}
-                        <select name="EVENT" id="id_event" className="dropdown">
+                        <select name="event" value={input.event} onChange={(e) => {
+                                inputChangeHandler(e)
+                            }} id="id_event" className="dropdown">
                             <option>EVENT</option>
-                            <option>MOSAIC</option>
-                            <option>SPYBITS</option>
-                            <option>I-CHIP</option>
-                            <option>COMMNET</option>
-                            <option>CONTINNUM</option>
-                            <option>DIGISM</option>
-                            <option>XIOTA</option>
-                            <option>CASSANDRA</option>
-                            <option>FUNCKIT</option>
+                            <option value="MOSAIC">MOSAIC</option>
+                            <option value="SPYBITS">SPYBITS</option>
+                            <option value="I-CHIP">I-CHIP</option>
+                            <option value="COMMNET">COMMNET</option>
+                            <option value="CONTINNUM">CONTINNUM</option>
+                            <option value="DIGISM">DIGISM</option>
+                            <option value="XIOTA">XIOTA</option>
+                            <option value="CASSANDRA">CASSANDRA</option>
+                            <option value="FUNCKIT">FUNCKIT</option>
                         </select>
                         {/* </Input> */}
                     </FormGroup>
@@ -77,6 +107,10 @@ const Submission = () => {
                             type="text"
                             name="teamname"
                             placeholder="TEAM NAME"
+                            value={input.teamname}
+                            onChange={(e) => {
+                                inputChangeHandler(e)
+                            }}
                             className="team"
                             required
                         />
@@ -85,7 +119,11 @@ const Submission = () => {
                     <FormGroup>
                         <Input
                             type="text"
-                            name="github"
+                            name="submission"
+                            value={input.submission}
+                            onChange={(e) => {
+                                inputChangeHandler(e)
+                            }}
                             placeholder="GITHUB LINK"
                             className="git"
                             required
@@ -103,7 +141,7 @@ const Submission = () => {
             </div>
 
             <div className="buttonContainer">
-                <button className="button">Submit</button>
+                <button className="button" onClick={()=>{console.log("button clicked"); setCheck(check+1);}}>Submit</button>
             </div>
 
             {/* </div> */}
