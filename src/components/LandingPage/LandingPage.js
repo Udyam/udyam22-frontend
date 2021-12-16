@@ -4,7 +4,10 @@ import { /*BrowserRouter as Router,*/ Link } from 'react-router-dom'
 
 const LandingPage = () => {
     return (
-        <div className="landing-page-container">
+        <div
+            id="landing-page-main-container"
+            className="landing-page-container"
+        >
             <div>
                 <img
                     src="./images/udyamFont.png"
@@ -18,7 +21,7 @@ const LandingPage = () => {
                     className="page-link px-4 py-2 my-4"
                     style={{ width: '320px' }}
                 >
-                    <div>HOME</div>
+                    <div>Home</div>
                 </Link>
 
                 <Link
@@ -26,7 +29,7 @@ const LandingPage = () => {
                     className="page-link px-4 py-2 my-4"
                     style={{ width: '340px' }}
                 >
-                    <div>ABOUT US</div>
+                    <div>About us</div>
                 </Link>
 
                 <Link
@@ -34,7 +37,7 @@ const LandingPage = () => {
                     className="page-link px-4 py-2 my-4"
                     style={{ width: '360px' }}
                 >
-                    <div>EVENTS</div>
+                    <div>Events</div>
                 </Link>
 
                 <Link
@@ -42,7 +45,7 @@ const LandingPage = () => {
                     className="page-link px-4 py-2 my-4"
                     style={{ width: '380px' }}
                 >
-                    <div>SPEAKERS</div>
+                    <div>Speakers</div>
                 </Link>
 
                 <Link
@@ -50,7 +53,7 @@ const LandingPage = () => {
                     className="page-link px-4 py-2 my-4"
                     style={{ width: '400px' }}
                 >
-                    <div>LEADERBOARD</div>
+                    <div>Leaderboard</div>
                 </Link>
 
                 <Link
@@ -58,7 +61,7 @@ const LandingPage = () => {
                     className="page-link px-4 py-2 my-4"
                     style={{ width: '420px' }}
                 >
-                    <div>SPONSORS</div>
+                    <div>Sponsors</div>
                 </Link>
 
                 <Link
@@ -66,7 +69,7 @@ const LandingPage = () => {
                     className="page-link px-4 py-2 my-4"
                     style={{ width: '440px' }}
                 >
-                    <div>TEAM</div>
+                    <div>Team</div>
                 </Link>
             </div>
         </div>

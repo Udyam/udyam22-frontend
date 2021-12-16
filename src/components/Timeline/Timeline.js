@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 const Timeline = () => {
     return (
-        <div className="containertp">
+        <div id="timeline-main-container" className="containertp">
             <div className="rowtp">
                 <div className="col-md-12">
                     <div className="d-flex flex-row-reverse">
