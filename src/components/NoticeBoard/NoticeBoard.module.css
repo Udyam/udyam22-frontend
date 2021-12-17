@@ -22,19 +22,19 @@
 }
 
 @media only screen and (min-width: 767px) {
-    ::-webkit-scrollbar {
+    .scroll_container::-webkit-scrollbar {
         width: 0.5em;
         background: rgba(196, 196, 196, 0.3);
         border: 1px solid black;
         border-radius: 50px;
     }
 
-    ::-webkit-scrollbar-thumb {
+    .scroll_container::-webkit-scrollbar-thumb {
         background: rgba(196, 196, 196, 0.7);
         border-radius: 50px;
     }
 
-    ::-webkit-scrollbar-thumb:hover {
+    .scroll_container::-webkit-scrollbar-thumb:hover {
         background: #999999;
     }
     .scroll_container {

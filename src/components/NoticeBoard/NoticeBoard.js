@@ -12,7 +12,7 @@ const Noticeboard = () => {
         axios
             .get('https://udyam22-backend.herokuapp.com/API/get_all_notice/')
             .then((response) => {
-                setNOTIFS(response)
+                setNOTIFS(response.data)
             })
             .catch((err) => console.log(err))
     }, [])
@@ -21,13 +21,12 @@ const Noticeboard = () => {
     const filterNotifs = (query) => {
         setFilteredNotifs(
             NOTIFS.filter((notif) => {
-                if (
+                return (
                     query === '' ||
                     notif.description
                         .toLowerCase()
                         .includes(query.toLowerCase())
                 )
-                    return notif
             })
         )
     }

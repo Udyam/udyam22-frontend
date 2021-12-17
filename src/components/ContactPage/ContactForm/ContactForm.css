@@ -11,7 +11,8 @@
         rgba(255, 255, 255, 0.2),
         rgba(255, 255, 255, 0.15)
     );
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px) !important;
+    -webkit-backdrop-filter: blur(6px);
     border: 0.2em solid #90e0ef;
     border-radius: 7px;
     padding: 9% 7% 0% 7%;
@@ -32,6 +33,7 @@
 .contact-form-feedback {
     font-weight: bold;
     font-size: 1.2em;
+    text-align: center;
 }
 
 .contact-form-fields {
@@ -42,6 +44,7 @@
     height: 2em;
     margin: 9% auto;
     border-bottom: 2px solid white;
+    text-align: left !important;
 }
 
 .contact-form-fields,
@@ -72,7 +75,7 @@
 #contact-form-button-wrapper {
     display: flex;
     justify-content: center;
-    margin: 16% auto;
+    margin: 10% auto;
 }
 
 @media only screen and (min-width: 767px) and (max-width: 992px) {
