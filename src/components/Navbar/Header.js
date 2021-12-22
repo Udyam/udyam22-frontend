@@ -1,21 +1,36 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Header.css'
 import {
     Collapse,
     Navbar,
     NavbarToggler,
-    NavbarBrand,
     Nav,
     NavItem,
     NavLink,
 } from 'reactstrap'
 import ToggleMenu from './ToggleMenu'
+import { Link } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 
 const Header = () => {
     const [isVisible, setIsVisible] = useState(false)
+    const [curPath, setCurPath] = useState('/')
     const toggle = () => setIsVisible(!isVisible)
+    const location = useLocation()
 
-    return (
+    useEffect(() => {
+        setCurPath(location.pathname)
+    }, [location.pathname])
+
+    return [
+        '/dashboard',
+        '/resetpage',
+        '/recoverpage',
+        '/notifyreset',
+        '/comingsoon',
+    ].includes(curPath) ? (
+        ''
+    ) : (
         <div
             style={{
                 position: 'sticky',
@@ -31,20 +46,23 @@ const Header = () => {
                         style={{ backgroundColor: '#022049' }}
                         expand="xl"
                     >
-                        <NavbarBrand href="/#landing-page-main-container">
+                        <Link to="/#landing-page-main-container">
                             <img
                                 src="./images/udyamLogo.png"
                                 className="logo mx-4"
                                 alt="logo"
                             />
-                        </NavbarBrand>
+                        </Link>
                         <Nav className="ms-auto" navbar>
                             <NavItem>
-                                <NavLink href="#">
+                                <Link
+                                    to="/loginregister"
+                                    style={{ textDecoration: 'none' }}
+                                >
                                     <div className="signin-div px-2">
                                         Sign in
                                     </div>
-                                </NavLink>
+                                </Link>
                             </NavItem>
                         </Nav>
                         <NavbarToggler className="mx-3" onClick={toggle} />
@@ -81,7 +99,10 @@ const Header = () => {
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink href="/noticeboard">
+                                    <Link
+                                        to="/noticeboard"
+                                        style={{ textDecoration: 'none' }}
+                                    >
                                         <div
                                             className="px-3"
                                             style={{
@@ -89,14 +110,18 @@ const Header = () => {
                                                     'Raleway, sans-serif',
                                                 fontSize: '2em',
                                                 color: '#CAF0F8',
+                                                marginTop: '0.25em',
                                             }}
                                         >
                                             Noticeboard
                                         </div>
-                                    </NavLink>
+                                    </Link>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink href="/loginregister">
+                                    <Link
+                                        to="/loginregister"
+                                        style={{ textDecoration: 'none' }}
+                                    >
                                         <div
                                             className="px-3"
                                             style={{
@@ -105,11 +130,12 @@ const Header = () => {
                                                 fontWeight: 'bolder',
                                                 fontSize: '2em',
                                                 color: '#CAF0F8',
+                                                marginTop: '0.25em',
                                             }}
                                         >
                                             Sign in
                                         </div>
-                                    </NavLink>
+                                    </Link>
                                 </NavItem>
                             </Nav>
                         </Collapse>
