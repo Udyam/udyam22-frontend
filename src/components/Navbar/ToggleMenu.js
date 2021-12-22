@@ -85,6 +85,13 @@ const ToggleMenu = ({ toggle }) => {
                         </Link>
                         <br />
                         <br />
+                        <Link
+                            to="/noticeboard"
+                            className="toggle-menu-link"
+                            onClick={toggle}
+                        >
+                            NOTICEBOARD
+                        </Link>
                     </div>
                 </ToastBody>
             </Toast>

@@ -50,7 +50,7 @@ export const InfoBox = () => {
                     <ul className="info-box-list">
                         <li className="info-box-list-item">Ritweek Singh</li>
                         <li className="info-box-list-item">
-                            ritweeksingh.ece18@iitbhu.a
+                            ritweeksingh.ece18@iitbhu.ac.in
                         </li>
                     </ul>
                 </li>
