@@ -10,11 +10,12 @@ import { Link, useHistory } from 'react-router-dom'
 toast.configure()
 
 export default function RegisterForm() {
+    const history = useHistory()
+    if (localStorage.getItem('userToken')) history.push('/comingsoon')
+
     const [user_email, setuser_email] = useState('')
     const [user_pass, setuser_pass] = useState('')
-    /* const {setToken , setData} = useAuthContext();*/
     const { setToken } = useAuthContext()
-    const history = useHistory()
 
     const userlogin = (e) => {
         e.preventDefault()
@@ -37,9 +38,6 @@ export default function RegisterForm() {
                     position: toast.POSITION.BOTTOM_RIGHT,
                 })
                 {
-                    console.log(response.data.token)
-                    /* setData(response.data.data);
-              setToken(response.data.token);*/
                     setToken(response.data.token)
                     history.push('/comingsoon')
                 }
@@ -59,7 +57,6 @@ export default function RegisterForm() {
     const [referalcode, setReferalcode] = useState('')
     const [confirmpassword, setConfirmpassword] = useState('')
     const [year, setYear] = useState('')
-    /*const [image, setImage] = useState('../images/Group2471.png')*/
 
     const registerFieldsAreValid = (
         Name,
@@ -107,11 +104,6 @@ export default function RegisterForm() {
         }
         return true
     }
-    /* const onImageChange = (event) => {
-        if (event.target.files && event.target.files[0]) {
-            setImage(URL.createObjectURL(event.target.files[0]))
-        }
-    }*/
 
     const register = (e) => {
         e.preventDefault()
@@ -154,8 +146,6 @@ export default function RegisterForm() {
                     )
                     {
                         console.log(response.data.token)
-                        /*setData(response.data.data);
-            setToken(response.data.token);*/
                         setToken(response.data.token)
                         history.push('/comingsoon')
                     }
@@ -245,14 +235,6 @@ export default function RegisterForm() {
                         <div className="loginregform-overlay">
                             <div className="loginregform-overlay-panel loginregform-overlay-left">
                                 <form className="loginregform-form">
-                                    {/* <div className="profile-pic-div">
-                                        <img src={image} id="photo" />
-                                        <input
-                                            type="file"
-                                            id="dp-file"
-                                            onChange={onImageChange}
-                                        />
-                            </div>*/}{' '}
                                     <h1 className="loginregform-h12">
                                         SIGN UP
                                     </h1>
