@@ -6,18 +6,7 @@ import { useEffect, useState } from 'react'
 const Teams = () => {
     const [events, setEvents] = useState({
         eventsList: [
-            {
-                event: '',
-                teamname: '',
-
-                members: [
-                    {
-                        leader: '',
-                        member1: '',
-                        member2: '',
-                    },
-                ],
-            },
+            
             {
                 event: 'Digisim',
                 teamname: 'InFerno',
