@@ -6,7 +6,6 @@ import { useEffect, useState } from 'react'
 const Teams = () => {
     const [events, setEvents] = useState({
         eventsList: [
-            
             {
                 event: 'Digisim',
                 teamname: 'InFerno',
