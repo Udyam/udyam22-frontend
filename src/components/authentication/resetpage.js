@@ -11,11 +11,7 @@ export default function ResetForm() {
     const [recover_password, setrecover_password] = useState('')
     const [confirmrecover_password, setconfirmrecover_password] = useState('')
     const history = useHistory()
-    console.log(window.location.search)
-    console.log(useLocation().search)
     const params = new URLSearchParams(useLocation().search)
-    console.log(params.get('token'))
-    console.log(params.get('id'))
     const tokenget = params.get('token')
     const uidbget = params.get('id')
 
