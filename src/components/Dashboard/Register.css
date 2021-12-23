@@ -89,11 +89,6 @@
     color: black;
 }
 
-.contact-form-feedback {
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
 /* .dropdown select {} */
 
 @media only screen and (max-width: 600px) {
@@ -161,17 +156,5 @@
         font-size: 24px;
         line-height: 28px;
         color: black;
-    }
-}
-
-@media only screen and (min-width: 767px) and (max-width: 992px) {
-    .contact-form-feedback {
-        font-size: 0.9em;
-    }
-}
-
-@media (max-width: 767px) {
-    .contact-form-feedback {
-        font-size: 0.8em;
     }
 }
