@@ -12,9 +12,6 @@ import ComingSoon from './components/authentication/registration'
 import Team from './components/Tabs/Teams/Team.js'
 import NoticeBoard from './components/NoticeBoard/NoticeBoard'
 import Dashboard from './components/Dashboard/Dashboard.js'
-import ProtectedRoute  from './components/authentication/protectedroute'
-import RouteProtected  from './components/authentication/protectedroute'
-
 
 const Routes = () => {
     return (
@@ -44,11 +41,11 @@ const Routes = () => {
                     <Team />
                 </Tabs>
             </Route>
-            <RouteProtected exact path="/loginregister" component={RegisterForm} />
+            <Route exact path="/loginregister" component={RegisterForm} />
             <Route exact path="/recoverpage" component={RecoverForm} />
             <Route exact path="/resetpage" component={ResetForm} />
             <Route exact path="/notifyreset" component={NotifyReset} />
-            <ProtectedRoute exact path="/comingsoon" component={ComingSoon} />
+            <Route exact path="/comingsoon" component={ComingSoon} />
             <Route path="/noticeboard">
                 <NoticeBoard />
             </Route>

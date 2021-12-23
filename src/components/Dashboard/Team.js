@@ -39,10 +39,7 @@ const Team = ({ key, event, teamname, members }) => {
     }
     return (
         <div className="teamContainer">
-            <img
-                className="eventImageTop"
-                src={'./images/' + event + '.png'}
-            />
+            <img className="eventImageTop" src={'./images/' + event + '.png'} />
             <div className="teamDetails">
                 <ul style={{ listStyleType: 'none' }}>
                     <li>

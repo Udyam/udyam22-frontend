@@ -4,17 +4,19 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 
 const Teams = () => {
-    const [events,setEvents] = useState({
+    const [events, setEvents] = useState({
         eventsList: [
             {
                 event: '',
                 teamname: '',
-                
-                members: [{
-                    leader: '',
-                    member1:'',
-                    member2:'',
-            }],
+
+                members: [
+                    {
+                        leader: '',
+                        member1: '',
+                        member2: '',
+                    },
+                ],
             },
             {
                 event: 'Digisim',
