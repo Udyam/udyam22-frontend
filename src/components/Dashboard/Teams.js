@@ -1,14 +1,21 @@
 import React from 'react'
 import Team from './Team.js'
-import axios from 'axios'
-import { useEffect, useState } from 'react'
 
 const Teams = () => {
-    const [events, setEvents] = useState({
+    const events = {
         eventsList: [
             {
-                event: 'Digisim',
-                teamname: 'InFerno',
+                eventName: 'Funckit',
+                teamName: 'InFerno',
+                members: [
+                    'Riya Saini',
+                    'Tanuja Vasamsetty',
+                    'Swetha Vislavath',
+                ],
+            },
+            {
+                eventName: 'Digisim',
+                teamName: 'InFerno',
                 members: [
                     'Riya Saini',
                     'Tanuja Vasamsetty',
@@ -16,20 +23,7 @@ const Teams = () => {
                 ],
             },
         ],
-    })
-    useEffect(() => {
-        axios
-            .get('https://udyam22-backend.herokuapp.com/API/team/', {
-                headers: {
-                    Authorization:
-                        'Token d102f9b8531448411f3658ecfdeeee5b0fbf2a17',
-                },
-            })
-            .then((res) => {
-                console.log(res.data)
-                setEvents(res.data)
-            })
-    }, [])
+    }
 
     return (
         <div>
@@ -39,9 +33,9 @@ const Teams = () => {
                 events.eventsList.map((event) => {
                     return (
                         <Team
-                            key={event.event}
-                            event={event.event}
-                            teamname={event.teamname}
+                            key={event.eventName}
+                            eventName={event.eventName}
+                            teamName={event.teamName}
                             members={event.members}
                         />
                     )

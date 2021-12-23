@@ -2,7 +2,7 @@ import React from 'react'
 import './Team.css'
 import axios from '../../utils/axios'
 
-const Team = ({ key, event, teamname, members }) => {
+const Team = ({ key, eventName, teamName, members }) => {
     const id = key
     const auth = {
         headers: {
@@ -39,14 +39,17 @@ const Team = ({ key, event, teamname, members }) => {
     }
     return (
         <div className="teamContainer">
-            <img className="eventImageTop" src={'./images/' + event + '.png'} />
+            <img
+                className="eventImageTop"
+                src={'./images/' + eventName + '.png'}
+            />
             <div className="teamDetails">
                 <ul style={{ listStyleType: 'none' }}>
                     <li>
-                        <h4>Event : {event}</h4>
+                        <h4>Event : {eventName}</h4>
                     </li>
                     <li>
-                        <h4>Team Name: {teamname}</h4>
+                        <h4>Team Name: {teamName}</h4>
                     </li>
                     <li>
                         <h4>
@@ -63,7 +66,7 @@ const Team = ({ key, event, teamname, members }) => {
             </div>
             <img
                 className="eventImageRight"
-                src={'./images/' + event + '.png'}
+                src={'./images/' + eventName + '.png'}
             />
         </div>
     )

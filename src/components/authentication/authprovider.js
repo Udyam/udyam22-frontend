@@ -19,3 +19,26 @@ export const AuthProvider = ({ children }) => {
         </AuthContext.Provider>
     )
 }
+
+/*import { AuthContext } from '../Context/AuthContext';
+export default function authprovider() {
+    const [token, setToken] = useState(null);
+    const [data, setData] = useState({});
+    const logout = () => {
+       
+      }
+
+    return (
+        <AuthContext.Provider
+            value={{
+                token: token,
+                data: data,
+                setToken: setToken,
+                setData: setData,
+            }}
+        >
+       <ChildComponents />
+
+       </AuthContext.Provider>
+    );
+}*/
