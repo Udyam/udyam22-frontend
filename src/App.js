@@ -6,6 +6,15 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import { Routes } from './routes'
 import { AuthProvider } from './components/authentication/authprovider'
 function App() {
+    
+    const token= localStorage.getItem('userToken')
+    console.log(token)
+    if(window.location.pathname=='/loginregister' && token){
+      window.location.href=('/comingsoon')
+    }
+    if(window.location.pathname=='/comingsoon' &&( !token || token==null)){
+        window.location.href=('/loginregister')
+    }
     let bgImage = [
         '/dashboard',
         '/noticeboard',
