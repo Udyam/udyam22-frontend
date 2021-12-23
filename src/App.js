@@ -1,36 +1,14 @@
 import React from 'react'
 import './App.css'
-import Header from './components/Header.js'
+import Header from './components/Navbar/Header'
 import { Footer } from './components/Footer/Footer'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { Routes } from './routes'
 import { AuthProvider } from './components/authentication/authprovider'
+/*import  ProtectedRoute  from './components/authentication/protectedroute'*/
 function App() {
-    
-    const token= localStorage.getItem('userToken')
-    console.log(token)
-    if(window.location.pathname=='/loginregister' && token){
-      window.location.href=('/comingsoon')
-    }
-    if(window.location.pathname=='/comingsoon' &&( !token || token==null)){
-        window.location.href=('/loginregister')
-    }
-    let bgImage = [
-        '/dashboard',
-        '/noticeboard',
-        '/resetpage',
-        '/recoverpage',
-        '/notifyreset',
-        '/loginregister',
-        '/comingsoon',
-    ].includes(window.location.pathname)
-        ? {
-              backgroundImage: 'url(./images/backgroundAlt.png)',
-          }
-        : {
-              backgroundImage: 'url(./images/background.png)',
-          }
-
+   
+    let bgImage = { backgroundImage: 'url(./images/backgroundAlt.png)' }
     let bgProperties = {
         height: 'auto',
         backgroundSize: 'cover',
@@ -44,46 +22,26 @@ function App() {
 
     return (
         <AuthProvider>
-            <div>
-                <div style={style}>
-                    <div
-                        style={{
-                            minHeight: '100vh',
-                            display: 'flex',
-                            flexDirection: 'column',
-                            justifyContent: 'space-between',
-                        }}
-                    >
-                        <Router>
-                            {[
-                                '/dashboard',
-                                '/resetpage',
-                                '/recoverpage',
-                                '/notifyreset',
-                                '/comingsoon',
-                            ].includes(window.location.pathname) ? (
-                                ''
-                            ) : (
-                                <Header />
-                            )}
-                            <Routes />
-                        </Router>
-
-                        {[
-                            '/dashboard',
-                            '/noticeboard',
-                            '/resetpage',
-                            '/recoverpage',
-                            '/notifyreset',
-                            '/comingsoon',
-                        ].includes(window.location.pathname) ? (
-                            ''
-                        ) : (
-                            <Footer />
-                        )}
-                    </div>
+             
+            <div style={style}>
+                <div
+                    style={{
+                        minHeight: '100vh',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        justifyContent: 'space-between',
+                    }}
+                >
+                    <Router>
+                    {/*<ProtectedRoute>*/}
+                        <Header />
+                        <Routes />
+                        <Footer />
+                    {/*</ProtectedRoute>*/}
+                    </Router>
                 </div>
             </div>
+           
         </AuthProvider>
     )
 }
