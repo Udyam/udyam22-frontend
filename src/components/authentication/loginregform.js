@@ -11,7 +11,11 @@ toast.configure()
 
 export default function RegisterForm() {
     const history = useHistory()
-    if (localStorage.getItem('userToken')) history.push('/comingsoon')
+    if (
+        localStorage.getItem('userToken') &&
+        localStorage.getItem('userToken') != 'undefined'
+    )
+        history.push('/comingsoon')
 
     const [user_email, setuser_email] = useState('')
     const [user_pass, setuser_pass] = useState('')
@@ -145,7 +149,6 @@ export default function RegisterForm() {
                         { position: toast.POSITION.BOTTOM_RIGHT }
                     )
                     {
-                        console.log(response.data.token)
                         setToken(response.data.token)
                         history.push('/comingsoon')
                     }

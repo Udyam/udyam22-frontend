@@ -4,7 +4,11 @@ import './registration.css'
 
 export default function ComingSoon() {
     const history = useHistory()
-    if (!localStorage.getItem('userToken')) history.push('/loginregister')
+    if (
+        !localStorage.getItem('userToken') ||
+        localStorage.getItem('userToken') == 'undefined'
+    )
+        history.push('/loginregister')
 
     return (
         <div className="comingsoonwholepage">
