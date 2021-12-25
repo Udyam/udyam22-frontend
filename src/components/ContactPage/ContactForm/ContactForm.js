@@ -139,7 +139,7 @@ export const ContactForm = () => {
                     </FormGroup>
                     <FormGroup>
                         <Input
-                            type="textarea"
+                            type="text"
                             name="query"
                             value={input.query}
                             onChange={(e) => {
