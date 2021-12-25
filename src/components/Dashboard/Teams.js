@@ -3,18 +3,13 @@ import Team from './Team.js'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 const Teams = () => {
-   
-    const [events,setEvents] = useState({
-      
-           
-                id:'',
-                event: '',
-                teamname: '',
-                leader: '',
-                member1: '',
-                member2: '',
-         
-      
+    const [events, setEvents] = useState({
+        id: '',
+        event: '',
+        teamname: '',
+        leader: '',
+        member1: '',
+        member2: '',
     })
     useEffect(() => {
         axios
@@ -32,7 +27,7 @@ const Teams = () => {
 
     return (
         <div>
-            {events.id == ''? (
+            {events.id == '' ? (
                 <h5 style={{ paddingTop: '10px' }}>No teams yet.</h5>
             ) : (
                 events.map((event) => {
