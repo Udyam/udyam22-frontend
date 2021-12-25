@@ -2,29 +2,29 @@ import React from 'react'
 import './Team.css'
 import axios from '../../utils/axios'
 
-const Team = ({ key, eventName, teamName, members }) => {
-    const id = key
+
+const Team = ({id, eventName, teamName, leader,member1,member2 }) => {
+    
     const auth = {
         headers: {
-            Authorization: 'Token ',
+            Authorization: 'Token d102f9b8531448411f3658ecfdeeee5b0fbf2a17',
         },
     }
-    /* var Member1
-    var Member2
-    const Leader=members[0]
-    if (members.length == 3) {
-        Member1 = members[1]
-        Member2 = members[2]
+    var members=[]
+    if (member1==null&& member2==null) {
+        members=[leader]
     }
-    else if (members.length == 2) {
-        Member1 = members[1]
-        Member2 = ' '
-    }*/
+    else if (member1!=null&& member2==null) {
+       members=[leader,member1]
+    }
+    else if(member1!=null&& member2!=null) {
+        members=[leader,member1,member2]
+     }
     let additionalMembers = []
     if (members.length > 1) {
         additionalMembers = members.slice(1, members.length)
     }
-    const deleteTeam = (id) => {
+    const deleteTeam = ({id}) => {
         axios
             .delete(
                 'https://udyam22-backend.herokuapp.com/API/team/' + id + '/',
@@ -49,7 +49,8 @@ const Team = ({ key, eventName, teamName, members }) => {
                         <h4>Event : {eventName}</h4>
                     </li>
                     <li>
-                        <h4>Team Name: {teamName}</h4>
+                        <h4> Team Name: {teamName}</h4>
+                       
                     </li>
                     <li>
                         <h4>
@@ -59,7 +60,7 @@ const Team = ({ key, eventName, teamName, members }) => {
                             })}
                         </h4>
                     </li>
-                    <h4 className="deleteBtn" onClick={() => deleteTeam(id)}>
+                    <h4 className="deleteBtn" onClick={() => deleteTeam({id})}>
                         DELETE TEAM
                     </h4>
                 </ul>
