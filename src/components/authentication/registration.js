@@ -1,7 +1,15 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 import './registration.css'
 
 export default function ComingSoon() {
+    const history = useHistory()
+    if (
+        !localStorage.getItem('userToken') ||
+        localStorage.getItem('userToken') == 'undefined'
+    )
+        history.push('/loginregister')
+
     return (
         <div className="comingsoonwholepage">
             <div className="comingsoon-logocircle12">

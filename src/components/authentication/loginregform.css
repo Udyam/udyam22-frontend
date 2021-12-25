@@ -34,23 +34,6 @@
     text-decoration: none;
 }
 
-/*#photo {
-    height: 80%;
-    width: 80%;
-    border-radius: 50%;
-}
-
-.profile-pic-div {
-    height: 110px;
-    width: 110px;
-    position: relative;
-    margin-left: 43%;
-    top: 9%;
-    margin-bottom: -10%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    margin-bottom: 2%;
-}*/
 .loginregform-head {
     color: rgba(202, 240, 248, 1);
     font-weight: bold;
