@@ -313,7 +313,7 @@ export default function RegisterForm() {
                                         onChange={(e) =>
                                             setConfirmpassword(e.target.value)
                                         }
-                                        placeholder="Password"
+                                        placeholder="Confirm Password"
                                     />
                                     <input
                                         className="loginregform-up"
