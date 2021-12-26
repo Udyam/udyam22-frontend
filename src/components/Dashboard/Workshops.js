@@ -4,7 +4,7 @@ import './Workshops.css'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 
-const Workshops = () => {
+const Workshops = ({dashboardToken}) => {
     const API_BASE_URL = 'https://udyam22-backend.herokuapp.com'
 
     const [workshops, setWorkshops] = useState([])
@@ -14,7 +14,7 @@ const Workshops = () => {
             .get(`${API_BASE_URL}/API/workshop/`, {
                 headers: {
                     Authorization:
-                        'Token d102f9b8531448411f3658ecfdeeee5b0fbf2a17',
+                    `Token ${dashboardToken}`,
                 },
             })
             .then((res) => {
