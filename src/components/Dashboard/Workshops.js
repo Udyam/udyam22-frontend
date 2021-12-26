@@ -37,16 +37,16 @@ const Workshops = () => {
             </h4>
             <div className="py-2 workshopDetails">
                 <h4 style={{ left: '4%' }}>Workshop</h4>
-                <h4 style={{ left: '33%' }}>Schedule</h4>
-                <h4 style={{ left: '60%' }}>Time</h4>
+                <h4 style={{ left: '30%' }}>Schedule</h4>
+                <h4 style={{ left: '59%' }}>Time</h4>
                 <h4 style={{ right: '4%' }}>Join here</h4>
             </div>
 
             {workshops.map((workshop) => (
                 <div className="py-2 workshopDetails" key={workshop.id}>
                     <h4 style={{ left: '4%' }}>{workshop.event}</h4>
-                    <h4 style={{ left: '33%' }}>{workshop.date}</h4>
-                    <h4 style={{ left: '60%' }}>{workshop.time}</h4>
+                    <h4 style={{ left: '30%' }}>{workshop.date}</h4>
+                    <h4 style={{ left: '59%' }}>{workshop.time}</h4>
                     <h4 style={{ right: '4%', paddingRight: '1em' }}>
                         <a href={workshop.url} className="wsLink">
                             Link

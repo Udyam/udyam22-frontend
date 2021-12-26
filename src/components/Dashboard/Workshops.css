@@ -39,27 +39,57 @@
     color: #90e1ef85;
 }
 
-@media (max-width: 660px) {
+@media (max-width: 800px) {
     .workshopsContainer h3 {
         text-align: center;
         font-size: 1.5em;
     }
     .workshopsContainer h4 {
         text-align: center;
-        font-size: 0.9em;
+        font-size: 1.2em;
     }
     .workshopDetails {
+        height: 2.5em;
         width: 100%;
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 650px) {
     .workshopsContainer h3 {
         text-align: center;
         font-size: 1.2em;
     }
     .workshopsContainer h4 {
         text-align: center;
+        font-size: 1em;
+    }
+    .workshopDetails {
+        margin-left: -5%;
+        width: 110%;
+        height: 2.5em;
+    }
+}
+
+@media (max-width: 520px) {
+    .workshopsContainer h4 {
+        text-align: center;
+        font-size: 0.7em;
+    }
+    .workshopDetails {
+        margin-left: -5%;
+        width: 110%;
+        height: 2em;
+    }
+}
+
+@media (max-width: 420px) {
+    .workshopsContainer h4 {
+        text-align: center;
         font-size: 0.6em;
+    }
+    .workshopDetails {
+        margin-left: -10%;
+        width: 120%;
+        height: 2em;
     }
 }
