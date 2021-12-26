@@ -8,7 +8,7 @@ import { useState, useEffect } from 'react'
 
 const API_BASE_URL = 'https://udyam22-backend.herokuapp.com'
 
-const Submission = ({dashboardToken}) => {
+const Submission = ({ dashboardToken }) => {
     const [input, setInput] = useState({
         teamname: '',
         event: '',
@@ -16,8 +16,8 @@ const Submission = ({dashboardToken}) => {
     })
     const [check, setCheck] = useState(0)
 
-    const year=localStorage.getItem('year')
-    console.log("year=",year);
+    const year = localStorage.getItem('year')
+    console.log('year=', year)
 
     const inputChangeHandler = (e) => {
         const newInput = { ...input }
@@ -35,8 +35,7 @@ const Submission = ({dashboardToken}) => {
             axios
                 .post(API_BASE_URL + '/API/team/submission/', input, {
                     headers: {
-                        Authorization:
-                        `Token ${dashboardToken}`,
+                        Authorization: `Token ${dashboardToken}`,
                     },
                 })
                 .then((res) => {
@@ -108,7 +107,9 @@ const Submission = ({dashboardToken}) => {
                             <option value="DIGISM">DIGISM</option>
                             <option value="XIOTA">XIOTA</option>
                             <option value="CASSANDRA">CASSANDRA</option>
-                            {year==="FIRST" && <option value="FUNCKIT">FUNCKIT</option>}
+                            {year === 'FIRST' && (
+                                <option value="FUNCKIT">FUNCKIT</option>
+                            )}
                         </select>
                         {/* </Input> */}
                     </FormGroup>

@@ -10,7 +10,7 @@ import './Register.css'
 
 const API_BASE_URL = 'https://udyam22-backend.herokuapp.com'
 
-const Register = ({dashboardToken}) => {
+const Register = ({ dashboardToken }) => {
     const [input, setInput] = useState({
         teamname: '',
         event: '',
@@ -27,41 +27,41 @@ const Register = ({dashboardToken}) => {
 
     const [thirdDisplay, setThirdDisplay] = useState(false)
 
-    const year=localStorage.getItem('year')
-    console.log("year=",year);
+    const year = localStorage.getItem('year')
+    console.log('year=', year)
 
-    const firstYear={
-        "MOSAIC": 3,
-        "SPYBITS": 3,
-        "I-CHIP": 3,
-        "COMMNET": 3,
-        "CONTINNUM": 3,
-        "DIGISM": 3,
-        "XIOTA": 3,
-        "CASSANDRA": 3,
-        "FUNCKIT": 3,
+    const firstYear = {
+        MOSAIC: 3,
+        SPYBITS: 3,
+        'I-CHIP': 3,
+        COMMNET: 3,
+        CONTINNUM: 3,
+        DIGISM: 3,
+        XIOTA: 3,
+        CASSANDRA: 3,
+        FUNCKIT: 3,
     }
 
-    const secondYear={
-        "MOSAIC": 3,
-        "SPYBITS": 3,
-        "I-CHIP": 3,
-        "COMMNET": 3,
-        "CONTINNUM": 2,
-        "DIGISM": 2,
-        "XIOTA": 2,
-        "CASSANDRA": 3,
-        "FUNCKIT": 0,
+    const secondYear = {
+        MOSAIC: 3,
+        SPYBITS: 3,
+        'I-CHIP': 3,
+        COMMNET: 3,
+        CONTINNUM: 2,
+        DIGISM: 2,
+        XIOTA: 2,
+        CASSANDRA: 3,
+        FUNCKIT: 0,
     }
 
     const [memberArray, setMemberArray] = useState(firstYear)
-    
+
     useEffect(() => {
-        if(year==='TWO'){
+        if (year === 'TWO') {
             setMemberArray(secondYear)
         }
-    
-        console.log("memberArray=",memberArray);
+
+        console.log('memberArray=', memberArray)
     }, [])
 
     const inputChangeHandler = async (e) => {
@@ -69,19 +69,16 @@ const Register = ({dashboardToken}) => {
         const newInput = { ...input }
         newInput[e.target.name] = e.target.value
         setInput(newInput)
-        console.log("event=",e.target.value);
+        console.log('event=', e.target.value)
 
-        if(memberArray[e.target.value]!=undefined){
-            if(memberArray[e.target.value]===3){
+        if (memberArray[e.target.value] != undefined) {
+            if (memberArray[e.target.value] === 3) {
                 setThirdDisplay(true)
-            }
-            else{
+            } else {
                 setThirdDisplay(false)
             }
         }
     }
-
-    
 
     const memberChangeHandler = async (e) => {
         // console.log("e in form", e.target.value);
@@ -128,8 +125,7 @@ const Register = ({dashboardToken}) => {
             axios
                 .post(API_BASE_URL + '/API/team/create/', input, {
                     headers: {
-                        Authorization:
-                            `Token ${dashboardToken}`,
+                        Authorization: `Token ${dashboardToken}`,
                     },
                 })
                 .then((res) => {
@@ -203,7 +199,9 @@ const Register = ({dashboardToken}) => {
                             <option value="DIGISM">DIGISM</option>
                             <option value="XIOTA">XIOTA</option>
                             <option value="CASSANDRA">CASSANDRA</option>
-                            {year==="FIRST" && <option value="FUNCKIT">FUNCKIT</option>}
+                            {year === 'FIRST' && (
+                                <option value="FUNCKIT">FUNCKIT</option>
+                            )}
                         </select>
                         {/* </Input> */}
                     </FormGroup>
