@@ -3,6 +3,9 @@ import './Profile.css'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
+import { toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+toast.configure()
 
 const Profile = () => {
     const [user, setUser] = useState({
@@ -12,6 +15,20 @@ const Profile = () => {
         year: '',
         referral_code: '',
     })
+
+    useEffect(() => {
+        axios
+            .get('https://udyam22-backend.herokuapp.com/auth/update/', {
+                headers: {
+                    Authorization:
+                        'Token d102f9b8531448411f3658ecfdeeee5b0fbf2a17',
+                },
+            })
+            .then((res) => {
+                console.log(res.data)
+                setUser(res.data)
+            })
+    }, [])
 
     const [updateName, setupdateName] = useState(user.name)
     const [updateCollegeName, setupdateCollegeName] = useState(
@@ -30,19 +47,39 @@ const Profile = () => {
     }
 
     const updateProfileName = () => {
-        // if (!updateDesc) {
-        //     displayErrorToast('The update task field is empty!')
-        //     return
-        // }
-        // axios
-        //     .patch('todo/' + id + '/', { title: updateDesc }, auth)
-        //     .then(function (response) {
-        //         displaySuccessToast('Task has been updated.')
-        //     })
-        //     .catch(function (err) {
-        //         displayErrorToast('Some error has occured.')
-        //     })
+        if (!updateName) {
+            toast.error('Please fill the empty field', {
+                position: toast.POSITION.BOTTOM_RIGHT,
+            })
+            return
+        }
+        axios
+            .post(
+                'https://udyam22-backend.herokuapp.com/auth/update/',
+                {
+                    name: updateName,
 
+                    college_name: user.college_name,
+
+                    year: user.year,
+                },
+                {
+                    headers: {
+                        Authorization:
+                            'Token d102f9b8531448411f3658ecfdeeee5b0fbf2a17',
+                    },
+                }
+            )
+            .then((res) => {
+                console.log(res.data)
+                setUser(res.data)
+                toast.success('Profile Name Updated', {
+                    position: toast.POSITION.BOTTOM_RIGHT,
+                })
+            })
+            .catch((err) => {
+                console.log(err)
+            })
         document.getElementById('profile-user-name').classList.remove('hideme')
         document
             .getElementById('profile-edit-button')
@@ -51,19 +88,39 @@ const Profile = () => {
     }
 
     const updateProfileCollegeName = () => {
-        // if (!updateDesc) {
-        //     displayErrorToast('The update task field is empty!')
-        //     return
-        // }
-        // axios
-        //     .patch('todo/' + id + '/', { title: updateDesc }, auth)
-        //     .then(function (response) {
-        //         displaySuccessToast('Task has been updated.')
-        //     })
-        //     .catch(function (err) {
-        //         displayErrorToast('Some error has occured.')
-        //     })
+        if (!updateCollegeName) {
+            toast.error('Please fill the empty field', {
+                position: toast.POSITION.BOTTOM_RIGHT,
+            })
+            return
+        }
+        axios
+            .post(
+                'https://udyam22-backend.herokuapp.com/auth/update/',
+                {
+                    name: user.name,
 
+                    college_name: updateCollegeName,
+
+                    year: user.year,
+                },
+                {
+                    headers: {
+                        Authorization:
+                            'Token d102f9b8531448411f3658ecfdeeee5b0fbf2a17',
+                    },
+                }
+            )
+            .then((res) => {
+                console.log(res.data)
+                setUser(res.data)
+                toast.success('College Name Updated', {
+                    position: toast.POSITION.BOTTOM_RIGHT,
+                })
+            })
+            .catch((err) => {
+                console.log(err)
+            })
         document
             .getElementById('profile-college-name')
             .classList.remove('hideme')
@@ -85,32 +142,6 @@ const Profile = () => {
                 setUser(res.data)
             })
     }, [])
-    const editUser = () => {
-        axios
-            .post(
-                'https://udyam22-backend.herokuapp.com/auth/update/',
-                {
-                    name: user.name,
-                    gender: 'hhj',
-                    college_name:
-                        'hvvg' /*random strings passed to check api integration*/,
-                    year: 'hvgvg',
-                },
-                {
-                    headers: {
-                        Authorization:
-                            'Token d102f9b8531448411f3658ecfdeeee5b0fbf2a17',
-                    },
-                }
-            )
-            .then((res) => {
-                console.log(res.data)
-                setUser(res.data)
-            })
-            .catch((err) => {
-                console.log(err)
-            })
-    }
 
     return (
         <div className="profileContainer">
@@ -149,9 +180,7 @@ const Profile = () => {
                         </div>
                     </div>
                 </li>
-                {/* <li>
-                    <h4>Username : {user.name}</h4>
-                </li> */}
+
                 <li>
                     <h4 id="profile-college-name">
                         College Name: {user.college_name}
@@ -195,9 +224,6 @@ const Profile = () => {
                 <li>
                     <h4>Referral Code: {user.referral_code}</h4>
                 </li>
-                {/* <li>
-                    <h4>Contact : {user.contact}</h4>
-                </li> */}
             </ul>
             <div id="profile-edit-button">
                 <h4 className="editLink" onClick={() => editProfile()}>
