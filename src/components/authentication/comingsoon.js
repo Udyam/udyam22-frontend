@@ -39,7 +39,11 @@ const logoutcoming = () => {
                             </NavItem>
 
                             <NavItem>
-                                <NavLink className="tabLinks" href="#">
+                                <NavLink
+                                    className="tabLinks"
+                                    href="#"
+                                    onClick={logoutfn}
+                                >
                                     Logout
                                 </NavLink>
                             </NavItem>
