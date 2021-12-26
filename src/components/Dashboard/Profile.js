@@ -26,6 +26,32 @@ const Profile = () => {
                 setUser(res.data)
             })
     }, [])
+    const editUser = () => {
+        axios
+            .post(
+                'https://udyam22-backend.herokuapp.com/auth/update/',
+                {
+                    name: user.name,
+                    gender: 'hhj',
+                    college_name:
+                        'hvvg' /*random strings passed to check api integration*/,
+                    year: 'hvgvg',
+                },
+                {
+                    headers: {
+                        Authorization:
+                            'Token d102f9b8531448411f3658ecfdeeee5b0fbf2a17',
+                    },
+                }
+            )
+            .then((res) => {
+                console.log(res.data)
+                setUser(res.data)
+            })
+            .catch((err) => {
+                console.log(err)
+            })
+    }
 
     return (
         <div className="profileContainer">
@@ -47,7 +73,7 @@ const Profile = () => {
             </ul>
             <div className="editLink">
                 <Link to="#">
-                    <h4>Edit</h4>
+                    <h4 onClick={() => editUser()}>Edit</h4>
                 </Link>
             </div>
             <div className="displayPictureContainer">
