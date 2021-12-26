@@ -7,6 +7,11 @@ import { useAuthContext } from '../authentication/Context/AuthContext'
 
 const logoutcoming = () => {
     const history = useHistory()
+    if (
+        !localStorage.getItem('userToken') ||
+        localStorage.getItem('userToken') == 'undefined'
+    )
+        history.push('/loginregister')
     const { logout } = useAuthContext()
     const logoutfn = () => {
         logout()
@@ -35,7 +40,7 @@ const logoutcoming = () => {
                                     ComingSoon
                                 </NavLink>
                             </NavItem>
-                            
+
                             <NavItem>
                                 <NavLink className="tabLinks" href="#">
                                     Logout
@@ -66,10 +71,11 @@ const logoutcoming = () => {
                 <div className="scrollContainer px-4">
                     <ul style={{ listStyleType: 'none' }}>
                         <li>
-                            <h2 id="profile">The event registration will be starting soon</h2>
+                            <h2 id="profile">
+                                The event registration will be starting soon
+                            </h2>
                             <ComingSoon />
                         </li>
-                        
                     </ul>
                 </div>
             </div>

@@ -1,9 +1,7 @@
 import React from 'react'
 import './registration.css'
 
-
 const ComingSoon = () => {
-
     return (
         <div className="profileContainer">
             <ul style={{ listStyleType: 'none' }}>
@@ -12,7 +10,6 @@ const ComingSoon = () => {
                         Till then please wait.
                     </h4>
                 </li>
-               
             </ul>
         </div>
     )
