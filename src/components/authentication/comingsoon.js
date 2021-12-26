@@ -23,21 +23,9 @@ const logoutcoming = () => {
                 <div className="displayPictureDash">
                     <img className="displayPicture" src="./icon/dummy.png" />
                 </div>
-                <div className="imageContainer">
-                    <img
-                        src="./images/udyamLogo.png"
-                        className="displayImage"
-                    />
-                </div>
                 <div className="tabs">
                     <Nav className="justify-content-center">
                         <div className="navigation">
-                            <NavItem>
-                                <NavLink className="tabLinks" href="#profile">
-                                    ComingSoon
-                                </NavLink>
-                            </NavItem>
-
                             <NavItem>
                                 <NavLink
                                     className="tabLinks"
@@ -49,10 +37,6 @@ const logoutcoming = () => {
                             </NavItem>
                         </div>
                         <div className="navigationMobile">
-                            <img
-                                className="navLogo"
-                                src="./images/udyamLogo.png"
-                            />
                             <NavItem>
                                 <NavLink
                                     className="tabLinks"
