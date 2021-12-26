@@ -48,12 +48,41 @@
     margin-top: 1%;
 }
 
+
+.tabs.coming {
+    /* position: absolute; */
+    font-size: 1.5em;
+    border-radius: 10px;
+    /* height: 6vh; */
+    /* width: fit-content; */
+    text-align: center;
+    background-color: #c4c4c430;
+    position: fixed;
+    margin-top: -180px;
+    right: 7vw;
+}
+
+.tabLinks {
+    color: #caf0f8 !important;
+}
+
+.tabLinks:hover {
+    color: #199ab4 !important;
+}
+
+
 @media (max-width: 1250px) {
     .comingsoon-logocircle12 {
         left: 43%;
     }
     .comingsoon-noti {
         margin-top: 7%;
+    }
+    .tabs.coming {
+        /* position: absolute; */
+       
+        margin-top: -80px;
+        right: 7vw;
     }
 }
 
@@ -74,6 +103,12 @@
     .comingsoon-logocircle12 {
         margin-top: -6%;
         left: 42%;
+    }
+    .tabs.coming {
+        /* position: absolute; */
+       
+        margin-top: -80px;
+        right: 7vw;
     }
 }
 @media (max-width: 900px) {
@@ -99,6 +134,11 @@
     }
     .comingsoon-form-head {
         margin-bottom: 0;
+    }
+    .tabs.coming {
+        margin-right: 10px;
+        margin-top: -50px;
+       
     }
 
     .comingsoon-form-container {
