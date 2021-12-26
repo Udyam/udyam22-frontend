@@ -28,24 +28,29 @@ const Workshops = () => {
             </h3>
             <h4 style={{ marginTop: '20px', color: '#CAF0F8' }}>
                 To watch the previous workshops{' '}
-                <a href="https://www.youtube.com/channel/UC8wlztNbDIu38rfQ1HChSIg" className="wsLink">
+                <a
+                    href="https://www.youtube.com/channel/UC8wlztNbDIu38rfQ1HChSIg"
+                    className="wsLink"
+                >
                     click here
                 </a>
             </h4>
             <div className="py-2 workshopDetails">
-                <h4 style={{left: "4%"}}>Workshop</h4>
-                <h4 style={{left: "33%"}}>Schedule</h4>
-                <h4 style={{left: "60%"}}>Time</h4>
-                <h4 style={{right: "4%"}}>Join here</h4>
+                <h4 style={{ left: '4%' }}>Workshop</h4>
+                <h4 style={{ left: '33%' }}>Schedule</h4>
+                <h4 style={{ left: '60%' }}>Time</h4>
+                <h4 style={{ right: '4%' }}>Join here</h4>
             </div>
 
             {workshops.map((workshop) => (
                 <div className="py-2 workshopDetails" key={workshop.id}>
-                    <h4 style={{left: "4%"}}>{workshop.event}</h4>
-                    <h4 style={{left: "33%"}}>{workshop.date}</h4>
-                    <h4 style={{left: "60%"}}>{workshop.time}</h4>
-                    <h4 style={{right: "4%", paddingRight: "1em"}}>
-                        <a href={workshop.url} className="wsLink">Link</a>
+                    <h4 style={{ left: '4%' }}>{workshop.event}</h4>
+                    <h4 style={{ left: '33%' }}>{workshop.date}</h4>
+                    <h4 style={{ left: '60%' }}>{workshop.time}</h4>
+                    <h4 style={{ right: '4%', paddingRight: '1em' }}>
+                        <a href={workshop.url} className="wsLink">
+                            Link
+                        </a>
                     </h4>
                 </div>
             ))}
