@@ -17,6 +17,9 @@ const Noticeboard = () => {
             .catch((err) => console.log(err))
     }, [])
 
+    useEffect(() => {
+        setFilteredNotifs(NOTIFS)
+    }, [NOTIFS])
     const [filteredNotifs, setFilteredNotifs] = useState(NOTIFS)
     const filterNotifs = (query) => {
         setFilteredNotifs(
@@ -38,7 +41,7 @@ const Noticeboard = () => {
                 {filteredNotifs.map((notif) => {
                     return (
                         <Notif
-                            text={notif.description}
+                            text={notif.title}
                             date={notif.date}
                             key={notif.id}
                         ></Notif>
