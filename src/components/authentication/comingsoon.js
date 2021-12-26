@@ -20,8 +20,11 @@ const logoutcoming = () => {
     return (
         <div>
             <div className="dashboardContainer">
-                <div className="displayPictureDash">
-                    <img className="displayPicture" src="./icon/dummy.png" />
+                <div className="displayPictureDashcoming">
+                    <img
+                        className="displayPicture"
+                        src="../images/photo_2021-11-27_18-13-10.png"
+                    />
                 </div>
                 <div className="tabs">
                     <Nav className="justify-content-center">
@@ -57,6 +60,7 @@ const logoutcoming = () => {
                     <ul style={{ listStyleType: 'none' }}>
                         <li>
                             <h2 id="profile">
+                                <br></br>
                                 The event registration will be starting soon
                             </h2>
                             <ComingSoon />

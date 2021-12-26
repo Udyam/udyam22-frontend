@@ -105,17 +105,12 @@
     height: 1em;
 }
 
-.displayPictureDash {
-    display: none;
+.displayPictureDashcoming {
     position: relative;
-    background-color: #293b53;
-    border: solid 2px #7cdbecd7;
-    border-radius: 100px;
     position: absolute;
-    height: 10vh;
-    width: 10vh;
-    top: 15.8vh;
-    margin-left: 3vw;
+    height: 25vh;
+    margin-left: 5px;
+    margin-left: 10px;
     text-align: center;
 }
 
@@ -158,5 +153,14 @@
     }
     .scrollContainer::-webkit-scrollbar {
         display: none;
+    }
+
+    .displayPictureDashcoming {
+        position: relative;
+        position: absolute;
+        height: 20vh;
+        margin-top: 10px;
+        margin-left: 10px;
+        text-align: center;
     }
 }
