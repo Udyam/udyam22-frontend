@@ -5,6 +5,7 @@ import Sample_Image from './Mem_Images/Sample_Image.jpg'
 import facebook_icon from './Mem_Images/facebook_icon.png'
 import insta_icon from './Mem_Images/insta_icon.png'
 import linkedin_icon from './Mem_Images/linkedin_icon.png'
+import Samarth_Solanki from './Mem_Images/Samarth_Solanki.jpg'
 
 const Senior_Advisors = () => {
     return (
@@ -24,8 +25,8 @@ const Senior_Advisors = () => {
                             alt="Hello World"
                         />
 
-                        <div>IIT BHU VARANASI</div>
-                        <div>COORDINATOR</div>
+                        <div>EASWARAVAKA DINESH REDDY</div>
+                        <div>TECHNICAL</div>
 
                         <div className="social_icons">
                             <a href="https://about.linkedin.com/">
@@ -45,12 +46,12 @@ const Senior_Advisors = () => {
                     <div className="tile2">
                         <img
                             className="photo"
-                            src={Sample_Image}
+                            src={Samarth_Solanki}
                             alt="Hello World"
                         />
 
-                        <div>IIT BHU VARANASI</div>
-                        <div>COORDINATOR</div>
+                        <div>SAMARTH SOLANKI</div>
+                        <div>TECHNICAL</div>
 
                         <div className="social_icons">
                             <a href="https://about.linkedin.com/">
@@ -76,8 +77,8 @@ const Senior_Advisors = () => {
                             alt="Hello World"
                         />
 
-                        <div>IIT BHU VARANASI</div>
-                        <div>COORDINATOR</div>
+                        <div>ANKUR AGRAWAL</div>
+                        <div>TECHNICAL</div>
 
                         <div className="social_icons">
                             <a href="https://about.linkedin.com/">
@@ -101,8 +102,8 @@ const Senior_Advisors = () => {
                             alt="Hello World"
                         />
 
-                        <div>IIT BHU VARANASI</div>
-                        <div>COORDINATOR</div>
+                        <div>AKSHAT GOYAL</div>
+                        <div>WEBSITE DEVELOPMENT</div>
 
                         <div className="social_icons">
                             <a href="https://about.linkedin.com/">
@@ -128,8 +129,8 @@ const Senior_Advisors = () => {
                             alt="Hello World"
                         />
 
-                        <div>IIT BHU VARANASI</div>
-                        <div>COORDINATOR</div>
+                        <div>ALAVALA SUHAS</div>
+                        <div>WEBSITE DEVELOPMENT</div>
 
                         <div className="social_icons">
                             <a href="https://about.linkedin.com/">
@@ -153,8 +154,8 @@ const Senior_Advisors = () => {
                             alt="Hello World"
                         />
 
-                        <div>IIT BHU VARANASI</div>
-                        <div>COORDINATOR</div>
+                        <div>ISHAAN AMRIT</div>
+                        <div>CULTURAL</div>
 
                         <div className="social_icons">
                             <a href="https://about.linkedin.com/">
@@ -172,57 +173,6 @@ const Senior_Advisors = () => {
                     </div>
                 </div>
 
-                <div className="row">
-                    <div className="tile1">
-                        <img
-                            className="photo"
-                            src={Sample_Image}
-                            alt="Hello World"
-                        />
-
-                        <div>IIT BHU VARANASI</div>
-                        <div>COORDINATOR</div>
-
-                        <div className="social_icons">
-                            <a href="https://about.linkedin.com/">
-                                <img src={linkedin_icon} />
-                            </a>
-
-                            <a href="https://www.facebook.com/">
-                                <img src={facebook_icon} />
-                            </a>
-
-                            <a href="https://www.instagram.com/">
-                                <img src={insta_icon} />
-                            </a>
-                        </div>
-                    </div>
-
-                    <div className="tile2">
-                        <img
-                            className="photo"
-                            src={Sample_Image}
-                            alt="Hello World"
-                        />
-
-                        <div>IIT BHU VARANASI</div>
-                        <div>COORDINATOR</div>
-
-                        <div className="social_icons">
-                            <a href="https://about.linkedin.com/">
-                                <img src={linkedin_icon} />
-                            </a>
-
-                            <a href="https://www.facebook.com/">
-                                <img src={facebook_icon} />
-                            </a>
-
-                            <a href="https://www.instagram.com/">
-                                <img src={insta_icon} />
-                            </a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </Route>
     )

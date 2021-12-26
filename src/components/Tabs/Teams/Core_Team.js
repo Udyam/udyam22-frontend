@@ -2,10 +2,20 @@ import React from 'react'
 import './Sub_Files.css'
 import { Route, Link } from 'react-router-dom'
 import Sample_Image from './Mem_Images/Sample_Image.jpg'
-import Sample_Image2 from './Mem_Images/Sample_Image2.jpg'
+//import Sample_Image2 from './Mem_Images/Sample_Image2.jpg'
 import facebook_icon from './Mem_Images/facebook_icon.png'
 import insta_icon from './Mem_Images/insta_icon.png'
 import linkedin_icon from './Mem_Images/linkedin_icon.png'
+import Ritweek_Singh from './Mem_Images/Ritweek_Singh.jpg'
+import Akshat_Jain from './Mem_Images/Akshat_Jain.jpg'
+import Pranav_Mittal from './Mem_Images/Pranav_Mittal.jpg'
+import Vikhyath_Venkatraman from './Mem_Images/Vikhyath_Venkatraman.jpg'
+import Eshaan_Gupta from './Mem_Images/Eshaan_Gupta.jpeg'
+import Smriti_Sharma from './Mem_Images/Smriti_Sharma.jpg'
+import Siddharth_Anand_Srivastav from './Mem_Images/Siddharth_Anand.jpg'
+import Aditya_Agarwal from './Mem_Images/Aditya_Agarwal.jpg'
+import Swastik_Thapa from './Mem_Images/Swastik_Thapa.jpg'
+import Yash_Jain from './Mem_Images/Yash_Jain.jpg'
 
 const Core_Team = () => {
     return (
@@ -21,12 +31,12 @@ const Core_Team = () => {
                     <div className="tile1">
                         <img
                             className="photo"
-                            src={Sample_Image2}
+                            src={Ritweek_Singh}
                             alt="Hello World"
                         />
 
-                        <div>IIT BHU VARANASI</div>
-                        <div>COORDINATOR</div>
+                        <div>RITWEEK SINGH</div>
+                        <div>CONVENOR</div>
 
                         <div className="social_icons">
                             <a href="https://about.linkedin.com/">
@@ -50,8 +60,8 @@ const Core_Team = () => {
                             alt="Hello World"
                         />
 
-                        <div>IIT BHU VARANASI</div>
-                        <div>COORDINATOR</div>
+                        <div>MOHIT SHRINGI</div>
+                        <div>GENERAL SECRETARY</div>
 
                         <div className="social_icons">
                             <a href="https://about.linkedin.com/">
@@ -73,12 +83,12 @@ const Core_Team = () => {
                     <div className="tile1">
                         <img
                             className="photo"
-                            src={Sample_Image}
+                            src={Akshat_Jain}
                             alt="Hello World"
                         />
 
-                        <div>IIT BHU VARANASI</div>
-                        <div>COORDINATOR</div>
+                        <div>AKSHAT JAIN</div>
+                        <div>CO-CONVENOR</div>
 
                         <div className="social_icons">
                             <a href="https://about.linkedin.com/">
@@ -98,12 +108,12 @@ const Core_Team = () => {
                     <div className="tile2">
                         <img
                             className="photo"
-                            src={Sample_Image}
+                            src={Pranav_Mittal}
                             alt="Hello World"
                         />
 
-                        <div>IIT BHU VARANASI</div>
-                        <div>COORDINATOR</div>
+                        <div>PRANAV MITTAL</div>
+                        <div>JOINT GENERAL SECRETARY</div>
 
                         <div className="social_icons">
                             <a href="https://about.linkedin.com/">
@@ -125,12 +135,12 @@ const Core_Team = () => {
                     <div className="tile1">
                         <img
                             className="photo"
-                            src={Sample_Image}
+                            src={Vikhyath_Venkatraman}
                             alt="Hello World"
                         />
 
-                        <div>IIT BHU VARANASI</div>
-                        <div>COORDINATOR</div>
+                        <div>VIKHYATH VENKATRAMAN</div>
+                        <div>JOINT GENERAL SECRETARY</div>
 
                         <div className="social_icons">
                             <a href="https://about.linkedin.com/">
@@ -150,12 +160,12 @@ const Core_Team = () => {
                     <div className="tile2">
                         <img
                             className="photo"
-                            src={Sample_Image}
+                            src={Eshaan_Gupta}
                             alt="Hello World"
                         />
 
-                        <div>IIT BHU VARANASI</div>
-                        <div>COORDINATOR</div>
+                        <div>ESHAAN GUPTA</div>
+                        <div>TECHNICAL SECRETARY</div>
 
                         <div className="social_icons">
                             <a href="https://about.linkedin.com/">
@@ -177,12 +187,12 @@ const Core_Team = () => {
                     <div className="tile1">
                         <img
                             className="photo"
-                            src={Sample_Image}
+                            src={Smriti_Sharma}
                             alt="Hello World"
                         />
 
-                        <div>IIT BHU VARANASI</div>
-                        <div>COORDINATOR</div>
+                        <div>SMRITI SHARMA</div>
+                        <div>TECHNICAL SECRETARY</div>
 
                         <div className="social_icons">
                             <a href="https://about.linkedin.com/">
@@ -202,12 +212,93 @@ const Core_Team = () => {
                     <div className="tile2">
                         <img
                             className="photo"
-                            src={Sample_Image}
+                            src={Siddharth_Anand_Srivastav}
                             alt="Hello World"
                         />
 
-                        <div>IIT BHU VARANASI</div>
-                        <div>COORDINATOR</div>
+                        <div>SIDDHARTH ANAND SRIVASTAV</div>
+                        <div>CULTURAL SECRETARY</div>
+
+                        <div className="social_icons">
+                            <a href="https://about.linkedin.com/">
+                                <img src={linkedin_icon} />
+                            </a>
+
+                            <a href="https://www.facebook.com/">
+                                <img src={facebook_icon} />
+                            </a>
+
+                            <a href="https://www.instagram.com/">
+                                <img src={insta_icon} />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div className="row">
+                    <div className="tile1">
+                        <img
+                            className="photo"
+                            src={Aditya_Agarwal}
+                            alt="Hello World"
+                        />
+
+                        <div>ADITYA AGARWAL</div>
+                        <div>CULTURAL SECRETARY</div>
+
+                        <div className="social_icons">
+                            <a href="https://about.linkedin.com/">
+                                <img src={linkedin_icon} />
+                            </a>
+
+                            <a href="https://www.facebook.com/">
+                                <img src={facebook_icon} />
+                            </a>
+
+                            <a href="https://www.instagram.com/">
+                                <img src={insta_icon} />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div className="tile2">
+                        <img
+                            className="photo"
+                            src={Swastik_Thapa}
+                            alt="Hello World"
+                        />
+
+                        <div>SWASTIK THAPA</div>
+                        <div>SPORTS SECRETARY</div>
+
+                        <div className="social_icons">
+                            <a href="https://about.linkedin.com/">
+                                <img src={linkedin_icon} />
+                            </a>
+
+                            <a href="https://www.facebook.com/">
+                                <img src={facebook_icon} />
+                            </a>
+
+                            <a href="https://www.instagram.com/">
+                                <img src={insta_icon} />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div className="row">
+                    <div className="tile1" style = {{marginLeft: 'auto' , marginRight: 'auto'}}>
+                        <img
+                            className="photo"
+                            src={Yash_Jain}
+                            alt="Hello World"
+                        />
+
+                        <div>YASH JAIN</div>
+                        <div>WEB HEAD</div>
 
                         <div className="social_icons">
                             <a href="https://about.linkedin.com/">

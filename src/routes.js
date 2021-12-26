@@ -25,31 +25,31 @@ const Routes = () => {
                 <Timeline />
                 <ContactPage />
             </Route>
-            <Route exact path="/about-us">
+            <Route path="/about-us">
                 <Tabs id="panelb">
                     <AboutUs />
                 </Tabs>
             </Route>
-            <Route exact path="/events">
+            <Route path="/events">
                 <Tabs id="panelc">
                     <Event />
                 </Tabs>
             </Route>
-            <Route exact path="/speakers">
+            <Route path="/speakers">
                 <Tabs id="paneld">{Speakers()}</Tabs>
                 {/* {Speakers()} */}
             </Route>
-            <Route exact path="/leaderboard">
+            <Route path="/leaderboard">
                 <Tabs id="panele">
                     <Leaderboard />
                 </Tabs>
             </Route>
-            <Route exact path="/sponsors">
+            <Route path="/sponsors">
                 <Tabs id="panelf">
                     <Sponsors />
                 </Tabs>
             </Route>
-            <Route exact path="/team">
+            <Route path="/team">
                 <Tabs id="panelg">
                     <Team />
                 </Tabs>
