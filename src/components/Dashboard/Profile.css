@@ -15,7 +15,7 @@
     font-weight: normal;
 }
 
-.editLink a {
+.editLink {
     position: absolute;
     right: 55px;
     margin-top: 20px;
@@ -24,7 +24,7 @@
     text-decoration: none;
 }
 
-.editLink a:hover {
+.editLink:hover {
     color: #90e0ef;
     opacity: 0.6;
 }
@@ -54,6 +54,31 @@
     right: 0.9vh;
 }
 
+.doneButton {
+    margin-top: 20px;
+    margin-left: 10px;
+    display: inline-flex;
+}
+
+.editFieldForm {
+    display: inline;
+    height: 2.4em;
+    width: 70%;
+    padding-left: 15px;
+    border-radius: 1em;
+    font-size: 1.2em;
+}
+
+.btn-circle {
+    width: 3.5em;
+    height: 3.5em;
+    padding: 6px 0px;
+    border-radius: 2em;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+
 @media (max-width: 1160px) {
     .displayPictureContainer {
         display: none;
@@ -61,16 +86,23 @@
     .profileContainer li {
         margin-left: -15px;
     }
-    .editLink a {
+    .editLink {
         right: 42px;
     }
 }
 
 @media (max-width: 690px) {
-    .editLink a h4 {
+    .editLink {
         font-size: 1.1em;
     }
     .profileContainer li h4 {
         font-size: 1.1em !important;
+    }
+    .editFieldForm {
+        font-size: 1em;
+    }
+    .btn-circle {
+        width: 3em;
+        height: 3em;
     }
 }
