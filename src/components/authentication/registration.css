@@ -48,7 +48,6 @@
     margin-top: 1%;
 }
 
-
 .tabs.coming {
     /* position: absolute; */
     font-size: 1.5em;
@@ -70,7 +69,6 @@
     color: #199ab4 !important;
 }
 
-
 @media (max-width: 1250px) {
     .comingsoon-logocircle12 {
         left: 43%;
@@ -80,7 +78,7 @@
     }
     .tabs.coming {
         /* position: absolute; */
-       
+
         margin-top: -80px;
         right: 7vw;
     }
@@ -106,7 +104,7 @@
     }
     .tabs.coming {
         /* position: absolute; */
-       
+
         margin-top: -80px;
         right: 7vw;
     }
@@ -138,7 +136,6 @@
     .tabs.coming {
         margin-right: 10px;
         margin-top: -50px;
-       
     }
 
     .comingsoon-form-container {

@@ -12,11 +12,11 @@ export default function ComingSoon() {
     )
         history.push('/loginregister')
 
-        const { logout } = useAuthContext()
-        const logoutfn = () => {
-            logout()
-            history.push('/')
-        }
+    const { logout } = useAuthContext()
+    const logoutfn = () => {
+        logout()
+        history.push('/')
+    }
 
     return (
         <div className="comingsoonwholepage">
@@ -28,10 +28,9 @@ export default function ComingSoon() {
                 />
             </div>
             <div className="comingsoon-form-container">
-            <div className="tabs coming">
+                <div className="tabs coming">
                     <Nav className="justify-content-center">
                         <div className="navigation">
-                    
                             <NavItem>
                                 <NavLink className="tabLinks" href="#">
                                     Logout
@@ -40,17 +39,12 @@ export default function ComingSoon() {
                         </div>
                         <div className="navigationMobile">
                             <NavItem>
-                                <NavLink
-                                  
-                                    onClick={logoutfn}
-                                >
-                                    logout
-                                </NavLink>
+                                <NavLink onClick={logoutfn}>logout</NavLink>
                             </NavItem>
                         </div>
                     </Nav>
                 </div>
-          
+
                 <div className="comingsoon-noti">
                     <h1 className="comingsoon-form-head">
                         Event Registration will open soon!!
