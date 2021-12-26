@@ -106,3 +106,19 @@
         height: 3em;
     }
 }
+
+@media (max-width: 390px) {
+    .editLink {
+        font-size: 0.9em;
+    }
+    .profileContainer li h4 {
+        font-size: 0.9em !important;
+    }
+    .editFieldForm {
+        font-size: 0.9em;
+    }
+    .btn-circle {
+        width: 3em;
+        height: 3em;
+    }
+}
