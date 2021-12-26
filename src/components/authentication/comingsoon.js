@@ -2,7 +2,7 @@ import React from 'react'
 import './comingsoon.css'
 import { Nav, NavItem, NavLink } from 'reactstrap'
 import ComingSoon from './registration.js'
-import { Link, useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import { useAuthContext } from '../authentication/Context/AuthContext'
 
 const logoutcoming = () => {
@@ -22,9 +22,6 @@ const logoutcoming = () => {
             <div className="dashboardContainer">
                 <div className="displayPictureDash">
                     <img className="displayPicture" src="./icon/dummy.png" />
-                    <Link to="#">
-                        <img className="editIconDash" src="./icon/edit.png" />
-                    </Link>
                 </div>
                 <div className="imageContainer">
                     <img
