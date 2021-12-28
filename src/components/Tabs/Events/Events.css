@@ -125,9 +125,16 @@
     .awssld {
         height: 70vh;
         text-align: center;
-        background-color: transparent !important;
         position: fixed;
         margin-top: 5%;
+        z-index: 0;
+    }
+
+    .events_slider {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(2, 32, 73, 0.75);
+        padding-top: 5vh;
     }
 
     .awssld_content {
@@ -135,7 +142,7 @@
     }
 
     .Events_Photo {
-        width: 45vw;
+        width: 60vw;
     }
 
     .Events_Link_Holder {

@@ -22,39 +22,39 @@ const Event = () => {
     const slider = (
         <div className="events_media_query">
             <AwesomeSlider animation="cubeAnimation">
-                <div>
+                <div className="events_slider">
                     <Mosaic />
                 </div>
 
-                <div>
+                <div className="events_slider">
                     <Ichip />
                 </div>
 
-                <div>
+                <div className="events_slider">
                     <Spybits />
                 </div>
 
-                <div>
+                <div className="events_slider">
                     <Commnet />
                 </div>
 
-                <div>
+                <div className="events_slider">
                     <Xiota />
                 </div>
 
-                <div>
+                <div className="events_slider">
                     <Cassandra />
                 </div>
 
-                <div>
+                <div className="events_slider">
                     <Digisim />
                 </div>
 
-                <div>
+                <div className="events_slider">
                     <Funckit />
                 </div>
 
-                <div>
+                <div className="events_slider">
                     <Continuum />
                 </div>
             </AwesomeSlider>
