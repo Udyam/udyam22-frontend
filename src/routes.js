@@ -10,7 +10,7 @@ import ResetForm from './components/authentication/resetpage'
 import NotifyReset from './components/authentication/notifyreset'
 import ComingSoon from './components/authentication/registration'
 import Team from './components/Tabs/Teams/Team.js'
-import NoticeBoard from './components/NoticeBoard/NoticeBoard'
+import { Noticeboard, Notice } from './components/NoticeBoard/NoticeBoard'
 import Dashboard from './components/Dashboard/Dashboard.js'
 
 const Routes = () => {
@@ -46,8 +46,11 @@ const Routes = () => {
             <Route exact path="/resetpage" component={ResetForm} />
             <Route exact path="/notifyreset" component={NotifyReset} />
             <Route exact path="/comingsoon" component={ComingSoon} />
-            <Route path="/noticeboard">
-                <NoticeBoard />
+            <Route exact path="/noticeboard">
+                <Noticeboard />
+            </Route>
+            <Route exact path="/notice">
+                <Notice />
             </Route>
             <Route exact path="/dashboard">
                 <Dashboard id="panela" />
