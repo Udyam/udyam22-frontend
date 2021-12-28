@@ -71,7 +71,10 @@ const Public_Relations = () => {
                 </div>
 
                 <div className="row">
-                    <div className="tile1" style = {{marginLeft: 'auto' , marginRight: 'auto'}}>
+                    <div
+                        className="tile1"
+                        style={{ marginLeft: 'auto', marginRight: 'auto' }}
+                    >
                         <img
                             className="photo"
                             src={Jayant_Roy}

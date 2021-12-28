@@ -71,7 +71,10 @@ const Marketing_Team = () => {
                 </div>
 
                 <div className="row">
-                    <div className="tile1" style = {{marginLeft: 'auto' , marginRight: 'auto'}}>
+                    <div
+                        className="tile1"
+                        style={{ marginLeft: 'auto', marginRight: 'auto' }}
+                    >
                         <img
                             className="photo"
                             src={Varsha_Jangir}
@@ -96,7 +99,6 @@ const Marketing_Team = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
         </Route>
     )

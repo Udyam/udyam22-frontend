@@ -172,7 +172,6 @@ const Senior_Advisors = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
         </Route>
     )

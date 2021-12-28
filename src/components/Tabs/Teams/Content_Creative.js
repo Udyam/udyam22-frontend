@@ -70,8 +70,11 @@ const Content_and_Creative = () => {
                     </div>
                 </div>
 
-                <div className="row" >
-                    <div className="tile1" style = {{marginLeft: 'auto' , marginRight: 'auto'}}>
+                <div className="row">
+                    <div
+                        className="tile1"
+                        style={{ marginLeft: 'auto', marginRight: 'auto' }}
+                    >
                         <img
                             className="photo"
                             src={Khushabu_Kumari}
@@ -95,7 +98,6 @@ const Content_and_Creative = () => {
                             </a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </Route>

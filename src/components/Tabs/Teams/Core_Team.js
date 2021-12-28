@@ -235,7 +235,6 @@ const Core_Team = () => {
                     </div>
                 </div>
 
-                
                 <div className="row">
                     <div className="tile1">
                         <img
@@ -288,9 +287,11 @@ const Core_Team = () => {
                     </div>
                 </div>
 
-                
                 <div className="row">
-                    <div className="tile1" style = {{marginLeft: 'auto' , marginRight: 'auto'}}>
+                    <div
+                        className="tile1"
+                        style={{ marginLeft: 'auto', marginRight: 'auto' }}
+                    >
                         <img
                             className="photo"
                             src={Yash_Jain}
