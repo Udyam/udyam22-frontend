@@ -16,20 +16,6 @@ const Profile = () => {
         referral_code: '',
     })
 
-    useEffect(() => {
-        axios
-            .get('https://udyam22-backend.herokuapp.com/auth/update/', {
-                headers: {
-                    Authorization:
-                        'Token d102f9b8531448411f3658ecfdeeee5b0fbf2a17',
-                },
-            })
-            .then((res) => {
-                console.log(res.data)
-                setUser(res.data)
-            })
-    }, [])
-
     const [updateName, setupdateName] = useState(user.name)
     const [updateCollegeName, setupdateCollegeName] = useState(
         user.college_name
@@ -143,6 +129,8 @@ const Profile = () => {
             })
     }, [])
 
+
+
     return (
         <div className="profileContainer">
             <ul style={{ listStyleType: 'none' }}>
@@ -224,6 +212,7 @@ const Profile = () => {
                 <li>
                     <h4>Referral Code: {user.referral_code}</h4>
                 </li>
+               
             </ul>
             <div id="profile-edit-button">
                 <h4 className="editLink" onClick={() => editProfile()}>
