@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import './Workshops.css'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
@@ -29,24 +28,29 @@ const Workshops = () => {
             </h3>
             <h4 style={{ marginTop: '20px', color: '#CAF0F8' }}>
                 To watch the previous workshops{' '}
-                <Link to="#" className="wsLink">
+                <a
+                    href="https://www.youtube.com/channel/UC8wlztNbDIu38rfQ1HChSIg"
+                    className="wsLink"
+                >
                     click here
-                </Link>
+                </a>
             </h4>
             <div className="py-2 workshopDetails">
-                <h4>Workshop</h4>
-                <h4>Schedule</h4>
-                <h4>Time</h4>
-                <h4>Join here</h4>
+                <h4 style={{ left: '4%' }}>Workshop</h4>
+                <h4 style={{ left: '30%' }}>Schedule</h4>
+                <h4 style={{ left: '59%' }}>Time</h4>
+                <h4 style={{ right: '4%' }}>Join here</h4>
             </div>
 
             {workshops.map((workshop) => (
                 <div className="py-2 workshopDetails" key={workshop.id}>
-                    <h4>{workshop.name}</h4>
-                    <h4>{workshop.schedule}</h4>
-                    <h4>{workshop.time}</h4>
-                    <h4>
-                        <Link to={`/workshop/${workshop.id}`}>Join here</Link>
+                    <h4 style={{ left: '4%' }}>{workshop.event}</h4>
+                    <h4 style={{ left: '30%' }}>{workshop.date}</h4>
+                    <h4 style={{ left: '59%' }}>{workshop.time}</h4>
+                    <h4 style={{ right: '4%', paddingRight: '1em' }}>
+                        <a href={workshop.url} className="wsLink">
+                            Link
+                        </a>
                     </h4>
                 </div>
             ))}
