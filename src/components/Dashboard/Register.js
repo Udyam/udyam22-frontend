@@ -10,7 +10,7 @@ import './Register.css'
 
 const API_BASE_URL = 'https://udyam22-backend.herokuapp.com'
 
-const Register = ({ dashboardToken }) => {
+const Register = () => {
     const [input, setInput] = useState({
         teamname: '',
         event: '',
@@ -25,59 +25,12 @@ const Register = ({ dashboardToken }) => {
     const [secondmember, setSecondmember] = useState(false)
     const [thirdmember, setThirdmember] = useState(false)
 
-    const [thirdDisplay, setThirdDisplay] = useState(false)
-
-    const year = localStorage.getItem('year')
-    console.log('year=', year)
-
-    const firstYear = {
-        MOSAIC: 3,
-        SPYBITS: 3,
-        'I-CHIP': 3,
-        COMMNET: 3,
-        CONTINNUM: 3,
-        DIGISM: 3,
-        XIOTA: 3,
-        CASSANDRA: 3,
-        FUNCKIT: 3,
-    }
-
-    const secondYear = {
-        MOSAIC: 3,
-        SPYBITS: 3,
-        'I-CHIP': 3,
-        COMMNET: 3,
-        CONTINNUM: 2,
-        DIGISM: 2,
-        XIOTA: 2,
-        CASSANDRA: 3,
-        FUNCKIT: 0,
-    }
-
-    const [memberArray, setMemberArray] = useState(firstYear)
-
-    useEffect(() => {
-        if (year === 'TWO') {
-            setMemberArray(secondYear)
-        }
-
-        console.log('memberArray=', memberArray)
-    }, [])
-
     const inputChangeHandler = async (e) => {
         // console.log("e in form", e.target.value);
         const newInput = { ...input }
         newInput[e.target.name] = e.target.value
         setInput(newInput)
-        console.log('event=', e.target.value)
-
-        if (memberArray[e.target.value] != undefined) {
-            if (memberArray[e.target.value] === 3) {
-                setThirdDisplay(true)
-            } else {
-                setThirdDisplay(false)
-            }
-        }
+        // console.log("event=",input.event);
     }
 
     const memberChangeHandler = async (e) => {
@@ -125,7 +78,8 @@ const Register = ({ dashboardToken }) => {
             axios
                 .post(API_BASE_URL + '/API/team/create/', input, {
                     headers: {
-                        Authorization: `Token ${dashboardToken}`,
+                        Authorization:
+                            'Token d102f9b8531448411f3658ecfdeeee5b0fbf2a17',
                     },
                 })
                 .then((res) => {
@@ -199,9 +153,7 @@ const Register = ({ dashboardToken }) => {
                             <option value="DIGISM">DIGISM</option>
                             <option value="XIOTA">XIOTA</option>
                             <option value="CASSANDRA">CASSANDRA</option>
-                            {year === 'FIRST' && (
-                                <option value="FUNCKIT">FUNCKIT</option>
-                            )}
+                            <option value="FUNCKIT">FUNCKIT</option>
                         </select>
                         {/* </Input> */}
                     </FormGroup>
@@ -242,7 +194,7 @@ const Register = ({ dashboardToken }) => {
                             <option value="Members">MEMBERS</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
-                            {thirdDisplay && <option value="3">3</option>}
+                            <option value="3">3</option>
                         </select>
                         {/* </Input> */}
                     </FormGroup>

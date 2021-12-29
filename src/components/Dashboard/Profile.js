@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 
-const Profile = ({ dashboardToken }) => {
+const Profile = () => {
     const [user, setUser] = useState({
         name: '',
         email: '',
@@ -76,16 +76,13 @@ const Profile = ({ dashboardToken }) => {
         axios
             .get('https://udyam22-backend.herokuapp.com/auth/update/', {
                 headers: {
-                    Authorization: `Token ${dashboardToken}`,
+                    Authorization:
+                        'Token d102f9b8531448411f3658ecfdeeee5b0fbf2a17',
                 },
             })
             .then((res) => {
-                console.log('res=', res.data)
+                console.log(res.data)
                 setUser(res.data)
-                localStorage.setItem('year', res.data.year)
-            })
-            .catch((err) => {
-                console.log('err=', err)
             })
     }, [])
 
