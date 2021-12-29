@@ -101,7 +101,7 @@ const Submission = ({ dashboardToken }) => {
                             <option>EVENT</option>
                             <option value="MOSAIC">MOSAIC</option>
                             <option value="SPYBITS">SPYBITS</option>
-                            <option value="I-CHIP">I-CHIP</option>
+                            <option value="ICHIP">ICHIP</option>
                             <option value="COMMNET">COMMNET</option>
                             <option value="CONTINNUM">CONTINNUM</option>
                             <option value="DIGISM">DIGISM</option>

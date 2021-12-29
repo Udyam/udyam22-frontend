@@ -33,7 +33,7 @@ const Register = ({ dashboardToken }) => {
     const firstYear = {
         MOSAIC: 3,
         SPYBITS: 3,
-        'I-CHIP': 3,
+        'ICHIP': 3,
         COMMNET: 3,
         CONTINNUM: 3,
         DIGISM: 3,
@@ -45,7 +45,7 @@ const Register = ({ dashboardToken }) => {
     const secondYear = {
         MOSAIC: 3,
         SPYBITS: 3,
-        'I-CHIP': 3,
+        'ICHIP': 3,
         COMMNET: 3,
         CONTINNUM: 2,
         DIGISM: 2,
@@ -193,7 +193,7 @@ const Register = ({ dashboardToken }) => {
                             <option value="EVENT">EVENT</option>
                             <option value="MOSAIC">MOSAIC</option>
                             <option value="SPYBITS">SPYBITS</option>
-                            <option value="I-CHIP">I-CHIP</option>
+                            <option value="ICHIP">ICHIP</option>
                             <option value="COMMNET">COMMNET</option>
                             <option value="CONTINNUM">CONTINNUM</option>
                             <option value="DIGISM">DIGISM</option>
