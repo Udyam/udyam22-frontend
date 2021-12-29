@@ -130,8 +130,6 @@ const Profile = ({ dashboardToken }) => {
             })
     }, [])
 
-
-
     return (
         <div className="profileContainer">
             <ul style={{ listStyleType: 'none' }}>
@@ -213,7 +211,6 @@ const Profile = ({ dashboardToken }) => {
                 <li>
                     <h4>Referral Code: {user.referral_code}</h4>
                 </li>
-               
             </ul>
             <div id="profile-edit-button">
                 <h4 className="editLink" onClick={() => editProfile()}>
