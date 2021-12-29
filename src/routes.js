@@ -59,7 +59,7 @@ const Routes = () => {
             <Route exact path="/recoverpage" component={RecoverForm} />
             <Route exact path="/resetpage" component={ResetForm} />
             <Route exact path="/notifyreset" component={NotifyReset} />
-            <Route exact path="/comingsoon" component={ComingSoon} />
+            <Route exact path="/comingsoon" component={logoutcoming} />
             <Route exact path="/noticeboard">
                 <Noticeboard />
             </Route>

@@ -7,7 +7,7 @@ import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 toast.configure()
 
-const Profile = () => {
+const Profile = ({ dashboardToken }) => {
     const [user, setUser] = useState({
         name: '',
         email: '',
@@ -51,8 +51,7 @@ const Profile = () => {
                 },
                 {
                     headers: {
-                        Authorization:
-                            'Token d102f9b8531448411f3658ecfdeeee5b0fbf2a17',
+                        Authorization: `Token ${dashboardToken}`,
                     },
                 }
             )
@@ -92,8 +91,7 @@ const Profile = () => {
                 },
                 {
                     headers: {
-                        Authorization:
-                            'Token d102f9b8531448411f3658ecfdeeee5b0fbf2a17',
+                        Authorization: `Token ${dashboardToken}`,
                     },
                 }
             )
@@ -119,13 +117,16 @@ const Profile = () => {
         axios
             .get('https://udyam22-backend.herokuapp.com/auth/update/', {
                 headers: {
-                    Authorization:
-                        'Token d102f9b8531448411f3658ecfdeeee5b0fbf2a17',
+                    Authorization: `Token ${dashboardToken}`,
                 },
             })
             .then((res) => {
-                console.log(res.data)
+                console.log('res=', res.data)
                 setUser(res.data)
+                localStorage.setItem('year', res.data.year)
+            })
+            .catch((err) => {
+                console.log('err=', err)
             })
     }, [])
 

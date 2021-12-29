@@ -1,8 +1,9 @@
 import React from 'react'
 import Team from './Team.js'
 import axios from 'axios'
-import { useState, useEffect } from 'react'
-const Teams = () => {
+import { useEffect, useState } from 'react'
+
+const Teams = ({ dashboardToken }) => {
     const [events, setEvents] = useState({
         id: '',
         event: '',
@@ -15,8 +16,7 @@ const Teams = () => {
         axios
             .get('https://udyam22-backend.herokuapp.com/API/teams/user/', {
                 headers: {
-                    Authorization:
-                        'Token d102f9b8531448411f3658ecfdeeee5b0fbf2a17',
+                    Authorization: `Token ${dashboardToken}`,
                 },
             })
             .then((res) => {

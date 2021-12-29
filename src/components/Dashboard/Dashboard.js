@@ -16,6 +16,10 @@ const Dashboard = () => {
         logout()
         history.push('/')
     }
+    const token = localStorage.getItem('userToken')
+    const arr = token.split('"')
+    const token1 = arr[1]
+    console.log('token=', token1)
     return (
         <div>
             <div className="dashboardContainer">
@@ -97,23 +101,23 @@ const Dashboard = () => {
                     <ul style={{ listStyleType: 'none' }}>
                         <li>
                             <h2 id="profile">PROFILE</h2>
-                            <Profile />
+                            <Profile dashboardToken={token1} />
                         </li>
                         <li>
                             <h2 id="register">REGISTER NOW</h2>
-                            <Register />
+                            <Register dashboardToken={token1} />
                         </li>
                         <li>
                             <h2 id="teams">TEAMS</h2>
-                            <Teams />
+                            <Teams dashboardToken={token1} />
                         </li>
                         <li>
                             <h2 id="workshops">WORKSHOPS</h2>
-                            <Workshops />
+                            <Workshops dashboardToken={token1} />
                         </li>
                         <li>
                             <h2 id="submission">SUBMISSION</h2>
-                            <Submission />
+                            <Submission dashboardToken={token1} />
                         </li>
                     </ul>
                 </div>
