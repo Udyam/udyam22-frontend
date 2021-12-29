@@ -33,7 +33,7 @@ const Register = ({ dashboardToken }) => {
     const firstYear = {
         MOSAIC: 3,
         SPYBITS: 3,
-        'ICHIP': 3,
+        ICHIP: 3,
         COMMNET: 3,
         CONTINNUM: 3,
         DIGISM: 3,
@@ -45,7 +45,7 @@ const Register = ({ dashboardToken }) => {
     const secondYear = {
         MOSAIC: 3,
         SPYBITS: 3,
-        'ICHIP': 3,
+        ICHIP: 3,
         COMMNET: 3,
         CONTINNUM: 2,
         DIGISM: 2,
