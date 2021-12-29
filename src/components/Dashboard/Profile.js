@@ -3,6 +3,9 @@ import './Profile.css'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
+import { toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+toast.configure()
 
 const Profile = () => {
     const [user, setUser] = useState({
@@ -86,6 +89,119 @@ const Profile = () => {
             })
     }, [])
 
+    const [updateName, setupdateName] = useState(user.name)
+    const [updateCollegeName, setupdateCollegeName] = useState(
+        user.college_name
+    )
+
+    const editProfile = () => {
+        setupdateName('')
+        document.getElementById('profile-user-name').classList.add('hideme')
+        document.getElementById('profile-college-name').classList.add('hideme')
+        document.getElementById('profile-edit-button').classList.add('hideme')
+        document.getElementById('edit-name-field').classList.remove('hideme')
+        document
+            .getElementById('edit-college-name-field')
+            .classList.remove('hideme')
+    }
+
+    const updateProfileName = () => {
+        if (!updateName) {
+            toast.error('Please fill the empty field', {
+                position: toast.POSITION.BOTTOM_RIGHT,
+            })
+            return
+        }
+        axios
+            .post(
+                'https://udyam22-backend.herokuapp.com/auth/update/',
+                {
+                    name: updateName,
+
+                    college_name: user.college_name,
+
+                    year: user.year,
+                },
+                {
+                    headers: {
+                        Authorization:
+                            'Token d102f9b8531448411f3658ecfdeeee5b0fbf2a17',
+                    },
+                }
+            )
+            .then((res) => {
+                console.log(res.data)
+                setUser(res.data)
+                toast.success('Profile Name Updated', {
+                    position: toast.POSITION.BOTTOM_RIGHT,
+                })
+            })
+            .catch((err) => {
+                console.log(err)
+            })
+        document.getElementById('profile-user-name').classList.remove('hideme')
+        document
+            .getElementById('profile-edit-button')
+            .classList.remove('hideme')
+        document.getElementById('edit-name-field').classList.add('hideme')
+    }
+
+    const updateProfileCollegeName = () => {
+        if (!updateCollegeName) {
+            toast.error('Please fill the empty field', {
+                position: toast.POSITION.BOTTOM_RIGHT,
+            })
+            return
+        }
+        axios
+            .post(
+                'https://udyam22-backend.herokuapp.com/auth/update/',
+                {
+                    name: user.name,
+
+                    college_name: updateCollegeName,
+
+                    year: user.year,
+                },
+                {
+                    headers: {
+                        Authorization:
+                            'Token d102f9b8531448411f3658ecfdeeee5b0fbf2a17',
+                    },
+                }
+            )
+            .then((res) => {
+                console.log(res.data)
+                setUser(res.data)
+                toast.success('College Name Updated', {
+                    position: toast.POSITION.BOTTOM_RIGHT,
+                })
+            })
+            .catch((err) => {
+                console.log(err)
+            })
+        document
+            .getElementById('profile-college-name')
+            .classList.remove('hideme')
+        document
+            .getElementById('edit-college-name-field')
+            .classList.add('hideme')
+    }
+
+    useEffect(() => {
+        axios
+            .get('https://udyam22-backend.herokuapp.com/auth/update/', {
+                headers: {
+                    Authorization:
+                        'Token d102f9b8531448411f3658ecfdeeee5b0fbf2a17',
+                },
+            })
+            .then((res) => {
+                console.log(res.data)
+                setUser(res.data)
+            })
+    }, [])
+
     return (
         <div className="profileContainer">
             <ul style={{ listStyleType: 'none' }}>
@@ -123,9 +239,6 @@ const Profile = () => {
                         </div>
                     </div>
                 </li>
-                {/* <li>
-                    <h4>Username : {user.name}</h4>
-                </li> */}
                 <li>
                     <h4 id="profile-college-name">
                         College Name: {user.college_name}

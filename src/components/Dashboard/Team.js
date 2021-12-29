@@ -2,29 +2,25 @@ import React from 'react'
 import './Team.css'
 import axios from '../../utils/axios'
 
-const Team = ({ key, event, teamname, members }) => {
-    const id = key
+const Team = ({ id, eventName, teamName, leader, member1, member2 }) => {
     const auth = {
         headers: {
-            Authorization: 'Token ',
+            Authorization: 'Token d102f9b8531448411f3658ecfdeeee5b0fbf2a17',
         },
     }
-    /* var Member1
-    var Member2
-    const Leader=members[0]
-    if (members.length == 3) {
-        Member1 = members[1]
-        Member2 = members[2]
+    var members = []
+    if (member1 == null && member2 == null) {
+        members = [leader]
+    } else if (member1 != null && member2 == null) {
+        members = [leader, member1]
+    } else if (member1 != null && member2 != null) {
+        members = [leader, member1, member2]
     }
-    else if (members.length == 2) {
-        Member1 = members[1]
-        Member2 = ' '
-    }*/
     let additionalMembers = []
     if (members.length > 1) {
         additionalMembers = members.slice(1, members.length)
     }
-    const deleteTeam = (id) => {
+    const deleteTeam = ({ id }) => {
         axios
             .delete(
                 'https://udyam22-backend.herokuapp.com/API/team/' + id + '/',
@@ -39,14 +35,17 @@ const Team = ({ key, event, teamname, members }) => {
     }
     return (
         <div className="teamContainer">
-            <img className="eventImageTop" src={'./images/' + event + '.png'} />
+            <img
+                className="eventImageTop"
+                src={'./images/' + eventName + '.png'}
+            />
             <div className="teamDetails">
                 <ul style={{ listStyleType: 'none' }}>
                     <li>
-                        <h4>Event : {event}</h4>
+                        <h4>Event : {eventName}</h4>
                     </li>
                     <li>
-                        <h4>Team Name: {teamname}</h4>
+                        <h4> Team Name: {teamName}</h4>
                     </li>
                     <li>
                         <h4>
@@ -56,14 +55,17 @@ const Team = ({ key, event, teamname, members }) => {
                             })}
                         </h4>
                     </li>
-                    <h4 className="deleteBtn" onClick={() => deleteTeam(id)}>
+                    <h4
+                        className="deleteBtn"
+                        onClick={() => deleteTeam({ id })}
+                    >
                         DELETE TEAM
                     </h4>
                 </ul>
             </div>
             <img
                 className="eventImageRight"
-                src={'./images/' + event + '.png'}
+                src={'./images/' + eventName + '.png'}
             />
         </div>
     )
