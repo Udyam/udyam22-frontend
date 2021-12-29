@@ -4,6 +4,8 @@ import { Card } from 'reactstrap'
 import styles from './NoticeBoard.module.css'
 import Notif from './Notif/Notif'
 import SearchBox from './SearchBox/SearchBox'
+import TitleBar from './TitleBar/TitleBar'
+import { useLocation } from 'react-router-dom'
 
 const Noticeboard = () => {
     const [NOTIFS, setNOTIFS] = useState([])
@@ -26,9 +28,7 @@ const Noticeboard = () => {
             NOTIFS.filter((notif) => {
                 return (
                     query === '' ||
-                    notif.description
-                        .toLowerCase()
-                        .includes(query.toLowerCase())
+                    notif.title.toLowerCase().includes(query.toLowerCase())
                 )
             })
         )
@@ -41,8 +41,9 @@ const Noticeboard = () => {
                 {filteredNotifs.map((notif) => {
                     return (
                         <Notif
-                            text={notif.title}
+                            title={notif.title}
                             date={notif.date}
+                            description={notif.description}
                             key={notif.id}
                         ></Notif>
                     )
@@ -52,4 +53,22 @@ const Noticeboard = () => {
     )
 }
 
-export default Noticeboard
+const Notice = () => {
+    const location = useLocation()
+
+    return (
+        <Card body className={styles.outer_container}>
+            <TitleBar title={location.state.title} />
+            <Card
+                body
+                className={`${styles.scroll_container} ${styles.description_container}`}
+            >
+                <p className={styles.description}>
+                    {location.state.description}
+                </p>
+            </Card>
+        </Card>
+    )
+}
+
+export { Noticeboard, Notice }
