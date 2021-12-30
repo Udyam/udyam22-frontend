@@ -35,7 +35,7 @@ const Register = ({ dashboardToken }) => {
         SPYBITS: 3,
         ICHIP: 3,
         COMMNET: 3,
-        CONTINNUM: 3,
+        CONTINUUM: 3,
         DIGISM: 3,
         XIOTA: 3,
         CASSANDRA: 3,
@@ -47,7 +47,7 @@ const Register = ({ dashboardToken }) => {
         SPYBITS: 3,
         ICHIP: 3,
         COMMNET: 3,
-        CONTINNUM: 2,
+        CONTINUUM: 2,
         DIGISM: 2,
         XIOTA: 2,
         CASSANDRA: 3,
@@ -110,15 +110,15 @@ const Register = ({ dashboardToken }) => {
             console.log('check=', check)
             console.log('input=', input)
 
-            // if number of members is 1 dlete member1 and member2 from input
-            if (numMembers === '1') {
-                delete input.member1
-                delete input.member2
-            }
-            // if number of members is 2 delete member2 from input
-            else if (numMembers === '2') {
-                delete input.member2
-            }
+            // // if number of members is 1 dlete member1 and member2 from input
+            // if (numMembers === '1') {
+            //     delete input.member1
+            //     delete input.member2
+            // }
+            // // if number of members is 2 delete member2 from input
+            // else if (numMembers === '2') {
+            //     delete input.member2
+            // }
 
             console.log('input new=', input)
 
@@ -195,7 +195,7 @@ const Register = ({ dashboardToken }) => {
                             <option value="SPYBITS">SPYBITS</option>
                             <option value="ICHIP">ICHIP</option>
                             <option value="COMMNET">COMMNET</option>
-                            <option value="CONTINNUM">CONTINNUM</option>
+                            <option value="CONTINUUM">CONTINUUM</option>
                             <option value="DIGISM">DIGISM</option>
                             <option value="XIOTA">XIOTA</option>
                             <option value="CASSANDRA">CASSANDRA</option>
