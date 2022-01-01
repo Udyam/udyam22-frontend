@@ -40,7 +40,7 @@ const Submission = ({ dashboardToken }) => {
                 })
                 .then((res) => {
                     console.log(res)
-                    console.log("done");
+                    console.log('done')
                     window.location.reload()
                 })
                 .catch((err) => {
