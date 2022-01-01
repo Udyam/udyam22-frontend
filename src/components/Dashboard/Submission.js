@@ -40,6 +40,8 @@ const Submission = ({ dashboardToken }) => {
                 })
                 .then((res) => {
                     console.log(res)
+                    console.log("done");
+                    window.location.reload()
                 })
                 .catch((err) => {
                     console.log(err)
@@ -104,7 +106,7 @@ const Submission = ({ dashboardToken }) => {
                             <option value="ICHIP">ICHIP</option>
                             <option value="COMMNET">COMMNET</option>
                             <option value="CONTINUUM">CONTINUUM</option>
-                            <option value="DIGISM">DIGISM</option>
+                            <option value="DIGISIM">DIGISIM</option>
                             <option value="XIOTA">XIOTA</option>
                             <option value="CASSANDRA">CASSANDRA</option>
                             {year === 'FIRST' && (

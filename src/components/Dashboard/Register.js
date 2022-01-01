@@ -36,7 +36,7 @@ const Register = ({ dashboardToken }) => {
         ICHIP: 3,
         COMMNET: 3,
         CONTINUUM: 3,
-        DIGISM: 3,
+        DIGISIM: 3,
         XIOTA: 3,
         CASSANDRA: 3,
         FUNCKIT: 3,
@@ -48,7 +48,7 @@ const Register = ({ dashboardToken }) => {
         ICHIP: 3,
         COMMNET: 3,
         CONTINUUM: 2,
-        DIGISM: 2,
+        DIGISIM: 2,
         XIOTA: 2,
         CASSANDRA: 3,
         FUNCKIT: 0,
@@ -130,6 +130,8 @@ const Register = ({ dashboardToken }) => {
                 })
                 .then((res) => {
                     console.log(res)
+                    console.log("done");
+                    window.location.reload()
                 })
                 .catch((err) => {
                     console.log(err)
@@ -196,7 +198,7 @@ const Register = ({ dashboardToken }) => {
                             <option value="ICHIP">ICHIP</option>
                             <option value="COMMNET">COMMNET</option>
                             <option value="CONTINUUM">CONTINUUM</option>
-                            <option value="DIGISM">DIGISM</option>
+                            <option value="DIGISIM">DIGISIM</option>
                             <option value="XIOTA">XIOTA</option>
                             <option value="CASSANDRA">CASSANDRA</option>
                             {year === 'FIRST' && (
