@@ -28,6 +28,7 @@ const Team = ({ id, eventName, teamName, leader, member1, member2 }) => {
             )
             .then(function ({ response }) {
                 console.log(response)
+                window.location.reload()
             })
             .catch(function (err) {
                 console.log(err)

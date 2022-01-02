@@ -58,6 +58,7 @@ const Profile = ({ dashboardToken }) => {
             .then((res) => {
                 console.log(res.data)
                 setUser(res.data)
+                window.location.reload()
                 toast.success('Profile Name Updated', {
                     position: toast.POSITION.BOTTOM_RIGHT,
                 })
@@ -98,6 +99,7 @@ const Profile = ({ dashboardToken }) => {
             .then((res) => {
                 console.log(res.data)
                 setUser(res.data)
+                window.location.reload()
                 toast.success('College Name Updated', {
                     position: toast.POSITION.BOTTOM_RIGHT,
                 })
