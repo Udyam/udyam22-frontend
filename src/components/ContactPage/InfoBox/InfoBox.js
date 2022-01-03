@@ -13,7 +13,7 @@ export const InfoBox = () => {
                     <ul className="info-box-list">
                         <li className="info-box-list-item">Aman Kumar</li>
                         <li className="info-box-list-item">
-                        aman.kumar.ece19@itbhu.ac.in
+                            aman.kumar.ece19@itbhu.ac.in
                         </li>
                     </ul>
                 </li>
@@ -23,9 +23,11 @@ export const InfoBox = () => {
                         <span className="info-box-span">Marketing :</span>
                     </div>
                     <ul className="info-box-list">
-                        <li className="info-box-list-item">Prajakta Priyadarsini</li>
                         <li className="info-box-list-item">
-                        prajakta.priyadarsini.ece19@itbhu.ac.in
+                            Prajakta Priyadarsini
+                        </li>
+                        <li className="info-box-list-item">
+                            prajakta.priyadarsini.ece19@itbhu.ac.in
                         </li>
                     </ul>
                 </li>
@@ -35,9 +37,11 @@ export const InfoBox = () => {
                         <span className="info-box-span">PR Team :</span>
                     </div>
                     <ul className="info-box-list">
-                        <li className="info-box-list-item">Prince Kumar Gond</li>
                         <li className="info-box-list-item">
-                        princekumar.gond.ece19@itbhu.ac.in
+                            Prince Kumar Gond
+                        </li>
+                        <li className="info-box-list-item">
+                            princekumar.gond.ece19@itbhu.ac.in
                         </li>
                     </ul>
                 </li>
@@ -50,7 +54,7 @@ export const InfoBox = () => {
                     <ul className="info-box-list">
                         <li className="info-box-list-item">Akshat Jain</li>
                         <li className="info-box-list-item">
-                        akshat.rajkumarjain.ece19@itbhu.ac.in
+                            akshat.rajkumarjain.ece19@itbhu.ac.in
                         </li>
                     </ul>
                 </li>
