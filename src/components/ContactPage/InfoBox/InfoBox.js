@@ -11,9 +11,9 @@ export const InfoBox = () => {
                         <span className="info-box-span">For Queries :</span>
                     </div>
                     <ul className="info-box-list">
-                        <li className="info-box-list-item">Aman Sharma</li>
+                        <li className="info-box-list-item">Aman Kumar</li>
                         <li className="info-box-list-item">
-                        aman.sharma.ece19@itbhu.ac.in
+                        aman.kumar.ece19@itbhu.ac.in
                         </li>
                     </ul>
                 </li>
