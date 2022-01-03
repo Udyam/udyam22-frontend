@@ -216,7 +216,7 @@ const Xiota = () => {
             <div className="Events_Text_Box">
                 An event focused on practical applications of the Internet of
                 Things(IoT) based on electronic sensors, microcontrollers,
-                cloud, data analytics, cybersecurity, and other technologies​
+                cloud, data analytics, cybersecurity, and other technologies
                 where participants implement a feasible solution to existing
                 problems. It involves the utilization of IoT components like
                 Arduino, Raspberry Pi, and other tools to provide optimized
@@ -355,7 +355,7 @@ const Funckit = () => {
             <div className="Events_Text_Box">
                 An event that tests a participant’s problem-solving abilities
                 through low-level programming and building gate-level circuitry
-                to ​optimize the logic, hardware and decrease execution time.
+                to optimize the logic, hardware and decrease execution time.
                 This is an entry-level event designed to create a foundation for
                 both programming and utilization of digital circuits.
             </div>
