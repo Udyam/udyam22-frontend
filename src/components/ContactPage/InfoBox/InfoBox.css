@@ -2,11 +2,13 @@
 
 .info-box-list {
     list-style-type: none;
+    padding-left: 1rem;
+    line-height: 2.6em;
 }
 
 .info-box-list-item {
     font-size: 1.35em;
-    margin: 0.1em auto;
+    margin: 0.1em 10px;
     font-weight: 300;
     color: #90e0ef;
 }
@@ -30,7 +32,9 @@
 
 @media only screen and (max-width: 992px) {
     .info-box-list-item {
-        font-size: 1.2em;
+        font-size: 1em;
+        margin: 0.1em 6px;
+        line-height: 2em;
     }
     .info-box-span,
     .info-box-circles {
