@@ -24,8 +24,9 @@ function Card(props) {
 
             <div>
                 <a
-                    href={props.instagram}
+                    href={props.linkedin}
                     style={{
+                        
                         display: isHovering,
                         position: 'relative',
                         right: '80px',

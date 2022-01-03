@@ -14,7 +14,7 @@ const Senior_Advisors = () => {
                 Back
             </Link>
 
-            <div className="container_box">
+            <div className="container_box" id = "Teams_Scrollbar">
                 <h1 className="title">SENIOR ADVISORS</h1>
 
                 <div className="row">
