@@ -27,11 +27,12 @@ const Mosaic = () => {
             </h3>
 
             <div className="Events_Text_Box">
-            An image processing and machine learning-based event to decipher canonical problems 
-            based on the intriguing subject of Machine Learning and Computer Vision. Its problem
-             statements involve Computer Vision cum ML for creating Captcha Recognizers, Hand-Recognition
-              Video Simulations, Real-time License Plate Detections etc.
-
+                An image processing and machine learning-based event to decipher
+                canonical problems based on the intriguing subject of Machine
+                Learning and Computer Vision. Its problem statements involve
+                Computer Vision cum ML for creating Captcha Recognizers,
+                Hand-Recognition Video Simulations, Real-time License Plate
+                Detections etc.
             </div>
 
             <div className="Events_Link_Holder">
@@ -72,11 +73,14 @@ const Ichip = () => {
             </h3>
 
             <div className="Events_Text_Box">
-            I-Chip is a Verilog-based event associated with designing, simulating, validating, 
-            and debugging digital systems, from flip-flops to microprocessors, using Verilog HDL, 
-            and working with FPGA Boards using industrial tools like Xilinx Vivado and ModelSim. 
-            Last year, participants had to design and verify a Verilog code for the implementation 
-            of different modes of popular cryptography algorithm- Advanced Encryption Standard (AES-128).
+                I-Chip is a Verilog-based event associated with designing,
+                simulating, validating, and debugging digital systems, from
+                flip-flops to microprocessors, using Verilog HDL, and working
+                with FPGA Boards using industrial tools like Xilinx Vivado and
+                ModelSim. Last year, participants had to design and verify a
+                Verilog code for the implementation of different modes of
+                popular cryptography algorithm- Advanced Encryption Standard
+                (AES-128).
             </div>
 
             <div className="Events_Link_Holder">
@@ -117,11 +121,13 @@ const Spybits = () => {
             </h3>
 
             <div className="Events_Text_Box">
-            A technological event based on Cybersecurity, Cryptography, and Cryptanalysis demonstrated through 
-            innovative puzzles, challenging beginners, and expert hackers’ imagination with exposure to Block 
-            Ciphers, Encryption, Digital Signatures, and other Cybersecurity Tools. This event focuses on both 
-            classical and modern implementations on the web, along with programming-based applications in Cryptography.
-
+                A technological event based on Cybersecurity, Cryptography, and
+                Cryptanalysis demonstrated through innovative puzzles,
+                challenging beginners, and expert hackers’ imagination with
+                exposure to Block Ciphers, Encryption, Digital Signatures, and
+                other Cybersecurity Tools. This event focuses on both classical
+                and modern implementations on the web, along with
+                programming-based applications in Cryptography.
             </div>
 
             <div className="Events_Link_Holder">
@@ -162,10 +168,12 @@ const Commnet = () => {
             </h3>
 
             <div className="Events_Text_Box">
-            A Digital communications-based event focused upon Network Architecture and MATLAB 
-            implementation of coding theory, compression algorithms, signal processing, modulation, 
-            and demodulation techniques. It gives attention to information theory and in-depth knowledge 
-            of the popular and versatile software, MATLAB.
+                A Digital communications-based event focused upon Network
+                Architecture and MATLAB implementation of coding theory,
+                compression algorithms, signal processing, modulation, and
+                demodulation techniques. It gives attention to information
+                theory and in-depth knowledge of the popular and versatile
+                software, MATLAB.
             </div>
 
             <div className="Events_Link_Holder">
@@ -206,11 +214,13 @@ const Xiota = () => {
             </h3>
 
             <div className="Events_Text_Box">
-            An event focused on practical applications of the Internet of Things(IoT) based
-             on electronic sensors, microcontrollers, cloud, data analytics, cybersecurity, 
-             and other technologies​ where participants implement a feasible solution to 
-             existing problems. It involves the utilization of IoT components like Arduino, 
-             Raspberry Pi, and other tools to provide optimized solutions to real-life issues.
+                An event focused on practical applications of the Internet of
+                Things(IoT) based on electronic sensors, microcontrollers,
+                cloud, data analytics, cybersecurity, and other technologies​
+                where participants implement a feasible solution to existing
+                problems. It involves the utilization of IoT components like
+                Arduino, Raspberry Pi, and other tools to provide optimized
+                solutions to real-life issues.
             </div>
 
             <div className="Events_Link_Holder">
@@ -251,11 +261,12 @@ const Cassandra = () => {
             </h3>
 
             <div className="Events_Text_Box">
-            A Data Science event where data analysts design a model that learns
-             and optimizes the dataset provided implementing Machine Learning algorithms
-              in industrial problems and gives an exposure to the ABCs of data 
-              science - data cleaning, feature engineering, among others. Participants 
-              need to train an ML model using the given dataset and make predictions accordingly.
+                A Data Science event where data analysts design a model that
+                learns and optimizes the dataset provided implementing Machine
+                Learning algorithms in industrial problems and gives an exposure
+                to the ABCs of data science - data cleaning, feature
+                engineering, among others. Participants need to train an ML
+                model using the given dataset and make predictions accordingly.
             </div>
 
             <div className="Events_Link_Holder">
@@ -296,10 +307,12 @@ const Digisim = () => {
             </h3>
 
             <div className="Events_Text_Box">
-            A Digital Electronics based event involving designing optimized digital systems and their Proteus Simulations.
-             It develops a strong foundation in computer architecture and digital system designing and strengthens 
-             debugging and logic-building skills. Its previous problem statements include Tetris game, Pacman ghost’s
-              algorithm, Merge Sort Algorithm using Proteus.
+                A Digital Electronics based event involving designing optimized
+                digital systems and their Proteus Simulations. It develops a
+                strong foundation in computer architecture and digital system
+                designing and strengthens debugging and logic-building skills.
+                Its previous problem statements include Tetris game, Pacman
+                ghost’s algorithm, Merge Sort Algorithm using Proteus.
             </div>
 
             <div className="Events_Link_Holder">
@@ -340,10 +353,11 @@ const Funckit = () => {
             </h3>
 
             <div className="Events_Text_Box">
-            An event that tests a participant’s problem-solving abilities through low-level
-             programming and building gate-level circuitry to ​optimize the logic, hardware
-              and decrease execution time. This is an entry-level event designed to create a 
-              foundation for both programming and utilization of digital circuits.
+                An event that tests a participant’s problem-solving abilities
+                through low-level programming and building gate-level circuitry
+                to ​optimize the logic, hardware and decrease execution time.
+                This is an entry-level event designed to create a foundation for
+                both programming and utilization of digital circuits.
             </div>
 
             <div className="Events_Link_Holder">
@@ -384,9 +398,11 @@ const Continuum = () => {
             </h3>
 
             <div className="Events_Text_Box">
-            Continuum is an Analog Electronics based event aimed at designing and simulating analog circuits
-             and filters to perform computations using CAD tools to implement and validate their designs on hardware. 
-            Participants design computational devices using filters and circuits made of only analog components.
+                Continuum is an Analog Electronics based event aimed at
+                designing and simulating analog circuits and filters to perform
+                computations using CAD tools to implement and validate their
+                designs on hardware. Participants design computational devices
+                using filters and circuits made of only analog components.
             </div>
 
             <div className="Events_Link_Holder">

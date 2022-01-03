@@ -10,8 +10,7 @@
 }
 .ayush:hover {
     transform: scale(
-        /* 1.25 */
-        1.1  
+        /* 1.25 */ 1.1
     ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 .pp {
@@ -70,17 +69,17 @@
 #Speakers_Scrollbar::-webkit-scrollbar {
     width: 10px;
 }
-    
+
 #Speakers_Scrollbar::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px rgb(113, 192, 245);
     border-radius: 6px;
 }
-    
+
 #Speakers_Scrollbar::-webkit-scrollbar-thumb {
     background: #c4c4c4;
     border-radius: 10px;
 }
-    
+
 #Speakers_Scrollbar::-webkit-scrollbar-thumb:hover {
     background: white;
 }

@@ -26,7 +26,6 @@ function Card(props) {
                 <a
                     href={props.linkedin}
                     style={{
-                        
                         display: isHovering,
                         position: 'relative',
                         right: '80px',

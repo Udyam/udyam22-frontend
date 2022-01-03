@@ -31,7 +31,7 @@ const Data = [
         pp: Sample_Image,
         linkedin_url: 'https://www.linkedin.com',
         twitter_url: 'https://twitter.com/bts_bighit?lang=en',
-        facebook_url: 'https://www.facebook.com',   
+        facebook_url: 'https://www.facebook.com',
     },
     {
         name: 'Aman Kumar',

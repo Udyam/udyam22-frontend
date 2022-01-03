@@ -18,7 +18,7 @@ function CreateCard(parts) {
 
 function Speakers() {
     return (
-        <div className="INF" id = "Speakers_Scrollbar">
+        <div className="INF" id="Speakers_Scrollbar">
             <img className="speakers_images" alt="Logo" src={Speakers_logo} />
             <dl>{Data.map(CreateCard)}</dl>
         </div>

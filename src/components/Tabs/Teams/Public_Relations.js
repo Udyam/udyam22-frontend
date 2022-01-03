@@ -15,7 +15,7 @@ const Public_Relations = () => {
                 Back
             </Link>
 
-            <div className="container_box" id = "Teams_Scrollbar">
+            <div className="container_box" id="Teams_Scrollbar">
                 <h1 className="title">PUBLIC RELATIONS</h1>
 
                 <div className="row">
