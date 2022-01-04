@@ -52,10 +52,9 @@
 .contact-form-fields:focus,
 .contact-form-fields:active,
 .contact-form-fields::placeholder {
-    -webkit-text-stroke: 1px rgba(0, 255, 255, 0.75);
     font-size: 1.5rem;
     outline: 0px !important;
-    -webkit-appearance: none;
+    font-weight: bolder;
     box-shadow: none !important;
     background: none;
     text-decoration: none;

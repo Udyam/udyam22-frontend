@@ -11,9 +11,9 @@ export const InfoBox = () => {
                         <span className="info-box-span">For Queries :</span>
                     </div>
                     <ul className="info-box-list">
-                        <li className="info-box-list-item">Mayank</li>
+                        <li className="info-box-list-item">Aman Kumar</li>
                         <li className="info-box-list-item">
-                            mchakravorty.ece18@iitbhu.ac.in
+                            aman.kumar.ece19@itbhu.ac.in
                         </li>
                     </ul>
                 </li>
@@ -23,9 +23,11 @@ export const InfoBox = () => {
                         <span className="info-box-span">Marketing :</span>
                     </div>
                     <ul className="info-box-list">
-                        <li className="info-box-list-item">Amritesh</li>
                         <li className="info-box-list-item">
-                            amritesh.ece18@iitbhu.ac.in
+                            Prajakta Priyadarsini
+                        </li>
+                        <li className="info-box-list-item">
+                            prajakta.priyadarsini.ece19@itbhu.ac.in
                         </li>
                     </ul>
                 </li>
@@ -35,9 +37,11 @@ export const InfoBox = () => {
                         <span className="info-box-span">PR Team :</span>
                     </div>
                     <ul className="info-box-list">
-                        <li className="info-box-list-item">Harshit Gupta</li>
                         <li className="info-box-list-item">
-                            harshitgupta.ece18@iitbhu.ac.in
+                            Prince Kumar Gond
+                        </li>
+                        <li className="info-box-list-item">
+                            princekumar.gond.ece19@itbhu.ac.in
                         </li>
                     </ul>
                 </li>
@@ -48,9 +52,9 @@ export const InfoBox = () => {
                     </div>
 
                     <ul className="info-box-list">
-                        <li className="info-box-list-item">Ritweek Singh</li>
+                        <li className="info-box-list-item">Akshat Jain</li>
                         <li className="info-box-list-item">
-                            ritweeksingh.ece18@iitbhu.ac.in
+                            akshat.rajkumarjain.ece19@itbhu.ac.in
                         </li>
                     </ul>
                 </li>

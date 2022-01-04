@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
 .outer_container {
     margin: 1em;
     height: 84vh;
@@ -21,7 +23,22 @@
     padding: 10px 5px;
 }
 
+.description_container {
+    padding: 1.5em 1em;
+}
+
+.description {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    color: #fcfbfc;
+    font-size: 1em;
+}
+
 @media only screen and (min-width: 767px) {
+    .scroll_container::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px rgb(113, 192, 245);
+        border-radius: 6px;
+    }
     .scroll_container::-webkit-scrollbar {
         width: 0.5em;
         background: rgba(196, 196, 196, 0.3);
@@ -46,5 +63,13 @@
     }
     .outer_container {
         margin: 1.2em;
+    }
+
+    .description_container {
+        padding: 3.5em;
+    }
+
+    .description {
+        font-size: 1.3em;
     }
 }

@@ -18,6 +18,7 @@ export const Footer = () => {
         '/resetpage',
         '/recoverpage',
         '/notifyreset',
+        '/notice',
         '/comingsoon',
     ].includes(curPath) ? (
         ''

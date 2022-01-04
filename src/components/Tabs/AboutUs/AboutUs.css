@@ -1,0 +1,78 @@
+.aboutUs_heading {
+    height: auto;
+    width: 50%;
+}
+
+.aboutUs_head {
+    display: inline-block;
+    min-width: 100%;
+}
+
+.Aboutus-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3%;
+}
+
+.aboutUs_photo {
+    margin-left: 5%;
+    /* margin-top:10%;  */
+    width: 50vw;
+    /* float: left; */
+
+    height: 50vh;
+}
+
+.aboutUs-img {
+    width: 35vw;
+    height: auto;
+}
+
+/* .Aboutus_content_Text {
+    font-size: 1.4ex;
+
+} */
+
+.aboutUs_content {
+    /* margin-left: 40vw; */
+    margin-top: 5%;
+    height: 70h;
+    font-size: 1.2vw;
+}
+
+@media (max-width: 769px) {
+    .Aboutus-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutUs_photo {
+        margin-left: 5%;
+        margin-top: 5%;
+        width: 95%;
+        margin-left: 5%;
+        height: 35vh;
+    }
+
+    .aboutUs_heading {
+        text-align: center;
+        width: 100%;
+    }
+
+    .aboutUs_head {
+        padding-left: 15%;
+    }
+
+    .aboutUs-img {
+        width: 70vw;
+        height: auto;
+    }
+
+    .Aboutus_content_Text {
+        font-size: 3.4vw;
+        padding: 2%;
+    }
+}

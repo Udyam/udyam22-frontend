@@ -24,51 +24,51 @@ const Tabs = (props) => {
 
     return (
         // tab with "active" class will be visible
-        <div className="vertical-tabs">
+        <div className="Vertical-Tabs">
             <ul
-                className="tabs vertical"
+                className="Tabs-tabs vertical"
                 data-tab=""
                 style={{ padding: '0px', margin: '0px', listStyle: 'none' }}
             >
-                <li className="tab-title">
+                <li className="Tab-Title">
                     <Link to="/" id="panela">
                         <img src={home} />
                     </Link>
                 </li>
-                <li className="tab-title">
+                <li className="Tab-Title">
                     <Link to="/about-us" id="panelb">
                         <img src={info} />
                     </Link>
                 </li>
-                <li className="tab-title">
+                <li className="Tab-Title">
                     <Link to="/events" id="panelc">
                         <img src={event} />
                     </Link>
                 </li>
-                <li className="tab-title">
+                <li className="Tab-Title">
                     <Link to="/speakers" id="paneld">
                         <img src={speaker} />
                     </Link>
                 </li>
-                <li className="tab-title">
+                <li className="Tab-Title">
                     <Link to="/leaderboard" id="panele">
                         <img src={leaderboard} />
                     </Link>
                 </li>
-                <li className="tab-title">
+                <li className="Tab-Title">
                     <Link to="/sponsors" id="panelf">
                         <img src={sponsor} />
                     </Link>
                 </li>
-                <li className="tab-title">
+                <li className="Tab-Title">
                     <Link to="/team" id="panelg">
                         <img src={team} />
                     </Link>
                 </li>
             </ul>
 
-            <div className="tabs-content">
-                <div className="content " id="panela_content"></div>
+            <div className="Tabs-Content">
+                <div className="content" id="panela_content"></div>
                 <div className="content" id="panelb_content" tabIndex="-1">
                     {props.children}
                 </div>
