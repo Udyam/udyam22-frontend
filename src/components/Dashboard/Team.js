@@ -3,9 +3,12 @@ import './Team.css'
 import axios from '../../utils/axios'
 
 const Team = ({ id, eventName, teamName, leader, member1, member2 }) => {
+    const token = localStorage.getItem('userToken')
+    const arr = token.split('"')
+    const token1 = arr[1]
     const auth = {
         headers: {
-            Authorization: 'Token d102f9b8531448411f3658ecfdeeee5b0fbf2a17',
+            Authorization: 'Token' + ' ' + token1,
         },
     }
     var members = []
