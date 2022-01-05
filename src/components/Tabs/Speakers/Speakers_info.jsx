@@ -7,7 +7,7 @@ const Data = [
         pp: Sample_Image,
         linkedin_url: 'https://www.linkedin.com',
         twitter_url: 'https://twitter.com',
-        facebook_url: 'https://www.instagram.com',
+        facebook_url: 'https://www.facebook.com',
     },
     {
         name: 'Aman Kumar',
