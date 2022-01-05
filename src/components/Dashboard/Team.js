@@ -2,6 +2,9 @@ import { React } from 'react'
 import './Team.css'
 import axios from '../../utils/axios'
 import { useDashContext } from '../authentication/Context/dashcontext'
+import { toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+toast.configure()
 const Team = ({ id, eventName, teamName, leader, member1, member2 }) => {
     const token = localStorage.getItem('userToken')
     const arr = token.split('"')
@@ -55,6 +58,9 @@ const Team = ({ id, eventName, teamName, leader, member1, member2 }) => {
                 .then(function ({ response }) {
                     console.log(response)
                     console.log(state)
+                    toast.success('Your team has been deleted successfully', {
+                        position: toast.POSITION.BOTTOM_RIGHT,
+                    })
                     setState(8)
                 })
                 .catch(function (err) {
