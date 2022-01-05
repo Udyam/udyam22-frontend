@@ -15,7 +15,7 @@ const Profile = ({ dashboardToken }) => {
         year: '',
         referral_code: '',
     })
-
+    const [check, setCheck] = useState(0)
     const [updateName, setupdateName] = useState(user.name)
     const [updateCollegeName, setupdateCollegeName] = useState(
         user.college_name
@@ -31,88 +31,100 @@ const Profile = ({ dashboardToken }) => {
             .getElementById('edit-college-name-field')
             .classList.remove('hideme')
     }
+    useEffect(() => {
+        console.log('check=', check)
+        if (check == 1) {
+            if (!updateName) {
+                toast.error('Please fill the empty field', {
+                    position: toast.POSITION.BOTTOM_RIGHT,
+                })
+                return
+            }
+            axios
+                .post(
+                    'https://udyam22-backend.herokuapp.com/auth/update/',
+                    {
+                        name: updateName,
+
+                        college_name: user.college_name,
+
+                        year: user.year,
+                    },
+                    {
+                        headers: {
+                            Authorization: `Token ${dashboardToken}`,
+                        },
+                    }
+                )
+                .then((res) => {
+                    console.log(res.data)
+                    toast.success('Profile Name Updated', {
+                        position: toast.POSITION.BOTTOM_RIGHT,
+                    })
+
+                    setCheck(2)
+                })
+                .catch((err) => {
+                    console.log(err)
+                })
+            document
+                .getElementById('profile-user-name')
+                .classList.remove('hideme')
+            document
+                .getElementById('profile-edit-button')
+                .classList.remove('hideme')
+            document.getElementById('edit-name-field').classList.add('hideme')
+        }
+    }, [check])
 
     const updateProfileName = () => {
-        if (!updateName) {
-            toast.error('Please fill the empty field', {
-                position: toast.POSITION.BOTTOM_RIGHT,
-            })
-            return
-        }
-        axios
-            .post(
-                'https://udyam22-backend.herokuapp.com/auth/update/',
-                {
-                    name: updateName,
-
-                    college_name: user.college_name,
-
-                    year: user.year,
-                },
-                {
-                    headers: {
-                        Authorization: `Token ${dashboardToken}`,
-                    },
-                }
-            )
-            .then((res) => {
-                console.log(res.data)
-                setUser(res.data)
-                window.location.reload()
-                toast.success('Profile Name Updated', {
-                    position: toast.POSITION.BOTTOM_RIGHT,
-                })
-            })
-            .catch((err) => {
-                console.log(err)
-            })
-        document.getElementById('profile-user-name').classList.remove('hideme')
-        document
-            .getElementById('profile-edit-button')
-            .classList.remove('hideme')
-        document.getElementById('edit-name-field').classList.add('hideme')
+        setCheck(1)
     }
-
-    const updateProfileCollegeName = () => {
-        if (!updateCollegeName) {
-            toast.error('Please fill the empty field', {
-                position: toast.POSITION.BOTTOM_RIGHT,
-            })
-            return
-        }
-        axios
-            .post(
-                'https://udyam22-backend.herokuapp.com/auth/update/',
-                {
-                    name: user.name,
-
-                    college_name: updateCollegeName,
-
-                    year: user.year,
-                },
-                {
-                    headers: {
-                        Authorization: `Token ${dashboardToken}`,
-                    },
-                }
-            )
-            .then((res) => {
-                console.log(res.data)
-                setUser(res.data)
-                window.location.reload()
-                toast.success('College Name Updated', {
+    useEffect(() => {
+        console.log('check=', check)
+        if (check == 3) {
+            if (!updateCollegeName) {
+                toast.error('Please fill the empty field', {
                     position: toast.POSITION.BOTTOM_RIGHT,
                 })
-            })
-            .catch((err) => {
-                console.log(err)
-            })
-        document
-            .getElementById('profile-college-name')
-            .classList.remove('hideme')
-        document
-            .getElementById('edit-college-name-field')
-            .classList.add('hideme')
+                return
+            }
+            axios
+                .post(
+                    'https://udyam22-backend.herokuapp.com/auth/update/',
+                    {
+                        name: user.name,
+
+                        college_name: updateCollegeName,
+
+                        year: user.year,
+                    },
+                    {
+                        headers: {
+                            Authorization: `Token ${dashboardToken}`,
+                        },
+                    }
+                )
+                .then((res) => {
+                    console.log(res.data)
+                    toast.success('College Name Updated', {
+                        position: toast.POSITION.BOTTOM_RIGHT,
+                    })
+                    setCheck(2)
+                })
+                .catch((err) => {
+                    console.log(err)
+                })
+            document
+                .getElementById('profile-college-name')
+                .classList.remove('hideme')
+            document
+                .getElementById('edit-college-name-field')
+                .classList.add('hideme')
+        }
+    }, [check])
+    const updateProfileCollegeName = () => {
+        setCheck(3)
     }
 
     useEffect(() => {
@@ -131,6 +143,25 @@ const Profile = ({ dashboardToken }) => {
                 console.log('err=', err)
             })
     }, [])
+    useEffect(() => {
+        if (check == 2) {
+            axios
+                .get('https://udyam22-backend.herokuapp.com/auth/update/', {
+                    headers: {
+                        Authorization: `Token ${dashboardToken}`,
+                    },
+                })
+                .then((res) => {
+                    console.log('res=', res.data)
+                    setUser(res.data)
+                    localStorage.setItem('year', res.data.year)
+                })
+                .catch((err) => {
+                    console.log('err=', err)
+                })
+        }
+        setCheck(0)
+    }, [check])
 
     return (
         <div className="profileContainer">
