@@ -367,10 +367,10 @@ h2.loginregform-new {
 }
 
 @media (max-width: 970px) {
-  .loginregform-final {
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
+    .loginregform-final {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
     input.loginregform-in,
     input.loginregform-up,
     select.loginregform-up {
@@ -609,10 +609,10 @@ h2.loginregform-new {
 }
 
 @media (max-width: 491px) {
-  .loginregform-final {
-    margin-top: 10%;
-    margin-bottom: 10%;
-  }
+    .loginregform-final {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
 
     h3.loginregform-mobile-part-signIn,
     h2.loginregform-mobile-part {
@@ -641,7 +641,6 @@ h2.loginregform-new {
         font-size: 26px;
     }
 }
-
 
 @media (max-width: 360px) {
     input.loginregform-in,
