@@ -1,6 +1,10 @@
 import React from 'react'
 import './Sponsors.css'
 import sponsors_head from './Sponsors_head.png'
+import nvidia from './Sponsors_Images_Folder/NVIDIA.jpeg'
+import arm from './Sponsors_Images_Folder/ARM.jpeg'
+import cisco from './Sponsors_Images_Folder/CISCO.jpeg'
+import mentor_graphics from './Sponsors_Images_Folder/MENTOR_GRAPHICS.jpeg'
 
 const Sponsors = () => {
     return (
@@ -52,13 +56,27 @@ const Sponsors = () => {
                         <h4>PREVIOUS SPONSORS :</h4>
                     </div>
                     <div className="title2">
-                        <div className="box"></div>
+                        <div className="box">
+                            <img src={cisco} className="sponsors_image_box" />
+                        </div>
                     </div>
                     <div className="title2">
-                        <div className="box"></div>
+                        <div className="box">
+                            <img
+                                src={mentor_graphics}
+                                className="sponsors_image_box"
+                            />
+                        </div>
                     </div>
                     <div className="title2">
-                        <div className="box"></div>
+                        <div className="box">
+                            <img src={nvidia} className="sponsors_image_box" />
+                        </div>
+                    </div>
+                    <div className="title2">
+                        <div className="box">
+                            <img src={arm} className="sponsors_image_box" />
+                        </div>
                     </div>
                 </div>
             </div>
