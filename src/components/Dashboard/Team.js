@@ -1,7 +1,7 @@
-import React from 'react'
+import { React } from 'react'
 import './Team.css'
 import axios from '../../utils/axios'
-
+import { useDashContext } from '../authentication/Context/dashcontext'
 const Team = ({ id, eventName, teamName, leader, member1, member2 }) => {
     const token = localStorage.getItem('userToken')
     const arr = token.split('"')
@@ -11,6 +11,8 @@ const Team = ({ id, eventName, teamName, leader, member1, member2 }) => {
             Authorization: 'Token' + ' ' + token1,
         },
     }
+    const state = useDashContext()
+    const { setState } = useDashContext()
     var members = []
     if (member1 == null && member2 == null) {
         members = [leader]
@@ -23,7 +25,8 @@ const Team = ({ id, eventName, teamName, leader, member1, member2 }) => {
     if (members.length > 1) {
         additionalMembers = members.slice(1, members.length)
     }
-    const deleteTeam = ({ id }) => {
+    /*  useEffect(() => {
+        if(state.state==1){
         axios
             .delete(
                 'https://udyam22-backend.herokuapp.com/API/team/' + id + '/',
@@ -31,11 +34,33 @@ const Team = ({ id, eventName, teamName, leader, member1, member2 }) => {
             )
             .then(function ({ response }) {
                 console.log(response)
-                window.location.reload()
+                console.log(state)
+                setState(8)
             })
             .catch(function (err) {
                 console.log(err)
-            })
+            })}}, [state])*/
+    const deleteTeam = ({ id }) => {
+        setState(1)
+        console.log(id)
+        console.log(state.state)
+        if (state.state == 1) {
+            axios
+                .delete(
+                    'https://udyam22-backend.herokuapp.com/API/team/' +
+                        id +
+                        '/',
+                    auth
+                )
+                .then(function ({ response }) {
+                    console.log(response)
+                    console.log(state)
+                    setState(8)
+                })
+                .catch(function (err) {
+                    console.log(err)
+                })
+        }
     }
     return (
         <div className="teamContainer">

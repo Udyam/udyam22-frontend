@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import isEmail from 'validator/lib/isEmail'
 import { toast } from 'react-toastify'
+import { useDashContext } from '../authentication/Context/dashcontext'
+
 import './Register.css'
 // import axios from 'axios'
 
@@ -21,6 +23,8 @@ const Register = ({ dashboardToken }) => {
     })
     const [numMembers, setNumMembers] = useState('Members')
     const [check, setCheck] = useState(0)
+
+    const { setState } = useDashContext()
 
     const [firstmember, setFirstmember] = useState(false)
     const [secondmember, setSecondmember] = useState(false)
@@ -144,6 +148,7 @@ const Register = ({ dashboardToken }) => {
                         member1: '',
                         member2: '',
                     })
+                    setState(8)
                     setNumMembers('Members')
                     setCheck(0)
                     setFirstmember(false)
