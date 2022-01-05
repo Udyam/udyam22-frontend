@@ -3,7 +3,6 @@ import './AboutUs.css'
 import '../tabs_style.css'
 import aboutUs_heading from './AboutUs_heading.png'
 import aboutUs_img from './AboutUs_img.png'
-// import aboutUs_text from './AboutUs_text.png'
 
 const AboutUs = () => {
     return (
