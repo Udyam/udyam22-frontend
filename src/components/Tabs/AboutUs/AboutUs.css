@@ -17,7 +17,7 @@
 }
 
 .aboutUs_photo {
-    margin-left: 5%;
+    margin-left: 1%;
     /* margin-top:10%;  */
     width: 50vw;
     /* float: left; */
@@ -50,11 +50,12 @@
     }
 
     .aboutUs_photo {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2%;
+        width: 85%;
         margin-left: 5%;
-        margin-top: 5%;
-        width: 95%;
-        margin-left: 5%;
-        height: 35vh;
+        height: 32vh;
     }
 
     .aboutUs_heading {
@@ -67,12 +68,12 @@
     }
 
     .aboutUs-img {
-        width: 70vw;
+        width: 65vw;
         height: auto;
     }
 
     .Aboutus_content_Text {
-        font-size: 3.4vw;
+        font-size: 3.2vw;
         padding: 2%;
     }
 }
