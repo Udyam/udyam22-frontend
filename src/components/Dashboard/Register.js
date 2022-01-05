@@ -3,6 +3,7 @@ import { Form, FormGroup, FormFeedback, Input } from 'reactstrap'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import isEmail from 'validator/lib/isEmail'
+import { toast } from 'react-toastify'
 import './Register.css'
 // import axios from 'axios'
 
@@ -131,10 +132,45 @@ const Register = ({ dashboardToken }) => {
                 .then((res) => {
                     console.log(res)
                     console.log('done')
-                    window.location.reload()
+                    toast.success('Your team has been created successfully', {
+                        position: toast.POSITION.BOTTOM_RIGHT,
+                    })
+                    
+                    // set all states to initial state
+                    setInput({
+                        teamname: '',
+                        event: '',
+                        leader: '',
+                        member1: '',
+                        member2: '',
+                    })
+                    setNumMembers('Members')
+                    setCheck(0)
+                    setFirstmember(false)
+                    setSecondmember(false)
+                    setThirdmember(false)
+                    setThirdDisplay(false)
                 })
                 .catch((err) => {
-                    console.log(err)
+                    console.log("err=",err.response.data.error);
+                    toast.error(err.response.data.error, {
+                        position: toast.POSITION.BOTTOM_RIGHT,
+                    })
+                    
+                    // set all states to initial state
+                    setInput({
+                        teamname: '',
+                        event: '',
+                        leader: '',
+                        member1: '',
+                        member2: '',
+                    })
+                    setNumMembers('Members')
+                    setCheck(0)
+                    setFirstmember(false)
+                    setSecondmember(false)
+                    setThirdmember(false)
+                    setThirdDisplay(false)
                 })
         }
     }, [check])

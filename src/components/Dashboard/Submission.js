@@ -5,6 +5,7 @@ import { Form, FormGroup, Input } from 'reactstrap'
 import './Submission.css'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
+import { toast } from 'react-toastify'
 
 const API_BASE_URL = 'https://udyam22-backend.herokuapp.com'
 
@@ -41,10 +42,31 @@ const Submission = ({ dashboardToken }) => {
                 .then((res) => {
                     console.log(res)
                     console.log('done')
-                    window.location.reload()
+                    toast.success('Your Submission was successfully received', {
+                        position: toast.POSITION.BOTTOM_RIGHT,
+                    })
+                    
+                    // set all states to initial state
+                    setInput({
+                        teamname: '',
+                        event: '',
+                        submission: '',
+                    })
+                    setCheck(0)
                 })
                 .catch((err) => {
                     console.log(err)
+                    toast.error(err.response.data.error, {
+                        position: toast.POSITION.BOTTOM_RIGHT,
+                    })
+                    // set all states to initial state
+                    setInput({
+                        teamname: '',
+                        event: '',
+                        submission: '',
+                    })
+                    setCheck(0)
+                   
                 })
         }
     }, [check])
