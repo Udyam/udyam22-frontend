@@ -135,7 +135,7 @@ const Register = ({ dashboardToken }) => {
                     toast.success('Your team has been created successfully', {
                         position: toast.POSITION.BOTTOM_RIGHT,
                     })
-                    
+
                     // set all states to initial state
                     setInput({
                         teamname: '',
@@ -152,11 +152,11 @@ const Register = ({ dashboardToken }) => {
                     setThirdDisplay(false)
                 })
                 .catch((err) => {
-                    console.log("err=",err.response.data.error);
+                    console.log('err=', err.response.data.error)
                     toast.error(err.response.data.error, {
                         position: toast.POSITION.BOTTOM_RIGHT,
                     })
-                    
+
                     // set all states to initial state
                     setInput({
                         teamname: '',

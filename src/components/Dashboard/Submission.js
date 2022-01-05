@@ -45,7 +45,7 @@ const Submission = ({ dashboardToken }) => {
                     toast.success('Your Submission was successfully received', {
                         position: toast.POSITION.BOTTOM_RIGHT,
                     })
-                    
+
                     // set all states to initial state
                     setInput({
                         teamname: '',
@@ -66,7 +66,6 @@ const Submission = ({ dashboardToken }) => {
                         submission: '',
                     })
                     setCheck(0)
-                   
                 })
         }
     }, [check])
