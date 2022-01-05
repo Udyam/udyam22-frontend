@@ -13,7 +13,7 @@ const Sponsors = () => {
                 />
             </div>
 
-            <div className="container-sponsors">
+            <div className="container-sponsors" id="Sponsors_Scrollbar">
                 <div className="row-1">
                     <div className="title1">
                         <h4>TITLE SPONSOR :</h4>

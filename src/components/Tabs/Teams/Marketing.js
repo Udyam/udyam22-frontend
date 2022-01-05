@@ -15,7 +15,7 @@ const Marketing_Team = () => {
                 Back
             </Link>
 
-            <div className="container_box">
+            <div className="container_box" id="Teams_Scrollbar">
                 <h1 className="title">MARKETING TEAM</h1>
 
                 <div className="row">

@@ -13,7 +13,7 @@ const Developers = () => {
                 Back
             </Link>
 
-            <div className="container_box">
+            <div className="container_box" id="Teams_Scrollbar">
                 <h1 className="title">DEVELOPERS</h1>
 
                 <div className="row">

@@ -9,8 +9,8 @@ function CreateCard(parts) {
             name={parts.name}
             about={parts.about}
             pp={parts.pp}
+            linkedin={parts.linkedin_url}
             twitter={parts.twitter_url}
-            instagram={parts.instagram_url}
             facebook={parts.facebook_url}
         />
     )
@@ -18,7 +18,7 @@ function CreateCard(parts) {
 
 function Speakers() {
     return (
-        <div className="INF">
+        <div className="INF" id="Speakers_Scrollbar">
             <img className="speakers_images" alt="Logo" src={Speakers_logo} />
             <dl>{Data.map(CreateCard)}</dl>
         </div>
