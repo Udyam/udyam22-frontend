@@ -8,7 +8,7 @@ import RegisterForm from './components/authentication/loginregform'
 import RecoverForm from './components/authentication/recoverpage'
 import ResetForm from './components/authentication/resetpage'
 import NotifyReset from './components/authentication/notifyreset'
-import ComingSoon from './components/authentication/registration'
+import logoutcoming from './components/authentication/comingsoon'
 import Team from './components/Tabs/Teams/Team.js'
 import Sponsors from './components/Tabs/Sponsors/Sponsors.js'
 import Event from './components/Tabs/Events/Events.js'
@@ -59,7 +59,7 @@ const Routes = () => {
             <Route exact path="/recoverpage" component={RecoverForm} />
             <Route exact path="/resetpage" component={ResetForm} />
             <Route exact path="/notifyreset" component={NotifyReset} />
-            <Route exact path="/comingsoon" component={ComingSoon} />
+            <Route exact path="/comingsoon" component={logoutcoming} />
             <Route exact path="/noticeboard">
                 <Noticeboard />
             </Route>

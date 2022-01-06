@@ -144,6 +144,7 @@ input.loginregform-up {
     color: #90e0ef;
     width: 300px;
     border-radius: 30px;
+    border: none;
     /* padding: 12px 15px; */
     margin: 5px;
     text-align: center;
@@ -159,6 +160,8 @@ select.loginregform-up {
     border: none;
     border-radius: 30px;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     height: 37px;
     margin: 5px;
 }
@@ -364,6 +367,10 @@ h2.loginregform-new {
 }
 
 @media (max-width: 970px) {
+    .loginregform-final {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
     input.loginregform-in,
     input.loginregform-up,
     select.loginregform-up {
@@ -390,8 +397,8 @@ h2.loginregform-new {
         overflow: hidden;
         min-height: 600px;
         right: 10%;
-        margin-top: 2%;
-        margin-bottom: 2%;
+        margin-top: 7%;
+        margin-bottom: 7%;
     }
 
     .loginregform-logincontainer {
@@ -602,6 +609,11 @@ h2.loginregform-new {
 }
 
 @media (max-width: 491px) {
+    .loginregform-final {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
     h3.loginregform-mobile-part-signIn,
     h2.loginregform-mobile-part {
         font-size: 18px;
@@ -610,7 +622,7 @@ h2.loginregform-new {
     input.loginregform-in,
     input.loginregform-up,
     select.loginregform-up {
-        width: 240px;
+        width: 260px;
     }
 
     .loginregform-sign-up-container {
@@ -630,19 +642,11 @@ h2.loginregform-new {
     }
 }
 
-@media (max-width: 385px) {
-    input.loginregform-in,
-    input.loginregform-up,
-    select.loginregform-up {
-        width: 210px;
-    }
-}
-
 @media (max-width: 360px) {
     input.loginregform-in,
     input.loginregform-up,
     select.loginregform-up {
-        width: 198px;
+        width: 240px;
     }
 
     h2.loginregform-new {

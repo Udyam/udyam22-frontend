@@ -3,6 +3,9 @@ import { Form, FormGroup, FormFeedback, Input } from 'reactstrap'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import isEmail from 'validator/lib/isEmail'
+import { toast } from 'react-toastify'
+import { useDashContext } from '../authentication/Context/dashcontext'
+
 import './Register.css'
 // import axios from 'axios'
 
@@ -10,7 +13,7 @@ import './Register.css'
 
 const API_BASE_URL = 'https://udyam22-backend.herokuapp.com'
 
-const Register = () => {
+const Register = ({ dashboardToken }) => {
     const [input, setInput] = useState({
         teamname: '',
         event: '',
@@ -21,16 +24,65 @@ const Register = () => {
     const [numMembers, setNumMembers] = useState('Members')
     const [check, setCheck] = useState(0)
 
+    const { setState } = useDashContext()
+
     const [firstmember, setFirstmember] = useState(false)
     const [secondmember, setSecondmember] = useState(false)
     const [thirdmember, setThirdmember] = useState(false)
+
+    const [thirdDisplay, setThirdDisplay] = useState(false)
+
+    const year = localStorage.getItem('year')
+    console.log('year=', year)
+
+    const firstYear = {
+        MOSAIC: 3,
+        SPYBITS: 3,
+        ICHIP: 3,
+        COMMNET: 3,
+        CONTINUUM: 3,
+        DIGISIM: 3,
+        XIOTA: 3,
+        CASSANDRA: 3,
+        FUNCKIT: 3,
+    }
+
+    const secondYear = {
+        MOSAIC: 3,
+        SPYBITS: 3,
+        ICHIP: 3,
+        COMMNET: 3,
+        CONTINUUM: 2,
+        DIGISIM: 2,
+        XIOTA: 2,
+        CASSANDRA: 3,
+        FUNCKIT: 0,
+    }
+
+    const [memberArray, setMemberArray] = useState(firstYear)
+
+    useEffect(() => {
+        if (year === 'TWO') {
+            setMemberArray(secondYear)
+        }
+
+        console.log('memberArray=', memberArray)
+    }, [])
 
     const inputChangeHandler = async (e) => {
         // console.log("e in form", e.target.value);
         const newInput = { ...input }
         newInput[e.target.name] = e.target.value
         setInput(newInput)
-        // console.log("event=",input.event);
+        console.log('event=', e.target.value)
+
+        if (memberArray[e.target.value] != undefined) {
+            if (memberArray[e.target.value] === 3) {
+                setThirdDisplay(true)
+            } else {
+                setThirdDisplay(false)
+            }
+        }
     }
 
     const memberChangeHandler = async (e) => {
@@ -63,30 +115,67 @@ const Register = () => {
             console.log('check=', check)
             console.log('input=', input)
 
-            // if number of members is 1 dlete member1 and member2 from input
-            if (numMembers === '1') {
-                delete input.member1
-                delete input.member2
-            }
-            // if number of members is 2 delete member2 from input
-            else if (numMembers === '2') {
-                delete input.member2
-            }
+            // // if number of members is 1 dlete member1 and member2 from input
+            // if (numMembers === '1') {
+            //     delete input.member1
+            //     delete input.member2
+            // }
+            // // if number of members is 2 delete member2 from input
+            // else if (numMembers === '2') {
+            //     delete input.member2
+            // }
 
             console.log('input new=', input)
 
             axios
                 .post(API_BASE_URL + '/API/team/create/', input, {
                     headers: {
-                        Authorization:
-                            'Token d102f9b8531448411f3658ecfdeeee5b0fbf2a17',
+                        Authorization: `Token ${dashboardToken}`,
                     },
                 })
                 .then((res) => {
                     console.log(res)
+                    console.log('done')
+                    toast.success('Your team has been created successfully', {
+                        position: toast.POSITION.BOTTOM_RIGHT,
+                    })
+
+                    // set all states to initial state
+                    setInput({
+                        teamname: '',
+                        event: '',
+                        leader: '',
+                        member1: '',
+                        member2: '',
+                    })
+                    setState(8)
+                    setNumMembers('Members')
+                    setCheck(0)
+                    setFirstmember(false)
+                    setSecondmember(false)
+                    setThirdmember(false)
+                    setThirdDisplay(false)
                 })
                 .catch((err) => {
-                    console.log(err)
+                    console.log('err=', err.response.data.error)
+                    toast.error(err.response.data.error, {
+                        position: toast.POSITION.BOTTOM_RIGHT,
+                    })
+
+                    // set all states to initial state
+                    setInput({
+                        teamname: '',
+                        event: '',
+                        leader: '',
+                        member1: '',
+                        member2: '',
+                    })
+                    setNumMembers('Members')
+                    setCheck(0)
+                    setFirstmember(false)
+                    setSecondmember(false)
+                    setThirdmember(false)
+                    setThirdDisplay(false)
                 })
         }
     }, [check])
@@ -147,13 +236,15 @@ const Register = () => {
                             <option value="EVENT">EVENT</option>
                             <option value="MOSAIC">MOSAIC</option>
                             <option value="SPYBITS">SPYBITS</option>
-                            <option value="I-CHIP">I-CHIP</option>
+                            <option value="ICHIP">ICHIP</option>
                             <option value="COMMNET">COMMNET</option>
-                            <option value="CONTINNUM">CONTINNUM</option>
-                            <option value="DIGISM">DIGISM</option>
+                            <option value="CONTINUUM">CONTINUUM</option>
+                            <option value="DIGISIM">DIGISIM</option>
                             <option value="XIOTA">XIOTA</option>
                             <option value="CASSANDRA">CASSANDRA</option>
-                            <option value="FUNCKIT">FUNCKIT</option>
+                            {year === 'FIRST' && (
+                                <option value="FUNCKIT">FUNCKIT</option>
+                            )}
                         </select>
                         {/* </Input> */}
                     </FormGroup>
@@ -194,7 +285,7 @@ const Register = () => {
                             <option value="Members">MEMBERS</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
-                            <option value="3">3</option>
+                            {thirdDisplay && <option value="3">3</option>}
                         </select>
                         {/* </Input> */}
                     </FormGroup>
