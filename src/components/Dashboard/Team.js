@@ -1,30 +1,35 @@
-import React from 'react'
+import { React } from 'react'
 import './Team.css'
 import axios from '../../utils/axios'
-
-const Team = ({ key, event, teamname, members }) => {
-    const id = key
+import { useDashContext } from '../authentication/Context/dashcontext'
+import { toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+toast.configure()
+const Team = ({ id, eventName, teamName, leader, member1, member2 }) => {
+    const token = localStorage.getItem('userToken')
+    const arr = token.split('"')
+    const token1 = arr[1]
     const auth = {
         headers: {
-            Authorization: 'Token ',
+            Authorization: 'Token' + ' ' + token1,
         },
     }
-    /* var Member1
-    var Member2
-    const Leader=members[0]
-    if (members.length == 3) {
-        Member1 = members[1]
-        Member2 = members[2]
+    const state = useDashContext()
+    const { setState } = useDashContext()
+    var members = []
+    if (member1 == null && member2 == null) {
+        members = [leader]
+    } else if (member1 != null && member2 == null) {
+        members = [leader, member1]
+    } else if (member1 != null && member2 != null) {
+        members = [leader, member1, member2]
     }
-    else if (members.length == 2) {
-        Member1 = members[1]
-        Member2 = ' '
-    }*/
     let additionalMembers = []
     if (members.length > 1) {
         additionalMembers = members.slice(1, members.length)
     }
-    const deleteTeam = (id) => {
+    /*  useEffect(() => {
+        if(state.state==1){
         axios
             .delete(
                 'https://udyam22-backend.herokuapp.com/API/team/' + id + '/',
@@ -32,21 +37,50 @@ const Team = ({ key, event, teamname, members }) => {
             )
             .then(function ({ response }) {
                 console.log(response)
+                console.log(state)
+                setState(8)
             })
             .catch(function (err) {
                 console.log(err)
-            })
+            })}}, [state])*/
+    const deleteTeam = ({ id }) => {
+        setState(1)
+        console.log(id)
+        console.log(state.state)
+        if (state.state == 1) {
+            axios
+                .delete(
+                    'https://udyam22-backend.herokuapp.com/API/team/' +
+                        id +
+                        '/',
+                    auth
+                )
+                .then(function ({ response }) {
+                    console.log(response)
+                    console.log(state)
+                    toast.success('Your team has been deleted successfully', {
+                        position: toast.POSITION.BOTTOM_RIGHT,
+                    })
+                    setState(8)
+                })
+                .catch(function (err) {
+                    console.log(err)
+                })
+        }
     }
     return (
         <div className="teamContainer">
-            <img className="eventImageTop" src={'./images/' + event + '.png'} />
+            <img
+                className="eventImageTop"
+                src={'./images/' + eventName + '.png'}
+            />
             <div className="teamDetails">
                 <ul style={{ listStyleType: 'none' }}>
                     <li>
-                        <h4>Event : {event}</h4>
+                        <h4>Event : {eventName}</h4>
                     </li>
                     <li>
-                        <h4>Team Name: {teamname}</h4>
+                        <h4> Team Name: {teamName}</h4>
                     </li>
                     <li>
                         <h4>
@@ -56,14 +90,17 @@ const Team = ({ key, event, teamname, members }) => {
                             })}
                         </h4>
                     </li>
-                    <h4 className="deleteBtn" onClick={() => deleteTeam(id)}>
+                    <h4
+                        className="deleteBtn"
+                        onClick={() => deleteTeam({ id })}
+                    >
                         DELETE TEAM
                     </h4>
                 </ul>
             </div>
             <img
                 className="eventImageRight"
-                src={'./images/' + event + '.png'}
+                src={'./images/' + eventName + '.png'}
             />
         </div>
     )
