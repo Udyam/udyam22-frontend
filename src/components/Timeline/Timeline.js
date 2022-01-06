@@ -27,7 +27,7 @@ const Timeline = () => {
                 </div>
                 <div className="container-time right">
                     <div className="content-time">
-                        <h2>1 JAN 2021</h2>
+                        <h2>1 JAN 2022</h2>
                         <p>
                             Phase 2 of our workshops. The continuation of the
                             workshop series, covering all the important
@@ -38,7 +38,7 @@ const Timeline = () => {
                 </div>
                 <div className="container-time left">
                     <div className="content-time">
-                        <h2>1 MARCH 2021</h2>
+                        <h2>1 FEB 2022</h2>
                         <p>
                             Phase 3 of our Workshops. Discussing the all
                             important problem statements and winding up on all
@@ -49,7 +49,7 @@ const Timeline = () => {
                 </div>
                 <div className="container-time right">
                     <div className="content-time">
-                        <h2>1 APRIL 2021</h2>
+                        <h2>8 APRIL 2022</h2>
                         <p>
                             Buckle up for UDYAM&apos;21!! Eventwise schedule
                             coming soon.
