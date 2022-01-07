@@ -1,4 +1,4 @@
-import { React,useState,useEffect } from 'react'
+import { React, useState, useEffect } from 'react'
 import './Team.css'
 import axios from '../../utils/axios'
 import { useDashContext } from '../authentication/Context/dashcontext'
@@ -14,7 +14,7 @@ const Team = ({ id, eventName, teamName, leader, member1, member2 }) => {
             Authorization: 'Token' + ' ' + token1,
         },
     }
-    const [idf,setIdf]=useState(" ")
+    const [idf, setIdf] = useState(' ')
     const state = useDashContext()
     const { setState } = useDashContext()
     var members = []
@@ -29,30 +29,41 @@ const Team = ({ id, eventName, teamName, leader, member1, member2 }) => {
     if (members.length > 1) {
         additionalMembers = members.slice(1, members.length)
     }
-      useEffect(() => {
-        if(state.state==1 && idf!=" "){
-        axios
-            .delete(
-                'https://udyam22-backend.herokuapp.com/API/team/' + idf + '/',
-                auth
-            )
-            .then(function ({ response }) {
-                console.log(response)
-                console.log(state)
-                toast.success('Your team has been deleted successfully', {
-                    position: toast.POSITION.BOTTOM_RIGHT,
-                })
-                setState(8)
-            })
-            .catch(function (err) {
-                console.log(err)
-            })}}, [idf],[state])
+    useEffect(
+        () => {
+            if (state.state == 1 && idf != ' ') {
+                axios
+                    .delete(
+                        'https://udyam22-backend.herokuapp.com/API/team/' +
+                            idf +
+                            '/',
+                        auth
+                    )
+                    .then(function ({ response }) {
+                        console.log(response)
+                        console.log(state)
+                        toast.success(
+                            'Your team has been deleted successfully',
+                            {
+                                position: toast.POSITION.BOTTOM_RIGHT,
+                            }
+                        )
+                        setState(8)
+                    })
+                    .catch(function (err) {
+                        console.log(err)
+                    })
+            }
+        },
+        [idf],
+        [state]
+    )
     const deleteTeam = ({ id }) => {
         setState(1)
         console.log(id)
         console.log(state.state)
         setIdf(id)
-        if (state.state == 1 ) {
+        if (state.state == 1) {
             axios
                 .delete(
                     'https://udyam22-backend.herokuapp.com/API/team/' +
