@@ -6,7 +6,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import { Routes } from './routes'
 import { AuthProvider } from './components/authentication/authprovider'
 function App() {
-    let bgImage = { backgroundImage: 'url(./images/backgroundAlt.png)' }
+    let bgImage = { backgroundImage: 'url(/images/backgroundAlt.png)' }
     let bgProperties = {
         height: 'auto',
         backgroundSize: 'cover',

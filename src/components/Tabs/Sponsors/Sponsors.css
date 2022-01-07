@@ -1,11 +1,12 @@
 .Sponsors_head {
-    /* height: auto;
-    width: auto;*/
-    float: right;
-    margin-right: 0px;
-    text-align: right;
-    display: flex;
-    justify-content: space-between;
+    /* display: inline-block; */
+    /* min-width: 100%; */
+    font-family: Potra, serif;
+    color: rgba(93, 207, 223, 0.568);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 4rem;
+    text-align: center;
 }
 
 .container-sponsors {
@@ -17,6 +18,8 @@
     width: 75vw;
     color: #4abbcf;
     overflow-x: hidden;
+    overflow-y: hidden;
+    /* Comment-out the above line when adding new sponsors */
 }
 
 .row-1 {
@@ -34,6 +37,7 @@
     width: 50%;
     float: left;
     padding: 5px;
+    padding-left: 12.5%;
 }
 
 .title2 {
@@ -88,7 +92,8 @@
     }
 
     .Sponsors_head {
-        width: 65vw;
+        align-self: center;
+        font-size: 2.5rem;
     }
 
     .h4 {

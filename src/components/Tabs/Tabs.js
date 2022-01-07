@@ -32,37 +32,37 @@ const Tabs = (props) => {
             >
                 <li className="Tab-Title">
                     <Link to="/" id="panela">
-                        <img src={home} />
+                        <img src={home} title="HOME" />
                     </Link>
                 </li>
                 <li className="Tab-Title">
                     <Link to="/about-us" id="panelb">
-                        <img src={info} />
+                        <img src={info} title="ABOUT US" />
                     </Link>
                 </li>
                 <li className="Tab-Title">
                     <Link to="/events" id="panelc">
-                        <img src={event} />
+                        <img src={event} title="EVENTS" />
                     </Link>
                 </li>
                 <li className="Tab-Title">
                     <Link to="/speakers" id="paneld">
-                        <img src={speaker} />
+                        <img src={speaker} title="SPEAKERS" />
                     </Link>
                 </li>
                 <li className="Tab-Title">
                     <Link to="/leaderboard" id="panele">
-                        <img src={leaderboard} />
+                        <img src={leaderboard} title="LEADERBOARD" />
                     </Link>
                 </li>
                 <li className="Tab-Title">
                     <Link to="/sponsors" id="panelf">
-                        <img src={sponsor} />
+                        <img src={sponsor} title="SPONSORS" />
                     </Link>
                 </li>
                 <li className="Tab-Title">
                     <Link to="/team" id="panelg">
-                        <img src={team} />
+                        <img src={team} title="TEAM" />
                     </Link>
                 </li>
             </ul>

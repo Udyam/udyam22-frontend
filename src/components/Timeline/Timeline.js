@@ -8,11 +8,13 @@ const Timeline = () => {
             <div className="rowtp">
                 <div className="col-md-12">
                     <div className="d-flex flex-row-reverse">
-                        <img
+                        {/* <img
                             src="./images/timelineImage.png"
                             alt="Timeline"
                             className="p-2 img-fluid imageTimeline"
-                        />
+                        /> */}
+
+                        <h1 className="Timeline_head">TIMELINE</h1>
                     </div>
 
                     <div className="main-timeline3">

@@ -2,7 +2,6 @@ import React from 'react'
 import '../tabs_style.css'
 import './Teams_Style.css'
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
-import TeamHead from './TeamHead.png'
 import Core_Team from './Core_Team'
 import Senior_Advisors from './Senior_Advisors'
 import Developers from './Developers'
@@ -15,7 +14,7 @@ import Public_Relations from './Public_Relations'
 const Team = () => {
     return (
         <Router>
-            <img className="Team_Heading" src={TeamHead} alt="Team_Heading" />
+            <h1 className="Team_head">TEAM</h1>
 
             <Route exact path="/team">
                 {/* <Core_Team/> */}

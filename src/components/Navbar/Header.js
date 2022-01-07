@@ -48,7 +48,7 @@ const Header = () => {
                     >
                         <Link to="/#landing-page-main-container">
                             <img
-                                src="./images/udyamLogo.png"
+                                src="/images/udyamLogo.png"
                                 className="logo mx-4"
                                 alt="logo"
                             />

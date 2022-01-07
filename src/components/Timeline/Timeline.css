@@ -4,6 +4,21 @@
     margin: auto;
 }
 
+.Timeline_head {
+    /* display: inline-block; */
+    /* min-width: 100%; */
+    font-family: Potra, serif;
+    color: rgba(93, 207, 223, 0.568);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+/* @Media (max-width: 769px) {
+    
+} */
+
 .main-timeline3 {
     overflow: hidden;
     position: relative;
@@ -204,6 +219,11 @@
         max-width: 100%;
         margin-right: 10px;
     }
+
+    .Timeline_head {
+        align-self: center;
+        font-size: 4rem;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -260,6 +280,11 @@
 
     .main-timeline3 .year {
         font-weight: 400;
+    }
+
+    .Timeline_head {
+        align-self: center;
+        font-size: 4rem;
     }
 }
 

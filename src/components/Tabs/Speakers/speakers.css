@@ -8,6 +8,17 @@
     margin: 30px 40px;
     background: linear-gradient(180deg, #022049 0%, rgba(2, 32, 73, 0) 100%);
 }
+
+.Speakers_head {
+    /* display: inline-block; */
+    /* min-width: 100%; */
+    font-family: Potra, serif;
+    color: rgba(93, 207, 223, 0.568);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3.75rem;
+    text-align: center;
+}
 .ayush:hover {
     transform: scale(
         /* 1.25 */ 1.1
@@ -36,6 +47,12 @@
     flex-direction: row;
 }
 
+@media (min-width: 769px) {
+    .INF {
+        overflow-y: hidden;
+    }
+}
+
 @media (max-width: 769px) {
     .INF {
         height: 95vh;
@@ -54,7 +71,7 @@
         border: 4px solid #90e0ef;
         border-radius: 10px;
         margin-bottom: 1vh;
-        height: 55vh;
+        height: 35vh;
     }
 
     .speakers_images {
@@ -63,6 +80,11 @@
         position: relative;
         left: 10vw;
         padding-top: 2vh;
+    }
+
+    .Speakers_head {
+        align-self: center;
+        font-size: 1.5rem;
     }
 }
 
