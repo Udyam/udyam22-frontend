@@ -1,6 +1,5 @@
 import React from 'react'
 import './Events.css'
-import events from './Events.png'
 import { useState } from 'react'
 import { Temp } from './Temp'
 import {
@@ -101,9 +100,7 @@ const Event = () => {
 
     return (
         <>
-            <div className="header">
-                <img src={events} alt="Events" />
-            </div>
+            <h1 className="Events_head">EVENTS</h1>
 
             {slider}
 

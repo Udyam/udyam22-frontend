@@ -155,3 +155,27 @@
 #Speakers_Scrollbar::-webkit-scrollbar-thumb:hover {
     background: white;
 }
+
+@media (min-width: 769px) {
+    .INF {
+        overflow-y: hidden;
+    }
+}
+
+.Speakers_head {
+    /* display: inline-block; */
+    /* min-width: 100%; */
+    font-family: Potra, serif;
+    color: rgba(93, 207, 223, 0.568);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3.75rem;
+    text-align: center;
+}
+
+@media (max-width: 668px) {
+    .Speakers_head {
+        align-self: center;
+        font-size: 1.4rem;
+    }
+}

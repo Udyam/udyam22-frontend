@@ -2,10 +2,8 @@ import React from 'react'
 import './Sub_Files.css'
 import { Route, Link } from 'react-router-dom'
 import Sample_Image from './Mem_Images/Sample_Image.jpg'
-import facebook_icon from './Mem_Images/facebook_icon.png'
-import insta_icon from './Mem_Images/insta_icon.png'
-import linkedin_icon from './Mem_Images/linkedin_icon.png'
 import Samarth_Solanki from './Mem_Images/Samarth_Solanki.jpg'
+import { FaFacebookSquare, FaLinkedin, FaInstagramSquare } from 'react-icons/fa'
 
 const Senior_Advisors = () => {
     return (
@@ -28,17 +26,15 @@ const Senior_Advisors = () => {
                         <div>EASWARAVAKA DINESH REDDY</div>
                         <div>TECHNICAL</div>
 
-                        <div className="social_icons">
-                            <a href="https://about.linkedin.com/">
-                                <img src={linkedin_icon} />
+                        <div id="Teams_social-tray">
+                            <a href="https://www.linkedin.com/company/udyam/">
+                                <FaLinkedin className="social_icons" />
                             </a>
-
-                            <a href="https://www.facebook.com/">
-                                <img src={facebook_icon} />
+                            <a href="https://www.facebook.com/udyamfest">
+                                <FaFacebookSquare className="social_icons" />
                             </a>
-
-                            <a href="https://www.instagram.com/">
-                                <img src={insta_icon} />
+                            <a href="https://www.instagram.com/udyam_iit_bhu/">
+                                <FaInstagramSquare className="social_icons" />
                             </a>
                         </div>
                     </div>
@@ -53,17 +49,15 @@ const Senior_Advisors = () => {
                         <div>SAMARTH SOLANKI</div>
                         <div>TECHNICAL</div>
 
-                        <div className="social_icons">
-                            <a href="https://about.linkedin.com/">
-                                <img src={linkedin_icon} />
+                        <div id="Teams_social-tray">
+                            <a href="https://www.linkedin.com/company/udyam/">
+                                <FaLinkedin className="social_icons" />
                             </a>
-
-                            <a href="https://www.facebook.com/">
-                                <img src={facebook_icon} />
+                            <a href="https://www.facebook.com/udyamfest">
+                                <FaFacebookSquare className="social_icons" />
                             </a>
-
-                            <a href="https://www.instagram.com/">
-                                <img src={insta_icon} />
+                            <a href="https://www.instagram.com/udyam_iit_bhu/">
+                                <FaInstagramSquare className="social_icons" />
                             </a>
                         </div>
                     </div>
@@ -80,17 +74,15 @@ const Senior_Advisors = () => {
                         <div>ANKUR AGRAWAL</div>
                         <div>TECHNICAL</div>
 
-                        <div className="social_icons">
-                            <a href="https://about.linkedin.com/">
-                                <img src={linkedin_icon} />
+                        <div id="Teams_social-tray">
+                            <a href="https://www.linkedin.com/company/udyam/">
+                                <FaLinkedin className="social_icons" />
                             </a>
-
-                            <a href="https://www.facebook.com/">
-                                <img src={facebook_icon} />
+                            <a href="https://www.facebook.com/udyamfest">
+                                <FaFacebookSquare className="social_icons" />
                             </a>
-
-                            <a href="https://www.instagram.com/">
-                                <img src={insta_icon} />
+                            <a href="https://www.instagram.com/udyam_iit_bhu/">
+                                <FaInstagramSquare className="social_icons" />
                             </a>
                         </div>
                     </div>
@@ -105,17 +97,15 @@ const Senior_Advisors = () => {
                         <div>AKSHAT GOYAL</div>
                         <div>WEBSITE DEVELOPMENT</div>
 
-                        <div className="social_icons">
-                            <a href="https://about.linkedin.com/">
-                                <img src={linkedin_icon} />
+                        <div id="Teams_social-tray">
+                            <a href="https://www.linkedin.com/company/udyam/">
+                                <FaLinkedin className="social_icons" />
                             </a>
-
-                            <a href="https://www.facebook.com/">
-                                <img src={facebook_icon} />
+                            <a href="https://www.facebook.com/udyamfest">
+                                <FaFacebookSquare className="social_icons" />
                             </a>
-
-                            <a href="https://www.instagram.com/">
-                                <img src={insta_icon} />
+                            <a href="https://www.instagram.com/udyam_iit_bhu/">
+                                <FaInstagramSquare className="social_icons" />
                             </a>
                         </div>
                     </div>
@@ -132,17 +122,15 @@ const Senior_Advisors = () => {
                         <div>ALAVALA SUHAS</div>
                         <div>WEBSITE DEVELOPMENT</div>
 
-                        <div className="social_icons">
-                            <a href="https://about.linkedin.com/">
-                                <img src={linkedin_icon} />
+                        <div id="Teams_social-tray">
+                            <a href="https://www.linkedin.com/company/udyam/">
+                                <FaLinkedin className="social_icons" />
                             </a>
-
-                            <a href="https://www.facebook.com/">
-                                <img src={facebook_icon} />
+                            <a href="https://www.facebook.com/udyamfest">
+                                <FaFacebookSquare className="social_icons" />
                             </a>
-
-                            <a href="https://www.instagram.com/">
-                                <img src={insta_icon} />
+                            <a href="https://www.instagram.com/udyam_iit_bhu/">
+                                <FaInstagramSquare className="social_icons" />
                             </a>
                         </div>
                     </div>
@@ -157,17 +145,15 @@ const Senior_Advisors = () => {
                         <div>ISHAAN AMRIT</div>
                         <div>CULTURAL</div>
 
-                        <div className="social_icons">
-                            <a href="https://about.linkedin.com/">
-                                <img src={linkedin_icon} />
+                        <div id="Teams_social-tray">
+                            <a href="https://www.linkedin.com/company/udyam/">
+                                <FaLinkedin className="social_icons" />
                             </a>
-
-                            <a href="https://www.facebook.com/">
-                                <img src={facebook_icon} />
+                            <a href="https://www.facebook.com/udyamfest">
+                                <FaFacebookSquare className="social_icons" />
                             </a>
-
-                            <a href="https://www.instagram.com/">
-                                <img src={insta_icon} />
+                            <a href="https://www.instagram.com/udyam_iit_bhu/">
+                                <FaInstagramSquare className="social_icons" />
                             </a>
                         </div>
                     </div>
