@@ -18,8 +18,6 @@
     width: 75vw;
     color: #4abbcf;
     overflow-x: hidden;
-    overflow-y: hidden;
-    /* Comment-out the above line when adding new sponsors */
 }
 
 .row-1 {
@@ -125,4 +123,11 @@
 
 #Sponsors_Scrollbar::-webkit-scrollbar-thumb:hover {
     background: white;
+}
+
+@media (min-width: 767px) {
+    .container-sponsors {
+        overflow-y: hidden;
+        /* Comment-out the above line when adding new sponsors */
+    }
 }
