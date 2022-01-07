@@ -61,7 +61,6 @@
         border: 4px solid #90e0ef;
         border-radius: 10px;
         margin-bottom: 1vh;
-        /* height: 35vh; */
         width: 95%;
         height: 70vh;
     }
@@ -72,11 +71,6 @@
         position: relative;
         left: 10vw;
         padding-top: 2vh;
-    }
-
-    .Speakers_head {
-        align-self: center;
-        font-size: 1.5rem;
     }
 }
 @media (min-width: 413px) and (max-width: 737px) {
@@ -177,4 +171,11 @@
     margin-right: auto;
     font-size: 3.75rem;
     text-align: center;
+}
+
+@media (max-width: 668px) {
+    .Speakers_head {
+        align-self: center;
+        font-size: 1.4rem;
+    }
 }
