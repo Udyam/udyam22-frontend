@@ -1,12 +1,10 @@
 import React from 'react'
 import './Sub_Files.css'
 import { Route, Link } from 'react-router-dom'
-import facebook_icon from './Mem_Images/facebook_icon.png'
-import insta_icon from './Mem_Images/insta_icon.png'
-import linkedin_icon from './Mem_Images/linkedin_icon.png'
 import Prajakta_Priyadarsini from './Mem_Images/Prajakta_Priyadarsini.jpg'
 import Somesh_Dey from './Mem_Images/Somesh_Dey.jpg'
 import Varsha_Jangir from './Mem_Images/Varsha_Jangir.jpg'
+import { FaFacebookSquare, FaLinkedin, FaInstagramSquare } from 'react-icons/fa'
 
 const Marketing_Team = () => {
     return (
@@ -29,17 +27,15 @@ const Marketing_Team = () => {
                         <div>PRAJAKTA PRIYADARSINI</div>
                         <div>HEAD</div>
 
-                        <div className="social_icons">
-                            <a href="https://about.linkedin.com/">
-                                <img src={linkedin_icon} />
+                        <div id="Teams_social-tray">
+                            <a href="https://www.linkedin.com/company/udyam/">
+                                <FaLinkedin className="social_icons" />
                             </a>
-
-                            <a href="https://www.facebook.com/">
-                                <img src={facebook_icon} />
+                            <a href="https://www.facebook.com/udyamfest">
+                                <FaFacebookSquare className="social_icons" />
                             </a>
-
-                            <a href="https://www.instagram.com/">
-                                <img src={insta_icon} />
+                            <a href="https://www.instagram.com/udyam_iit_bhu/">
+                                <FaInstagramSquare className="social_icons" />
                             </a>
                         </div>
                     </div>
@@ -54,17 +50,15 @@ const Marketing_Team = () => {
                         <div>SOMESH DEY</div>
                         <div>COORDINATOR</div>
 
-                        <div className="social_icons">
-                            <a href="https://about.linkedin.com/">
-                                <img src={linkedin_icon} />
+                        <div id="Teams_social-tray">
+                            <a href="https://www.linkedin.com/company/udyam/">
+                                <FaLinkedin className="social_icons" />
                             </a>
-
-                            <a href="https://www.facebook.com/">
-                                <img src={facebook_icon} />
+                            <a href="https://www.facebook.com/udyamfest">
+                                <FaFacebookSquare className="social_icons" />
                             </a>
-
-                            <a href="https://www.instagram.com/">
-                                <img src={insta_icon} />
+                            <a href="https://www.instagram.com/udyam_iit_bhu/">
+                                <FaInstagramSquare className="social_icons" />
                             </a>
                         </div>
                     </div>
@@ -84,17 +78,15 @@ const Marketing_Team = () => {
                         <div>VARSHA JANGIR</div>
                         <div>COORDINATOR</div>
 
-                        <div className="social_icons">
-                            <a href="https://about.linkedin.com/">
-                                <img src={linkedin_icon} />
+                        <div id="Teams_social-tray">
+                            <a href="https://www.linkedin.com/company/udyam/">
+                                <FaLinkedin className="social_icons" />
                             </a>
-
-                            <a href="https://www.facebook.com/">
-                                <img src={facebook_icon} />
+                            <a href="https://www.facebook.com/udyamfest">
+                                <FaFacebookSquare className="social_icons" />
                             </a>
-
-                            <a href="https://www.instagram.com/">
-                                <img src={insta_icon} />
+                            <a href="https://www.instagram.com/udyam_iit_bhu/">
+                                <FaInstagramSquare className="social_icons" />
                             </a>
                         </div>
                     </div>

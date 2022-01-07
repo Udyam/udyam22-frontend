@@ -1,9 +1,12 @@
-.leaderboard_head {
-    height: auto;
-    width: auto;
-    display: block;
-    margin-right: 4%;
-    width: 50%;
+.Leaderboard_head {
+    /* display: inline-block; */
+    /* min-width: 100%; */
+    font-family: Potra, serif;
+    color: rgba(0, 225, 255, 0.568);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 4rem;
+    text-align: center;
 }
 
 .Leaderboard_Temporary_Message {
@@ -16,7 +19,7 @@
     margin-top: 20vh;
     width: 30vw;
     height: 30vh;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: normal;
     font-family: Raleway;
     padding: 2%;
@@ -25,9 +28,9 @@
 }
 
 @media (max-width: 767px) {
-    .leaderboard_head {
-        width: 60%;
-        /* height: 30%; */
+    .Leaderboard_head {
+        align-self: center;
+        font-size: 2.5rem;
     }
 
     .Leaderboard_Temporary_Message {
