@@ -239,7 +239,7 @@ const Profile = ({ dashboardToken }) => {
                     <h4>Email id: {user.email}</h4>
                 </li>
                 <li>
-                    <h4>Year: {user.year}</h4>
+                    <h4>Year: {user.year =="ONE" ? "1st Year" : user.year =="TWO" ? "2nd Year" : user.year =="THREE" ? "3rd Year" : user.year =="FOUR" ? "4th Year" : user.year}</h4>
                 </li>
                 <li>
                     <h4>Referral Code: {user.referral_code}</h4>
