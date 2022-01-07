@@ -8,7 +8,7 @@
 
 @media (max-width: 1200px) {
     .signin-div {
-        display: flex;
+        display: block;
         font-size: 1.7em;
         color: #caf0f8;
     }
