@@ -35,7 +35,7 @@ const Header = () => {
             style={{
                 position: 'sticky',
                 top: 0,
-                zIndex: 1,
+                zIndex: 100,
                 filter: 'drop-shadow(0px 2px 5px #bebdbd)',
             }}
         >
@@ -46,7 +46,7 @@ const Header = () => {
                         style={{ backgroundColor: '#022049' }}
                         expand="xl"
                     >
-                        <Link to="/#landing-page-main-container">
+                        <Link to="/">
                             <img
                                 src="/images/udyamLogo.png"
                                 className="logo mx-4"

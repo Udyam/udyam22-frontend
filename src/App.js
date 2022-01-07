@@ -5,6 +5,7 @@ import { Footer } from './components/Footer/Footer'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { Routes } from './routes'
 import { AuthProvider } from './components/authentication/authprovider'
+import { Dashstateprovider } from './components/authentication/Context/dashstateprovider'
 function App() {
     let bgImage = { backgroundImage: 'url(/images/backgroundAlt.png)' }
     let bgProperties = {
@@ -20,22 +21,24 @@ function App() {
 
     return (
         <AuthProvider>
-            <div style={style}>
-                <div
-                    style={{
-                        minHeight: '100vh',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        justifyContent: 'space-between',
-                    }}
-                >
-                    <Router>
-                        <Header />
-                        <Routes />
-                        <Footer />
-                    </Router>
+            <Dashstateprovider>
+                <div style={style}>
+                    <div
+                        style={{
+                            minHeight: '100vh',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'space-between',
+                        }}
+                    >
+                        <Router>
+                            <Header />
+                            <Routes />
+                            <Footer />
+                        </Router>
+                    </div>
                 </div>
-            </div>
+            </Dashstateprovider>
         </AuthProvider>
     )
 }
