@@ -12,7 +12,7 @@ const Timeline = () => {
                     className="p-2 img-fluid imageTimeline"
                 />
             </div>
-            <div className="timeline">
+            <div className="timeline" id="timeline-main-container">
                 <div className="container-time left">
                     <div className="content-time">
                         <h2>
@@ -51,7 +51,7 @@ const Timeline = () => {
                     <div className="content-time">
                         <h2>8 APRIL 2022</h2>
                         <p>
-                            Buckle up for UDYAM&apos;21!! Eventwise schedule
+                            Buckle up for UDYAM&apos;22!! Eventwise schedule
                             coming soon.
                         </p>
                     </div>
