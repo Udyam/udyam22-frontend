@@ -130,7 +130,7 @@ const Submission = ({ dashboardToken }) => {
                             <option value="DIGISIM">DIGISIM</option>
                             <option value="XIOTA">XIOTA</option>
                             <option value="CASSANDRA">CASSANDRA</option>
-                            {year === 'FIRST' && (
+                            {year === 'ONE' && (
                                 <option value="FUNCKIT">FUNCKIT</option>
                             )}
                         </select>
