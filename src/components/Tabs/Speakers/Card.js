@@ -7,7 +7,7 @@ import linkedin_logo from './Speakers_images/linkedin_logo.png'
 function Card(props) {
     const [isHovering, setIsHovering] = useState('none')
     function handleMouseOver() {
-        setIsHovering('block')
+        setIsHovering('inline')
     }
     function handleMouseout() {
         setIsHovering('none')
@@ -27,8 +27,7 @@ function Card(props) {
                     href={props.linkedin}
                     style={{
                         display: isHovering,
-                        position: 'relative',
-                        right: '80px',
+                        margin: '25px,25px',
                     }}
                 >
                     <img src={linkedin_logo} />
@@ -37,8 +36,7 @@ function Card(props) {
                     href={props.twitter}
                     style={{
                         display: isHovering,
-                        position: 'relative',
-                        bottom: '60px',
+                        margin: '25px',
                     }}
                 >
                     <img src={twitter_logo} />
@@ -47,9 +45,6 @@ function Card(props) {
                     href={props.facebook}
                     style={{
                         display: isHovering,
-                        position: 'relative',
-                        left: '80px',
-                        bottom: '120px',
                     }}
                 >
                     <img src={facebook_logo} />
