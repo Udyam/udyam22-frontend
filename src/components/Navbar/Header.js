@@ -46,7 +46,7 @@ const Header = () => {
                         style={{ backgroundColor: '#022049' }}
                         expand="xl"
                     >
-                        <Link to="/">
+                        <Link to="/#landing-page-main-container">
                             <img
                                 src="./images/udyamLogo.png"
                                 className="logo mx-4"
