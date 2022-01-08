@@ -7,32 +7,103 @@ import {
     Nav,
     NavItem,
     NavLink,
+    // DropdownItem,
 } from 'reactstrap'
 import ToggleMenu from './ToggleMenu'
 import { Link, useHistory } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
 import { useAuthContext } from '../authentication/Context/AuthContext'
+import axios from 'axios'
+import { FaAngleDown } from 'react-icons/fa'
 
-const Header = (props) => {
+const Header = () => {
     const [isVisible, setIsVisible] = useState(false)
     const [curPath, setCurPath] = useState('/')
     const toggle = () => setIsVisible(!isVisible)
     const location = useLocation()
+
+    useEffect(() => {
+        setCurPath(location.pathname)
+    }, [location.pathname])
+
+    const token = localStorage.getItem('userToken')
+    let arr
+    let token1
+    if (token) {
+        arr = token.split('"')
+        token1 = arr[1]
+    }
+
+    console.log('token=', token1)
 
     const history = useHistory()
     const { logout } = useAuthContext()
     const logoutfn = () => {
         logout()
         history.push('/')
+        window.location.reload()
     }
+    const [user, setUser] = useState({
+        name: 'anshuman',
+        email: '',
+        college_name: '',
+        year: '',
+        refferal_code: '',
+    })
 
     useEffect(() => {
-        setCurPath(location.pathname)
-    }, [location.pathname])
+        axios
+            .get('https://udyam22-backend.herokuapp.com/auth/update/', {
+                headers: {
+                    Authorization: `Token ${token1}`,
+                },
+            })
+            .then((res) => {
+                setUser(res.data)
+            })
+            .catch(() => {
+                console.log('error')
+            })
+    }, [])
 
-    console.log(props.FullName);
+    console.log('user data', user.name)
 
-    if (props.Tokken) {
+    var str = user.name
+    var matches = str.match(/\b(\w)/g) // ['J','S','O','N']
+    var initials = matches.join('') // JSON
+    console.log(initials)
+
+    var arrChar = str.split(' ')
+    var firstName = arrChar[0]
+    console.log(firstName)
+
+    function myFunction() {
+        var dropdowns = document.getElementsByClassName('dropdown-content')
+        var openDropdown = dropdowns[0]
+        var openDropdown2 = dropdowns[1]
+        if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show')
+        } else {
+            document.getElementById('myDropdown').classList.toggle('show')
+        }
+        if (openDropdown2.classList.contains('show')) {
+            openDropdown2.classList.remove('show')
+        } else {
+            document.getElementById('myDropdown2').classList.toggle('show')
+        }
+        var arrow = document.getElementsByClassName('DownArrow')
+        var openArrow = arrow[0]
+        var openArrow2 = arrow[1]
+        if (openArrow.classList.contains('rotation')) {
+            openArrow.classList.remove('rotation')
+            openArrow2.classList.remove('rotation')
+        } else {
+            openArrow.classList.add('rotation')
+            openArrow2.classList.add('rotation')
+        }
+    }
+
+    if (token1) {
         return [
             '/dashboard',
             '/resetpage',
@@ -64,65 +135,37 @@ const Header = (props) => {
                                     alt="logo"
                                 />
                             </Link>
-                            <Nav className="ms-auto" navbar>
+                            <Nav className="ms-auto " navbar>
                                 <NavItem>
-                                    <div
-                                        className="dropdown"
-                                        style={{
-                                            left: 'auto',
-                                            rigth: '-1em',
-                                            textAlign: 'right',
-                                            background: '0',
-                                            height:"50px"
-                                        }}
-                                    >
+                                    <div className="signin-div">
                                         <button
-                                            className="btn  dropdown-toggle btn-lg"
-                                            style={{
-                                                background: '0',
-                                                border: '0',
-                                                padding:"0rem 1rem",
-                                                fontFamily:
-                                                        'Raleway, sans-serif',
-                                                fontSize:"2rem",
-                                                color: '#CAF0F8',
-                                            }}
-                                            type="button"
-                                            id="dropdownMenuButton1"
-                                            data-bs-toggle="dropdown"
-                                            aria-expanded="false"
+                                            onClick={myFunction}
+                                            className="dropbtn"
                                         >
-                                            AB
+                                            <span className="firstName">
+                                                {firstName}
+                                            </span>
+                                            <span className="initials">
+                                                {initials}
+                                            </span>
+                                            <FaAngleDown className="DownArrow" />
                                         </button>
-                                        <ul
-                                            className="dropdown-menu "
-                                            style={{ minWidth: '7rem',
-                                                    backgroundColor:"#022049"}}
-                                            aria-labelledby="dropdownMenuButton1"
+                                        <div
+                                            id="myDropdown"
+                                            className="dropdown-content"
                                         >
-                                            <li>
-                                                <Link to="/loginregister" style={{ textDecoration: 'none' }}>
-                                                    <div
-                                                        className="dropdown-item"
-                                                        style={{cursor:"pointer",
-                                                            color:"#CAF0F8"}}
-                                                    >
-                                                        Dashboard
-                                                    </div>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <div
-                                                    className="dropdown-item"
-                                                    href="#"
-                                                    onClick={logoutfn}
-                                                    style={{cursor:"pointer",
-                                                            color:"#CAF0F8"}}
-                                                >
-                                                    Log out
-                                                </div>
-                                            </li>
-                                        </ul>
+                                            <Link
+                                                to="/loginregister"
+                                                style={{
+                                                    textDecoration: 'none',
+                                                }}
+                                            >
+                                                Dashboard
+                                            </Link>
+                                            <a href="#" onClick={logoutfn}>
+                                                Log out
+                                            </a>
+                                        </div>
                                     </div>
                                 </NavItem>
                             </Nav>
@@ -178,7 +221,28 @@ const Header = (props) => {
                                             </div>
                                         </Link>
                                     </NavItem>
-                                    
+                                    <NavItem>
+                                        <div className="dropdownNav mx-3">
+                                            <button
+                                                onClick={myFunction}
+                                                className="dropbtn"
+                                            >
+                                                {firstName}
+                                                <FaAngleDown className="DownArrow" />
+                                            </button>
+                                            <div
+                                                id="myDropdown2"
+                                                className="dropdown-content"
+                                            >
+                                                <Link to="/loginregister">
+                                                    Dashboard
+                                                </Link>
+                                                <a href="#" onClick={logoutfn}>
+                                                    Log out
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </NavItem>
                                 </Nav>
                             </Collapse>
                         </Navbar>

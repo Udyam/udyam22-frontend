@@ -1,6 +1,5 @@
 import React from 'react'
 import './App.css'
-import { useState } from 'react'
 import Header from './components/Navbar/Header'
 import { Footer } from './components/Footer/Footer'
 import { BrowserRouter as Router } from 'react-router-dom'
@@ -19,8 +18,6 @@ function App() {
         ...bgProperties,
     }
 
-    const [TokenPresent, ] = useState(localStorage.getItem("userToken"));
-    let FullName = localStorage.getItem("Name");
     return (
         <AuthProvider>
             <div style={style}>
@@ -33,7 +30,7 @@ function App() {
                     }}
                 >
                     <Router>
-                        <Header Tokken = {TokenPresent} Name = {FullName}/>
+                        <Header />
                         <Routes />
                         <Footer />
                     </Router>

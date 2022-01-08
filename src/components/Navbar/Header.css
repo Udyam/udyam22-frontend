@@ -1,19 +1,93 @@
 .signin-div {
     display: none;
+    position: relative;
+    /* margin-right: 5px; */
 }
 
 .logo {
     height: 64px;
 }
+.dropbtn {
+    background-color: rgb(2, 32, 73);
+    color: rgb(202, 240, 248);
+    padding: 5px;
+    font-size: 2em;
+    border: none;
+    cursor: pointer;
+    font-family: Raleway, sans-serif;
+}
 
+.dropdownNav {
+    position: relative;
+    display: inline-block;
+    margin-top: 3px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    /* top: 8px; */
+    margin-top: 11px;
+    right: 0;
+    background-color: rgb(2, 32, 73);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+    color: rgb(202, 240, 248);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5em;
+}
+
+.dropdown-content a:hover {
+    background-color: #002c65;
+    color: white;
+}
+
+.show {
+    display: block;
+}
+
+.firstName {
+    display: inline;
+}
+.initials {
+    display: none;
+}
+
+.DownArrow {
+    margin-left: 5px;
+}
+
+.rotation {
+    transform: rotate(180deg);
+    /* transition: 500ms; */
+}
+.dropbtn svg {
+    transition: 500ms;
+    font-size: 0.8em;
+}
 @media (max-width: 1200px) {
     .signin-div {
         display: block;
-        font-size: 1.7em;
         color: #caf0f8;
     }
     .logo {
         height: 45px;
+    }
+    .dropdown-content {
+        margin-top: 8px;
+    }
+}
+@media (max-width: 500px) {
+    .firstName {
+        display: none;
+    }
+    .initials {
+        display: inline;
     }
 }
 @media (min-width: 766px) and (max-width: 1024px) {
