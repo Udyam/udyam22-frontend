@@ -34,8 +34,6 @@ const Header = () => {
         token1 = arr[1]
     }
 
-    console.log('token=', token1)
-
     const history = useHistory()
     const { logout } = useAuthContext()
     const logoutfn = () => {
@@ -66,16 +64,12 @@ const Header = () => {
             })
     }, [])
 
-    console.log('user data', user.name)
-
     var str = user.name
     var matches = str.match(/\b(\w)/g) // ['J','S','O','N']
     var initials = matches.join('') // JSON
-    console.log(initials)
 
     var arrChar = str.split(' ')
     var firstName = arrChar[0]
-    console.log(firstName)
 
     function myFunction() {
         var dropdowns = document.getElementsByClassName('dropdown-content')
@@ -136,6 +130,7 @@ const Header = () => {
                                 />
                             </Link>
                             <Nav className="ms-auto " navbar>
+
                                 <NavItem>
                                     <div className="signin-div">
                                         <button

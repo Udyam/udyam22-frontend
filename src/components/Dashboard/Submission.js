@@ -5,16 +5,20 @@ import { Form, FormGroup, Input } from 'reactstrap'
 import './Submission.css'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
+import { toast } from 'react-toastify'
 
 const API_BASE_URL = 'https://udyam22-backend.herokuapp.com'
 
-const Submission = () => {
+const Submission = ({ dashboardToken }) => {
     const [input, setInput] = useState({
         teamname: '',
         event: '',
         submission: '',
     })
     const [check, setCheck] = useState(0)
+
+    const year = localStorage.getItem('year')
+    console.log('year=', year)
 
     const inputChangeHandler = (e) => {
         const newInput = { ...input }
@@ -32,15 +36,36 @@ const Submission = () => {
             axios
                 .post(API_BASE_URL + '/API/team/submission/', input, {
                     headers: {
-                        Authorization:
-                            'Token d102f9b8531448411f3658ecfdeeee5b0fbf2a17',
+                        Authorization: `Token ${dashboardToken}`,
                     },
                 })
                 .then((res) => {
                     console.log(res)
+                    console.log('done')
+                    toast.success('Your Submission was successfully received', {
+                        position: toast.POSITION.BOTTOM_RIGHT,
+                    })
+
+                    // set all states to initial state
+                    setInput({
+                        teamname: '',
+                        event: '',
+                        submission: '',
+                    })
+                    setCheck(0)
                 })
                 .catch((err) => {
                     console.log(err)
+                    toast.error(err.response.data.error, {
+                        position: toast.POSITION.BOTTOM_RIGHT,
+                    })
+                    // set all states to initial state
+                    setInput({
+                        teamname: '',
+                        event: '',
+                        submission: '',
+                    })
+                    setCheck(0)
                 })
         }
     }, [check])
@@ -99,13 +124,15 @@ const Submission = () => {
                             <option>EVENT</option>
                             <option value="MOSAIC">MOSAIC</option>
                             <option value="SPYBITS">SPYBITS</option>
-                            <option value="I-CHIP">I-CHIP</option>
+                            <option value="ICHIP">ICHIP</option>
                             <option value="COMMNET">COMMNET</option>
-                            <option value="CONTINNUM">CONTINNUM</option>
-                            <option value="DIGISM">DIGISM</option>
+                            <option value="CONTINUUM">CONTINUUM</option>
+                            <option value="DIGISIM">DIGISIM</option>
                             <option value="XIOTA">XIOTA</option>
                             <option value="CASSANDRA">CASSANDRA</option>
-                            <option value="FUNCKIT">FUNCKIT</option>
+                            {year === 'ONE' && (
+                                <option value="FUNCKIT">FUNCKIT</option>
+                            )}
                         </select>
                         {/* </Input> */}
                     </FormGroup>
