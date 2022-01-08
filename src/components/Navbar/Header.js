@@ -157,7 +157,7 @@ const Header = () => {
                                                 Dashboard
                                             </Link>
                                             <a href="#" onClick={logoutfn}>
-                                                Log out
+                                                Logout
                                             </a>
                                         </div>
                                     </div>
@@ -232,7 +232,7 @@ const Header = () => {
                                                     Dashboard
                                                 </Link>
                                                 <a href="#" onClick={logoutfn}>
-                                                    Log out
+                                                    Logout
                                                 </a>
                                             </div>
                                         </div>

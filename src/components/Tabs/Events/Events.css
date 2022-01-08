@@ -1,4 +1,11 @@
-.header {
+.Events_head {
+    /* display: inline-block; */
+    /* min-width: 100%; */
+    font-family: Potra, serif;
+    color: rgba(0, 225, 255, 0.568);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 4rem;
     text-align: center;
 }
 
@@ -162,6 +169,11 @@
         font-size: 1.75vh;
         display: auto-fit;
         height: 31.5vh;
+    }
+
+    .Events_head {
+        align-self: center;
+        font-size: 2.5rem;
     }
 }
 

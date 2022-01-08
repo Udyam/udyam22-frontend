@@ -35,7 +35,7 @@ const Mosaic = () => {
                 Detections etc.
             </div>
 
-            <div className="Events_Link_Holder">
+            {/* <div className="Events_Link_Holder">
                 <a href="">
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
@@ -51,7 +51,7 @@ const Mosaic = () => {
                 <a href="">
                     <div className="Events_Inner_Link">PS4</div>
                 </a>
-            </div>
+            </div> */}
         </>
     )
 }
@@ -83,7 +83,7 @@ const Ichip = () => {
                 (AES-128).
             </div>
 
-            <div className="Events_Link_Holder">
+            {/* <div className="Events_Link_Holder">
                 <a href="">
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
@@ -99,7 +99,7 @@ const Ichip = () => {
                 <a href="">
                     <div className="Events_Inner_Link">PS4</div>
                 </a>
-            </div>
+            </div> */}
         </>
     )
 }
@@ -130,7 +130,7 @@ const Spybits = () => {
                 programming-based applications in Cryptography.
             </div>
 
-            <div className="Events_Link_Holder">
+            {/* <div className="Events_Link_Holder">
                 <a href="">
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
@@ -146,7 +146,7 @@ const Spybits = () => {
                 <a href="">
                     <div className="Events_Inner_Link">PS4</div>
                 </a>
-            </div>
+            </div> */}
         </>
     )
 }
@@ -176,7 +176,7 @@ const Commnet = () => {
                 software, MATLAB.
             </div>
 
-            <div className="Events_Link_Holder">
+            {/* <div className="Events_Link_Holder">
                 <a href="">
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
@@ -192,7 +192,7 @@ const Commnet = () => {
                 <a href="">
                     <div className="Events_Inner_Link">PS4</div>
                 </a>
-            </div>
+            </div> */}
         </>
     )
 }
@@ -223,7 +223,7 @@ const Xiota = () => {
                 solutions to real-life issues.
             </div>
 
-            <div className="Events_Link_Holder">
+            {/* <div className="Events_Link_Holder">
                 <a href="">
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
@@ -239,7 +239,7 @@ const Xiota = () => {
                 <a href="">
                     <div className="Events_Inner_Link">PS4</div>
                 </a>
-            </div>
+            </div> */}
         </>
     )
 }
@@ -269,7 +269,7 @@ const Cassandra = () => {
                 model using the given dataset and make predictions accordingly.
             </div>
 
-            <div className="Events_Link_Holder">
+            {/* <div className="Events_Link_Holder">
                 <a href="">
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
@@ -285,7 +285,7 @@ const Cassandra = () => {
                 <a href="">
                     <div className="Events_Inner_Link">PS4</div>
                 </a>
-            </div>
+            </div> */}
         </>
     )
 }
@@ -315,7 +315,7 @@ const Digisim = () => {
                 ghost’s algorithm, Merge Sort Algorithm using Proteus.
             </div>
 
-            <div className="Events_Link_Holder">
+            {/* <div className="Events_Link_Holder">
                 <a href="">
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
@@ -331,7 +331,7 @@ const Digisim = () => {
                 <a href="">
                     <div className="Events_Inner_Link">PS4</div>
                 </a>
-            </div>
+            </div> */}
         </>
     )
 }
@@ -360,7 +360,7 @@ const Funckit = () => {
                 both programming and utilization of digital circuits.
             </div>
 
-            <div className="Events_Link_Holder">
+            {/* <div className="Events_Link_Holder">
                 <a href="">
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
@@ -376,7 +376,7 @@ const Funckit = () => {
                 <a href="">
                     <div className="Events_Inner_Link">PS4</div>
                 </a>
-            </div>
+            </div> */}
         </>
     )
 }
@@ -405,7 +405,7 @@ const Continuum = () => {
                 using filters and circuits made of only analog components.
             </div>
 
-            <div className="Events_Link_Holder">
+            {/* <div className="Events_Link_Holder">
                 <a href="">
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
@@ -421,7 +421,7 @@ const Continuum = () => {
                 <a href="">
                     <div className="Events_Inner_Link">PS4</div>
                 </a>
-            </div>
+            </div> */}
         </>
     )
 }

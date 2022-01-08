@@ -2,27 +2,25 @@ import React from 'react'
 import Team from './Team.js'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
-
-const Teams = () => {
+import { useDashContext } from '../authentication/Context/dashcontext'
+/*import { useDashContext } from '../authentication/Context/dashcontext';*/
+const Teams = ({ dashboardToken }) => {
     const [events, setEvents] = useState({
-        eventsList: [
-            {
-                event: 'Digisim',
-                teamname: 'InFerno',
-                members: [
-                    'Riya Saini',
-                    'Tanuja Vasamsetty',
-                    'Swetha Vislavath',
-                ],
-            },
-        ],
+        id: '',
+        event: '',
+        teamname: '',
+        leader: '',
+        member1: '',
+        member2: '',
     })
+    const state = useDashContext()
+    const { setState } = useDashContext()
+    //const {setState} = useDashContext()
     useEffect(() => {
         axios
-            .get('https://udyam22-backend.herokuapp.com/API/team/', {
+            .get('https://udyam22-backend.herokuapp.com/API/teams/user/', {
                 headers: {
-                    Authorization:
-                        'Token d102f9b8531448411f3658ecfdeeee5b0fbf2a17',
+                    Authorization: `Token ${dashboardToken}`,
                 },
             })
             .then((res) => {
@@ -30,19 +28,37 @@ const Teams = () => {
                 setEvents(res.data)
             })
     }, [])
+    useEffect(() => {
+        if (state.state == 8) {
+            axios
+                .get('https://udyam22-backend.herokuapp.com/API/teams/user/', {
+                    headers: {
+                        Authorization: `Token ${dashboardToken}`,
+                    },
+                })
+                .then((res) => {
+                    console.log(res.data)
+                    setEvents(res.data)
+                    setState(0)
+                })
+        }
+    }, [state])
 
     return (
         <div>
-            {events.eventsList.length === 0 ? (
+            {events.id == '' ? (
                 <h5 style={{ paddingTop: '10px' }}>No teams yet.</h5>
             ) : (
-                events.eventsList.map((event) => {
+                events.map((event) => {
                     return (
                         <Team
-                            key={event.event}
-                            event={event.event}
-                            teamname={event.teamname}
-                            members={event.members}
+                            key={event.id}
+                            id={event.id}
+                            eventName={event.event}
+                            teamName={event.teamname}
+                            leader={event.leader}
+                            member1={event.member1}
+                            member2={event.member2}
                         />
                     )
                 })

@@ -1,11 +1,12 @@
-.aboutUs_heading {
-    height: auto;
-    width: 50%;
-}
-
 .aboutUs_head {
-    display: inline-block;
-    min-width: 100%;
+    /* display: inline-block; */
+    /* min-width: 100%; */
+    font-family: Potra, serif;
+    color: rgba(93, 207, 223, 0.568);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 4rem;
+    text-align: center;
 }
 
 .Aboutus-container {
@@ -58,13 +59,9 @@
         height: 32vh;
     }
 
-    .aboutUs_heading {
-        text-align: center;
-        width: 100%;
-    }
-
     .aboutUs_head {
-        padding-left: 15%;
+        align-self: center;
+        font-size: 2.5rem;
     }
 
     .aboutUs-img {
