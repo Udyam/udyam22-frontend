@@ -10,6 +10,10 @@
     margin: 30px 40px;
     background: linear-gradient(180deg, #022049 0%, rgba(2, 32, 73, 0) 100%);
 }
+
+.name {
+    font-size: 1.5rem;
+}
 .ayush:hover {
     transform: scale(
         /* 1.25 */ 1.1
@@ -176,6 +180,6 @@
 @media (max-width: 668px) {
     .Speakers_head {
         align-self: center;
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
 }
