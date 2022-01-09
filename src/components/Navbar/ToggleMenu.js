@@ -12,7 +12,7 @@ const ToggleMenu = ({ toggle }) => {
                 zIndex: 2,
                 backgroundColor: 'rgba(2, 32, 73, 0.85)',
             }}
-            >
+        >
             <Toast
                 isOpen={true}
                 style={{
@@ -20,7 +20,7 @@ const ToggleMenu = ({ toggle }) => {
                     height: '100vh',
                     width: '100vw',
                     backgroundColor: 'transparent',
-                    border: 'none'
+                    border: 'none',
                 }}
             >
                 <img
