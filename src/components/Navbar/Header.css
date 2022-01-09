@@ -1,7 +1,27 @@
 .signin-div {
     display: none;
     position: relative;
-    /* margin-right: 5px; */
+    font-size: 1.5em;
+}
+
+.signin-div img {
+    margin-top: -0.1em;
+    padding-right: 12px;
+    height: 1.2em;
+}
+
+.signed-in-details {
+    display: none;
+    font-size: 0.8em;
+}
+
+.navbar-header-links {
+    font-size: 1.6em !important;
+}
+
+.navbar-header-links img {
+    margin-top: -0.1em;
+    padding-right: 12px;
 }
 
 .logo {
@@ -11,7 +31,7 @@
     background-color: rgb(2, 32, 73);
     color: rgb(202, 240, 248);
     padding: 5px;
-    font-size: 2em;
+    font-size: 1.6em;
     border: none;
     cursor: pointer;
     font-family: Raleway, sans-serif;
@@ -26,7 +46,6 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    /* top: 8px; */
     margin-top: 11px;
     right: 0;
     background-color: rgb(2, 32, 73);
@@ -51,14 +70,12 @@
     display: block;
 }
 
-.firstName {
-    display: inline;
-}
 .initials {
     display: none;
 }
 
 .DownArrow {
+    height: 1em;
     margin-left: 5px;
 }
 
@@ -75,10 +92,15 @@
         display: block;
         color: #caf0f8;
     }
+    .signed-in-details {
+        display: block;
+        color: #caf0f8;
+    }
     .logo {
         height: 45px;
     }
     .dropdown-content {
+        margin-right: 53px;
         margin-top: 8px;
     }
 }
@@ -89,9 +111,8 @@
     .initials {
         display: inline;
     }
-}
-@media (min-width: 766px) and (max-width: 1024px) {
-    .set_size {
-        font-size: 1.52vw;
+    .DownArrow {
+        margin-top: -5px;
     }
 }
+

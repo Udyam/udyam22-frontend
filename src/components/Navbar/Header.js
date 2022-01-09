@@ -42,7 +42,7 @@ const Header = () => {
         window.location.reload()
     }
     const [user, setUser] = useState({
-        name: 'anshuman',
+        name: 'User',
         email: '',
         college_name: '',
         year: '',
@@ -131,7 +131,7 @@ const Header = () => {
                             </Link>
                             <Nav className="ms-auto " navbar>
                                 <NavItem>
-                                    <div className="signin-div">
+                                    <div className="signed-in-details">
                                         <button
                                             onClick={myFunction}
                                             className="dropbtn"
@@ -165,11 +165,11 @@ const Header = () => {
                             </Nav>
                             <NavbarToggler className="mx-2" onClick={toggle} />
                             <Collapse isOpen={false} navbar>
-                                <Nav className="ms-auto set_size" navbar>
+                                <Nav className="ms-auto" navbar>
                                     <NavItem>
-                                        <NavLink href="/#timeline-main-container">
+                                        <NavLink href="/events">
                                             <div
-                                                className="px-3"
+                                                className="navbar-header-links px-3"
                                                 style={{
                                                     fontFamily:
                                                         'Raleway, sans-serif',
@@ -177,14 +177,14 @@ const Header = () => {
                                                     color: '#CAF0F8',
                                                 }}
                                             >
-                                                Timeline
+                                                Events
                                             </div>
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>
                                         <NavLink href="/#contact-page-container">
                                             <div
-                                                className="px-3"
+                                                className="navbar-header-links px-3"
                                                 style={{
                                                     fontFamily:
                                                         'Raleway, sans-serif',
@@ -202,7 +202,7 @@ const Header = () => {
                                             style={{ textDecoration: 'none' }}
                                         >
                                             <div
-                                                className="px-3"
+                                                className="navbar-header-links px-3"
                                                 style={{
                                                     fontFamily:
                                                         'Raleway, sans-serif',
@@ -288,6 +288,7 @@ const Header = () => {
                                         style={{ textDecoration: 'none' }}
                                     >
                                         <div className="signin-div px-2">
+                                            <img src="./icon/sign-in.png"/>
                                             Sign in
                                         </div>
                                     </Link>
@@ -295,11 +296,11 @@ const Header = () => {
                             </Nav>
                             <NavbarToggler className="mx-2" onClick={toggle} />
                             <Collapse isOpen={false} navbar>
-                                <Nav className="ms-auto set_size" navbar>
+                                <Nav className="ms-auto" navbar>
                                     <NavItem>
-                                        <NavLink href="/#timeline-main-container">
+                                        <NavLink href="/events">
                                             <div
-                                                className="px-3"
+                                                className="navbar-header-links px-3"
                                                 style={{
                                                     fontFamily:
                                                         'Raleway, sans-serif',
@@ -307,14 +308,14 @@ const Header = () => {
                                                     color: '#CAF0F8',
                                                 }}
                                             >
-                                                Timeline
+                                                Events
                                             </div>
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>
                                         <NavLink href="/#contact-page-container">
                                             <div
-                                                className="px-3"
+                                                className="navbar-header-links px-3"
                                                 style={{
                                                     fontFamily:
                                                         'Raleway, sans-serif',
@@ -332,7 +333,7 @@ const Header = () => {
                                             style={{ textDecoration: 'none' }}
                                         >
                                             <div
-                                                className="px-3"
+                                                className="navbar-header-links px-3"
                                                 style={{
                                                     fontFamily:
                                                         'Raleway, sans-serif',
@@ -351,16 +352,17 @@ const Header = () => {
                                             style={{ textDecoration: 'none' }}
                                         >
                                             <div
-                                                className="px-3"
+                                                className="navbar-header-links px-3"
                                                 style={{
                                                     fontFamily:
                                                         'Raleway, sans-serif',
-                                                    fontWeight: 'bolder',
+                                                    fontWeight: '900',
                                                     fontSize: '2em',
                                                     color: '#CAF0F8',
                                                     marginTop: '0.25em',
                                                 }}
                                             >
+                                                <img src="./icon/sign-in.png"/>
                                                 Sign in
                                             </div>
                                         </Link>
