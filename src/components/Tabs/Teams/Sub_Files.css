@@ -1,6 +1,6 @@
 @media (min-width: 767px) {
     .container_box {
-        height: 75vh;
+        height: 32vw;
         text-align: center;
         align-items: center;
         width: 70vw;
@@ -176,7 +176,7 @@
 
     .social_icons {
         width: 7.5vw;
-        height: 7.5vh;
+        height: 6.5vh;
     }
 
     #Teams_social-tray {
@@ -197,12 +197,13 @@
     }
 
     .social_icons {
-        height: 6.5vh;
+        height: 2.4vw;
         width: 6.5vw;
+        margin-bottom: 20px;
     }
 
     #Teams_social-tray {
-        width: 20vw;
+        width: 20vw;   
     }
 }
 

@@ -157,9 +157,9 @@
 }
 
 @media (min-width: 769px) {
-    .INF {
+    /* .INF {
         overflow-y: hidden;
-    }
+    } */
 }
 
 .Speakers_head {
