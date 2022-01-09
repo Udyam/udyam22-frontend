@@ -116,8 +116,7 @@ const Event = () => {
                         style={{
                             textDecorationLine:
                                 caller_number === '1' ? 'underline' : 'none',
-                            fontSize:
-                                caller_number === '1' ? '2.15vw' : '2vw',
+                            fontSize: caller_number === '1' ? '2.15vw' : '2vw',
                             color:
                                 caller_number === '1'
                                     ? '#90E0EF'
@@ -133,8 +132,7 @@ const Event = () => {
                         style={{
                             textDecorationLine:
                                 caller_number === '2' ? 'underline' : 'none',
-                            fontSize:
-                                caller_number === '2' ? '2.15vw' : '2vw',
+                            fontSize: caller_number === '2' ? '2.15vw' : '2vw',
                             color:
                                 caller_number === '2'
                                     ? '#90E0EF'
@@ -150,8 +148,7 @@ const Event = () => {
                         style={{
                             textDecorationLine:
                                 caller_number === '3' ? 'underline' : 'none',
-                            fontSize:
-                                caller_number === '3' ? '2.15vw' : '2vw',
+                            fontSize: caller_number === '3' ? '2.15vw' : '2vw',
                             color:
                                 caller_number === '3'
                                     ? '#90E0EF'
@@ -167,8 +164,7 @@ const Event = () => {
                         style={{
                             textDecorationLine:
                                 caller_number === '4' ? 'underline' : 'none',
-                            fontSize:
-                                caller_number === '4' ? '2.15vw' : '2vw',
+                            fontSize: caller_number === '4' ? '2.15vw' : '2vw',
                             color:
                                 caller_number === '4'
                                     ? '#90E0EF'
@@ -184,8 +180,7 @@ const Event = () => {
                         style={{
                             textDecorationLine:
                                 caller_number === '5' ? 'underline' : 'none',
-                            fontSize:
-                                caller_number === '5' ? '2.15vw' : '2vw',
+                            fontSize: caller_number === '5' ? '2.15vw' : '2vw',
                             color:
                                 caller_number === '5'
                                     ? '#90E0EF'
@@ -201,8 +196,7 @@ const Event = () => {
                         style={{
                             textDecorationLine:
                                 caller_number === '6' ? 'underline' : 'none',
-                            fontSize:
-                                caller_number === '6' ? '2.15vw' : '2vw',
+                            fontSize: caller_number === '6' ? '2.15vw' : '2vw',
                             color:
                                 caller_number === '6'
                                     ? '#90E0EF'
@@ -218,8 +212,7 @@ const Event = () => {
                         style={{
                             textDecorationLine:
                                 caller_number === '7' ? 'underline' : 'none',
-                            fontSize:
-                                caller_number === '7' ? '2.15vw' : '2vw',
+                            fontSize: caller_number === '7' ? '2.15vw' : '2vw',
                             color:
                                 caller_number === '7'
                                     ? '#90E0EF'
@@ -235,8 +228,7 @@ const Event = () => {
                         style={{
                             textDecorationLine:
                                 caller_number === '8' ? 'underline' : 'none',
-                            fontSize:
-                                caller_number === '8' ? '2.15vw' : '2vw',
+                            fontSize: caller_number === '8' ? '2.15vw' : '2vw',
                             color:
                                 caller_number === '8'
                                     ? '#90E0EF'
@@ -252,8 +244,7 @@ const Event = () => {
                         style={{
                             textDecorationLine:
                                 caller_number === '9' ? 'underline' : 'none',
-                            fontSize:
-                                caller_number === '9' ? '2.15vw' : '2vw',
+                            fontSize: caller_number === '9' ? '2.15vw' : '2vw',
                             color:
                                 caller_number === '9'
                                     ? '#90E0EF'
