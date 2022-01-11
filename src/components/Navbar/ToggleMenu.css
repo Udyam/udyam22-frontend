@@ -9,13 +9,15 @@
 }
 
 .link-div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    list-style-type: none;
+    padding-top: 2em;
     text-align: center;
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 300;
+}
+
+.link-div li {
+    padding: 20px;
 }
 
 .toggle-menu-link {
