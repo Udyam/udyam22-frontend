@@ -1,4 +1,4 @@
-#contact-page-container {
+#contactPage {
     display: grid;
     grid-template-areas:
         'contact-form'
@@ -22,7 +22,7 @@
 }
 
 @media (min-width: 767px) {
-    #contact-page-container {
+    #contactPage {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 'contact-form info-box';
     }
