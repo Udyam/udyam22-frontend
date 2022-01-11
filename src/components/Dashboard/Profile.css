@@ -79,6 +79,14 @@
     line-height: 1.42857;
 }
 
+#profile-user-name,
+#profile-college-name,
+#profile-referral,
+#profile-year,
+#profile-email {
+    color: #fcfbfc;
+}
+
 @media (max-width: 1160px) {
     .displayPictureContainer {
         display: none;

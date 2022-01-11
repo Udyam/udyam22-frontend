@@ -5,7 +5,7 @@ import { InfoBox } from './InfoBox/InfoBox'
 
 export const ContactPage = () => {
     return (
-        <div id="contact-page-container">
+        <div id="contactPage">
             <div id="contact-form">
                 <ContactForm> </ContactForm>
             </div>
