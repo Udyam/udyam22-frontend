@@ -13,7 +13,7 @@ const Timeline = () => {
                 />
             </div>
             <div className="timeline" id="timeline-main-container">
-                <div className="container-time left">
+                <div className="container-time left" style={{marginTop:"0px"}}>
                     <div className="content-time">
                         <h2>
                             <time>5 DEC 2021</time>
