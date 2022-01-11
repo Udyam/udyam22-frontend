@@ -96,7 +96,7 @@
     line-height: 22px;
     color: #ffffff;
     font-size: 16px;
-    font-family:'Raleway';
+    font-family: 'Raleway';
 }
 
 @media (max-width: 767.98px) {
@@ -108,6 +108,7 @@
         width: 100%;
         padding-left: 60px;
         padding-right: 30px;
+        margin-top: -10px;
     }
 
     .container-time.right {
