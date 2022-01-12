@@ -130,7 +130,7 @@ const Spybits = () => {
                 programming-based applications in Cryptography.
             </div>
 
-            {/* <div className="Events_Link_Holder">
+            <div className="Events_Link_Holder">
                 <a href="">
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
@@ -146,7 +146,7 @@ const Spybits = () => {
                 <a href="">
                     <div className="Events_Inner_Link">PS4</div>
                 </a>
-            </div> */}
+            </div>
         </>
     )
 }
