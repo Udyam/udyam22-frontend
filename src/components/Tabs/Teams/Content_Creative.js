@@ -26,7 +26,7 @@ const Content_and_Creative = () => {
                         updateOnItemClick
                         itemsListProps={{
                             style: {
-                                marginRight: '2vw',
+                                marginRight: '0vw',
                             },
                         }}
                         containerProps={{
@@ -34,13 +34,14 @@ const Content_and_Creative = () => {
                                 marginTop: '3.5vh',
                                 marginRight: '2vw',
                                 marginLeft: '2vw',
-                                // width: "100%",
                                 height: '100%',
                                 justifyContent: 'space-between',
                             },
                         }}
                         activeSlideIndex={activeSlide}
-                        activeSlideProps={{}}
+                        activeSlideProps={{
+                            className: ("ActiveSlider")
+                        }}
                         onRequestChange={setActiveSlide}
                         forwardBtnProps={{
                             children: (
@@ -81,7 +82,7 @@ const Content_and_Creative = () => {
                         </div>
                     </Carousel>
                 </div>
-                <div className="abcd">
+                <div className="Teams_Mobile_Container">
                     <div className="Teams_Tiles">
                         <Members.nisitha_vallamdasu />
                     </div>
@@ -98,10 +99,3 @@ const Content_and_Creative = () => {
 }
 
 export default Content_and_Creative
-
-{
-    /* <div className='Teams_Tiles'>
-    <div className="Members_Tiles">
-        </div>
-    </div> */
-}

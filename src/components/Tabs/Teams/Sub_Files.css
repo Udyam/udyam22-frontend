@@ -18,11 +18,10 @@
     .Teams_Tiles {
         height: 58vh;
         width: 19vw;
+        transform: scale(0.7);
     }
 
     .Members_Tiles {
-        margin-right: 10px;
-        margin-left: 10px;
         height: 100%;
         border-radius: 10px;
         justify-items: center;
@@ -61,8 +60,12 @@
         width: 100%;
     }
 
-    .abcd {
+    .Teams_Mobile_Container {
         display: none;
+    }
+
+    .ActiveSlider{
+        transform: scale(1.05);
     }
 }
 
@@ -180,49 +183,3 @@
 #Teams_Scrollbar::-webkit-scrollbar-thumb:hover {
     background: white;
 }
-
-/* @media (min-width: 480px) {
-
-    .social_icons {
-        height: 6.5vh;
-        width: 6.5vw;
-    }
-
-    #Teams_social-tray {
-        width: 20vw;
-    }
-}
-
-@media (max-width: 767px) {
-    .container_box {
-        height: 75vh;
-        align-items: center;
-        background-color: rgba(255, 255, 255, 0.8);
-        border: 5px solid rgba(0, 0, 0, 0.75);
-        box-sizing: border-box;
-        border-radius: 10px;
-        overflow-y: scroll;
-        overflow-x: hidden;
-    }
-
-    .back_button {
-        margin-bottom: 0.4vh;
-    }
-
-    .title {
-        font-size: 7vw;
-    }
-
-    .back_button {
-        width: 12%;
-        height: 10%;
-        font-size: 1.4vh;
-        height: 3.5vh;
-        width: 13vw;
-        font-size: 3vw;
-    }
-
-    .teams_oveflow_names {
-        font-size: 0.8rem;
-    }
-} */
