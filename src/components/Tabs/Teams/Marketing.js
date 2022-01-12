@@ -40,7 +40,7 @@ const Marketing_Team = () => {
                         }}
                         activeSlideIndex={activeSlide}
                         activeSlideProps={{
-                            className: ("ActiveSlider")
+                            className: 'ActiveSlider',
                         }}
                         onRequestChange={setActiveSlide}
                         forwardBtnProps={{

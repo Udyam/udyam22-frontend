@@ -1,11 +1,10 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import './Sub_Files.css'
 import { Route, Link } from 'react-router-dom'
 import Carousel from 'react-simply-carousel'
 import * as Members from './Members_Description_Tiles.js'
 import Forward from './Icons/Front_Arrow.png'
 import Backward from './Icons/Back_Arrow.png'
-
 
 const Core_Team = () => {
     const [activeSlide, setActiveSlide] = useState(0)
@@ -41,7 +40,7 @@ const Core_Team = () => {
                         }}
                         activeSlideIndex={activeSlide}
                         activeSlideProps={{
-                            className: ("ActiveSlider")
+                            className: 'ActiveSlider',
                         }}
                         onRequestChange={setActiveSlide}
                         forwardBtnProps={{

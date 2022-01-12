@@ -34,8 +34,8 @@ import LinkedIn from './Icons/LinkedIn.png'
 import Facebook from './Icons/Facebook.png'
 import Instagram from './Icons/Instagram.png'
 
-const samarth_solanki = () =>{
-    return(
+const samarth_solanki = () => {
+    return (
         <div className="Members_Tiles">
             <img
                 className="photo"
@@ -58,8 +58,8 @@ const samarth_solanki = () =>{
         </div>
     )
 }
-const easwaravaka_dinesh_reddy = () =>{
-    return(
+const easwaravaka_dinesh_reddy = () => {
+    return (
         <div className="Members_Tiles">
             <img
                 className="photo"
@@ -84,13 +84,9 @@ const easwaravaka_dinesh_reddy = () =>{
 }
 
 const ankur_agrawal_SA = () => {
-    return(
+    return (
         <div className="Members_Tiles">
-            <img
-                className="photo"
-                src={Sample_Image}
-                alt="Ankur Agrawal"
-            />
+            <img className="photo" src={Sample_Image} alt="Ankur Agrawal" />
             <div className="Members_Description">ANKUR AGRAWAL</div>
             <div className="Members_Description">TECHNICAL</div>
             <div className="Teams_social-tray">
@@ -108,14 +104,10 @@ const ankur_agrawal_SA = () => {
     )
 }
 
-const  akshat_goyal = () =>{
-    return(
+const akshat_goyal = () => {
+    return (
         <div className="Members_Tiles">
-            <img
-                className="photo"
-                src={Sample_Image}
-                alt="Akshat Goyal"
-            />
+            <img className="photo" src={Sample_Image} alt="Akshat Goyal" />
             <div className="Members_Description">AKSHAT GOYAL</div>
             <div className="Members_Description">WEBSITE DEVELOPMENT</div>
             <div className="Teams_social-tray">
@@ -133,14 +125,10 @@ const  akshat_goyal = () =>{
     )
 }
 
-const alavala_suhas = () =>{
-    return(
+const alavala_suhas = () => {
+    return (
         <div className="Members_Tiles">
-            <img
-                className="photo"
-                src={Sample_Image}
-                alt="Alavala Suhas"
-            />
+            <img className="photo" src={Sample_Image} alt="Alavala Suhas" />
             <div className="Members_Description">ALAVALA SUHAS</div>
             <div className="Members_Description">WEBSITE DEVELOPMENT</div>
             <div className="Teams_social-tray">
@@ -159,13 +147,9 @@ const alavala_suhas = () =>{
 }
 
 const ishaan_amrit = () => {
-    return(
+    return (
         <div className="Members_Tiles">
-            <img
-                className="photo"
-                src={Sample_Image}
-                alt="Ishaan Amrit"
-            />
+            <img className="photo" src={Sample_Image} alt="Ishaan Amrit" />
             <div className="Members_Description">ISHAAN AMRIT</div>
             <div className="Members_Description">CULTURAL</div>
             <div className="Teams_social-tray">
@@ -183,8 +167,8 @@ const ishaan_amrit = () => {
     )
 }
 
-const prince_kumar_gond = () =>{
-    return(
+const prince_kumar_gond = () => {
+    return (
         <div className="Members_Tiles">
             <img
                 className="photo"
@@ -208,14 +192,10 @@ const prince_kumar_gond = () =>{
     )
 }
 
-const anshika_khare = () =>{
-    return(
+const anshika_khare = () => {
+    return (
         <div className="Members_Tiles">
-            <img
-                className="photo"
-                src={Anshika_Khare}
-                alt="Anshika Khare"
-            />
+            <img className="photo" src={Anshika_Khare} alt="Anshika Khare" />
             <div className="Members_Description">ANSHIKA KHARE</div>
             <div className="Members_Description">COORDINATOR</div>
             <div className="Teams_social-tray">
@@ -233,14 +213,10 @@ const anshika_khare = () =>{
     )
 }
 
-const jayant_roy = () =>{
-    return(
+const jayant_roy = () => {
+    return (
         <div className="Members_Tiles">
-            <img
-                className="photo"
-                src={Jayant_Roy}
-                alt="Jayant Roy"
-            />
+            <img className="photo" src={Jayant_Roy} alt="Jayant Roy" />
             <div className="Members_Description">JAYANT ROY</div>
             <div className="Members_Description">COORDINATOR</div>
             <div className="Teams_social-tray">
@@ -258,14 +234,10 @@ const jayant_roy = () =>{
     )
 }
 
-const aman_kumar = () =>{
-    return(
+const aman_kumar = () => {
+    return (
         <div className="Members_Tiles">
-            <img
-                className="photo"
-                src={Aman_Kumar}
-                alt="Aman Kumar"
-            />
+            <img className="photo" src={Aman_Kumar} alt="Aman Kumar" />
             <div className="Members_Description">AMAN KUMAR</div>
             <div className="Members_Description">HEAD</div>
             <div className="Teams_social-tray">
@@ -284,7 +256,7 @@ const aman_kumar = () =>{
 }
 
 const vikash_prajapati = () => {
-    return(
+    return (
         <div className="Members_Tiles">
             <img
                 className="photo"
@@ -308,14 +280,10 @@ const vikash_prajapati = () => {
     )
 }
 
-const kushagra_yadav = () =>{
-    return(
+const kushagra_yadav = () => {
+    return (
         <div className="Members_Tiles">
-            <img
-                className="photo"
-                src={Sample_Image}
-                alt="Kushagra Yadav"
-            />
+            <img className="photo" src={Sample_Image} alt="Kushagra Yadav" />
             <div className="Members_Description">KUSHAGRA YADAV</div>
             <div className="Members_Description">COORDINATOR</div>
             <div className="Teams_social-tray">
@@ -334,13 +302,9 @@ const kushagra_yadav = () =>{
 }
 
 const varsha_jangir = () => {
-    return(
+    return (
         <div className="Members_Tiles">
-            <img
-                className="photo"
-                src={Varsha_Jangir}
-                alt="Varsha Jangir"
-            />
+            <img className="photo" src={Varsha_Jangir} alt="Varsha Jangir" />
             <div className="Members_Description">VARSHA JANGIR</div>
             <div className="Members_Description">COORDINATOR</div>
             <div className="Teams_social-tray">
@@ -359,13 +323,9 @@ const varsha_jangir = () => {
 }
 
 const somesh_dey = () => {
-    return(
+    return (
         <div className="Members_Tiles">
-            <img
-                className="photo"
-                src={Somesh_Dey}
-                alt="Somesh Dey"
-            />
+            <img className="photo" src={Somesh_Dey} alt="Somesh Dey" />
             <div className="Members_Description">SOMESH DEY</div>
             <div className="Members_Description">COORDINATOR</div>
             <div className="Teams_social-tray">
@@ -382,7 +342,7 @@ const somesh_dey = () => {
         </div>
     )
 }
-const raj_aryan_srivastava = () =>{
+const raj_aryan_srivastava = () => {
     return (
         <div className="Members_Tiles">
             <img
@@ -410,11 +370,7 @@ const raj_aryan_srivastava = () =>{
 const ritweek_singh = () => {
     return (
         <div className="Members_Tiles">
-            <img
-                className="photo"
-                src={Ritweek_Singh}
-                alt="Ritweek Singh"
-            />
+            <img className="photo" src={Ritweek_Singh} alt="Ritweek Singh" />
             <div className="Members_Description">RITWEEK SINGH</div>
             <div className="Members_Description">CONVENOR</div>
             <div className="Teams_social-tray">
@@ -434,11 +390,7 @@ const ritweek_singh = () => {
 const mohit_shringi = () => {
     return (
         <div className="Members_Tiles">
-            <img
-                className="photo"
-                src={Sample_Image}
-                alt="Mohit Shringi"
-            />
+            <img className="photo" src={Sample_Image} alt="Mohit Shringi" />
             <div className="Members_Description">MOHIT SHRINGI</div>
             <div className="Members_Description">GENERAL SECRETARY</div>
             <div className="Teams_social-tray">
@@ -459,11 +411,7 @@ const mohit_shringi = () => {
 const akshat_jain = () => {
     return (
         <div className="Members_Tiles">
-            <img
-                className="photo"
-                src={Akshat_Jain}
-                alt="Akshat Jain"
-            />
+            <img className="photo" src={Akshat_Jain} alt="Akshat Jain" />
             <div className="Members_Description">AKSHAT JAIN</div>
             <div className="Members_Description">CO-CONVENOR</div>
             <div className="Teams_social-tray">
@@ -484,11 +432,7 @@ const akshat_jain = () => {
 const pranav_mittal = () => {
     return (
         <div className="Members_Tiles">
-            <img
-                className="photo"
-                src={Pranav_Mittal}
-                alt="Pranav Mittal"
-            />
+            <img className="photo" src={Pranav_Mittal} alt="Pranav Mittal" />
             <div className="Members_Description">PRANAV MITTAL</div>
             <div className="Members_Description">JOINT GENERAL SECRETARY</div>
             <div className="Teams_social-tray">
@@ -534,11 +478,7 @@ const vikhyath_venkatraman = () => {
 const eshaan_gupta = () => {
     return (
         <div className="Members_Tiles">
-            <img
-                className="photo"
-                src={Eshaan_Gupta}
-                alt="Eshaan Gupta"
-            />
+            <img className="photo" src={Eshaan_Gupta} alt="Eshaan Gupta" />
             <div className="Members_Description">ESHAAN GUPTA</div>
             <div className="Members_Description">TECHNICAL SECRETARY</div>
             <div className="Teams_social-tray">
@@ -559,11 +499,7 @@ const eshaan_gupta = () => {
 const smriti_sharma = () => {
     return (
         <div className="Members_Tiles">
-            <img
-                className="photo"
-                src={Smriti_Sharma}
-                alt="Smriti Sharma"
-            />
+            <img className="photo" src={Smriti_Sharma} alt="Smriti Sharma" />
             <div className="Members_Description">SMRITI SHARMA</div>
             <div className="Members_Description">TECHNICAL SECRETARY</div>
             <div className="Teams_social-tray">
@@ -582,7 +518,7 @@ const smriti_sharma = () => {
 }
 
 const siddharth_anand_srivastav_head = () => {
-    return(
+    return (
         <div className="Members_Tiles">
             <img
                 className="photo"
@@ -634,11 +570,7 @@ const siddharth_anand_srivastav = () => {
 const aditya_agarwal = () => {
     return (
         <div className="Members_Tiles">
-            <img
-                className="photo"
-                src={Aditya_Agarwal}
-                alt="Aditya Agarwal"
-            />
+            <img className="photo" src={Aditya_Agarwal} alt="Aditya Agarwal" />
             <div className="Members_Description">ADITYA AGARWAL</div>
             <div className="Members_Description">CULTURAL SECRETARY</div>
             <div className="Teams_social-tray">
@@ -659,11 +591,7 @@ const aditya_agarwal = () => {
 const swastik_thapa = () => {
     return (
         <div className="Members_Tiles">
-            <img
-                className="photo"
-                src={Swastik_Thapa}
-                alt="Swastik Thapa"
-            />
+            <img className="photo" src={Swastik_Thapa} alt="Swastik Thapa" />
             <div className="Members_Description">SWASTIK THAPA</div>
             <div className="Members_Description">SPORTS SECRETARY</div>
             <div className="Teams_social-tray">
@@ -684,11 +612,7 @@ const swastik_thapa = () => {
 const yash_jain = () => {
     return (
         <div className="Members_Tiles">
-            <img
-                className="photo"
-                src={Yash_Jain}
-                alt="Yash Jain"
-            />
+            <img className="photo" src={Yash_Jain} alt="Yash Jain" />
             <div className="Members_Description">YASH JAIN</div>
             <div className="Members_Description">WEB HEAD</div>
             <div className="Teams_social-tray">
@@ -806,14 +730,10 @@ const khushabu_kumari = () => {
     )
 }
 
-const ayush_gangwani = () =>{
-    return(
+const ayush_gangwani = () => {
+    return (
         <div className="Members_Tiles">
-            <img
-                className="photo"
-                src={Sample_Image}
-                alt="Ayush Gangwani"
-            />
+            <img className="photo" src={Sample_Image} alt="Ayush Gangwani" />
             <div className="Members_Description">AYUSH GANGWANI</div>
             <div className="Members_Description">WEB COORDINATOR</div>
             <div className="Teams_social-tray">
@@ -831,14 +751,10 @@ const ayush_gangwani = () =>{
     )
 }
 
-const atharva_bhatt = () =>{
+const atharva_bhatt = () => {
     return (
         <div className="Members_Tiles">
-            <img
-                className="photo"
-                src={Atharva_Bhatt}
-                alt="Atharva Bhatt"
-            />
+            <img className="photo" src={Atharva_Bhatt} alt="Atharva Bhatt" />
             <div className="Members_Description">ATHARVA BHATT</div>
             <div className="Members_Description">WEB COORDINATOR</div>
             <div className="Teams_social-tray">
@@ -856,7 +772,7 @@ const atharva_bhatt = () =>{
     )
 }
 
-const sarang_manerikar = () =>{
+const sarang_manerikar = () => {
     return (
         <div className="Members_Tiles">
             <img
@@ -906,14 +822,10 @@ const prashasti_tripathi = () => {
     )
 }
 
-const ankur_agrawal = () =>{
+const ankur_agrawal = () => {
     return (
         <div className="Members_Tiles">
-            <img
-                className="photo"
-                src={Sample_Image}
-                alt="Ankur Agrawal"
-            />
+            <img className="photo" src={Sample_Image} alt="Ankur Agrawal" />
             <div className="Members_Description">ANKUR AGRAWAL</div>
             <div className="Members_Description">WEB COORDINATOR</div>
             <div className="Teams_social-tray">
@@ -931,14 +843,10 @@ const ankur_agrawal = () =>{
     )
 }
 
-const raina_jain = () =>{
+const raina_jain = () => {
     return (
         <div className="Members_Tiles">
-            <img
-                className="photo"
-                src={Sample_Image}
-                alt="Raina Jain"
-            />
+            <img className="photo" src={Sample_Image} alt="Raina Jain" />
             <div className="Members_Description">RAINA JAIN</div>
             <div className="Members_Description">WEB COORDINATOR</div>
             <div className="Teams_social-tray">
@@ -957,13 +865,9 @@ const raina_jain = () =>{
 }
 
 const ayushi_gupta = () => {
-    return(
+    return (
         <div className="Members_Tiles">
-            <img
-                className="photo"
-                src={Sample_Image}
-                alt="Ayushi Gupta"
-            />
+            <img className="photo" src={Sample_Image} alt="Ayushi Gupta" />
             <div className="Members_Description">AYUSHI GUPTA</div>
             <div className="Members_Description">WEB COORDINATOR</div>
             <div className="Teams_social-tray">
@@ -981,7 +885,7 @@ const ayushi_gupta = () => {
     )
 }
 
-const sanskar_santosh_totla = () =>{
+const sanskar_santosh_totla = () => {
     return (
         <div className="Members_Tiles">
             <img
@@ -1007,7 +911,7 @@ const sanskar_santosh_totla = () =>{
 }
 
 const sanidhya_taparia = () => {
-    return(
+    return (
         <div className="Members_Tiles">
             <img
                 className="photo"
@@ -1031,8 +935,8 @@ const sanidhya_taparia = () => {
     )
 }
 
-const anshuman_asauliya = () =>{
-    return(
+const anshuman_asauliya = () => {
+    return (
         <div className="Members_Tiles">
             <img
                 className="photo"
@@ -1057,13 +961,9 @@ const anshuman_asauliya = () =>{
 }
 
 const mayank_singh = () => {
-    return(
+    return (
         <div className="Members_Tiles">
-            <img
-                className="photo"
-                src={Mayank_Singh}
-                alt="Maynak Singh"
-            />
+            <img className="photo" src={Mayank_Singh} alt="Maynak Singh" />
             <div className="Members_Description">MAYANK SINGH</div>
             <div className="Members_Description">WEB COORDINATOR</div>
             <div className="Teams_social-tray">
@@ -1082,13 +982,9 @@ const mayank_singh = () => {
 }
 
 const jayesh_upadhyay = () => {
-    return(
+    return (
         <div className="Members_Tiles">
-            <img
-                className="photo"
-                src={Sample_Image}
-                alt="Jayesh Upadhyay"
-            />
+            <img className="photo" src={Sample_Image} alt="Jayesh Upadhyay" />
             <div className="Members_Description">JAYESH UPADHYAY</div>
             <div className="Members_Description">WEB COORDINATOR</div>
             <div className="Teams_social-tray">
@@ -1106,14 +1002,10 @@ const jayesh_upadhyay = () => {
     )
 }
 
-const suhani_agrawal = () =>{
-    return(
+const suhani_agrawal = () => {
+    return (
         <div className="Members_Tiles">
-            <img
-                className="photo"
-                src={Sample_Image}
-                alt="Suhani Agrawal"
-            />
+            <img className="photo" src={Sample_Image} alt="Suhani Agrawal" />
             <div className="Members_Description">SUHANI AGRAWAL</div>
             <div className="Members_Description">WEB COORDINATOR</div>
             <div className="Teams_social-tray">
@@ -1131,14 +1023,10 @@ const suhani_agrawal = () =>{
     )
 }
 
-const riya_kanojiya = () =>{
-    return(
+const riya_kanojiya = () => {
+    return (
         <div className="Members_Tiles">
-            <img
-                className="photo"
-                src={Sample_Image}
-                alt="Riya Kanojiya"
-            />
+            <img className="photo" src={Sample_Image} alt="Riya Kanojiya" />
             <div className="Members_Description">RIYA KANOJIYA</div>
             <div className="Members_Description">WEB COORDINATOR</div>
             <div className="Teams_social-tray">
@@ -1156,14 +1044,10 @@ const riya_kanojiya = () =>{
     )
 }
 
-const ayush_bemera = () =>{
-    return(
+const ayush_bemera = () => {
+    return (
         <div className="Members_Tiles">
-            <img
-                className="photo"
-                src={Sample_Image}
-                alt="Ayush Bemera"
-            />
+            <img className="photo" src={Sample_Image} alt="Ayush Bemera" />
             <div className="Members_Description">AYUSH BEMERA</div>
             <div className="Members_Description">WEB COORDINATOR</div>
             <div className="Teams_social-tray">
@@ -1200,7 +1084,7 @@ export {
     eshaan_gupta,
     smriti_sharma,
     siddharth_anand_srivastav,
-    siddharth_anand_srivastav_head, 
+    siddharth_anand_srivastav_head,
     aditya_agarwal,
     swastik_thapa,
     yash_jain,

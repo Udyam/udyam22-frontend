@@ -40,7 +40,7 @@ const Public_Relations = () => {
                         }}
                         activeSlideIndex={activeSlide}
                         activeSlideProps={{
-                            className: ("ActiveSlider")
+                            className: 'ActiveSlider',
                         }}
                         onRequestChange={setActiveSlide}
                         forwardBtnProps={{

@@ -6,8 +6,6 @@ import * as Members from './Members_Description_Tiles.js'
 import Forward from './Icons/Front_Arrow.png'
 import Backward from './Icons/Back_Arrow.png'
 
-
-
 const Developers = () => {
     const [activeSlide, setActiveSlide] = useState(0)
 
@@ -42,7 +40,7 @@ const Developers = () => {
                         }}
                         activeSlideIndex={activeSlide}
                         activeSlideProps={{
-                            className: ("ActiveSlider")
+                            className: 'ActiveSlider',
                         }}
                         onRequestChange={setActiveSlide}
                         forwardBtnProps={{

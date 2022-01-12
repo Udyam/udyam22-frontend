@@ -40,7 +40,7 @@ const Senior_Advisors = () => {
                         }}
                         activeSlideIndex={activeSlide}
                         activeSlideProps={{
-                            className: ("ActiveSlider")
+                            className: 'ActiveSlider',
                         }}
                         onRequestChange={setActiveSlide}
                         forwardBtnProps={{

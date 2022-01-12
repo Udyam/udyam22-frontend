@@ -64,7 +64,7 @@
         display: none;
     }
 
-    .ActiveSlider{
+    .ActiveSlider {
         transform: scale(1.05);
     }
 }
