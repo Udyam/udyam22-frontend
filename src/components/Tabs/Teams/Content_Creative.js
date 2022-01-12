@@ -1,94 +1,95 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Sub_Files.css'
+import Carousel from 'react-simply-carousel'
 import { Route, Link } from 'react-router-dom'
-import Nisitha_Vallamdasu from './Mem_Images/Nisitha_Vallamdasu.jpg'
-import Prajakta_Priyadarsini from './Mem_Images/Prajakta_Priyadarsini.jpg'
-import Khushabu_Kumari from './Mem_Images/Khushabu_Kumari.jpg'
-import { FaFacebookSquare, FaLinkedin, FaInstagramSquare } from 'react-icons/fa'
+import * as Members from './Members_Description_Tiles.js'
+import Forward from './Icons/Front_Arrow.png'
+import Backward from './Icons/Back_Arrow.png'
 
 const Content_and_Creative = () => {
+    const [activeSlide, setActiveSlide] = useState(0)
+
     return (
         <Route>
-            <Link className="back_button" to="/team">
-                Back
-            </Link>
-
             <div className="container_box" id="Teams_Scrollbar">
+                <Link className="back_button" to="/team">
+                    Back
+                </Link>
                 <h1 className="title">CONTENT AND CREATIVE</h1>
-
-                <div className="row">
-                    <div className="tile1">
-                        <img
-                            className="photo"
-                            src={Nisitha_Vallamdasu}
-                            alt="Hello World"
-                        />
-
-                        <div>NISITHA VALLAMDASU</div>
-                        <div>HEAD</div>
-
-                        <div id="Teams_social-tray">
-                            <a href="https://www.linkedin.com/company/udyam/">
-                                <FaLinkedin className="social_icons" />
-                            </a>
-                            <a href="https://www.facebook.com/udyamfest">
-                                <FaFacebookSquare className="social_icons" />
-                            </a>
-                            <a href="https://www.instagram.com/udyam_iit_bhu/">
-                                <FaInstagramSquare className="social_icons" />
-                            </a>
-                        </div>
-                    </div>
-
-                    <div className="tile2">
-                        <img
-                            className="photo"
-                            src={Prajakta_Priyadarsini}
-                            alt="Hello World"
-                        />
-
-                        <div>PRAJAKTA PRIYADARSINI</div>
-                        <div>COORDINATOR</div>
-
-                        <div id="Teams_social-tray">
-                            <a href="https://www.linkedin.com/company/udyam/">
-                                <FaLinkedin className="social_icons" />
-                            </a>
-                            <a href="https://www.facebook.com/udyamfest">
-                                <FaFacebookSquare className="social_icons" />
-                            </a>
-                            <a href="https://www.instagram.com/udyam_iit_bhu/">
-                                <FaInstagramSquare className="social_icons" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="row">
-                    <div
-                        className="tile1"
-                        style={{ marginLeft: 'auto', marginRight: 'auto' }}
+                <div className="Teams_Carousel_Container">
+                    <Carousel
+                        disableNavIfAllVisible={false}
+                        disableNavIfEdgeVisible={false}
+                        disableNavIfEdgeActive={false}
+                        hideNavIfAllVisible={false}
+                        centerMode
+                        updateOnItemClick
+                        itemsListProps={{
+                            style: {
+                                marginRight: '2vw',
+                            },
+                        }}
+                        containerProps={{
+                            style: {
+                                marginTop: '3.5vh',
+                                marginRight: '2vw',
+                                marginLeft: '2vw',
+                                // width: "100%",
+                                height: '100%',
+                                justifyContent: 'space-between',
+                            },
+                        }}
+                        activeSlideIndex={activeSlide}
+                        activeSlideProps={{}}
+                        onRequestChange={setActiveSlide}
+                        forwardBtnProps={{
+                            children: (
+                                <img src={Forward} className="Icons_Arrows" />
+                            ),
+                            style: {
+                                width: '3.5vw',
+                                height: '7vh',
+                                minWidth: 60,
+                                alignSelf: 'center',
+                                border: 'none',
+                                borderRadius: '50%',
+                            },
+                        }}
+                        backwardBtnProps={{
+                            children: (
+                                <img src={Backward} className="Icons_Arrows" />
+                            ),
+                            style: {
+                                width: '3.5vw',
+                                height: '7vh',
+                                minWidth: 60,
+                                alignSelf: 'center',
+                                border: 'none',
+                                borderRadius: '50%',
+                            },
+                        }}
+                        itemsToShow={3}
                     >
-                        <img
-                            className="photo"
-                            src={Khushabu_Kumari}
-                            alt="Hello World"
-                        />
-
-                        <div>KHUSHABU KUMARI</div>
-                        <div>COORDINATOR</div>
-
-                        <div id="Teams_social-tray">
-                            <a href="https://www.linkedin.com/company/udyam/">
-                                <FaLinkedin className="social_icons" />
-                            </a>
-                            <a href="https://www.facebook.com/udyamfest">
-                                <FaFacebookSquare className="social_icons" />
-                            </a>
-                            <a href="https://www.instagram.com/udyam_iit_bhu/">
-                                <FaInstagramSquare className="social_icons" />
-                            </a>
+                        <div className="Teams_Tiles">
+                            <Members.nisitha_vallamdasu />
                         </div>
+                        <div className="Teams_Tiles">
+                            <Members.prajakta_priyadarsini />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.khushabu_kumari />
+                        </div>
+                    </Carousel>
+                </div>
+                <div className="abcd">
+                    <div className="Teams_Tiles">
+                        <Members.nisitha_vallamdasu />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.prajakta_priyadarsini />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.khushabu_kumari />
                     </div>
                 </div>
             </div>
@@ -97,3 +98,10 @@ const Content_and_Creative = () => {
 }
 
 export default Content_and_Creative
+
+{
+    /* <div className='Teams_Tiles'>
+    <div className="Members_Tiles">
+        </div>
+    </div> */
+}

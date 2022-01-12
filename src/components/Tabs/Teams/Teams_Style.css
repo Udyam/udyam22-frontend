@@ -2,11 +2,11 @@
     /* display: inline-block; */
     /* min-width: 100%; */
     font-family: Potra, serif;
-    color: rgba(93, 207, 223, 0.568);
+    color: rgba(205, 205, 255, 0.8);
     margin-left: auto;
-    margin-right: auto;
-    font-size: 4rem;
-    text-align: center;
+    margin-right: 6vw;
+    font-size: 5rem;
+    text-align: right;
 }
 
 @media (min-width: 769px) {
