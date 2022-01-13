@@ -23,6 +23,7 @@ import Mayank_Singh from './Mem_Images/Mayank_Singh.jpeg'
 import Ritweek_Singh from './Mem_Images/Ritweek_Singh.jpg'
 import Akshat_Jain from './Mem_Images/Akshat_Jain.jpg'
 import Pranav_Mittal from './Mem_Images/Pranav_Mittal.jpg'
+import Jayesh_Upadhyay from './Mem_Images/Jayesh_Upadhyay.jpeg'
 import Vikhyath_Venkatraman from './Mem_Images/Vikhyath_Venkatraman.jpg'
 import Eshaan_Gupta from './Mem_Images/Eshaan_Gupta.jpeg'
 import Smriti_Sharma from './Mem_Images/Smriti_Sharma.jpg'
@@ -1493,7 +1494,11 @@ const mayank_singh = () => {
 const jayesh_upadhyay = () => {
     return (
         <div className="Members_Tiles">
-            <img className="photo" src={Sample_Image} alt="Jayesh Upadhyay" />
+            <img
+                className="photo"
+                src={Jayesh_Upadhyay}
+                alt="Jayesh Upadhyay"
+            />
             <div className="Members_Description">JAYESH UPADHYAY</div>
             <div className="Members_Description">WEB COORDINATOR</div>
             <div className="Teams_social-tray">
