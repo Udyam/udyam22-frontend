@@ -1,11 +1,12 @@
 @media (min-width: 767px) {
     .container_box {
-        height: 80vh;
+        height: 78vh;
+        margin-top: -1.5vh;
     }
 
     .title {
         font-size: 3vw;
-        margin-top: 1.5%;
+        /* margin-top: 1.5%; */
     }
 
     .back_button {

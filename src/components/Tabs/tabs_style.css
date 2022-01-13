@@ -11,7 +11,7 @@
 }
 
 .Tabs-tabs li a img {
-    height: 14vh;
+    height: 15vh;
     padding: 2.7vh;
     padding-right: 30px;
     border-right: 2px solid white;
@@ -20,7 +20,7 @@
 .Tabs-Content {
     width: 85vw;
 
-    height: 98vh;
+    height: 105vh;
     border-top: 2px solid white;
     border-bottom: 2px solid white;
     border-right: 2px solid white;
