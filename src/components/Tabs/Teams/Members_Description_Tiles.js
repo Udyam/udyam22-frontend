@@ -305,7 +305,7 @@ const anshika_khare = () => {
                 <a
                     rel="noreferrer"
                     target="_blank"
-                    href="https://www.instagram.com/obstinately_awesome/"
+                    href="https://instagram.com/_____anshii___"
                 >
                     <img src={Instagram} className="social_icons" />
                 </a>
@@ -394,21 +394,21 @@ const vikash_prajapati = () => {
                 <a
                     rel="noreferrer"
                     target="_blank"
-                    href="https://www.linkedin.com/company/udyam/"
+                    href="https://www.linkedin.com/in/vikash-prajapati-a82ba01b0/"
                 >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
                 <a
                     rel="noreferrer"
                     target="_blank"
-                    href="https://www.facebook.com/udyamfest"
+                    href="https://www.facebook.com/profile.php?id=100014587241652"
                 >
                     <img src={Facebook} className="social_icons" />
                 </a>
                 <a
                     rel="noreferrer"
                     target="_blank"
-                    href="https://www.instagram.com/udyam_iit_bhu/"
+                    href="https://www.instagram.com/vikash_0307/?hl=en"
                 >
                     <img src={Instagram} className="social_icons" />
                 </a>
@@ -1507,14 +1507,14 @@ const jayesh_upadhyay = () => {
                 <a
                     rel="noreferrer"
                     target="_blank"
-                    href="https://www.facebook.com/udyamfest"
+                    href="https://www.facebook.com/jayesh.upadhyay.3950/"
                 >
                     <img src={Facebook} className="social_icons" />
                 </a>
                 <a
                     rel="noreferrer"
                     target="_blank"
-                    href="https://www.instagram.com/udyam_iit_bhu/"
+                    href="https://www.instagram.com/jayesh._upadhyay/"
                 >
                     <img src={Instagram} className="social_icons" />
                 </a>
