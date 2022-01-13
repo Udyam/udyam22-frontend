@@ -6,9 +6,11 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 12px;
+    box-shadow: 4px 4px rgba(255, 255, 255, 0.342);
 }
 
 .profileContainer li {
+    overflow-wrap: break-word;
     margin-bottom: 20px !important;
 }
 .profileContainer li h4 {
@@ -39,6 +41,7 @@
     top: 14.5vh;
     right: 55px;
     text-align: center;
+    box-shadow: 2px 1px #7cdbecd7;
 }
 
 .displayPicture {

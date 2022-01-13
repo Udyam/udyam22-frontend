@@ -19,9 +19,15 @@
     height: 22vh;
     background-color: #223349;
     border: solid 2px #7cdbecd7;
+    box-shadow: 6px 2px #7cdbec;
     border-radius: 50%;
     margin-top: -6.5vh;
     margin-left: 5vw;
+}
+
+.imageContainer:hover {
+    border-color: white;
+    box-shadow: 6px 2px rgba(255, 255, 255, 0.74);
 }
 
 .displayImage {
@@ -32,15 +38,13 @@
 }
 
 .tabs {
-    /* position: absolute; */
     font-size: 1.5em;
     border-radius: 10px;
-    /* height: 6vh; */
-    /* width: fit-content; */
     text-align: center;
     background-color: #c4c4c430;
     position: fixed;
     margin-top: 5vh;
+    box-shadow: 3px 3px rgba(255, 255, 255, 0.719);
     right: 7vw;
 }
 
@@ -98,11 +102,14 @@
 }
 
 .navLogo {
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 12px;
     margin-left: 15px;
     margin-right: 15px;
     height: 1em;
+}
+
+.navLogo:hover {
+  transform: translateX(2px) translateY(2px);
 }
 
 .displayPictureDash {
@@ -110,6 +117,7 @@
     position: relative;
     background-color: #293b53;
     border: solid 2px #7cdbecd7;
+    box-shadow: 3px 2px #7cdbecd7;
     border-radius: 100px;
     position: absolute;
     height: 10vh;
