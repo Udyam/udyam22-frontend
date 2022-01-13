@@ -12,6 +12,9 @@ import Somesh_Dey from './Mem_Images/Somesh_Dey.jpg'
 import Varsha_Jangir from './Mem_Images/Varsha_Jangir.jpg'
 import Atharva_Bhatt from './Mem_Images/Atharva_Bhatt.jpg'
 import Prashasti_Tripathi from './Mem_Images/Prashasti_Tripathi.jpg'
+import Riya_Kanojiya from './Mem_Images/Riya_Kanojiya.jpeg'
+import Raina_Jain from './Mem_Images/Raina_Jain.jpg'
+import Ayushi_Gupta from './Mem_Images/Ayushi_Gupta.jpg'
 import Anshuman_Asauliya from './Mem_Images/Anshuman_Asauliya.jpg'
 import Sanidhya_Taparia from './Mem_Images/Sanidhya_Taparia.jpeg'
 import Sanskar_Santosh_Totla from './Mem_Images/Sanskar_Santosh_Totla.jpg'
@@ -26,9 +29,11 @@ import Smriti_Sharma from './Mem_Images/Smriti_Sharma.jpg'
 import Siddharth_Anand_Srivastav from './Mem_Images/Siddharth_Anand.jpg'
 import Aditya_Agarwal from './Mem_Images/Aditya_Agarwal.jpg'
 import Swastik_Thapa from './Mem_Images/Swastik_Thapa.jpg'
+import Raj_Aryan_Srivastava from './Mem_Images/Raj_Aryan_Srivastava.jpg'
 import Yash_Jain from './Mem_Images/Yash_Jain.jpg'
 import Nisitha_Vallamdasu from './Mem_Images/Nisitha_Vallamdasu.jpg'
 import Prajakta_Priyadarsini from './Mem_Images/Prajakta_Priyadarsini.jpg'
+import Kushagra_Yadav from './Mem_Images/Kushagra_Yadav.jpg'
 import Khushabu_Kumari from './Mem_Images/Khushabu_Kumari.jpg'
 import LinkedIn from './Icons/LinkedIn.png'
 import Facebook from './Icons/Facebook.png'
@@ -45,13 +50,25 @@ const samarth_solanki = () => {
             <div className="Members_Description">SAMARTH SOLANKI</div>
             <div className="Members_Description">TECHNICAL</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/company/udyam/"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/udyamfest"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/udyam_iit_bhu/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -69,13 +86,25 @@ const easwaravaka_dinesh_reddy = () => {
             <div className="Members_Description">EASWARAVAKA DINESH REDDY</div>
             <div className="Members_Description">TECHNICAL</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/dinesh-easwaravaka-a83813171"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/profile.php?id=100004717997337"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="instagram.com/dinesh_easwar"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -90,13 +119,25 @@ const ankur_agrawal_SA = () => {
             <div className="Members_Description">ANKUR AGRAWAL</div>
             <div className="Members_Description">TECHNICAL</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/ankur-agrawal-iitbhu"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/udyamfest"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/udyam_iit_bhu/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -111,13 +152,25 @@ const akshat_goyal = () => {
             <div className="Members_Description">AKSHAT GOYAL</div>
             <div className="Members_Description">WEBSITE DEVELOPMENT</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/company/udyam/"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/udyamfest"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/udyam_iit_bhu/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -132,13 +185,25 @@ const alavala_suhas = () => {
             <div className="Members_Description">ALAVALA SUHAS</div>
             <div className="Members_Description">WEBSITE DEVELOPMENT</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/company/udyam/"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/udyamfest"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/udyam_iit_bhu/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -153,13 +218,25 @@ const ishaan_amrit = () => {
             <div className="Members_Description">ISHAAN AMRIT</div>
             <div className="Members_Description">CULTURAL</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/company/udyam/"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/udyamfest"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/udyam_iit_bhu/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -178,13 +255,25 @@ const prince_kumar_gond = () => {
             <div className="Members_Description">PRINCE KUMAR GOND</div>
             <div className="Members_Description">HEAD</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/prince-kumar-gond-3b22b81b2/"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/profile.php?id=100040114058897"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/_prince_0911"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -199,13 +288,25 @@ const anshika_khare = () => {
             <div className="Members_Description">ANSHIKA KHARE</div>
             <div className="Members_Description">COORDINATOR</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/anshika-khare-6328351b2/"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/profile.php?id=100005334887108"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/obstinately_awesome/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -220,13 +321,25 @@ const jayant_roy = () => {
             <div className="Members_Description">JAYANT ROY</div>
             <div className="Members_Description">COORDINATOR</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/jayant-roy-2716b61bb/"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/jayant.roy.5209000"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/jayant_roy__/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -241,13 +354,25 @@ const aman_kumar = () => {
             <div className="Members_Description">AMAN KUMAR</div>
             <div className="Members_Description">HEAD</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/company/udyam/"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/udyamfest"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/udyam_iit_bhu/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -266,13 +391,25 @@ const vikash_prajapati = () => {
             <div className="Members_Description">VIKASH PRAJAPATI</div>
             <div className="Members_Description">COORDINATOR</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/company/udyam/"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/udyamfest"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/udyam_iit_bhu/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -283,17 +420,29 @@ const vikash_prajapati = () => {
 const kushagra_yadav = () => {
     return (
         <div className="Members_Tiles">
-            <img className="photo" src={Sample_Image} alt="Kushagra Yadav" />
+            <img className="photo" src={Kushagra_Yadav} alt="Kushagra Yadav" />
             <div className="Members_Description">KUSHAGRA YADAV</div>
             <div className="Members_Description">COORDINATOR</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/company/udyam/"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/udyamfest"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/udyam_iit_bhu/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -308,13 +457,25 @@ const varsha_jangir = () => {
             <div className="Members_Description">VARSHA JANGIR</div>
             <div className="Members_Description">COORDINATOR</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/varsha-jangir-3ab2741b5/"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/varsha.jangir.33"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://instagram.com/_.vj_08/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -329,13 +490,25 @@ const somesh_dey = () => {
             <div className="Members_Description">SOMESH DEY</div>
             <div className="Members_Description">COORDINATOR</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/somesh-dey-351216193/"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/profile.php?id=100013708326649"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/someshdey77/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -347,19 +520,31 @@ const raj_aryan_srivastava = () => {
         <div className="Members_Tiles">
             <img
                 className="photo"
-                src={Sample_Image}
+                src={Raj_Aryan_Srivastava}
                 alt="Raj Aryan Srivastava"
             />
             <div className="Members_Description">RAJ ARYAN SRIVASTAVA</div>
             <div className="Members_Description">COORDINATOR</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/raj-aryan-srivastava-706282218"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/profile.php?id=100006718542810"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://instagram.com/_dwight_03"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -374,13 +559,25 @@ const ritweek_singh = () => {
             <div className="Members_Description">RITWEEK SINGH</div>
             <div className="Members_Description">CONVENOR</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/ritweek-singh-46b76219a/"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/ritweek.singh.129/"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/udyam_iit_bhu/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -394,13 +591,25 @@ const mohit_shringi = () => {
             <div className="Members_Description">MOHIT SHRINGI</div>
             <div className="Members_Description">GENERAL SECRETARY</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/mohit-shringi-32a461193"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/mohitshringi26"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://instagram.com/mohitshringi26"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -415,13 +624,25 @@ const akshat_jain = () => {
             <div className="Members_Description">AKSHAT JAIN</div>
             <div className="Members_Description">CO-CONVENOR</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/akshat-jain-300b031b5"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/profile.php?id=100038937260263"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/udyam_iit_bhu/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -436,13 +657,25 @@ const pranav_mittal = () => {
             <div className="Members_Description">PRANAV MITTAL</div>
             <div className="Members_Description">JOINT GENERAL SECRETARY</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/pranav_2x1/"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://m.facebook.com/100054696896423/"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/pranav-mittal-4b15a0195"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -461,13 +694,25 @@ const vikhyath_venkatraman = () => {
             <div className="Members_Description">VIKHYATH VENKATRAMAN</div>
             <div className="Members_Description">JOINT GENERAL SECRETARY</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/vikhyath-venkatraman/"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/vikhyath.venkatraman.90/"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/obstinately_awesome/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -482,13 +727,25 @@ const eshaan_gupta = () => {
             <div className="Members_Description">ESHAAN GUPTA</div>
             <div className="Members_Description">TECHNICAL SECRETARY</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/imeshaan17/"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/shaan.gupta.94617/"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/eshaan-gupta-6b5b081b2/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -503,13 +760,25 @@ const smriti_sharma = () => {
             <div className="Members_Description">SMRITI SHARMA</div>
             <div className="Members_Description">TECHNICAL SECRETARY</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/smriti06"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/udyamfest"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://instagram.com/_.simi_06/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -528,13 +797,25 @@ const siddharth_anand_srivastav_head = () => {
             <div className="Members_Description">SIDDHARTH ANAND SRIVASTAV</div>
             <div className="Members_Description">HEAD</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/anandsidd/"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/siddharthanand.srivastav"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/_siddharth__101/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -553,13 +834,25 @@ const siddharth_anand_srivastav = () => {
             <div className="Members_Description">SIDDHARTH ANAND SRIVASTAV</div>
             <div className="Members_Description">CULTURAL SECRETARY</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/anandsidd/"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/siddharthanand.srivastav"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/_siddharth__101/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -574,13 +867,25 @@ const aditya_agarwal = () => {
             <div className="Members_Description">ADITYA AGARWAL</div>
             <div className="Members_Description">CULTURAL SECRETARY</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/aditya-agarwal-662488204/"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/profile.php?id=100039745712055"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/justchill_adi/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -595,13 +900,25 @@ const swastik_thapa = () => {
             <div className="Members_Description">SWASTIK THAPA</div>
             <div className="Members_Description">SPORTS SECRETARY</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/swastik-thapa-526ba118a"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/swastik.thapa.18"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/swstk_125/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -616,13 +933,25 @@ const yash_jain = () => {
             <div className="Members_Description">YASH JAIN</div>
             <div className="Members_Description">WEB HEAD</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/company/udyam/"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/udyamfest"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/udyam_iit_bhu/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -641,13 +970,25 @@ const nisitha_vallamdasu = () => {
             <div className="Members_Description">NISITHA VALLAMDASU</div>
             <div className="Members_Description">HEAD</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/nisitha-vallamdasu-1170671a0"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/nisitha101"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/nisitha_565"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -666,13 +1007,25 @@ const prajakta_priyadarsini = () => {
             <div className="Members_Description">PRAJAKTA PRIYADARSINI</div>
             <div className="Members_Description">COORDINATOR</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/prajakta-priyadarsini-3a83751ba"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/prajakta.priyadarshini"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://instagram.com/_.__minniee_.__?utm_medium=copy_link"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -691,13 +1044,25 @@ const prajakta_priyadarsini_head = () => {
             <div className="Members_Description">PRAJAKTA PRIYADARSINI</div>
             <div className="Members_Description">HEAD</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/prajakta-priyadarsini-3a83751ba"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/prajakta.priyadarshini"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://instagram.com/_.__minniee_.__?utm_medium=copy_link"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -716,13 +1081,25 @@ const khushabu_kumari = () => {
             <div className="Members_Description">KHUSHABU KUMARI</div>
             <div className="Members_Description">COORDINATOR</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/khushabu-kumari-5915311ba"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://m.facebook.com/khushabu.chaudhary.35"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/khushabu.jnv/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -737,13 +1114,25 @@ const ayush_gangwani = () => {
             <div className="Members_Description">AYUSH GANGWANI</div>
             <div className="Members_Description">WEB COORDINATOR</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/company/udyam/"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/udyamfest"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/udyam_iit_bhu/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -758,13 +1147,25 @@ const atharva_bhatt = () => {
             <div className="Members_Description">ATHARVA BHATT</div>
             <div className="Members_Description">WEB COORDINATOR</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/atharva-bhatt-199665156/"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/atharva.bhatt.3"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/bhattatharva/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -783,13 +1184,25 @@ const sarang_manerikar = () => {
             <div className="Members_Description">SARANG MANERIKAR</div>
             <div className="Members_Description">WEB COORDINATOR</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/sarang-manerikar-06b315209/"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/udyamfest"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/udyam_iit_bhu/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -808,13 +1221,25 @@ const prashasti_tripathi = () => {
             <div className="Members_Description">PRASHASTI TRIPATHI</div>
             <div className="Members_Description">WEB COORDINATOR</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/tripathiprashasti"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/udyamfest"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/udyam_iit_bhu/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -829,13 +1254,25 @@ const ankur_agrawal = () => {
             <div className="Members_Description">ANKUR AGRAWAL</div>
             <div className="Members_Description">WEB COORDINATOR</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/company/udyam/"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/udyamfest"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/udyam_iit_bhu/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -846,17 +1283,29 @@ const ankur_agrawal = () => {
 const raina_jain = () => {
     return (
         <div className="Members_Tiles">
-            <img className="photo" src={Sample_Image} alt="Raina Jain" />
+            <img className="photo" src={Raina_Jain} alt="Raina Jain" />
             <div className="Members_Description">RAINA JAIN</div>
             <div className="Members_Description">WEB COORDINATOR</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/raina-jain-6b4b68143"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/rj35100"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/raina_jainn/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -867,17 +1316,29 @@ const raina_jain = () => {
 const ayushi_gupta = () => {
     return (
         <div className="Members_Tiles">
-            <img className="photo" src={Sample_Image} alt="Ayushi Gupta" />
+            <img className="photo" src={Ayushi_Gupta} alt="Ayushi Gupta" />
             <div className="Members_Description">AYUSHI GUPTA</div>
             <div className="Members_Description">WEB COORDINATOR</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/ayushi-gupta-125082212"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/udyamfest"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/ayushigupta400/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -896,13 +1357,25 @@ const sanskar_santosh_totla = () => {
             <div className="Members_Description">SANSKAR SANTOSH TOTLA</div>
             <div className="Members_Description">WEB COORDINATOR</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/sanskar-santosh-totla-427314200/"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/sanskar.totla.9/"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/sanskartotla/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -921,13 +1394,25 @@ const sanidhya_taparia = () => {
             <div className="Members_Description">SANIDHYA TAPARIA</div>
             <div className="Members_Description">WEB COORDINATOR</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/sanidhya-taparia-4a4760207"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/sanidhya.taparia"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/sanidhyataparia"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -946,13 +1431,25 @@ const anshuman_asauliya = () => {
             <div className="Members_Description">ANSHUMAN ASAULIYA</div>
             <div className="Members_Description">WEB COORDINATOR</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/company/udyam/"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/udyamfest"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/udyam_iit_bhu/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -967,13 +1464,25 @@ const mayank_singh = () => {
             <div className="Members_Description">MAYANK SINGH</div>
             <div className="Members_Description">WEB COORDINATOR</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/mayank-singh-4-year-b-tech-electronics-engineering-1a5791204"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/profile.php?id=100055855849690"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/mayank_s_ingh_?r=nametag"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -988,13 +1497,25 @@ const jayesh_upadhyay = () => {
             <div className="Members_Description">JAYESH UPADHYAY</div>
             <div className="Members_Description">WEB COORDINATOR</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/company/udyam/"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/udyamfest"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/udyam_iit_bhu/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -1009,13 +1530,25 @@ const suhani_agrawal = () => {
             <div className="Members_Description">SUHANI AGRAWAL</div>
             <div className="Members_Description">WEB COORDINATOR</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/suhani-agrawal-4030861bb"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/udyamfest"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/suhanii_97/?hl=en"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -1026,17 +1559,29 @@ const suhani_agrawal = () => {
 const riya_kanojiya = () => {
     return (
         <div className="Members_Tiles">
-            <img className="photo" src={Sample_Image} alt="Riya Kanojiya" />
+            <img className="photo" src={Riya_Kanojiya} alt="Riya Kanojiya" />
             <div className="Members_Description">RIYA KANOJIYA</div>
             <div className="Members_Description">WEB COORDINATOR</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/company/udyam/"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/udyamfest"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/udyam_iit_bhu/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>
@@ -1051,13 +1596,25 @@ const ayush_bemera = () => {
             <div className="Members_Description">AYUSH BEMERA</div>
             <div className="Members_Description">WEB COORDINATOR</div>
             <div className="Teams_social-tray">
-                <a href="https://www.linkedin.com/company/udyam/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/company/udyam/"
+                >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
-                <a href="https://www.facebook.com/udyamfest">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/udyamfest"
+                >
                     <img src={Facebook} className="social_icons" />
                 </a>
-                <a href="https://www.instagram.com/udyam_iit_bhu/">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/udyam_iit_bhu/"
+                >
                     <img src={Instagram} className="social_icons" />
                 </a>
             </div>

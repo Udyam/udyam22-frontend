@@ -124,7 +124,7 @@ const Header = () => {
                         >
                             <Link to="/">
                                 <img
-                                    src="./images/udyamLogo.png"
+                                    src="/images/udyamLogo.png"
                                     className="logo mx-4"
                                     alt="logo"
                                 />
@@ -276,7 +276,7 @@ const Header = () => {
                         >
                             <Link to="/">
                                 <img
-                                    src="./images/udyamLogo.png"
+                                    src="/images/udyamLogo.png"
                                     className="logo mx-4"
                                     alt="logo"
                                 />
@@ -362,7 +362,7 @@ const Header = () => {
                                                     marginTop: '0.25em',
                                                 }}
                                             >
-                                                <img src="./icon/sign-in.png" />
+                                                <img src="/icon/sign-in.png" />
                                                 Sign in
                                             </div>
                                         </Link>
