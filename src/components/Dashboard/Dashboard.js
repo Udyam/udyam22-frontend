@@ -44,12 +44,12 @@ const Dashboard = () => {
                         </Link>
                     </div>
                     <Link to="/">
-                    <div className="imageContainer">
-                        <img
-                            src="./images/udyamLogo.png"
-                            className="displayImage"
-                        />
-                    </div>
+                        <div className="imageContainer">
+                            <img
+                                src="./images/udyamLogo.png"
+                                className="displayImage"
+                            />
+                        </div>
                     </Link>
                     <div className="tabs">
                         <Nav className="justify-content-center">
@@ -102,11 +102,11 @@ const Dashboard = () => {
                                 </NavItem>
                             </div>
                             <div className="navigationMobile">
-                                <NavLink href="/" style={{padding: "0"}}>
-                                <img
-                                    className="navLogo"
-                                    src="./images/udyamLogo.png"
-                                />
+                                <NavLink href="/" style={{ padding: '0' }}>
+                                    <img
+                                        className="navLogo"
+                                        src="./images/udyamLogo.png"
+                                    />
                                 </NavLink>
                                 <NavItem>
                                     <NavLink

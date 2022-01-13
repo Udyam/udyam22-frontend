@@ -109,7 +109,7 @@
 }
 
 .navLogo:hover {
-  transform: translateX(2px) translateY(2px);
+    transform: translateX(2px) translateY(2px);
 }
 
 .displayPictureDash {
