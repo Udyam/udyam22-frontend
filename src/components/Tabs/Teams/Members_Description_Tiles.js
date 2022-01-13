@@ -103,7 +103,7 @@ const easwaravaka_dinesh_reddy = () => {
                 <a
                     rel="noreferrer"
                     target="_blank"
-                    href="instagram.com/dinesh_easwar"
+                    href="http://instagram.com/dinesh_easwar"
                 >
                     <img src={Instagram} className="social_icons" />
                 </a>
@@ -660,7 +660,7 @@ const pranav_mittal = () => {
                 <a
                     rel="noreferrer"
                     target="_blank"
-                    href="https://www.instagram.com/pranav_2x1/"
+                    href="https://www.linkedin.com/in/pranav-mittal-4b15a0195"
                 >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
@@ -674,7 +674,7 @@ const pranav_mittal = () => {
                 <a
                     rel="noreferrer"
                     target="_blank"
-                    href="https://www.linkedin.com/in/pranav-mittal-4b15a0195"
+                    href="https://www.instagram.com/pranav_2x1/"
                 >
                     <img src={Instagram} className="social_icons" />
                 </a>
@@ -730,7 +730,7 @@ const eshaan_gupta = () => {
                 <a
                     rel="noreferrer"
                     target="_blank"
-                    href="https://www.instagram.com/imeshaan17/"
+                    href="https://www.linkedin.com/in/eshaan-gupta-6b5b081b2/"
                 >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
@@ -744,7 +744,7 @@ const eshaan_gupta = () => {
                 <a
                     rel="noreferrer"
                     target="_blank"
-                    href="https://www.linkedin.com/in/eshaan-gupta-6b5b081b2/"
+                    href="https://www.instagram.com/imeshaan17/"
                 >
                     <img src={Instagram} className="social_icons" />
                 </a>
@@ -1500,7 +1500,7 @@ const jayesh_upadhyay = () => {
                 <a
                     rel="noreferrer"
                     target="_blank"
-                    href="https://www.linkedin.com/company/udyam/"
+                    href="https://www.linkedin.com/in/jayesh-upadhyay-84b46b210/"
                 >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
