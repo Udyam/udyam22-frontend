@@ -70,6 +70,7 @@ const Designers = () => {
                             },
                         }}
                         itemsToShow={1}
+                        speed={500}
                     >
                         <div className="Teams_Tiles">
                             <Members.siddharth_anand_srivastav_head />

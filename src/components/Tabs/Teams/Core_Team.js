@@ -70,6 +70,7 @@ const Core_Team = () => {
                             },
                         }}
                         itemsToShow={3}
+                        speed={500}
                     >
                         <div className="Teams_Tiles">
                             <Members.ritweek_singh />

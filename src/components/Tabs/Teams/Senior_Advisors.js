@@ -70,6 +70,7 @@ const Senior_Advisors = () => {
                             },
                         }}
                         itemsToShow={3}
+                        speed={500}
                     >
                         <div className="Teams_Tiles">
                             <Members.easwaravaka_dinesh_reddy />

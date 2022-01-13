@@ -288,7 +288,7 @@ const Header = () => {
                                         style={{ textDecoration: 'none' }}
                                     >
                                         <div className="signin-div px-2">
-                                            <img src="./icon/sign-in.png" />
+                                            <img src="/icon/sign-in.png" />
                                             Sign in
                                         </div>
                                     </Link>

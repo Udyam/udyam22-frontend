@@ -12,7 +12,7 @@
 
 .Tabs-tabs li a img {
     height: 14vh;
-    padding: calc(30px - 1vw);
+    padding: 2.7vh;
     padding-right: 30px;
     border-right: 2px solid white;
 }

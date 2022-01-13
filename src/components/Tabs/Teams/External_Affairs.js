@@ -70,6 +70,7 @@ const External_Affairs = () => {
                             },
                         }}
                         itemsToShow={3}
+                        speed={500}
                     >
                         <div className="Teams_Tiles">
                             <Members.aman_kumar />

@@ -70,6 +70,7 @@ const Developers = () => {
                             },
                         }}
                         itemsToShow={3}
+                        speed={500}
                     >
                         <div className="Teams_Tiles">
                             <Members.yash_jain />

@@ -70,6 +70,7 @@ const Content_and_Creative = () => {
                             },
                         }}
                         itemsToShow={3}
+                        speed={500}
                     >
                         <div className="Teams_Tiles">
                             <Members.nisitha_vallamdasu />

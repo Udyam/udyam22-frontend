@@ -70,6 +70,7 @@ const Public_Relations = () => {
                             },
                         }}
                         itemsToShow={3}
+                        speed={500}
                     >
                         <div className="Teams_Tiles">
                             <Members.prince_kumar_gond />

@@ -70,6 +70,7 @@ const Marketing_Team = () => {
                             },
                         }}
                         itemsToShow={3}
+                        speed={500}
                     >
                         <div className="Teams_Tiles">
                             <Members.prajakta_priyadarsini_head />
