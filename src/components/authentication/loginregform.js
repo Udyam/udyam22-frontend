@@ -1,4 +1,4 @@
-import { React, useState , useEffect} from 'react'
+import { React, useState, useEffect } from 'react'
 import axios from '../../utils/axios'
 import './loginregform.css'
 import { toast } from 'react-toastify'
@@ -23,10 +23,8 @@ export default function RegisterForm() {
     const { setToken } = useAuthContext()
 
     const userlogin = (e) => {
-        
         e.preventDefault()
         setCheck(1)
-        
     }
     useEffect(() => {
         console.log('check=', check)
@@ -43,19 +41,22 @@ export default function RegisterForm() {
                 toast.warn('Please enter your email correctly', {
                     position: toast.POSITION.BOTTOM_RIGHT,
                 })
-                setuser_email("")
-                setuser_pass("")
+                setuser_email('')
+                setuser_pass('')
                 setCheck(0)
-                return 
+                return
             }
             toast.info('Checking credentials...', {
                 position: toast.POSITION.BOTTOM_RIGHT,
             })
             axios
-                .post('https://udyam22-backend.herokuapp.com/' + 'auth/login/', {
-                    email: user_email,
-                    password: user_pass,
-                })
+                .post(
+                    'https://udyam22-backend.herokuapp.com/' + 'auth/login/',
+                    {
+                        email: user_email,
+                        password: user_pass,
+                    }
+                )
                 .then((response) => {
                     toast.success('Successfully logged in!!', {
                         position: toast.POSITION.BOTTOM_RIGHT,
@@ -64,8 +65,8 @@ export default function RegisterForm() {
                         setToken(response.data.token)
                         history.push('/comingsoon')
                     }
-                    setuser_email("")
-                    setuser_pass("")
+                    setuser_email('')
+                    setuser_pass('')
                     setCheck(0)
                 })
                 .catch((err) => {
@@ -73,11 +74,10 @@ export default function RegisterForm() {
                     toast.error(err.response.data.error, {
                         position: toast.POSITION.BOTTOM_RIGHT,
                     })
-                    setuser_email("")
-                    setuser_pass("")
+                    setuser_email('')
+                    setuser_pass('')
                     setCheck(0)
                 })
-            
         }
     }, [check])
 
@@ -138,7 +138,7 @@ export default function RegisterForm() {
 
     const register = (e) => {
         e.preventDefault()
-        
+
         if (
             registerFieldsAreValid(
                 Name,
@@ -152,8 +152,8 @@ export default function RegisterForm() {
             toast.warning('Please wait...', {
                 position: toast.POSITION.BOTTOM_RIGHT,
             })
-            setCheck(2)}
-            
+            setCheck(2)
+        }
     }
     useEffect(() => {
         console.log('check=', check)
@@ -180,13 +180,13 @@ export default function RegisterForm() {
                         'Please check your email for the verification link!!',
                         { position: toast.POSITION.BOTTOM_RIGHT }
                     )
-                    setName("")
-                    setCollegeName("")
-                    setConfirmpassword("")
-                    setEmail("")
-                    setPassword("")
-                    setReferalcode("")
-                    setYear("")
+                    setName('')
+                    setCollegeName('')
+                    setConfirmpassword('')
+                    setEmail('')
+                    setPassword('')
+                    setReferalcode('')
+                    setYear('')
                     {
                         setToken(response.data.token)
                         history.push('/comingsoon')
@@ -195,23 +195,25 @@ export default function RegisterForm() {
                 })
                 .catch(function (err) {
                     console.log(err)
-                    toast.error(err.response.data.error, {
-                    position: toast.POSITION.BOTTOM_RIGHT,
+                    toast.error(err.response.data.email, {
+                        position: toast.POSITION.BOTTOM_RIGHT,
                     })
-                    setName("")
-                    setCollegeName("")
-                    setConfirmpassword("")
-                    setEmail("")
-                    setPassword("")
-                    setReferalcode("")
-                    setYear("")
+                    toast.error(err.response.data.referral_code, {
+                        position: toast.POSITION.BOTTOM_RIGHT,
+                    })
+                    setName('')
+                    setCollegeName('')
+                    setConfirmpassword('')
+                    setEmail('')
+                    setPassword('')
+                    setReferalcode('')
+                    setYear('')
                     setCheck(0)
                 })
-                setCheck(0)
-            
+            setCheck(0)
         }
     }, [check])
-    
+
     const [addclass, setaddclass] = useState('')
     return (
         <div className="loginregform-final">
