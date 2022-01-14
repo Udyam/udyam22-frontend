@@ -1,10 +1,15 @@
+.bg-dash {
+    padding-top: 12vh;
+    padding-bottom: 6vh;
+    background: url('background.png') center center/cover;
+}
+
 .dashboardContainer {
     background: linear-gradient(
         rgba(255, 255, 255, 0.15),
         rgba(255, 255, 255, 0.2),
         rgba(255, 255, 255, 0.15)
     );
-    margin-top: 12vh;
     height: 82vh;
     width: 92vw;
     margin-left: auto;
