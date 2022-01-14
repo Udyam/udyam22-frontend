@@ -16,11 +16,17 @@ import {
 
 import AwesomeSlider from 'react-awesome-slider'
 import 'react-awesome-slider/dist/styles.css'
+import Slider_Right from './Events_Images/Slider_Arrow_Right.png'
 
 const Event = () => {
     const slider = (
         <div className="events_media_query">
-            <AwesomeSlider animation="cubeAnimation">
+            <AwesomeSlider
+                organicArrows={true}
+                bullets={true}
+                mobileTouch={true}
+                animation="cubeAnimation"
+            >
                 <div className="events_slider">
                     <Mosaic />
                 </div>
@@ -208,7 +214,16 @@ const Event = () => {
                         }}
                         onRequestChange={setActiveSlide}
                         forwardBtnProps={{
-                            children: '',
+                            children: (
+                                <img
+                                    src={Slider_Right}
+                                    style={{
+                                        width: '100%',
+                                        height: 'auto',
+                                        marginBottom: '15%',
+                                    }}
+                                ></img>
+                            ),
                             style: {
                                 width: '2vw',
                                 height: '2vw',
@@ -216,11 +231,22 @@ const Event = () => {
                                 alignSelf: 'center',
                                 border: 'none',
                                 borderRadius: '50%',
-                                backgroundColor: 'rgba(148,148,148,1)',
+                                justifyContent: 'center',
+                                backgroundColor: 'rgba(255,255,255,1)',
                             },
                         }}
                         backwardBtnProps={{
-                            children: '',
+                            children: (
+                                <img
+                                    src={Slider_Right}
+                                    style={{
+                                        width: '100%',
+                                        height: 'auto',
+                                        marginBottom: '15%',
+                                        transform: 'scaleX(-1)',
+                                    }}
+                                ></img>
+                            ),
                             style: {
                                 width: '2vw',
                                 height: '2vw',
@@ -228,7 +254,7 @@ const Event = () => {
                                 alignSelf: 'center',
                                 border: 'none',
                                 borderRadius: '50%',
-                                backgroundColor: 'rgba(148,148,148,1)',
+                                backgroundColor: 'rgba(255,255,255,1)',
                             },
                         }}
                         itemsToShow={2}

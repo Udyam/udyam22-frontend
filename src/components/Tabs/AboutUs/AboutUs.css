@@ -1,4 +1,4 @@
-@media (min-width: 769px) {
+@media (min-width: 945px) {
     .aboutUs_head {
         text-align: right;
         font-size: 5rem;
@@ -52,7 +52,7 @@
     color: #fcfbfc;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 945px) {
     .Aboutus-container {
         display: flex;
         flex-direction: column;

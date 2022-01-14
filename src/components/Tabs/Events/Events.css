@@ -136,9 +136,12 @@
     border: 1px solid #00b4d8;
     text-align: center;
     border-radius: 10px;
+    background-color: #00b4d8;
+    color: white;
+    cursor: pointer;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 945px) {
     .Events-Desktop_Carousel {
         display: none;
     }
@@ -201,7 +204,8 @@
         flex-direction: row;
         /* width: 35vw; */
         flex-direction: row;
-        margin-bottom: 4%;
+        margin-bottom: 1vh;
+        margin-top: 1vh;
         justify-content: space-evenly;
     }
 
@@ -214,16 +218,25 @@
         font-family: raleway;
         font-size: 1.65vh;
         display: auto-fit;
-        height: 31.5vh;
+        height: auto;
     }
 
     .Events_head {
         text-align: center;
         font-size: 3rem;
     }
+
+    .awssld__bullets button {
+        transform: scale(0.7);
+        background-color: white;
+    }
+
+    .awssld__bullets .awssld__bullets--active:hover {
+        transform: scale(0.4);
+    }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 945px) {
     .events_media_query {
         display: none;
         background-color: #00b4d8;
