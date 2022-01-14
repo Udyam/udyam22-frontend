@@ -63,7 +63,7 @@ export default function RegisterForm() {
                     })
                     {
                         setToken(response.data.token)
-                        history.push('/comingsoon')
+                        history.push('/dashboard')
                     }
                     setuser_email('')
                     setuser_pass('')
