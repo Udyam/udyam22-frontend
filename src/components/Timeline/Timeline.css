@@ -34,6 +34,7 @@
     width: 50%;
     text-align: center;
     box-sizing: border-box;
+    margin-top: -40px;
 }
 
 .container-time.left {
@@ -70,7 +71,7 @@
 }
 
 .container-time .content-time {
-    padding: 30px;
+    padding: 20px 30px;
     background: rgb(196, 196, 196, 0.6);
     position: relative;
     border-radius: 50px;
@@ -92,10 +93,10 @@
 
 .container-time .content-time p {
     margin: 0;
-    font-size: 16px;
     line-height: 22px;
     color: #ffffff;
     font-size: 16px;
+    font-family: 'Raleway';
 }
 
 @media (max-width: 767.98px) {

@@ -110,7 +110,7 @@ const Header = () => {
                 style={{
                     position: 'sticky',
                     top: 0,
-                    zIndex: 1,
+                    zIndex: 10,
                     filter: 'drop-shadow(0px 2px 5px #bebdbd)',
                 }}
             >
@@ -261,7 +261,7 @@ const Header = () => {
                 style={{
                     position: 'sticky',
                     top: 0,
-                    zIndex: 1,
+                    zIndex: 10,
                     filter: 'drop-shadow(0px 2px 5px #bebdbd)',
                 }}
             >
