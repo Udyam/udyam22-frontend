@@ -68,6 +68,11 @@ const Event = () => {
 
     const [activeSlide, setActiveSlide] = useState(0)
 
+    function CheckBrowser() {
+        if (navigator.userAgent.indexOf('Firefox') > -1) return 0
+        return 1200
+    }
+
     const changeHandler1 = () => {
         setActiveSlide(0)
     }
@@ -218,31 +223,10 @@ const Event = () => {
                                 <img
                                     src={Slider_Right}
                                     style={{
-                                        width: '100%',
-                                        height: 'auto',
-                                        marginBottom: '15%',
-                                    }}
-                                ></img>
-                            ),
-                            style: {
-                                width: '2vw',
-                                height: '2vw',
-                                // minWidth: 60,
-                                alignSelf: 'center',
-                                border: 'none',
-                                borderRadius: '50%',
-                                justifyContent: 'center',
-                                backgroundColor: 'rgba(255,255,255,1)',
-                            },
-                        }}
-                        backwardBtnProps={{
-                            children: (
-                                <img
-                                    src={Slider_Right}
-                                    style={{
-                                        width: '100%',
-                                        height: 'auto',
-                                        marginBottom: '15%',
+                                        width: 'auto',
+                                        height: '70%',
+                                        marginLeft: '12%',
+                                        marginBottom: '9%',
                                         transform: 'scaleX(-1)',
                                     }}
                                 ></img>
@@ -254,11 +238,34 @@ const Event = () => {
                                 alignSelf: 'center',
                                 border: 'none',
                                 borderRadius: '50%',
-                                backgroundColor: 'rgba(255,255,255,1)',
+                                justifyContent: 'center',
+                                backgroundColor: 'rgba(144, 224, 239,1)',
+                            },
+                        }}
+                        backwardBtnProps={{
+                            children: (
+                                <img
+                                    src={Slider_Right}
+                                    style={{
+                                        width: 'auto',
+                                        height: '70%',
+                                        marginRight: '12%',
+                                        marginBottom: '9%',
+                                    }}
+                                ></img>
+                            ),
+                            style: {
+                                width: '2vw',
+                                height: '2vw',
+                                // minWidth: 60,
+                                alignSelf: 'center',
+                                border: 'none',
+                                borderRadius: '50%',
+                                backgroundColor: 'rgba(144, 224, 239,1)',
                             },
                         }}
                         itemsToShow={2}
-                        speed={1200}
+                        speed={CheckBrowser()}
                         delay={-600}
                         easing={'ease-in-out'}
                     >

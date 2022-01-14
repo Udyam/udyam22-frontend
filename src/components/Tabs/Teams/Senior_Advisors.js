@@ -9,6 +9,11 @@ import Backward from './Icons/Back_Arrow.png'
 const Senior_Advisors = () => {
     const [activeSlide, setActiveSlide] = useState(0)
 
+    function CheckBrowser() {
+        if (navigator.userAgent.indexOf('Firefox') > -1) return 0
+        return 500
+    }
+
     return (
         <Route>
             <div className="container_box" id="Teams_Scrollbar">
@@ -70,7 +75,7 @@ const Senior_Advisors = () => {
                             },
                         }}
                         itemsToShow={3}
-                        speed={500}
+                        speed={CheckBrowser()}
                     >
                         <div className="Teams_Tiles">
                             <Members.easwaravaka_dinesh_reddy />
