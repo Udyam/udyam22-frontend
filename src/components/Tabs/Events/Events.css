@@ -9,7 +9,7 @@
 
 .Events-Desktop_Carousel {
     width: 50vw;
-    height: 39vw;
+    height: 38vw;
     margin-left: auto;
     margin-right: auto;
 }
@@ -26,7 +26,7 @@
 
 .Event_Carousel_Tiles {
     width: 22vw;
-    height: 39vw;
+    height: 38vw;
     justify-items: center;
     transform: scale(0.7);
     background: rgba(2, 32, 73, 0.75);
