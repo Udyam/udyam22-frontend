@@ -9,7 +9,7 @@ const Timeline = () => {
                 <img
                     src="./images/timelineImage.png"
                     alt="Timeline"
-                    className="p-2 img-fluid imageTimeline"
+                    className="my-4 p-2 img-fluid imageTimeline"
                 />
             </div>
             <div className="timeline" id="timeline-main-container">
