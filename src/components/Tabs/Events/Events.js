@@ -208,7 +208,7 @@ const Event = () => {
                         }}
                         onRequestChange={setActiveSlide}
                         forwardBtnProps={{
-                            children: '>',
+                            children: '',
                             style: {
                                 width: '2vw',
                                 height: '2vw',
@@ -220,7 +220,7 @@ const Event = () => {
                             },
                         }}
                         backwardBtnProps={{
-                            children: '<',
+                            children: '',
                             style: {
                                 width: '2vw',
                                 height: '2vw',

@@ -39,6 +39,10 @@
     filter: blur(0px);
 }
 
+.Event_Carousel_Tiles.forward.EventsActiveSlider > .Events_Link_Holder {
+    display: flex;
+}
+
 .Event_Panel_Left {
     width: 25vw;
     height: 40vw;
@@ -99,7 +103,10 @@
     font-family: raleway;
     padding: 0.5vw;
     font-size: 1vw;
-    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
     height: 18vw;
 }
 
@@ -115,12 +122,10 @@
 }
 
 .Events_Link_Holder {
-    display: flex;
+    display: none;
     flex-direction: row;
     margin-bottom: 1.5%;
-    margin-right: 2vw;
-    margin-left: 2vw;
-    column-gap: 5%;
+    justify-content: space-evenly;
 }
 
 .Events_Inner_Link {
@@ -129,8 +134,8 @@
     width: 4vw;
     height: 4vh;
     border: 1px solid #00b4d8;
-    margin-left: 1%;
-    margin-right: 1%;
+    text-align: center;
+    border-radius: 10px;
 }
 
 @media (max-width: 769px) {
@@ -194,11 +199,14 @@
     .Events_Link_Holder {
         display: flex;
         flex-direction: row;
-        width: 35vw;
+        /* width: 35vw; */
+        flex-direction: row;
+        margin-bottom: 4%;
+        justify-content: space-evenly;
     }
 
     .Events_Inner_Link {
-        margin-left: 2vw;
+        /* margin-left: 2vw; */
         width: 15vw;
     }
 

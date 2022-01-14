@@ -36,19 +36,19 @@ const Mosaic = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
 
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS2</div>
                 </a>
 
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS3</div>
                 </a>
 
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS4</div>
                 </a>
             </div>
@@ -84,19 +84,19 @@ const Ichip = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
 
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS2</div>
                 </a>
 
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS3</div>
                 </a>
 
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS4</div>
                 </a>
             </div>
@@ -131,19 +131,19 @@ const Spybits = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
 
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS2</div>
                 </a>
 
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS3</div>
                 </a>
 
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS4</div>
                 </a>
             </div>
@@ -177,19 +177,19 @@ const Commnet = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
 
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS2</div>
                 </a>
 
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS3</div>
                 </a>
 
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS4</div>
                 </a>
             </div>
@@ -224,19 +224,19 @@ const Xiota = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <a href="">
+                <a href="" rel="noreferrer" target="_blank">
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
 
-                <a href="">
+                <a href="" rel="noreferrer" target="_blank">
                     <div className="Events_Inner_Link">PS2</div>
                 </a>
 
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS3</div>
                 </a>
 
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS4</div>
                 </a>
             </div>
@@ -270,19 +270,19 @@ const Cassandra = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
 
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS2</div>
                 </a>
 
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS3</div>
                 </a>
 
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS4</div>
                 </a>
             </div>
@@ -316,19 +316,19 @@ const Digisim = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
 
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS2</div>
                 </a>
 
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS3</div>
                 </a>
 
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS4</div>
                 </a>
             </div>
@@ -361,19 +361,19 @@ const Funckit = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
 
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS2</div>
                 </a>
 
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS3</div>
                 </a>
 
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS4</div>
                 </a>
             </div>
@@ -406,19 +406,19 @@ const Continuum = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
 
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS2</div>
                 </a>
 
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS3</div>
                 </a>
 
-                <a href="">
+                <a rel="noreferrer" target="_blank" href="">
                     <div className="Events_Inner_Link">PS4</div>
                 </a>
             </div>
