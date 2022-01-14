@@ -236,10 +236,10 @@ const Profile = ({ dashboardToken }) => {
                     </div>
                 </li>
                 <li>
-                    <h4>Email id: {user.email}</h4>
+                    <h4 id="profile-email">Email id: {user.email}</h4>
                 </li>
                 <li>
-                    <h4>
+                    <h4 id="profile-year">
                         Year:{' '}
                         {user.year == 'ONE'
                             ? '1st Year'
@@ -253,7 +253,9 @@ const Profile = ({ dashboardToken }) => {
                     </h4>
                 </li>
                 <li>
-                    <h4>Referral Code: {user.referral_code}</h4>
+                    <h4 id="profile-referral">
+                        Referral Code: {user.referral_code}
+                    </h4>
                 </li>
             </ul>
             <div id="profile-edit-button">

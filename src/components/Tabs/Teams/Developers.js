@@ -1,416 +1,180 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Sub_Files.css'
+import Carousel from 'react-simply-carousel'
 import { Route, Link } from 'react-router-dom'
-import Sample_Image from './Mem_Images/Sample_Image.jpg'
-import { FaFacebookSquare, FaLinkedin, FaInstagramSquare } from 'react-icons/fa'
-import Yash_Jain from './Mem_Images/Yash_Jain.jpg'
-import Atharva_Bhatt from './Mem_Images/Atharva_Bhatt.jpg'
-import Prashasti_Tripathi from './Mem_Images/Prashasti_Tripathi.jpg'
-import Anshuman_Asauliya from './Mem_Images/Anshuman_Asauliya.jpg'
-import Sanidhya_Taparia from './Mem_Images/Sanidhya_Taparia.jpeg'
-import Sanskar_Santosh_Totla from './Mem_Images/Sanskar_Santosh_Totla.jpg'
-import Sarang_Manerikar from './Mem_Images/Sarang_Manerikar.jpeg'
-import Mayank_Singh from './Mem_Images/Mayank_Singh.jpeg'
+import * as Members from './Members_Description_Tiles.js'
+import Forward from './Icons/Front_Arrow.png'
+import Backward from './Icons/Back_Arrow.png'
 
 const Developers = () => {
+    const [activeSlide, setActiveSlide] = useState(0)
+
+    function CheckBrowser() {
+        if (navigator.userAgent.indexOf('Firefox') > -1) return 0
+        return 500
+    }
+
     return (
         <Route>
-            <Link className="back_button" to="/team">
-                Back
-            </Link>
-
             <div className="container_box" id="Teams_Scrollbar">
+                <Link className="back_button" to="/team">
+                    Back
+                </Link>
                 <h1 className="title">DEVELOPERS</h1>
-
-                <div className="row">
-                    <div className="tile1">
-                        <img
-                            className="photo"
-                            src={Yash_Jain}
-                            alt="Hello World"
-                        />
-
-                        <div>YASH JAIN</div>
-                        <div>WEB HEAD</div>
-
-                        <div id="Teams_social-tray">
-                            <a href="https://www.linkedin.com/company/udyam/">
-                                <FaLinkedin className="social_icons" />
-                            </a>
-                            <a href="https://www.facebook.com/udyamfest">
-                                <FaFacebookSquare className="social_icons" />
-                            </a>
-                            <a href="https://www.instagram.com/udyam_iit_bhu/">
-                                <FaInstagramSquare className="social_icons" />
-                            </a>
+                <div className="Teams_Carousel_Container">
+                    <Carousel
+                        disableNavIfAllVisible={false}
+                        disableNavIfEdgeVisible={false}
+                        disableNavIfEdgeActive={false}
+                        hideNavIfAllVisible={false}
+                        centerMode
+                        updateOnItemClick
+                        itemsListProps={{
+                            style: {
+                                marginRight: '0vw',
+                            },
+                        }}
+                        containerProps={{
+                            style: {
+                                marginTop: '3.5vh',
+                                marginRight: '2vw',
+                                marginLeft: '2vw',
+                                height: '100%',
+                                justifyContent: 'space-between',
+                            },
+                        }}
+                        activeSlideIndex={activeSlide}
+                        activeSlideProps={{
+                            className: 'ActiveSlider',
+                        }}
+                        onRequestChange={setActiveSlide}
+                        forwardBtnProps={{
+                            children: (
+                                <img src={Forward} className="Icons_Arrows" />
+                            ),
+                            style: {
+                                width: '3.5vw',
+                                height: '7vh',
+                                minWidth: 60,
+                                alignSelf: 'center',
+                                border: 'none',
+                                borderRadius: '50%',
+                            },
+                        }}
+                        backwardBtnProps={{
+                            children: (
+                                <img src={Backward} className="Icons_Arrows" />
+                            ),
+                            style: {
+                                width: '3.5vw',
+                                height: '7vh',
+                                minWidth: 60,
+                                alignSelf: 'center',
+                                border: 'none',
+                                borderRadius: '50%',
+                            },
+                        }}
+                        itemsToShow={3}
+                        speed={CheckBrowser()}
+                    >
+                        <div className="Teams_Tiles">
+                            <Members.yash_jain />
                         </div>
-                    </div>
-
-                    <div className="tile2">
-                        <img
-                            className="photo"
-                            src={Sample_Image}
-                            alt="Hello World"
-                        />
-
-                        <div>AYUSH GANGWANI</div>
-                        <div>WEB COORDINATOR</div>
-
-                        <div id="Teams_social-tray">
-                            <a href="https://www.linkedin.com/company/udyam/">
-                                <FaLinkedin className="social_icons" />
-                            </a>
-                            <a href="https://www.facebook.com/udyamfest">
-                                <FaFacebookSquare className="social_icons" />
-                            </a>
-                            <a href="https://www.instagram.com/udyam_iit_bhu/">
-                                <FaInstagramSquare className="social_icons" />
-                            </a>
+                        <div className="Teams_Tiles">
+                            <Members.ayush_gangwani />
                         </div>
-                    </div>
+                        <div className="Teams_Tiles">
+                            <Members.atharva_bhatt />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.sarang_manerikar />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.prashasti_tripathi />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.ankur_agrawal />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.raina_jain />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.ayushi_gupta />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.sanskar_santosh_totla />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.sanidhya_taparia />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.anshuman_asauliya />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.mayank_singh />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.jayesh_upadhyay />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.suhani_agrawal />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.riya_kanojiya />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.ayush_bemera />
+                        </div>
+                    </Carousel>
                 </div>
-
-                <div className="row">
-                    <div className="tile1">
-                        <img
-                            className="photo"
-                            src={Atharva_Bhatt}
-                            alt="Hello World"
-                        />
-
-                        <div>ATHARVA BHATT</div>
-                        <div>WEB COORDINATOR</div>
-
-                        <div id="Teams_social-tray">
-                            <a href="https://www.linkedin.com/company/udyam/">
-                                <FaLinkedin className="social_icons" />
-                            </a>
-                            <a href="https://www.facebook.com/udyamfest">
-                                <FaFacebookSquare className="social_icons" />
-                            </a>
-                            <a href="https://www.instagram.com/udyam_iit_bhu/">
-                                <FaInstagramSquare className="social_icons" />
-                            </a>
-                        </div>
+                <div className="Teams_Mobile_Container">
+                    <div className="Teams_Tiles">
+                        <Members.yash_jain />
                     </div>
-
-                    <div className="tile2">
-                        <img
-                            className="photo"
-                            src={Sarang_Manerikar}
-                            alt="Hello World"
-                        />
-
-                        <div>SARANG MANERIKAR</div>
-                        <div>WEB COORDINATOR</div>
-
-                        <div id="Teams_social-tray">
-                            <a href="https://www.linkedin.com/company/udyam/">
-                                <FaLinkedin className="social_icons" />
-                            </a>
-                            <a href="https://www.facebook.com/udyamfest">
-                                <FaFacebookSquare className="social_icons" />
-                            </a>
-                            <a href="https://www.instagram.com/udyam_iit_bhu/">
-                                <FaInstagramSquare className="social_icons" />
-                            </a>
-                        </div>
+                    <div className="Teams_Tiles">
+                        <Members.ayush_gangwani />
                     </div>
-                </div>
-
-                <div className="row">
-                    <div className="tile1">
-                        <img
-                            className="photo"
-                            src={Prashasti_Tripathi}
-                            alt="Hello World"
-                        />
-
-                        <div>PRASHASTI TRIPATHI</div>
-                        <div>WEB COORDINATOR</div>
-
-                        <div id="Teams_social-tray">
-                            <a href="https://www.linkedin.com/company/udyam/">
-                                <FaLinkedin className="social_icons" />
-                            </a>
-                            <a href="https://www.facebook.com/udyamfest">
-                                <FaFacebookSquare className="social_icons" />
-                            </a>
-                            <a href="https://www.instagram.com/udyam_iit_bhu/">
-                                <FaInstagramSquare className="social_icons" />
-                            </a>
-                        </div>
+                    <div className="Teams_Tiles">
+                        <Members.atharva_bhatt />
                     </div>
-
-                    <div className="tile2">
-                        <img
-                            className="photo"
-                            src={Sample_Image}
-                            alt="Hello World"
-                        />
-
-                        <div>ANKUR AGRAWAL</div>
-                        <div>WEB COORDINATOR</div>
-
-                        <div id="Teams_social-tray">
-                            <a href="https://www.linkedin.com/company/udyam/">
-                                <FaLinkedin className="social_icons" />
-                            </a>
-                            <a href="https://www.facebook.com/udyamfest">
-                                <FaFacebookSquare className="social_icons" />
-                            </a>
-                            <a href="https://www.instagram.com/udyam_iit_bhu/">
-                                <FaInstagramSquare className="social_icons" />
-                            </a>
-                        </div>
+                    <div className="Teams_Tiles">
+                        <Members.sarang_manerikar />
                     </div>
-                </div>
-
-                <div className="row">
-                    <div className="tile1">
-                        <img
-                            className="photo"
-                            src={Sample_Image}
-                            alt="Hello World"
-                        />
-
-                        <div>RAINA JAIN</div>
-                        <div>WEB COORDINATOR</div>
-
-                        <div id="Teams_social-tray">
-                            <a href="https://www.linkedin.com/company/udyam/">
-                                <FaLinkedin className="social_icons" />
-                            </a>
-                            <a href="https://www.facebook.com/udyamfest">
-                                <FaFacebookSquare className="social_icons" />
-                            </a>
-                            <a href="https://www.instagram.com/udyam_iit_bhu/">
-                                <FaInstagramSquare className="social_icons" />
-                            </a>
-                        </div>
+                    <div className="Teams_Tiles">
+                        <Members.prashasti_tripathi />
                     </div>
-
-                    <div className="tile2">
-                        <img
-                            className="photo"
-                            src={Sample_Image}
-                            alt="Hello World"
-                        />
-
-                        <div>AYUSHI GUPTA</div>
-                        <div>WEB COORDINATOR</div>
-
-                        <div id="Teams_social-tray">
-                            <a href="https://www.linkedin.com/company/udyam/">
-                                <FaLinkedin className="social_icons" />
-                            </a>
-                            <a href="https://www.facebook.com/udyamfest">
-                                <FaFacebookSquare className="social_icons" />
-                            </a>
-                            <a href="https://www.instagram.com/udyam_iit_bhu/">
-                                <FaInstagramSquare className="social_icons" />
-                            </a>
-                        </div>
+                    <div className="Teams_Tiles">
+                        <Members.ankur_agrawal />
                     </div>
-                </div>
-
-                <div className="row">
-                    <div className="tile1">
-                        <img
-                            className="photo"
-                            src={Sanskar_Santosh_Totla}
-                            alt="Hello World"
-                        />
-
-                        <div className="teams_oveflow_names">
-                            SANSKAR SANTOSH TOTLA
-                        </div>
-                        <div className="teams_oveflow_names">
-                            WEB COORDINATOR
-                        </div>
-
-                        <div id="Teams_social-tray">
-                            <a href="https://www.linkedin.com/company/udyam/">
-                                <FaLinkedin className="social_icons" />
-                            </a>
-                            <a href="https://www.facebook.com/udyamfest">
-                                <FaFacebookSquare className="social_icons" />
-                            </a>
-                            <a href="https://www.instagram.com/udyam_iit_bhu/">
-                                <FaInstagramSquare className="social_icons" />
-                            </a>
-                        </div>
+                    <div className="Teams_Tiles">
+                        <Members.raina_jain />
                     </div>
-
-                    <div className="tile2">
-                        <img
-                            className="photo"
-                            src={Sanidhya_Taparia}
-                            alt="Hello World"
-                        />
-
-                        <div>SANIDHYA TAPARIA</div>
-                        <div>WEB COORDINATOR</div>
-
-                        <div id="Teams_social-tray">
-                            <a href="https://www.linkedin.com/company/udyam/">
-                                <FaLinkedin className="social_icons" />
-                            </a>
-                            <a href="https://www.facebook.com/udyamfest">
-                                <FaFacebookSquare className="social_icons" />
-                            </a>
-                            <a href="https://www.instagram.com/udyam_iit_bhu/">
-                                <FaInstagramSquare className="social_icons" />
-                            </a>
-                        </div>
+                    <div className="Teams_Tiles">
+                        <Members.ayushi_gupta />
                     </div>
-                </div>
-
-                <div className="row">
-                    <div className="tile1">
-                        <img
-                            className="photo"
-                            src={Anshuman_Asauliya}
-                            alt="Hello World"
-                        />
-
-                        <div className="teams_oveflow_names">
-                            ANSHUMAN ASAULIYA
-                        </div>
-                        <div className="teams_oveflow_names">
-                            WEB COORDINATOR
-                        </div>
-
-                        <div id="Teams_social-tray">
-                            <a href="https://www.linkedin.com/company/udyam/">
-                                <FaLinkedin className="social_icons" />
-                            </a>
-                            <a href="https://www.facebook.com/udyamfest">
-                                <FaFacebookSquare className="social_icons" />
-                            </a>
-                            <a href="https://www.instagram.com/udyam_iit_bhu/">
-                                <FaInstagramSquare className="social_icons" />
-                            </a>
-                        </div>
+                    <div className="Teams_Tiles">
+                        <Members.sanskar_santosh_totla />
                     </div>
-
-                    <div className="tile2">
-                        <img
-                            className="photo"
-                            src={Mayank_Singh}
-                            alt="Hello World"
-                        />
-
-                        <div>MAYANK SINGH</div>
-                        <div>WEB COORDINATOR</div>
-
-                        <div id="Teams_social-tray">
-                            <a href="https://www.linkedin.com/company/udyam/">
-                                <FaLinkedin className="social_icons" />
-                            </a>
-                            <a href="https://www.facebook.com/udyamfest">
-                                <FaFacebookSquare className="social_icons" />
-                            </a>
-                            <a href="https://www.instagram.com/udyam_iit_bhu/">
-                                <FaInstagramSquare className="social_icons" />
-                            </a>
-                        </div>
+                    <div className="Teams_Tiles">
+                        <Members.sanidhya_taparia />
                     </div>
-                </div>
-
-                <div className="row">
-                    <div className="tile1">
-                        <img
-                            className="photo"
-                            src={Sample_Image}
-                            alt="Hello World"
-                        />
-
-                        <div>JAYESH UPADHYAY</div>
-                        <div>WEB COORDINATOR</div>
-
-                        <div id="Teams_social-tray">
-                            <a href="https://www.linkedin.com/company/udyam/">
-                                <FaLinkedin className="social_icons" />
-                            </a>
-                            <a href="https://www.facebook.com/udyamfest">
-                                <FaFacebookSquare className="social_icons" />
-                            </a>
-                            <a href="https://www.instagram.com/udyam_iit_bhu/">
-                                <FaInstagramSquare className="social_icons" />
-                            </a>
-                        </div>
+                    <div className="Teams_Tiles">
+                        <Members.anshuman_asauliya />
                     </div>
-
-                    <div className="tile2">
-                        <img
-                            className="photo"
-                            src={Sample_Image}
-                            alt="Hello World"
-                        />
-
-                        <div>SUHANI AGRAWAL</div>
-                        <div>WEB COORDINATOR</div>
-
-                        <div id="Teams_social-tray">
-                            <a href="https://www.linkedin.com/company/udyam/">
-                                <FaLinkedin className="social_icons" />
-                            </a>
-                            <a href="https://www.facebook.com/udyamfest">
-                                <FaFacebookSquare className="social_icons" />
-                            </a>
-                            <a href="https://www.instagram.com/udyam_iit_bhu/">
-                                <FaInstagramSquare className="social_icons" />
-                            </a>
-                        </div>
+                    <div className="Teams_Tiles">
+                        <Members.mayank_singh />
                     </div>
-                </div>
-
-                <div className="row">
-                    <div className="tile1">
-                        <img
-                            className="photo"
-                            src={Sample_Image}
-                            alt="Hello World"
-                        />
-
-                        <div>RIYA KANOJIYA</div>
-                        <div>WEB COORDINATOR</div>
-
-                        <div id="Teams_social-tray">
-                            <a href="https://www.linkedin.com/company/udyam/">
-                                <FaLinkedin className="social_icons" />
-                            </a>
-                            <a href="https://www.facebook.com/udyamfest">
-                                <FaFacebookSquare className="social_icons" />
-                            </a>
-                            <a href="https://www.instagram.com/udyam_iit_bhu/">
-                                <FaInstagramSquare className="social_icons" />
-                            </a>
-                        </div>
+                    <div className="Teams_Tiles">
+                        <Members.jayesh_upadhyay />
                     </div>
-
-                    <div className="tile2">
-                        <img
-                            className="photo"
-                            src={Sample_Image}
-                            alt="Hello World"
-                        />
-
-                        <div>AYUSH BEMERA</div>
-                        <div>WEB COORDINATOR</div>
-
-                        <div id="Teams_social-tray">
-                            <a href="https://www.linkedin.com/company/udyam/">
-                                <FaLinkedin className="social_icons" />
-                            </a>
-                            <a href="https://www.facebook.com/udyamfest">
-                                <FaFacebookSquare className="social_icons" />
-                            </a>
-                            <a href="https://www.instagram.com/udyam_iit_bhu/">
-                                <FaInstagramSquare className="social_icons" />
-                            </a>
-                        </div>
+                    <div className="Teams_Tiles">
+                        <Members.suhani_agrawal />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.riya_kanojiya />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.ayush_bemera />
                     </div>
                 </div>
             </div>

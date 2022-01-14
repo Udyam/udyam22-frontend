@@ -15,7 +15,7 @@ export default function RegisterForm() {
         localStorage.getItem('userToken') &&
         localStorage.getItem('userToken') != 'undefined'
     )
-        history.push('/comingsoon')
+        history.push('/dashboard')
 
     const [user_email, setuser_email] = useState('')
     const [user_pass, setuser_pass] = useState('')
@@ -189,7 +189,7 @@ export default function RegisterForm() {
                     setYear('')
                     {
                         setToken(response.data.token)
-                        history.push('/comingsoon')
+                        history.push('/dashboard')
                     }
                     setCheck(0)
                 })

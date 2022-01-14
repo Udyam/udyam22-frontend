@@ -103,7 +103,6 @@ const Header = () => {
             '/resetpage',
             '/recoverpage',
             '/notifyreset',
-            '/comingsoon',
         ].includes(curPath) ? (
             ''
         ) : (
@@ -111,7 +110,7 @@ const Header = () => {
                 style={{
                     position: 'sticky',
                     top: 0,
-                    zIndex: 1,
+                    zIndex: 10,
                     filter: 'drop-shadow(0px 2px 5px #bebdbd)',
                 }}
             >
@@ -122,9 +121,9 @@ const Header = () => {
                             style={{ backgroundColor: '#022049' }}
                             expand="xl"
                         >
-                            <Link to="/#landing-page-main-container">
+                            <Link to="/">
                                 <img
-                                    src="./images/udyamLogo.png"
+                                    src="/images/udyamLogo.png"
                                     className="logo mx-4"
                                     alt="logo"
                                 />
@@ -174,7 +173,7 @@ const Header = () => {
                                                     fontFamily:
                                                         'Raleway, sans-serif',
                                                     fontSize: '2em',
-                                                    color: '#CAF0F8',
+                                                    color: '#FCFBFC',
                                                 }}
                                             >
                                                 Events
@@ -182,14 +181,14 @@ const Header = () => {
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink href="/#contact-page-container">
+                                        <NavLink href="/#contactPage">
                                             <div
                                                 className="navbar-header-links px-3"
                                                 style={{
                                                     fontFamily:
                                                         'Raleway, sans-serif',
                                                     fontSize: '2em',
-                                                    color: '#CAF0F8',
+                                                    color: '#FCFBFC',
                                                 }}
                                             >
                                                 Contact Us
@@ -207,7 +206,7 @@ const Header = () => {
                                                     fontFamily:
                                                         'Raleway, sans-serif',
                                                     fontSize: '2em',
-                                                    color: '#CAF0F8',
+                                                    color: '#FCFBFC',
                                                     marginTop: '0.25em',
                                                 }}
                                             >
@@ -255,7 +254,6 @@ const Header = () => {
             '/resetpage',
             '/recoverpage',
             '/notifyreset',
-            '/comingsoon',
         ].includes(curPath) ? (
             ''
         ) : (
@@ -263,7 +261,7 @@ const Header = () => {
                 style={{
                     position: 'sticky',
                     top: 0,
-                    zIndex: 1,
+                    zIndex: 10,
                     filter: 'drop-shadow(0px 2px 5px #bebdbd)',
                 }}
             >
@@ -274,9 +272,9 @@ const Header = () => {
                             style={{ backgroundColor: '#022049' }}
                             expand="xl"
                         >
-                            <Link to="/#landing-page-main-container">
+                            <Link to="/">
                                 <img
-                                    src="./images/udyamLogo.png"
+                                    src="/images/udyamLogo.png"
                                     className="logo mx-4"
                                     alt="logo"
                                 />
@@ -288,7 +286,7 @@ const Header = () => {
                                         style={{ textDecoration: 'none' }}
                                     >
                                         <div className="signin-div px-2">
-                                            <img src="./icon/sign-in.png" />
+                                            <img src="/icon/sign-in.png" />
                                             Sign in
                                         </div>
                                     </Link>
@@ -305,7 +303,7 @@ const Header = () => {
                                                     fontFamily:
                                                         'Raleway, sans-serif',
                                                     fontSize: '2em',
-                                                    color: '#CAF0F8',
+                                                    color: '#FCFBFC',
                                                 }}
                                             >
                                                 Events
@@ -313,14 +311,14 @@ const Header = () => {
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink href="/#contact-page-container">
+                                        <NavLink href="/#contactPage">
                                             <div
                                                 className="navbar-header-links px-3"
                                                 style={{
                                                     fontFamily:
                                                         'Raleway, sans-serif',
                                                     fontSize: '2em',
-                                                    color: '#CAF0F8',
+                                                    color: '#FCFBFC',
                                                 }}
                                             >
                                                 Contact Us
@@ -338,7 +336,7 @@ const Header = () => {
                                                     fontFamily:
                                                         'Raleway, sans-serif',
                                                     fontSize: '2em',
-                                                    color: '#CAF0F8',
+                                                    color: '#FCFBFC',
                                                     marginTop: '0.25em',
                                                 }}
                                             >
@@ -358,11 +356,11 @@ const Header = () => {
                                                         'Raleway, sans-serif',
                                                     fontWeight: '900',
                                                     fontSize: '2em',
-                                                    color: '#CAF0F8',
+                                                    color: '#FCFBFC',
                                                     marginTop: '0.25em',
                                                 }}
                                             >
-                                                <img src="./icon/sign-in.png" />
+                                                <img src="/icon/sign-in.png" />
                                                 Sign in
                                             </div>
                                         </Link>
