@@ -103,7 +103,6 @@ const Header = () => {
             '/resetpage',
             '/recoverpage',
             '/notifyreset',
-            '/comingsoon',
         ].includes(curPath) ? (
             ''
         ) : (
@@ -255,7 +254,6 @@ const Header = () => {
             '/resetpage',
             '/recoverpage',
             '/notifyreset',
-            '/comingsoon',
         ].includes(curPath) ? (
             ''
         ) : (
