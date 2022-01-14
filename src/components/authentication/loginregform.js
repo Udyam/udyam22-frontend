@@ -376,7 +376,7 @@ export default function RegisterForm() {
                                         onChange={(e) =>
                                             setReferalcode(e.target.value)
                                         }
-                                        placeholder="Referal code (Optional)"
+                                        placeholder="Referral code (Optional)"
                                     />
                                     <button
                                         type="submit"
