@@ -1,3 +1,9 @@
+.tabs_background {
+    padding-top: 3vh;
+    padding-bottom: 4vh;
+    background: url('tabs-background.png') center center/cover;
+}
+
 .Vertical-Tabs {
     margin: 5vh 8vw 5vh 4.5vw;
     display: flex;
@@ -19,7 +25,6 @@
 
 .Tabs-Content {
     width: 85vw;
-
     height: 105vh;
     border-top: 2px solid white;
     border-bottom: 2px solid white;

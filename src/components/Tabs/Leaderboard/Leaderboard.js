@@ -4,7 +4,7 @@ import './Leaderboard.css'
 const Leaderboard = () => {
     return (
         <div>
-            <h1 className="aboutUs_head">LEADERBOARD</h1>
+            <h1 className="Leaderboard_head">LEADERBOARD</h1>
 
             {/* <div className = "Leaderboard_container">
 
