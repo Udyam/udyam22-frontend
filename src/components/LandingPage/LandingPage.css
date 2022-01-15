@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Quantico:wght@300&display=swap');
 
 .landing-page-container {
-    height: 100vh;
-    min-height: 750px;
-    background: url('background.png') center center/cover;
+    height: 92.5vh;
+    min-height: 576px;
+    background: url('background.gif') center center/cover;
 }
 
 .udyam-title {
@@ -56,6 +56,10 @@
 }
 
 @media (max-width: 1200px) {
+    .landing-page-container {
+        height: 60vh;
+        min-height: 200px;
+    }
     .page-links {
         display: none;
     }
@@ -66,5 +70,11 @@
         width: 90vw;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .landing-page-container {
+        height: 45vh;
     }
 }
