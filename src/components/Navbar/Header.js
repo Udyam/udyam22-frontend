@@ -230,7 +230,8 @@ const Header = () => {
                                             exact
                                             to="/noticeboard"
                                             style={(isActive) =>
-                                                isActive
+                                                isActive ||
+                                                curPath === '/notice'
                                                     ? {
                                                           textDecoration:
                                                               'underline rgba(144, 224, 239, 0.8) solid',
@@ -427,7 +428,8 @@ const Header = () => {
                                             exact
                                             to="/noticeboard"
                                             style={(isActive) =>
-                                                isActive
+                                                isActive ||
+                                                curPath === '/notice'
                                                     ? {
                                                           textDecoration:
                                                               'underline rgba(144, 224, 239, 0.8) solid',
