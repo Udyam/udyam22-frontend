@@ -108,6 +108,7 @@
         width: 100%;
         padding-left: 60px;
         padding-right: 30px;
+        margin-top: -10px;
     }
 
     .container-time.right {
