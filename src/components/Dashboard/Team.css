@@ -15,6 +15,10 @@
     padding-right: 10px;
 }
 
+.teamDetails > ul li {
+    color: #fcfbfc;
+}
+
 .teamContainer li {
     overflow-wrap: break-word;
     margin-top: 10px;
