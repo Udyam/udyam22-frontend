@@ -31,7 +31,11 @@ const Submission = ({ dashboardToken }) => {
     //     console.log("e",e);
     useEffect(() => {
         if (check) {
-            if(input.teamname.length > 0 && input.event.length > 0 && input.submission.length >0) {
+            if (
+                input.teamname.length > 0 &&
+                input.event.length > 0 &&
+                input.submission.length > 0
+            ) {
                 console.log('check=', check)
                 console.log('input=', input)
                 axios
@@ -43,9 +47,12 @@ const Submission = ({ dashboardToken }) => {
                     .then((res) => {
                         console.log(res)
                         console.log('done')
-                        toast.success('Your Submission was successfully received', {
-                            position: toast.POSITION.BOTTOM_RIGHT,
-                        })
+                        toast.success(
+                            'Your Submission was successfully received',
+                            {
+                                position: toast.POSITION.BOTTOM_RIGHT,
+                            }
+                        )
 
                         // set all states to initial state
                         setInput({
@@ -68,8 +75,7 @@ const Submission = ({ dashboardToken }) => {
                         })
                         setCheck(0)
                     })
-            }
-            else{
+            } else {
                 toast.error('Please fill all the fields', {
                     position: toast.POSITION.BOTTOM_RIGHT,
                 })
@@ -129,16 +135,43 @@ const Submission = ({ dashboardToken }) => {
                             className="dropdown"
                         >
                             <option className="optionDropdown">EVENT</option>
-                            <option value="MOSAIC" className="optionDropdown">MOSAIC</option>
-                            <option value="SPYBITS" className="optionDropdown">SPYBITS</option>
-                            <option value="ICHIP" className="optionDropdown">ICHIP</option>
-                            <option value="COMMNET" className="optionDropdown">COMMNET</option>
-                            <option value="CONTINUUM" className="optionDropdown">CONTINUUM</option>
-                            <option value="DIGISIM" className="optionDropdown">DIGISIM</option>
-                            <option value="XIOTA" className="optionDropdown">XIOTA</option>
-                            <option value="CASSANDRA" className="optionDropdown">CASSANDRA</option>
+                            <option value="MOSAIC" className="optionDropdown">
+                                MOSAIC
+                            </option>
+                            <option value="SPYBITS" className="optionDropdown">
+                                SPYBITS
+                            </option>
+                            <option value="ICHIP" className="optionDropdown">
+                                ICHIP
+                            </option>
+                            <option value="COMMNET" className="optionDropdown">
+                                COMMNET
+                            </option>
+                            <option
+                                value="CONTINUUM"
+                                className="optionDropdown"
+                            >
+                                CONTINUUM
+                            </option>
+                            <option value="DIGISIM" className="optionDropdown">
+                                DIGISIM
+                            </option>
+                            <option value="XIOTA" className="optionDropdown">
+                                XIOTA
+                            </option>
+                            <option
+                                value="CASSANDRA"
+                                className="optionDropdown"
+                            >
+                                CASSANDRA
+                            </option>
                             {year === 'ONE' && (
-                                <option value="FUNCKIT" className="optionDropdown">FUNCKIT</option>
+                                <option
+                                    value="FUNCKIT"
+                                    className="optionDropdown"
+                                >
+                                    FUNCKIT
+                                </option>
                             )}
                         </select>
                         {/* </Input> */}
@@ -154,7 +187,10 @@ const Submission = ({ dashboardToken }) => {
                                 inputChangeHandler(e)
                             }}
                             className="team"
-                            style={{backgroundColor: 'rgba(196, 196, 196, 0.5)', color: '#CAF0F8'}}
+                            style={{
+                                backgroundColor: 'rgba(196, 196, 196, 0.5)',
+                                color: '#CAF0F8',
+                            }}
                             required
                         />
                     </FormGroup>
@@ -169,7 +205,10 @@ const Submission = ({ dashboardToken }) => {
                             }}
                             placeholder="GITHUB LINK"
                             className="git"
-                            style={{backgroundColor: 'rgba(196, 196, 196, 0.5)', color: '#CAF0F8'}}
+                            style={{
+                                backgroundColor: 'rgba(196, 196, 196, 0.5)',
+                                color: '#CAF0F8',
+                            }}
                             required
                         />
                     </FormGroup>

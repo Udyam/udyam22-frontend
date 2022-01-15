@@ -67,11 +67,11 @@
     font-weight: normal;
     font-size: 24px;
     line-height: 28px;
-    color: #CAF0F8;
-    }
+    color: #caf0f8;
+}
 
-    .optionDropdown {
-        background-color: rgb(135 149 167) !important;
+.optionDropdown {
+    background-color: rgb(135 149 167) !important;
 }
 
 .team {
@@ -83,7 +83,7 @@
     border: 1.25px solid #022049;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-    color: #CAF0F8;
+    color: #caf0f8;
 }
 
 .team::placeholder {
@@ -92,7 +92,7 @@
     font-weight: normal;
     font-size: 24px;
     line-height: 28px;
-    color: #CAF0F8 !important;
+    color: #caf0f8 !important;
 }
 
 .contact-form-feedback {
@@ -166,7 +166,7 @@
         font-weight: normal;
         font-size: 24px;
         line-height: 28px;
-        color: #CAF0F8;
+        color: #caf0f8;
     }
 }
 
