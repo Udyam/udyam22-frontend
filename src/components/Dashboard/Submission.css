@@ -70,6 +70,10 @@
     /* color: #1dadca */
 }
 
+.optionDropdown {
+    background-color: rgb(135 149 167) !important;
+}
+
 .team {
     /* margin-top: auto;
     margin-bottom: auto; */
@@ -87,7 +91,7 @@
     font-weight: normal;
     font-size: 24px;
     line-height: 28px;
-    color: black;
+    color: #caf0f8 !important;
 }
 
 .git {
@@ -105,7 +109,7 @@
     font-weight: normal;
     font-size: 24px;
     line-height: 28px;
-    color: black;
+    color: #caf0f8 !important;
 }
 
 /* .dropdown select {} */

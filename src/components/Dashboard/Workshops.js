@@ -25,7 +25,7 @@ const Workshops = ({ dashboardToken }) => {
             <h3 style={{ fontWeight: 'normal', marginTop: '20px' }}>
                 UPCOMING WORKSHOPS
             </h3>
-            <h4 style={{ marginTop: '20px', color: '#CAF0F8' }}>
+            <h4 style={{ marginTop: '20px', color: '#FCFBFC' }}>
                 To watch the previous workshops{' '}
                 <a
                     href="https://www.youtube.com/channel/UC8wlztNbDIu38rfQ1HChSIg"
