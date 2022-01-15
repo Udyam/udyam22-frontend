@@ -112,71 +112,78 @@ const Register = ({ dashboardToken }) => {
     //     console.log("e",e);
     useEffect(() => {
         if (check) {
-            console.log('check=', check)
-            console.log('input=', input)
+            if(input.teamname.length>0 && input.event.length>0 && input.leader.length>0){
+                console.log('check=', check)
+                console.log('input=', input)
 
-            // // if number of members is 1 dlete member1 and member2 from input
-            // if (numMembers === '1') {
-            //     delete input.member1
-            //     delete input.member2
-            // }
-            // // if number of members is 2 delete member2 from input
-            // else if (numMembers === '2') {
-            //     delete input.member2
-            // }
+                // // if number of members is 1 dlete member1 and member2 from input
+                // if (numMembers === '1') {
+                //     delete input.member1
+                //     delete input.member2
+                // }
+                // // if number of members is 2 delete member2 from input
+                // else if (numMembers === '2') {
+                //     delete input.member2
+                // }
 
-            console.log('input new=', input)
+                console.log('input new=', input)
 
-            axios
-                .post(API_BASE_URL + '/API/team/create/', input, {
-                    headers: {
-                        Authorization: `Token ${dashboardToken}`,
-                    },
+                axios
+                    .post(API_BASE_URL + '/API/team/create/', input, {
+                        headers: {
+                            Authorization: `Token ${dashboardToken}`,
+                        },
+                    })
+                    .then((res) => {
+                        console.log(res)
+                        console.log('done')
+                        toast.success('Your team has been created successfully', {
+                            position: toast.POSITION.BOTTOM_RIGHT,
+                        })
+
+                        // set all states to initial state
+                        setInput({
+                            teamname: '',
+                            event: '',
+                            leader: '',
+                            member1: '',
+                            member2: '',
+                        })
+                        setState(8)
+                        setNumMembers('Members')
+                        setCheck(0)
+                        setFirstmember(false)
+                        setSecondmember(false)
+                        setThirdmember(false)
+                        setThirdDisplay(false)
+                    })
+                    .catch((err) => {
+                        console.log('err=', err.response.data.error)
+                        toast.error(err.response.data.error, {
+                            position: toast.POSITION.BOTTOM_RIGHT,
+                        })
+
+                        // set all states to initial state
+                        setInput({
+                            teamname: '',
+                            event: '',
+                            leader: '',
+                            member1: '',
+                            member2: '',
+                        })
+                        setNumMembers('Members')
+                        setCheck(0)
+                        setFirstmember(false)
+                        setSecondmember(false)
+                        setThirdmember(false)
+                        setThirdDisplay(false)
+                    })
+            }
+            else{
+                toast.error('Please fill all the fields', {
+                    position: toast.POSITION.BOTTOM_RIGHT,
                 })
-                .then((res) => {
-                    console.log(res)
-                    console.log('done')
-                    toast.success('Your team has been created successfully', {
-                        position: toast.POSITION.BOTTOM_RIGHT,
-                    })
-
-                    // set all states to initial state
-                    setInput({
-                        teamname: '',
-                        event: '',
-                        leader: '',
-                        member1: '',
-                        member2: '',
-                    })
-                    setState(8)
-                    setNumMembers('Members')
-                    setCheck(0)
-                    setFirstmember(false)
-                    setSecondmember(false)
-                    setThirdmember(false)
-                    setThirdDisplay(false)
-                })
-                .catch((err) => {
-                    console.log('err=', err.response.data.error)
-                    toast.error(err.response.data.error, {
-                        position: toast.POSITION.BOTTOM_RIGHT,
-                    })
-
-                    // set all states to initial state
-                    setInput({
-                        teamname: '',
-                        event: '',
-                        leader: '',
-                        member1: '',
-                        member2: '',
-                    })
-                    setNumMembers('Members')
-                    setCheck(0)
-                    setFirstmember(false)
-                    setSecondmember(false)
-                    setThirdmember(false)
-                    setThirdDisplay(false)
-                })
+            }
         }
     }, [check])
     // }
@@ -233,17 +240,17 @@ const Register = ({ dashboardToken }) => {
                             id="id_event"
                             className="dropdown"
                         >
-                            <option value="EVENT">EVENT</option>
-                            <option value="MOSAIC">MOSAIC</option>
-                            <option value="SPYBITS">SPYBITS</option>
-                            <option value="ICHIP">ICHIP</option>
-                            <option value="COMMNET">COMMNET</option>
-                            <option value="CONTINUUM">CONTINUUM</option>
-                            <option value="DIGISIM">DIGISIM</option>
-                            <option value="XIOTA">XIOTA</option>
-                            <option value="CASSANDRA">CASSANDRA</option>
+                            <option value="EVENT" className="optionDropdown">EVENT</option>
+                            <option value="MOSAIC" className="optionDropdown">MOSAIC</option>
+                            <option value="SPYBITS" className="optionDropdown">SPYBITS</option>
+                            <option value="ICHIP" className="optionDropdown">ICHIP</option>
+                            <option value="COMMNET" className="optionDropdown">COMMNET</option>
+                            <option value="CONTINUUM" className="optionDropdown">CONTINUUM</option>
+                            <option value="DIGISIM" className="optionDropdown">DIGISIM</option>
+                            <option value="XIOTA" className="optionDropdown">XIOTA</option>
+                            <option value="CASSANDRA" className="optionDropdown">CASSANDRA</option>
                             {year === 'ONE' && (
-                                <option value="FUNCKIT">FUNCKIT</option>
+                                <option value="FUNCKIT" className="optionDropdown">FUNCKIT</option>
                             )}
                         </select>
                         {/* </Input> */}
@@ -259,6 +266,7 @@ const Register = ({ dashboardToken }) => {
                                 inputChangeHandler(e)
                             }}
                             className="team"
+                            style={{backgroundColor: 'rgba(196, 196, 196, 0.5)', color: '#CAF0F8'}}
                             required
                         />
                     </FormGroup>
@@ -282,10 +290,10 @@ const Register = ({ dashboardToken }) => {
                                 memberChangeHandler(e)
                             }}
                         >
-                            <option value="Members">MEMBERS</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            {thirdDisplay && <option value="3">3</option>}
+                            <option value="Members" className="optionDropdown">MEMBERS</option>
+                            <option value="1" className="optionDropdown">1</option>
+                            <option value="2" className="optionDropdown">2</option>
+                            {thirdDisplay && <option value="3" className="optionDropdown">3</option>}
                         </select>
                         {/* </Input> */}
                     </FormGroup>
@@ -308,6 +316,7 @@ const Register = ({ dashboardToken }) => {
                                 }}
                                 placeholder="TEAM LEADER"
                                 className="team"
+                                style={{backgroundColor: 'rgba(196, 196, 196, 0.5)', color: '#CAF0F8'}}
                                 required
                             />
 
@@ -341,6 +350,7 @@ const Register = ({ dashboardToken }) => {
                                     inputChangeHandler(e)
                                 }}
                                 placeholder="MEMBER 1"
+                                style={{backgroundColor: 'rgba(196, 196, 196, 0.5)', color: '#CAF0F8'}}
                                 className="team"
                             />
 
@@ -374,6 +384,7 @@ const Register = ({ dashboardToken }) => {
                                     inputChangeHandler(e)
                                 }}
                                 placeholder="MEMBER 2"
+                                style={{backgroundColor: 'rgba(196, 196, 196, 0.5)', color: '#CAF0F8'}}
                                 className="team"
                             />
 
