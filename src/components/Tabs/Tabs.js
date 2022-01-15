@@ -23,69 +23,71 @@ const Tabs = (props) => {
     }, [id])
 
     return (
-        // tab with "active" class will be visible
-        <div className="Vertical-Tabs">
-            <ul
-                className="Tabs-tabs vertical"
-                data-tab=""
-                style={{ padding: '0px', margin: '0px', listStyle: 'none' }}
-            >
-                <li className="Tab-Title">
-                    <Link to="/" id="panela">
-                        <img src={home} title="HOME" />
-                    </Link>
-                </li>
-                <li className="Tab-Title">
-                    <Link to="/about-us" id="panelb">
-                        <img src={info} title="ABOUT US" />
-                    </Link>
-                </li>
-                <li className="Tab-Title">
-                    <Link to="/events" id="panelc">
-                        <img src={event} title="EVENTS" />
-                    </Link>
-                </li>
-                <li className="Tab-Title">
-                    <Link to="/speakers" id="paneld">
-                        <img src={speaker} title="SPEAKERS" />
-                    </Link>
-                </li>
-                <li className="Tab-Title">
-                    <Link to="/leaderboard" id="panele">
-                        <img src={leaderboard} title="LEADERBOARD" />
-                    </Link>
-                </li>
-                <li className="Tab-Title">
-                    <Link to="/sponsors" id="panelf">
-                        <img src={sponsor} title="SPONSORS" />
-                    </Link>
-                </li>
-                <li className="Tab-Title">
-                    <Link to="/team" id="panelg">
-                        <img src={team} title="TEAM" />
-                    </Link>
-                </li>
-            </ul>
+        <div className="tabs_background">
+            {/* // tab with "active" class will be visible */}
+            <div className="Vertical-Tabs">
+                <ul
+                    className="Tabs-tabs vertical"
+                    data-tab=""
+                    style={{ padding: '0px', margin: '0px', listStyle: 'none' }}
+                >
+                    <li className="Tab-Title">
+                        <Link to="/" id="panela">
+                            <img src={home} title="HOME" />
+                        </Link>
+                    </li>
+                    <li className="Tab-Title">
+                        <Link to="/about-us" id="panelb">
+                            <img src={info} title="ABOUT US" />
+                        </Link>
+                    </li>
+                    <li className="Tab-Title">
+                        <Link to="/events" id="panelc">
+                            <img src={event} title="EVENTS" />
+                        </Link>
+                    </li>
+                    <li className="Tab-Title">
+                        <Link to="/speakers" id="paneld">
+                            <img src={speaker} title="SPEAKERS" />
+                        </Link>
+                    </li>
+                    <li className="Tab-Title">
+                        <Link to="/leaderboard" id="panele">
+                            <img src={leaderboard} title="LEADERBOARD" />
+                        </Link>
+                    </li>
+                    <li className="Tab-Title">
+                        <Link to="/sponsors" id="panelf">
+                            <img src={sponsor} title="SPONSORS" />
+                        </Link>
+                    </li>
+                    <li className="Tab-Title">
+                        <Link to="/team" id="panelg">
+                            <img src={team} title="TEAM" />
+                        </Link>
+                    </li>
+                </ul>
 
-            <div className="Tabs-Content">
-                <div className="content" id="panela_content"></div>
-                <div className="content" id="panelb_content" tabIndex="-1">
-                    {props.children}
-                </div>
-                <div className="content" id="panelc_content" tabIndex="-1">
-                    {props.children}
-                </div>
-                <div className="content" id="paneld_content" tabIndex="-1">
-                    {props.children}
-                </div>
-                <div className="content" id="panele_content" tabIndex="-1">
-                    {props.children}
-                </div>
-                <div className="content" id="panelf_content" tabIndex="-1">
-                    {props.children}
-                </div>
-                <div className="content" id="panelg_content" tabIndex="-1">
-                    {props.children}
+                <div className="Tabs-Content">
+                    <div className="content" id="panela_content"></div>
+                    <div className="content" id="panelb_content" tabIndex="-1">
+                        {props.children}
+                    </div>
+                    <div className="content" id="panelc_content" tabIndex="-1">
+                        {props.children}
+                    </div>
+                    <div className="content" id="paneld_content" tabIndex="-1">
+                        {props.children}
+                    </div>
+                    <div className="content" id="panele_content" tabIndex="-1">
+                        {props.children}
+                    </div>
+                    <div className="content" id="panelf_content" tabIndex="-1">
+                        {props.children}
+                    </div>
+                    <div className="content" id="panelg_content" tabIndex="-1">
+                        {props.children}
+                    </div>
                 </div>
             </div>
         </div>
