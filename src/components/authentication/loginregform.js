@@ -1,4 +1,4 @@
-import { React, useState } from 'react'
+import { React, useState, useEffect } from 'react'
 import axios from '../../utils/axios'
 import './loginregform.css'
 import { toast } from 'react-toastify'
@@ -19,40 +19,67 @@ export default function RegisterForm() {
 
     const [user_email, setuser_email] = useState('')
     const [user_pass, setuser_pass] = useState('')
+    const [check, setCheck] = useState(0)
     const { setToken } = useAuthContext()
 
     const userlogin = (e) => {
         e.preventDefault()
-        if (user_email == '' || user_pass == '') {
-            toast.warn('Please fill the empty fields.', {
+        setCheck(1)
+    }
+    useEffect(() => {
+        console.log('check=', check)
+        if (check == 1) {
+            if (user_email == '' || user_pass == '') {
+                toast.warn('Please fill the empty fields.', {
+                    position: toast.POSITION.BOTTOM_RIGHT,
+                })
+
+                setCheck(0)
+                return
+            }
+            if (!validator.isEmail(user_email)) {
+                toast.warn('Please enter your email correctly', {
+                    position: toast.POSITION.BOTTOM_RIGHT,
+                })
+                setuser_email('')
+                setuser_pass('')
+                setCheck(0)
+                return
+            }
+            toast.info('Checking credentials...', {
                 position: toast.POSITION.BOTTOM_RIGHT,
             })
-            return
+            axios
+                .post(
+                    'https://udyam22-backend.herokuapp.com/' + 'auth/login/',
+                    {
+                        email: user_email,
+                        password: user_pass,
+                    }
+                )
+                .then((response) => {
+                    toast.success('Successfully logged in!!', {
+                        position: toast.POSITION.BOTTOM_RIGHT,
+                    })
+                    {
+                        setToken(response.data.token)
+                        history.push('/dashboard')
+                    }
+                    setuser_email('')
+                    setuser_pass('')
+                    setCheck(0)
+                })
+                .catch((err) => {
+                    console.log(err)
+                    toast.error(err.response.data.error, {
+                        position: toast.POSITION.BOTTOM_RIGHT,
+                    })
+                    setuser_email('')
+                    setuser_pass('')
+                    setCheck(0)
+                })
         }
-        toast.info('Checking credentials...', {
-            position: toast.POSITION.BOTTOM_RIGHT,
-        })
-        axios
-            .post('https://udyam22-backend.herokuapp.com/' + 'auth/login/', {
-                email: user_email,
-                password: user_pass,
-            })
-            .then((response) => {
-                toast.success('Successfully logged in!!', {
-                    position: toast.POSITION.BOTTOM_RIGHT,
-                })
-                {
-                    setToken(response.data.token)
-                    history.push('/dashboard')
-                }
-            })
-            .catch((err) => {
-                console.log(err)
-                toast.error('Cannot Login!! :( Check credentials.', {
-                    position: toast.POSITION.BOTTOM_RIGHT,
-                })
-            })
-    }
+    }, [check])
 
     const [collegeName, setCollegeName] = useState('')
     const [email, setEmail] = useState('')
@@ -125,7 +152,12 @@ export default function RegisterForm() {
             toast.warning('Please wait...', {
                 position: toast.POSITION.BOTTOM_RIGHT,
             })
-
+            setCheck(2)
+        }
+    }
+    useEffect(() => {
+        console.log('check=', check)
+        if (check == 2) {
             const dataForApiRequest = {
                 name: Name,
                 email: email,
@@ -148,20 +180,40 @@ export default function RegisterForm() {
                         'Please check your email for the verification link!!',
                         { position: toast.POSITION.BOTTOM_RIGHT }
                     )
+                    setName('')
+                    setCollegeName('')
+                    setConfirmpassword('')
+                    setEmail('')
+                    setPassword('')
+                    setReferalcode('')
+                    setYear('')
                     {
                         setToken(response.data.token)
                         history.push('/dashboard')
                     }
+                    setCheck(0)
                 })
                 .catch(function (err) {
                     console.log(err)
-                    toast.error(
-                        'An account using same email or username is already created',
-                        { position: toast.POSITION.BOTTOM_RIGHT }
-                    )
+                    toast.error(err.response.data.email, {
+                        position: toast.POSITION.BOTTOM_RIGHT,
+                    })
+                    toast.error(err.response.data.referral_code, {
+                        position: toast.POSITION.BOTTOM_RIGHT,
+                    })
+                    setName('')
+                    setCollegeName('')
+                    setConfirmpassword('')
+                    setEmail('')
+                    setPassword('')
+                    setReferalcode('')
+                    setYear('')
+                    setCheck(0)
                 })
+            setCheck(0)
         }
-    }
+    }, [check])
+
     const [addclass, setaddclass] = useState('')
     return (
         <div className="loginregform-final">
@@ -324,7 +376,7 @@ export default function RegisterForm() {
                                         onChange={(e) =>
                                             setReferalcode(e.target.value)
                                         }
-                                        placeholder="Referal code (Optional)"
+                                        placeholder="Referral code (Optional)"
                                     />
                                     <button
                                         type="submit"
