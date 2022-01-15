@@ -170,11 +170,11 @@
     /* display: inline-block; */
     /* min-width: 100%; */
     font-family: Potra, serif;
-    color: rgba(93, 207, 223, 0.568);
+    color: rgba(93, 207, 223, 1);
     margin-left: auto;
     margin-right: auto;
     font-size: 3.75rem;
-    text-align: center;
+    text-align: right;
 }
 
 @media (max-width: 668px) {

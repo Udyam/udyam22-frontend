@@ -35,23 +35,43 @@ const Mosaic = () => {
                 Detections etc.
             </div>
 
-            {/* <div className="Events_Link_Holder">
-                <a href="">
+            <div className="Events_Link_Holder">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
 
-                <a href="">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS2</div>
                 </a>
 
-                <a href="">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS3</div>
                 </a>
 
-                <a href="">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS4</div>
                 </a>
-            </div> */}
+            </div>
         </>
     )
 }
@@ -83,23 +103,43 @@ const Ichip = () => {
                 (AES-128).
             </div>
 
-            {/* <div className="Events_Link_Holder">
-                <a href="">
+            <div className="Events_Link_Holder">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
 
-                <a href="">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS2</div>
                 </a>
 
-                <a href="">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS3</div>
                 </a>
 
-                <a href="">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS4</div>
                 </a>
-            </div> */}
+            </div>
         </>
     )
 }
@@ -130,23 +170,43 @@ const Spybits = () => {
                 programming-based applications in Cryptography.
             </div>
 
-            {/* <div className="Events_Link_Holder">
-                <a href="">
+            <div className="Events_Link_Holder">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
 
-                <a href="">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS2</div>
                 </a>
 
-                <a href="">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS3</div>
                 </a>
 
-                <a href="">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS4</div>
                 </a>
-            </div> */}
+            </div>
         </>
     )
 }
@@ -176,23 +236,43 @@ const Commnet = () => {
                 software, MATLAB.
             </div>
 
-            {/* <div className="Events_Link_Holder">
-                <a href="">
+            <div className="Events_Link_Holder">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
 
-                <a href="">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS2</div>
                 </a>
 
-                <a href="">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS3</div>
                 </a>
 
-                <a href="">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS4</div>
                 </a>
-            </div> */}
+            </div>
         </>
     )
 }
@@ -223,23 +303,43 @@ const Xiota = () => {
                 solutions to real-life issues.
             </div>
 
-            {/* <div className="Events_Link_Holder">
-                <a href="">
+            <div className="Events_Link_Holder">
+                <a
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                    rel="noreferrer"
+                    target="_blank"
+                >
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
 
-                <a href="">
+                <a
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                    rel="noreferrer"
+                    target="_blank"
+                >
                     <div className="Events_Inner_Link">PS2</div>
                 </a>
 
-                <a href="">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS3</div>
                 </a>
 
-                <a href="">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS4</div>
                 </a>
-            </div> */}
+            </div>
         </>
     )
 }
@@ -269,23 +369,43 @@ const Cassandra = () => {
                 model using the given dataset and make predictions accordingly.
             </div>
 
-            {/* <div className="Events_Link_Holder">
-                <a href="">
+            <div className="Events_Link_Holder">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
 
-                <a href="">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS2</div>
                 </a>
 
-                <a href="">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS3</div>
                 </a>
 
-                <a href="">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS4</div>
                 </a>
-            </div> */}
+            </div>
         </>
     )
 }
@@ -315,23 +435,43 @@ const Digisim = () => {
                 ghost’s algorithm, Merge Sort Algorithm using Proteus.
             </div>
 
-            {/* <div className="Events_Link_Holder">
-                <a href="">
+            <div className="Events_Link_Holder">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
 
-                <a href="">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS2</div>
                 </a>
 
-                <a href="">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS3</div>
                 </a>
 
-                <a href="">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS4</div>
                 </a>
-            </div> */}
+            </div>
         </>
     )
 }
@@ -360,23 +500,43 @@ const Funckit = () => {
                 both programming and utilization of digital circuits.
             </div>
 
-            {/* <div className="Events_Link_Holder">
-                <a href="">
+            <div className="Events_Link_Holder">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
 
-                <a href="">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS2</div>
                 </a>
 
-                <a href="">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS3</div>
                 </a>
 
-                <a href="">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS4</div>
                 </a>
-            </div> */}
+            </div>
         </>
     )
 }
@@ -405,23 +565,43 @@ const Continuum = () => {
                 using filters and circuits made of only analog components.
             </div>
 
-            {/* <div className="Events_Link_Holder">
-                <a href="">
+            <div className="Events_Link_Holder">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
 
-                <a href="">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS2</div>
                 </a>
 
-                <a href="">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS3</div>
                 </a>
 
-                <a href="">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href=""
+                    style={{ textDecoration: 'none' }}
+                >
                     <div className="Events_Inner_Link">PS4</div>
                 </a>
-            </div> */}
+            </div>
         </>
     )
 }
