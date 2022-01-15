@@ -8,13 +8,13 @@ const LandingPage = () => {
             id="landing-page-main-container"
             className="landing-page-container"
         >
-            <div>
+            {/* <div>
                 <img
                     src="./images/udyamFont.png"
                     alt="udyam title"
                     className="udyam-title"
                 />
-            </div>
+            </div> */}
             <div className="page-links">
                 <Link
                     to="/"
