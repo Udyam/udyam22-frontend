@@ -29,7 +29,7 @@ const Dashboard = () => {
         const token1 = arr[1]
         console.log('token=', token1)
         return (
-            <div>
+            <div className="bg-dash">
                 <div className="dashboardContainer">
                     <div className="displayPictureDash">
                         <img
@@ -43,12 +43,14 @@ const Dashboard = () => {
                             />
                         </Link>
                     </div>
-                    <div className="imageContainer">
-                        <img
-                            src="./images/udyamLogo.png"
-                            className="displayImage"
-                        />
-                    </div>
+                    <Link to="/">
+                        <div className="imageContainer">
+                            <img
+                                src="./images/udyamLogo.png"
+                                className="displayImage"
+                            />
+                        </div>
+                    </Link>
                     <div className="tabs">
                         <Nav className="justify-content-center">
                             <div className="navigation">
@@ -100,10 +102,12 @@ const Dashboard = () => {
                                 </NavItem>
                             </div>
                             <div className="navigationMobile">
-                                <img
-                                    className="navLogo"
-                                    src="./images/udyamLogo.png"
-                                />
+                                <NavLink href="/" style={{ padding: '0' }}>
+                                    <img
+                                        className="navLogo"
+                                        src="./images/udyamLogo.png"
+                                    />
+                                </NavLink>
                                 <NavItem>
                                     <NavLink
                                         className="tabLinks"

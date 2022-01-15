@@ -103,7 +103,6 @@ const Header = () => {
             '/resetpage',
             '/recoverpage',
             '/notifyreset',
-            '/comingsoon',
         ].includes(curPath) ? (
             ''
         ) : (
@@ -111,7 +110,7 @@ const Header = () => {
                 style={{
                     position: 'sticky',
                     top: 0,
-                    zIndex: 1,
+                    zIndex: 10,
                     filter: 'drop-shadow(0px 2px 5px #bebdbd)',
                 }}
             >
@@ -124,7 +123,7 @@ const Header = () => {
                         >
                             <Link to="/">
                                 <img
-                                    src="./images/udyamLogo.png"
+                                    src="/images/udyamLogo.png"
                                     className="logo mx-4"
                                     alt="logo"
                                 />
@@ -255,7 +254,6 @@ const Header = () => {
             '/resetpage',
             '/recoverpage',
             '/notifyreset',
-            '/comingsoon',
         ].includes(curPath) ? (
             ''
         ) : (
@@ -263,7 +261,7 @@ const Header = () => {
                 style={{
                     position: 'sticky',
                     top: 0,
-                    zIndex: 1,
+                    zIndex: 10,
                     filter: 'drop-shadow(0px 2px 5px #bebdbd)',
                 }}
             >
@@ -276,7 +274,7 @@ const Header = () => {
                         >
                             <Link to="/">
                                 <img
-                                    src="./images/udyamLogo.png"
+                                    src="/images/udyamLogo.png"
                                     className="logo mx-4"
                                     alt="logo"
                                 />
@@ -288,7 +286,7 @@ const Header = () => {
                                         style={{ textDecoration: 'none' }}
                                     >
                                         <div className="signin-div px-2">
-                                            <img src="./icon/sign-in.png" />
+                                            <img src="/icon/sign-in.png" />
                                             Sign in
                                         </div>
                                     </Link>
@@ -362,7 +360,7 @@ const Header = () => {
                                                     marginTop: '0.25em',
                                                 }}
                                             >
-                                                <img src="./icon/sign-in.png" />
+                                                <img src="/icon/sign-in.png" />
                                                 Sign in
                                             </div>
                                         </Link>

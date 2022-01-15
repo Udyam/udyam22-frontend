@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Events.css'
-import { useState } from 'react'
-import { Temp } from './Temp'
+// import { Temp } from './Temp'
+import Carousel from 'react-simply-carousel'
 import {
     Mosaic,
     Ichip,
@@ -16,11 +16,17 @@ import {
 
 import AwesomeSlider from 'react-awesome-slider'
 import 'react-awesome-slider/dist/styles.css'
+import Slider_Right from './Events_Images/Slider_Arrow_Right.png'
 
 const Event = () => {
     const slider = (
         <div className="events_media_query">
-            <AwesomeSlider animation="cubeAnimation">
+            <AwesomeSlider
+                organicArrows={true}
+                bullets={true}
+                mobileTouch={true}
+                animation="cubeAnimation"
+            >
                 <div className="events_slider">
                     <Mosaic />
                 </div>
@@ -60,44 +66,41 @@ const Event = () => {
         </div>
     )
 
-    const [caller_number, setcaller_number] = useState('1')
+    const [activeSlide, setActiveSlide] = useState(0)
+
+    function CheckBrowser() {
+        if (navigator.userAgent.indexOf('Firefox') > -1) return 0
+        return 1200
+    }
 
     const changeHandler1 = () => {
-        setcaller_number('1')
+        setActiveSlide(0)
     }
 
     const changeHandler2 = () => {
-        setcaller_number('2')
+        setActiveSlide(1)
     }
-
     const changeHandler3 = () => {
-        setcaller_number('3')
+        setActiveSlide(2)
     }
-
     const changeHandler4 = () => {
-        setcaller_number('4')
+        setActiveSlide(3)
     }
-
     const changeHandler5 = () => {
-        setcaller_number('5')
+        setActiveSlide(4)
     }
-
     const changeHandler6 = () => {
-        setcaller_number('6')
+        setActiveSlide(5)
     }
-
     const changeHandler7 = () => {
-        setcaller_number('7')
+        setActiveSlide(6)
     }
-
     const changeHandler8 = () => {
-        setcaller_number('8')
+        setActiveSlide(7)
     }
-
     const changeHandler9 = () => {
-        setcaller_number('9')
+        setActiveSlide(8)
     }
-
     return (
         <>
             <h1 className="Events_head">EVENTS</h1>
@@ -105,26 +108,21 @@ const Event = () => {
             {slider}
 
             <div className="Events_CSS_Container">
-                <div className="Main_box_Events">
-                    <Temp data={caller_number} />
-                </div>
-
-                <div className="Event_panel">
+                <div className="Event_panel_Left">
                     <div
                         className="Events_Outer_Link"
                         onClick={changeHandler1}
                         style={{
                             textDecorationLine:
-                                caller_number === '1' ? 'underline' : 'none',
-                            fontSize:
-                                caller_number === '1' ? '1.9rem' : '1.8rem',
+                                activeSlide === 0 ? 'underline' : 'none',
+                            fontSize: activeSlide === 0 ? '1.9rem' : '1.8rem',
                             color:
-                                caller_number === '1'
+                                activeSlide === 0
                                     ? '#90E0EF'
                                     : 'rgba(144,244,239,0.7)',
                         }}
                     >
-                        Mosaic
+                        XIOTA
                     </div>
 
                     <div
@@ -132,16 +130,15 @@ const Event = () => {
                         onClick={changeHandler2}
                         style={{
                             textDecorationLine:
-                                caller_number === '2' ? 'underline' : 'none',
-                            fontSize:
-                                caller_number === '2' ? '1.9rem' : '1.8rem',
+                                activeSlide === 1 ? 'underline' : 'none',
+                            fontSize: activeSlide === 1 ? '1.9rem' : '1.8rem',
                             color:
-                                caller_number === '2'
+                                activeSlide === 1
                                     ? '#90E0EF'
                                     : 'rgba(144,244,239,0.7)',
                         }}
                     >
-                        I-chip
+                        CONTINUUM
                     </div>
 
                     <div
@@ -149,16 +146,15 @@ const Event = () => {
                         onClick={changeHandler3}
                         style={{
                             textDecorationLine:
-                                caller_number === '3' ? 'underline' : 'none',
-                            fontSize:
-                                caller_number === '3' ? '1.9rem' : '1.8rem',
+                                activeSlide === 2 ? 'underline' : 'none',
+                            fontSize: activeSlide === 2 ? '1.9rem' : '1.8rem',
                             color:
-                                caller_number === '3'
+                                activeSlide === 2
                                     ? '#90E0EF'
                                     : 'rgba(144,244,239,0.7)',
                         }}
                     >
-                        Spybits
+                        DIGISIM
                     </div>
 
                     <div
@@ -166,16 +162,15 @@ const Event = () => {
                         onClick={changeHandler4}
                         style={{
                             textDecorationLine:
-                                caller_number === '4' ? 'underline' : 'none',
-                            fontSize:
-                                caller_number === '4' ? '1.9rem' : '1.8rem',
+                                activeSlide === 3 ? 'underline' : 'none',
+                            fontSize: activeSlide === 3 ? '1.9rem' : '1.8rem',
                             color:
-                                caller_number === '4'
+                                activeSlide === 3
                                     ? '#90E0EF'
                                     : 'rgba(144,244,239,0.7)',
                         }}
                     >
-                        Commnet
+                        COMMNET
                     </div>
 
                     <div
@@ -183,84 +178,198 @@ const Event = () => {
                         onClick={changeHandler5}
                         style={{
                             textDecorationLine:
-                                caller_number === '5' ? 'underline' : 'none',
-                            fontSize:
-                                caller_number === '5' ? '1.9rem' : '1.8rem',
+                                activeSlide === 4 ? 'underline' : 'none',
+                            fontSize: activeSlide === 4 ? '1.9rem' : '1.8rem',
                             color:
-                                caller_number === '5'
+                                activeSlide === 4
                                     ? '#90E0EF'
                                     : 'rgba(144,244,239,0.7)',
                         }}
                     >
-                        Xiota
+                        ICHIP
                     </div>
+                </div>
 
+                <div className="Events-Desktop_Carousel">
+                    <Carousel
+                        disableNavIfAllVisible={false}
+                        disableNavIfEdgeVisible={false}
+                        disableNavIfEdgeActive={false}
+                        hideNavIfAllVisible={false}
+                        centerMode
+                        updateOnItemClick
+                        itemsListProps={{
+                            style: {
+                                marginRight: '0vw',
+                            },
+                        }}
+                        containerProps={{
+                            style: {
+                                // marginTop: '3.5vh',
+                                // marginRight: '2vw',
+                                // marginLeft: '2vw',
+                                height: '100%',
+                                width: '100%',
+                                justifyContent: 'space-between',
+                            },
+                        }}
+                        activeSlideIndex={activeSlide}
+                        activeSlideProps={{
+                            className: 'EventsActiveSlider',
+                        }}
+                        onRequestChange={setActiveSlide}
+                        forwardBtnProps={{
+                            children: (
+                                <img
+                                    src={Slider_Right}
+                                    style={{
+                                        width: 'auto',
+                                        height: '70%',
+                                        marginLeft: '12%',
+                                        marginBottom: '9%',
+                                        transform: 'scaleX(-1)',
+                                    }}
+                                ></img>
+                            ),
+                            style: {
+                                width: '2vw',
+                                height: '2vw',
+                                // minWidth: 60,
+                                alignSelf: 'center',
+                                border: 'none',
+                                borderRadius: '50%',
+                                justifyContent: 'center',
+                                backgroundColor: 'rgba(144, 224, 239,1)',
+                            },
+                        }}
+                        backwardBtnProps={{
+                            children: (
+                                <img
+                                    src={Slider_Right}
+                                    style={{
+                                        width: 'auto',
+                                        height: '70%',
+                                        marginRight: '12%',
+                                        marginBottom: '9%',
+                                    }}
+                                ></img>
+                            ),
+                            style: {
+                                width: '2vw',
+                                height: '2vw',
+                                // minWidth: 60,
+                                alignSelf: 'center',
+                                border: 'none',
+                                borderRadius: '50%',
+                                backgroundColor: 'rgba(144, 224, 239,1)',
+                            },
+                        }}
+                        itemsToShow={2}
+                        speed={CheckBrowser()}
+                        delay={-600}
+                        easing={'ease-in-out'}
+                    >
+                        <div className="Event_Carousel_Tiles">
+                            <Xiota />
+                        </div>
+
+                        <div className="Event_Carousel_Tiles">
+                            <Continuum />
+                        </div>
+
+                        <div className="Event_Carousel_Tiles">
+                            <Digisim />
+                        </div>
+
+                        <div className="Event_Carousel_Tiles">
+                            <Commnet />
+                        </div>
+
+                        <div className="Event_Carousel_Tiles">
+                            <Ichip />
+                        </div>
+
+                        <div className="Event_Carousel_Tiles">
+                            <Mosaic />
+                        </div>
+
+                        <div className="Event_Carousel_Tiles">
+                            <Cassandra />
+                        </div>
+
+                        <div className="Event_Carousel_Tiles">
+                            <Spybits />
+                        </div>
+
+                        <div className="Event_Carousel_Tiles">
+                            <Funckit />
+                        </div>
+                    </Carousel>
+                </div>
+
+                <div className="Event_panel_Right">
                     <div
-                        className="Events_Outer_Link"
+                        className="Events_Outer_Link_Right"
                         onClick={changeHandler6}
                         style={{
                             textDecorationLine:
-                                caller_number === '6' ? 'underline' : 'none',
-                            fontSize:
-                                caller_number === '6' ? '1.9rem' : '1.8rem',
+                                activeSlide === 5 ? 'underline' : 'none',
+                            fontSize: activeSlide === 5 ? '1.9rem' : '1.8rem',
                             color:
-                                caller_number === '6'
+                                activeSlide === 5
                                     ? '#90E0EF'
                                     : 'rgba(144,244,239,0.7)',
                         }}
                     >
-                        Cassandra
+                        MOSAIC
                     </div>
 
                     <div
-                        className="Events_Outer_Link"
+                        className="Events_Outer_Link_Right"
                         onClick={changeHandler7}
                         style={{
                             textDecorationLine:
-                                caller_number === '7' ? 'underline' : 'none',
-                            fontSize:
-                                caller_number === '7' ? '1.9rem' : '1.8rem',
+                                activeSlide === 6 ? 'underline' : 'none',
+                            fontSize: activeSlide === 6 ? '1.9rem' : '1.8rem',
                             color:
-                                caller_number === '7'
+                                activeSlide === 6
                                     ? '#90E0EF'
                                     : 'rgba(144,244,239,0.7)',
                         }}
                     >
-                        Digisim
+                        CASSANDRA
                     </div>
 
                     <div
-                        className="Events_Outer_Link"
+                        className="Events_Outer_Link_Right"
                         onClick={changeHandler8}
                         style={{
                             textDecorationLine:
-                                caller_number === '8' ? 'underline' : 'none',
-                            fontSize:
-                                caller_number === '8' ? '1.9rem' : '1.8rem',
+                                activeSlide === 7 ? 'underline' : 'none',
+                            fontSize: activeSlide === 7 ? '1.9rem' : '1.8rem',
                             color:
-                                caller_number === '8'
+                                activeSlide === 7
                                     ? '#90E0EF'
                                     : 'rgba(144,244,239,0.7)',
                         }}
                     >
-                        Funckit
+                        SPYBITS
                     </div>
 
                     <div
-                        className="Events_Outer_Link"
+                        className="Events_Outer_Link_Right"
                         onClick={changeHandler9}
                         style={{
                             textDecorationLine:
-                                caller_number === '9' ? 'underline' : 'none',
-                            fontSize:
-                                caller_number === '9' ? '1.9rem' : '1.8rem',
+                                activeSlide === 8 ? 'underline' : 'none',
+                            fontSize: activeSlide === 8 ? '1.9rem' : '1.8rem',
                             color:
-                                caller_number === '9'
+                                activeSlide === 8
                                     ? '#90E0EF'
                                     : 'rgba(144,244,239,0.7)',
                         }}
                     >
-                        Continuum
+                        FUNCKIT
                     </div>
                 </div>
             </div>

@@ -2,11 +2,10 @@
     /* display: inline-block; */
     /* min-width: 100%; */
     font-family: Potra, serif;
-    color: rgba(0, 225, 255, 0.568);
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 4rem;
-    text-align: center;
+    color: rgba(93, 207, 223, 1);
+    font-size: 4vw;
+    text-align: right;
+    margin-right: 6vw;
 }
 
 .Leaderboard_Temporary_Message {
@@ -18,22 +17,24 @@
     margin-right: auto;
     margin-top: 20vh;
     width: 30vw;
-    height: 30vh;
-    font-size: 1.4rem;
+    height: 15vw;
+    font-size: 1.8vw;
     font-weight: normal;
     font-family: Raleway;
     padding: 2%;
-    padding-top: 5%;
+    padding-top: 3%;
     text-align: center;
 }
 
 @media (max-width: 767px) {
     .Leaderboard_head {
         align-self: center;
-        font-size: 2.5rem;
+        font-size: 10vw;
     }
 
     .Leaderboard_Temporary_Message {
         width: 70%;
+        height: 20vh;
+        font-size: 2.5vh;
     }
 }
