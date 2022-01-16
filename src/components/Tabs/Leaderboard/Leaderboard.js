@@ -1,17 +1,10 @@
 import React from 'react'
 import './Leaderboard.css'
-import Leader_board from './Leader_board.png'
 
 const Leaderboard = () => {
     return (
         <div>
-            <div align="right">
-                <img
-                    className="leaderboard_head"
-                    src={Leader_board}
-                    alt="leaderboard_heading"
-                />
-            </div>
+            <h1 className="Leaderboard_head">LEADERBOARD</h1>
 
             {/* <div className = "Leaderboard_container">
 

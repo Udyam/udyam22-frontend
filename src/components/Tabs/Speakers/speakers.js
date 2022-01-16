@@ -1,7 +1,6 @@
 import React from 'react'
 import Data from './Speakers_info.jsx'
 import Card from './Card.js'
-import Speakers_logo from './Speakers_images/Speakers_logo.png'
 
 function CreateCard(parts) {
     return (
@@ -19,7 +18,7 @@ function CreateCard(parts) {
 function Speakers() {
     return (
         <div className="INF" id="Speakers_Scrollbar">
-            <img className="speakers_images" alt="Logo" src={Speakers_logo} />
+            <h1 className="Speakers_head">PREVIOUS SPEAKERS</h1>
             <dl>{Data.map(CreateCard)}</dl>
         </div>
     )

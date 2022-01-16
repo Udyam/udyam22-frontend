@@ -1,11 +1,16 @@
+@media (min-width: 767px) {
+    .Sponsors_head {
+        text-align: right;
+        margin-right: 6vw;
+        font-size: 5rem;
+    }
+}
+
 .Sponsors_head {
-    /* height: auto;
-    width: auto;*/
-    float: right;
-    margin-right: 0px;
-    text-align: right;
-    display: flex;
-    justify-content: space-between;
+    /* display: inline-block; */
+    /* min-width: 100%; */
+    font-family: Potra, serif;
+    color: rgba(93, 207, 223, 1);
 }
 
 .container-sponsors {
@@ -34,6 +39,7 @@
     width: 50%;
     float: left;
     padding: 5px;
+    padding-left: 12.5%;
 }
 
 .title2 {
@@ -49,6 +55,12 @@
     border-radius: 10px;
     margin-top: 15px;
     background-color: #c4c4c4;
+}
+
+.sponsors_image_box {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
 }
 
 @media (max-width: 767px) {
@@ -76,13 +88,14 @@
     }
 
     .box {
-        width: 45vw;
+        width: 100%;
         align-self: center;
-        margin-left: 8vw;
+        /* margin-left: 8vw; */
     }
 
     .Sponsors_head {
-        width: 65vw;
+        text-align: center;
+        font-size: 3rem;
     }
 
     .h4 {
@@ -114,4 +127,11 @@
 
 #Sponsors_Scrollbar::-webkit-scrollbar-thumb:hover {
     background: white;
+}
+
+@media (min-width: 767px) {
+    .container-sponsors {
+        overflow-y: hidden;
+        /* Comment-out the above line when adding new sponsors */
+    }
 }

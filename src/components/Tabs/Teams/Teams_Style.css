@@ -1,11 +1,14 @@
-@media (min-width: 769px) {
-    .Team_Heading {
-        height: auto;
-        width: auto;
-        float: right;
-        margin-right: 4%;
-    }
+.Team_head {
+    font-family: Potra, serif;
+    color: rgba(93, 207, 223, 1);
+}
 
+@media (min-width: 769px) {
+    .Team_head {
+        margin-right: 6vw;
+        font-size: 5rem;
+        text-align: right;
+    }
     .Teams_container {
         height: 75vh;
         display: flex;
@@ -13,8 +16,8 @@
         justify-content: flex-start;
         flex-wrap: wrap;
         column-gap: 20%;
-        margin-top: 12%;
-        margin-left: 5%;
+        margin-top: 5%;
+        margin-left: 8%;
     }
 
     .inner_box {
@@ -42,12 +45,9 @@
 }
 
 @media (max-width: 769px) {
-    .Team_Heading {
-        display: block;
-        height: auto;
-        width: auto;
-        margin-left: auto;
-        margin-right: auto;
+    .Team_head {
+        text-align: center;
+        font-size: 3rem;
     }
 
     .Teams_container {

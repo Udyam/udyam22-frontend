@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Quantico:wght@300&display=swap');
 
 .landing-page-container {
-    height: 90vh;
+    height: 100vh;
+    min-height: 750px;
     background: url('background.png') center center/cover;
 }
 
 .udyam-title {
     position: relative;
-    top: 30vh;
+    top: 35vh;
     height: auto;
     width: 65vw;
     margin-left: 5vw;
@@ -44,17 +45,24 @@
     -webkit-backdrop-filter: blur(6px);
 }
 
+.page-link:hover {
+    color: white !important;
+    background: linear-gradient(
+        rgba(0, 183, 255, 0.4),
+        rgba(0, 183, 255, 0.7),
+        rgba(0, 183, 255, 0.4)
+    ) !important;
+    transform: translateX(-20px);
+}
+
 @media (max-width: 1200px) {
-    .landing-page-container {
-        height: 55vh;
-    }
     .page-links {
         display: none;
     }
     .udyam-title {
         display: block;
         height: auto;
-        top: 22vh;
+        top: 35vh;
         width: 90vw;
         margin-left: auto;
         margin-right: auto;

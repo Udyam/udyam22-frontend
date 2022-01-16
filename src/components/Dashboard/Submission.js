@@ -5,16 +5,20 @@ import { Form, FormGroup, Input } from 'reactstrap'
 import './Submission.css'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
+import { toast } from 'react-toastify'
 
 const API_BASE_URL = 'https://udyam22-backend.herokuapp.com'
 
-const Submission = () => {
+const Submission = ({ dashboardToken }) => {
     const [input, setInput] = useState({
         teamname: '',
         event: '',
         submission: '',
     })
     const [check, setCheck] = useState(0)
+
+    const year = localStorage.getItem('year')
+    console.log('year=', year)
 
     const inputChangeHandler = (e) => {
         const newInput = { ...input }
@@ -27,21 +31,55 @@ const Submission = () => {
     //     console.log("e",e);
     useEffect(() => {
         if (check) {
-            console.log('check=', check)
-            console.log('input=', input)
-            axios
-                .post(API_BASE_URL + '/API/team/submission/', input, {
-                    headers: {
-                        Authorization:
-                            'Token d102f9b8531448411f3658ecfdeeee5b0fbf2a17',
-                    },
+            if (
+                input.teamname.length > 0 &&
+                input.event.length > 0 &&
+                input.submission.length > 0
+            ) {
+                console.log('check=', check)
+                console.log('input=', input)
+                axios
+                    .post(API_BASE_URL + '/API/team/submission/', input, {
+                        headers: {
+                            Authorization: `Token ${dashboardToken}`,
+                        },
+                    })
+                    .then((res) => {
+                        console.log(res)
+                        console.log('done')
+                        toast.success(
+                            'Your Submission was successfully received',
+                            {
+                                position: toast.POSITION.BOTTOM_RIGHT,
+                            }
+                        )
+
+                        // set all states to initial state
+                        setInput({
+                            teamname: '',
+                            event: '',
+                            submission: '',
+                        })
+                        setCheck(0)
+                    })
+                    .catch((err) => {
+                        console.log(err)
+                        toast.error(err.response.data.error, {
+                            position: toast.POSITION.BOTTOM_RIGHT,
+                        })
+                        // set all states to initial state
+                        setInput({
+                            teamname: '',
+                            event: '',
+                            submission: '',
+                        })
+                        setCheck(0)
+                    })
+            } else {
+                toast.error('Please fill all the fields', {
+                    position: toast.POSITION.BOTTOM_RIGHT,
                 })
-                .then((res) => {
-                    console.log(res)
-                })
-                .catch((err) => {
-                    console.log(err)
-                })
+            }
         }
     }, [check])
 
@@ -96,16 +134,45 @@ const Submission = () => {
                             id="id_event"
                             className="dropdown"
                         >
-                            <option>EVENT</option>
-                            <option value="MOSAIC">MOSAIC</option>
-                            <option value="SPYBITS">SPYBITS</option>
-                            <option value="I-CHIP">I-CHIP</option>
-                            <option value="COMMNET">COMMNET</option>
-                            <option value="CONTINNUM">CONTINNUM</option>
-                            <option value="DIGISM">DIGISM</option>
-                            <option value="XIOTA">XIOTA</option>
-                            <option value="CASSANDRA">CASSANDRA</option>
-                            <option value="FUNCKIT">FUNCKIT</option>
+                            <option className="optionDropdown">EVENT</option>
+                            <option value="MOSAIC" className="optionDropdown">
+                                MOSAIC
+                            </option>
+                            <option value="SPYBITS" className="optionDropdown">
+                                SPYBITS
+                            </option>
+                            <option value="ICHIP" className="optionDropdown">
+                                ICHIP
+                            </option>
+                            <option value="COMMNET" className="optionDropdown">
+                                COMMNET
+                            </option>
+                            <option
+                                value="CONTINUUM"
+                                className="optionDropdown"
+                            >
+                                CONTINUUM
+                            </option>
+                            <option value="DIGISIM" className="optionDropdown">
+                                DIGISIM
+                            </option>
+                            <option value="XIOTA" className="optionDropdown">
+                                XIOTA
+                            </option>
+                            <option
+                                value="CASSANDRA"
+                                className="optionDropdown"
+                            >
+                                CASSANDRA
+                            </option>
+                            {year === 'ONE' && (
+                                <option
+                                    value="FUNCKIT"
+                                    className="optionDropdown"
+                                >
+                                    FUNCKIT
+                                </option>
+                            )}
                         </select>
                         {/* </Input> */}
                     </FormGroup>
@@ -120,6 +187,10 @@ const Submission = () => {
                                 inputChangeHandler(e)
                             }}
                             className="team"
+                            style={{
+                                backgroundColor: 'rgba(196, 196, 196, 0.5)',
+                                color: '#CAF0F8',
+                            }}
                             required
                         />
                     </FormGroup>
@@ -134,6 +205,10 @@ const Submission = () => {
                             }}
                             placeholder="GITHUB LINK"
                             className="git"
+                            style={{
+                                backgroundColor: 'rgba(196, 196, 196, 0.5)',
+                                color: '#CAF0F8',
+                            }}
                             required
                         />
                     </FormGroup>

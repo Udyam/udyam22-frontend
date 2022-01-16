@@ -9,11 +9,14 @@ const Timeline = () => {
                 <img
                     src="./images/timelineImage.png"
                     alt="Timeline"
-                    className="p-2 img-fluid imageTimeline"
+                    className="my-4 p-2 img-fluid imageTimeline"
                 />
             </div>
-            <div className="timeline">
-                <div className="container-time left">
+            <div className="timeline" id="timeline-main-container">
+                <div
+                    className="container-time left"
+                    style={{ marginTop: '0px' }}
+                >
                     <div className="content-time">
                         <h2>
                             <time>5 DEC 2021</time>
@@ -51,7 +54,9 @@ const Timeline = () => {
                     <div className="content-time">
                         <h2>8 APRIL 2022</h2>
                         <p>
-                            Buckle up for UDYAM&apos;21!! Eventwise schedule
+
+                            Buckle up for UDYAM&apos;22!! Eventwise schedule
+
                             coming soon.
                         </p>
                     </div>
