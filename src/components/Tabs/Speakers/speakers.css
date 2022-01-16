@@ -4,15 +4,19 @@
     border-color: #90e0ef;
     text-align: center;
     width: 19vw;
-    height: 60vh    ;
+    height: 62vh;
     float: left;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 3vh 3vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-bottom: 7vh;
+    padding-bottom: 2vh;
+
     background: linear-gradient(180deg, #022049 0%, rgba(2, 32, 73, 0) 100%);
 }
 .ayush:hover {
     transform: scale(
-        /* 1.25 */ 1.1
+        /* 1.25 */ 1.15
     ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 .pp {
@@ -37,6 +41,12 @@
 .speakersLink {
     display: flex;
     flex-direction: row;
+}
+.info {
+    font-family: Raleway;
+}
+.name {
+    font-family: Raleway;
 }
 @media (max-width: 321px) {
     .INF {
@@ -70,7 +80,7 @@
         text-align: center;
     }
 }
-@media (max-width: 737px) and (max-width:910px) {
+@media (max-width: 737px) and (max-width: 910px) {
     .INF {
         height: 95vh;
         overflow-x: hidden;
@@ -79,8 +89,8 @@
     .pp {
         /* margin: 10vw; */
         margin-top: 4vh;
-        margin-left:2.5vw;
-        margin-right:2.5vw;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
         width: 60vw;
         height: 33vh;
         border-style: solid;
