@@ -54,9 +54,7 @@ const Timeline = () => {
                     <div className="content-time">
                         <h2>8 APRIL 2022</h2>
                         <p>
-
                             Buckle up for UDYAM&apos;22!! Eventwise schedule
-
                             coming soon.
                         </p>
                     </div>

@@ -6,22 +6,19 @@
     border-color: #90e0ef;
     text-align: center;
     width: 19vw;
-    height: 62vh;
+    height: 66vh;
     float: left;
     font-family: Arial, Helvetica, sans-serif;
 
     margin-left: 3vw;
     margin-right: 3vw;
     margin-bottom: 7vh;
+    margin-top: 5vh;
     padding-bottom: 2vh;
-
 
     background: linear-gradient(180deg, #022049 0%, rgba(2, 32, 73, 0) 100%);
 }
 
-.name {
-    font-size: 1.5rem;
-}
 .ayush:hover {
     transform: scale(
         /* 1.25 */ 1.15
@@ -43,7 +40,7 @@
 }
 .INF {
     /* height: 715px; */
-    height: 95vh;
+    height: 100vh;
     overflow-x: hidden;
     overflow-y: scroll;
 }
@@ -60,8 +57,6 @@
     font-family: Raleway;
 }
 @media (max-width: 321px) {
-
-
     .INF {
         height: 95vh;
         width: 260px;
@@ -73,7 +68,6 @@
             /* 1.25 */ 1
         ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     }
-
 
     .ayush {
         margin-left: auto;
@@ -130,7 +124,6 @@
         margin-bottom: 1vh;
         width: 70vw;
         height: 71vh;
-
     }
 
     .speakers_images {
@@ -140,7 +133,6 @@
         left: 10vw;
         padding-top: 2vh;
     }
-}
 
     .speakers_images {
         text-align: center;
@@ -164,12 +156,6 @@
     background: white;
 }
 
-@media (min-width: 769px) {
-    .INF {
-        overflow-y: hidden;
-    }
-}
-
 .Speakers_head {
     /* display: inline-block; */
     /* min-width: 100%; */
@@ -184,6 +170,6 @@
 @media (max-width: 668px) {
     .Speakers_head {
         align-self: center;
-        font-size: 1.5rem;
+        font-size: 1.5vw;
     }
 }

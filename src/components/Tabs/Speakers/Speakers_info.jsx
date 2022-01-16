@@ -1,9 +1,7 @@
-
 import Aman_Kumar from './Speakers_images/Aman_Kumar.jpeg'
 import Girish_Gupta from './Speakers_images/Girish_Gupta.jpeg'
 import Pankaj_Dwivedi from './Speakers_images/Pankaj_Dwivedi.jpg'
 import Aman_Shreshtha from './Speakers_images/Aman_Shreshtha.jpeg'
-
 
 const Data = [
     {
@@ -33,7 +31,6 @@ const Data = [
         facebook_url: 'https://www.facebook.com',
     },
     {
-
         name: 'Aman Shreshtha',
         about: 'MS(Research) CSE,IIT Delhi(2020-22) ECE,IIT (BHU) Varanasi 2020',
         pp: Aman_Shreshtha,
@@ -41,7 +38,6 @@ const Data = [
         twitter_url: 'https://twitter.com/bts_bighit?lang=en',
         facebook_url: 'https://www.facebook.com',
     },
-    
 ]
 
 export default Data
