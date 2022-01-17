@@ -47,10 +47,12 @@
     border-radius: 10px;
     text-align: center;
     background-color: #c4c4c430;
-    position: fixed;
+    position: relative;
+    width: fit-content;
     margin-top: 5vh;
+    margin-left: auto;
     box-shadow: 3px 3px rgba(255, 255, 255, 0.719);
-    right: 7vw;
+    right: 2vw;
 }
 
 .tabLinks {
@@ -70,7 +72,7 @@
     /* padding-top: 5vh; */
     left: 6vw;
     bottom: 8.5vh;
-    overflow: auto;
+    overflow-x: hidden;
 }
 
 .scrollContainer li {

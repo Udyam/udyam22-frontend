@@ -35,10 +35,13 @@
     background-color: #293b53;
     border: solid 2px #7cdbecd7;
     border-radius: 100px;
-    position: absolute;
+    position: relative;
     height: 8vh;
     width: 8vh;
-    top: 14.5vh;
+    /* top: 20%; */
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
     right: 55px;
     text-align: center;
     box-shadow: 2px 1px #7cdbecd7;
