@@ -1,30 +1,37 @@
 .ayush {
     border-style: solid;
-    border-radius: 30px;
+
+    border-radius: 1vw;
+
     border-color: #90e0ef;
     text-align: center;
-    width: 300px;
-    height: 450px;
+    width: 19vw;
+    height: 66vh;
     float: left;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 30px 40px;
+
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-bottom: 7vh;
+    margin-top: 5vh;
+    padding-bottom: 2vh;
+
     background: linear-gradient(180deg, #022049 0%, rgba(2, 32, 73, 0) 100%);
 }
 
-.name {
-    font-size: 1.5rem;
-}
 .ayush:hover {
     transform: scale(
-        /* 1.25 */ 1.1
+        /* 1.25 */ 1.15
     ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 .pp {
-    margin: 20px;
-    width: 200px;
-    height: 220px;
+    margin: 1.5vw;
+    width: 15vw;
+    height: 15vw;
     border-style: solid;
-    border-radius: 10px;
+
+    border-radius: 1vw;
+
     border-color: #90e0ef;
 }
 .speakers_images {
@@ -33,7 +40,7 @@
 }
 .INF {
     /* height: 715px; */
-    height: 675px;
+    height: 100vh;
     overflow-x: hidden;
     overflow-y: scroll;
 }
@@ -43,73 +50,11 @@
     flex-direction: row;
 }
 
-@media (max-width: 668px) {
-    .INF {
-        height: 95vh;
-        overflow-x: hidden;
-        text-align: center;
-    }
-    .ayush:hover {
-        transform: scale(
-            /* 1.25 */ 1
-        ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    }
-    .ayush {
-        margin-left: auto;
-        margin-right: 3vw;
-        background: linear-gradient(
-            180deg,
-            #022049 0%,
-            rgba(2, 32, 73, 0) 100%
-        );
-        border: 4px solid #90e0ef;
-        border-radius: 10px;
-        margin-bottom: 1vh;
-        width: 95%;
-        height: 70vh;
-    }
-
-    .speakers_images {
-        width: 80vw;
-        text-align: center;
-        position: relative;
-        left: 10vw;
-        padding-top: 2vh;
-    }
+.info {
+    font-family: Raleway;
 }
-@media (min-width: 413px) and (max-width: 737px) {
-    .INF {
-        height: 95vh;
-        overflow-x: hidden;
-        text-align: center;
-    }
-    .ayush:hover {
-        transform: scale(
-            /* 1.25 */ 1
-        ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    }
-    .ayush {
-        margin-left: auto;
-        margin-right: 3vw;
-        background: linear-gradient(
-            180deg,
-            #022049 0%,
-            rgba(2, 32, 73, 0) 100%
-        );
-        border: 4px solid #90e0ef;
-        border-radius: 10px;
-        margin-bottom: 1vh;
-        width: 95%;
-        height: 63vh;
-    }
-
-    .speakers_images {
-        width: 80vw;
-        text-align: center;
-        position: relative;
-        left: 10vw;
-        padding-top: 2vh;
-    }
+.name {
+    font-family: Raleway;
 }
 @media (max-width: 321px) {
     .INF {
@@ -123,6 +68,7 @@
             /* 1.25 */ 1
         ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     }
+
     .ayush {
         margin-left: auto;
         margin-right: 3vw;
@@ -135,7 +81,57 @@
         border-radius: 10px;
         margin-bottom: 1vh;
         width: 95%;
+
         height: 80vh;
+    }
+
+    .speakers_images {
+        margin-bottom: 15vh;
+        text-align: center;
+    }
+}
+@media (max-width: 737px) and (max-width: 910px) {
+    .INF {
+        height: 95vh;
+        overflow-x: hidden;
+        text-align: center;
+    }
+    .pp {
+        /* margin: 10vw; */
+        margin-top: 4vh;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+        width: 60vw;
+        height: 33vh;
+        border-style: solid;
+        border-radius: 1vw;
+        border-color: #90e0ef;
+    }
+    .ayush:hover {
+        transform: scale(
+            /* 1.25 */ 1
+        ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+    .ayush {
+        /* padding: 3vw; */
+        background: linear-gradient(
+            180deg,
+            #022049 0%,
+            rgba(2, 32, 73, 0) 100%
+        );
+        border: 4px solid #90e0ef;
+        border-radius: 10px;
+        margin-bottom: 1vh;
+        width: 70vw;
+        height: 71vh;
+    }
+
+    .speakers_images {
+        width: 80vw;
+        text-align: center;
+        position: relative;
+        left: 10vw;
+        padding-top: 2vh;
     }
 
     .speakers_images {
@@ -160,12 +156,6 @@
     background: white;
 }
 
-@media (min-width: 769px) {
-    .INF {
-        overflow-y: hidden;
-    }
-}
-
 .Speakers_head {
     /* display: inline-block; */
     /* min-width: 100%; */
@@ -180,6 +170,6 @@
 @media (max-width: 668px) {
     .Speakers_head {
         align-self: center;
-        font-size: 1.5rem;
+        font-size: 1.5vw;
     }
 }
