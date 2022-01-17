@@ -7,12 +7,14 @@
     margin-right: auto;
     border-radius: 12px;
     box-shadow: 4px 4px rgba(255, 255, 255, 0.342);
+    padding-right: 10vw !important;
 }
 
 .profileContainer li {
-    overflow-wrap: break-word;
+    word-break: break-word;
     margin-bottom: 20px !important;
 }
+
 .profileContainer li h4 {
     font-weight: normal;
 }
