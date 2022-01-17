@@ -26,7 +26,7 @@ export default function RecoverForm() {
                     email: recover_email,
                 }
             )
-            .then((response) => {
+            .then(() => {
                 //console.log(response)
                 toast.info(
                     'Great!! Please check your email for the link through which you can reset your password.',
@@ -34,7 +34,7 @@ export default function RecoverForm() {
                 )
             })
             .catch(function (err) {
-                //console.log(err)
+                console.log(err)
                 toast.error(
                     'Some error occurred!! Make sure you registered with the same email-id.',
                     { position: toast.POSITION.BOTTOM_RIGHT }

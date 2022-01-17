@@ -63,7 +63,7 @@ export const ContactForm = () => {
                     'https://udyam22-backend.herokuapp.com/user/query/',
                     input
                 )
-                .then((res) => {
+                .then(() => {
                     setValidMessage('Query Successfully received')
                     setValidFields(true)
                     //console.log(res.data)
@@ -78,7 +78,7 @@ export const ContactForm = () => {
                     setInvalidMessage(
                         'Oops, Something went wrong, Please try Again'
                     )
-                    //console.log(err)
+                    console.log(err)
                 })
         }
     }

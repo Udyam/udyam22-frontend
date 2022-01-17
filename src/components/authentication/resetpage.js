@@ -50,7 +50,7 @@ export default function ResetForm() {
                     uidb64: uidbget,
                 }
             )
-            .then((response) => {
+            .then(() => {
                 //console.log(response.data)
                 toast.success('Great!! Your Password has been changed .', {
                     position: toast.POSITION.BOTTOM_RIGHT,
@@ -58,7 +58,7 @@ export default function ResetForm() {
                 history.push('/notifyreset')
             })
             .catch(function (err) {
-                //console.log(err)
+                console.log(err)
                 toast.error(
                     "Some error occurred!! Don't worry we will change your password",
                     { position: toast.POSITION.BOTTOM_RIGHT }

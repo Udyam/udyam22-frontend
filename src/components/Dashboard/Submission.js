@@ -44,7 +44,7 @@ const Submission = ({ dashboardToken }) => {
                             Authorization: `Token ${dashboardToken}`,
                         },
                     })
-                    .then((res) => {
+                    .then(() => {
                         //console.log(res)
                         //console.log('done')
                         toast.success(

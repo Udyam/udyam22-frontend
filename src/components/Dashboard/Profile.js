@@ -56,7 +56,7 @@ const Profile = ({ dashboardToken }) => {
                         },
                     }
                 )
-                .then((res) => {
+                .then(() => {
                     //console.log(res.data)
                     toast.success('Profile Name Updated', {
                         position: toast.POSITION.BOTTOM_RIGHT,
@@ -65,7 +65,7 @@ const Profile = ({ dashboardToken }) => {
                     setCheck(2)
                 })
                 .catch((err) => {
-                    //console.log(err)
+                    console.log(err)
                 })
             document
                 .getElementById('profile-user-name')
@@ -105,7 +105,7 @@ const Profile = ({ dashboardToken }) => {
                         },
                     }
                 )
-                .then((res) => {
+                .then(() => {
                     //console.log(res.data)
                     toast.success('College Name Updated', {
                         position: toast.POSITION.BOTTOM_RIGHT,
@@ -113,7 +113,7 @@ const Profile = ({ dashboardToken }) => {
                     setCheck(2)
                 })
                 .catch((err) => {
-                    //console.log(err)
+                    console.log(err)
                 })
             document
                 .getElementById('profile-college-name')
@@ -140,7 +140,7 @@ const Profile = ({ dashboardToken }) => {
                 localStorage.setItem('year', res.data.year)
             })
             .catch((err) => {
-                //console.log('err=', err)
+                console.log('err=', err)
             })
     }, [])
     useEffect(() => {
@@ -157,7 +157,7 @@ const Profile = ({ dashboardToken }) => {
                     localStorage.setItem('year', res.data.year)
                 })
                 .catch((err) => {
-                    //console.log('err=', err)
+                    console.log('err=', err)
                 })
         }
         setCheck(0)
