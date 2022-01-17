@@ -14,7 +14,7 @@ function App() {
         backgroundAttachment: 'fixed',
     }
     if (window.location.pathname == '/dashboard')
-        bgImage = { backgroundImage: 'url(/images/background.png)' }
+        bgImage = { backgroundImage: 'url(/images/background.jpg)' }
     let style = {
         ...bgImage,
         ...bgProperties,
