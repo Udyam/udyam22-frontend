@@ -2,6 +2,12 @@ import React from 'react'
 import './Sub_Files.css'
 
 import Sample_Image from './Mem_Images/Sample_Image.jpg'
+import Ishaan_Amrit from './Mem_Images/Ishaan_Amrit.jpg'
+import Akshat_Goyal from './Mem_Images/Akshat_Goyal.jpeg'
+import Ankur_Agrawal_SA from './Mem_Images/Ankur_Agrawal_SA.jpg'
+import Dinesh_Easwaravaka from './Mem_Images/Dinesh_Easwaravaka.jpg'
+import Mohit_Shringi from './Mem_Images/Mohit_Shringi.jpeg'
+import Suhas_Alavala from './Mem_Images/Suhas_Alavala.jpg'
 import Samarth_Solanki from './Mem_Images/Samarth_Solanki.jpg'
 import Prince_Kumar_Gond from './Mem_Images/Prince_Kumar_Gond.jpg'
 import Anshika_Khare from './Mem_Images/Anshika_Khare.jpg'
@@ -21,6 +27,7 @@ import Sanskar_Santosh_Totla from './Mem_Images/Sanskar_Santosh_Totla.jpg'
 import Sarang_Manerikar from './Mem_Images/Sarang_Manerikar.jpeg'
 import Mayank_Singh from './Mem_Images/Mayank_Singh.jpeg'
 import Ritweek_Singh from './Mem_Images/Ritweek_Singh.jpg'
+import Ayush_Bemera from './Mem_Images/Ayush_Bemera.jpeg'
 import Akshat_Jain from './Mem_Images/Akshat_Jain.jpg'
 import Pranav_Mittal from './Mem_Images/Pranav_Mittal.jpg'
 import Jayesh_Upadhyay from './Mem_Images/Jayesh_Upadhyay.jpg'
@@ -81,7 +88,7 @@ const easwaravaka_dinesh_reddy = () => {
         <div className="Members_Tiles">
             <img
                 className="photo"
-                src={Sample_Image}
+                src={Dinesh_Easwaravaka}
                 alt="Easwaravaka Dinesh Reddy"
             />
             <div className="Members_Description">EASWARAVAKA DINESH REDDY</div>
@@ -116,7 +123,7 @@ const easwaravaka_dinesh_reddy = () => {
 const ankur_agrawal_SA = () => {
     return (
         <div className="Members_Tiles">
-            <img className="photo" src={Sample_Image} alt="Ankur Agrawal" />
+            <img className="photo" src={Ankur_Agrawal_SA} alt="Ankur Agrawal" />
             <div className="Members_Description">ANKUR AGRAWAL</div>
             <div className="Members_Description">TECHNICAL</div>
             <div className="Teams_social-tray">
@@ -149,7 +156,7 @@ const ankur_agrawal_SA = () => {
 const akshat_goyal = () => {
     return (
         <div className="Members_Tiles">
-            <img className="photo" src={Sample_Image} alt="Akshat Goyal" />
+            <img className="photo" src={Akshat_Goyal} alt="Akshat Goyal" />
             <div className="Members_Description">AKSHAT GOYAL</div>
             <div className="Members_Description">WEBSITE DEVELOPMENT</div>
             <div className="Teams_social-tray">
@@ -182,7 +189,7 @@ const akshat_goyal = () => {
 const alavala_suhas = () => {
     return (
         <div className="Members_Tiles">
-            <img className="photo" src={Sample_Image} alt="Alavala Suhas" />
+            <img className="photo" src={Suhas_Alavala} alt="Alavala Suhas" />
             <div className="Members_Description">ALAVALA SUHAS</div>
             <div className="Members_Description">WEBSITE DEVELOPMENT</div>
             <div className="Teams_social-tray">
@@ -215,7 +222,7 @@ const alavala_suhas = () => {
 const ishaan_amrit = () => {
     return (
         <div className="Members_Tiles">
-            <img className="photo" src={Sample_Image} alt="Ishaan Amrit" />
+            <img className="photo" src={Ishaan_Amrit} alt="Ishaan Amrit" />
             <div className="Members_Description">ISHAAN AMRIT</div>
             <div className="Members_Description">CULTURAL</div>
             <div className="Teams_social-tray">
@@ -588,7 +595,7 @@ const ritweek_singh = () => {
 const mohit_shringi = () => {
     return (
         <div className="Members_Tiles">
-            <img className="photo" src={Sample_Image} alt="Mohit Shringi" />
+            <img className="photo" src={Mohit_Shringi} alt="Mohit Shringi" />
             <div className="Members_Description">MOHIT SHRINGI</div>
             <div className="Members_Description">GENERAL SECRETARY</div>
             <div className="Teams_social-tray">
@@ -1597,7 +1604,7 @@ const riya_kanojiya = () => {
 const ayush_bemera = () => {
     return (
         <div className="Members_Tiles">
-            <img className="photo" src={Sample_Image} alt="Ayush Bemera" />
+            <img className="photo" src={Ayush_Bemera} alt="Ayush Bemera" />
             <div className="Members_Description">AYUSH BEMERA</div>
             <div className="Members_Description">WEB COORDINATOR</div>
             <div className="Teams_social-tray">
@@ -1618,7 +1625,7 @@ const ayush_bemera = () => {
                 <a
                     rel="noreferrer"
                     target="_blank"
-                    href="https://www.instagram.com/udyam_iit_bhu/"
+                    href="https://www.instagram.com/ayushbemera/"
                 >
                     <img src={Instagram} className="social_icons" />
                 </a>
