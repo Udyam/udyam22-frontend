@@ -13,7 +13,7 @@ function App() {
         backgroundSize: 'cover',
         backgroundAttachment: 'fixed',
     }
-    
+
     let style = {
         ...bgImage,
         ...bgProperties,
