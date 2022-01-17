@@ -36,8 +36,18 @@ const Mosaic = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 1 coming Soon")}>PS1</button>
-                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 2 coming Soon")}>PS2</button>
+                <button
+                    className="Events_Inner_Link"
+                    onClick={() => alert('Problem Statement 1 coming Soon')}
+                >
+                    PS1
+                </button>
+                <button
+                    className="Events_Inner_Link"
+                    onClick={() => alert('Problem Statement 2 coming Soon')}
+                >
+                    PS2
+                </button>
                 {/* <a
                     rel="noreferrer"
                     target="_blank"
@@ -141,8 +151,18 @@ const Ichip = () => {
                 >
                     <div className="Events_Inner_Link">PS4</div>
                 </a> */}
-                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 1 coming Soon")}>PS1</button>
-                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 2 coming Soon")}>PS2</button>
+                <button
+                    className="Events_Inner_Link"
+                    onClick={() => alert('Problem Statement 1 coming Soon')}
+                >
+                    PS1
+                </button>
+                <button
+                    className="Events_Inner_Link"
+                    onClick={() => alert('Problem Statement 2 coming Soon')}
+                >
+                    PS2
+                </button>
             </div>
         </>
     )
@@ -175,8 +195,18 @@ const Spybits = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 1 coming Soon")}>PS1</button>
-                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 2 coming Soon")}>PS2</button>
+                <button
+                    className="Events_Inner_Link"
+                    onClick={() => alert('Problem Statement 1 coming Soon')}
+                >
+                    PS1
+                </button>
+                <button
+                    className="Events_Inner_Link"
+                    onClick={() => alert('Problem Statement 2 coming Soon')}
+                >
+                    PS2
+                </button>
                 {/* <a
                     rel="noreferrer"
                     target="_blank"
@@ -243,8 +273,18 @@ const Commnet = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 1 coming Soon")}>PS1</button>
-                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 2 coming Soon")}>PS2</button>
+                <button
+                    className="Events_Inner_Link"
+                    onClick={() => alert('Problem Statement 1 coming Soon')}
+                >
+                    PS1
+                </button>
+                <button
+                    className="Events_Inner_Link"
+                    onClick={() => alert('Problem Statement 2 coming Soon')}
+                >
+                    PS2
+                </button>
                 {/* <a
                     rel="noreferrer"
                     target="_blank"
@@ -312,8 +352,18 @@ const Xiota = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 1 coming Soon")}>PS1</button>
-                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 2 coming Soon")}>PS2</button>
+                <button
+                    className="Events_Inner_Link"
+                    onClick={() => alert('Problem Statement 1 coming Soon')}
+                >
+                    PS1
+                </button>
+                <button
+                    className="Events_Inner_Link"
+                    onClick={() => alert('Problem Statement 2 coming Soon')}
+                >
+                    PS2
+                </button>
                 {/* <a
                     href=""
                     style={{ textDecoration: 'none' }}
@@ -380,8 +430,18 @@ const Cassandra = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 1 coming Soon")}>PS1</button>
-                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 2 coming Soon")}>PS2</button>
+                <button
+                    className="Events_Inner_Link"
+                    onClick={() => alert('Problem Statement 1 coming Soon')}
+                >
+                    PS1
+                </button>
+                <button
+                    className="Events_Inner_Link"
+                    onClick={() => alert('Problem Statement 2 coming Soon')}
+                >
+                    PS2
+                </button>
                 {/* <a
                     rel="noreferrer"
                     target="_blank"
@@ -448,8 +508,18 @@ const Digisim = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 1 coming Soon")}>PS1</button>
-                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 2 coming Soon")}>PS2</button>
+                <button
+                    className="Events_Inner_Link"
+                    onClick={() => alert('Problem Statement 1 coming Soon')}
+                >
+                    PS1
+                </button>
+                <button
+                    className="Events_Inner_Link"
+                    onClick={() => alert('Problem Statement 2 coming Soon')}
+                >
+                    PS2
+                </button>
                 {/* <a
                     rel="noreferrer"
                     target="_blank"
@@ -515,8 +585,18 @@ const Funckit = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 1 coming Soon")}>PS1</button>
-                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 2 coming Soon")}>PS2</button>
+                <button
+                    className="Events_Inner_Link"
+                    onClick={() => alert('Problem Statement 1 coming Soon')}
+                >
+                    PS1
+                </button>
+                <button
+                    className="Events_Inner_Link"
+                    onClick={() => alert('Problem Statement 2 coming Soon')}
+                >
+                    PS2
+                </button>
                 {/* <a
                     rel="noreferrer"
                     target="_blank"
@@ -582,8 +662,18 @@ const Continuum = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 1 coming Soon")}>PS1</button>
-                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 2 coming Soon")}>PS2</button>
+                <button
+                    className="Events_Inner_Link"
+                    onClick={() => alert('Problem Statement 1 coming Soon')}
+                >
+                    PS1
+                </button>
+                <button
+                    className="Events_Inner_Link"
+                    onClick={() => alert('Problem Statement 2 coming Soon')}
+                >
+                    PS2
+                </button>
                 {/* <a
                     rel="noreferrer"
                     target="_blank"
