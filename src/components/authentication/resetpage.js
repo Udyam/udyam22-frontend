@@ -50,8 +50,8 @@ export default function ResetForm() {
                     uidb64: uidbget,
                 }
             )
-            .then((response) => {
-                console.log(response.data)
+            .then(() => {
+                //console.log(response.data)
                 toast.success('Great!! Your Password has been changed .', {
                     position: toast.POSITION.BOTTOM_RIGHT,
                 })

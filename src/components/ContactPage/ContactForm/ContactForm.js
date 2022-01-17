@@ -63,10 +63,10 @@ export const ContactForm = () => {
                     'https://udyam22-backend.herokuapp.com/user/query/',
                     input
                 )
-                .then((res) => {
+                .then(() => {
                     setValidMessage('Query Successfully received')
                     setValidFields(true)
-                    console.log(res.data)
+                    //console.log(res.data)
                     setInput({
                         name: '',
                         email: '',

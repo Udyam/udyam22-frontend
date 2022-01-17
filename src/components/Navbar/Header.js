@@ -52,7 +52,7 @@ const Header = () => {
                 setUser(res.data)
             })
             .catch(() => {
-                console.log('error')
+                //console.log('error')
             })
     }, [])
 
