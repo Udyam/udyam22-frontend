@@ -7,7 +7,7 @@ import { Routes } from './routes'
 import { AuthProvider } from './components/authentication/authprovider'
 import { Dashstateprovider } from './components/authentication/Context/dashstateprovider'
 function App() {
-    let bgImage = { backgroundImage: 'url(/images/backgroundAlt.png)' }
+    let bgImage = { backgroundImage: 'url(/images/backgroundAlt.jpg)' }
     let bgProperties = {
         height: 'auto',
         backgroundSize: 'cover',
