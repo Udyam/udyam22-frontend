@@ -16,7 +16,7 @@ const Workshops = ({ dashboardToken }) => {
                 },
             })
             .then((res) => {
-                console.log('workshops=', res.data)
+                //console.log('workshops=', res.data)
                 setWorkshops(res.data)
             })
     }, [])

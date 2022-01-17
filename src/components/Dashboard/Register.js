@@ -33,7 +33,7 @@ const Register = ({ dashboardToken }) => {
     const [thirdDisplay, setThirdDisplay] = useState(false)
 
     const year = localStorage.getItem('year')
-    console.log('year=', year)
+    //console.log('year=', year)
 
     const firstYear = {
         MOSAIC: 3,
@@ -66,7 +66,7 @@ const Register = ({ dashboardToken }) => {
             setMemberArray(secondYear)
         }
 
-        console.log('memberArray=', memberArray)
+        //console.log('memberArray=', memberArray)
     }, [])
 
     const inputChangeHandler = async (e) => {
@@ -74,7 +74,7 @@ const Register = ({ dashboardToken }) => {
         const newInput = { ...input }
         newInput[e.target.name] = e.target.value
         setInput(newInput)
-        console.log('event=', e.target.value)
+        //console.log('event=', e.target.value)
 
         if (memberArray[e.target.value] != undefined) {
             if (memberArray[e.target.value] === 3) {
@@ -117,8 +117,8 @@ const Register = ({ dashboardToken }) => {
                 input.event.length > 0 &&
                 input.leader.length > 0
             ) {
-                console.log('check=', check)
-                console.log('input=', input)
+                //console.log('check=', check)
+                //console.log('input=', input)
 
                 // // if number of members is 1 dlete member1 and member2 from input
                 // if (numMembers === '1') {
@@ -130,7 +130,7 @@ const Register = ({ dashboardToken }) => {
                 //     delete input.member2
                 // }
 
-                console.log('input new=', input)
+                //console.log('input new=', input)
 
                 axios
                     .post(API_BASE_URL + '/API/team/create/', input, {
@@ -139,8 +139,8 @@ const Register = ({ dashboardToken }) => {
                         },
                     })
                     .then((res) => {
-                        console.log(res)
-                        console.log('done')
+                        //console.log(res)
+                        //console.log('done')
                         toast.success(
                             'Your team has been created successfully',
                             {
@@ -165,7 +165,7 @@ const Register = ({ dashboardToken }) => {
                         setThirdDisplay(false)
                     })
                     .catch((err) => {
-                        console.log('err=', err.response.data.error)
+                        //console.log('err=', err.response.data.error)
                         toast.error(err.response.data.error, {
                             position: toast.POSITION.BOTTOM_RIGHT,
                         })
@@ -241,7 +241,7 @@ const Register = ({ dashboardToken }) => {
                             value={input.event}
                             onChange={(e) => {
                                 inputChangeHandler(e)
-                                console.log('event e=', input.event)
+                                //console.log('event e=', input.event)
                             }}
                             id="id_event"
                             className="dropdown"
@@ -463,7 +463,7 @@ const Register = ({ dashboardToken }) => {
                 <button
                     className="button"
                     onClick={() => {
-                        console.log('button clicked')
+                        //console.log('button clicked')
                         setCheck(check + 1)
                     }}
                 >

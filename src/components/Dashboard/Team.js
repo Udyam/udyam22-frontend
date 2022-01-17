@@ -40,8 +40,8 @@ const Team = ({ id, eventName, teamName, leader, member1, member2 }) => {
                         auth
                     )
                     .then(function ({ response }) {
-                        console.log(response)
-                        console.log(state)
+                        //console.log(response)
+                        //console.log(state)
                         toast.success(
                             'Your team has been deleted successfully',
                             {
@@ -51,7 +51,7 @@ const Team = ({ id, eventName, teamName, leader, member1, member2 }) => {
                         setState(8)
                     })
                     .catch(function (err) {
-                        console.log(err)
+                        //console.log(err)
                     })
             }
         },
@@ -60,8 +60,8 @@ const Team = ({ id, eventName, teamName, leader, member1, member2 }) => {
     )
     const deleteTeam = ({ id }) => {
         setState(1)
-        console.log(id)
-        console.log(state.state)
+        //console.log(id)
+        //console.log(state.state)
         setIdf(id)
         if (state.state == 1) {
             axios
@@ -72,15 +72,15 @@ const Team = ({ id, eventName, teamName, leader, member1, member2 }) => {
                     auth
                 )
                 .then(function ({ response }) {
-                    console.log(response)
-                    console.log(state)
+                    //console.log(response)
+                    //console.log(state)
                     toast.success('Your team has been deleted successfully', {
                         position: toast.POSITION.BOTTOM_RIGHT,
                     })
                     setState(8)
                 })
                 .catch(function (err) {
-                    console.log(err)
+                    //console.log(err)
                 })
         }
     }

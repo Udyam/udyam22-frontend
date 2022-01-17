@@ -32,7 +32,7 @@ const Profile = ({ dashboardToken }) => {
             .classList.remove('hideme')
     }
     useEffect(() => {
-        console.log('check=', check)
+        //console.log('check=', check)
         if (check == 1) {
             if (!updateName) {
                 toast.error('Please fill the empty field', {
@@ -57,7 +57,7 @@ const Profile = ({ dashboardToken }) => {
                     }
                 )
                 .then((res) => {
-                    console.log(res.data)
+                    //console.log(res.data)
                     toast.success('Profile Name Updated', {
                         position: toast.POSITION.BOTTOM_RIGHT,
                     })
@@ -65,7 +65,7 @@ const Profile = ({ dashboardToken }) => {
                     setCheck(2)
                 })
                 .catch((err) => {
-                    console.log(err)
+                    //console.log(err)
                 })
             document
                 .getElementById('profile-user-name')
@@ -81,7 +81,7 @@ const Profile = ({ dashboardToken }) => {
         setCheck(1)
     }
     useEffect(() => {
-        console.log('check=', check)
+        //console.log('check=', check)
         if (check == 3) {
             if (!updateCollegeName) {
                 toast.error('Please fill the empty field', {
@@ -106,14 +106,14 @@ const Profile = ({ dashboardToken }) => {
                     }
                 )
                 .then((res) => {
-                    console.log(res.data)
+                    //console.log(res.data)
                     toast.success('College Name Updated', {
                         position: toast.POSITION.BOTTOM_RIGHT,
                     })
                     setCheck(2)
                 })
                 .catch((err) => {
-                    console.log(err)
+                    //console.log(err)
                 })
             document
                 .getElementById('profile-college-name')
@@ -135,12 +135,12 @@ const Profile = ({ dashboardToken }) => {
                 },
             })
             .then((res) => {
-                console.log('res=', res.data)
+                //console.log('res=', res.data)
                 setUser(res.data)
                 localStorage.setItem('year', res.data.year)
             })
             .catch((err) => {
-                console.log('err=', err)
+                //console.log('err=', err)
             })
     }, [])
     useEffect(() => {
@@ -152,12 +152,12 @@ const Profile = ({ dashboardToken }) => {
                     },
                 })
                 .then((res) => {
-                    console.log('res=', res.data)
+                    //console.log('res=', res.data)
                     setUser(res.data)
                     localStorage.setItem('year', res.data.year)
                 })
                 .catch((err) => {
-                    console.log('err=', err)
+                    //console.log('err=', err)
                 })
         }
         setCheck(0)

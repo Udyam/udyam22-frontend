@@ -66,7 +66,7 @@ export const ContactForm = () => {
                 .then((res) => {
                     setValidMessage('Query Successfully received')
                     setValidFields(true)
-                    console.log(res.data)
+                    //console.log(res.data)
                     setInput({
                         name: '',
                         email: '',
@@ -78,7 +78,7 @@ export const ContactForm = () => {
                     setInvalidMessage(
                         'Oops, Something went wrong, Please try Again'
                     )
-                    console.log(err)
+                    //console.log(err)
                 })
         }
     }
