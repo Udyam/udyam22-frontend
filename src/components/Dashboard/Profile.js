@@ -32,7 +32,7 @@ const Profile = ({ dashboardToken }) => {
             .classList.remove('hideme')
     }
     useEffect(() => {
-        console.log('check=', check)
+        //console.log('check=', check)
         if (check == 1) {
             if (!updateName) {
                 toast.error('Please fill the empty field', {
@@ -56,8 +56,8 @@ const Profile = ({ dashboardToken }) => {
                         },
                     }
                 )
-                .then((res) => {
-                    console.log(res.data)
+                .then(() => {
+                    //console.log(res.data)
                     toast.success('Profile Name Updated', {
                         position: toast.POSITION.BOTTOM_RIGHT,
                     })
@@ -81,7 +81,7 @@ const Profile = ({ dashboardToken }) => {
         setCheck(1)
     }
     useEffect(() => {
-        console.log('check=', check)
+        //console.log('check=', check)
         if (check == 3) {
             if (!updateCollegeName) {
                 toast.error('Please fill the empty field', {
@@ -105,8 +105,8 @@ const Profile = ({ dashboardToken }) => {
                         },
                     }
                 )
-                .then((res) => {
-                    console.log(res.data)
+                .then(() => {
+                    //console.log(res.data)
                     toast.success('College Name Updated', {
                         position: toast.POSITION.BOTTOM_RIGHT,
                     })
@@ -135,7 +135,7 @@ const Profile = ({ dashboardToken }) => {
                 },
             })
             .then((res) => {
-                console.log('res=', res.data)
+                //console.log('res=', res.data)
                 setUser(res.data)
                 localStorage.setItem('year', res.data.year)
             })
@@ -152,7 +152,7 @@ const Profile = ({ dashboardToken }) => {
                     },
                 })
                 .then((res) => {
-                    console.log('res=', res.data)
+                    //console.log('res=', res.data)
                     setUser(res.data)
                     localStorage.setItem('year', res.data.year)
                 })

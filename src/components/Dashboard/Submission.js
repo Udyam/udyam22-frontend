@@ -18,7 +18,7 @@ const Submission = ({ dashboardToken }) => {
     const [check, setCheck] = useState(0)
 
     const year = localStorage.getItem('year')
-    console.log('year=', year)
+    //console.log('year=', year)
 
     const inputChangeHandler = (e) => {
         const newInput = { ...input }
@@ -36,17 +36,17 @@ const Submission = ({ dashboardToken }) => {
                 input.event.length > 0 &&
                 input.submission.length > 0
             ) {
-                console.log('check=', check)
-                console.log('input=', input)
+                //console.log('check=', check)
+                //console.log('input=', input)
                 axios
                     .post(API_BASE_URL + '/API/team/submission/', input, {
                         headers: {
                             Authorization: `Token ${dashboardToken}`,
                         },
                     })
-                    .then((res) => {
-                        console.log(res)
-                        console.log('done')
+                    .then(() => {
+                        //console.log(res)
+                        //console.log('done')
                         toast.success(
                             'Your Submission was successfully received',
                             {
@@ -63,7 +63,7 @@ const Submission = ({ dashboardToken }) => {
                         setCheck(0)
                     })
                     .catch((err) => {
-                        console.log(err)
+                        //console.log(err)
                         toast.error(err.response.data.error, {
                             position: toast.POSITION.BOTTOM_RIGHT,
                         })
@@ -227,7 +227,7 @@ const Submission = ({ dashboardToken }) => {
                 <button
                     className="button"
                     onClick={() => {
-                        console.log('button clicked')
+                        //console.log('button clicked')
                         setCheck(check + 1)
                     }}
                 >
