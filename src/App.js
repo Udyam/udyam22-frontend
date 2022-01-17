@@ -13,8 +13,7 @@ function App() {
         backgroundSize: 'cover',
         backgroundAttachment: 'fixed',
     }
-    if (window.location.pathname == '/dashboard')
-        bgImage = { backgroundImage: 'url(/images/background.jpg)' }
+
     let style = {
         ...bgImage,
         ...bgProperties,
