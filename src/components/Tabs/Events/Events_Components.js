@@ -36,7 +36,9 @@ const Mosaic = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <a
+                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 1 coming Soon")}>PS1</button>
+                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 2 coming Soon")}>PS2</button>
+                {/* <a
                     rel="noreferrer"
                     target="_blank"
                     href=""
@@ -70,7 +72,7 @@ const Mosaic = () => {
                     style={{ textDecoration: 'none' }}
                 >
                     <div className="Events_Inner_Link">PS4</div>
-                </a>
+                </a> */}
             </div>
         </>
     )
@@ -104,7 +106,7 @@ const Ichip = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <a
+                {/* <a
                     rel="noreferrer"
                     target="_blank"
                     href=""
@@ -138,7 +140,9 @@ const Ichip = () => {
                     style={{ textDecoration: 'none' }}
                 >
                     <div className="Events_Inner_Link">PS4</div>
-                </a>
+                </a> */}
+                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 1 coming Soon")}>PS1</button>
+                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 2 coming Soon")}>PS2</button>
             </div>
         </>
     )
@@ -171,7 +175,9 @@ const Spybits = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <a
+                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 1 coming Soon")}>PS1</button>
+                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 2 coming Soon")}>PS2</button>
+                {/* <a
                     rel="noreferrer"
                     target="_blank"
                     href=""
@@ -205,7 +211,7 @@ const Spybits = () => {
                     style={{ textDecoration: 'none' }}
                 >
                     <div className="Events_Inner_Link">PS4</div>
-                </a>
+                </a> */}
             </div>
         </>
     )
@@ -237,7 +243,9 @@ const Commnet = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <a
+                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 1 coming Soon")}>PS1</button>
+                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 2 coming Soon")}>PS2</button>
+                {/* <a
                     rel="noreferrer"
                     target="_blank"
                     href=""
@@ -271,7 +279,7 @@ const Commnet = () => {
                     style={{ textDecoration: 'none' }}
                 >
                     <div className="Events_Inner_Link">PS4</div>
-                </a>
+                </a> */}
             </div>
         </>
     )
@@ -304,7 +312,9 @@ const Xiota = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <a
+                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 1 coming Soon")}>PS1</button>
+                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 2 coming Soon")}>PS2</button>
+                {/* <a
                     href=""
                     style={{ textDecoration: 'none' }}
                     rel="noreferrer"
@@ -338,7 +348,7 @@ const Xiota = () => {
                     style={{ textDecoration: 'none' }}
                 >
                     <div className="Events_Inner_Link">PS4</div>
-                </a>
+                </a> */}
             </div>
         </>
     )
@@ -370,7 +380,9 @@ const Cassandra = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <a
+                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 1 coming Soon")}>PS1</button>
+                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 2 coming Soon")}>PS2</button>
+                {/* <a
                     rel="noreferrer"
                     target="_blank"
                     href=""
@@ -404,7 +416,7 @@ const Cassandra = () => {
                     style={{ textDecoration: 'none' }}
                 >
                     <div className="Events_Inner_Link">PS4</div>
-                </a>
+                </a> */}
             </div>
         </>
     )
@@ -436,7 +448,9 @@ const Digisim = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <a
+                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 1 coming Soon")}>PS1</button>
+                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 2 coming Soon")}>PS2</button>
+                {/* <a
                     rel="noreferrer"
                     target="_blank"
                     href=""
@@ -470,7 +484,7 @@ const Digisim = () => {
                     style={{ textDecoration: 'none' }}
                 >
                     <div className="Events_Inner_Link">PS4</div>
-                </a>
+                </a> */}
             </div>
         </>
     )
@@ -501,7 +515,9 @@ const Funckit = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <a
+                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 1 coming Soon")}>PS1</button>
+                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 2 coming Soon")}>PS2</button>
+                {/* <a
                     rel="noreferrer"
                     target="_blank"
                     href=""
@@ -535,7 +551,7 @@ const Funckit = () => {
                     style={{ textDecoration: 'none' }}
                 >
                     <div className="Events_Inner_Link">PS4</div>
-                </a>
+                </a> */}
             </div>
         </>
     )
@@ -566,7 +582,9 @@ const Continuum = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <a
+                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 1 coming Soon")}>PS1</button>
+                <button className="Events_Inner_Link" onClick={()=>alert("Problem Statement 2 coming Soon")}>PS2</button>
+                {/* <a
                     rel="noreferrer"
                     target="_blank"
                     href=""
@@ -600,7 +618,7 @@ const Continuum = () => {
                     style={{ textDecoration: 'none' }}
                 >
                     <div className="Events_Inner_Link">PS4</div>
-                </a>
+                </a> */}
             </div>
         </>
     )
