@@ -37,7 +37,7 @@ export default function RegisterForm() {
                 setCheck(0)
                 return
             }
-            if (!validator.isEmail(user_email)) {
+            if (!validator.isEmail(user_email.trim())) {
                 toast.warn('Please enter your email correctly', {
                     position: toast.POSITION.BOTTOM_RIGHT,
                 })
@@ -53,7 +53,7 @@ export default function RegisterForm() {
                 .post(
                     'https://udyam22-backend.herokuapp.com/' + 'auth/login/',
                     {
-                        email: user_email,
+                        email: user_email.trim(),
                         password: user_pass,
                     }
                 )
@@ -110,7 +110,7 @@ export default function RegisterForm() {
             })
             return false
         }
-        if (!validator.isEmail(email)) {
+        if (!validator.isEmail(email.trim())) {
             toast.warn('Please enter your email correctly', {
                 position: toast.POSITION.BOTTOM_RIGHT,
             })
@@ -160,7 +160,7 @@ export default function RegisterForm() {
         if (check == 2) {
             const dataForApiRequest = {
                 name: Name,
-                email: email,
+                email: email.trim(),
                 college_name: collegeName,
                 password: password,
                 year: year,
