@@ -114,7 +114,7 @@ const Core_Team = () => {
                 </div>
                 <div className="Teams_Mobile_Container">
                     <div className="Teams_Tiles">
-                        <Members.swastik_thapa />
+                        <Members.ritweek_singh />
                     </div>
                     <div className="Teams_Tiles">
                         <Members.mohit_shringi />
