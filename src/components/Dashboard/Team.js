@@ -39,9 +39,9 @@ const Team = ({ id, eventName, teamName, leader, member1, member2 }) => {
                             '/',
                         auth
                     )
-                    .then(function ({ response }) {
-                        console.log(response)
-                        console.log(state)
+                    .then(function () {
+                        //console.log(response)
+                        //console.log(state)
                         toast.success(
                             'Your team has been deleted successfully',
                             {
@@ -60,8 +60,8 @@ const Team = ({ id, eventName, teamName, leader, member1, member2 }) => {
     )
     const deleteTeam = ({ id }) => {
         setState(1)
-        console.log(id)
-        console.log(state.state)
+        //console.log(id)
+        //console.log(state.state)
         setIdf(id)
         if (state.state == 1) {
             axios
@@ -71,9 +71,9 @@ const Team = ({ id, eventName, teamName, leader, member1, member2 }) => {
                         '/',
                     auth
                 )
-                .then(function ({ response }) {
-                    console.log(response)
-                    console.log(state)
+                .then(function () {
+                    //console.log(response)
+                    //console.log(state)
                     toast.success('Your team has been deleted successfully', {
                         position: toast.POSITION.BOTTOM_RIGHT,
                     })

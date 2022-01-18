@@ -1,16 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import './Header.css'
-import {
-    Collapse,
-    Navbar,
-    NavbarToggler,
-    Nav,
-    NavItem,
-    NavLink,
-    // DropdownItem,
-} from 'reactstrap'
+import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from 'reactstrap'
 import ToggleMenu from './ToggleMenu'
-import { Link, useHistory } from 'react-router-dom'
+import { Link, useHistory, NavLink } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
 import { useAuthContext } from '../authentication/Context/AuthContext'
 import axios from 'axios'
@@ -60,7 +52,7 @@ const Header = () => {
                 setUser(res.data)
             })
             .catch(() => {
-                console.log('error')
+                //console.log('error')
             })
     }, [])
 
@@ -166,7 +158,25 @@ const Header = () => {
                             <Collapse isOpen={false} navbar>
                                 <Nav className="ms-auto" navbar>
                                     <NavItem>
-                                        <NavLink href="/events">
+                                        <NavLink
+                                            exact
+                                            to="/events"
+                                            style={(isActive) =>
+                                                isActive
+                                                    ? {
+                                                          textDecoration:
+                                                              'underline rgba(144, 224, 239, 0.8) solid',
+                                                          textDecorationThickness:
+                                                              '2px',
+                                                          textUnderlinePosition:
+                                                              'under',
+                                                      }
+                                                    : {
+                                                          textDecoration:
+                                                              'none',
+                                                      }
+                                            }
+                                        >
                                             <div
                                                 className="navbar-header-links px-3"
                                                 style={{
@@ -174,6 +184,7 @@ const Header = () => {
                                                         'Raleway, sans-serif',
                                                     fontSize: '2em',
                                                     color: '#FCFBFC',
+                                                    marginTop: '0.25em',
                                                 }}
                                             >
                                                 Events
@@ -181,7 +192,25 @@ const Header = () => {
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink href="/#contactPage">
+                                        <NavLink
+                                            exact
+                                            to="/#contactPage"
+                                            style={(isActive) =>
+                                                isActive
+                                                    ? {
+                                                          textDecoration:
+                                                              'underline rgba(144, 224, 239, 0.8) solid',
+                                                          textDecorationThickness:
+                                                              '2px',
+                                                          textUnderlinePosition:
+                                                              'under',
+                                                      }
+                                                    : {
+                                                          textDecoration:
+                                                              'none',
+                                                      }
+                                            }
+                                        >
                                             <div
                                                 className="navbar-header-links px-3"
                                                 style={{
@@ -189,6 +218,7 @@ const Header = () => {
                                                         'Raleway, sans-serif',
                                                     fontSize: '2em',
                                                     color: '#FCFBFC',
+                                                    marginTop: '0.25em',
                                                 }}
                                             >
                                                 Contact Us
@@ -196,9 +226,25 @@ const Header = () => {
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <Link
+                                        <NavLink
+                                            exact
                                             to="/noticeboard"
-                                            style={{ textDecoration: 'none' }}
+                                            style={(isActive) =>
+                                                isActive ||
+                                                curPath === '/notice'
+                                                    ? {
+                                                          textDecoration:
+                                                              'underline rgba(144, 224, 239, 0.8) solid',
+                                                          textDecorationThickness:
+                                                              '2px',
+                                                          textUnderlinePosition:
+                                                              'under',
+                                                      }
+                                                    : {
+                                                          textDecoration:
+                                                              'none',
+                                                      }
+                                            }
                                         >
                                             <div
                                                 className="navbar-header-links px-3"
@@ -212,7 +258,7 @@ const Header = () => {
                                             >
                                                 Noticeboard
                                             </div>
-                                        </Link>
+                                        </NavLink>
                                     </NavItem>
                                     <NavItem>
                                         <div className="dropdownNav mx-3">
@@ -281,22 +327,54 @@ const Header = () => {
                             </Link>
                             <Nav className="ms-auto" navbar>
                                 <NavItem>
-                                    <Link
+                                    <NavLink
+                                        exact
                                         to="/loginregister"
-                                        style={{ textDecoration: 'none' }}
+                                        style={(isActive) =>
+                                            isActive
+                                                ? {
+                                                      textDecoration:
+                                                          'underline rgba(144, 224, 239, 0.8) solid',
+                                                      textDecorationThickness:
+                                                          '2px',
+                                                      textUnderlinePosition:
+                                                          'under',
+                                                  }
+                                                : {
+                                                      textDecoration: 'none',
+                                                  }
+                                        }
                                     >
                                         <div className="signin-div px-2">
                                             <img src="/icon/sign-in.png" />
                                             Sign in
                                         </div>
-                                    </Link>
+                                    </NavLink>
                                 </NavItem>
                             </Nav>
                             <NavbarToggler className="mx-2" onClick={toggle} />
                             <Collapse isOpen={false} navbar>
                                 <Nav className="ms-auto" navbar>
                                     <NavItem>
-                                        <NavLink href="/events">
+                                        <NavLink
+                                            exact
+                                            to="/events"
+                                            style={(isActive) =>
+                                                isActive
+                                                    ? {
+                                                          textDecoration:
+                                                              'underline rgba(144, 224, 239, 0.8) solid',
+                                                          textDecorationThickness:
+                                                              '2px',
+                                                          textUnderlinePosition:
+                                                              'under',
+                                                      }
+                                                    : {
+                                                          textDecoration:
+                                                              'none',
+                                                      }
+                                            }
+                                        >
                                             <div
                                                 className="navbar-header-links px-3"
                                                 style={{
@@ -304,6 +382,7 @@ const Header = () => {
                                                         'Raleway, sans-serif',
                                                     fontSize: '2em',
                                                     color: '#FCFBFC',
+                                                    marginTop: '0.25em',
                                                 }}
                                             >
                                                 Events
@@ -311,7 +390,25 @@ const Header = () => {
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink href="/#contactPage">
+                                        <NavLink
+                                            exact
+                                            to="/#contactPage"
+                                            style={(isActive) =>
+                                                isActive
+                                                    ? {
+                                                          textDecoration:
+                                                              'underline rgba(144, 224, 239, 0.8) solid',
+                                                          textDecorationThickness:
+                                                              '2px',
+                                                          textUnderlinePosition:
+                                                              'under',
+                                                      }
+                                                    : {
+                                                          textDecoration:
+                                                              'none',
+                                                      }
+                                            }
+                                        >
                                             <div
                                                 className="navbar-header-links px-3"
                                                 style={{
@@ -319,6 +416,7 @@ const Header = () => {
                                                         'Raleway, sans-serif',
                                                     fontSize: '2em',
                                                     color: '#FCFBFC',
+                                                    marginTop: '0.25em',
                                                 }}
                                             >
                                                 Contact Us
@@ -326,9 +424,25 @@ const Header = () => {
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <Link
+                                        <NavLink
+                                            exact
                                             to="/noticeboard"
-                                            style={{ textDecoration: 'none' }}
+                                            style={(isActive) =>
+                                                isActive ||
+                                                curPath === '/notice'
+                                                    ? {
+                                                          textDecoration:
+                                                              'underline rgba(144, 224, 239, 0.8) solid',
+                                                          textDecorationThickness:
+                                                              '2px',
+                                                          textUnderlinePosition:
+                                                              'under',
+                                                      }
+                                                    : {
+                                                          textDecoration:
+                                                              'none',
+                                                      }
+                                            }
                                         >
                                             <div
                                                 className="navbar-header-links px-3"
@@ -342,7 +456,7 @@ const Header = () => {
                                             >
                                                 Noticeboard
                                             </div>
-                                        </Link>
+                                        </NavLink>
                                     </NavItem>
                                     <NavItem>
                                         <Link

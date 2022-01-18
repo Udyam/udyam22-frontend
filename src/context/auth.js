@@ -7,7 +7,7 @@ export const AuthProvider = ({ children }) => {
     const [cookies, setCookies, removeCookies] = useCookies(['auth'])
     const [token, setTokenState] = useState(cookies.token)
     const setToken = (newToken) => {
-        console.log(newToken)
+        //console.log(newToken)
 
         setCookies('token', newToken, { path: '/' })
         setTokenState(newToken)
@@ -18,9 +18,9 @@ export const AuthProvider = ({ children }) => {
         setTokenState(undefined)
     }
     const logout = () => {
-        console.log(token)
+        //console.log(token)
         deleteToken()
-        console.log(token)
+        //console.log(token)
         router.push('/login')
     }
 
@@ -36,7 +36,7 @@ export const AuthProvider = ({ children }) => {
                     setProfileName(response.data.username)
                 })
                 .catch((error) => {
-                    console.log(error)
+                    //console.log(error)
                 })
         }
     }, [setAvatarImage, setProfileName, token])

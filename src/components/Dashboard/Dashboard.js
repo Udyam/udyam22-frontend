@@ -27,7 +27,7 @@ const Dashboard = () => {
         const token = localStorage.getItem('userToken')
         const arr = token.split('"')
         const token1 = arr[1]
-        console.log('token=', token1)
+        //console.log('token=', token1)
         return (
             <div className="bg-dash">
                 <div className="dashboardContainer">

@@ -27,7 +27,7 @@ export default function RegisterForm() {
         setCheck(1)
     }
     useEffect(() => {
-        console.log('check=', check)
+        //console.log('check=', check)
         if (check == 1) {
             if (user_email == '' || user_pass == '') {
                 toast.warn('Please fill the empty fields.', {
@@ -70,7 +70,7 @@ export default function RegisterForm() {
                     setCheck(0)
                 })
                 .catch((err) => {
-                    console.log(err)
+                    //console.log(err)
                     toast.error(err.response.data.error, {
                         position: toast.POSITION.BOTTOM_RIGHT,
                     })
@@ -156,7 +156,7 @@ export default function RegisterForm() {
         }
     }
     useEffect(() => {
-        console.log('check=', check)
+        //console.log('check=', check)
         if (check == 2) {
             const dataForApiRequest = {
                 name: Name,
@@ -166,7 +166,7 @@ export default function RegisterForm() {
                 year: year,
                 referral_code: referalcode,
             }
-            console.log(dataForApiRequest)
+            //console.log(dataForApiRequest)
             axios
                 .post(
                     'https://udyam22-backend.herokuapp.com/' + 'auth/register/',
@@ -194,7 +194,7 @@ export default function RegisterForm() {
                     setCheck(0)
                 })
                 .catch(function (err) {
-                    console.log(err)
+                    //console.log(err)
                     toast.error(err.response.data.email, {
                         position: toast.POSITION.BOTTOM_RIGHT,
                     })

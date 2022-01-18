@@ -24,7 +24,7 @@ const Teams = ({ dashboardToken }) => {
                 },
             })
             .then((res) => {
-                console.log(res.data)
+                //console.log(res.data)
                 setEvents(res.data)
             })
     }, [])
@@ -37,7 +37,7 @@ const Teams = ({ dashboardToken }) => {
                     },
                 })
                 .then((res) => {
-                    console.log(res.data)
+                    //console.log(res.data)
                     setEvents(res.data)
                     setState(0)
                 })

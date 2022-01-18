@@ -15,8 +15,12 @@
     padding-right: 10px;
 }
 
+.teamDetails > ul li {
+    color: #fcfbfc;
+}
+
 .teamContainer li {
-    overflow-wrap: break-word;
+    word-break: break-word;
     margin-top: 10px;
     margin-bottom: 20px;
 }
