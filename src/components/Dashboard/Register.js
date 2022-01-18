@@ -38,10 +38,10 @@ const Register = ({ dashboardToken }) => {
     const firstYear = {
         MOSAIC: 3,
         SPYBITS: 3,
-        ICHIP: 3,
+        ICHIP: 2,
         COMMNET: 3,
         CONTINUUM: 3,
-        DIGISIM: 3,
+        DIGISIM: 2,
         XIOTA: 3,
         CASSANDRA: 3,
         FUNCKIT: 3,
@@ -50,7 +50,7 @@ const Register = ({ dashboardToken }) => {
     const secondYear = {
         MOSAIC: 3,
         SPYBITS: 3,
-        ICHIP: 3,
+        ICHIP: 2,
         COMMNET: 3,
         CONTINUUM: 2,
         DIGISIM: 2,
