@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Events.css'
+import Modal from 'react-modal'
+
 import mosaicimage from './Events_Images/mosaicimage.png'
 import ichipimage from './Events_Images/ichipimage.png'
 import spybitsimage from './Events_Images/spybitsimage.png'
@@ -11,8 +13,51 @@ import funckitimage from './Events_Images/funckitimage.png'
 import continuumimage from './Events_Images/continuumimage.png'
 
 const Mosaic = () => {
+    const customStyles = {
+        overlay: {
+            opacity: '1',
+            backgroundColor: 'rgba(2, 32, 73,0.5)',
+        },
+        content: {
+            top: '49.99%',
+            left: '50%',
+            right: 'auto',
+            bottom: 'auto',
+            marginRight: '-50%',
+            transform: 'translate(-50%, -50%)',
+            backgroundColor: 'rgba(2,32,73,1)',
+            width: '28vw',
+            height: '25vh',
+            textAlign: 'center',
+            color: 'rgba(144, 224, 239, 0.7)',
+            paddingTop: '50px',
+            opacity: '1',
+            postion: 'fixed',
+            minWidth: '275px',
+            minHeight: '200px',
+            fontFamily: 'Raleway',
+            overflowY: 'hidden',
+        },
+    }
+    const [modalIsOpen, setModalIsOpen] = useState(false)
+
     return (
         <>
+            <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={() => setModalIsOpen(false)}
+                style={customStyles}
+            >
+                <h2>Problem Statement is coming soon</h2>
+                <button
+                    style={{ marginTop: '10px' }}
+                    className="Events_Inner_Link"
+                    onClick={() => setModalIsOpen(false)}
+                >
+                    Close
+                </button>
+            </Modal>
+
             <div>
                 <img
                     className="Events_Photo"
@@ -38,17 +83,18 @@ const Mosaic = () => {
             <div className="Events_Link_Holder">
                 <button
                     className="Events_Inner_Link"
-                    onClick={() => alert('Problem Statement 1 coming Soon')}
+                    onClick={() => setModalIsOpen(true)}
                 >
                     PS1
                 </button>
                 <button
                     className="Events_Inner_Link"
-                    onClick={() => alert('Problem Statement 2 coming Soon')}
+                    onClick={() => setModalIsOpen(true)}
                 >
                     PS2
                 </button>
-                {/* <a
+            </div>
+            {/* <a
                     rel="noreferrer"
                     target="_blank"
                     href=""
@@ -83,14 +129,55 @@ const Mosaic = () => {
                 >
                     <div className="Events_Inner_Link">PS4</div>
                 </a> */}
-            </div>
         </>
     )
 }
 
 const Ichip = () => {
+    const customStyles = {
+        overlay: {
+            opacity: '1',
+            backgroundColor: 'rgba(2, 32, 73,0.5)',
+        },
+        content: {
+            top: '50%',
+            left: '50%',
+            right: 'auto',
+            bottom: 'auto',
+            marginRight: '-50%',
+            transform: 'translate(-50%, -50%)',
+            backgroundColor: 'rgba(2,32,73,1)',
+            width: '28vw',
+            height: '25vh',
+            textAlign: 'center',
+            color: 'rgba(144, 224, 239, 0.7)',
+            paddingTop: '50px',
+            opacity: '1',
+            postion: 'fixed',
+            minWidth: '275px',
+            minHeight: '200px',
+            fontFamily: 'Raleway',
+            overflowY: 'hidden',
+        },
+    }
+    const [modalIsOpen, setModalIsOpen] = useState(false)
+
     return (
         <>
+            <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={() => setModalIsOpen(false)}
+                style={customStyles}
+            >
+                <h2>Problem Statement is coming soon</h2>
+                <button
+                    style={{ marginTop: '10px' }}
+                    className="Events_Inner_Link"
+                    onClick={() => setModalIsOpen(false)}
+                >
+                    Close
+                </button>
+            </Modal>
             <div>
                 <img
                     className="Events_Photo"
@@ -116,6 +203,18 @@ const Ichip = () => {
             </div>
 
             <div className="Events_Link_Holder">
+                <button
+                    className="Events_Inner_Link"
+                    onClick={() => setModalIsOpen(true)}
+                >
+                    PS1
+                </button>
+                <button
+                    className="Events_Inner_Link"
+                    onClick={() => setModalIsOpen(true)}
+                >
+                    PS2
+                </button>
                 {/* <a
                     rel="noreferrer"
                     target="_blank"
@@ -151,26 +250,56 @@ const Ichip = () => {
                 >
                     <div className="Events_Inner_Link">PS4</div>
                 </a> */}
-                <button
-                    className="Events_Inner_Link"
-                    onClick={() => alert('Problem Statement 1 coming Soon')}
-                >
-                    PS1
-                </button>
-                <button
-                    className="Events_Inner_Link"
-                    onClick={() => alert('Problem Statement 2 coming Soon')}
-                >
-                    PS2
-                </button>
             </div>
         </>
     )
 }
 
 const Spybits = () => {
+    const customStyles = {
+        overlay: {
+            opacity: '1',
+            backgroundColor: 'rgba(2, 32, 73,0.5)',
+        },
+        content: {
+            top: '50%',
+            left: '50%',
+            right: 'auto',
+            bottom: 'auto',
+            marginRight: '-50%',
+            transform: 'translate(-50%, -50%)',
+            backgroundColor: 'rgba(2,32,73,1)',
+            width: '28vw',
+            height: '25vh',
+            textAlign: 'center',
+            color: 'rgba(144, 224, 239, 0.7)',
+            paddingTop: '50px',
+            opacity: '1',
+            postion: 'fixed',
+            minWidth: '275px',
+            minHeight: '200px',
+            fontFamily: 'Raleway',
+            overflowY: 'hidden',
+        },
+    }
+    const [modalIsOpen, setModalIsOpen] = useState(false)
+
     return (
         <>
+            <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={() => setModalIsOpen(false)}
+                style={customStyles}
+            >
+                <h2>Problem Statement is coming soon</h2>
+                <button
+                    style={{ marginTop: '10px' }}
+                    className="Events_Inner_Link"
+                    onClick={() => setModalIsOpen(false)}
+                >
+                    Close
+                </button>
+            </Modal>
             <div>
                 <img
                     className="Events_Photo"
@@ -197,13 +326,13 @@ const Spybits = () => {
             <div className="Events_Link_Holder">
                 <button
                     className="Events_Inner_Link"
-                    onClick={() => alert('Problem Statement 1 coming Soon')}
+                    onClick={() => setModalIsOpen(true)}
                 >
                     PS1
                 </button>
                 <button
                     className="Events_Inner_Link"
-                    onClick={() => alert('Problem Statement 2 coming Soon')}
+                    onClick={() => setModalIsOpen(true)}
                 >
                     PS2
                 </button>
@@ -248,8 +377,50 @@ const Spybits = () => {
 }
 
 const Commnet = () => {
+    const customStyles = {
+        overlay: {
+            opacity: '1',
+            backgroundColor: 'rgba(2, 32, 73,0.5)',
+        },
+        content: {
+            top: '50%',
+            left: '50%',
+            right: 'auto',
+            bottom: 'auto',
+            marginRight: '-50%',
+            transform: 'translate(-50%, -50%)',
+            backgroundColor: 'rgba(2,32,73,1)',
+            width: '28vw',
+            height: '25vh',
+            textAlign: 'center',
+            color: 'rgba(144, 224, 239, 0.7)',
+            paddingTop: '50px',
+            opacity: '1',
+            postion: 'fixed',
+            minWidth: '275px',
+            minHeight: '200px',
+            fontFamily: 'Raleway',
+            overflowY: 'hidden',
+        },
+    }
+    const [modalIsOpen, setModalIsOpen] = useState(false)
+
     return (
         <>
+            <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={() => setModalIsOpen(false)}
+                style={customStyles}
+            >
+                <h2>Problem Statement is coming soon</h2>
+                <button
+                    style={{ marginTop: '10px' }}
+                    className="Events_Inner_Link"
+                    onClick={() => setModalIsOpen(false)}
+                >
+                    Close
+                </button>
+            </Modal>
             <div>
                 <img
                     className="Events_Photo"
@@ -275,13 +446,13 @@ const Commnet = () => {
             <div className="Events_Link_Holder">
                 <button
                     className="Events_Inner_Link"
-                    onClick={() => alert('Problem Statement 1 coming Soon')}
+                    onClick={() => setModalIsOpen(true)}
                 >
                     PS1
                 </button>
                 <button
                     className="Events_Inner_Link"
-                    onClick={() => alert('Problem Statement 2 coming Soon')}
+                    onClick={() => setModalIsOpen(true)}
                 >
                     PS2
                 </button>
@@ -326,8 +497,50 @@ const Commnet = () => {
 }
 
 const Xiota = () => {
+    const customStyles = {
+        overlay: {
+            opacity: '1',
+            backgroundColor: 'rgba(2, 32, 73,0.5)',
+        },
+        content: {
+            top: '50%',
+            left: '50%',
+            right: 'auto',
+            bottom: 'auto',
+            marginRight: '-50%',
+            transform: 'translate(-50%, -50%)',
+            backgroundColor: 'rgba(2,32,73,1)',
+            width: '28vw',
+            height: '25vh',
+            textAlign: 'center',
+            color: 'rgba(144, 224, 239, 0.7)',
+            paddingTop: '50px',
+            opacity: '1',
+            postion: 'fixed',
+            minWidth: '275px',
+            minHeight: '200px',
+            fontFamily: 'Raleway',
+            overflowY: 'hidden',
+        },
+    }
+    const [modalIsOpen, setModalIsOpen] = useState(false)
+
     return (
         <>
+            <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={() => setModalIsOpen(false)}
+                style={customStyles}
+            >
+                <h2>Problem Statement is coming soon</h2>
+                <button
+                    style={{ marginTop: '10px' }}
+                    className="Events_Inner_Link"
+                    onClick={() => setModalIsOpen(false)}
+                >
+                    Close
+                </button>
+            </Modal>
             <div>
                 <img
                     className="Events_Photo"
@@ -354,13 +567,13 @@ const Xiota = () => {
             <div className="Events_Link_Holder">
                 <button
                     className="Events_Inner_Link"
-                    onClick={() => alert('Problem Statement 1 coming Soon')}
+                    onClick={() => setModalIsOpen(true)}
                 >
                     PS1
                 </button>
                 <button
                     className="Events_Inner_Link"
-                    onClick={() => alert('Problem Statement 2 coming Soon')}
+                    onClick={() => setModalIsOpen(true)}
                 >
                     PS2
                 </button>
@@ -405,8 +618,50 @@ const Xiota = () => {
 }
 
 const Cassandra = () => {
+    const customStyles = {
+        overlay: {
+            opacity: '1',
+            backgroundColor: 'rgba(2, 32, 73,0.5)',
+        },
+        content: {
+            top: '50%',
+            left: '50%',
+            right: 'auto',
+            bottom: 'auto',
+            marginRight: '-50%',
+            transform: 'translate(-50%, -50%)',
+            backgroundColor: 'rgba(2,32,73,1)',
+            width: '28vw',
+            height: '25vh',
+            textAlign: 'center',
+            color: 'rgba(144, 224, 239, 0.7)',
+            paddingTop: '50px',
+            opacity: '1',
+            postion: 'fixed',
+            minWidth: '275px',
+            minHeight: '200px',
+            fontFamily: 'Raleway',
+            overflowY: 'hidden',
+        },
+    }
+    const [modalIsOpen, setModalIsOpen] = useState(false)
+
     return (
         <>
+            <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={() => setModalIsOpen(false)}
+                style={customStyles}
+            >
+                <h2>Problem Statement is coming soon</h2>
+                <button
+                    style={{ marginTop: '10px' }}
+                    className="Events_Inner_Link"
+                    onClick={() => setModalIsOpen(false)}
+                >
+                    Close
+                </button>
+            </Modal>
             <div>
                 <img
                     className="Events_Photo"
@@ -432,13 +687,13 @@ const Cassandra = () => {
             <div className="Events_Link_Holder">
                 <button
                     className="Events_Inner_Link"
-                    onClick={() => alert('Problem Statement 1 coming Soon')}
+                    onClick={() => setModalIsOpen(true)}
                 >
                     PS1
                 </button>
                 <button
                     className="Events_Inner_Link"
-                    onClick={() => alert('Problem Statement 2 coming Soon')}
+                    onClick={() => setModalIsOpen(true)}
                 >
                     PS2
                 </button>
@@ -483,8 +738,50 @@ const Cassandra = () => {
 }
 
 const Digisim = () => {
+    const customStyles = {
+        overlay: {
+            opacity: '1',
+            backgroundColor: 'rgba(2, 32, 73,0.5)',
+        },
+        content: {
+            top: '50%',
+            left: '50%',
+            right: 'auto',
+            bottom: 'auto',
+            marginRight: '-50%',
+            transform: 'translate(-50%, -50%)',
+            backgroundColor: 'rgba(2,32,73,1)',
+            width: '28vw',
+            height: '25vh',
+            textAlign: 'center',
+            color: 'rgba(144, 224, 239, 0.7)',
+            paddingTop: '50px',
+            opacity: '1',
+            postion: 'fixed',
+            minWidth: '275px',
+            minHeight: '200px',
+            fontFamily: 'Raleway',
+            overflowY: 'hidden',
+        },
+    }
+    const [modalIsOpen, setModalIsOpen] = useState(false)
+
     return (
         <>
+            <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={() => setModalIsOpen(false)}
+                style={customStyles}
+            >
+                <h2>Problem Statement is coming soon</h2>
+                <button
+                    style={{ marginTop: '10px' }}
+                    className="Events_Inner_Link"
+                    onClick={() => setModalIsOpen(false)}
+                >
+                    Close
+                </button>
+            </Modal>
             <div>
                 <img
                     className="Events_Photo"
@@ -510,13 +807,13 @@ const Digisim = () => {
             <div className="Events_Link_Holder">
                 <button
                     className="Events_Inner_Link"
-                    onClick={() => alert('Problem Statement 1 coming Soon')}
+                    onClick={() => setModalIsOpen(true)}
                 >
                     PS1
                 </button>
                 <button
                     className="Events_Inner_Link"
-                    onClick={() => alert('Problem Statement 2 coming Soon')}
+                    onClick={() => setModalIsOpen(true)}
                 >
                     PS2
                 </button>
@@ -561,8 +858,50 @@ const Digisim = () => {
 }
 
 const Funckit = () => {
+    const customStyles = {
+        overlay: {
+            opacity: '1',
+            backgroundColor: 'rgba(2, 32, 73,0.5)',
+        },
+        content: {
+            top: '50%',
+            left: '50%',
+            right: 'auto',
+            bottom: 'auto',
+            marginRight: '-50%',
+            transform: 'translate(-50%, -50%)',
+            backgroundColor: 'rgba(2,32,73,1)',
+            width: '28vw',
+            height: '25vh',
+            textAlign: 'center',
+            color: 'rgba(144, 224, 239, 0.7)',
+            paddingTop: '50px',
+            opacity: '1',
+            postion: 'fixed',
+            minWidth: '275px',
+            minHeight: '200px',
+            fontFamily: 'Raleway',
+            overflowY: 'hidden',
+        },
+    }
+    const [modalIsOpen, setModalIsOpen] = useState(false)
+
     return (
         <>
+            <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={() => setModalIsOpen(false)}
+                style={customStyles}
+            >
+                <h2>Problem Statement is coming soon</h2>
+                <button
+                    style={{ marginTop: '10px' }}
+                    className="Events_Inner_Link"
+                    onClick={() => setModalIsOpen(false)}
+                >
+                    Close
+                </button>
+            </Modal>
             <div>
                 <img
                     className="Events_Photo"
@@ -587,13 +926,13 @@ const Funckit = () => {
             <div className="Events_Link_Holder">
                 <button
                     className="Events_Inner_Link"
-                    onClick={() => alert('Problem Statement 1 coming Soon')}
+                    onClick={() => setModalIsOpen(true)}
                 >
                     PS1
                 </button>
                 <button
                     className="Events_Inner_Link"
-                    onClick={() => alert('Problem Statement 2 coming Soon')}
+                    onClick={() => setModalIsOpen(true)}
                 >
                     PS2
                 </button>
@@ -638,8 +977,50 @@ const Funckit = () => {
 }
 
 const Continuum = () => {
+    const customStyles = {
+        overlay: {
+            opacity: '1',
+            backgroundColor: 'rgba(2, 32, 73,0.5)',
+        },
+        content: {
+            top: '50%',
+            left: '50%',
+            right: 'auto',
+            bottom: 'auto',
+            marginRight: '-50%',
+            transform: 'translate(-50%, -50%)',
+            backgroundColor: 'rgba(2,32,73,1)',
+            width: '28vw',
+            height: '25vh',
+            textAlign: 'center',
+            color: 'rgba(144, 224, 239, 0.7)',
+            paddingTop: '50px',
+            opacity: '1',
+            postion: 'fixed',
+            minWidth: '275px',
+            minHeight: '200px',
+            fontFamily: 'Raleway',
+            overflowY: 'hidden',
+        },
+    }
+    const [modalIsOpen, setModalIsOpen] = useState(false)
+
     return (
         <>
+            <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={() => setModalIsOpen(false)}
+                style={customStyles}
+            >
+                <h2>Problem Statement is coming soon</h2>
+                <button
+                    style={{ marginTop: '10px' }}
+                    className="Events_Inner_Link"
+                    onClick={() => setModalIsOpen(false)}
+                >
+                    Close
+                </button>
+            </Modal>
             <div>
                 <img
                     className="Events_Photo"
@@ -664,13 +1045,13 @@ const Continuum = () => {
             <div className="Events_Link_Holder">
                 <button
                     className="Events_Inner_Link"
-                    onClick={() => alert('Problem Statement 1 coming Soon')}
+                    onClick={() => setModalIsOpen(true)}
                 >
                     PS1
                 </button>
                 <button
                     className="Events_Inner_Link"
-                    onClick={() => alert('Problem Statement 2 coming Soon')}
+                    onClick={() => setModalIsOpen(true)}
                 >
                     PS2
                 </button>

@@ -69,8 +69,8 @@ const Event = () => {
     const [activeSlide, setActiveSlide] = useState(0)
 
     function CheckBrowser() {
-        if (navigator.userAgent.indexOf('Firefox') > -1) return 0
-        return 1200
+        if (navigator.userAgent.indexOf('Firefox') > -1) return 700
+        return 1400
     }
 
     const changeHandler1 = () => {
