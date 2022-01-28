@@ -944,14 +944,14 @@ const yash_jain = () => {
                 <a
                     rel="noreferrer"
                     target="_blank"
-                    href="https://www.linkedin.com/company/udyam/"
+                    href="https://www.linkedin.com/in/yash-jain-780332208"
                 >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
                 <a
                     rel="noreferrer"
                     target="_blank"
-                    href="https://www.facebook.com/udyamfest"
+                    href="https://www.facebook.com/profile.php?id=100026364677609"
                 >
                     <img src={Facebook} className="social_icons" />
                 </a>

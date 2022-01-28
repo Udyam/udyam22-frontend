@@ -42,6 +42,9 @@
 .Event_Carousel_Tiles.forward.EventsActiveSlider > .Events_Link_Holder {
     display: flex;
 }
+.Event_Carousel_Tiles.backward.EventsActiveSlider > .Events_Link_Holder {
+    display: flex;
+}
 
 .Event_Panel_Left {
     width: 25vw;
