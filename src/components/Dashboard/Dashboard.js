@@ -14,9 +14,10 @@ const Dashboard = () => {
 
     if (
         !localStorage.getItem('userToken') ||
-        localStorage.getItem('userToken') == 'undefined'
+        localStorage.getItem('userToken') == 'undefined' ||
+        localStorage.getItem('userToken')
     ) {
-        history.push('/loginregister')
+        history.push('/comingsoon')
         return null
     } else {
         const { logout } = useAuthContext()

@@ -4,10 +4,12 @@ import Timeline from './components/Timeline/Timeline'
 import { ContactPage } from './components/ContactPage/ContactPage'
 import { Route } from 'react-router-dom'
 import Tabs from './components/Tabs/Tabs.js'
+
 import RegisterForm from './components/authentication/loginregform'
 import RecoverForm from './components/authentication/recoverpage'
 import ResetForm from './components/authentication/resetpage'
 import NotifyReset from './components/authentication/notifyreset'
+
 import Team from './components/Tabs/Teams/Team.js'
 import Sponsors from './components/Tabs/Sponsors/Sponsors.js'
 import Event from './components/Tabs/Events/Events.js'
@@ -16,6 +18,7 @@ import AboutUs from './components/Tabs/AboutUs/AboutUs.js'
 import Speakers from './components/Tabs/Speakers/speakers.js'
 import { Noticeboard, Notice } from './components/NoticeBoard/NoticeBoard'
 import Dashboard from './components/Dashboard/Dashboard.js'
+import logoutcoming from './components/authentication/comingsoon'
 
 const Routes = () => {
     return (
@@ -58,6 +61,7 @@ const Routes = () => {
             <Route exact path="/recoverpage" component={RecoverForm} />
             <Route exact path="/resetpage" component={ResetForm} />
             <Route exact path="/notifyreset" component={NotifyReset} />
+            <Route exact path="/comingsoon" component={logoutcoming} />
             <Route exact path="/noticeboard">
                 <Noticeboard />
             </Route>

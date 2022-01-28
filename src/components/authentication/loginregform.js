@@ -11,11 +11,15 @@ toast.configure()
 
 export default function RegisterForm() {
     const history = useHistory()
+
     if (
-        localStorage.getItem('userToken') &&
-        localStorage.getItem('userToken') != 'undefined'
-    )
-        history.push('/dashboard')
+        !localStorage.getItem('userToken') ||
+        localStorage.getItem('userToken') == 'undefined' ||
+        localStorage.getItem('userToken')
+    ) {
+        history.push('/comingsoon')
+        return null
+    }
 
     const [user_email, setuser_email] = useState('')
     const [user_pass, setuser_pass] = useState('')
