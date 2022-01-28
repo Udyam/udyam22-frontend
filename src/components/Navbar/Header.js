@@ -140,7 +140,7 @@ const Header = () => {
                                             className="dropdown-content"
                                         >
                                             <Link
-                                                to="/loginregister"
+                                                to="/comingsoon"
                                                 style={{
                                                     textDecoration: 'none',
                                                 }}
@@ -273,7 +273,7 @@ const Header = () => {
                                                 id="myDropdown2"
                                                 className="dropdown-content"
                                             >
-                                                <Link to="/loginregister">
+                                                <Link to="/comingsoon">
                                                     Dashboard
                                                 </Link>
                                                 <a href="#" onClick={logoutfn}>
@@ -329,7 +329,7 @@ const Header = () => {
                                 <NavItem>
                                     <NavLink
                                         exact
-                                        to="/loginregister"
+                                        to="/comingsoon"
                                         style={(isActive) =>
                                             isActive
                                                 ? {
@@ -460,7 +460,7 @@ const Header = () => {
                                     </NavItem>
                                     <NavItem>
                                         <Link
-                                            to="/loginregister"
+                                            to="/comingsoon"
                                             style={{ textDecoration: 'none' }}
                                         >
                                             <div
