@@ -16,6 +16,7 @@ import AboutUs from './components/Tabs/AboutUs/AboutUs.js'
 import Speakers from './components/Tabs/Speakers/speakers.js'
 import { Noticeboard, Notice } from './components/NoticeBoard/NoticeBoard'
 import Dashboard from './components/Dashboard/Dashboard.js'
+import IframeComponent from './components/iframe/iframe.js'
 
 const Routes = () => {
     return (
@@ -24,6 +25,7 @@ const Routes = () => {
                 <LandingPage />
                 <Timeline />
                 <ContactPage />
+                <IframeComponent />
             </Route>
             <Route path="/about-us">
                 <Tabs id="panelb">
