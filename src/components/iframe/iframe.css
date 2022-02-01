@@ -1,0 +1,17 @@
+.iframe-container {
+    text-align: center;
+    padding-bottom: 50px;
+}
+@media (min-width: 1300px) {
+    .responsive-iframe {
+        height: 350px;
+        width: 600px;
+    }
+}
+
+@media (max-width: 767px) {
+    .responsive-iframe {
+        height: 250px;
+        width: 300px;
+    }
+}
