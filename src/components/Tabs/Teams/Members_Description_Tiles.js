@@ -43,6 +43,7 @@ import Nisitha_Vallamdasu from './Mem_Images/Nisitha_Vallamdasu.jpg'
 import Prajakta_Priyadarsini from './Mem_Images/Prajakta_Priyadarsini.jpg'
 import Kushagra_Yadav from './Mem_Images/Kushagra_Yadav.jpg'
 import Khushabu_Kumari from './Mem_Images/Khushabu_Kumari.jpg'
+import Suhani_Agrawal from './Mem_Images/Suhani_Agrawal.jpeg'
 import LinkedIn from './Icons/LinkedIn.png'
 import Facebook from './Icons/Facebook.png'
 import Instagram from './Icons/Instagram.png'
@@ -1538,7 +1539,7 @@ const jayesh_upadhyay = () => {
 const suhani_agrawal = () => {
     return (
         <div className="Members_Tiles">
-            <img className="photo" src={Sample_Image} alt="Suhani Agrawal" />
+            <img className="photo" src={Suhani_Agrawal} alt="Suhani Agrawal" />
             <div className="Members_Description">SUHANI AGRAWAL</div>
             <div className="Members_Description">WEB COORDINATOR</div>
             <div className="Teams_social-tray">
