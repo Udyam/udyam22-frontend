@@ -129,9 +129,9 @@
     background: white;
 }
 
-@media (min-width: 767px) {
+/* @media (min-width: 767px) {
     .container-sponsors {
         overflow-y: hidden;
-        /* Comment-out the above line when adding new sponsors */
-    }
-}
+        Comment-out the above line when adding new sponsors
+    
+} */
