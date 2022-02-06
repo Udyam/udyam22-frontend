@@ -84,9 +84,6 @@ const Marketing_Team = () => {
                             <Members.somesh_dey />
                         </div>
                         <div className="Teams_Tiles">
-                            <Members.varsha_jangir />
-                        </div>
-                        <div className="Teams_Tiles">
                             <Members.nikhil_singh />
                         </div>
                         <div className="Teams_Tiles">
@@ -121,6 +118,9 @@ const Marketing_Team = () => {
                         </div>
                         <div className="Teams_Tiles">
                             <Members.mohit_kumar_sharma />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.varsha_jangir />
                         </div>
                     </Carousel>
                 </div>
