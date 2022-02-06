@@ -84,9 +84,6 @@ const External_Affairs = () => {
                             <Members.kushagra_yadav />
                         </div>
                         <div className="Teams_Tiles">
-                            <Members.vikash_prajapati />
-                        </div>
-                        <div className="Teams_Tiles">
                             <Members.ankit />
                         </div>
                         <div className="Teams_Tiles">
@@ -103,6 +100,9 @@ const External_Affairs = () => {
                         </div>
                         <div className="Teams_Tiles">
                             <Members.saumya_chaudhary />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.vikash_prajapati />
                         </div>
                     </Carousel>
                 </div>
