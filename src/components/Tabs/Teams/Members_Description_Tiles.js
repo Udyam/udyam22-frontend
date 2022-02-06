@@ -1443,21 +1443,21 @@ const anshuman_asauliya = () => {
                 <a
                     rel="noreferrer"
                     target="_blank"
-                    href="https://www.linkedin.com/company/udyam/"
+                    href="https://www.linkedin.com/in/anshuman-asauliya-b93288229"
                 >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
                 <a
                     rel="noreferrer"
                     target="_blank"
-                    href="https://www.facebook.com/udyamfest"
+                    href="https://www.google.com/url?q=https://www.facebook.com/anshuman.asauliya&sa=D&source=editors&ust=1644143639779423&usg=AOvVaw3kuHMIOjxK9qHHXYQKAwDm"
                 >
                     <img src={Facebook} className="social_icons" />
                 </a>
                 <a
                     rel="noreferrer"
                     target="_blank"
-                    href="https://www.instagram.com/udyam_iit_bhu/"
+                    href="https://www.google.com/url?q=https://www.instagram.com/anshuman_asauliya/&sa=D&source=editors&ust=1644143639779374&usg=AOvVaw0HsZ5RtrWhOh5PGT5_5j24"
                 >
                     <img src={Instagram} className="social_icons" />
                 </a>
@@ -1579,21 +1579,21 @@ const riya_kanojiya = () => {
                 <a
                     rel="noreferrer"
                     target="_blank"
-                    href="https://www.linkedin.com/company/udyam/"
+                    href="https://www.google.com/url?q=https://www.linkedin.com/in/riya-kanojiya-a8a0b6213/&sa=D&source=editors&ust=1644143639774352&usg=AOvVaw2Q8MY27g899AyMzoz6ps-2"
                 >
                     <img src={LinkedIn} className="social_icons" />
                 </a>
                 <a
                     rel="noreferrer"
                     target="_blank"
-                    href="https://www.facebook.com/udyamfest"
+                    href="https://www.google.com/url?q=https://m.facebook.com/100013992619149/&sa=D&source=editors&ust=1644143639774284&usg=AOvVaw1l5scR49OWWnrwd-DlwTJq"
                 >
                     <img src={Facebook} className="social_icons" />
                 </a>
                 <a
                     rel="noreferrer"
                     target="_blank"
-                    href="https://www.instagram.com/udyam_iit_bhu/"
+                    href="https://www.google.com/url?q=https://www.instagram.com/riyakanojiya23/&sa=D&source=editors&ust=1644143639774243&usg=AOvVaw1HHbRgdCSl0TS_JAFK1wNx"
                 >
                     <img src={Instagram} className="social_icons" />
                 </a>
