@@ -4,6 +4,7 @@ import {
     FaLinkedin,
     FaYoutubeSquare,
     FaInstagramSquare,
+    FaDiscord,
 } from 'react-icons/fa'
 import './SocialTray.css'
 
@@ -17,6 +18,13 @@ export const SocialTray = () => {
                     rel="noopener noreferrer"
                 >
                     <FaLinkedin className="icons" />
+                </a>
+                <a
+                    href="https://discord.gg/gNrEW8vp4G"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <FaDiscord className="icons" />
                 </a>
                 <a
                     href="https://www.facebook.com/udyamfest"
