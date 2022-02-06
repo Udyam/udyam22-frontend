@@ -86,6 +86,24 @@ const Public_Relations = () => {
                         <div className="Teams_Tiles">
                             <Members.jayant_roy />
                         </div>
+                        <div className="Teams_Tiles">
+                            <Members.ritesh_sahu />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.aditya_ujjwal />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.kritika />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.anshuman_asauliya_PR />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.bhargavi_kiran />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.jayesh_upadhyay_PR />
+                        </div>
                     </Carousel>
                 </div>
                 <div className="Teams_Mobile_Container">
@@ -97,6 +115,24 @@ const Public_Relations = () => {
                     </div>
                     <div className="Teams_Tiles">
                         <Members.jayant_roy />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.ritesh_sahu />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.aditya_ujjwal />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.kritika />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.anshuman_asauliya_PR />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.bhargavi_kiran />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.jayesh_upadhyay_PR />
                     </div>
                 </div>
             </div>

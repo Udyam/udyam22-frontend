@@ -86,6 +86,42 @@ const Marketing_Team = () => {
                         <div className="Teams_Tiles">
                             <Members.varsha_jangir />
                         </div>
+                        <div className="Teams_Tiles">
+                            <Members.nikhil_singh />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.vikrant />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.riya_kanojiya_marketing />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.yashank_aggarwal />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.korivi_vedharshini />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.pratishtha_dhiraj />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.nishtanth_gounder />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.priya_meena />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.nelson_rahul_tigga />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.deependra_singh />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.anurup_krishna />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.mohit_kumar_sharma />
+                        </div>
                     </Carousel>
                 </div>
                 <div className="Teams_Mobile_Container">
@@ -97,6 +133,42 @@ const Marketing_Team = () => {
                     </div>
                     <div className="Teams_Tiles">
                         <Members.varsha_jangir />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.nikhil_singh />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.vikrant />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.riya_kanojiya_marketing />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.yashank_aggarwal />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.korivi_vedharshini />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.pratishtha_dhiraj />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.nishtanth_gounder />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.priya_meena />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.nelson_rahul_tigga />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.deependra_singh />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.anurup_krishna />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.mohit_kumar_sharma />
                     </div>
                 </div>
             </div>

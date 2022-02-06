@@ -44,9 +44,1003 @@ import Prajakta_Priyadarsini from './Mem_Images/Prajakta_Priyadarsini.jpg'
 import Kushagra_Yadav from './Mem_Images/Kushagra_Yadav.jpg'
 import Khushabu_Kumari from './Mem_Images/Khushabu_Kumari.jpg'
 import Suhani_Agrawal from './Mem_Images/Suhani_Agrawal.jpeg'
+import Pratik_Mishra from './Mem_Images/Pratik_Mishra.jpg'
+import Nikhil_Singh from './Mem_Images/Nikhil_Singh.jpeg'
+import Devi_Tanuja_Vasamsetty from './Mem_Images/Devi_Tanuja_Vasamsetty.jpg'
+import Shivansh_Dubey from './Mem_Images/Shivansh_Dubey.jpg'
+import Vislavath_Swetha from './Mem_Images/Swetha_Vislavath.jpeg'
+import Manoj_Gupta from './Mem_Images/Manoj_Gupta.jfif'
+import Kalpit_Adhao from './Mem_Images/Kalpit_Adhao.jpg'
+import Archit_Soni from './Mem_Images/Archit_Soni.jpg'
+import Vikrant from './Mem_Images/Vikrant.png'
+import Yashank_Aggarwal from './Mem_Images/Yashank_Agarwal.jpg'
+import Korivi_Vedharshini from './Mem_Images/Korivi_Vedharshini.jpeg'
+import Pratishtha_Dhiraj from './Mem_Images/Pratishtha_Dhiraj.jpg'
+import Nishanth_Gounder from './Mem_Images/Nishanth_Gounder.jpg'
+import Priya_Meena from './Mem_Images/Priya_Meena.jpg'
+import Nelson_Rahul_Tigga from './Mem_Images/Nelson_Rahul_Tigga.jpg'
+import Deependra_Singh from './Mem_Images/Deependra_Singh.png'
+import Anurup_Krishna from './Mem_Images/Anurup_Krishna.jpg'
+import Ritesh_Sahu from './Mem_Images/Ritesh_Sahu.jpg'
+import Aditya_Ujjwal from './Mem_Images/Aditya_Ujwal.jpg'
+import Kritika from './Mem_Images/Kritika.jpg'
+import Ankit from './Mem_Images/Ankit.jpeg'
+import Saurabh_Maurya from './Mem_Images/Saurabh_Maurya.jpg'
+import Bhargavi_Kiran from './Mem_Images/Bhargavi_Kiran.jpeg'
+import Vedanth_Powar from './Mem_Images/Vedanth_Powar.jpg'
+import Sachin_Shaw from './Mem_Images/Sachin_Shaw.jpg'
+import Saumya_Chaudhary from './Mem_Images/Saumya_Chaudhary.jpg'
 import LinkedIn from './Icons/LinkedIn.png'
 import Facebook from './Icons/Facebook.png'
 import Instagram from './Icons/Instagram.png'
+
+const balaka_devivaraprasad = () => {
+    return (
+        <div className="Members_Tiles">
+            <img
+                className="photo"
+                src={Sample_Image}
+                alt="Balaka Devivaraprasad"
+            />
+            <div className="Members_Description">BALAKA DEVIVARAPRASAD</div>
+            <div className="Members_Description">COORDINATOR</div>
+            <div className="Teams_social-tray">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=http://linkedin.com/in/balaka-devivaraprasad-a62206207&sa=D&source=editors&ust=1644147634245087&usg=AOvVaw2mda5dcBaNIaLp_XclTmqT"
+                >
+                    <img src={LinkedIn} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://m.facebook.com/100069194943472/&sa=D&source=editors&ust=1644147634244963&usg=AOvVaw2_v3JLAQbdyr0BcJexP9eO"
+                >
+                    <img src={Facebook} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.instagram.com/devivaraprasad_balaka/&sa=D&source=editors&ust=1644147634244803&usg=AOvVaw1PKcwXyl3L1-5Z3HTL6MOV"
+                >
+                    <img src={Instagram} className="social_icons" />
+                </a>
+            </div>
+        </div>
+    )
+}
+
+const saumya_chaudhary = () => {
+    return (
+        <div className="Members_Tiles">
+            <img
+                className="photo"
+                src={Saumya_Chaudhary}
+                alt="Saumya_Chaudhary"
+            />
+            <div className="Members_Description">SAUMYA CHAUDHARY</div>
+            <div className="Members_Description">COORDINATOR</div>
+            <div className="Teams_social-tray">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.linkedin.com/in/saumya-chaudhary-ab0097224&sa=D&source=editors&ust=1644147634249441&usg=AOvVaw1Std227Tcjsf8-G17tKu6o"
+                >
+                    <img src={LinkedIn} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.facebook.com/saumya.chaudhary.33821&sa=D&source=editors&ust=1644147634249295&usg=AOvVaw231XjpKM1DiFmhCeJMSIJm"
+                >
+                    <img src={Facebook} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.instagram.com/invites/contact/?i%3D1g2rv2ps7uwqo%26utm_content%3Dgu0bdpb&sa=D&source=editors&ust=1644147634249155&usg=AOvVaw02y302bqRe0EWZJuuEM1gh"
+                >
+                    <img src={Instagram} className="social_icons" />
+                </a>
+            </div>
+        </div>
+    )
+}
+
+const sachin_shaw = () => {
+    return (
+        <div className="Members_Tiles">
+            <img className="photo" src={Sachin_Shaw} alt="Sachin Shaw" />
+            <div className="Members_Description">SACHIN SHAW</div>
+            <div className="Members_Description">COORDINATOR</div>
+            <div className="Teams_social-tray">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.linkedin.com/in/sachin-shaw-790015228&sa=D&source=editors&ust=1644147634247961&usg=AOvVaw0URagzCiy-p6EakiR_D8kO"
+                >
+                    <img src={LinkedIn} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.facebook.com/sachin.shaw.756412&sa=D&source=editors&ust=1644147634247823&usg=AOvVaw3-ZYoPdDjVl-zi5J2P2In8"
+                >
+                    <img src={Facebook} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.instagram.com/sachinshaw09/&sa=D&source=editors&ust=1644147634247693&usg=AOvVaw2QIyE16lPiiVq6nMwvYq_X"
+                >
+                    <img src={Instagram} className="social_icons" />
+                </a>
+            </div>
+        </div>
+    )
+}
+
+const vedanth_powar = () => {
+    return (
+        <div className="Members_Tiles">
+            <img className="photo" src={Vedanth_Powar} alt="Vedanth Powar" />
+            <div className="Members_Description">VEDANTH NIVAS POWAR</div>
+            <div className="Members_Description">COORDINATOR</div>
+            <div className="Teams_social-tray">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.linkedin.com/in/vedanth-powar-045a3719b&sa=D&source=editors&ust=1644147634247221&usg=AOvVaw01mzrBYiPDyF7zaHv2vYjm"
+                >
+                    <img src={LinkedIn} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.facebook.com/profile.php?id%3D100071897709227&sa=D&source=editors&ust=1644147634247120&usg=AOvVaw3a_vxprtEasoOXe26P-9xH"
+                >
+                    <img src={Facebook} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.instagram.com/vedanth_ix/&sa=D&source=editors&ust=1644147634247031&usg=AOvVaw2UqQn_QpIuRsQkSCVkNkSS"
+                >
+                    <img src={Instagram} className="social_icons" />
+                </a>
+            </div>
+        </div>
+    )
+}
+
+const bhargavi_kiran = () => {
+    return (
+        <div className="Members_Tiles">
+            <img className="photo" src={Bhargavi_Kiran} alt="Bhargavi Kiran" />
+            <div className="Members_Description">BHARGAVI KIRAN</div>
+            <div className="Members_Description">COORDINATOR</div>
+            <div className="Teams_social-tray">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://in.linkedin.com/in/bhargavi-kiran-a53326224?trk%3Dpeople-guest_people_search-card&sa=D&source=editors&ust=1644147634243757&usg=AOvVaw0AD7we6jYaI-KdLCxFn-RD"
+                >
+                    <img src={LinkedIn} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.facebook.com/profile.php?id%3D100058686587576&sa=D&source=editors&ust=1644147634243693&usg=AOvVaw2TxjNkgO1zNXfzxZs76bm2"
+                >
+                    <img src={Facebook} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://instagram.com/maybeeyoudo?utm_medium%3Dcopy_link&sa=D&source=editors&ust=1644147634243625&usg=AOvVaw1hoRatU93hI0yC830b_mRd"
+                >
+                    <img src={Instagram} className="social_icons" />
+                </a>
+            </div>
+        </div>
+    )
+}
+
+const saurabh_maurya = () => {
+    return (
+        <div className="Members_Tiles">
+            <img className="photo" src={Saurabh_Maurya} alt="Saurabh Maurya" />
+            <div className="Members_Description">SAURABH MAURYA</div>
+            <div className="Members_Description">COORDINATOR</div>
+            <div className="Teams_social-tray">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.linkedin.com/in/saurabh-maurya-39b04b205&sa=D&source=editors&ust=1644147634243372&usg=AOvVaw3PECqLUMvQ1Q2lnZZHLbDj"
+                >
+                    <img src={LinkedIn} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://m.facebook.com/profile.php?id%3D100057795465187&sa=D&source=editors&ust=1644147634243305&usg=AOvVaw1kOZX9IdLBPen08bFtoUNY"
+                >
+                    <img src={Facebook} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.instagram.com/srbmaury/?hl%3Den&sa=D&source=editors&ust=1644147634243235&usg=AOvVaw2IRg1aRMjnGctKf8mTo5nv"
+                >
+                    <img src={Instagram} className="social_icons" />
+                </a>
+            </div>
+        </div>
+    )
+}
+
+const ankit = () => {
+    return (
+        <div className="Members_Tiles">
+            <img className="photo" src={Ankit} alt="Ankit" />
+            <div className="Members_Description">ANKIT</div>
+            <div className="Members_Description">COORDINATOR</div>
+            <div className="Teams_social-tray">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.linkedin.com/in/ankit-kumar-252ab7222&sa=D&source=editors&ust=1644147634242946&usg=AOvVaw1f8oMgHOTEK2r5KOe3M5ON"
+                >
+                    <img src={LinkedIn} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.facebook.com/profile.php?id%3D100057119552578&sa=D&source=editors&ust=1644147634242862&usg=AOvVaw2beuoCsS2F2BXQvf8Arcmy"
+                >
+                    <img src={Facebook} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/ank.it7410/"
+                >
+                    <img src={Instagram} className="social_icons" />
+                </a>
+            </div>
+        </div>
+    )
+}
+
+const kritika = () => {
+    return (
+        <div className="Members_Tiles">
+            <img className="photo" src={Kritika} alt="Kritika" />
+            <div className="Members_Description">KRITIKA</div>
+            <div className="Members_Description">COORDINATOR</div>
+            <div className="Teams_social-tray">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.linkedin.com/in/kritika-wadhwa-443206219&sa=D&source=editors&ust=1644147634242535&usg=AOvVaw0GTyhdVtY8liEadCpPZrSG"
+                >
+                    <img src={LinkedIn} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.facebook.com/profile.php?id%3D100074131111057&sa=D&source=editors&ust=1644147634242470&usg=AOvVaw0YjoWBqigxZv5Opx4rMWzG"
+                >
+                    <img src={Facebook} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://instagram.com/kritikawadhwa1?utm_medium%3Dcopy_link&sa=D&source=editors&ust=1644147634242387&usg=AOvVaw14Hi8iKR2O8ELEwPOhck_0"
+                >
+                    <img src={Instagram} className="social_icons" />
+                </a>
+            </div>
+        </div>
+    )
+}
+
+const aditya_ujjwal = () => {
+    return (
+        <div className="Members_Tiles">
+            <img className="photo" src={Aditya_Ujjwal} alt="Aditya Ujjwal" />
+            <div className="Members_Description">ADITYA UJJWAL</div>
+            <div className="Members_Description">COORDINATOR</div>
+            <div className="Teams_social-tray">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.linkedin.com/in/aditya-ujjwal-28572321b&sa=D&source=editors&ust=1644147634241474&usg=AOvVaw3xwtQsoQKMppYJi6kKjeiB"
+                >
+                    <img src={LinkedIn} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.facebook.com/profile.php?id%3D100009237379827&sa=D&source=editors&ust=1644147634241397&usg=AOvVaw3hQlWwqcNNsIhJSB0hDprU"
+                >
+                    <img src={Facebook} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.instagram.com/adityaujjwal/&sa=D&source=editors&ust=1644147634241329&usg=AOvVaw3DT6IrNSgz5mrDc5ccRtIW"
+                >
+                    <img src={Instagram} className="social_icons" />
+                </a>
+            </div>
+        </div>
+    )
+}
+
+const ritesh_sahu = () => {
+    return (
+        <div className="Members_Tiles">
+            <img className="photo" src={Ritesh_Sahu} alt="Ritesh Sahu" />
+            <div className="Members_Description">RITESH SAHU</div>
+            <div className="Members_Description">COORDINATOR</div>
+            <div className="Teams_social-tray">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.linkedin.com/in/ritesh-sahu-83b18b1ba&sa=D&source=editors&ust=1644147634240454&usg=AOvVaw0C586_aqSjGr-DD5K3Xbpb"
+                >
+                    <img src={LinkedIn} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.facebook.com/profile.php?id%3D100074262485583&sa=D&source=editors&ust=1644147634240345&usg=AOvVaw01ozeqqVbdDC2YbcK0m4hO"
+                >
+                    <img src={Facebook} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.instagram.com/_ritesh2219__/&sa=D&source=editors&ust=1644147634240240&usg=AOvVaw01vhchCSmtHBaL8r3z824g"
+                >
+                    <img src={Instagram} className="social_icons" />
+                </a>
+            </div>
+        </div>
+    )
+}
+
+const anurup_krishna = () => {
+    return (
+        <div className="Members_Tiles">
+            <img className="photo" src={Anurup_Krishna} alt="Anurup Krishna" />
+            <div className="Members_Description">ANURUP KRISHNA</div>
+            <div className="Members_Description">COORDINATOR</div>
+            <div className="Teams_social-tray">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.linkedin.com/in/anurup-krishna-183263117/&sa=D&source=editors&ust=1644147634248651&usg=AOvVaw3gWydBBCxb5WeWJyjNatTM"
+                >
+                    <img src={LinkedIn} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.facebook.com/profile.php?id%3D100011034010660&sa=D&source=editors&ust=1644147634248526&usg=AOvVaw0Ah5P4pjnptiISb3bRgu_f"
+                >
+                    <img src={Facebook} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/udyam_iit_bhu/"
+                >
+                    <img src={Instagram} className="social_icons" />
+                </a>
+            </div>
+        </div>
+    )
+}
+
+const mohit_kumar_sharma = () => {
+    return (
+        <div className="Members_Tiles">
+            <img
+                className="photo"
+                src={Sample_Image}
+                alt="Mohit_Kumar_Sharma"
+            />
+            <div className="Members_Description">MOHIT KUMAR SHARMA</div>
+            <div className="Members_Description">COORDINATOR</div>
+            <div className="Teams_social-tray">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.linkedin.com/in/mohit-sharma-5073181b9/&sa=D&source=editors&ust=1644147634250214&usg=AOvVaw3pg3V0u1ZTQaApln7ikG2N"
+                >
+                    <img src={LinkedIn} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.facebook.com/profile.php?id%3D100006572978791&sa=D&source=editors&ust=1644147634250090&usg=AOvVaw2nSUwhhZb-qlEQWfZsj2Nt"
+                >
+                    <img src={Facebook} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.instagram.com/mohit_sharma.21/&sa=D&source=editors&ust=1644147634249952&usg=AOvVaw1T02CaVTEo_iWbEnLUlrXn"
+                >
+                    <img src={Instagram} className="social_icons" />
+                </a>
+            </div>
+        </div>
+    )
+}
+
+const deependra_singh = () => {
+    return (
+        <div className="Members_Tiles">
+            <img
+                className="photo"
+                src={Deependra_Singh}
+                alt="Deependra Singh"
+            />
+            <div className="Members_Description">DEEPENDRA SINGH</div>
+            <div className="Members_Description">COORDINATOR</div>
+            <div className="Teams_social-tray">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.linkedin.com/in/deependra-singh-41943715a/&sa=D&source=editors&ust=1644147634246562&usg=AOvVaw0ZLygdJIPA9KIH5iEGnHTE"
+                >
+                    <img src={LinkedIn} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.facebook.com/profile.php?id%3D100066017084871&sa=D&source=editors&ust=1644147634246446&usg=AOvVaw3n0ijHrz1w4tlYvuSYD__E"
+                >
+                    <img src={Facebook} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.instagram.com/deependrasingh1037/?hl%3Den&sa=D&source=editors&ust=1644147634246303&usg=AOvVaw1f02g5I6Oe9Y5tI3-d4QF_"
+                >
+                    <img src={Instagram} className="social_icons" />
+                </a>
+            </div>
+        </div>
+    )
+}
+
+const nelson_rahul_tigga = () => {
+    return (
+        <div className="Members_Tiles">
+            <img
+                className="photo"
+                src={Nelson_Rahul_Tigga}
+                alt="Nelson Rahul Tigga"
+            />
+            <div className="Members_Description">NELSON RAHUL TIGGA</div>
+            <div className="Members_Description">COORDINATOR</div>
+            <div className="Teams_social-tray">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.linkedin.com/in/nelson-rahul-tigga-8555a5201/&sa=D&source=editors&ust=1644147634244342&usg=AOvVaw0JMwsRjpCr2dZ20ckYHmFQ"
+                >
+                    <img src={LinkedIn} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.facebook.com/nelson.tigga.3/&sa=D&source=editors&ust=1644147634244224&usg=AOvVaw21sdrlB8_8dbD-2H78BBOF"
+                >
+                    <img src={Facebook} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.instagram.com/nelson.tigga/&sa=D&source=editors&ust=1644147634244065&usg=AOvVaw2ZqBxM2CcJZdzLMfrM4fiZ"
+                >
+                    <img src={Instagram} className="social_icons" />
+                </a>
+            </div>
+        </div>
+    )
+}
+
+const priya_meena = () => {
+    return (
+        <div className="Members_Tiles">
+            <img className="photo" src={Priya_Meena} alt="Priya Meena" />
+            <div className="Members_Description">PRIYA MEENA</div>
+            <div className="Members_Description">COORDINATOR</div>
+            <div className="Teams_social-tray">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.linkedin.com/in/priya-meena-7a5ab5206&sa=D&source=editors&ust=1644147634242150&usg=AOvVaw0eBZGsYAZZniGi-p7GKxBD"
+                >
+                    <img src={LinkedIn} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/udyamfest"
+                >
+                    <img src={Facebook} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.instagram.com/_.priya_meena/&sa=D&source=editors&ust=1644147634242063&usg=AOvVaw3n_ckz8u3bRS5S-2FAmeqD"
+                >
+                    <img src={Instagram} className="social_icons" />
+                </a>
+            </div>
+        </div>
+    )
+}
+
+const nishtanth_gounder = () => {
+    return (
+        <div className="Members_Tiles">
+            <img
+                className="photo"
+                src={Nishanth_Gounder}
+                alt="Nishanth Gounder"
+            />
+            <div className="Members_Description">NISHANTH GOUNDER</div>
+            <div className="Members_Description">COORDINATOR</div>
+            <div className="Teams_social-tray">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.linkedin.com/in/nishanth-gounder-15477a224/&sa=D&source=editors&ust=1644147634239182&usg=AOvVaw1-q1LYYsXHQrr2D7FYu4NS"
+                >
+                    <img src={LinkedIn} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.facebook.com/nishanth.gounder.7&sa=D&source=editors&ust=1644147634239040&usg=AOvVaw2OJLmaF7lD6bH2lIJkAD18"
+                >
+                    <img src={Facebook} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.instagram.com/nishu_07.02/&sa=D&source=editors&ust=1644147634238919&usg=AOvVaw3Rt4BQqnw2GM7dmA8F9ovn"
+                >
+                    <img src={Instagram} className="social_icons" />
+                </a>
+            </div>
+        </div>
+    )
+}
+
+const pratishtha_dhiraj = () => {
+    return (
+        <div className="Members_Tiles">
+            <img
+                className="photo"
+                src={Pratishtha_Dhiraj}
+                alt="Pratishtha Dhiraj"
+            />
+            <div className="Members_Description">PRATISHTHA DHIRAJ</div>
+            <div className="Members_Description">COORDINATOR</div>
+            <div className="Teams_social-tray">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.linkedin.com/in/pratishtha-dhiraj-113754215/&sa=D&source=editors&ust=1644147634237964&usg=AOvVaw2kq3fbve96LesrhFG3jdA5"
+                >
+                    <img src={LinkedIn} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.facebook.com/pratishtha.dhiraj/&sa=D&source=editors&ust=1644147634237893&usg=AOvVaw3vjN4_O2D_GEi4yXwvzBkx"
+                >
+                    <img src={Facebook} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.instagram.com/pratishtha_dhiraj_/&sa=D&source=editors&ust=1644147634237826&usg=AOvVaw3mwPfB9XFfhyrHRWGT-LvI"
+                >
+                    <img src={Instagram} className="social_icons" />
+                </a>
+            </div>
+        </div>
+    )
+}
+
+const korivi_vedharshini = () => {
+    return (
+        <div className="Members_Tiles">
+            <img
+                className="photo"
+                src={Korivi_Vedharshini}
+                alt="Korivi Vedharshini"
+            />
+            <div className="Members_Description">KORIVI VEDHARSHINI</div>
+            <div className="Members_Description">COORDINATOR</div>
+            <div className="Teams_social-tray">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.linkedin.com/in/vedharshini-korivi-060317224/&sa=D&source=editors&ust=1644147634237275&usg=AOvVaw2Uq7AMKpgnGCS21Nu6XxaB"
+                >
+                    <img src={LinkedIn} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.facebook.com/profile.php?id%3D100005237475044&sa=D&source=editors&ust=1644147634237211&usg=AOvVaw1ajiYn8gJbkk3oCNZs6AzU"
+                >
+                    <img src={Facebook} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.instagram.com/vedharshinikorivi/&sa=D&source=editors&ust=1644147634237144&usg=AOvVaw32INtC8lO5KX21q6OfArJp"
+                >
+                    <img src={Instagram} className="social_icons" />
+                </a>
+            </div>
+        </div>
+    )
+}
+
+const yashank_aggarwal = () => {
+    return (
+        <div className="Members_Tiles">
+            <img
+                className="photo"
+                src={Yashank_Aggarwal}
+                alt="Yahsank Aggarwal"
+            />
+            <div className="Members_Description">YASHANK AGGARWAL</div>
+            <div className="Members_Description">COORDINATOR</div>
+            <div className="Teams_social-tray">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.linkedin.com/in/yashank-aggarwal-575750208/&sa=D&source=editors&ust=1644147634236856&usg=AOvVaw3HHX44lGhw-d0wjYcz-pHQ"
+                >
+                    <img src={LinkedIn} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/udyamfest"
+                >
+                    <img src={Facebook} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.instagram.com/being_royale/?hl%3Den&sa=D&source=editors&ust=1644147634236774&usg=AOvVaw0fdSe_BIEmcRPcSHet5IV0"
+                >
+                    <img src={Instagram} className="social_icons" />
+                </a>
+            </div>
+        </div>
+    )
+}
+
+const vikrant = () => {
+    return (
+        <div className="Members_Tiles">
+            <img className="photo" src={Vikrant} alt="Vikrant" />
+            <div className="Members_Description">VIKRANT</div>
+            <div className="Members_Description">COORDINATOR</div>
+            <div className="Teams_social-tray">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=http://linkedin.com/in/vikrant-kumar-73bab2206&sa=D&source=editors&ust=1644147634236113&usg=AOvVaw3-NzkYTExXWtWtAGD7Ba__"
+                >
+                    <img src={LinkedIn} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.facebook.com/profile.php?id%3D100057595013049&sa=D&source=editors&ust=1644147634236042&usg=AOvVaw3v9V5BURm8SgI43iuF-O4j"
+                >
+                    <img src={Facebook} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.instagram.com/kumar._.vikrant/&sa=D&source=editors&ust=1644147634235974&usg=AOvVaw1rAoR6-bJZU1LH91CKJoeL"
+                >
+                    <img src={Instagram} className="social_icons" />
+                </a>
+            </div>
+        </div>
+    )
+}
+
+const archit_soni = () => {
+    return (
+        <div className="Members_Tiles">
+            <img className="photo" src={Archit_Soni} alt="Archit Soni" />
+            <div className="Members_Description">ARCHIT SONI</div>
+            <div className="Members_Description">COORDINATOR</div>
+            <div className="Teams_social-tray">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/archit-soni-8aa697210"
+                >
+                    <img src={LinkedIn} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/people/Archit-Soni/100009089401953/"
+                >
+                    <img src={Facebook} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.instagram.com/archit_soni3/?hl%3Den&sa=D&source=editors&ust=1644147634238275&usg=AOvVaw1yg_HzQMJ6rb50q2vctxLW"
+                >
+                    <img src={Instagram} className="social_icons" />
+                </a>
+            </div>
+        </div>
+    )
+}
+
+const kalpit_adhao = () => {
+    return (
+        <div className="Members_Tiles">
+            <img className="photo" src={Kalpit_Adhao} alt="Kalpit Adhao" />
+            <div className="Members_Description">KALPIT ADHAO</div>
+            <div className="Members_Description">COORDINATOR</div>
+            <div className="Teams_social-tray">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/kalpit-adhao-6a4a25206"
+                >
+                    <img src={LinkedIn} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/udyamfest"
+                >
+                    <img src={Facebook} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.instagram.com/kalpit_adhao/&sa=D&source=editors&ust=1644147634241734&usg=AOvVaw2CGjf51MCLsneNP8BCiUc-"
+                >
+                    <img src={Instagram} className="social_icons" />
+                </a>
+            </div>
+        </div>
+    )
+}
+
+const manoj_gupta = () => {
+    return (
+        <div className="Members_Tiles">
+            <img className="photo" src={Manoj_Gupta} alt="Manoj Gupta" />
+            <div className="Members_Description">MANOJ KUMAR GUPTA</div>
+            <div className="Members_Description">COORDINATOR</div>
+            <div className="Teams_social-tray">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/manoj-kumar-gupta-a6bbbb220/"
+                >
+                    <img src={LinkedIn} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/people/Manoj-Gupta/100057590071296/"
+                >
+                    <img src={Facebook} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.instagram.com/manojgupta7341/&sa=D&source=editors&ust=1644147634240847&usg=AOvVaw2RX-DsvXeuTovfy5KJ8U1j"
+                >
+                    <img src={Instagram} className="social_icons" />
+                </a>
+            </div>
+        </div>
+    )
+}
+
+const vislavath_swetha = () => {
+    return (
+        <div className="Members_Tiles">
+            <img
+                className="photo"
+                src={Vislavath_Swetha}
+                alt="Vislavath Swetha"
+            />
+            <div className="Members_Description">VISLAVATH SWETHA</div>
+            <div className="Members_Description">COORDINATOR</div>
+            <div className="Teams_social-tray">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/swetha-vislavath-646ba7212"
+                >
+                    <img src={LinkedIn} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/Swetha.Vislavath/"
+                >
+                    <img src={Facebook} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/url?q=https://www.instagram.com/swetha._.18_/&sa=D&source=editors&ust=1644147634239626&usg=AOvVaw194_Wjtfli9edzW9r7V1Cv"
+                >
+                    <img src={Instagram} className="social_icons" />
+                </a>
+            </div>
+        </div>
+    )
+}
+
+const shivansh_dubey = () => {
+    return (
+        <div className="Members_Tiles">
+            <img className="photo" src={Shivansh_Dubey} alt="Shivansh Dubey" />
+            <div className="Members_Description">SHIVANSH DUBEY</div>
+            <div className="Members_Description">COORDINATOR</div>
+            <div className="Teams_social-tray">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/shivansh-dubey-032916213/"
+                >
+                    <img src={LinkedIn} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/shivansh.dubey.505523"
+                >
+                    <img src={Facebook} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/shivansh_d_/"
+                >
+                    <img src={Instagram} className="social_icons" />
+                </a>
+            </div>
+        </div>
+    )
+}
+
+const devi_tanuja_vasamsetty = () => {
+    return (
+        <div className="Members_Tiles">
+            <img
+                className="photo"
+                src={Devi_Tanuja_Vasamsetty}
+                alt="Devi Tanuja Vasamsetty"
+            />
+            <div className="Members_Description">DEVI TANUJA VASAMSETTY</div>
+            <div className="Members_Description">COORDINATOR</div>
+            <div className="Teams_social-tray">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/tanuja-vasamsetty-34b811218"
+                >
+                    <img src={LinkedIn} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/tanuja.vasamsetty"
+                >
+                    <img src={Facebook} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/tanuja_winniee/"
+                >
+                    <img src={Instagram} className="social_icons" />
+                </a>
+            </div>
+        </div>
+    )
+}
+
+const nikhil_singh = () => {
+    return (
+        <div className="Members_Tiles">
+            <img className="photo" src={Nikhil_Singh} alt="Nikhil Singh" />
+            <div className="Members_Description">NIKHIL SINGH</div>
+            <div className="Members_Description">COORDINATOR</div>
+            <div className="Teams_social-tray">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/nikhil-kumar-singh-10b091204/"
+                >
+                    <img src={LinkedIn} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/udyamfest"
+                >
+                    <img src={Facebook} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/nikhilsingh430/"
+                >
+                    <img src={Instagram} className="social_icons" />
+                </a>
+            </div>
+        </div>
+    )
+}
+
+const pratik_mishra = () => {
+    return (
+        <div className="Members_Tiles">
+            <img className="photo" src={Pratik_Mishra} alt="Pratik Mishra" />
+            <div className="Members_Description">PRATIK MISHRA</div>
+            <div className="Members_Description">COORDINATOR</div>
+            <div className="Teams_social-tray">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/pratik-mishra-ab78131b9"
+                >
+                    <img src={LinkedIn} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/people/Pratik-Mishra/100057035644735/"
+                >
+                    <img src={Facebook} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/paradise_moire/"
+                >
+                    <img src={Instagram} className="social_icons" />
+                </a>
+            </div>
+        </div>
+    )
+}
 
 const samarth_solanki = () => {
     return (
@@ -1466,6 +2460,43 @@ const anshuman_asauliya = () => {
     )
 }
 
+const anshuman_asauliya_PR = () => {
+    return (
+        <div className="Members_Tiles">
+            <img
+                className="photo"
+                src={Anshuman_Asauliya}
+                alt="Anshuman Asauliya"
+            />
+            <div className="Members_Description">ANSHUMAN ASAULIYA</div>
+            <div className="Members_Description">WEB COORDINATOR</div>
+            <div className="Teams_social-tray">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/company/udyam/"
+                >
+                    <img src={LinkedIn} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/udyamfest"
+                >
+                    <img src={Facebook} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/udyam_iit_bhu/"
+                >
+                    <img src={Instagram} className="social_icons" />
+                </a>
+            </div>
+        </div>
+    )
+}
+
 const mayank_singh = () => {
     return (
         <div className="Members_Tiles">
@@ -1509,6 +2540,43 @@ const jayesh_upadhyay = () => {
             />
             <div className="Members_Description">JAYESH UPADHYAY</div>
             <div className="Members_Description">WEB COORDINATOR</div>
+            <div className="Teams_social-tray">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/jayesh-upadhyay-84b46b210/"
+                >
+                    <img src={LinkedIn} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/jayesh.upadhyay.3950/"
+                >
+                    <img src={Facebook} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/jayesh._upadhyay/"
+                >
+                    <img src={Instagram} className="social_icons" />
+                </a>
+            </div>
+        </div>
+    )
+}
+
+const jayesh_upadhyay_PR = () => {
+    return (
+        <div className="Members_Tiles">
+            <img
+                className="photo"
+                src={Jayesh_Upadhyay}
+                alt="Jayesh Upadhyay"
+            />
+            <div className="Members_Description">JAYESH UPADHYAY</div>
+            <div className="Members_Description">COORDINATOR</div>
             <div className="Teams_social-tray">
                 <a
                     rel="noreferrer"
@@ -1602,6 +2670,39 @@ const riya_kanojiya = () => {
     )
 }
 
+const riya_kanojiya_marketing = () => {
+    return (
+        <div className="Members_Tiles">
+            <img className="photo" src={Riya_Kanojiya} alt="Riya Kanojiya" />
+            <div className="Members_Description">RIYA KANOJIYA</div>
+            <div className="Members_Description">COORDINATOR</div>
+            <div className="Teams_social-tray">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/company/udyam/"
+                >
+                    <img src={LinkedIn} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/udyamfest"
+                >
+                    <img src={Facebook} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/udyam_iit_bhu/"
+                >
+                    <img src={Instagram} className="social_icons" />
+                </a>
+            </div>
+        </div>
+    )
+}
+
 const ayush_bemera = () => {
     return (
         <div className="Members_Tiles">
@@ -1636,6 +2737,37 @@ const ayush_bemera = () => {
 }
 
 export {
+    balaka_devivaraprasad,
+    saumya_chaudhary,
+    sachin_shaw,
+    vedanth_powar,
+    bhargavi_kiran,
+    saurabh_maurya,
+    ankit,
+    kritika,
+    aditya_ujjwal,
+    ritesh_sahu,
+    anshuman_asauliya_PR,
+    jayesh_upadhyay_PR,
+    anurup_krishna,
+    mohit_kumar_sharma,
+    deependra_singh,
+    nelson_rahul_tigga,
+    priya_meena,
+    nishtanth_gounder,
+    pratishtha_dhiraj,
+    korivi_vedharshini,
+    yashank_aggarwal,
+    vikrant,
+    riya_kanojiya_marketing,
+    archit_soni,
+    kalpit_adhao,
+    manoj_gupta,
+    vislavath_swetha,
+    shivansh_dubey,
+    devi_tanuja_vasamsetty,
+    nikhil_singh,
+    pratik_mishra,
     samarth_solanki,
     easwaravaka_dinesh_reddy,
     ankur_agrawal_SA,

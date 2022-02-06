@@ -181,7 +181,7 @@
     .awssld {
         height: 70vh;
         text-align: center;
-        position: fixed;
+        position: relative;
         margin-top: 2%;
         z-index: 0;
     }

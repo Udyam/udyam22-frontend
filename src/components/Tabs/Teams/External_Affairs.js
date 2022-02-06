@@ -86,6 +86,24 @@ const External_Affairs = () => {
                         <div className="Teams_Tiles">
                             <Members.vikash_prajapati />
                         </div>
+                        <div className="Teams_Tiles">
+                            <Members.ankit />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.saurabh_maurya />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.balaka_devivaraprasad />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.vedanth_powar />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.sachin_shaw />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.saumya_chaudhary />
+                        </div>
                     </Carousel>
                 </div>
                 <div className="Teams_Mobile_Container">
@@ -97,6 +115,24 @@ const External_Affairs = () => {
                     </div>
                     <div className="Teams_Tiles">
                         <Members.vikash_prajapati />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.ankit />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.saurabh_maurya />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.balaka_devivaraprasad />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.vedanth_powar />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.sachin_shaw />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.saumya_chaudhary />
                     </div>
                 </div>
             </div>

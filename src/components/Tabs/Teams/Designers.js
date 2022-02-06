@@ -74,7 +74,7 @@ const Designers = () => {
                                 borderRadius: '50%',
                             },
                         }}
-                        itemsToShow={1}
+                        itemsToShow={2}
                         speed={CheckBrowser()}
                     >
                         <div className="Teams_Tiles">
@@ -82,6 +82,27 @@ const Designers = () => {
                         </div>
                         <div className="Teams_Tiles">
                             <Members.raj_aryan_srivastava />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.pratik_mishra />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.devi_tanuja_vasamsetty />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.shivansh_dubey />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.vislavath_swetha />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.manoj_gupta />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.kalpit_adhao />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.archit_soni />
                         </div>
                     </Carousel>
                 </div>
@@ -91,6 +112,27 @@ const Designers = () => {
                     </div>
                     <div className="Teams_Tiles">
                         <Members.raj_aryan_srivastava />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.pratik_mishra />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.devi_tanuja_vasamsetty />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.shivansh_dubey />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.vislavath_swetha />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.manoj_gupta />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.kalpit_adhao />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.archit_soni />
                     </div>
                 </div>
             </div>
