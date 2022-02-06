@@ -83,7 +83,7 @@ const balaka_devivaraprasad = () => {
                 alt="Balaka Devivaraprasad"
             />
             <div className="Members_Description">BALAKA DEVIVARAPRASAD</div>
-            <div className="Members_Description">COORDINATOR</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
             <div className="Teams_social-tray">
                 <a
                     rel="noreferrer"
@@ -120,7 +120,7 @@ const saumya_chaudhary = () => {
                 alt="Saumya_Chaudhary"
             />
             <div className="Members_Description">SAUMYA CHAUDHARY</div>
-            <div className="Members_Description">COORDINATOR</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
             <div className="Teams_social-tray">
                 <a
                     rel="noreferrer"
@@ -153,7 +153,7 @@ const sachin_shaw = () => {
         <div className="Members_Tiles">
             <img className="photo" src={Sachin_Shaw} alt="Sachin Shaw" />
             <div className="Members_Description">SACHIN SHAW</div>
-            <div className="Members_Description">COORDINATOR</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
             <div className="Teams_social-tray">
                 <a
                     rel="noreferrer"
@@ -186,7 +186,7 @@ const vedanth_powar = () => {
         <div className="Members_Tiles">
             <img className="photo" src={Vedanth_Powar} alt="Vedanth Powar" />
             <div className="Members_Description">VEDANTH NIVAS POWAR</div>
-            <div className="Members_Description">COORDINATOR</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
             <div className="Teams_social-tray">
                 <a
                     rel="noreferrer"
@@ -219,7 +219,7 @@ const bhargavi_kiran = () => {
         <div className="Members_Tiles">
             <img className="photo" src={Bhargavi_Kiran} alt="Bhargavi Kiran" />
             <div className="Members_Description">BHARGAVI KIRAN</div>
-            <div className="Members_Description">COORDINATOR</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
             <div className="Teams_social-tray">
                 <a
                     rel="noreferrer"
@@ -252,7 +252,7 @@ const saurabh_maurya = () => {
         <div className="Members_Tiles">
             <img className="photo" src={Saurabh_Maurya} alt="Saurabh Maurya" />
             <div className="Members_Description">SAURABH MAURYA</div>
-            <div className="Members_Description">COORDINATOR</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
             <div className="Teams_social-tray">
                 <a
                     rel="noreferrer"
@@ -285,7 +285,7 @@ const ankit = () => {
         <div className="Members_Tiles">
             <img className="photo" src={Ankit} alt="Ankit" />
             <div className="Members_Description">ANKIT</div>
-            <div className="Members_Description">COORDINATOR</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
             <div className="Teams_social-tray">
                 <a
                     rel="noreferrer"
@@ -318,7 +318,7 @@ const kritika = () => {
         <div className="Members_Tiles">
             <img className="photo" src={Kritika} alt="Kritika" />
             <div className="Members_Description">KRITIKA</div>
-            <div className="Members_Description">COORDINATOR</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
             <div className="Teams_social-tray">
                 <a
                     rel="noreferrer"
@@ -351,7 +351,7 @@ const aditya_ujjwal = () => {
         <div className="Members_Tiles">
             <img className="photo" src={Aditya_Ujjwal} alt="Aditya Ujjwal" />
             <div className="Members_Description">ADITYA UJJWAL</div>
-            <div className="Members_Description">COORDINATOR</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
             <div className="Teams_social-tray">
                 <a
                     rel="noreferrer"
@@ -384,7 +384,7 @@ const ritesh_sahu = () => {
         <div className="Members_Tiles">
             <img className="photo" src={Ritesh_Sahu} alt="Ritesh Sahu" />
             <div className="Members_Description">RITESH SAHU</div>
-            <div className="Members_Description">COORDINATOR</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
             <div className="Teams_social-tray">
                 <a
                     rel="noreferrer"
@@ -417,7 +417,7 @@ const anurup_krishna = () => {
         <div className="Members_Tiles">
             <img className="photo" src={Anurup_Krishna} alt="Anurup Krishna" />
             <div className="Members_Description">ANURUP KRISHNA</div>
-            <div className="Members_Description">COORDINATOR</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
             <div className="Teams_social-tray">
                 <a
                     rel="noreferrer"
@@ -454,7 +454,7 @@ const mohit_kumar_sharma = () => {
                 alt="Mohit_Kumar_Sharma"
             />
             <div className="Members_Description">MOHIT KUMAR SHARMA</div>
-            <div className="Members_Description">COORDINATOR</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
             <div className="Teams_social-tray">
                 <a
                     rel="noreferrer"
@@ -491,7 +491,7 @@ const deependra_singh = () => {
                 alt="Deependra Singh"
             />
             <div className="Members_Description">DEEPENDRA SINGH</div>
-            <div className="Members_Description">COORDINATOR</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
             <div className="Teams_social-tray">
                 <a
                     rel="noreferrer"
@@ -528,7 +528,7 @@ const nelson_rahul_tigga = () => {
                 alt="Nelson Rahul Tigga"
             />
             <div className="Members_Description">NELSON RAHUL TIGGA</div>
-            <div className="Members_Description">COORDINATOR</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
             <div className="Teams_social-tray">
                 <a
                     rel="noreferrer"
@@ -561,7 +561,7 @@ const priya_meena = () => {
         <div className="Members_Tiles">
             <img className="photo" src={Priya_Meena} alt="Priya Meena" />
             <div className="Members_Description">PRIYA MEENA</div>
-            <div className="Members_Description">COORDINATOR</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
             <div className="Teams_social-tray">
                 <a
                     rel="noreferrer"
@@ -598,7 +598,7 @@ const nishtanth_gounder = () => {
                 alt="Nishanth Gounder"
             />
             <div className="Members_Description">NISHANTH GOUNDER</div>
-            <div className="Members_Description">COORDINATOR</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
             <div className="Teams_social-tray">
                 <a
                     rel="noreferrer"
@@ -635,7 +635,7 @@ const pratishtha_dhiraj = () => {
                 alt="Pratishtha Dhiraj"
             />
             <div className="Members_Description">PRATISHTHA DHIRAJ</div>
-            <div className="Members_Description">COORDINATOR</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
             <div className="Teams_social-tray">
                 <a
                     rel="noreferrer"
@@ -672,7 +672,7 @@ const korivi_vedharshini = () => {
                 alt="Korivi Vedharshini"
             />
             <div className="Members_Description">KORIVI VEDHARSHINI</div>
-            <div className="Members_Description">COORDINATOR</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
             <div className="Teams_social-tray">
                 <a
                     rel="noreferrer"
@@ -709,7 +709,7 @@ const yashank_aggarwal = () => {
                 alt="Yahsank Aggarwal"
             />
             <div className="Members_Description">YASHANK AGGARWAL</div>
-            <div className="Members_Description">COORDINATOR</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
             <div className="Teams_social-tray">
                 <a
                     rel="noreferrer"
@@ -742,7 +742,7 @@ const vikrant = () => {
         <div className="Members_Tiles">
             <img className="photo" src={Vikrant} alt="Vikrant" />
             <div className="Members_Description">VIKRANT</div>
-            <div className="Members_Description">COORDINATOR</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
             <div className="Teams_social-tray">
                 <a
                     rel="noreferrer"
@@ -775,7 +775,7 @@ const archit_soni = () => {
         <div className="Members_Tiles">
             <img className="photo" src={Archit_Soni} alt="Archit Soni" />
             <div className="Members_Description">ARCHIT SONI</div>
-            <div className="Members_Description">COORDINATOR</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
             <div className="Teams_social-tray">
                 <a
                     rel="noreferrer"
@@ -808,7 +808,7 @@ const kalpit_adhao = () => {
         <div className="Members_Tiles">
             <img className="photo" src={Kalpit_Adhao} alt="Kalpit Adhao" />
             <div className="Members_Description">KALPIT ADHAO</div>
-            <div className="Members_Description">COORDINATOR</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
             <div className="Teams_social-tray">
                 <a
                     rel="noreferrer"
@@ -841,7 +841,7 @@ const manoj_gupta = () => {
         <div className="Members_Tiles">
             <img className="photo" src={Manoj_Gupta} alt="Manoj Gupta" />
             <div className="Members_Description">MANOJ KUMAR GUPTA</div>
-            <div className="Members_Description">COORDINATOR</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
             <div className="Teams_social-tray">
                 <a
                     rel="noreferrer"
@@ -878,7 +878,7 @@ const vislavath_swetha = () => {
                 alt="Vislavath Swetha"
             />
             <div className="Members_Description">VISLAVATH SWETHA</div>
-            <div className="Members_Description">COORDINATOR</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
             <div className="Teams_social-tray">
                 <a
                     rel="noreferrer"
@@ -911,7 +911,7 @@ const shivansh_dubey = () => {
         <div className="Members_Tiles">
             <img className="photo" src={Shivansh_Dubey} alt="Shivansh Dubey" />
             <div className="Members_Description">SHIVANSH DUBEY</div>
-            <div className="Members_Description">COORDINATOR</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
             <div className="Teams_social-tray">
                 <a
                     rel="noreferrer"
@@ -948,7 +948,7 @@ const devi_tanuja_vasamsetty = () => {
                 alt="Devi Tanuja Vasamsetty"
             />
             <div className="Members_Description">DEVI TANUJA VASAMSETTY</div>
-            <div className="Members_Description">COORDINATOR</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
             <div className="Teams_social-tray">
                 <a
                     rel="noreferrer"
@@ -981,7 +981,7 @@ const nikhil_singh = () => {
         <div className="Members_Tiles">
             <img className="photo" src={Nikhil_Singh} alt="Nikhil Singh" />
             <div className="Members_Description">NIKHIL SINGH</div>
-            <div className="Members_Description">COORDINATOR</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
             <div className="Teams_social-tray">
                 <a
                     rel="noreferrer"
@@ -1014,7 +1014,7 @@ const pratik_mishra = () => {
         <div className="Members_Tiles">
             <img className="photo" src={Pratik_Mishra} alt="Pratik Mishra" />
             <div className="Members_Description">PRATIK MISHRA</div>
-            <div className="Members_Description">COORDINATOR</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
             <div className="Teams_social-tray">
                 <a
                     rel="noreferrer"
@@ -2469,7 +2469,7 @@ const anshuman_asauliya_PR = () => {
                 alt="Anshuman Asauliya"
             />
             <div className="Members_Description">ANSHUMAN ASAULIYA</div>
-            <div className="Members_Description">WEB COORDINATOR</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
             <div className="Teams_social-tray">
                 <a
                     rel="noreferrer"
@@ -2576,7 +2576,7 @@ const jayesh_upadhyay_PR = () => {
                 alt="Jayesh Upadhyay"
             />
             <div className="Members_Description">JAYESH UPADHYAY</div>
-            <div className="Members_Description">COORDINATOR</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
             <div className="Teams_social-tray">
                 <a
                     rel="noreferrer"
@@ -2675,7 +2675,7 @@ const riya_kanojiya_marketing = () => {
         <div className="Members_Tiles">
             <img className="photo" src={Riya_Kanojiya} alt="Riya Kanojiya" />
             <div className="Members_Description">RIYA KANOJIYA</div>
-            <div className="Members_Description">COORDINATOR</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
             <div className="Teams_social-tray">
                 <a
                     rel="noreferrer"

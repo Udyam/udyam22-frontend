@@ -84,9 +84,6 @@ const Public_Relations = () => {
                             <Members.anshika_khare />
                         </div>
                         <div className="Teams_Tiles">
-                            <Members.jayant_roy />
-                        </div>
-                        <div className="Teams_Tiles">
                             <Members.ritesh_sahu />
                         </div>
                         <div className="Teams_Tiles">
@@ -103,6 +100,9 @@ const Public_Relations = () => {
                         </div>
                         <div className="Teams_Tiles">
                             <Members.jayesh_upadhyay_PR />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.jayant_roy />
                         </div>
                     </Carousel>
                 </div>
