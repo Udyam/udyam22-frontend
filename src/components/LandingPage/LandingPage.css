@@ -41,8 +41,7 @@
         rgba(255, 255, 255, 0.15),
         rgba(255, 255, 255, 0.2),
         rgba(255, 255, 255, 0.15)
-    ) !important; */
-    linear-gradient(
+    ) !important; */ linear-gradient(
         rgb(100, 100, 100),
         rgba(0, 0, 0, 1),
         rgba(88, 88, 88)
