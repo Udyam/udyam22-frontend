@@ -1,27 +1,10 @@
 import React from 'react'
 import './Timeline.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import FlipCountdown from '@rumess/react-flip-countdown'
 
 const Timeline = () => {
     return (
         <>
-            <div className="Countdown_Title">
-                <div style={{ position: 'relative', bottom: '40px' }}>
-                    <FlipCountdown
-                        endAt={'2022-05-04 00:00:00'}
-                        endAtZero
-                        hideYear
-                        yearTitle="Year"
-                        monthTitle="Months"
-                        dayTitle="Days"
-                        hourTitle="Hours"
-                        minuteTitle="Minutes"
-                        secondTitle="Seconds"
-                        size="medium"
-                    />
-                </div>
-            </div>
             <div className="d-flex flex-row-reverse">
                 <img
                     src="./images/timelineImage.png"
