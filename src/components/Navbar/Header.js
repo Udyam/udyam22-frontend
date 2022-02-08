@@ -111,7 +111,7 @@ const Header = () => {
                         <Navbar
                             dark
                             style={{ backgroundColor: '#022049' }}
-                            expand="xxl"
+                            expand="xl"
                         >
                             <Link to="/">
                                 <img
@@ -316,7 +316,7 @@ const Header = () => {
                         <Navbar
                             dark
                             style={{ backgroundColor: '#022049' }}
-                            expand="xxl"
+                            expand="xl"
                         >
                             <Link to="/">
                                 <img
