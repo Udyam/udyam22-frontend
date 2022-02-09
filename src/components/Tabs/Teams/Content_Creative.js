@@ -84,6 +84,21 @@ const Content_and_Creative = () => {
                             <Members.prajakta_priyadarsini />
                         </div>
                         <div className="Teams_Tiles">
+                            <Members.ajinkya_mohale />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.krishna_priya />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.vedant_gupta />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.ankur_agrawal_CC />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.akula_hemanth />
+                        </div>
+                        <div className="Teams_Tiles">
                             <Members.khushabu_kumari />
                         </div>
                     </Carousel>
@@ -97,6 +112,18 @@ const Content_and_Creative = () => {
                     </div>
                     <div className="Teams_Tiles">
                         <Members.khushabu_kumari />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.krishna_priya />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.vedant_gupta />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.ankur_agrawal_CC />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.akula_hemanth />
                     </div>
                 </div>
             </div>
