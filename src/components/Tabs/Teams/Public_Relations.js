@@ -102,6 +102,30 @@ const Public_Relations = () => {
                             <Members.jayesh_upadhyay_PR />
                         </div>
                         <div className="Teams_Tiles">
+                            <Members.kumar_sourav />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.lahar_raghu />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.shubham_kumar />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.harsh_singh />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.piyush_kumar />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.avinash_singh />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.megh_dokania />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.nitesh_dalmia />
+                        </div>
+                        <div className="Teams_Tiles">
                             <Members.jayant_roy />
                         </div>
                     </Carousel>
@@ -133,6 +157,30 @@ const Public_Relations = () => {
                     </div>
                     <div className="Teams_Tiles">
                         <Members.jayesh_upadhyay_PR />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.kumar_sourav />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.lahar_raghu />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.shubham_kumar />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.harsh_singh />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.piyush_kumar />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.avinash_singh />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.megh_dokania />
+                    </div>
+                    <div className="Teams_Tiles">
+                        <Members.nitesh_dalmia />
                     </div>
                 </div>
             </div>
