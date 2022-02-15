@@ -72,6 +72,17 @@ const Marketing_Team = () => {
                         <div className="Teams_Tiles1">
                             <Members.srini_rohan />
                         </div>
+                        <div className="Teams_Tiles1">
+                            <Members.shubham_gond />
+                        </div>
+                        <div className="Teams_Tiles1">
+                            <Members.op_nisad />
+                        </div>
+                    </div>
+                    <div className="Teams_Inner_Row1">
+                        <div className="Teams_Tiles1">
+                            <Members.suhani_agrawal_marketing />
+                        </div>
                     </div>
                 </div>
                 <div className="Teams_Mobile_Container">
@@ -125,6 +136,15 @@ const Marketing_Team = () => {
                     </div>
                     <div className="Teams_Tiles1">
                         <Members.srini_rohan />
+                    </div>
+                    <div className="Teams_Tiles1">
+                        <Members.shubham_gond />
+                    </div>
+                    <div className="Teams_Tiles1">
+                        <Members.op_nisad />
+                    </div>
+                    <div className="Teams_Tiles1">
+                        <Members.suhani_agrawal_marketing />
                     </div>
                 </div>
             </div>
