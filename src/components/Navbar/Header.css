@@ -87,7 +87,7 @@
     transition: 500ms;
     font-size: 0.8em;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
     .signin-div {
         display: block;
         color: #caf0f8;
