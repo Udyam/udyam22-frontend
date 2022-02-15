@@ -11,7 +11,7 @@ const Content_and_Creative = () => {
                     Back
                 </Link>
                 <h1 className="title">CONTENT AND CREATIVE</h1>
-                <div className="Teams_Carousel_Container">
+                <div className="Teams_Tile_Container">
                     <div className="Teams_Inner_Row">
                         <div className="Teams_Tiles">
                             <Members.prajakta_priyadarsini />
