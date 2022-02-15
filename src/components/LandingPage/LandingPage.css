@@ -3,7 +3,7 @@
 .landing-page-container {
     height: 100vh;
     min-height: 750px;
-    background: url('background.png') center center/cover;
+    background: url('background.gif') center center/cover;
 }
 
 .udyam-title {
@@ -26,9 +26,9 @@
 .page-link {
     position: relative;
     right: 0;
-    color: #90e0ef !important;
+    color: rgb(89, 230, 255) !important;
     text-align: left;
-    border-color: #90e0ef !important;
+    border-color: #00e1ff !important;
     border-radius: 32px;
     border-right: none;
     height: 2em;
@@ -37,9 +37,9 @@
     font-family: Quantico, sans-serif;
     right: -2.4em;
     background: linear-gradient(
-        rgba(255, 255, 255, 0.15),
-        rgba(255, 255, 255, 0.2),
-        rgba(255, 255, 255, 0.15)
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.4)
     ) !important;
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
@@ -48,9 +48,9 @@
 .page-link:hover {
     color: white !important;
     background: linear-gradient(
-        rgba(0, 183, 255, 0.4),
+        rgba(0, 183, 255, 1),
         rgba(0, 183, 255, 0.7),
-        rgba(0, 183, 255, 0.4)
+        rgba(0, 183, 255, 1)
     ) !important;
     transform: translateX(-20px);
 }
