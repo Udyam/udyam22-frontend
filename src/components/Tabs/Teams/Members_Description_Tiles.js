@@ -39,6 +39,7 @@ import Aditya_Agarwal from './Mem_Images/Aditya_Agarwal.jpg'
 import Swastik_Thapa from './Mem_Images/Swastik_Thapa.jpg'
 import Raj_Aryan_Srivastava from './Mem_Images/Raj_Aryan_Srivastava.jpg'
 import Yash_Jain from './Mem_Images/Yash_Jain.jpg'
+import Yash_Garg from './Mem_Images/Yash_Garg.jfif'
 import Nisitha_Vallamdasu from './Mem_Images/Nisitha_Vallamdasu.jpg'
 import Prajakta_Priyadarsini from './Mem_Images/Prajakta_Priyadarsini.jpg'
 import Kushagra_Yadav from './Mem_Images/Kushagra_Yadav.jpg'
@@ -88,6 +89,8 @@ import Krishna_Priya from './Mem_Images/Krishna_Priya.jpg'
 import Ankur_Agrawal from './Mem_Images/Ankur_Agrawal.jpg'
 import Akula_Hemanth from './Mem_Images/Akula_Hemanth.jpg'
 import Vedant_Gupta from './Mem_Images/Vedant_Gupta.jpg'
+import Bhavna_Chavan from './Mem_Images/Bhavna_Chavan.jpeg'
+import Shashi_Kant from './Mem_Images/Shashi_Kant.jpeg'
 import LinkedIn from './Icons/LinkedIn.png'
 import Facebook from './Icons/Facebook.png'
 import Instagram from './Icons/Instagram.png'
@@ -98,29 +101,26 @@ const shubham_kumar = () => {
             <img className="photo" src={Shubham_Kumar} alt="Shubham_Kumar" />
             <div className="Members_Description">SHUBHAM KUMAR</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/mwlite/in/shubham-kumar-bab3301b9&sa=D&source=editors&ust=1644429823689312&usg=AOvVaw3Jo-ugfhr5a2Z7_aNIpQbV"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://m.facebook.com/100024289480814/&sa=D&source=editors&ust=1644429823689227&usg=AOvVaw2z9Q_rtmEhN2kFXoWyN0zz"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/ig_kshubham/&sa=D&source=editors&ust=1644429823689144&usg=AOvVaw0wowsL6r2Q8fLpyefX2w8y"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
+        </div>
+    )
+}
+
+const bhavna_chavan = () => {
+    return (
+        <div className="Members_Tiles">
+            <img className="photo" src={Bhavna_Chavan} alt="Bhavna_Chavan" />
+            <div className="Members_Description">BHAVNA CHAVAN</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
+        </div>
+    )
+}
+
+const shashi_kant = () => {
+    return (
+        <div className="Members_Tiles">
+            <img className="photo" src={Shashi_Kant} alt="Shashi_Kant" />
+            <div className="Members_Description">SHASHI KANT</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
         </div>
     )
 }
@@ -131,29 +131,6 @@ const harsh_singh = () => {
             <img className="photo" src={Harsh_Singh} alt="Harsh_Singh" />
             <div className="Members_Description">HARSH SINGH</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/in/harsh-singh-952a42217/&sa=D&source=editors&ust=1644429823689875&usg=AOvVaw25Bv5XtpyG2OYupoyfhYia"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.facebook.com/profile.php?id%3D100064690974758&sa=D&source=editors&ust=1644429823689782&usg=AOvVaw0PkMMhJIQFlGG1p3wE997R"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/singh_harsh1608/&sa=D&source=editors&ust=1644429823689693&usg=AOvVaw0uUqMiOSrj96TT1qy4mG8S"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -164,29 +141,6 @@ const piyush_kumar = () => {
             <img className="photo" src={Piyush_Kumar} alt="Piyush_Kumar" />
             <div className="Members_Description">PIYUSH KUMAR</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/in/piyush-kumar-18390b213&sa=D&source=editors&ust=1644429823690468&usg=AOvVaw1lkiWlk70GmS1Zu8-G_uHF"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.facebook.com/piyush.rathee.167&sa=D&source=editors&ust=1644429823690379&usg=AOvVaw3ZyMlbNcHyjCrBh-5-hMWI"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://instagram.com/_piyush2324_?utm_medium%3Dcopy_link&sa=D&source=editors&ust=1644429823690279&usg=AOvVaw1WgQoHhaFx4frkk8p95P7i"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -197,29 +151,6 @@ const pushpam_berlia = () => {
             <img className="photo" src={Pushpam_Berlia} alt="Pushpam_Berlia" />
             <div className="Members_Description">PUSHPAM BERLIA</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/in/pushpam-berlia-89867b224&sa=D&source=editors&ust=1644429823690920&usg=AOvVaw1JBMLdszkRgM9Jj4NAAIqF"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.facebook.com/pushpam.berlia&sa=D&source=editors&ust=1644429823690838&usg=AOvVaw0IGm1oZ3CRKmPzQq5MqYVr"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.instagram.com/pushpamberlia/"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -230,29 +161,6 @@ const srini_rohan = () => {
             <img className="photo" src={Srini_Rohan} alt="Srini_Rohan" />
             <div className="Members_Description">GUJULLA LEEL SRINI ROHAN</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/mwlite/in/srini-rohan-gujulla-leel-9ab533219&sa=D&source=editors&ust=1644429823691467&usg=AOvVaw0pDUn38n-4s0Ov1FORf0p7"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://m.facebook.com/srinirohan.gujulla&sa=D&source=editors&ust=1644429823691387&usg=AOvVaw22n4bSll0F9uxV4kdHxLOh"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/srinirohan3110/&sa=D&source=editors&ust=1644429823691294&usg=AOvVaw0rFBlX3es8ErcBTnr6ykgU"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -263,29 +171,6 @@ const avinash_singh = () => {
             <img className="photo" src={Avinash_Singh} alt="Avinash_Singh" />
             <div className="Members_Description">AVINASH SINGH</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/in/avinash-singh-a03b86224&sa=D&source=editors&ust=1644429823692025&usg=AOvVaw3FKIeCISS1f89sTXUl4C3S"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.facebook.com/profile.php?id%3D100014113143161&sa=D&source=editors&ust=1644429823691940&usg=AOvVaw09AAm6wxS_r8rbliJ3rPLj"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/avinash.singh___/&sa=D&source=editors&ust=1644429823691855&usg=AOvVaw2eEfYHTLbYEPu161BBSWk3"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -296,29 +181,6 @@ const shubham_gond = () => {
             <img className="photo" src={Shubham_Gond} alt="Shubham_Gond" />
             <div className="Members_Description">SHUBHAM GOND</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/in/shubham-gond-1666091b7&sa=D&source=editors&ust=1644429823692583&usg=AOvVaw294XIffpes58bM-Vb6OULz"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.facebook.com/shubham.gond.16568&sa=D&source=editors&ust=1644429823692501&usg=AOvVaw1a3a5EaqG4VtbXrOQUPFWz"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/shubham_gond_40/&sa=D&source=editors&ust=1644429823692414&usg=AOvVaw2u54mYx4J7s5hu-gOFnQ_V"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -329,29 +191,6 @@ const megh_dokania = () => {
             <img className="photo" src={Megh_Dokania} alt="Megh_Dokania" />
             <div className="Members_Description">MEGH DOKANIA</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/mwlite/in/meghdokania&sa=D&source=editors&ust=1644429823693119&usg=AOvVaw0SJTjHFGiOV2ZaWEMXHvVI"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://m.facebook.com/100001503836046/&sa=D&source=editors&ust=1644429823693038&usg=AOvVaw0BSJPCYi_J7MtyNk3KD7F_"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/meghdokania/&sa=D&source=editors&ust=1644429823692948&usg=AOvVaw1dIYL8U-rJS3rudSWtyzSG"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -362,29 +201,6 @@ const op_nisad = () => {
             <img className="photo" src={OP_Nisad} alt="OP_Nisad" />
             <div className="Members_Description">OM PRAKASH NISAD</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/in/om-prakash-nisad-4-year-b-tech-electronics-engineering-b36142214&sa=D&source=editors&ust=1644429823693730&usg=AOvVaw2h-SaOBH2DD-qyOhsK51X7"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.facebook.com/omprakash.nishad.3154&sa=D&source=editors&ust=1644429823693639&usg=AOvVaw3oM8Co00ciOvnRn1pYSmEh"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://instagram.com/omprakash8503?utm_medium%3Dcopy_link&sa=D&source=editors&ust=1644429823693505&usg=AOvVaw10gx6r8ZSKUcDlJU7vYeC1"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -395,29 +211,6 @@ const nitesh_dalmia = () => {
             <img className="photo" src={Nitesh_Dalmia} alt="Nitesh_Dalmia" />
             <div className="Members_Description">NITESH DALMIA</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/in/nitesh-dalmia-744739215&sa=D&source=editors&ust=1644429823694302&usg=AOvVaw2GrNn_zP-GcLTCmlTIMnni"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://m.facebook.com/niteshdalmia.10?ref%3Dbookmarks&sa=D&source=editors&ust=1644429823694213&usg=AOvVaw3ofDQ0UfF5h3yLSI8-pmWS"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/niteshdalmia/?hl%3Den&sa=D&source=editors&ust=1644429823694123&usg=AOvVaw1FVcdeYSWl-cfTrFKAnU3P"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -428,29 +221,6 @@ const ajinkya_mohale = () => {
             <img className="photo" src={Ajinkya_Mohale} alt="Ajinkya_Mohale" />
             <div className="Members_Description">AJINKYA RAJENDRA MOHALE</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/in/ajinkya-mohale-81b146204/&sa=D&source=editors&ust=1644429823694979&usg=AOvVaw2PxE5RYa8Avprj6O9vL2q4"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.facebook.com/profile.php?id%3D100017015418963&sa=D&source=editors&ust=1644429823694889&usg=AOvVaw0VDc3O8sagyoczwWLvbOAr"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/mohale.ajinkya/&sa=D&source=editors&ust=1644429823694802&usg=AOvVaw3jiT2pjhoTwmZYfM98Z2pS"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -461,29 +231,6 @@ const krishna_priya = () => {
             <img className="photo" src={Krishna_Priya} alt="Krishna_Priya" />
             <div className="Members_Description">KRISHNA PRIYA</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/in/krishna-priya-p-1966b8224&sa=D&source=editors&ust=1644429823699119&usg=AOvVaw3I7kcqNsyA404LHQ2HHcNq"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.facebook.com/krishnapriya.potnuru&sa=D&source=editors&ust=1644429823699036&usg=AOvVaw2FQJIL0CPgh3J4IPFWgiUi"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://instagram.com/krishnapriya_213/&sa=D&source=editors&ust=1644429823698951&usg=AOvVaw3hISSAmJCWlRD7sq0SXyLv"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -494,29 +241,6 @@ const vedant_gupta = () => {
             <img className="photo" src={Vedant_Gupta} alt="Vedant_Gupta" />
             <div className="Members_Description">VEDANT GUPTA</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/in/vedant-gupta-5a60a4221/&sa=D&source=editors&ust=1644429823700216&usg=AOvVaw02ear9E-qHDZqA73vln0fl"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://m.facebook.com/vedant.gupta.129794&sa=D&source=editors&ust=1644429823700135&usg=AOvVaw1DaCodQpvK1-c1uE3Kl_tM"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/vedagupnt/&sa=D&source=editors&ust=1644429823700051&usg=AOvVaw3g96UVfNJ7GRvsjB0UwS6z"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -527,29 +251,6 @@ const akula_hemanth = () => {
             <img className="photo" src={Akula_Hemanth} alt="Akula_Hemanth" />
             <div className="Members_Description">AKULA HEMANTH</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/in/hemanth-akula-b85068219/&sa=D&source=editors&ust=1644429823703049&usg=AOvVaw1kQM887zujU0N5w_yD1j0B"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.facebook.com/hemanth.akula.399&sa=D&source=editors&ust=1644429823702991&usg=AOvVaw0eAIF2JIS8BcuLFw8UN6RW"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/hemanth_411/&sa=D&source=editors&ust=1644429823702918&usg=AOvVaw2E7lRMCPd0JD15z0R_7Lo2"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -560,29 +261,6 @@ const kumar_sourav = () => {
             <img className="photo" src={Kumar_Sourav} alt="Kumar Sourav" />
             <div className="Members_Description">KUMAR SOURAV</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/mwlite/in/kumar-sourav-045710208&sa=D&source=editors&ust=1644429823688190&usg=AOvVaw1aCVBsz0ktv_OWXjyBiKed"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://m.facebook.com/100056530611450/&sa=D&source=editors&ust=1644429823688104&usg=AOvVaw1KoJsf3OXpx6wc479EVWPH"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/iamkumarsourav23/&sa=D&source=editors&ust=1644429823688010&usg=AOvVaw0e9Wqz8_qbAbYNum4uE_Iu"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -593,29 +271,6 @@ const lahar_raghu = () => {
             <img className="photo" src={Lahar_Raghu} alt="Lahar Raghu" />
             <div className="Members_Description">LAHAR RAGHU</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=http://www.linkedin.com/in/lahar-raghu-725b7720a/&sa=D&source=editors&ust=1644429823688757&usg=AOvVaw2EAG1lhDppI-DBHANbmhUz"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=http://www.facebook.com/laharraghu.mandava/&sa=D&source=editors&ust=1644429823688673&usg=AOvVaw0bqZ9gv4yu8PeD3WDY13Ej"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=http://www.instagram.com/laharraghu/&sa=D&source=editors&ust=1644429823688583&usg=AOvVaw3RHBeGqQHQOtbXK-Ey4J_W"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -630,29 +285,6 @@ const balaka_devivaraprasad = () => {
             />
             <div className="Members_Description">BALAKA DEVIVARAPRASAD</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=http://linkedin.com/in/balaka-devivaraprasad-a62206207&sa=D&source=editors&ust=1644147634245087&usg=AOvVaw2mda5dcBaNIaLp_XclTmqT"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://m.facebook.com/100069194943472/&sa=D&source=editors&ust=1644147634244963&usg=AOvVaw2_v3JLAQbdyr0BcJexP9eO"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/devivaraprasad_balaka/&sa=D&source=editors&ust=1644147634244803&usg=AOvVaw1PKcwXyl3L1-5Z3HTL6MOV"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -667,29 +299,6 @@ const saumya_chaudhary = () => {
             />
             <div className="Members_Description">SAUMYA CHAUDHARY</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/in/saumya-chaudhary-ab0097224&sa=D&source=editors&ust=1644147634249441&usg=AOvVaw1Std227Tcjsf8-G17tKu6o"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.facebook.com/saumya.chaudhary.33821&sa=D&source=editors&ust=1644147634249295&usg=AOvVaw231XjpKM1DiFmhCeJMSIJm"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/invites/contact/?i%3D1g2rv2ps7uwqo%26utm_content%3Dgu0bdpb&sa=D&source=editors&ust=1644147634249155&usg=AOvVaw02y302bqRe0EWZJuuEM1gh"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -700,29 +309,6 @@ const sachin_shaw = () => {
             <img className="photo" src={Sachin_Shaw} alt="Sachin Shaw" />
             <div className="Members_Description">SACHIN SHAW</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/in/sachin-shaw-790015228&sa=D&source=editors&ust=1644147634247961&usg=AOvVaw0URagzCiy-p6EakiR_D8kO"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.facebook.com/sachin.shaw.756412&sa=D&source=editors&ust=1644147634247823&usg=AOvVaw3-ZYoPdDjVl-zi5J2P2In8"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/sachinshaw09/&sa=D&source=editors&ust=1644147634247693&usg=AOvVaw2QIyE16lPiiVq6nMwvYq_X"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -733,29 +319,6 @@ const vedanth_powar = () => {
             <img className="photo" src={Vedanth_Powar} alt="Vedanth Powar" />
             <div className="Members_Description">VEDANTH NIVAS POWAR</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/in/vedanth-powar-045a3719b&sa=D&source=editors&ust=1644147634247221&usg=AOvVaw01mzrBYiPDyF7zaHv2vYjm"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.facebook.com/profile.php?id%3D100071897709227&sa=D&source=editors&ust=1644147634247120&usg=AOvVaw3a_vxprtEasoOXe26P-9xH"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/vedanth_ix/&sa=D&source=editors&ust=1644147634247031&usg=AOvVaw2UqQn_QpIuRsQkSCVkNkSS"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -766,29 +329,6 @@ const bhargavi_kiran = () => {
             <img className="photo" src={Bhargavi_Kiran} alt="Bhargavi Kiran" />
             <div className="Members_Description">BHARGAVI KIRAN</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://in.linkedin.com/in/bhargavi-kiran-a53326224?trk%3Dpeople-guest_people_search-card&sa=D&source=editors&ust=1644147634243757&usg=AOvVaw0AD7we6jYaI-KdLCxFn-RD"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.facebook.com/profile.php?id%3D100058686587576&sa=D&source=editors&ust=1644147634243693&usg=AOvVaw2TxjNkgO1zNXfzxZs76bm2"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://instagram.com/maybeeyoudo?utm_medium%3Dcopy_link&sa=D&source=editors&ust=1644147634243625&usg=AOvVaw1hoRatU93hI0yC830b_mRd"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -799,29 +339,6 @@ const saurabh_maurya = () => {
             <img className="photo" src={Saurabh_Maurya} alt="Saurabh Maurya" />
             <div className="Members_Description">SAURABH MAURYA</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/in/saurabh-maurya-39b04b205&sa=D&source=editors&ust=1644147634243372&usg=AOvVaw3PECqLUMvQ1Q2lnZZHLbDj"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://m.facebook.com/profile.php?id%3D100057795465187&sa=D&source=editors&ust=1644147634243305&usg=AOvVaw1kOZX9IdLBPen08bFtoUNY"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/srbmaury/?hl%3Den&sa=D&source=editors&ust=1644147634243235&usg=AOvVaw2IRg1aRMjnGctKf8mTo5nv"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -832,29 +349,6 @@ const ankit = () => {
             <img className="photo" src={Ankit} alt="Ankit" />
             <div className="Members_Description">ANKIT</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/in/ankit-kumar-252ab7222&sa=D&source=editors&ust=1644147634242946&usg=AOvVaw1f8oMgHOTEK2r5KOe3M5ON"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.facebook.com/profile.php?id%3D100057119552578&sa=D&source=editors&ust=1644147634242862&usg=AOvVaw2beuoCsS2F2BXQvf8Arcmy"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.instagram.com/ank.it7410/"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -865,29 +359,6 @@ const kritika = () => {
             <img className="photo" src={Kritika} alt="Kritika" />
             <div className="Members_Description">KRITIKA</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/in/kritika-wadhwa-443206219&sa=D&source=editors&ust=1644147634242535&usg=AOvVaw0GTyhdVtY8liEadCpPZrSG"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.facebook.com/profile.php?id%3D100074131111057&sa=D&source=editors&ust=1644147634242470&usg=AOvVaw0YjoWBqigxZv5Opx4rMWzG"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://instagram.com/kritikawadhwa1?utm_medium%3Dcopy_link&sa=D&source=editors&ust=1644147634242387&usg=AOvVaw14Hi8iKR2O8ELEwPOhck_0"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -898,29 +369,6 @@ const aditya_ujjwal = () => {
             <img className="photo" src={Aditya_Ujjwal} alt="Aditya Ujjwal" />
             <div className="Members_Description">ADITYA UJJWAL</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/in/aditya-ujjwal-28572321b&sa=D&source=editors&ust=1644147634241474&usg=AOvVaw3xwtQsoQKMppYJi6kKjeiB"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.facebook.com/profile.php?id%3D100009237379827&sa=D&source=editors&ust=1644147634241397&usg=AOvVaw3hQlWwqcNNsIhJSB0hDprU"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/adityaujjwal/&sa=D&source=editors&ust=1644147634241329&usg=AOvVaw3DT6IrNSgz5mrDc5ccRtIW"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -931,29 +379,6 @@ const ritesh_sahu = () => {
             <img className="photo" src={Ritesh_Sahu} alt="Ritesh Sahu" />
             <div className="Members_Description">RITESH SAHU</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/in/ritesh-sahu-83b18b1ba&sa=D&source=editors&ust=1644147634240454&usg=AOvVaw0C586_aqSjGr-DD5K3Xbpb"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.facebook.com/profile.php?id%3D100074262485583&sa=D&source=editors&ust=1644147634240345&usg=AOvVaw01ozeqqVbdDC2YbcK0m4hO"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/_ritesh2219__/&sa=D&source=editors&ust=1644147634240240&usg=AOvVaw01vhchCSmtHBaL8r3z824g"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -964,29 +389,6 @@ const anurup_krishna = () => {
             <img className="photo" src={Anurup_Krishna} alt="Anurup Krishna" />
             <div className="Members_Description">ANURUP KRISHNA</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/in/anurup-krishna-183263117/&sa=D&source=editors&ust=1644147634248651&usg=AOvVaw3gWydBBCxb5WeWJyjNatTM"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.facebook.com/profile.php?id%3D100011034010660&sa=D&source=editors&ust=1644147634248526&usg=AOvVaw0Ah5P4pjnptiISb3bRgu_f"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.instagram.com/udyam_iit_bhu/"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -1001,29 +403,6 @@ const mohit_kumar_sharma = () => {
             />
             <div className="Members_Description">MOHIT KUMAR SHARMA</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/in/mohit-sharma-5073181b9/&sa=D&source=editors&ust=1644147634250214&usg=AOvVaw3pg3V0u1ZTQaApln7ikG2N"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.facebook.com/profile.php?id%3D100006572978791&sa=D&source=editors&ust=1644147634250090&usg=AOvVaw2nSUwhhZb-qlEQWfZsj2Nt"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/mohit_sharma.21/&sa=D&source=editors&ust=1644147634249952&usg=AOvVaw1T02CaVTEo_iWbEnLUlrXn"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -1038,29 +417,6 @@ const deependra_singh = () => {
             />
             <div className="Members_Description">DEEPENDRA SINGH</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/in/deependra-singh-41943715a/&sa=D&source=editors&ust=1644147634246562&usg=AOvVaw0ZLygdJIPA9KIH5iEGnHTE"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.facebook.com/profile.php?id%3D100066017084871&sa=D&source=editors&ust=1644147634246446&usg=AOvVaw3n0ijHrz1w4tlYvuSYD__E"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/deependrasingh1037/?hl%3Den&sa=D&source=editors&ust=1644147634246303&usg=AOvVaw1f02g5I6Oe9Y5tI3-d4QF_"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -1075,29 +431,6 @@ const nelson_rahul_tigga = () => {
             />
             <div className="Members_Description">NELSON RAHUL TIGGA</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/in/nelson-rahul-tigga-8555a5201/&sa=D&source=editors&ust=1644147634244342&usg=AOvVaw0JMwsRjpCr2dZ20ckYHmFQ"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.facebook.com/nelson.tigga.3/&sa=D&source=editors&ust=1644147634244224&usg=AOvVaw21sdrlB8_8dbD-2H78BBOF"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/nelson.tigga/&sa=D&source=editors&ust=1644147634244065&usg=AOvVaw2ZqBxM2CcJZdzLMfrM4fiZ"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -1108,29 +441,6 @@ const priya_meena = () => {
             <img className="photo" src={Priya_Meena} alt="Priya Meena" />
             <div className="Members_Description">PRIYA MEENA</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/in/priya-meena-7a5ab5206&sa=D&source=editors&ust=1644147634242150&usg=AOvVaw0eBZGsYAZZniGi-p7GKxBD"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.facebook.com/udyamfest"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/_.priya_meena/&sa=D&source=editors&ust=1644147634242063&usg=AOvVaw3n_ckz8u3bRS5S-2FAmeqD"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -1145,29 +455,6 @@ const nishtanth_gounder = () => {
             />
             <div className="Members_Description">NISHANTH GOUNDER</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/in/nishanth-gounder-15477a224/&sa=D&source=editors&ust=1644147634239182&usg=AOvVaw1-q1LYYsXHQrr2D7FYu4NS"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.facebook.com/nishanth.gounder.7&sa=D&source=editors&ust=1644147634239040&usg=AOvVaw2OJLmaF7lD6bH2lIJkAD18"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/nishu_07.02/&sa=D&source=editors&ust=1644147634238919&usg=AOvVaw3Rt4BQqnw2GM7dmA8F9ovn"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -1182,29 +469,6 @@ const pratishtha_dhiraj = () => {
             />
             <div className="Members_Description">PRATISHTHA DHIRAJ</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/in/pratishtha-dhiraj-113754215/&sa=D&source=editors&ust=1644147634237964&usg=AOvVaw2kq3fbve96LesrhFG3jdA5"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.facebook.com/pratishtha.dhiraj/&sa=D&source=editors&ust=1644147634237893&usg=AOvVaw3vjN4_O2D_GEi4yXwvzBkx"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/pratishtha_dhiraj_/&sa=D&source=editors&ust=1644147634237826&usg=AOvVaw3mwPfB9XFfhyrHRWGT-LvI"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -1219,29 +483,6 @@ const korivi_vedharshini = () => {
             />
             <div className="Members_Description">KORIVI VEDHARSHINI</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/in/vedharshini-korivi-060317224/&sa=D&source=editors&ust=1644147634237275&usg=AOvVaw2Uq7AMKpgnGCS21Nu6XxaB"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.facebook.com/profile.php?id%3D100005237475044&sa=D&source=editors&ust=1644147634237211&usg=AOvVaw1ajiYn8gJbkk3oCNZs6AzU"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/vedharshinikorivi/&sa=D&source=editors&ust=1644147634237144&usg=AOvVaw32INtC8lO5KX21q6OfArJp"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -1256,29 +497,6 @@ const yashank_aggarwal = () => {
             />
             <div className="Members_Description">YASHANK AGGARWAL</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/in/yashank-aggarwal-575750208/&sa=D&source=editors&ust=1644147634236856&usg=AOvVaw3HHX44lGhw-d0wjYcz-pHQ"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.facebook.com/udyamfest"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/being_royale/?hl%3Den&sa=D&source=editors&ust=1644147634236774&usg=AOvVaw0fdSe_BIEmcRPcSHet5IV0"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -1289,29 +507,6 @@ const vikrant = () => {
             <img className="photo" src={Vikrant} alt="Vikrant" />
             <div className="Members_Description">VIKRANT</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=http://linkedin.com/in/vikrant-kumar-73bab2206&sa=D&source=editors&ust=1644147634236113&usg=AOvVaw3-NzkYTExXWtWtAGD7Ba__"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.facebook.com/profile.php?id%3D100057595013049&sa=D&source=editors&ust=1644147634236042&usg=AOvVaw3v9V5BURm8SgI43iuF-O4j"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/kumar._.vikrant/&sa=D&source=editors&ust=1644147634235974&usg=AOvVaw1rAoR6-bJZU1LH91CKJoeL"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -1322,29 +517,6 @@ const archit_soni = () => {
             <img className="photo" src={Archit_Soni} alt="Archit Soni" />
             <div className="Members_Description">ARCHIT SONI</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.linkedin.com/in/archit-soni-8aa697210"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.facebook.com/people/Archit-Soni/100009089401953/"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/archit_soni3/?hl%3Den&sa=D&source=editors&ust=1644147634238275&usg=AOvVaw1yg_HzQMJ6rb50q2vctxLW"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -1355,29 +527,6 @@ const kalpit_adhao = () => {
             <img className="photo" src={Kalpit_Adhao} alt="Kalpit Adhao" />
             <div className="Members_Description">KALPIT ADHAO</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.linkedin.com/in/kalpit-adhao-6a4a25206"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.facebook.com/udyamfest"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/kalpit_adhao/&sa=D&source=editors&ust=1644147634241734&usg=AOvVaw2CGjf51MCLsneNP8BCiUc-"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -1388,29 +537,6 @@ const manoj_gupta = () => {
             <img className="photo" src={Manoj_Gupta} alt="Manoj Gupta" />
             <div className="Members_Description">MANOJ KUMAR GUPTA</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.linkedin.com/in/manoj-kumar-gupta-a6bbbb220/"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.facebook.com/people/Manoj-Gupta/100057590071296/"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/manojgupta7341/&sa=D&source=editors&ust=1644147634240847&usg=AOvVaw2RX-DsvXeuTovfy5KJ8U1j"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -1425,29 +551,6 @@ const vislavath_swetha = () => {
             />
             <div className="Members_Description">VISLAVATH SWETHA</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.linkedin.com/in/swetha-vislavath-646ba7212"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.facebook.com/Swetha.Vislavath/"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/swetha._.18_/&sa=D&source=editors&ust=1644147634239626&usg=AOvVaw194_Wjtfli9edzW9r7V1Cv"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -1458,29 +561,6 @@ const shivansh_dubey = () => {
             <img className="photo" src={Shivansh_Dubey} alt="Shivansh Dubey" />
             <div className="Members_Description">SHIVANSH DUBEY</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.linkedin.com/in/shivansh-dubey-032916213/"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.facebook.com/shivansh.dubey.505523"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.instagram.com/shivansh_d_/"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -1495,29 +575,6 @@ const devi_tanuja_vasamsetty = () => {
             />
             <div className="Members_Description">DEVI TANUJA VASAMSETTY</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.linkedin.com/in/tanuja-vasamsetty-34b811218"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.facebook.com/tanuja.vasamsetty"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.instagram.com/tanuja_winniee/"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -1528,29 +585,6 @@ const nikhil_singh = () => {
             <img className="photo" src={Nikhil_Singh} alt="Nikhil Singh" />
             <div className="Members_Description">NIKHIL SINGH</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.linkedin.com/in/nikhil-kumar-singh-10b091204/"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.facebook.com/udyamfest"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.instagram.com/nikhilsingh430/"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -1561,36 +595,13 @@ const pratik_mishra = () => {
             <img className="photo" src={Pratik_Mishra} alt="Pratik Mishra" />
             <div className="Members_Description">PRATIK MISHRA</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.linkedin.com/in/pratik-mishra-ab78131b9"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.facebook.com/people/Pratik-Mishra/100057035644735/"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.instagram.com/paradise_moire/"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
 
 const samarth_solanki = () => {
     return (
-        <div className="Members_Tiles">
+        <div className="Members_Tiles1">
             <img
                 className="photo"
                 src={Samarth_Solanki}
@@ -1626,7 +637,7 @@ const samarth_solanki = () => {
 }
 const easwaravaka_dinesh_reddy = () => {
     return (
-        <div className="Members_Tiles">
+        <div className="Members_Tiles1">
             <img
                 className="photo"
                 src={Dinesh_Easwaravaka}
@@ -1663,7 +674,7 @@ const easwaravaka_dinesh_reddy = () => {
 
 const ankur_agrawal_SA = () => {
     return (
-        <div className="Members_Tiles">
+        <div className="Members_Tiles1">
             <img className="photo" src={Ankur_Agrawal_SA} alt="Ankur Agrawal" />
             <div className="Members_Description">ANKUR AGRAWAL</div>
             <div className="Members_Description">TECHNICAL</div>
@@ -1696,7 +707,7 @@ const ankur_agrawal_SA = () => {
 
 const akshat_goyal = () => {
     return (
-        <div className="Members_Tiles">
+        <div className="Members_Tiles1">
             <img className="photo" src={Akshat_Goyal} alt="Akshat Goyal" />
             <div className="Members_Description">AKSHAT GOYAL</div>
             <div className="Members_Description">WEBSITE DEVELOPMENT</div>
@@ -1729,7 +740,7 @@ const akshat_goyal = () => {
 
 const alavala_suhas = () => {
     return (
-        <div className="Members_Tiles">
+        <div className="Members_Tiles1">
             <img className="photo" src={Suhas_Alavala} alt="Alavala Suhas" />
             <div className="Members_Description">ALAVALA SUHAS</div>
             <div className="Members_Description">WEBSITE DEVELOPMENT</div>
@@ -1762,7 +773,7 @@ const alavala_suhas = () => {
 
 const ishaan_amrit = () => {
     return (
-        <div className="Members_Tiles">
+        <div className="Members_Tiles1">
             <img className="photo" src={Ishaan_Amrit} alt="Ishaan Amrit" />
             <div className="Members_Description">ISHAAN AMRIT</div>
             <div className="Members_Description">CULTURAL</div>
@@ -1795,7 +806,7 @@ const ishaan_amrit = () => {
 
 const prince_kumar_gond = () => {
     return (
-        <div className="Members_Tiles">
+        <div className="Members_Tiles1">
             <img
                 className="photo"
                 src={Prince_Kumar_Gond}
@@ -1832,7 +843,7 @@ const prince_kumar_gond = () => {
 
 const anshika_khare = () => {
     return (
-        <div className="Members_Tiles">
+        <div className="Members_Tiles1">
             <img className="photo" src={Anshika_Khare} alt="Anshika Khare" />
             <div className="Members_Description">ANSHIKA KHARE</div>
             <div className="Members_Description">COORDINATOR</div>
@@ -1865,7 +876,7 @@ const anshika_khare = () => {
 
 const jayant_roy = () => {
     return (
-        <div className="Members_Tiles">
+        <div className="Members_Tiles1">
             <img className="photo" src={Jayant_Roy} alt="Jayant Roy" />
             <div className="Members_Description">JAYANT ROY</div>
             <div className="Members_Description">COORDINATOR</div>
@@ -1898,7 +909,7 @@ const jayant_roy = () => {
 
 const aman_kumar = () => {
     return (
-        <div className="Members_Tiles">
+        <div className="Members_Tiles1">
             <img className="photo" src={Aman_Kumar} alt="Aman Kumar" />
             <div className="Members_Description">AMAN KUMAR</div>
             <div className="Members_Description">HEAD</div>
@@ -1931,7 +942,7 @@ const aman_kumar = () => {
 
 const vikash_prajapati = () => {
     return (
-        <div className="Members_Tiles">
+        <div className="Members_Tiles1">
             <img
                 className="photo"
                 src={Vikash_Prajapati}
@@ -1968,7 +979,7 @@ const vikash_prajapati = () => {
 
 const kushagra_yadav = () => {
     return (
-        <div className="Members_Tiles">
+        <div className="Members_Tiles1">
             <img className="photo" src={Kushagra_Yadav} alt="Kushagra Yadav" />
             <div className="Members_Description">KUSHAGRA YADAV</div>
             <div className="Members_Description">COORDINATOR</div>
@@ -2001,7 +1012,7 @@ const kushagra_yadav = () => {
 
 const varsha_jangir = () => {
     return (
-        <div className="Members_Tiles">
+        <div className="Members_Tiles1">
             <img className="photo" src={Varsha_Jangir} alt="Varsha Jangir" />
             <div className="Members_Description">VARSHA JANGIR</div>
             <div className="Members_Description">COORDINATOR</div>
@@ -2034,7 +1045,7 @@ const varsha_jangir = () => {
 
 const somesh_dey = () => {
     return (
-        <div className="Members_Tiles">
+        <div className="Members_Tiles1">
             <img className="photo" src={Somesh_Dey} alt="Somesh Dey" />
             <div className="Members_Description">SOMESH DEY</div>
             <div className="Members_Description">COORDINATOR</div>
@@ -2066,7 +1077,7 @@ const somesh_dey = () => {
 }
 const raj_aryan_srivastava = () => {
     return (
-        <div className="Members_Tiles">
+        <div className="Members_Tiles1">
             <img
                 className="photo"
                 src={Raj_Aryan_Srivastava}
@@ -2103,7 +1114,7 @@ const raj_aryan_srivastava = () => {
 
 const ritweek_singh = () => {
     return (
-        <div className="Members_Tiles">
+        <div className="Members_Tiles1">
             <img className="photo" src={Ritweek_Singh} alt="Ritweek Singh" />
             <div className="Members_Description">RITWEEK SINGH</div>
             <div className="Members_Description">CONVENOR</div>
@@ -2135,7 +1146,7 @@ const ritweek_singh = () => {
 }
 const mohit_shringi = () => {
     return (
-        <div className="Members_Tiles">
+        <div className="Members_Tiles1">
             <img className="photo" src={Mohit_Shringi} alt="Mohit Shringi" />
             <div className="Members_Description">MOHIT SHRINGI</div>
             <div className="Members_Description">GENERAL SECRETARY</div>
@@ -2168,7 +1179,7 @@ const mohit_shringi = () => {
 
 const akshat_jain = () => {
     return (
-        <div className="Members_Tiles">
+        <div className="Members_Tiles1">
             <img className="photo" src={Akshat_Jain} alt="Akshat Jain" />
             <div className="Members_Description">AKSHAT JAIN</div>
             <div className="Members_Description">CO-CONVENOR</div>
@@ -2201,7 +1212,7 @@ const akshat_jain = () => {
 
 const pranav_mittal = () => {
     return (
-        <div className="Members_Tiles">
+        <div className="Members_Tiles1">
             <img className="photo" src={Pranav_Mittal} alt="Pranav Mittal" />
             <div className="Members_Description">PRANAV MITTAL</div>
             <div className="Members_Description">JOINT GENERAL SECRETARY</div>
@@ -2234,7 +1245,7 @@ const pranav_mittal = () => {
 
 const vikhyath_venkatraman = () => {
     return (
-        <div className="Members_Tiles">
+        <div className="Members_Tiles1">
             <img
                 className="photo"
                 src={Vikhyath_Venkatraman}
@@ -2271,7 +1282,7 @@ const vikhyath_venkatraman = () => {
 
 const eshaan_gupta = () => {
     return (
-        <div className="Members_Tiles">
+        <div className="Members_Tiles1">
             <img className="photo" src={Eshaan_Gupta} alt="Eshaan Gupta" />
             <div className="Members_Description">ESHAAN GUPTA</div>
             <div className="Members_Description">TECHNICAL SECRETARY</div>
@@ -2304,7 +1315,7 @@ const eshaan_gupta = () => {
 
 const smriti_sharma = () => {
     return (
-        <div className="Members_Tiles">
+        <div className="Members_Tiles1">
             <img className="photo" src={Smriti_Sharma} alt="Smriti Sharma" />
             <div className="Members_Description">SMRITI SHARMA</div>
             <div className="Members_Description">TECHNICAL SECRETARY</div>
@@ -2337,7 +1348,7 @@ const smriti_sharma = () => {
 
 const siddharth_anand_srivastav_head = () => {
     return (
-        <div className="Members_Tiles">
+        <div className="Members_Tiles1">
             <img
                 className="photo"
                 src={Siddharth_Anand_Srivastav}
@@ -2374,7 +1385,7 @@ const siddharth_anand_srivastav_head = () => {
 
 const siddharth_anand_srivastav = () => {
     return (
-        <div className="Members_Tiles">
+        <div className="Members_Tiles1">
             <img
                 className="photo"
                 src={Siddharth_Anand_Srivastav}
@@ -2411,7 +1422,7 @@ const siddharth_anand_srivastav = () => {
 
 const aditya_agarwal = () => {
     return (
-        <div className="Members_Tiles">
+        <div className="Members_Tiles1">
             <img className="photo" src={Aditya_Agarwal} alt="Aditya Agarwal" />
             <div className="Members_Description">ADITYA AGARWAL</div>
             <div className="Members_Description">CULTURAL SECRETARY</div>
@@ -2444,7 +1455,7 @@ const aditya_agarwal = () => {
 
 const swastik_thapa = () => {
     return (
-        <div className="Members_Tiles">
+        <div className="Members_Tiles1">
             <img className="photo" src={Swastik_Thapa} alt="Swastik Thapa" />
             <div className="Members_Description">SWASTIK THAPA</div>
             <div className="Members_Description">SPORTS SECRETARY</div>
@@ -2477,7 +1488,7 @@ const swastik_thapa = () => {
 
 const yash_jain = () => {
     return (
-        <div className="Members_Tiles">
+        <div className="Members_Tiles1">
             <img className="photo" src={Yash_Jain} alt="Yash Jain" />
             <div className="Members_Description">YASH JAIN</div>
             <div className="Members_Description">WEB HEAD</div>
@@ -2508,9 +1519,42 @@ const yash_jain = () => {
     )
 }
 
+const yash_garg = () => {
+    return (
+        <div className="Members_Tiles1">
+            <img className="photo" src={Yash_Garg} alt="Yash Garg" />
+            <div className="Members_Description">YASH GARG</div>
+            <div className="Members_Description">WEB ADVISOR</div>
+            <div className="Teams_social-tray">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/yash-garg-447a53199/"
+                >
+                    <img src={LinkedIn} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/udyamfest"
+                >
+                    <img src={Facebook} className="social_icons" />
+                </a>
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/udyam_iit_bhu/"
+                >
+                    <img src={Instagram} className="social_icons" />
+                </a>
+            </div>
+        </div>
+    )
+}
+
 const nisitha_vallamdasu = () => {
     return (
-        <div className="Members_Tiles">
+        <div className="Members_Tiles1">
             <img
                 className="photo"
                 src={Nisitha_Vallamdasu}
@@ -2547,7 +1591,7 @@ const nisitha_vallamdasu = () => {
 
 const prajakta_priyadarsini = () => {
     return (
-        <div className="Members_Tiles">
+        <div className="Members_Tiles1">
             <img
                 className="photo"
                 src={Prajakta_Priyadarsini}
@@ -2584,7 +1628,7 @@ const prajakta_priyadarsini = () => {
 
 const prajakta_priyadarsini_head = () => {
     return (
-        <div className="Members_Tiles">
+        <div className="Members_Tiles1">
             <img
                 className="photo"
                 src={Prajakta_Priyadarsini}
@@ -2662,29 +1706,6 @@ const ayush_gangwani = () => {
             <img className="photo" src={Sample_Image} alt="Ayush Gangwani" />
             <div className="Members_Description">AYUSH GANGWANI</div>
             <div className="Members_Description">WEB COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.linkedin.com/company/udyam/"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.facebook.com/udyamfest"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.instagram.com/udyam_iit_bhu/"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -2695,29 +1716,6 @@ const atharva_bhatt = () => {
             <img className="photo" src={Atharva_Bhatt} alt="Atharva Bhatt" />
             <div className="Members_Description">ATHARVA BHATT</div>
             <div className="Members_Description">WEB COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.linkedin.com/in/atharva-bhatt-199665156/"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.facebook.com/atharva.bhatt.3"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.instagram.com/bhattatharva/"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -2732,29 +1730,6 @@ const sarang_manerikar = () => {
             />
             <div className="Members_Description">SARANG MANERIKAR</div>
             <div className="Members_Description">WEB COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.linkedin.com/in/sarang-manerikar-06b315209/"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.facebook.com/udyamfest"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.instagram.com/udyam_iit_bhu/"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -2769,29 +1744,6 @@ const prashasti_tripathi = () => {
             />
             <div className="Members_Description">PRASHASTI TRIPATHI</div>
             <div className="Members_Description">WEB COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.linkedin.com/in/tripathiprashasti"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.facebook.com/udyamfest"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.instagram.com/udyam_iit_bhu/"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -2802,29 +1754,6 @@ const ankur_agrawal = () => {
             <img className="photo" src={Ankur_Agrawal} alt="Ankur Agrawal" />
             <div className="Members_Description">ANKUR AGRAWAL</div>
             <div className="Members_Description">WEB COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/in/ankur-agrawal-a7520a207/&sa=D&source=editors&ust=1644429823701306&usg=AOvVaw1476yhpvhsUopO3jaKRyZM"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.facebook.com/people/Ankur-Agrawal/100056978483894/&sa=D&source=editors&ust=1644429823701197&usg=AOvVaw3VXJz-xuVydFIZsdbI0EeW"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/ankuragrawal9455/&sa=D&source=editors&ust=1644429823701102&usg=AOvVaw0qZXQRDoJF_9Otm6rI4TM6"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -2835,29 +1764,6 @@ const ankur_agrawal_CC = () => {
             <img className="photo" src={Ankur_Agrawal} alt="Ankur Agrawal" />
             <div className="Members_Description">ANKUR AGRAWAL</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/in/ankur-agrawal-a7520a207/&sa=D&source=editors&ust=1644429823701306&usg=AOvVaw1476yhpvhsUopO3jaKRyZM"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.facebook.com/people/Ankur-Agrawal/100056978483894/&sa=D&source=editors&ust=1644429823701197&usg=AOvVaw3VXJz-xuVydFIZsdbI0EeW"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/ankuragrawal9455/&sa=D&source=editors&ust=1644429823701102&usg=AOvVaw0qZXQRDoJF_9Otm6rI4TM6"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -2868,29 +1774,6 @@ const raina_jain = () => {
             <img className="photo" src={Raina_Jain} alt="Raina Jain" />
             <div className="Members_Description">RAINA JAIN</div>
             <div className="Members_Description">WEB COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.linkedin.com/in/raina-jain-6b4b68143"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.facebook.com/rj35100"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.instagram.com/raina_jainn/"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -2901,29 +1784,6 @@ const ayushi_gupta = () => {
             <img className="photo" src={Ayushi_Gupta} alt="Ayushi Gupta" />
             <div className="Members_Description">AYUSHI GUPTA</div>
             <div className="Members_Description">WEB COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.linkedin.com/in/ayushi-gupta-125082212"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.facebook.com/udyamfest"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.instagram.com/ayushigupta400/"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -2936,31 +1796,10 @@ const sanskar_santosh_totla = () => {
                 src={Sanskar_Santosh_Totla}
                 alt="Sanskar Santosh Totla"
             />
-            <div className="Members_Description">SANSKAR SANTOSH TOTLA</div>
-            <div className="Members_Description">WEB COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.linkedin.com/in/sanskar-santosh-totla-427314200/"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.facebook.com/sanskar.totla.9/"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.instagram.com/sanskartotla/"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
+            <div className="Members_Description" style={{ fontSize: '2vh' }}>
+                SANSKAR SANTOSH TOTLA
             </div>
+            <div className="Members_Description">WEB COORDINATOR</div>
         </div>
     )
 }
@@ -2975,29 +1814,6 @@ const sanidhya_taparia = () => {
             />
             <div className="Members_Description">SANIDHYA TAPARIA</div>
             <div className="Members_Description">WEB COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.linkedin.com/in/sanidhya-taparia-4a4760207"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.facebook.com/sanidhya.taparia"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.instagram.com/sanidhyataparia"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -3012,29 +1828,6 @@ const anshuman_asauliya = () => {
             />
             <div className="Members_Description">ANSHUMAN ASAULIYA</div>
             <div className="Members_Description">WEB COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.linkedin.com/in/anshuman-asauliya-b93288229"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.facebook.com/anshuman.asauliya&sa=D&source=editors&ust=1644143639779423&usg=AOvVaw3kuHMIOjxK9qHHXYQKAwDm"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/anshuman_asauliya/&sa=D&source=editors&ust=1644143639779374&usg=AOvVaw0HsZ5RtrWhOh5PGT5_5j24"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -3049,29 +1842,6 @@ const anshuman_asauliya_PR = () => {
             />
             <div className="Members_Description">ANSHUMAN ASAULIYA</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.linkedin.com/company/udyam/"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.facebook.com/udyamfest"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.instagram.com/udyam_iit_bhu/"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -3082,29 +1852,6 @@ const mayank_singh = () => {
             <img className="photo" src={Mayank_Singh} alt="Maynak Singh" />
             <div className="Members_Description">MAYANK SINGH</div>
             <div className="Members_Description">WEB COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.linkedin.com/in/mayank-singh-4-year-b-tech-electronics-engineering-1a5791204"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.facebook.com/profile.php?id=100055855849690"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.instagram.com/mayank_s_ingh_?r=nametag"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -3119,29 +1866,6 @@ const jayesh_upadhyay = () => {
             />
             <div className="Members_Description">JAYESH UPADHYAY</div>
             <div className="Members_Description">WEB COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.linkedin.com/in/jayesh-upadhyay-84b46b210/"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.facebook.com/jayesh.upadhyay.3950/"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.instagram.com/jayesh._upadhyay/"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -3156,29 +1880,6 @@ const jayesh_upadhyay_PR = () => {
             />
             <div className="Members_Description">JAYESH UPADHYAY</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.linkedin.com/in/jayesh-upadhyay-84b46b210/"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.facebook.com/jayesh.upadhyay.3950/"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.instagram.com/jayesh._upadhyay/"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -3189,29 +1890,6 @@ const suhani_agrawal = () => {
             <img className="photo" src={Suhani_Agrawal} alt="Suhani Agrawal" />
             <div className="Members_Description">SUHANI AGRAWAL</div>
             <div className="Members_Description">WEB COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.linkedin.com/in/suhani-agrawal-4030861bb"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.facebook.com/udyamfest"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.instagram.com/suhanii_97/?hl=en"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -3222,29 +1900,6 @@ const suhani_agrawal_marketing = () => {
             <img className="photo" src={Suhani_Agrawal} alt="Suhani Agrawal" />
             <div className="Members_Description">SUHANI AGRAWAL</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.linkedin.com/in/suhani-agrawal-4030861bb"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.facebook.com/udyamfest"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.instagram.com/suhanii_97/?hl=en"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -3255,29 +1910,6 @@ const riya_kanojiya = () => {
             <img className="photo" src={Riya_Kanojiya} alt="Riya Kanojiya" />
             <div className="Members_Description">RIYA KANOJIYA</div>
             <div className="Members_Description">WEB COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.linkedin.com/in/riya-kanojiya-a8a0b6213/&sa=D&source=editors&ust=1644143639774352&usg=AOvVaw2Q8MY27g899AyMzoz6ps-2"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://m.facebook.com/100013992619149/&sa=D&source=editors&ust=1644143639774284&usg=AOvVaw1l5scR49OWWnrwd-DlwTJq"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.google.com/url?q=https://www.instagram.com/riyakanojiya23/&sa=D&source=editors&ust=1644143639774243&usg=AOvVaw1HHbRgdCSl0TS_JAFK1wNx"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -3288,29 +1920,6 @@ const riya_kanojiya_marketing = () => {
             <img className="photo" src={Riya_Kanojiya} alt="Riya Kanojiya" />
             <div className="Members_Description">RIYA KANOJIYA</div>
             <div className="Members_Description">CO-COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.linkedin.com/company/udyam/"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.facebook.com/udyamfest"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.instagram.com/udyam_iit_bhu/"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -3321,29 +1930,6 @@ const ayush_bemera = () => {
             <img className="photo" src={Ayush_Bemera} alt="Ayush Bemera" />
             <div className="Members_Description">AYUSH BEMERA</div>
             <div className="Members_Description">WEB COORDINATOR</div>
-            <div className="Teams_social-tray">
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.linkedin.com/company/udyam/"
-                >
-                    <img src={LinkedIn} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.facebook.com/udyamfest"
-                >
-                    <img src={Facebook} className="social_icons" />
-                </a>
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.instagram.com/ayushbemera/"
-                >
-                    <img src={Instagram} className="social_icons" />
-                </a>
-            </div>
         </div>
     )
 }
@@ -3402,6 +1988,7 @@ export {
     aditya_agarwal,
     swastik_thapa,
     yash_jain,
+    yash_garg,
     raj_aryan_srivastava,
     somesh_dey,
     varsha_jangir,
@@ -3444,4 +2031,6 @@ export {
     akula_hemanth,
     kumar_sourav,
     lahar_raghu,
+    bhavna_chavan,
+    shashi_kant,
 }

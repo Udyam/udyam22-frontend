@@ -1,6 +1,6 @@
 @media (min-width: 767px) {
     .container_box {
-        height: 79vh;
+        height: 80vh;
         margin-top: -1.5vh;
     }
 
@@ -19,11 +19,23 @@
     .Teams_Tiles {
         height: 58vh;
         width: 19vw;
-        transform: scale(0.7);
+        transform: scale(0.85);
+    }
+
+    .Teams_Tiles1 {
+        height: 52vh;
+        width: 19vw;
+        transform: scale(0.85);
+    }
+
+    .Members_Tiles1 {
+        height: 100%;
+        border-radius: 10px;
+        justify-items: center;
     }
 
     .Members_Tiles {
-        height: 100%;
+        height: 90%;
         border-radius: 10px;
         justify-items: center;
     }
@@ -50,7 +62,7 @@
         flex-direction: row;
         justify-content: space-evenly;
         margin-top: 3.5%;
-        margin-bottom: 1.5%;
+        /* margin-bottom: 1.5%; */
     }
 
     .social_icons {
@@ -70,6 +82,27 @@
     }
 }
 
+.Teams_Inner_Row {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+}
+
+.Teams_Inner_Row1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    justify-content: space-around;
+}
+
 @media (max-width: 767px) {
     .back_button {
         height: 3.5vh;
@@ -83,6 +116,10 @@
         display: none;
     }
 
+    .Teams_Tile_Container {
+        display: none;
+    }
+
     .container_box {
         height: 85vh;
     }
@@ -90,6 +127,12 @@
     .Teams_Tiles {
         width: 72vw;
         height: 53vh;
+        justify-content: center;
+    }
+
+    .Teams_Tiles1 {
+        width: 72vw;
+        height: 45vh;
         justify-content: center;
     }
 
@@ -177,7 +220,7 @@
 }
 
 #Teams_Scrollbar::-webkit-scrollbar-thumb {
-    background: #c4c4c4;
+    background: #9b8585c2;
     border-radius: 10px;
 }
 
