@@ -33,37 +33,37 @@ const Tabs = (props) => {
                 >
                     <li className="Tab-Title">
                         <Link to="/" id="panela">
-                            <img src={home} title="HOME" />
+                            <img src={home} title="Home" />
                         </Link>
                     </li>
                     <li className="Tab-Title">
                         <Link to="/about-us" id="panelb">
-                            <img src={info} title="ABOUT US" />
+                            <img src={info} title="About Us" />
                         </Link>
                     </li>
                     <li className="Tab-Title">
                         <Link to="/events" id="panelc">
-                            <img src={event} title="EVENTS" />
+                            <img src={event} title="Events" />
                         </Link>
                     </li>
                     <li className="Tab-Title">
                         <Link to="/speakers" id="paneld">
-                            <img src={speaker} title="SPEAKERS" />
+                            <img src={speaker} title="Speakers" />
                         </Link>
                     </li>
                     <li className="Tab-Title">
                         <Link to="/leaderboard" id="panele">
-                            <img src={leaderboard} title="LEADERBOARD" />
+                            <img src={leaderboard} title="Leaderboard" />
                         </Link>
                     </li>
                     <li className="Tab-Title">
                         <Link to="/sponsors" id="panelf">
-                            <img src={sponsor} title="SPONSORS" />
+                            <img src={sponsor} title="Sponsors" />
                         </Link>
                     </li>
                     <li className="Tab-Title">
                         <Link to="/team" id="panelg">
-                            <img src={team} title="TEAM" />
+                            <img src={team} title="Team" />
                         </Link>
                     </li>
                 </ul>

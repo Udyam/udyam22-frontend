@@ -1,19 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Sub_Files.css'
-import Carousel from 'react-simply-carousel'
 import { Route, Link } from 'react-router-dom'
 import * as Members from './Members_Description_Tiles.js'
-import Forward from './Icons/Front_Arrow.png'
-import Backward from './Icons/Back_Arrow.png'
 
 const Senior_Advisors = () => {
-    const [activeSlide, setActiveSlide] = useState(0)
-
-    function CheckBrowser() {
-        if (navigator.userAgent.indexOf('Firefox') > -1) return 0
-        return 500
-    }
-
     return (
         <Route>
             <div className="container_box" id="Teams_Scrollbar">
@@ -21,62 +11,8 @@ const Senior_Advisors = () => {
                     Back
                 </Link>
                 <h1 className="title">SENIOR ADVISORS</h1>
-                <div className="Teams_Carousel_Container">
-                    <Carousel
-                        disableNavIfAllVisible={false}
-                        disableNavIfEdgeVisible={false}
-                        disableNavIfEdgeActive={false}
-                        hideNavIfAllVisible={false}
-                        centerMode
-                        updateOnItemClick
-                        itemsListProps={{
-                            style: {
-                                marginRight: '0vw',
-                            },
-                        }}
-                        containerProps={{
-                            style: {
-                                marginTop: '3.5vh',
-                                marginRight: '2vw',
-                                marginLeft: '2vw',
-                                height: '100%',
-                                justifyContent: 'space-between',
-                            },
-                        }}
-                        activeSlideIndex={activeSlide}
-                        activeSlideProps={{
-                            className: 'ActiveSlider',
-                        }}
-                        onRequestChange={setActiveSlide}
-                        forwardBtnProps={{
-                            children: (
-                                <img src={Forward} className="Icons_Arrows" />
-                            ),
-                            style: {
-                                width: '3.5vw',
-                                height: '7vh',
-                                minWidth: 60,
-                                alignSelf: 'center',
-                                border: 'none',
-                                borderRadius: '50%',
-                            },
-                        }}
-                        backwardBtnProps={{
-                            children: (
-                                <img src={Backward} className="Icons_Arrows" />
-                            ),
-                            style: {
-                                width: '3.5vw',
-                                height: '7vh',
-                                minWidth: 60,
-                                alignSelf: 'center',
-                                border: 'none',
-                                borderRadius: '50%',
-                            },
-                        }}
-                        itemsToShow={3}
-                        speed={CheckBrowser()}
-                    >
+                <div className="Teams_Tile_Container">
+                    <div className="Teams_Inner_Row">
                         <div className="Teams_Tiles">
                             <Members.easwaravaka_dinesh_reddy />
                         </div>
@@ -86,6 +22,8 @@ const Senior_Advisors = () => {
                         <div className="Teams_Tiles">
                             <Members.ankur_agrawal_SA />
                         </div>
+                    </div>
+                    <div className="Teams_Inner_Row">
                         <div className="Teams_Tiles">
                             <Members.akshat_goyal />
                         </div>
@@ -95,8 +33,9 @@ const Senior_Advisors = () => {
                         <div className="Teams_Tiles">
                             <Members.ishaan_amrit />
                         </div>
-                    </Carousel>
+                    </div>
                 </div>
+
                 <div className="Teams_Mobile_Container">
                     <div className="Teams_Tiles">
                         <Members.easwaravaka_dinesh_reddy />
