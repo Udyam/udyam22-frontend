@@ -1,6 +1,10 @@
 .Team_head {
     font-family: Potra, serif;
-    color: rgba(93, 207, 223, 1);
+    /* color: rgba(93, 207, 223, 1); */
+    color: #fff;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
 }
 
 @media (min-width: 769px) {
@@ -82,5 +86,18 @@
         text-align: center;
         color: #90e0ef;
         text-decoration: none;
+    }
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #006be6c7,
+            0 0 40px #006be6c7, 0 0 50px #006be6c7, 0 0 60px #006be6c7,
+            0 0 70px #006be6c7;
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #006be6c7,
+            0 0 40px #006be6c7, 0 0 50px #006be6c7, 0 0 60px #006be6c7,
+            0 0 70px #006be6c7;
     }
 }

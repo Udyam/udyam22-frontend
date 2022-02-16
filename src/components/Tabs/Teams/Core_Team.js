@@ -1,18 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Sub_Files.css'
 import { Route, Link } from 'react-router-dom'
-import Carousel from 'react-simply-carousel'
 import * as Members from './Members_Description_Tiles.js'
-import Forward from './Icons/Front_Arrow.png'
-import Backward from './Icons/Back_Arrow.png'
 
 const Core_Team = () => {
-    const [activeSlide, setActiveSlide] = useState(0)
+    // const [activeSlide, setActiveSlide] = useState(0)
 
-    function CheckBrowser() {
-        if (navigator.userAgent.indexOf('Firefox') > -1) return 0
-        return 500
-    }
+    // function CheckBrowser() {
+    //     if (navigator.userAgent.indexOf('Firefox') > -1) return 0
+    //     return 500
+    // }
 
     return (
         <Route>
@@ -21,7 +18,7 @@ const Core_Team = () => {
                     Back
                 </Link>
                 <h1 className="title">CORE TEAM</h1>
-                <div className="Teams_Carousel_Container">
+                {/* <div className="Teams_Carousel_Container">
                     <Carousel
                         disableNavIfAllVisible={false}
                         disableNavIfEdgeVisible={false}
@@ -111,6 +108,47 @@ const Core_Team = () => {
                             <Members.yash_jain />
                         </div>
                     </Carousel>
+                </div> */}
+                <div className="Teams_Tile_Container">
+                    <div className="Teams_Inner_Row">
+                        <div className="Teams_Tiles">
+                            <Members.ritweek_singh />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.mohit_shringi />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.akshat_jain />
+                        </div>
+                    </div>
+                    <div className="Teams_Inner_Row1">
+                        <div className="Teams_Tiles">
+                            <Members.pranav_mittal />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.vikhyath_venkatraman />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.eshaan_gupta />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.smriti_sharma />
+                        </div>
+                    </div>
+                    <div className="Teams_Inner_Row1">
+                        <div className="Teams_Tiles">
+                            <Members.siddharth_anand_srivastav />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.aditya_agarwal />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.swastik_thapa />
+                        </div>
+                        <div className="Teams_Tiles">
+                            <Members.yash_jain />
+                        </div>
+                    </div>
                 </div>
                 <div className="Teams_Mobile_Container">
                     <div className="Teams_Tiles">
