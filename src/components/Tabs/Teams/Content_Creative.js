@@ -42,7 +42,7 @@ const Content_and_Creative = () => {
                             <Members.akula_hemanth />
                         </div>
                         <div className="Teams_Tiles1">
-                            <Members.bhavna_chavan />
+                            <Members.kanchan />
                         </div>
                     </div>
                 </div>
@@ -72,7 +72,7 @@ const Content_and_Creative = () => {
                         <Members.akula_hemanth />
                     </div>
                     <div className="Teams_Tiles1">
-                        <Members.bhavna_chavan />
+                        <Members.kanchan />
                     </div>
                 </div>
             </div>
