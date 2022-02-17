@@ -90,10 +90,21 @@ import Ankur_Agrawal from './Mem_Images/Ankur_Agrawal.jpg'
 import Akula_Hemanth from './Mem_Images/Akula_Hemanth.jpg'
 import Vedant_Gupta from './Mem_Images/Vedant_Gupta.jpg'
 import Bhavna_Chavan from './Mem_Images/Bhavna_Chavan.jpeg'
+import Kanchan from './Mem_Images/Kanchan.JPG'
 import Shashi_Kant from './Mem_Images/Shashi_Kant.jpeg'
 import LinkedIn from './Icons/LinkedIn.png'
 import Facebook from './Icons/Facebook.png'
 import Instagram from './Icons/Instagram.png'
+
+const kanchan = () => {
+    return (
+        <div className="Members_Tiles">
+            <img className="photo" src={Kanchan} alt="Kanchan" />
+            <div className="Members_Description">KANCHAN</div>
+            <div className="Members_Description">CO-COORDINATOR</div>
+        </div>
+    )
+}
 
 const shubham_kumar = () => {
     return (
@@ -2033,4 +2044,5 @@ export {
     lahar_raghu,
     bhavna_chavan,
     shashi_kant,
+    kanchan,
 }
