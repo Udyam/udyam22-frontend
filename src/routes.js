@@ -17,6 +17,7 @@ import Speakers from './components/Tabs/Speakers/speakers.js'
 import { Noticeboard, Notice } from './components/NoticeBoard/NoticeBoard'
 import Dashboard from './components/Dashboard/Dashboard.js'
 import IframeComponent from './components/iframe/iframe.js'
+import ResumeClinic from './components/ResumeClinic/ResumeClinic.js'
 
 const Routes = () => {
     return (
@@ -24,6 +25,7 @@ const Routes = () => {
             <Route exact path="/">
                 <LandingPage />
                 <Timeline />
+                <ResumeClinic />
                 <ContactPage />
                 <IframeComponent />
             </Route>
