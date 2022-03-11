@@ -11,12 +11,16 @@ function ResumeClinic() {
             >
                 <Row xs="1" lg="2">
                     <Col>
-                        <img src="/images/ResumeClinic.jpeg" width="100%" 
-                        height="100%"
+                        <img
+                            src="/images/ResumeClinic.jpeg"
+                            width="100%"
+                            height="100%"
                         />
                     </Col>
-                    <Col className='d-flex align-items-center justify-content-center flex-column'>
-                        <p className={`pt-3 pt-md-3 pt-lg-0 ${styles['text-container']}`}>
+                    <Col className="d-flex align-items-center justify-content-center flex-column">
+                        <p
+                            className={`pt-3 pt-md-3 pt-lg-0 ${styles['text-container']}`}
+                        >
                             Nullcon presents Resume & Career Clinic, a virtual
                             edition of career guidance series to connect
                             individuals with security experts and leaders for
@@ -32,7 +36,17 @@ function ResumeClinic() {
                             Career Clinic by providing individuals one-on-one
                             feedback and guidance over a virtual session.
                         </p>
-                        <Button className={`${styles["event-button"]}`}> <a href='https://share.hsforms.com/1T5T3nwyOQoGnqpQUxjiTpw4d2c8' target="_blank" rel="noreferrer" className='text-decoration-none text-white' >Sign Up</a></Button>
+                        <Button className={`${styles['event-button']}`}>
+                            {' '}
+                            <a
+                                href="https://share.hsforms.com/1T5T3nwyOQoGnqpQUxjiTpw4d2c8"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="text-decoration-none text-white"
+                            >
+                                Sign Up
+                            </a>
+                        </Button>
                     </Col>
                 </Row>
             </Container>
