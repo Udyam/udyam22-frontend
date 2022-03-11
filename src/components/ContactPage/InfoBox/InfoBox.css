@@ -4,6 +4,7 @@
     list-style-type: none;
     padding-left: 1rem;
     line-height: 2.6em;
+    font-family: 'Raleway', 'sans-serif';
 }
 
 .info-box-list-item {
@@ -16,6 +17,7 @@
 .info-box-span {
     font-size: 1.55em;
     color: #90e0ef;
+    font-family: 'Raleway', 'sans-serif';
 }
 
 .info-box-labels {
