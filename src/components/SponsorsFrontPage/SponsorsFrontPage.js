@@ -11,14 +11,11 @@ const SponsorsFrontPage = () => {
     return (
         <div
             className="sponsor-front-container"
-            style={{ margin: '4em 3em 2em 3em' }}
+            style={{ margin: '4em 3em 0 3em' }}
         >
             <h1 id="sponsor-front-head">Events Sponsor</h1>
             <div className="card-group">
-                <div
-                    className="card"
-                    style={{ maxWidth: '350px', minWidth: '350px' }}
-                >
+                <div className="card">
                     <a href="https://silencelaboratories.com/">
                         <img
                             className="card-img-top"
@@ -38,10 +35,7 @@ const SponsorsFrontPage = () => {
                         </p>
                     </div>
                 </div>
-                <div
-                    className="card"
-                    style={{ maxWidth: '350px', minWidth: '350px' }}
-                >
+                <div className="card">
                     <a href="https://www.sensoviz.com/">
                         <img
                             className="card-img-top my-4"
@@ -62,10 +56,7 @@ const SponsorsFrontPage = () => {
                         </p>
                     </div>
                 </div>
-                <div
-                    className="card"
-                    style={{ maxWidth: '350px', minWidth: '350px' }}
-                >
+                <div className="card">
                     <a href="https://nullcon.net/berlin-2022">
                         <img
                             className="card-img-top"
@@ -89,10 +80,7 @@ const SponsorsFrontPage = () => {
                         </p>
                     </div>
                 </div>
-                <div
-                    className="card"
-                    style={{ maxWidth: '350px', minWidth: '350px' }}
-                >
+                <div className="card">
                     <a href=" https://www.circuitsutra.com/">
                         <img
                             className="card-img-top"
@@ -119,10 +107,7 @@ const SponsorsFrontPage = () => {
             </div>
             <h1 id="sponsor-front-head">Educational Partner</h1>
             <div className="card-group">
-                <div
-                    className="card"
-                    style={{ maxWidth: '350px', minWidth: '350px' }}
-                >
+                <div className="card">
                     <a href=" https://growthschool.io/">
                         <img
                             className="card-img-top"
@@ -149,10 +134,7 @@ const SponsorsFrontPage = () => {
             </div>
             <div className="card-group">
                 <h1 id="sponsor-front-head">Merchandise Partner</h1>
-                <div
-                    className="card"
-                    style={{ maxWidth: '350px', minWidth: '350px' }}
-                >
+                <div className="card">
                     <a href="#">
                         <img
                             className="card-img-top"
