@@ -17,13 +17,16 @@ import Speakers from './components/Tabs/Speakers/speakers.js'
 import { Noticeboard, Notice } from './components/NoticeBoard/NoticeBoard'
 import Dashboard from './components/Dashboard/Dashboard.js'
 import IframeComponent from './components/iframe/iframe.js'
+import countdown from './components/countdown/countdown.js'
 
 const Routes = () => {
     return (
         <div>
             <Route exact path="/">
                 <LandingPage />
+                {countdown()}
                 <Timeline />
+
                 <ContactPage />
                 <IframeComponent />
             </Route>
