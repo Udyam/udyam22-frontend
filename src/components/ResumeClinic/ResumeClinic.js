@@ -35,7 +35,11 @@ function ResumeClinic() {
                             set to put their experiences to work in the Resume &
                             Career Clinic by providing individuals one-on-one
                             feedback and guidance over a virtual session.
+                            <br />
                         </p>
+                        <span className={`${styles['deadline-text']}`}>
+                            <strong> Deadline: 31st March</strong>
+                        </span>
                         <Button className={`${styles['event-button']}`}>
                             {' '}
                             <a
