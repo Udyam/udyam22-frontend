@@ -13,12 +13,17 @@
     border-radius: 7px;
 }
 
-.text-container {
+.text-container,
+.deadline-text {
     font-family: 'Raleway', 'sans-serif';
-    color: white;
+    color: white !important;
     font-size: 1.2rem;
     text-align: justify;
     line-height: 35px;
+}
+
+.deadline-text {
+    margin-bottom: 5px;
 }
 
 .event-button {
