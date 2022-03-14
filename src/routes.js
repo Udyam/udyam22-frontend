@@ -18,6 +18,7 @@ import { Noticeboard, Notice } from './components/NoticeBoard/NoticeBoard'
 import Dashboard from './components/Dashboard/Dashboard.js'
 import IframeComponent from './components/iframe/iframe.js'
 import ResumeClinic from './components/ResumeClinic/ResumeClinic.js'
+import SponsorsFrontPage from './components/SponsorsFrontPage/SponsorsFrontPage.js'
 
 const Routes = () => {
     return (
@@ -26,6 +27,7 @@ const Routes = () => {
                 <LandingPage />
                 <Timeline />
                 <ResumeClinic />
+                <SponsorsFrontPage />
                 <ContactPage />
                 <IframeComponent />
             </Route>

@@ -1,0 +1,77 @@
+#sponsor-front-head {
+    font-family: 'Quantico', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5em;
+    color: #90e0ef;
+    display: block;
+    width: 100%;
+    margin-top: 0.5em;
+}
+
+.sponsor-front-container .card-group .card {
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    min-width: 350px;
+    max-width: 350px;
+}
+
+.sponsor-front-container .card-img-top {
+    display: block;
+    margin: auto;
+    max-width: 300px;
+    max-height: 200px;
+    height: auto;
+    width: auto;
+    padding: 10px;
+}
+
+@media (max-width: 500px) {
+    #sponsor-front-head {
+        padding: 10px;
+        font-size: 2em;
+    }
+    .sponsor-front-container {
+        margin: 4em auto 2em auto !important;
+    }
+    .sponsor-front-container .card-group .card {
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 300px;
+        max-width: 300px;
+    }
+    .sponsor-front-container .card-img-top {
+        max-width: 180px;
+        max-height: 200px;
+    }
+}
+
+@media (max-width: 350px) {
+    .sponsor-front-container .card-group .card {
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 280px;
+        max-width: 280px;
+    }
+    .sponsor-front-container .card-img-top {
+        max-width: 180px;
+        max-height: 200px;
+    }
+}
+
+@media (max-width: 300px) {
+    .sponsor-front-container .card-group .card {
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 250px;
+        max-width: 250px;
+    }
+    .sponsor-front-container .card-img-top {
+        max-width: 180px;
+        max-height: 200px;
+    }
+}
