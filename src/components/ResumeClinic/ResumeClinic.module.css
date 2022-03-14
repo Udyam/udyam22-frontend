@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
-
-.wrap-conatiner
-{
+.wrap-conatiner {
     width: 88%;
     background: linear-gradient(
         rgba(255, 255, 255, 0.15),
@@ -15,18 +13,25 @@
     border-radius: 7px;
 }
 
-.text-container
-{
+.text-container,
+.deadline-text {
     font-family: 'Raleway', 'sans-serif';
-    color: white;
+    color: white !important;
     font-size: 1.2rem;
     text-align: justify;
     line-height: 35px;
 }
 
-.event-button
-{
-    background: linear-gradient(to bottom right, rgba(1, 132, 199,1), rgba(87, 45, 127, 1));
+.deadline-text {
+    margin-bottom: 5px;
+}
+
+.event-button {
+    background: linear-gradient(
+        to bottom right,
+        rgba(1, 132, 199, 1),
+        rgba(87, 45, 127, 1)
+    );
     border: none;
     height: 50px;
     width: 150px;
@@ -39,22 +44,25 @@
     text;
 } */
 
-.event-button:hover, .event-button:active, .event-button:focus
-{
-    transform: scale(1.05,1.05);
+.event-button:hover,
+.event-button:active,
+.event-button:focus {
+    transform: scale(1.05, 1.05);
     font-size: larger;
-    background: linear-gradient(to bottom right, rgba(1, 132, 199,0.9), rgba(87, 45, 127, 0.9));
+    background: linear-gradient(
+        to bottom right,
+        rgba(1, 132, 199, 0.9),
+        rgba(87, 45, 127, 0.9)
+    );
     border: none;
 }
 
-@media only screen and (max-width:767.98px) {
-    .wrap-conatiner
-    {
+@media only screen and (max-width: 767.98px) {
+    .wrap-conatiner {
         border: 0.15em solid rgba(255, 255, 255, 0.521);
     }
 
-    .text-container
-    {
+    .text-container {
         font-size: 0.8em;
         line-height: 25px;
     }
