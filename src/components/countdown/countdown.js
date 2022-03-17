@@ -64,7 +64,14 @@ function countdown() {
     var targetDate = new Date('Apr 5, 2022 00:00:00').getTime()
     let [d, h, m, s] = useCountdown(targetDate)
     return (
-        <div style={{ marginTop: '200px', height: '320px' }}>
+        <div
+            style={{
+                overflowX: 'hidden',
+                overflowY: 'hidden',
+                marginTop: '200px',
+                height: '320px',
+            }}
+        >
             <div
                 style={{
                     display: 'flex',
