@@ -1,0 +1,152 @@
+.valuess {
+    font-size: 60px;
+    font-family: Fjalla One;
+    color: rgb(255, 255, 255);
+    position: relative;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+    left: 82.5%;
+    bottom: 140px;
+}
+.valuesm {
+    font-size: 60px;
+    font-family: Fjalla One;
+    color: #fcfbfc;
+    position: relative;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+    left: 59%;
+    bottom: 247px;
+}
+.valuesd {
+    font-size: 60px;
+    font-family: Fjalla One;
+    color: #fcfbfc;
+    position: relative;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+    left: 12.5%;
+    bottom: 460px;
+}
+.valuesh {
+    font-size: 60px;
+    font-family: Fjalla One;
+    color: #fcfbfc;
+    position: relative;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+    left: 36%;
+    bottom: 355px;
+}
+.valuesse {
+    font-size: 30px;
+    font-family: Quantico;
+    color: rgb(255, 255, 255);
+    position: relative;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+    left: 80.5%;
+    bottom: 410px;
+}
+.valueshe {
+    font-size: 30px;
+    font-family: Quantico;
+    color: rgb(255, 255, 255);
+    position: relative;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+    left: 35%;
+    bottom: 520px;
+}
+.valuesme {
+    font-size: 30px;
+    font-family: Quantico;
+    color: rgb(255, 255, 255);
+    position: relative;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+    left: 57%;
+    bottom: 460px;
+}
+.valuesde {
+    font-size: 30px;
+    font-family: Quantico;
+    color: rgb(255, 255, 255);
+    position: relative;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+    left: 11%;
+    bottom: 580px;
+}
+.blueimg {
+    width: 145px;
+}
+@media (max-width: 415px) {
+    .blueimg {
+        width: 70px;
+    }
+    .valuess {
+        font-size: 35px;
+        font-family: Fjalla One;
+        color: rgb(255, 255, 255);
+        position: relative;
+        text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+        left: 83.5%;
+        bottom: 170px;
+    }
+    .valuesm {
+        font-size: 35px;
+        font-family: Fjalla One;
+        color: #fcfbfc;
+        position: relative;
+        text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+        left: 58%;
+        bottom: 241px;
+    }
+    .valuesd {
+        font-size: 35px;
+        font-family: Fjalla One;
+        color: #fcfbfc;
+        position: relative;
+        text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+        left: 9%;
+        bottom: 377px;
+    }
+    .valuesh {
+        font-size: 35px;
+        font-family: Fjalla One;
+        color: #fcfbfc;
+        position: relative;
+        text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+        left: 33.5%;
+        bottom: 310px;
+    }
+    .valuesse {
+        font-size: 22px;
+        font-family: Quantico;
+        color: rgb(255, 255, 255);
+        position: relative;
+        text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+        left: 77%;
+        bottom: 360px;
+    }
+    .valueshe {
+        font-size: 22px;
+        font-family: Quantico;
+        color: rgb(255, 255, 255);
+        position: relative;
+        text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+        left: 30%;
+        bottom: 456px;
+    }
+    .valuesme {
+        font-size: 22px;
+        font-family: Quantico;
+        color: rgb(255, 255, 255);
+        position: relative;
+        text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+        left: 52%;
+        bottom: 410px;
+    }
+    .valuesde {
+        font-size: 22px;
+        font-family: Quantico;
+        color: rgb(255, 255, 255);
+        position: relative;
+        text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+        left: 6%;
+        bottom: 505px;
+    }
+}
