@@ -203,12 +203,14 @@ const Ichip = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <button
-                    className="Events_Inner_Link"
-                    onClick={() => setModalIsOpen(true)}
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://drive.google.com/drive/u/3/folders/1OpnbyjGyVdKfjG4I-KVmCo-NgyrphohX"
+                    style={{ textDecoration: 'none' }}
                 >
-                    PS1
-                </button>
+                    <div className="Events_Inner_Link">PS1</div>
+                </a>
                 <button
                     className="Events_Inner_Link"
                     onClick={() => setModalIsOpen(true)}
@@ -324,12 +326,14 @@ const Spybits = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <button
-                    className="Events_Inner_Link"
-                    onClick={() => setModalIsOpen(true)}
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://drive.google.com/drive/u/3/folders/1OpnbyjGyVdKfjG4I-KVmCo-NgyrphohX"
+                    style={{ textDecoration: 'none' }}
                 >
-                    PS1
-                </button>
+                    <div className="Events_Inner_Link">PS1</div>
+                </a>
                 <button
                     className="Events_Inner_Link"
                     onClick={() => setModalIsOpen(true)}
@@ -444,12 +448,14 @@ const Commnet = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <button
-                    className="Events_Inner_Link"
-                    onClick={() => setModalIsOpen(true)}
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://drive.google.com/drive/u/3/folders/1OpnbyjGyVdKfjG4I-KVmCo-NgyrphohX"
+                    style={{ textDecoration: 'none' }}
                 >
-                    PS1
-                </button>
+                    <div className="Events_Inner_Link">PS1</div>
+                </a>
                 <button
                     className="Events_Inner_Link"
                     onClick={() => setModalIsOpen(true)}
@@ -565,12 +571,14 @@ const Xiota = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <button
-                    className="Events_Inner_Link"
-                    onClick={() => setModalIsOpen(true)}
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://drive.google.com/drive/u/3/folders/1OpnbyjGyVdKfjG4I-KVmCo-NgyrphohX"
+                    style={{ textDecoration: 'none' }}
                 >
-                    PS1
-                </button>
+                    <div className="Events_Inner_Link">PS1</div>
+                </a>
                 <button
                     className="Events_Inner_Link"
                     onClick={() => setModalIsOpen(true)}
@@ -805,12 +813,14 @@ const Digisim = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <button
-                    className="Events_Inner_Link"
-                    onClick={() => setModalIsOpen(true)}
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://drive.google.com/drive/u/3/folders/1OpnbyjGyVdKfjG4I-KVmCo-NgyrphohX"
+                    style={{ textDecoration: 'none' }}
                 >
-                    PS1
-                </button>
+                    <div className="Events_Inner_Link">PS1</div>
+                </a>
                 <button
                     className="Events_Inner_Link"
                     onClick={() => setModalIsOpen(true)}
@@ -924,12 +934,14 @@ const Funckit = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <button
-                    className="Events_Inner_Link"
-                    onClick={() => setModalIsOpen(true)}
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://drive.google.com/drive/u/3/folders/1OpnbyjGyVdKfjG4I-KVmCo-NgyrphohX"
+                    style={{ textDecoration: 'none' }}
                 >
-                    PS1
-                </button>
+                    <div className="Events_Inner_Link">PS1</div>
+                </a>
                 <button
                     className="Events_Inner_Link"
                     onClick={() => setModalIsOpen(true)}
@@ -1043,12 +1055,14 @@ const Continuum = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <button
-                    className="Events_Inner_Link"
-                    onClick={() => setModalIsOpen(true)}
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://drive.google.com/drive/u/3/folders/1OpnbyjGyVdKfjG4I-KVmCo-NgyrphohX"
+                    style={{ textDecoration: 'none' }}
                 >
-                    PS1
-                </button>
+                    <div className="Events_Inner_Link">PS1</div>
+                </a>
                 <button
                     className="Events_Inner_Link"
                     onClick={() => setModalIsOpen(true)}
