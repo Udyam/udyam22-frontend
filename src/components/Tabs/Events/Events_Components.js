@@ -206,7 +206,7 @@ const Ichip = () => {
                 <a
                     rel="noreferrer"
                     target="_blank"
-                    href="https://drive.google.com/drive/u/3/folders/1OpnbyjGyVdKfjG4I-KVmCo-NgyrphohX"
+                    href="https://drive.google.com/file/d/15zKn4x2BvTr15m-DgQvn3HSrPACS334U/view"
                     style={{ textDecoration: 'none' }}
                 >
                     <div className="Events_Inner_Link">PS1</div>
@@ -329,7 +329,7 @@ const Spybits = () => {
                 <a
                     rel="noreferrer"
                     target="_blank"
-                    href="https://drive.google.com/drive/u/3/folders/1OpnbyjGyVdKfjG4I-KVmCo-NgyrphohX"
+                    href="https://drive.google.com/open?id=1OtWvrjY8NNegzTGaFDK5VJtP7k5ublFg&authuser=0"
                     style={{ textDecoration: 'none' }}
                 >
                     <div className="Events_Inner_Link">PS1</div>
@@ -451,7 +451,7 @@ const Commnet = () => {
                 <a
                     rel="noreferrer"
                     target="_blank"
-                    href="https://drive.google.com/drive/u/3/folders/1OpnbyjGyVdKfjG4I-KVmCo-NgyrphohX"
+                    href="https://drive.google.com/file/d/1K-Q769eI4hD5HQTjU-G_cNm_K-4oOSci/view"
                     style={{ textDecoration: 'none' }}
                 >
                     <div className="Events_Inner_Link">PS1</div>
@@ -574,7 +574,7 @@ const Xiota = () => {
                 <a
                     rel="noreferrer"
                     target="_blank"
-                    href="https://drive.google.com/drive/u/3/folders/1OpnbyjGyVdKfjG4I-KVmCo-NgyrphohX"
+                    href="https://drive.google.com/open?id=1CdabWn5e1M5zkaULRjl6_Wcw8fURCFZL&authuser=0"
                     style={{ textDecoration: 'none' }}
                 >
                     <div className="Events_Inner_Link">PS1</div>
@@ -816,7 +816,7 @@ const Digisim = () => {
                 <a
                     rel="noreferrer"
                     target="_blank"
-                    href="https://drive.google.com/drive/u/3/folders/1OpnbyjGyVdKfjG4I-KVmCo-NgyrphohX"
+                    href="https://drive.google.com/file/d/1_v6-E_On3Rchj5jCJhrEB2ZBic3U3fpw/view"
                     style={{ textDecoration: 'none' }}
                 >
                     <div className="Events_Inner_Link">PS1</div>
@@ -937,7 +937,7 @@ const Funckit = () => {
                 <a
                     rel="noreferrer"
                     target="_blank"
-                    href="https://drive.google.com/drive/u/3/folders/1OpnbyjGyVdKfjG4I-KVmCo-NgyrphohX"
+                    href="https://drive.google.com/file/d/18OYrP2A3DCehWsXbrnh_3RTVmBLlJxaD/view"
                     style={{ textDecoration: 'none' }}
                 >
                     <div className="Events_Inner_Link">PS1</div>
@@ -1058,7 +1058,7 @@ const Continuum = () => {
                 <a
                     rel="noreferrer"
                     target="_blank"
-                    href="https://drive.google.com/drive/u/3/folders/1OpnbyjGyVdKfjG4I-KVmCo-NgyrphohX"
+                    href="https://drive.google.com/file/d/1eQ6UC5jFU72BPlzIFa-C9Kvc78xOWu15/view"
                     style={{ textDecoration: 'none' }}
                 >
                     <div className="Events_Inner_Link">PS1</div>
