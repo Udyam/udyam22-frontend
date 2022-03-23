@@ -332,14 +332,8 @@ const Spybits = () => {
                     href="https://drive.google.com/open?id=1OtWvrjY8NNegzTGaFDK5VJtP7k5ublFg&authuser=0"
                     style={{ textDecoration: 'none' }}
                 >
-                    <div className="Events_Inner_Link">PS1</div>
+                    <div className="Events_Inner_Link">PS</div>
                 </a>
-                <button
-                    className="Events_Inner_Link"
-                    onClick={() => setModalIsOpen(true)}
-                >
-                    PS2
-                </button>
                 {/* <a
                     rel="noreferrer"
                     target="_blank"
