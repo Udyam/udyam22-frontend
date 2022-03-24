@@ -81,12 +81,14 @@ const Mosaic = () => {
             </div>
 
             <div className="Events_Link_Holder">
-                <button
-                    className="Events_Inner_Link"
-                    onClick={() => setModalIsOpen(true)}
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://drive.google.com/file/d/19xjzqmI7jOKhAqkB9E80zNW266hqCs0w/view"
+                    style={{ textDecoration: 'none' }}
                 >
-                    PS1
-                </button>
+                    <div className="Events_Inner_Link">PS1</div>
+                </a>
                 <button
                     className="Events_Inner_Link"
                     onClick={() => setModalIsOpen(true)}
