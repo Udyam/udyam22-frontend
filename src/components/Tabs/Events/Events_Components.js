@@ -331,7 +331,7 @@ const Spybits = () => {
                 <a
                     rel="noreferrer"
                     target="_blank"
-                    href="https://drive.google.com/open?id=1OtWvrjY8NNegzTGaFDK5VJtP7k5ublFg&authuser=0"
+                    href="https://drive.google.com/file/d/1XITNgxfdKqnrQDi0SYsNHoLCfxFOVjJp/view"
                     style={{ textDecoration: 'none' }}
                 >
                     <div className="Events_Inner_Link">PS</div>
