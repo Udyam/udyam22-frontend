@@ -213,12 +213,14 @@ const Ichip = () => {
                 >
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
-                <button
-                    className="Events_Inner_Link"
-                    onClick={() => setModalIsOpen(true)}
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://drive.google.com/file/d/1w3noVtMewFiB_LVLwh_dcl87Nu3I9aT0/view"
+                    style={{ textDecoration: 'none' }}
                 >
-                    PS2
-                </button>
+                    <div className="Events_Inner_Link">PS2</div>
+                </a>
                 {/* <a
                     rel="noreferrer"
                     target="_blank"
@@ -331,7 +333,7 @@ const Spybits = () => {
                 <a
                     rel="noreferrer"
                     target="_blank"
-                    href="https://drive.google.com/file/d/1XITNgxfdKqnrQDi0SYsNHoLCfxFOVjJp/view"
+                    href="https://drive.google.com/file/d/1mcDh12mkfoH_Nv-hLEp7xOHBoN-pEhqv/view"
                     style={{ textDecoration: 'none' }}
                 >
                     <div className="Events_Inner_Link">PS</div>
@@ -575,12 +577,14 @@ const Xiota = () => {
                 >
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
-                <button
-                    className="Events_Inner_Link"
-                    onClick={() => setModalIsOpen(true)}
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://drive.google.com/file/d/169VQm9gZobA9aZ2Cji1OxKQIgeFeqtxF/view"
+                    style={{ textDecoration: 'none' }}
                 >
-                    PS2
-                </button>
+                    <div className="Events_Inner_Link">PS2</div>
+                </a>
                 {/* <a
                     href=""
                     style={{ textDecoration: 'none' }}
@@ -817,12 +821,14 @@ const Digisim = () => {
                 >
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
-                <button
-                    className="Events_Inner_Link"
-                    onClick={() => setModalIsOpen(true)}
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://drive.google.com/file/d/1BOjYuROsyM9Qa_GJR1vn9YTneIYqrKJP/view"
+                    style={{ textDecoration: 'none' }}
                 >
-                    PS2
-                </button>
+                    <div className="Events_Inner_Link">PS2</div>
+                </a>
                 {/* <a
                     rel="noreferrer"
                     target="_blank"
@@ -938,12 +944,14 @@ const Funckit = () => {
                 >
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
-                <button
-                    className="Events_Inner_Link"
-                    onClick={() => setModalIsOpen(true)}
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://drive.google.com/file/d/1-bN19KB0hTDiiQgS8rN1CUrG0WezpIym/view"
+                    style={{ textDecoration: 'none' }}
                 >
-                    PS2
-                </button>
+                    <div className="Events_Inner_Link">PS2</div>
+                </a>
                 {/* <a
                     rel="noreferrer"
                     target="_blank"
@@ -1059,12 +1067,14 @@ const Continuum = () => {
                 >
                     <div className="Events_Inner_Link">PS1</div>
                 </a>
-                <button
-                    className="Events_Inner_Link"
-                    onClick={() => setModalIsOpen(true)}
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://drive.google.com/file/d/1epYBc_uB2BGihP9pgwRdFo5sYkufhtxF/view"
+                    style={{ textDecoration: 'none' }}
                 >
-                    PS2
-                </button>
+                    <div className="Events_Inner_Link">PS2</div>
+                </a>
                 {/* <a
                     rel="noreferrer"
                     target="_blank"
