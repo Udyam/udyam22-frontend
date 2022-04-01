@@ -61,7 +61,7 @@ const getReturnValues = (countDown) => {
 }
 
 function countdown() {
-    var targetDate = new Date('Apr 5, 2022 00:00:00').getTime()
+    var targetDate = new Date('Apr 8, 2022 00:00:00').getTime()
     let [d, h, m, s] = useCountdown(targetDate)
     return (
         <div
