@@ -35,10 +35,7 @@ const SponsorsFrontPage = () => {
                             equipment and other high-technology services and
                             products. They have assisted corporations of all
                             sizes to rework how humans connect, communicate, and
-                            collaborate. By accepting our title sponsorship,
-                            CISCO showed its magnanimous nature to help us,
-                            students, grow and learn. We look forward to working
-                            with them to make Udyam memorable
+                            collaborate.
                         </p>
                     </div>
                 </div>
