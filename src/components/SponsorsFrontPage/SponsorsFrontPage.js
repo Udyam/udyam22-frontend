@@ -6,6 +6,8 @@ import silencelabs from './sponsor_images/SilenceLabs.png'
 import nullcon from './sponsor_images/Nullcon.png'
 import circuitsutra from './sponsor_images/CircuitSutra.png'
 import sensovision from './sponsor_images/SensoVision.png'
+import Cisco from './sponsor_images/Cisco.png'
+import ChiSquareX from './sponsor_images/ChiSquareX.jpg'
 
 const SponsorsFrontPage = () => {
     return (
@@ -13,7 +15,35 @@ const SponsorsFrontPage = () => {
             className="sponsor-front-container"
             style={{ margin: '4em 3em 0 3em' }}
         >
-            <h1 id="sponsor-front-head">Events Sponsor</h1>
+            <h1 id="sponsor-front-head">Title Sponsor</h1>
+            <div className="card-group">
+                <div className="card">
+                    <a href=" https://www.cisco.com/c/en_in/index.html">
+                        <img
+                            className="card-img-top"
+                            src={Cisco}
+                            alt="Card image cap"
+                        />
+                    </a>
+                    <div className="card-body">
+                        <h5 className="card-title">Cisco</h5>
+                        <p className="card-text">
+                            Cisco is a renowned American multinational
+                            technology conglomerate corporation leading IT and
+                            networking. It develops, manufactures, and sells
+                            networking hardware, software, telecommunications
+                            equipment and other high-technology services and
+                            products. They have assisted corporations of all
+                            sizes to rework how humans connect, communicate, and
+                            collaborate. By accepting our title sponsorship,
+                            CISCO showed its magnanimous nature to help us,
+                            students, grow and learn. We look forward to working
+                            with them to make Udyam memorable
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <h1 id="sponsor-front-head">Events Sponsors</h1>
             <div className="card-group">
                 <div className="card">
                     <a href="https://silencelaboratories.com/">
@@ -101,6 +131,29 @@ const SponsorsFrontPage = () => {
                             Stimulus. CircuitSutra is the only company that is
                             100% focused on ESL Methodologies and understands
                             all aspects of the ESL domain.
+                        </p>
+                    </div>
+                </div>
+                <div className="card">
+                    <a href="https://www.chisquarex.com/">
+                        <img
+                            className="card-img-top"
+                            src={ChiSquareX}
+                            alt="Card image cap"
+                        />
+                    </a>
+                    <div className="card-body">
+                        <h5 className="card-title">Chi SquareX</h5>
+                        <p className="card-text">
+                            Chi SquareX Technologies is a booming KGP startup
+                            providing AI solutions in the individual and
+                            small-scale Market segment. They help organizations
+                            build models for data analysis and machine learning
+                            while ensuring top-quality delivery and data
+                            confidentiality compliance. Not only that, but they
+                            also provide tutoring, research paper
+                            implementation, code implementation, technical
+                            writing services.
                         </p>
                     </div>
                 </div>
