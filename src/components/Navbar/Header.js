@@ -320,7 +320,7 @@ const Header = () => {
                         >
                             <Link to="/">
                                 <img
-                                    src="/images/udyamLogo.png"
+                                    src="/images/UdyamLogo1.png"
                                     className="logo mx-4"
                                     alt="logo"
                                 />
