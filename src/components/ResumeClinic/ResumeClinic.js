@@ -38,7 +38,7 @@ function ResumeClinic() {
                             <br />
                         </p>
                         <span className={`${styles['deadline-text']}`}>
-                            <strong> Deadline: 5th April</strong>
+                            <strong> Deadline: 8th April</strong>
                         </span>
                         <Button className={`${styles['event-button']}`}>
                             {' '}
