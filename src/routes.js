@@ -26,7 +26,6 @@ const Routes = () => {
         <div>
             <Route exact path="/">
                 <LandingPage />
-                {countdown()}
                 <Timeline />
                 <ResumeClinic />
                 <SponsorsFrontPage />
