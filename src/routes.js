@@ -19,7 +19,6 @@ import Dashboard from './components/Dashboard/Dashboard.js'
 import IframeComponent from './components/iframe/iframe.js'
 import ResumeClinic from './components/ResumeClinic/ResumeClinic.js'
 import SponsorsFrontPage from './components/SponsorsFrontPage/SponsorsFrontPage.js'
-import countdown from './components/countdown/countdown.js'
 
 const Routes = () => {
     return (
