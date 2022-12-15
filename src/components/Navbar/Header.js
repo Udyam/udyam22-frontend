@@ -140,7 +140,7 @@ const Header = () => {
                                             className="dropdown-content"
                                         >
                                             <Link
-                                                to="/loginregister"
+                                                to="/"
                                                 style={{
                                                     textDecoration: 'none',
                                                 }}
@@ -273,10 +273,10 @@ const Header = () => {
                                                 id="myDropdown2"
                                                 className="dropdown-content"
                                             >
-                                                <Link to="/loginregister">
+                                                <Link to="/">
                                                     Dashboard
                                                 </Link>
-                                                <a href="#" onClick={logoutfn}>
+                                                <a href="#">
                                                     Logout
                                                 </a>
                                             </div>
@@ -329,7 +329,7 @@ const Header = () => {
                                 <NavItem>
                                     <NavLink
                                         exact
-                                        to="/loginregister"
+                                        to="/"
                                         style={(isActive) =>
                                             isActive
                                                 ? {
@@ -460,7 +460,7 @@ const Header = () => {
                                     </NavItem>
                                     <NavItem>
                                         <Link
-                                            to="/loginregister"
+                                            to="/"
                                             style={{ textDecoration: 'none' }}
                                         >
                                             <div
