@@ -276,7 +276,7 @@ const Header = () => {
                                                 <Link to="/">
                                                     Dashboard
                                                 </Link>
-                                                <a href="#">
+                                                <a href="#" onClick={logoutfn}>
                                                     Logout
                                                 </a>
                                             </div>
