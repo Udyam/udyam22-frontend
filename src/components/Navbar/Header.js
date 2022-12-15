@@ -273,9 +273,7 @@ const Header = () => {
                                                 id="myDropdown2"
                                                 className="dropdown-content"
                                             >
-                                                <Link to="/">
-                                                    Dashboard
-                                                </Link>
+                                                <Link to="/">Dashboard</Link>
                                                 <a href="#" onClick={logoutfn}>
                                                     Logout
                                                 </a>
